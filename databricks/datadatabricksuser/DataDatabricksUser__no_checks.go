@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksUser) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksUser) validatePutProviderConfigParameters(value *DataDatabricksUserProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -79,7 +83,7 @@ func (j *jsiiProxy_DataDatabricksUser) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksUser) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataDatabricksUser) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

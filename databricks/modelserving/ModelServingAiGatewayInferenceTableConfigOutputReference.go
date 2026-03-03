@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package modelserving
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/modelserving/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/modelserving/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ModelServingAiGatewayInferenceTableConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CatalogName() *string
 	SetCatalogName(val *string)
 	CatalogNameInput() *string
@@ -49,15 +49,15 @@ type ModelServingAiGatewayInferenceTableConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type ModelServingAiGatewayInferenceTableConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCatalogName()
 	ResetEnabled()
 	ResetSchemaName()
 	ResetTableNamePrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type ModelServingAiGatewayInferenceTableConfigOutputReference interface {
 
 // The jsii proxy struct for ModelServingAiGatewayInferenceTableConfigOutputReference
 type jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) CatalogName() *string {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) Ter
 }
 
 
-func NewModelServingAiGatewayInferenceTableConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ModelServingAiGatewayInferenceTableConfigOutputReference {
+func NewModelServingAiGatewayInferenceTableConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ModelServingAiGatewayInferenceTableConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewModelServingAiGatewayInferenceTableConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +255,7 @@ func NewModelServingAiGatewayInferenceTableConfigOutputReference(terraformResour
 	j := jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewModelServingAiGatewayInferenceTableConfigOutputReference(terraformResour
 	return &j
 }
 
-func NewModelServingAiGatewayInferenceTableConfigOutputReference_Override(m ModelServingAiGatewayInferenceTableConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewModelServingAiGatewayInferenceTableConfigOutputReference_Override(m ModelServingAiGatewayInferenceTableConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,11 +401,11 @@ func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) Get
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -529,8 +529,8 @@ func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) Get
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -542,11 +542,11 @@ func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) Int
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -590,7 +590,7 @@ func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) Res
 	)
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

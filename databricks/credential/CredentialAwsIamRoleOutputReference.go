@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package credential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/credential/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type CredentialAwsIamRoleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type CredentialAwsIamRoleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UnityCatalogIamArn() *string
 	SetUnityCatalogIamArn(val *string)
 	UnityCatalogIamArnInput() *string
@@ -54,7 +54,7 @@ type CredentialAwsIamRoleOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type CredentialAwsIamRoleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetExternalId()
 	ResetRoleArn()
 	ResetUnityCatalogIamArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type CredentialAwsIamRoleOutputReference interface {
 
 // The jsii proxy struct for CredentialAwsIamRoleOutputReference
 type jsiiProxy_CredentialAwsIamRoleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CredentialAwsIamRoleOutputReference) ComplexObjectIndex() interface{} {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_CredentialAwsIamRoleOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_CredentialAwsIamRoleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CredentialAwsIamRoleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_CredentialAwsIamRoleOutputReference) UnityCatalogIamArnInput(
 }
 
 
-func NewCredentialAwsIamRoleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CredentialAwsIamRoleOutputReference {
+func NewCredentialAwsIamRoleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CredentialAwsIamRoleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCredentialAwsIamRoleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewCredentialAwsIamRoleOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_CredentialAwsIamRoleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.credential.CredentialAwsIamRoleOutputReference",
+		"@cdktn/provider-databricks.credential.CredentialAwsIamRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewCredentialAwsIamRoleOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewCredentialAwsIamRoleOutputReference_Override(c CredentialAwsIamRoleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCredentialAwsIamRoleOutputReference_Override(c CredentialAwsIamRoleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.credential.CredentialAwsIamRoleOutputReference",
+		"@cdktn/provider-databricks.credential.CredentialAwsIamRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_CredentialAwsIamRoleOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_CredentialAwsIamRoleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CredentialAwsIamRoleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -494,8 +494,8 @@ func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -507,11 +507,11 @@ func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -547,7 +547,7 @@ func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) ResetUnityCatalogIamArn(
 	)
 }
 
-func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CredentialAwsIamRoleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

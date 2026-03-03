@@ -1,27 +1,27 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package recipient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/recipient/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/recipient/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/recipient databricks_recipient}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/recipient databricks_recipient}.
 type Recipient interface {
-	cdktf.TerraformResource
-	Activated() cdktf.IResolvable
+	cdktn.TerraformResource
+	Activated() cdktn.IResolvable
 	ActivationUrl() *string
 	AuthenticationType() *string
 	SetAuthenticationType(val *string)
 	AuthenticationTypeInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Cloud() *string
 	Comment() *string
 	SetComment(val *string)
@@ -49,9 +49,9 @@ type Recipient interface {
 	SetExpirationTime(val *float64)
 	ExpirationTimeInput() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -62,9 +62,9 @@ type Recipient interface {
 	IpAccessList() RecipientIpAccessListStructOutputReference
 	IpAccessListInput() *RecipientIpAccessListStruct
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetastoreId() *string
 	Name() *string
 	SetName(val *string)
@@ -77,9 +77,11 @@ type Recipient interface {
 	PropertiesKvpairs() RecipientPropertiesKvpairsOutputReference
 	PropertiesKvpairsInput() *RecipientPropertiesKvpairs
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() RecipientProviderConfigOutputReference
+	ProviderConfigInput() *RecipientProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -91,7 +93,7 @@ type Recipient interface {
 	SetSharingCode(val *string)
 	SharingCodeInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -108,7 +110,7 @@ type Recipient interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -126,9 +128,9 @@ type Recipient interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -145,6 +147,7 @@ type Recipient interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIpAccessList(value *RecipientIpAccessListStruct)
 	PutPropertiesKvpairs(value *RecipientPropertiesKvpairs)
+	PutProviderConfig(value *RecipientProviderConfig)
 	PutTokens(value interface{})
 	ResetComment()
 	ResetDataRecipientGlobalMetastoreId()
@@ -156,6 +159,7 @@ type Recipient interface {
 	ResetOverrideLogicalId()
 	ResetOwner()
 	ResetPropertiesKvpairs()
+	ResetProviderConfig()
 	ResetSharingCode()
 	ResetTokens()
 	SynthesizeAttributes() *map[string]interface{}
@@ -173,11 +177,11 @@ type Recipient interface {
 
 // The jsii proxy struct for Recipient
 type jsiiProxy_Recipient struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_Recipient) Activated() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Recipient) Activated() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"activated",
@@ -216,8 +220,8 @@ func (j *jsiiProxy_Recipient) AuthenticationTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Recipient) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Recipient) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -356,8 +360,8 @@ func (j *jsiiProxy_Recipient) ExpirationTimeInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Recipient) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Recipient) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -426,8 +430,8 @@ func (j *jsiiProxy_Recipient) IpAccessListInput() *RecipientIpAccessListStruct {
 	return returns
 }
 
-func (j *jsiiProxy_Recipient) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Recipient) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -516,11 +520,31 @@ func (j *jsiiProxy_Recipient) PropertiesKvpairsInput() *RecipientPropertiesKvpai
 	return returns
 }
 
-func (j *jsiiProxy_Recipient) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Recipient) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) ProviderConfig() RecipientProviderConfigOutputReference {
+	var returns RecipientProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) ProviderConfigInput() *RecipientProviderConfig {
+	var returns *RecipientProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -576,8 +600,8 @@ func (j *jsiiProxy_Recipient) SharingCodeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Recipient) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Recipient) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -647,7 +671,7 @@ func (j *jsiiProxy_Recipient) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfig) Recipient {
 	_init_.Initialize()
 
@@ -657,7 +681,7 @@ func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfi
 	j := jsiiProxy_Recipient{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.recipient.Recipient",
+		"@cdktn/provider-databricks.recipient.Recipient",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -665,12 +689,12 @@ func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient_Override(r Recipient, scope constructs.Construct, id *string, config *RecipientConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.recipient.Recipient",
+		"@cdktn/provider-databricks.recipient.Recipient",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -750,7 +774,7 @@ func (j *jsiiProxy_Recipient)SetExpirationTime(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Recipient)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Recipient)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -769,7 +793,7 @@ func (j *jsiiProxy_Recipient)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Recipient)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Recipient)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +826,7 @@ func (j *jsiiProxy_Recipient)SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Recipient)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Recipient)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -832,17 +856,17 @@ func (j *jsiiProxy_Recipient)SetSharingCode(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Recipient resource upon running "cdktf plan <stack-name>".
-func Recipient_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Recipient resource upon running "cdktn plan <stack-name>".
+func Recipient_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateRecipient_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.recipient.Recipient",
+		"@cdktn/provider-databricks.recipient.Recipient",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -877,7 +901,7 @@ func Recipient_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.recipient.Recipient",
+		"@cdktn/provider-databricks.recipient.Recipient",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -896,7 +920,7 @@ func Recipient_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.recipient.Recipient",
+		"@cdktn/provider-databricks.recipient.Recipient",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -915,7 +939,7 @@ func Recipient_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.recipient.Recipient",
+		"@cdktn/provider-databricks.recipient.Recipient",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -928,7 +952,7 @@ func Recipient_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.recipient.Recipient",
+		"@cdktn/provider-databricks.recipient.Recipient",
 		"tfResourceType",
 		&returns,
 	)
@@ -973,11 +997,11 @@ func (r *jsiiProxy_Recipient) GetAnyMapAttribute(terraformAttribute *string) *ma
 	return returns
 }
 
-func (r *jsiiProxy_Recipient) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_Recipient) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -1114,7 +1138,7 @@ func (r *jsiiProxy_Recipient) HasResourceMove() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Recipient) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (r *jsiiProxy_Recipient) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1125,11 +1149,11 @@ func (r *jsiiProxy_Recipient) ImportFrom(id *string, provider cdktf.TerraformPro
 	)
 }
 
-func (r *jsiiProxy_Recipient) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_Recipient) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -1207,6 +1231,17 @@ func (r *jsiiProxy_Recipient) PutPropertiesKvpairs(value *RecipientPropertiesKvp
 	)
 }
 
+func (r *jsiiProxy_Recipient) PutProviderConfig(value *RecipientProviderConfig) {
+	if err := r.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_Recipient) PutTokens(value interface{}) {
 	if err := r.validatePutTokensParameters(value); err != nil {
 		panic(err)
@@ -1278,6 +1313,14 @@ func (r *jsiiProxy_Recipient) ResetPropertiesKvpairs() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPropertiesKvpairs",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Recipient) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

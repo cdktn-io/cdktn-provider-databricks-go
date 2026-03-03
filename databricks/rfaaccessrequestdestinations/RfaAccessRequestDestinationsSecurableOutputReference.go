@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package rfaaccessrequestdestinations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/rfaaccessrequestdestinations/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type RfaAccessRequestDestinationsSecurableOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type RfaAccessRequestDestinationsSecurableOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -54,7 +54,7 @@ type RfaAccessRequestDestinationsSecurableOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type RfaAccessRequestDestinationsSecurableOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFullName()
 	ResetProviderShare()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type RfaAccessRequestDestinationsSecurableOutputReference interface {
 
 // The jsii proxy struct for RfaAccessRequestDestinationsSecurableOutputReference
 type jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) ComplexObjectIndex() interface{} {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) TypeInp
 }
 
 
-func NewRfaAccessRequestDestinationsSecurableOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RfaAccessRequestDestinationsSecurableOutputReference {
+func NewRfaAccessRequestDestinationsSecurableOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RfaAccessRequestDestinationsSecurableOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRfaAccessRequestDestinationsSecurableOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewRfaAccessRequestDestinationsSecurableOutputReference(terraformResource c
 	j := jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsSecurableOutputReference",
+		"@cdktn/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsSecurableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewRfaAccessRequestDestinationsSecurableOutputReference(terraformResource c
 	return &j
 }
 
-func NewRfaAccessRequestDestinationsSecurableOutputReference_Override(r RfaAccessRequestDestinationsSecurableOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRfaAccessRequestDestinationsSecurableOutputReference_Override(r RfaAccessRequestDestinationsSecurableOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsSecurableOutputReference",
+		"@cdktn/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsSecurableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) GetAnyM
 	return returns
 }
 
-func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -494,8 +494,8 @@ func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) GetStri
 	return returns
 }
 
-func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -507,11 +507,11 @@ func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) Interpo
 	return returns
 }
 
-func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -547,7 +547,7 @@ func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) ResetTy
 	)
 }
 
-func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RfaAccessRequestDestinationsSecurableOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

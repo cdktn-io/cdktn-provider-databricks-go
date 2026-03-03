@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsworkspaces
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/mwsworkspaces/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsworkspaces/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MwsWorkspacesTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type MwsWorkspacesTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -54,7 +54,7 @@ type MwsWorkspacesTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type MwsWorkspacesTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type MwsWorkspacesTimeoutsOutputReference interface {
 
 // The jsii proxy struct for MwsWorkspacesTimeoutsOutputReference
 type jsiiProxy_MwsWorkspacesTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) UpdateInput() *string {
 }
 
 
-func NewMwsWorkspacesTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MwsWorkspacesTimeoutsOutputReference {
+func NewMwsWorkspacesTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MwsWorkspacesTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMwsWorkspacesTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewMwsWorkspacesTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_MwsWorkspacesTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeoutsOutputReference",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewMwsWorkspacesTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewMwsWorkspacesTimeoutsOutputReference_Override(m MwsWorkspacesTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMwsWorkspacesTimeoutsOutputReference_Override(m MwsWorkspacesTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeoutsOutputReference",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_MwsWorkspacesTimeoutsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwsWorkspacesTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -494,8 +494,8 @@ func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -507,11 +507,11 @@ func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -547,7 +547,7 @@ func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MwsWorkspacesTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

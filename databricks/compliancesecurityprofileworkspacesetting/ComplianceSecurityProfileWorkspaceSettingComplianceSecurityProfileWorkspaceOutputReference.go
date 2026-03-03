@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package compliancesecurityprofileworkspacesetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/compliancesecurityprofileworkspacesetting/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspace
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspace
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspace
 
 // The jsii proxy struct for ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference
 type jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) ComplexObjectIndex() interface{} {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityPr
 	return returns
 }
 
-func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityPr
 }
 
 
-func NewComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference {
+func NewComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -205,7 +205,7 @@ func NewComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorksp
 	j := jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference",
+		"@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -213,11 +213,11 @@ func NewComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorksp
 	return &j
 }
 
-func NewComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference_Override(c ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference_Override(c ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference",
+		"@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -289,7 +289,7 @@ func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityPr
 	)
 }
 
-func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityPr
 	return returns
 }
 
-func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -457,8 +457,8 @@ func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityPr
 	return returns
 }
 
-func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -470,11 +470,11 @@ func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityPr
 	return returns
 }
 
-func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -486,7 +486,7 @@ func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityPr
 	return returns
 }
 
-func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksdataqualitymonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdataqualitymonitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksdataqualitymonitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AssetsDir() *string
 	SetAssetsDir(val *string)
 	AssetsDirInput() *string
@@ -70,9 +70,9 @@ type DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeSeries() DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesOutputReference
 	TimeSeriesInput() interface{}
 	WarehouseId() *string
@@ -83,7 +83,7 @@ type DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference interfac
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -99,9 +99,9 @@ type DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomMetrics(value interface{})
 	PutInferenceLog(value *DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog)
 	PutNotificationSettings(value *DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings)
@@ -121,7 +121,7 @@ type DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference interfac
 	ResetWarehouseId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -131,7 +131,7 @@ type DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference interfac
 
 // The jsii proxy struct for DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference
 type jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) AssetsDir() *string {
@@ -474,8 +474,8 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -525,7 +525,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputRefe
 }
 
 
-func NewDataDatabricksDataQualityMonitorDataProfilingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference {
+func NewDataDatabricksDataQualityMonitorDataProfilingConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksDataQualityMonitorDataProfilingConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -534,7 +534,7 @@ func NewDataDatabricksDataQualityMonitorDataProfilingConfigOutputReference(terra
 	j := jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDataQualityMonitor.DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDataQualityMonitor.DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -542,11 +542,11 @@ func NewDataDatabricksDataQualityMonitorDataProfilingConfigOutputReference(terra
 	return &j
 }
 
-func NewDataDatabricksDataQualityMonitorDataProfilingConfigOutputReference_Override(d DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksDataQualityMonitorDataProfilingConfigOutputReference_Override(d DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDataQualityMonitor.DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDataQualityMonitor.DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -651,7 +651,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,11 +702,11 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +830,8 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -843,11 +843,11 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1013,7 +1013,7 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputRefe
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

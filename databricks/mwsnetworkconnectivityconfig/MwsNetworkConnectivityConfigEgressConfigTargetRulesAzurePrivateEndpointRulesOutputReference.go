@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsnetworkconnectivityconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/mwsnetworkconnectivityconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnetworkconnectivityconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,6 +46,9 @@ type MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRule
 	EndpointName() *string
 	SetEndpointName(val *string)
 	EndpointNameInput() *string
+	ErrorMessage() *string
+	SetErrorMessage(val *string)
+	ErrorMessageInput() *string
 	// Experimental.
 	Fqn() *string
 	GroupId() *string
@@ -67,9 +70,9 @@ type MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRule
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdatedTime() *float64
 	SetUpdatedTime(val *float64)
 	UpdatedTimeInput() *float64
@@ -78,7 +81,7 @@ type MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRule
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,15 +97,16 @@ type MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRule
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetConnectionState()
 	ResetCreationTime()
 	ResetDeactivated()
 	ResetDeactivatedAt()
 	ResetDomainNames()
 	ResetEndpointName()
+	ResetErrorMessage()
 	ResetGroupId()
 	ResetNetworkConnectivityConfigId()
 	ResetResourceId()
@@ -110,7 +114,7 @@ type MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRule
 	ResetUpdatedTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,7 +124,7 @@ type MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRule
 
 // The jsii proxy struct for MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference
 type jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) ComplexObjectIndex() interface{} {
@@ -273,6 +277,26 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	return returns
 }
 
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) ErrorMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"errorMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) ErrorMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"errorMessageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -383,8 +407,8 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	return returns
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -414,7 +438,7 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 }
 
 
-func NewMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference {
+func NewMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -423,7 +447,7 @@ func NewMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointR
 	j := jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -431,11 +455,11 @@ func NewMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointR
 	return &j
 }
 
-func NewMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference_Override(m MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference_Override(m MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
@@ -529,6 +553,17 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	)
 }
 
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference)SetErrorMessage(val *string) {
+	if err := j.validateSetErrorMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"errorMessage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference)SetGroupId(val *string) {
 	if err := j.validateSetGroupIdParameters(val); err != nil {
 		panic(err)
@@ -595,7 +630,7 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	)
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,11 +681,11 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	return returns
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -774,8 +809,8 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	return returns
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -787,11 +822,11 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	return returns
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -851,6 +886,14 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	)
 }
 
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) ResetErrorMessage() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetErrorMessage",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) ResetGroupId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -891,7 +934,7 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	)
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

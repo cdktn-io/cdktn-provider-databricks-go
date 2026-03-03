@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customappintegration
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegration",
 		reflect.TypeOf((*CustomAppIntegration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -98,20 +98,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAppIntegration{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegrationConfig",
 		reflect.TypeOf((*CustomAppIntegrationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy",
 		reflect.TypeOf((*CustomAppIntegrationTokenAccessPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference",
 		reflect.TypeOf((*CustomAppIntegrationTokenAccessPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "absoluteSessionLifetimeInMinutes", GoGetter: "AbsoluteSessionLifetimeInMinutes"},
@@ -150,7 +150,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

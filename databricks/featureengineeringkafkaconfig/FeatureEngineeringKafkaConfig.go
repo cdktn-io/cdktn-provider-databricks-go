@@ -1,27 +1,29 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package featureengineeringkafkaconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/featureengineeringkafkaconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}.
 type FeatureEngineeringKafkaConfig interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AuthConfig() FeatureEngineeringKafkaConfigAuthConfigOutputReference
 	AuthConfigInput() interface{}
+	BackfillSource() FeatureEngineeringKafkaConfigBackfillSourceOutputReference
+	BackfillSourceInput() interface{}
 	BootstrapServers() *string
 	SetBootstrapServers(val *string)
 	BootstrapServersInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -40,9 +42,9 @@ type FeatureEngineeringKafkaConfig interface {
 	SetExtraOptions(val *map[string]*string)
 	ExtraOptionsInput() *map[string]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -50,16 +52,18 @@ type FeatureEngineeringKafkaConfig interface {
 	KeySchema() FeatureEngineeringKafkaConfigKeySchemaOutputReference
 	KeySchemaInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() FeatureEngineeringKafkaConfigProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -69,7 +73,7 @@ type FeatureEngineeringKafkaConfig interface {
 	SubscriptionMode() FeatureEngineeringKafkaConfigSubscriptionModeOutputReference
 	SubscriptionModeInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -84,7 +88,7 @@ type FeatureEngineeringKafkaConfig interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -102,9 +106,9 @@ type FeatureEngineeringKafkaConfig interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -120,14 +124,18 @@ type FeatureEngineeringKafkaConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthConfig(value *FeatureEngineeringKafkaConfigAuthConfig)
+	PutBackfillSource(value *FeatureEngineeringKafkaConfigBackfillSource)
 	PutKeySchema(value *FeatureEngineeringKafkaConfigKeySchema)
+	PutProviderConfig(value *FeatureEngineeringKafkaConfigProviderConfig)
 	PutSubscriptionMode(value *FeatureEngineeringKafkaConfigSubscriptionMode)
 	PutValueSchema(value *FeatureEngineeringKafkaConfigValueSchema)
+	ResetBackfillSource()
 	ResetExtraOptions()
 	ResetKeySchema()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetValueSchema()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -144,7 +152,7 @@ type FeatureEngineeringKafkaConfig interface {
 
 // The jsii proxy struct for FeatureEngineeringKafkaConfig
 type jsiiProxy_FeatureEngineeringKafkaConfig struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_FeatureEngineeringKafkaConfig) AuthConfig() FeatureEngineeringKafkaConfigAuthConfigOutputReference {
@@ -162,6 +170,26 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) AuthConfigInput() interface{} 
 	_jsii_.Get(
 		j,
 		"authConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) BackfillSource() FeatureEngineeringKafkaConfigBackfillSourceOutputReference {
+	var returns FeatureEngineeringKafkaConfigBackfillSourceOutputReference
+	_jsii_.Get(
+		j,
+		"backfillSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) BackfillSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"backfillSourceInput",
 		&returns,
 	)
 	return returns
@@ -187,8 +215,8 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) BootstrapServersInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringKafkaConfig) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -257,8 +285,8 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) ExtraOptionsInput() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringKafkaConfig) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -307,8 +335,8 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) KeySchemaInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringKafkaConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -337,11 +365,31 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringKafkaConfig) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) ProviderConfig() FeatureEngineeringKafkaConfigProviderConfigOutputReference {
+	var returns FeatureEngineeringKafkaConfigProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -387,8 +435,8 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) SubscriptionModeInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringKafkaConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -438,7 +486,7 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) ValueSchemaInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
 func NewFeatureEngineeringKafkaConfig(scope constructs.Construct, id *string, config *FeatureEngineeringKafkaConfigConfig) FeatureEngineeringKafkaConfig {
 	_init_.Initialize()
 
@@ -448,7 +496,7 @@ func NewFeatureEngineeringKafkaConfig(scope constructs.Construct, id *string, co
 	j := jsiiProxy_FeatureEngineeringKafkaConfig{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
+		"@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -456,12 +504,12 @@ func NewFeatureEngineeringKafkaConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
 func NewFeatureEngineeringKafkaConfig_Override(f FeatureEngineeringKafkaConfig, scope constructs.Construct, id *string, config *FeatureEngineeringKafkaConfigConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
+		"@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -519,7 +567,7 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig)SetExtraOptions(val *map[string
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringKafkaConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -527,7 +575,7 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringKafkaConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +586,7 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringKafkaConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -557,17 +605,17 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig)SetProvisioners(val *[]interfac
 	)
 }
 
-// Generates CDKTF code for importing a FeatureEngineeringKafkaConfig resource upon running "cdktf plan <stack-name>".
-func FeatureEngineeringKafkaConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a FeatureEngineeringKafkaConfig resource upon running "cdktn plan <stack-name>".
+func FeatureEngineeringKafkaConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateFeatureEngineeringKafkaConfig_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
+		"@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -602,7 +650,7 @@ func FeatureEngineeringKafkaConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
+		"@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +669,7 @@ func FeatureEngineeringKafkaConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
+		"@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +688,7 @@ func FeatureEngineeringKafkaConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
+		"@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +701,7 @@ func FeatureEngineeringKafkaConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
+		"@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig",
 		"tfResourceType",
 		&returns,
 	)
@@ -698,11 +746,11 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) GetAnyMapAttribute(terraformAt
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringKafkaConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -839,7 +887,7 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) HasResourceMove() interface{} 
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringKafkaConfig) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -850,11 +898,11 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) ImportFrom(id *string, provide
 	)
 }
 
-func (f *jsiiProxy_FeatureEngineeringKafkaConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -921,6 +969,17 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) PutAuthConfig(value *FeatureEn
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) PutBackfillSource(value *FeatureEngineeringKafkaConfigBackfillSource) {
+	if err := f.validatePutBackfillSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putBackfillSource",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringKafkaConfig) PutKeySchema(value *FeatureEngineeringKafkaConfigKeySchema) {
 	if err := f.validatePutKeySchemaParameters(value); err != nil {
 		panic(err)
@@ -928,6 +987,17 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) PutKeySchema(value *FeatureEng
 	_jsii_.InvokeVoid(
 		f,
 		"putKeySchema",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) PutProviderConfig(value *FeatureEngineeringKafkaConfigProviderConfig) {
+	if err := f.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putProviderConfig",
 		[]interface{}{value},
 	)
 }
@@ -954,6 +1024,14 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) PutValueSchema(value *FeatureE
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) ResetBackfillSource() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetBackfillSource",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringKafkaConfig) ResetExtraOptions() {
 	_jsii_.InvokeVoid(
 		f,
@@ -974,6 +1052,14 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

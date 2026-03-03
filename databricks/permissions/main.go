@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package permissions
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.permissions.Permissions",
+		"@cdktn/provider-databricks.permissions.Permissions",
 		reflect.TypeOf((*Permissions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessControl", GoGetter: "AccessControl"},
@@ -36,6 +36,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dashboardIdInput", GoGetter: "DashboardIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseInstanceName", GoGetter: "DatabaseInstanceName"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseInstanceNameInput", GoGetter: "DatabaseInstanceNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "databaseProjectName", GoGetter: "DatabaseProjectName"},
+			_jsii_.MemberProperty{JsiiProperty: "databaseProjectNameInput", GoGetter: "DatabaseProjectNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "directoryId", GoGetter: "DirectoryId"},
 			_jsii_.MemberProperty{JsiiProperty: "directoryIdInput", GoGetter: "DirectoryIdInput"},
@@ -79,8 +81,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pipelineId", GoGetter: "PipelineId"},
 			_jsii_.MemberProperty{JsiiProperty: "pipelineIdInput", GoGetter: "PipelineIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAccessControl", GoMethod: "PutAccessControl"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "registeredModelId", GoGetter: "RegisteredModelId"},
 			_jsii_.MemberProperty{JsiiProperty: "registeredModelIdInput", GoGetter: "RegisteredModelIdInput"},
@@ -95,6 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterPolicyId", GoMethod: "ResetClusterPolicyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDashboardId", GoMethod: "ResetDashboardId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseInstanceName", GoMethod: "ResetDatabaseInstanceName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseProjectName", GoMethod: "ResetDatabaseProjectName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDirectoryId", GoMethod: "ResetDirectoryId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDirectoryPath", GoMethod: "ResetDirectoryPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExperimentId", GoMethod: "ResetExperimentId"},
@@ -106,6 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetObjectType", GoMethod: "ResetObjectType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPipelineId", GoMethod: "ResetPipelineId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegisteredModelId", GoMethod: "ResetRegisteredModelId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRepoId", GoMethod: "ResetRepoId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRepoPath", GoMethod: "ResetRepoPath"},
@@ -145,16 +152,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Permissions{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.permissions.PermissionsAccessControl",
+		"@cdktn/provider-databricks.permissions.PermissionsAccessControl",
 		reflect.TypeOf((*PermissionsAccessControl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.permissions.PermissionsAccessControlList",
+		"@cdktn/provider-databricks.permissions.PermissionsAccessControlList",
 		reflect.TypeOf((*PermissionsAccessControlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -171,12 +178,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PermissionsAccessControlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference",
+		"@cdktn/provider-databricks.permissions.PermissionsAccessControlOutputReference",
 		reflect.TypeOf((*PermissionsAccessControlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -215,12 +222,50 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PermissionsAccessControlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.permissions.PermissionsConfig",
+		"@cdktn/provider-databricks.permissions.PermissionsConfig",
 		reflect.TypeOf((*PermissionsConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.permissions.PermissionsProviderConfig",
+		reflect.TypeOf((*PermissionsProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.permissions.PermissionsProviderConfigOutputReference",
+		reflect.TypeOf((*PermissionsProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PermissionsProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
 	)
 }

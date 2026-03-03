@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,15 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validateInterpo
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutAppParameters(value *DataDatabricksAppAppResourcesApp) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutDatabaseParameters(value *DataDatabricksAppAppResourcesDatabase) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutExperimentParameters(value *DataDatabricksAppAppResourcesExperiment) error {
 	return nil
 }
 
@@ -75,7 +83,7 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutUcSe
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -103,11 +111,11 @@ func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataDatabricksAppAppResourcesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataDatabricksAppAppResourcesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

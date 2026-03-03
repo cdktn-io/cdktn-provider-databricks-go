@@ -1,26 +1,26 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package instancepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/instancepool/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/instancepool/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool databricks_instance_pool}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool databricks_instance_pool}.
 type InstancePool interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AwsAttributes() InstancePoolAwsAttributesOutputReference
 	AwsAttributesInput() *InstancePoolAwsAttributes
 	AzureAttributes() InstancePoolAzureAttributesOutputReference
 	AzureAttributesInput() *InstancePoolAzureAttributes
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -44,9 +44,9 @@ type InstancePool interface {
 	SetEnableElasticDisk(val interface{})
 	EnableElasticDiskInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -68,9 +68,9 @@ type InstancePool interface {
 	SetInstancePoolName(val *string)
 	InstancePoolNameInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxCapacity() *float64
 	SetMaxCapacity(val *float64)
 	MaxCapacityInput() *float64
@@ -79,6 +79,8 @@ type InstancePool interface {
 	MinIdleInstancesInput() *float64
 	// The tree node.
 	Node() constructs.Node
+	NodeTypeFlexibility() InstancePoolNodeTypeFlexibilityOutputReference
+	NodeTypeFlexibilityInput() *InstancePoolNodeTypeFlexibility
 	NodeTypeId() *string
 	SetNodeTypeId(val *string)
 	NodeTypeIdInput() *string
@@ -88,9 +90,11 @@ type InstancePool interface {
 	SetPreloadedSparkVersions(val *[]*string)
 	PreloadedSparkVersionsInput() *[]*string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() InstancePoolProviderConfigOutputReference
+	ProviderConfigInput() *InstancePoolProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -98,7 +102,7 @@ type InstancePool interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -111,7 +115,7 @@ type InstancePool interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -129,9 +133,9 @@ type InstancePool interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -151,7 +155,9 @@ type InstancePool interface {
 	PutDiskSpec(value *InstancePoolDiskSpec)
 	PutGcpAttributes(value *InstancePoolGcpAttributes)
 	PutInstancePoolFleetAttributes(value *InstancePoolInstancePoolFleetAttributes)
+	PutNodeTypeFlexibility(value *InstancePoolNodeTypeFlexibility)
 	PutPreloadedDockerImage(value interface{})
+	PutProviderConfig(value *InstancePoolProviderConfig)
 	ResetAwsAttributes()
 	ResetAzureAttributes()
 	ResetCustomTags()
@@ -163,12 +169,14 @@ type InstancePool interface {
 	ResetInstancePoolId()
 	ResetMaxCapacity()
 	ResetMinIdleInstances()
+	ResetNodeTypeFlexibility()
 	ResetNodeTypeId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreloadedDockerImage()
 	ResetPreloadedSparkVersions()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -184,7 +192,7 @@ type InstancePool interface {
 
 // The jsii proxy struct for InstancePool
 type jsiiProxy_InstancePool struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_InstancePool) AwsAttributes() InstancePoolAwsAttributesOutputReference {
@@ -227,8 +235,8 @@ func (j *jsiiProxy_InstancePool) AzureAttributesInput() *InstancePoolAzureAttrib
 	return returns
 }
 
-func (j *jsiiProxy_InstancePool) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_InstancePool) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -337,8 +345,8 @@ func (j *jsiiProxy_InstancePool) EnableElasticDiskInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_InstancePool) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_InstancePool) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -487,8 +495,8 @@ func (j *jsiiProxy_InstancePool) InstancePoolNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_InstancePool) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_InstancePool) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -542,6 +550,26 @@ func (j *jsiiProxy_InstancePool) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstancePool) NodeTypeFlexibility() InstancePoolNodeTypeFlexibilityOutputReference {
+	var returns InstancePoolNodeTypeFlexibilityOutputReference
+	_jsii_.Get(
+		j,
+		"nodeTypeFlexibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstancePool) NodeTypeFlexibilityInput() *InstancePoolNodeTypeFlexibility {
+	var returns *InstancePoolNodeTypeFlexibility
+	_jsii_.Get(
+		j,
+		"nodeTypeFlexibilityInput",
 		&returns,
 	)
 	return returns
@@ -607,11 +635,31 @@ func (j *jsiiProxy_InstancePool) PreloadedSparkVersionsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_InstancePool) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_InstancePool) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstancePool) ProviderConfig() InstancePoolProviderConfigOutputReference {
+	var returns InstancePoolProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstancePool) ProviderConfigInput() *InstancePoolProviderConfig {
+	var returns *InstancePoolProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -637,8 +685,8 @@ func (j *jsiiProxy_InstancePool) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_InstancePool) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_InstancePool) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -668,7 +716,7 @@ func (j *jsiiProxy_InstancePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool databricks_instance_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool databricks_instance_pool} Resource.
 func NewInstancePool(scope constructs.Construct, id *string, config *InstancePoolConfig) InstancePool {
 	_init_.Initialize()
 
@@ -678,7 +726,7 @@ func NewInstancePool(scope constructs.Construct, id *string, config *InstancePoo
 	j := jsiiProxy_InstancePool{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.instancePool.InstancePool",
+		"@cdktn/provider-databricks.instancePool.InstancePool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -686,12 +734,12 @@ func NewInstancePool(scope constructs.Construct, id *string, config *InstancePoo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool databricks_instance_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool databricks_instance_pool} Resource.
 func NewInstancePool_Override(i InstancePool, scope constructs.Construct, id *string, config *InstancePoolConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.instancePool.InstancePool",
+		"@cdktn/provider-databricks.instancePool.InstancePool",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -749,7 +797,7 @@ func (j *jsiiProxy_InstancePool)SetEnableElasticDisk(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_InstancePool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_InstancePool)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -801,7 +849,7 @@ func (j *jsiiProxy_InstancePool)SetInstancePoolName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_InstancePool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_InstancePool)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,7 +904,7 @@ func (j *jsiiProxy_InstancePool)SetPreloadedSparkVersions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_InstancePool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_InstancePool)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -875,17 +923,17 @@ func (j *jsiiProxy_InstancePool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a InstancePool resource upon running "cdktf plan <stack-name>".
-func InstancePool_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a InstancePool resource upon running "cdktn plan <stack-name>".
+func InstancePool_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateInstancePool_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.instancePool.InstancePool",
+		"@cdktn/provider-databricks.instancePool.InstancePool",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -920,7 +968,7 @@ func InstancePool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.instancePool.InstancePool",
+		"@cdktn/provider-databricks.instancePool.InstancePool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -939,7 +987,7 @@ func InstancePool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.instancePool.InstancePool",
+		"@cdktn/provider-databricks.instancePool.InstancePool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -958,7 +1006,7 @@ func InstancePool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.instancePool.InstancePool",
+		"@cdktn/provider-databricks.instancePool.InstancePool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -971,7 +1019,7 @@ func InstancePool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.instancePool.InstancePool",
+		"@cdktn/provider-databricks.instancePool.InstancePool",
 		"tfResourceType",
 		&returns,
 	)
@@ -1016,11 +1064,11 @@ func (i *jsiiProxy_InstancePool) GetAnyMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (i *jsiiProxy_InstancePool) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InstancePool) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -1157,7 +1205,7 @@ func (i *jsiiProxy_InstancePool) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_InstancePool) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_InstancePool) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1168,11 +1216,11 @@ func (i *jsiiProxy_InstancePool) ImportFrom(id *string, provider cdktf.Terraform
 	)
 }
 
-func (i *jsiiProxy_InstancePool) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InstancePool) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -1283,6 +1331,17 @@ func (i *jsiiProxy_InstancePool) PutInstancePoolFleetAttributes(value *InstanceP
 	)
 }
 
+func (i *jsiiProxy_InstancePool) PutNodeTypeFlexibility(value *InstancePoolNodeTypeFlexibility) {
+	if err := i.validatePutNodeTypeFlexibilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putNodeTypeFlexibility",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_InstancePool) PutPreloadedDockerImage(value interface{}) {
 	if err := i.validatePutPreloadedDockerImageParameters(value); err != nil {
 		panic(err)
@@ -1290,6 +1349,17 @@ func (i *jsiiProxy_InstancePool) PutPreloadedDockerImage(value interface{}) {
 	_jsii_.InvokeVoid(
 		i,
 		"putPreloadedDockerImage",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_InstancePool) PutProviderConfig(value *InstancePoolProviderConfig) {
+	if err := i.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putProviderConfig",
 		[]interface{}{value},
 	)
 }
@@ -1382,6 +1452,14 @@ func (i *jsiiProxy_InstancePool) ResetMinIdleInstances() {
 	)
 }
 
+func (i *jsiiProxy_InstancePool) ResetNodeTypeFlexibility() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetNodeTypeFlexibility",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_InstancePool) ResetNodeTypeId() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1410,6 +1488,14 @@ func (i *jsiiProxy_InstancePool) ResetPreloadedSparkVersions() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetPreloadedSparkVersions",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InstancePool) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

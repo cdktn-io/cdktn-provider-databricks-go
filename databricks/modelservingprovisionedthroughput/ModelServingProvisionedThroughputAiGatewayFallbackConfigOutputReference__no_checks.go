@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputAiGatewayFallbackConfigOutpu
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,11 +71,11 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputAiGatewayFallbackConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

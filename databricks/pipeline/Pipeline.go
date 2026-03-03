@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/pipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AllowDuplicateNames() interface{}
 	SetAllowDuplicateNames(val interface{})
 	AllowDuplicateNamesInput() interface{}
@@ -28,7 +28,7 @@ type Pipeline interface {
 	SetCause(val *string)
 	CauseInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Channel() *string
 	SetChannel(val *string)
 	ChannelInput() *string
@@ -78,9 +78,9 @@ type Pipeline interface {
 	Filters() PipelineFiltersOutputReference
 	FiltersInput() *PipelineFilters
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -103,9 +103,9 @@ type Pipeline interface {
 	Library() PipelineLibraryList
 	LibraryInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -117,9 +117,11 @@ type Pipeline interface {
 	SetPhoton(val interface{})
 	PhotonInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() PipelineProviderConfigOutputReference
+	ProviderConfigInput() *PipelineProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -155,7 +157,7 @@ type Pipeline interface {
 	SetTarget(val *string)
 	TargetInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -178,7 +180,7 @@ type Pipeline interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -196,9 +198,9 @@ type Pipeline interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -223,6 +225,7 @@ type Pipeline interface {
 	PutLatestUpdates(value interface{})
 	PutLibrary(value interface{})
 	PutNotification(value interface{})
+	PutProviderConfig(value *PipelineProviderConfig)
 	PutRestartWindow(value *PipelineRestartWindow)
 	PutRunAs(value *PipelineRunAs)
 	PutTimeouts(value *PipelineTimeouts)
@@ -257,6 +260,7 @@ type Pipeline interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPhoton()
+	ResetProviderConfig()
 	ResetRestartWindow()
 	ResetRootPath()
 	ResetRunAs()
@@ -286,7 +290,7 @@ type Pipeline interface {
 
 // The jsii proxy struct for Pipeline
 type jsiiProxy_Pipeline struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Pipeline) AllowDuplicateNames() interface{} {
@@ -369,8 +373,8 @@ func (j *jsiiProxy_Pipeline) CauseInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Pipeline) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Pipeline) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -679,8 +683,8 @@ func (j *jsiiProxy_Pipeline) FiltersInput() *PipelineFilters {
 	return returns
 }
 
-func (j *jsiiProxy_Pipeline) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Pipeline) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -849,8 +853,8 @@ func (j *jsiiProxy_Pipeline) LibraryInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Pipeline) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Pipeline) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -929,11 +933,31 @@ func (j *jsiiProxy_Pipeline) PhotonInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Pipeline) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Pipeline) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) ProviderConfig() PipelineProviderConfigOutputReference {
+	var returns PipelineProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) ProviderConfigInput() *PipelineProviderConfig {
+	var returns *PipelineProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -1159,8 +1183,8 @@ func (j *jsiiProxy_Pipeline) TargetInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Pipeline) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Pipeline) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -1270,7 +1294,7 @@ func (j *jsiiProxy_Pipeline) UsagePolicyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1280,7 +1304,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	j := jsiiProxy_Pipeline{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.Pipeline",
+		"@cdktn/provider-databricks.pipeline.Pipeline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1288,12 +1312,12 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.Pipeline",
+		"@cdktn/provider-databricks.pipeline.Pipeline",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -1461,7 +1485,7 @@ func (j *jsiiProxy_Pipeline)SetExpectedLastModified(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Pipeline)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Pipeline)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1502,7 +1526,7 @@ func (j *jsiiProxy_Pipeline)SetLastModified(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Pipeline)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Pipeline)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1535,7 +1559,7 @@ func (j *jsiiProxy_Pipeline)SetPhoton(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Pipeline)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Pipeline)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1664,17 +1688,17 @@ func (j *jsiiProxy_Pipeline)SetUsagePolicyId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Pipeline resource upon running "cdktf plan <stack-name>".
-func Pipeline_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Pipeline resource upon running "cdktn plan <stack-name>".
+func Pipeline_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validatePipeline_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.pipeline.Pipeline",
+		"@cdktn/provider-databricks.pipeline.Pipeline",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1709,7 +1733,7 @@ func Pipeline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.pipeline.Pipeline",
+		"@cdktn/provider-databricks.pipeline.Pipeline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1728,7 +1752,7 @@ func Pipeline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.pipeline.Pipeline",
+		"@cdktn/provider-databricks.pipeline.Pipeline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1747,7 +1771,7 @@ func Pipeline_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.pipeline.Pipeline",
+		"@cdktn/provider-databricks.pipeline.Pipeline",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1760,7 +1784,7 @@ func Pipeline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.pipeline.Pipeline",
+		"@cdktn/provider-databricks.pipeline.Pipeline",
 		"tfResourceType",
 		&returns,
 	)
@@ -1805,11 +1829,11 @@ func (p *jsiiProxy_Pipeline) GetAnyMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
-func (p *jsiiProxy_Pipeline) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_Pipeline) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1946,7 +1970,7 @@ func (p *jsiiProxy_Pipeline) HasResourceMove() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Pipeline) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (p *jsiiProxy_Pipeline) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1957,11 +1981,11 @@ func (p *jsiiProxy_Pipeline) ImportFrom(id *string, provider cdktf.TerraformProv
 	)
 }
 
-func (p *jsiiProxy_Pipeline) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_Pipeline) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -2123,6 +2147,17 @@ func (p *jsiiProxy_Pipeline) PutNotification(value interface{}) {
 	_jsii_.InvokeVoid(
 		p,
 		"putNotification",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_Pipeline) PutProviderConfig(value *PipelineProviderConfig) {
+	if err := p.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProviderConfig",
 		[]interface{}{value},
 	)
 }
@@ -2391,6 +2426,14 @@ func (p *jsiiProxy_Pipeline) ResetPhoton() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPhoton",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

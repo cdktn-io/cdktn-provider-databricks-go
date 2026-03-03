@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (g *jsiiProxy_GrantsGrantList) validateGetParameters(index *float64) error 
 	return nil
 }
 
-func (g *jsiiProxy_GrantsGrantList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GrantsGrantList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_GrantsGrantList) validateSetTerraformAttributeParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GrantsGrantList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GrantsGrantList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_GrantsGrantList) validateSetWrapsSetParameters(val *bool) err
 	return nil
 }
 
-func validateNewGrantsGrantListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGrantsGrantListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

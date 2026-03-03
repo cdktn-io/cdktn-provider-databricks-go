@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accesscontrolruleset
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet",
+		"@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet",
 		reflect.TypeOf((*AccessControlRuleSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -68,20 +68,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessControlRuleSet{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig",
+		"@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig",
 		reflect.TypeOf((*AccessControlRuleSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules",
+		"@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules",
 		reflect.TypeOf((*AccessControlRuleSetGrantRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRulesList",
+		"@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRulesList",
 		reflect.TypeOf((*AccessControlRuleSetGrantRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -98,12 +98,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessControlRuleSetGrantRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRulesOutputReference",
+		"@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRulesOutputReference",
 		reflect.TypeOf((*AccessControlRuleSetGrantRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,7 +135,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessControlRuleSetGrantRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

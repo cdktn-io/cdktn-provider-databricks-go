@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,11 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateInterpol
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validatePutProviderConfigParameters(value *DataDatabricksAlertsV2AlertsProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,11 +75,11 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataDatabricksAlertsV2AlertsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataDatabricksAlertsV2AlertsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

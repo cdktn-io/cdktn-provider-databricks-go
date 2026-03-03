@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (p *jsiiProxy_Permissions) validatePutAccessControlParameters(value interfa
 	return nil
 }
 
+func (p *jsiiProxy_Permissions) validatePutProviderConfigParameters(value *PermissionsProviderConfig) error {
+	return nil
+}
+
 func validatePermissions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -131,6 +135,10 @@ func (j *jsiiProxy_Permissions) validateSetDatabaseInstanceNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_Permissions) validateSetDatabaseProjectNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Permissions) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }
@@ -155,7 +163,7 @@ func (j *jsiiProxy_Permissions) validateSetJobIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Permissions) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Permissions) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsnccprivateendpointrule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRule",
+		"@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRule",
 		reflect.TypeOf((*MwsNccPrivateEndpointRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -39,6 +39,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "endpointNameInput", GoGetter: "EndpointNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "endpointService", GoGetter: "EndpointService"},
 			_jsii_.MemberProperty{JsiiProperty: "endpointServiceInput", GoGetter: "EndpointServiceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "errorMessage", GoGetter: "ErrorMessage"},
+			_jsii_.MemberProperty{JsiiProperty: "errorMessageInput", GoGetter: "ErrorMessageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -78,6 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEndpointName", GoMethod: "ResetEndpointName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEndpointService", GoMethod: "ResetEndpointService"},
+			_jsii_.MemberMethod{JsiiMethod: "resetErrorMessage", GoMethod: "ResetErrorMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupId", GoMethod: "ResetGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -108,12 +111,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsNccPrivateEndpointRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRuleConfig",
+		"@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRuleConfig",
 		reflect.TypeOf((*MwsNccPrivateEndpointRuleConfig)(nil)).Elem(),
 	)
 }

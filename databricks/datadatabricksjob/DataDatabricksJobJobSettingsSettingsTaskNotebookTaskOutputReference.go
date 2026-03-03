@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksjob/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BaseParameters() *map[string]*string
 	SetBaseParameters(val *map[string]*string)
 	BaseParametersInput() *map[string]*string
@@ -46,9 +46,9 @@ type DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WarehouseId() *string
 	SetWarehouseId(val *string)
 	WarehouseIdInput() *string
@@ -57,7 +57,7 @@ type DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference interfa
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,15 +73,15 @@ type DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBaseParameters()
 	ResetSource()
 	ResetWarehouseId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,7 +91,7 @@ type DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference interfa
 
 // The jsii proxy struct for DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference
 type jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) BaseParameters() *map[string]*string {
@@ -214,8 +214,8 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -245,7 +245,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputRef
 }
 
 
-func NewDataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference {
+func NewDataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -254,7 +254,7 @@ func NewDataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference(terr
 	j := jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,11 +262,11 @@ func NewDataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference(terr
 	return &j
 }
 
-func NewDataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference_Override(d DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference_Override(d DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -349,7 +349,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -400,11 +400,11 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -528,8 +528,8 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -541,11 +541,11 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -581,7 +581,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputRef
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

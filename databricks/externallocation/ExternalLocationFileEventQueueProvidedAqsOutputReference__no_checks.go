@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (e *jsiiProxy_ExternalLocationFileEventQueueProvidedAqsOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_ExternalLocationFileEventQueueProvidedAqsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExternalLocationFileEventQueueProvidedAqsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -79,11 +79,11 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueProvidedAqsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ExternalLocationFileEventQueueProvidedAqsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ExternalLocationFileEventQueueProvidedAqsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewExternalLocationFileEventQueueProvidedAqsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewExternalLocationFileEventQueueProvidedAqsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksqualitymonitorv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksqualitymonitorv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksqualitymonitorv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,6 +28,9 @@ type DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference interfa
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludedTableFullNames() *[]*string
+	SetExcludedTableFullNames(val *[]*string)
+	ExcludedTableFullNamesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksQualityMonitorV2AnomalyDetectionConfig
@@ -39,15 +42,15 @@ type DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +66,13 @@ type DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetExcludedTableFullNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +82,7 @@ type DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference interfa
 
 // The jsii proxy struct for DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference
 type jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -106,6 +110,26 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) ExcludedTableFullNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedTableFullNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) ExcludedTableFullNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedTableFullNamesInput",
 		&returns,
 	)
 	return returns
@@ -161,8 +185,8 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -172,7 +196,7 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 }
 
 
-func NewDataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference {
+func NewDataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -181,7 +205,7 @@ func NewDataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference(terr
 	j := jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -189,11 +213,11 @@ func NewDataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference(terr
 	return &j
 }
 
-func NewDataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference_Override(d DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference_Override(d DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -221,6 +245,17 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference)SetExcludedTableFullNames(val *[]*string) {
+	if err := j.validateSetExcludedTableFullNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludedTableFullNames",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference)SetInternalValue(val *DataDatabricksQualityMonitorV2AnomalyDetectionConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -243,7 +278,7 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -283,11 +318,11 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -411,8 +446,8 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -424,11 +459,11 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -440,7 +475,15 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) ResetExcludedTableFullNames() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludedTableFullNames",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

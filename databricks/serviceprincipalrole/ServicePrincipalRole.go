@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package serviceprincipalrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/serviceprincipalrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/serviceprincipalrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_role databricks_service_principal_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_role databricks_service_principal_role}.
 type ServicePrincipalRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,9 +32,9 @@ type ServicePrincipalRole interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -43,15 +43,15 @@ type ServicePrincipalRole interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type ServicePrincipalRole interface {
 	SetServicePrincipalId(val *string)
 	ServicePrincipalIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -78,7 +78,7 @@ type ServicePrincipalRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -96,9 +96,9 @@ type ServicePrincipalRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -132,11 +132,11 @@ type ServicePrincipalRole interface {
 
 // The jsii proxy struct for ServicePrincipalRole
 type jsiiProxy_ServicePrincipalRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_ServicePrincipalRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ServicePrincipalRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ServicePrincipalRole) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipalRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ServicePrincipalRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_ServicePrincipalRole) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipalRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ServicePrincipalRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_ServicePrincipalRole) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipalRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ServicePrincipalRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_ServicePrincipalRole) ServicePrincipalIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipalRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ServicePrincipalRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ServicePrincipalRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
 func NewServicePrincipalRole(scope constructs.Construct, id *string, config *ServicePrincipalRoleConfig) ServicePrincipalRole {
 	_init_.Initialize()
 
@@ -366,7 +366,7 @@ func NewServicePrincipalRole(scope constructs.Construct, id *string, config *Ser
 	j := jsiiProxy_ServicePrincipalRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
+		"@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,12 +374,12 @@ func NewServicePrincipalRole(scope constructs.Construct, id *string, config *Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
 func NewServicePrincipalRole_Override(s ServicePrincipalRole, scope constructs.Construct, id *string, config *ServicePrincipalRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
+		"@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ServicePrincipalRole)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicePrincipalRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -434,7 +434,7 @@ func (j *jsiiProxy_ServicePrincipalRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicePrincipalRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +445,7 @@ func (j *jsiiProxy_ServicePrincipalRole)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicePrincipalRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,17 +486,17 @@ func (j *jsiiProxy_ServicePrincipalRole)SetServicePrincipalId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ServicePrincipalRole resource upon running "cdktf plan <stack-name>".
-func ServicePrincipalRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ServicePrincipalRole resource upon running "cdktn plan <stack-name>".
+func ServicePrincipalRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateServicePrincipalRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
+		"@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -531,7 +531,7 @@ func ServicePrincipalRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
+		"@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func ServicePrincipalRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
+		"@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func ServicePrincipalRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
+		"@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func ServicePrincipalRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
+		"@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -627,11 +627,11 @@ func (s *jsiiProxy_ServicePrincipalRole) GetAnyMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (s *jsiiProxy_ServicePrincipalRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServicePrincipalRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -768,7 +768,7 @@ func (s *jsiiProxy_ServicePrincipalRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ServicePrincipalRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_ServicePrincipalRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -779,11 +779,11 @@ func (s *jsiiProxy_ServicePrincipalRole) ImportFrom(id *string, provider cdktf.T
 	)
 }
 
-func (s *jsiiProxy_ServicePrincipalRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServicePrincipalRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

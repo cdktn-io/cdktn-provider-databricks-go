@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package featureengineeringfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/featureengineeringfeature/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringfeature/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FeatureEngineeringFeatureFunctionExtraParametersList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type FeatureEngineeringFeatureFunctionExtraParametersList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type FeatureEngineeringFeatureFunctionExtraParametersList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) FeatureEngineeringFeatureFunctionExtraParametersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type FeatureEngineeringFeatureFunctionExtraParametersList interface {
 
 // The jsii proxy struct for FeatureEngineeringFeatureFunctionExtraParametersList
 type jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) WrapsSe
 }
 
 
-func NewFeatureEngineeringFeatureFunctionExtraParametersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureEngineeringFeatureFunctionExtraParametersList {
+func NewFeatureEngineeringFeatureFunctionExtraParametersList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureEngineeringFeatureFunctionExtraParametersList {
 	_init_.Initialize()
 
 	if err := validateNewFeatureEngineeringFeatureFunctionExtraParametersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewFeatureEngineeringFeatureFunctionExtraParametersList(terraformResource c
 	j := jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParametersList",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewFeatureEngineeringFeatureFunctionExtraParametersList(terraformResource c
 	return &j
 }
 
-func NewFeatureEngineeringFeatureFunctionExtraParametersList_Override(f FeatureEngineeringFeatureFunctionExtraParametersList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewFeatureEngineeringFeatureFunctionExtraParametersList_Override(f FeatureEngineeringFeatureFunctionExtraParametersList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParametersList",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList)SetTerra
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList)SetWraps
 	)
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := f.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		f,
@@ -231,7 +231,7 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) Get(ind
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -87,6 +87,10 @@ func (m *jsiiProxy_ModelServingProvisionedThroughput) validatePutEmailNotificati
 	return nil
 }
 
+func (m *jsiiProxy_ModelServingProvisionedThroughput) validatePutProviderConfigParameters(value *ModelServingProvisionedThroughputProviderConfig) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingProvisionedThroughput) validatePutTagsParameters(value interface{}) error {
 	return nil
 }
@@ -127,7 +131,7 @@ func (j *jsiiProxy_ModelServingProvisionedThroughput) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ModelServingProvisionedThroughput) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ModelServingProvisionedThroughput) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (s *jsiiProxy_SecretScope) validatePutKeyvaultMetadataParameters(value *Sec
 	return nil
 }
 
+func (s *jsiiProxy_SecretScope) validatePutProviderConfigParameters(value *SecretScopeProviderConfig) error {
+	return nil
+}
+
 func validateSecretScope_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -115,7 +119,7 @@ func (j *jsiiProxy_SecretScope) validateSetInitialManagePrincipalParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_SecretScope) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecretScope) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

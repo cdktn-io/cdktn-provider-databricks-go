@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickssqlwarehouse
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickssqlwarehouse/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickssqlwarehouse/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksSqlWarehouseHealthFailureReasonOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Code() *string
 	SetCode(val *string)
 	CodeInput() *string
@@ -43,9 +43,9 @@ type DataDatabricksSqlWarehouseHealthFailureReasonOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -54,7 +54,7 @@ type DataDatabricksSqlWarehouseHealthFailureReasonOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type DataDatabricksSqlWarehouseHealthFailureReasonOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCode()
 	ResetParameters()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type DataDatabricksSqlWarehouseHealthFailureReasonOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksSqlWarehouseHealthFailureReasonOutputReference
 type jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) Code() *string {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference)
 }
 
 
-func NewDataDatabricksSqlWarehouseHealthFailureReasonOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksSqlWarehouseHealthFailureReasonOutputReference {
+func NewDataDatabricksSqlWarehouseHealthFailureReasonOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksSqlWarehouseHealthFailureReasonOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksSqlWarehouseHealthFailureReasonOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewDataDatabricksSqlWarehouseHealthFailureReasonOutputReference(terraformRe
 	j := jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksSqlWarehouse.DataDatabricksSqlWarehouseHealthFailureReasonOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksSqlWarehouse.DataDatabricksSqlWarehouseHealthFailureReasonOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewDataDatabricksSqlWarehouseHealthFailureReasonOutputReference(terraformRe
 	return &j
 }
 
-func NewDataDatabricksSqlWarehouseHealthFailureReasonOutputReference_Override(d DataDatabricksSqlWarehouseHealthFailureReasonOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksSqlWarehouseHealthFailureReasonOutputReference_Override(d DataDatabricksSqlWarehouseHealthFailureReasonOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksSqlWarehouse.DataDatabricksSqlWarehouseHealthFailureReasonOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksSqlWarehouse.DataDatabricksSqlWarehouseHealthFailureReasonOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -494,8 +494,8 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -507,11 +507,11 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -547,7 +547,7 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference)
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthFailureReasonOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package query
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/query/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/query/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query databricks_query}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query databricks_query}.
 type Query interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	ApplyAutoLimit() interface{}
 	SetApplyAutoLimit(val interface{})
 	ApplyAutoLimitInput() interface{}
@@ -22,7 +22,7 @@ type Query interface {
 	SetCatalog(val *string)
 	CatalogInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -45,9 +45,9 @@ type Query interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -55,9 +55,9 @@ type Query interface {
 	Id() *string
 	LastModifierUserName() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LifecycleState() *string
 	// The tree node.
 	Node() constructs.Node
@@ -70,9 +70,11 @@ type Query interface {
 	SetParentPath(val *string)
 	ParentPathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() QueryProviderConfigOutputReference
+	ProviderConfigInput() *QueryProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -92,7 +94,7 @@ type Query interface {
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -109,7 +111,7 @@ type Query interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -127,9 +129,9 @@ type Query interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -145,6 +147,7 @@ type Query interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutParameter(value interface{})
+	PutProviderConfig(value *QueryProviderConfig)
 	ResetApplyAutoLimit()
 	ResetCatalog()
 	ResetDescription()
@@ -154,6 +157,7 @@ type Query interface {
 	ResetOwnerUserName()
 	ResetParameter()
 	ResetParentPath()
+	ResetProviderConfig()
 	ResetRunAsMode()
 	ResetSchema()
 	ResetTags()
@@ -172,7 +176,7 @@ type Query interface {
 
 // The jsii proxy struct for Query
 type jsiiProxy_Query struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Query) ApplyAutoLimit() interface{} {
@@ -215,8 +219,8 @@ func (j *jsiiProxy_Query) CatalogInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Query) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Query) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -315,8 +319,8 @@ func (j *jsiiProxy_Query) DisplayNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Query) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Query) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -365,8 +369,8 @@ func (j *jsiiProxy_Query) LastModifierUserName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Query) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Query) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -455,11 +459,31 @@ func (j *jsiiProxy_Query) ParentPathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Query) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Query) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Query) ProviderConfig() QueryProviderConfigOutputReference {
+	var returns QueryProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Query) ProviderConfigInput() *QueryProviderConfig {
+	var returns *QueryProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -565,8 +589,8 @@ func (j *jsiiProxy_Query) TagsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Query) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Query) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -626,7 +650,7 @@ func (j *jsiiProxy_Query) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query databricks_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query databricks_query} Resource.
 func NewQuery(scope constructs.Construct, id *string, config *QueryConfig) Query {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewQuery(scope constructs.Construct, id *string, config *QueryConfig) Query
 	j := jsiiProxy_Query{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.query.Query",
+		"@cdktn/provider-databricks.query.Query",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -644,12 +668,12 @@ func NewQuery(scope constructs.Construct, id *string, config *QueryConfig) Query
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query databricks_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query databricks_query} Resource.
 func NewQuery_Override(q Query, scope constructs.Construct, id *string, config *QueryConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.query.Query",
+		"@cdktn/provider-databricks.query.Query",
 		[]interface{}{scope, id, config},
 		q,
 	)
@@ -729,7 +753,7 @@ func (j *jsiiProxy_Query)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Query)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Query)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -737,7 +761,7 @@ func (j *jsiiProxy_Query)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Query)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Query)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +794,7 @@ func (j *jsiiProxy_Query)SetParentPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Query)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Query)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -844,17 +868,17 @@ func (j *jsiiProxy_Query)SetWarehouseId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Query resource upon running "cdktf plan <stack-name>".
-func Query_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Query resource upon running "cdktn plan <stack-name>".
+func Query_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateQuery_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.query.Query",
+		"@cdktn/provider-databricks.query.Query",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -889,7 +913,7 @@ func Query_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.query.Query",
+		"@cdktn/provider-databricks.query.Query",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -908,7 +932,7 @@ func Query_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.query.Query",
+		"@cdktn/provider-databricks.query.Query",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -927,7 +951,7 @@ func Query_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.query.Query",
+		"@cdktn/provider-databricks.query.Query",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -940,7 +964,7 @@ func Query_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.query.Query",
+		"@cdktn/provider-databricks.query.Query",
 		"tfResourceType",
 		&returns,
 	)
@@ -985,11 +1009,11 @@ func (q *jsiiProxy_Query) GetAnyMapAttribute(terraformAttribute *string) *map[st
 	return returns
 }
 
-func (q *jsiiProxy_Query) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_Query) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -1126,7 +1150,7 @@ func (q *jsiiProxy_Query) HasResourceMove() interface{} {
 	return returns
 }
 
-func (q *jsiiProxy_Query) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (q *jsiiProxy_Query) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := q.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1137,11 +1161,11 @@ func (q *jsiiProxy_Query) ImportFrom(id *string, provider cdktf.TerraformProvide
 	)
 }
 
-func (q *jsiiProxy_Query) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_Query) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -1208,6 +1232,17 @@ func (q *jsiiProxy_Query) PutParameter(value interface{}) {
 	)
 }
 
+func (q *jsiiProxy_Query) PutProviderConfig(value *QueryProviderConfig) {
+	if err := q.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (q *jsiiProxy_Query) ResetApplyAutoLimit() {
 	_jsii_.InvokeVoid(
 		q,
@@ -1260,6 +1295,14 @@ func (q *jsiiProxy_Query) ResetParentPath() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetParentPath",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_Query) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -1,17 +1,17 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 
 type JobTaskForEachTaskTaskDashboardTaskSubscription struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#custom_subject Job#custom_subject}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#custom_subject Job#custom_subject}.
 	CustomSubject *string `field:"optional" json:"customSubject" yaml:"customSubject"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#paused Job#paused}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#paused Job#paused}.
 	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
 	// subscribers block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#subscribers Job#subscribers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#subscribers Job#subscribers}
 	Subscribers interface{} `field:"optional" json:"subscribers" yaml:"subscribers"`
 }
 

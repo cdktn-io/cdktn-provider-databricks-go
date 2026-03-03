@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package permissions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/permissions/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/permissions/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions databricks_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions databricks_permissions}.
 type Permissions interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccessControl() PermissionsAccessControlList
 	AccessControlInput() interface{}
 	AlertV2Id() *string
@@ -27,7 +27,7 @@ type Permissions interface {
 	SetAuthorization(val *string)
 	AuthorizationInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
@@ -50,6 +50,9 @@ type Permissions interface {
 	DatabaseInstanceName() *string
 	SetDatabaseInstanceName(val *string)
 	DatabaseInstanceNameInput() *string
+	DatabaseProjectName() *string
+	SetDatabaseProjectName(val *string)
+	DatabaseProjectNameInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,9 +67,9 @@ type Permissions interface {
 	SetExperimentId(val *string)
 	ExperimentIdInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -81,9 +84,9 @@ type Permissions interface {
 	SetJobId(val *string)
 	JobIdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	NotebookId() *string
@@ -99,9 +102,11 @@ type Permissions interface {
 	SetPipelineId(val *string)
 	PipelineIdInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() PermissionsProviderConfigOutputReference
+	ProviderConfigInput() *PermissionsProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -133,7 +138,7 @@ type Permissions interface {
 	SetSqlQueryId(val *string)
 	SqlQueryIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -155,7 +160,7 @@ type Permissions interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -173,9 +178,9 @@ type Permissions interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -191,6 +196,7 @@ type Permissions interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAccessControl(value interface{})
+	PutProviderConfig(value *PermissionsProviderConfig)
 	ResetAlertV2Id()
 	ResetAppName()
 	ResetAuthorization()
@@ -198,6 +204,7 @@ type Permissions interface {
 	ResetClusterPolicyId()
 	ResetDashboardId()
 	ResetDatabaseInstanceName()
+	ResetDatabaseProjectName()
 	ResetDirectoryId()
 	ResetDirectoryPath()
 	ResetExperimentId()
@@ -211,6 +218,7 @@ type Permissions interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPipelineId()
+	ResetProviderConfig()
 	ResetRegisteredModelId()
 	ResetRepoId()
 	ResetRepoPath()
@@ -237,7 +245,7 @@ type Permissions interface {
 
 // The jsii proxy struct for Permissions
 type jsiiProxy_Permissions struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Permissions) AccessControl() PermissionsAccessControlList {
@@ -320,8 +328,8 @@ func (j *jsiiProxy_Permissions) AuthorizationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Permissions) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Permissions) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -440,6 +448,26 @@ func (j *jsiiProxy_Permissions) DatabaseInstanceNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Permissions) DatabaseProjectName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseProjectName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) DatabaseProjectNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseProjectNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Permissions) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -510,8 +538,8 @@ func (j *jsiiProxy_Permissions) ExperimentIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Permissions) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Permissions) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -600,8 +628,8 @@ func (j *jsiiProxy_Permissions) JobIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Permissions) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Permissions) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -700,11 +728,31 @@ func (j *jsiiProxy_Permissions) PipelineIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Permissions) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Permissions) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) ProviderConfig() PermissionsProviderConfigOutputReference {
+	var returns PermissionsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) ProviderConfigInput() *PermissionsProviderConfig {
+	var returns *PermissionsProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -890,8 +938,8 @@ func (j *jsiiProxy_Permissions) SqlQueryIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Permissions) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Permissions) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -981,7 +1029,7 @@ func (j *jsiiProxy_Permissions) WorkspaceFilePathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions(scope constructs.Construct, id *string, config *PermissionsConfig) Permissions {
 	_init_.Initialize()
 
@@ -991,7 +1039,7 @@ func NewPermissions(scope constructs.Construct, id *string, config *PermissionsC
 	j := jsiiProxy_Permissions{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.permissions.Permissions",
+		"@cdktn/provider-databricks.permissions.Permissions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -999,12 +1047,12 @@ func NewPermissions(scope constructs.Construct, id *string, config *PermissionsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions_Override(p Permissions, scope constructs.Construct, id *string, config *PermissionsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.permissions.Permissions",
+		"@cdktn/provider-databricks.permissions.Permissions",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -1109,6 +1157,17 @@ func (j *jsiiProxy_Permissions)SetDatabaseInstanceName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Permissions)SetDatabaseProjectName(val *string) {
+	if err := j.validateSetDatabaseProjectNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseProjectName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Permissions)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1150,7 +1209,7 @@ func (j *jsiiProxy_Permissions)SetExperimentId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Permissions)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Permissions)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1191,7 +1250,7 @@ func (j *jsiiProxy_Permissions)SetJobId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Permissions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Permissions)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1246,7 +1305,7 @@ func (j *jsiiProxy_Permissions)SetPipelineId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Permissions)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Permissions)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1386,17 +1445,17 @@ func (j *jsiiProxy_Permissions)SetWorkspaceFilePath(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Permissions resource upon running "cdktf plan <stack-name>".
-func Permissions_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Permissions resource upon running "cdktn plan <stack-name>".
+func Permissions_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validatePermissions_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.permissions.Permissions",
+		"@cdktn/provider-databricks.permissions.Permissions",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1431,7 +1490,7 @@ func Permissions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.permissions.Permissions",
+		"@cdktn/provider-databricks.permissions.Permissions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1450,7 +1509,7 @@ func Permissions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.permissions.Permissions",
+		"@cdktn/provider-databricks.permissions.Permissions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1469,7 +1528,7 @@ func Permissions_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.permissions.Permissions",
+		"@cdktn/provider-databricks.permissions.Permissions",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1482,7 +1541,7 @@ func Permissions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.permissions.Permissions",
+		"@cdktn/provider-databricks.permissions.Permissions",
 		"tfResourceType",
 		&returns,
 	)
@@ -1527,11 +1586,11 @@ func (p *jsiiProxy_Permissions) GetAnyMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (p *jsiiProxy_Permissions) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_Permissions) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1668,7 +1727,7 @@ func (p *jsiiProxy_Permissions) HasResourceMove() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Permissions) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (p *jsiiProxy_Permissions) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1679,11 +1738,11 @@ func (p *jsiiProxy_Permissions) ImportFrom(id *string, provider cdktf.TerraformP
 	)
 }
 
-func (p *jsiiProxy_Permissions) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_Permissions) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1750,6 +1809,17 @@ func (p *jsiiProxy_Permissions) PutAccessControl(value interface{}) {
 	)
 }
 
+func (p *jsiiProxy_Permissions) PutProviderConfig(value *PermissionsProviderConfig) {
+	if err := p.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_Permissions) ResetAlertV2Id() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1802,6 +1872,14 @@ func (p *jsiiProxy_Permissions) ResetDatabaseInstanceName() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetDatabaseInstanceName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Permissions) ResetDatabaseProjectName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDatabaseProjectName",
 		nil, // no parameters
 	)
 }
@@ -1890,6 +1968,14 @@ func (p *jsiiProxy_Permissions) ResetPipelineId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPipelineId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Permissions) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

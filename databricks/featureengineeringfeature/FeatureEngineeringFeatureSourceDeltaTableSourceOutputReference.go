@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package featureengineeringfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/featureengineeringfeature/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringfeature/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeseriesColumn() *string
 	SetTimeseriesColumn(val *string)
 	TimeseriesColumnInput() *string
@@ -54,7 +54,7 @@ type FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference interface {
 
 // The jsii proxy struct for FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference
 type jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 }
 
 
-func NewFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference {
+func NewFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference(terraform
 	j := jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference(terraform
 	return &j
 }
 
-func NewFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference_Override(f FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference_Override(f FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -491,8 +491,8 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -504,11 +504,11 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -520,7 +520,7 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

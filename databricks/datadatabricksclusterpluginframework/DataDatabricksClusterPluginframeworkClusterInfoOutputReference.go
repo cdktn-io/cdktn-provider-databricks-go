@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksclusterpluginframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksclusterpluginframework/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusterpluginframework/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Autoscale() DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList
 	AutoscaleInput() interface{}
 	AutoterminationMinutes() *float64
@@ -75,6 +75,8 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	DriverInstancePoolId() *string
 	SetDriverInstancePoolId(val *string)
 	DriverInstancePoolIdInput() *string
+	DriverNodeTypeFlexibility() DataDatabricksClusterPluginframeworkClusterInfoDriverNodeTypeFlexibilityList
+	DriverNodeTypeFlexibilityInput() interface{}
 	DriverNodeTypeId() *string
 	SetDriverNodeTypeId(val *string)
 	DriverNodeTypeIdInput() *string
@@ -166,15 +168,17 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TotalInitialRemoteDiskSize() *float64
 	SetTotalInitialRemoteDiskSize(val *float64)
 	TotalInitialRemoteDiskSizeInput() *float64
 	UseMlRuntime() interface{}
 	SetUseMlRuntime(val interface{})
 	UseMlRuntimeInput() interface{}
+	WorkerNodeTypeFlexibility() DataDatabricksClusterPluginframeworkClusterInfoWorkerNodeTypeFlexibilityList
+	WorkerNodeTypeFlexibilityInput() interface{}
 	WorkloadType() DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList
 	WorkloadTypeInput() interface{}
 	// Experimental.
@@ -182,7 +186,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -198,9 +202,9 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAutoscale(value interface{})
 	PutAwsAttributes(value interface{})
 	PutAzureAttributes(value interface{})
@@ -208,11 +212,13 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	PutClusterLogStatus(value interface{})
 	PutDockerImage(value interface{})
 	PutDriver(value interface{})
+	PutDriverNodeTypeFlexibility(value interface{})
 	PutExecutors(value interface{})
 	PutGcpAttributes(value interface{})
 	PutInitScripts(value interface{})
 	PutSpec(value interface{})
 	PutTerminationReason(value interface{})
+	PutWorkerNodeTypeFlexibility(value interface{})
 	PutWorkloadType(value interface{})
 	ResetAutoscale()
 	ResetAutoterminationMinutes()
@@ -232,6 +238,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	ResetDockerImage()
 	ResetDriver()
 	ResetDriverInstancePoolId()
+	ResetDriverNodeTypeFlexibility()
 	ResetDriverNodeTypeId()
 	ResetEnableElasticDisk()
 	ResetEnableLocalDiskEncryption()
@@ -263,10 +270,11 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	ResetTerminationReason()
 	ResetTotalInitialRemoteDiskSize()
 	ResetUseMlRuntime()
+	ResetWorkerNodeTypeFlexibility()
 	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -276,7 +284,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksClusterPluginframeworkClusterInfoOutputReference
 type jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) Autoscale() DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList {
@@ -664,6 +672,26 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	_jsii_.Get(
 		j,
 		"driverInstancePoolIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) DriverNodeTypeFlexibility() DataDatabricksClusterPluginframeworkClusterInfoDriverNodeTypeFlexibilityList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoDriverNodeTypeFlexibilityList
+	_jsii_.Get(
+		j,
+		"driverNodeTypeFlexibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) DriverNodeTypeFlexibilityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"driverNodeTypeFlexibilityInput",
 		&returns,
 	)
 	return returns
@@ -1279,8 +1307,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -1329,6 +1357,26 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) WorkerNodeTypeFlexibility() DataDatabricksClusterPluginframeworkClusterInfoWorkerNodeTypeFlexibilityList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoWorkerNodeTypeFlexibilityList
+	_jsii_.Get(
+		j,
+		"workerNodeTypeFlexibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) WorkerNodeTypeFlexibilityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workerNodeTypeFlexibilityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) WorkloadType() DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList {
 	var returns DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList
 	_jsii_.Get(
@@ -1350,7 +1398,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoOutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -1359,7 +1407,7 @@ func NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference(terraform
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -1367,11 +1415,11 @@ func NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference(terraform
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -1806,7 +1854,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1868,11 +1916,11 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1996,8 +2044,8 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -2009,11 +2057,11 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -2102,6 +2150,17 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutDriverNodeTypeFlexibility(value interface{}) {
+	if err := d.validatePutDriverNodeTypeFlexibilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDriverNodeTypeFlexibility",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutExecutors(value interface{}) {
 	if err := d.validatePutExecutorsParameters(value); err != nil {
 		panic(err)
@@ -2153,6 +2212,17 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"putTerminationReason",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutWorkerNodeTypeFlexibility(value interface{}) {
+	if err := d.validatePutWorkerNodeTypeFlexibilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putWorkerNodeTypeFlexibility",
 		[]interface{}{value},
 	)
 }
@@ -2308,6 +2378,14 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetDriverInstancePoolId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) ResetDriverNodeTypeFlexibility() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDriverNodeTypeFlexibility",
 		nil, // no parameters
 	)
 }
@@ -2560,6 +2638,14 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) ResetWorkerNodeTypeFlexibility() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkerNodeTypeFlexibility",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) ResetWorkloadType() {
 	_jsii_.InvokeVoid(
 		d,
@@ -2568,7 +2654,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package registeredmodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/registeredmodel/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/registeredmodel/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model databricks_registered_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model databricks_registered_model}.
 type RegisteredModel interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Aliases() RegisteredModelAliasesList
 	AliasesInput() interface{}
 	BrowseOnly() interface{}
@@ -24,7 +24,7 @@ type RegisteredModel interface {
 	SetCatalogName(val *string)
 	CatalogNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -49,9 +49,9 @@ type RegisteredModel interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -63,9 +63,9 @@ type RegisteredModel interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetastoreId() *string
 	SetMetastoreId(val *string)
 	MetastoreIdInput() *string
@@ -78,9 +78,11 @@ type RegisteredModel interface {
 	SetOwner(val *string)
 	OwnerInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() RegisteredModelProviderConfigOutputReference
+	ProviderConfigInput() *RegisteredModelProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -94,7 +96,7 @@ type RegisteredModel interface {
 	SetStorageLocation(val *string)
 	StorageLocationInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -113,7 +115,7 @@ type RegisteredModel interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -131,9 +133,9 @@ type RegisteredModel interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -149,6 +151,7 @@ type RegisteredModel interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAliases(value interface{})
+	PutProviderConfig(value *RegisteredModelProviderConfig)
 	ResetAliases()
 	ResetBrowseOnly()
 	ResetCatalogName()
@@ -163,6 +166,7 @@ type RegisteredModel interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetProviderConfig()
 	ResetSchemaName()
 	ResetStorageLocation()
 	ResetUpdatedAt()
@@ -182,7 +186,7 @@ type RegisteredModel interface {
 
 // The jsii proxy struct for RegisteredModel
 type jsiiProxy_RegisteredModel struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_RegisteredModel) Aliases() RegisteredModelAliasesList {
@@ -245,8 +249,8 @@ func (j *jsiiProxy_RegisteredModel) CatalogNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegisteredModel) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_RegisteredModel) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -355,8 +359,8 @@ func (j *jsiiProxy_RegisteredModel) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_RegisteredModel) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_RegisteredModel) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -425,8 +429,8 @@ func (j *jsiiProxy_RegisteredModel) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegisteredModel) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_RegisteredModel) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -505,11 +509,31 @@ func (j *jsiiProxy_RegisteredModel) OwnerInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegisteredModel) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_RegisteredModel) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) ProviderConfig() RegisteredModelProviderConfigOutputReference {
+	var returns RegisteredModelProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) ProviderConfigInput() *RegisteredModelProviderConfig {
+	var returns *RegisteredModelProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -575,8 +599,8 @@ func (j *jsiiProxy_RegisteredModel) StorageLocationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegisteredModel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_RegisteredModel) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -646,7 +670,7 @@ func (j *jsiiProxy_RegisteredModel) UpdatedByInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model databricks_registered_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model databricks_registered_model} Resource.
 func NewRegisteredModel(scope constructs.Construct, id *string, config *RegisteredModelConfig) RegisteredModel {
 	_init_.Initialize()
 
@@ -656,7 +680,7 @@ func NewRegisteredModel(scope constructs.Construct, id *string, config *Register
 	j := jsiiProxy_RegisteredModel{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.registeredModel.RegisteredModel",
+		"@cdktn/provider-databricks.registeredModel.RegisteredModel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -664,12 +688,12 @@ func NewRegisteredModel(scope constructs.Construct, id *string, config *Register
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model databricks_registered_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model databricks_registered_model} Resource.
 func NewRegisteredModel_Override(r RegisteredModel, scope constructs.Construct, id *string, config *RegisteredModelConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.registeredModel.RegisteredModel",
+		"@cdktn/provider-databricks.registeredModel.RegisteredModel",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -760,7 +784,7 @@ func (j *jsiiProxy_RegisteredModel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RegisteredModel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RegisteredModel)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -790,7 +814,7 @@ func (j *jsiiProxy_RegisteredModel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegisteredModel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RegisteredModel)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +858,7 @@ func (j *jsiiProxy_RegisteredModel)SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegisteredModel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RegisteredModel)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -897,17 +921,17 @@ func (j *jsiiProxy_RegisteredModel)SetUpdatedBy(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a RegisteredModel resource upon running "cdktf plan <stack-name>".
-func RegisteredModel_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a RegisteredModel resource upon running "cdktn plan <stack-name>".
+func RegisteredModel_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateRegisteredModel_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.registeredModel.RegisteredModel",
+		"@cdktn/provider-databricks.registeredModel.RegisteredModel",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -942,7 +966,7 @@ func RegisteredModel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.registeredModel.RegisteredModel",
+		"@cdktn/provider-databricks.registeredModel.RegisteredModel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -961,7 +985,7 @@ func RegisteredModel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.registeredModel.RegisteredModel",
+		"@cdktn/provider-databricks.registeredModel.RegisteredModel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -980,7 +1004,7 @@ func RegisteredModel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.registeredModel.RegisteredModel",
+		"@cdktn/provider-databricks.registeredModel.RegisteredModel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -993,7 +1017,7 @@ func RegisteredModel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.registeredModel.RegisteredModel",
+		"@cdktn/provider-databricks.registeredModel.RegisteredModel",
 		"tfResourceType",
 		&returns,
 	)
@@ -1038,11 +1062,11 @@ func (r *jsiiProxy_RegisteredModel) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (r *jsiiProxy_RegisteredModel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RegisteredModel) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -1179,7 +1203,7 @@ func (r *jsiiProxy_RegisteredModel) HasResourceMove() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RegisteredModel) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (r *jsiiProxy_RegisteredModel) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1190,11 +1214,11 @@ func (r *jsiiProxy_RegisteredModel) ImportFrom(id *string, provider cdktf.Terraf
 	)
 }
 
-func (r *jsiiProxy_RegisteredModel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RegisteredModel) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -1257,6 +1281,17 @@ func (r *jsiiProxy_RegisteredModel) PutAliases(value interface{}) {
 	_jsii_.InvokeVoid(
 		r,
 		"putAliases",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) PutProviderConfig(value *RegisteredModelProviderConfig) {
+	if err := r.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putProviderConfig",
 		[]interface{}{value},
 	)
 }
@@ -1353,6 +1388,14 @@ func (r *jsiiProxy_RegisteredModel) ResetOwner() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

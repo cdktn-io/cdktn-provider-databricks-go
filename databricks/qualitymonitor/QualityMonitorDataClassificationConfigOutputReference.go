@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package qualitymonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/qualitymonitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/qualitymonitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type QualityMonitorDataClassificationConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type QualityMonitorDataClassificationConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type QualityMonitorDataClassificationConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type QualityMonitorDataClassificationConfigOutputReference interface {
 
 // The jsii proxy struct for QualityMonitorDataClassificationConfigOutputReference
 type jsiiProxy_QualityMonitorDataClassificationConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) Terraf
 }
 
 
-func NewQualityMonitorDataClassificationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorDataClassificationConfigOutputReference {
+func NewQualityMonitorDataClassificationConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorDataClassificationConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewQualityMonitorDataClassificationConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -183,7 +183,7 @@ func NewQualityMonitorDataClassificationConfigOutputReference(terraformResource 
 	j := jsiiProxy_QualityMonitorDataClassificationConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewQualityMonitorDataClassificationConfigOutputReference(terraformResource 
 	return &j
 }
 
-func NewQualityMonitorDataClassificationConfigOutputReference_Override(q QualityMonitorDataClassificationConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewQualityMonitorDataClassificationConfigOutputReference_Override(q QualityMonitorDataClassificationConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
@@ -256,7 +256,7 @@ func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) GetAny
 	return returns
 }
 
-func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -424,8 +424,8 @@ func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) GetStr
 	return returns
 }
 
-func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -437,11 +437,11 @@ func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) Interp
 	return returns
 }
 
-func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -461,7 +461,7 @@ func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) ResetE
 	)
 }
 
-func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

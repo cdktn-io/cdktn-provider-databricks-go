@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,10 @@ func (d *jsiiProxy_DatabaseDatabaseCatalog) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseDatabaseCatalog) validatePutProviderConfigParameters(value *DatabaseDatabaseCatalogProviderConfig) error {
+	return nil
+}
+
 func validateDatabaseDatabaseCatalog_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -111,7 +115,7 @@ func (j *jsiiProxy_DatabaseDatabaseCatalog) validateSetDatabaseNameParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseDatabaseCatalog) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatabaseDatabaseCatalog) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

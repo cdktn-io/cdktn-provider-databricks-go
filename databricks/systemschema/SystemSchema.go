@@ -1,23 +1,23 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package systemschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/systemschema/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/systemschema/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/system_schema databricks_system_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/system_schema databricks_system_schema}.
 type SystemSchema interface {
-	cdktf.TerraformResource
-	AutoEnabled() cdktf.IResolvable
+	cdktn.TerraformResource
+	AutoEnabled() cdktn.IResolvable
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -33,9 +33,9 @@ type SystemSchema interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -45,16 +45,18 @@ type SystemSchema interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetastoreId() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() SystemSchemaProviderConfigOutputReference
+	ProviderConfigInput() *SystemSchemaProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -66,7 +68,7 @@ type SystemSchema interface {
 	SchemaInput() *string
 	State() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -79,7 +81,7 @@ type SystemSchema interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -97,9 +99,9 @@ type SystemSchema interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -114,10 +116,12 @@ type SystemSchema interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *SystemSchemaProviderConfig)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -133,11 +137,11 @@ type SystemSchema interface {
 
 // The jsii proxy struct for SystemSchema
 type jsiiProxy_SystemSchema struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_SystemSchema) AutoEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_SystemSchema) AutoEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"autoEnabled",
@@ -146,8 +150,8 @@ func (j *jsiiProxy_SystemSchema) AutoEnabled() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_SystemSchema) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SystemSchema) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -196,8 +200,8 @@ func (j *jsiiProxy_SystemSchema) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SystemSchema) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SystemSchema) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -256,8 +260,8 @@ func (j *jsiiProxy_SystemSchema) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SystemSchema) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SystemSchema) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -286,11 +290,31 @@ func (j *jsiiProxy_SystemSchema) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SystemSchema) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SystemSchema) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SystemSchema) ProviderConfig() SystemSchemaProviderConfigOutputReference {
+	var returns SystemSchemaProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SystemSchema) ProviderConfigInput() *SystemSchemaProviderConfig {
+	var returns *SystemSchemaProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -346,8 +370,8 @@ func (j *jsiiProxy_SystemSchema) State() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SystemSchema) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SystemSchema) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -377,7 +401,7 @@ func (j *jsiiProxy_SystemSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchemaConfig) SystemSchema {
 	_init_.Initialize()
 
@@ -387,7 +411,7 @@ func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchem
 	j := jsiiProxy_SystemSchema{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.systemSchema.SystemSchema",
+		"@cdktn/provider-databricks.systemSchema.SystemSchema",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -395,12 +419,12 @@ func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema_Override(s SystemSchema, scope constructs.Construct, id *string, config *SystemSchemaConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.systemSchema.SystemSchema",
+		"@cdktn/provider-databricks.systemSchema.SystemSchema",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -436,7 +460,7 @@ func (j *jsiiProxy_SystemSchema)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SystemSchema)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SystemSchema)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +479,7 @@ func (j *jsiiProxy_SystemSchema)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SystemSchema)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SystemSchema)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +490,7 @@ func (j *jsiiProxy_SystemSchema)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_SystemSchema)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SystemSchema)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -496,17 +520,17 @@ func (j *jsiiProxy_SystemSchema)SetSchema(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a SystemSchema resource upon running "cdktf plan <stack-name>".
-func SystemSchema_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SystemSchema resource upon running "cdktn plan <stack-name>".
+func SystemSchema_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSystemSchema_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.systemSchema.SystemSchema",
+		"@cdktn/provider-databricks.systemSchema.SystemSchema",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -541,7 +565,7 @@ func SystemSchema_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.systemSchema.SystemSchema",
+		"@cdktn/provider-databricks.systemSchema.SystemSchema",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +584,7 @@ func SystemSchema_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.systemSchema.SystemSchema",
+		"@cdktn/provider-databricks.systemSchema.SystemSchema",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +603,7 @@ func SystemSchema_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.systemSchema.SystemSchema",
+		"@cdktn/provider-databricks.systemSchema.SystemSchema",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -592,7 +616,7 @@ func SystemSchema_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.systemSchema.SystemSchema",
+		"@cdktn/provider-databricks.systemSchema.SystemSchema",
 		"tfResourceType",
 		&returns,
 	)
@@ -637,11 +661,11 @@ func (s *jsiiProxy_SystemSchema) GetAnyMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (s *jsiiProxy_SystemSchema) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SystemSchema) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -778,7 +802,7 @@ func (s *jsiiProxy_SystemSchema) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SystemSchema) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SystemSchema) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -789,11 +813,11 @@ func (s *jsiiProxy_SystemSchema) ImportFrom(id *string, provider cdktf.Terraform
 	)
 }
 
-func (s *jsiiProxy_SystemSchema) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SystemSchema) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -849,6 +873,17 @@ func (s *jsiiProxy_SystemSchema) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SystemSchema) PutProviderConfig(value *SystemSchemaProviderConfig) {
+	if err := s.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SystemSchema) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -861,6 +896,14 @@ func (s *jsiiProxy_SystemSchema) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SystemSchema) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

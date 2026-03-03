@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsvpcendpoint
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpoint",
+		"@cdktn/provider-databricks.mwsVpcEndpoint.MwsVpcEndpoint",
 		reflect.TypeOf((*MwsVpcEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -91,20 +91,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsVpcEndpoint{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointConfig",
+		"@cdktn/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointConfig",
 		reflect.TypeOf((*MwsVpcEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfo",
+		"@cdktn/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfo",
 		reflect.TypeOf((*MwsVpcEndpointGcpVpcEndpointInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfoOutputReference",
+		"@cdktn/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfoOutputReference",
 		reflect.TypeOf((*MwsVpcEndpointGcpVpcEndpointInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,7 +143,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

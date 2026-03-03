@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksqualitymonitorsv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksqualitymonitorsv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksqualitymonitorsv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2}.
 type DataDatabricksQualityMonitorsV2 interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,31 +28,33 @@ type DataDatabricksQualityMonitorsV2 interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	PageSize() *float64
 	SetPageSize(val *float64)
 	PageSizeInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DataDatabricksQualityMonitorsV2ProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	QualityMonitors() DataDatabricksQualityMonitorsV2QualityMonitorsList
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -62,7 +64,7 @@ type DataDatabricksQualityMonitorsV2 interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,14 +80,16 @@ type DataDatabricksQualityMonitorsV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksQualityMonitorsV2ProviderConfig)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPageSize()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -102,11 +106,11 @@ type DataDatabricksQualityMonitorsV2 interface {
 
 // The jsii proxy struct for DataDatabricksQualityMonitorsV2
 type jsiiProxy_DataDatabricksQualityMonitorsV2 struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -145,8 +149,8 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -175,8 +179,8 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -215,11 +219,31 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) PageSizeInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) ProviderConfig() DataDatabricksQualityMonitorsV2ProviderConfigOutputReference {
+	var returns DataDatabricksQualityMonitorsV2ProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -245,8 +269,8 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -276,7 +300,7 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
 func NewDataDatabricksQualityMonitorsV2(scope constructs.Construct, id *string, config *DataDatabricksQualityMonitorsV2Config) DataDatabricksQualityMonitorsV2 {
 	_init_.Initialize()
 
@@ -286,7 +310,7 @@ func NewDataDatabricksQualityMonitorsV2(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataDatabricksQualityMonitorsV2{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
+		"@cdktn/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -294,12 +318,12 @@ func NewDataDatabricksQualityMonitorsV2(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
 func NewDataDatabricksQualityMonitorsV2_Override(d DataDatabricksQualityMonitorsV2, scope constructs.Construct, id *string, config *DataDatabricksQualityMonitorsV2Config) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
+		"@cdktn/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -324,7 +348,7 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -332,7 +356,7 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,7 +378,7 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetPageSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -362,17 +386,17 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetProvider(val cdktf.Terrafo
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksQualityMonitorsV2 resource upon running "cdktf plan <stack-name>".
-func DataDatabricksQualityMonitorsV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksQualityMonitorsV2 resource upon running "cdktn plan <stack-name>".
+func DataDatabricksQualityMonitorsV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksQualityMonitorsV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
+		"@cdktn/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -407,7 +431,7 @@ func DataDatabricksQualityMonitorsV2_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
+		"@cdktn/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -426,7 +450,7 @@ func DataDatabricksQualityMonitorsV2_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
+		"@cdktn/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +469,7 @@ func DataDatabricksQualityMonitorsV2_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
+		"@cdktn/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -458,7 +482,7 @@ func DataDatabricksQualityMonitorsV2_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
+		"@cdktn/provider-databricks.dataDatabricksQualityMonitorsV2.DataDatabricksQualityMonitorsV2",
 		"tfResourceType",
 		&returns,
 	)
@@ -492,11 +516,11 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) GetAnyMapAttribute(terraform
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -620,11 +644,11 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) GetStringMapAttribute(terraf
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -647,6 +671,17 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) OverrideLogicalId(newLogical
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) PutProviderConfig(value *DataDatabricksQualityMonitorsV2ProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -659,6 +694,14 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) ResetPageSize() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPageSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

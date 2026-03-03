@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/job/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobTriggerModelOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aliases() *[]*string
 	SetAliases(val *[]*string)
 	AliasesInput() *[]*string
@@ -49,9 +49,9 @@ type JobTriggerModelOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WaitAfterLastChangeSeconds() *float64
 	SetWaitAfterLastChangeSeconds(val *float64)
 	WaitAfterLastChangeSecondsInput() *float64
@@ -60,7 +60,7 @@ type JobTriggerModelOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,16 +76,16 @@ type JobTriggerModelOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAliases()
 	ResetMinTimeBetweenTriggersSeconds()
 	ResetSecurableName()
 	ResetWaitAfterLastChangeSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,7 +95,7 @@ type JobTriggerModelOutputReference interface {
 
 // The jsii proxy struct for JobTriggerModelOutputReference
 type jsiiProxy_JobTriggerModelOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobTriggerModelOutputReference) Aliases() *[]*string {
@@ -238,8 +238,8 @@ func (j *jsiiProxy_JobTriggerModelOutputReference) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_JobTriggerModelOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobTriggerModelOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_JobTriggerModelOutputReference) WaitAfterLastChangeSecondsInp
 }
 
 
-func NewJobTriggerModelOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobTriggerModelOutputReference {
+func NewJobTriggerModelOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobTriggerModelOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobTriggerModelOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -278,7 +278,7 @@ func NewJobTriggerModelOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_JobTriggerModelOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTriggerModelOutputReference",
+		"@cdktn/provider-databricks.job.JobTriggerModelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,11 +286,11 @@ func NewJobTriggerModelOutputReference(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewJobTriggerModelOutputReference_Override(j JobTriggerModelOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobTriggerModelOutputReference_Override(j JobTriggerModelOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTriggerModelOutputReference",
+		"@cdktn/provider-databricks.job.JobTriggerModelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
@@ -384,7 +384,7 @@ func (j *jsiiProxy_JobTriggerModelOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_JobTriggerModelOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTriggerModelOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,11 +435,11 @@ func (j *jsiiProxy_JobTriggerModelOutputReference) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (j *jsiiProxy_JobTriggerModelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTriggerModelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -563,8 +563,8 @@ func (j *jsiiProxy_JobTriggerModelOutputReference) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (j *jsiiProxy_JobTriggerModelOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobTriggerModelOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -576,11 +576,11 @@ func (j *jsiiProxy_JobTriggerModelOutputReference) InterpolationAsList() cdktf.I
 	return returns
 }
 
-func (j *jsiiProxy_JobTriggerModelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTriggerModelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -624,7 +624,7 @@ func (j *jsiiProxy_JobTriggerModelOutputReference) ResetWaitAfterLastChangeSecon
 	)
 }
 
-func (j *jsiiProxy_JobTriggerModelOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobTriggerModelOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sqlalert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/sqlalert/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/sqlalert/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert databricks_sql_alert}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert databricks_sql_alert}.
 type SqlAlert interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type SqlAlert interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -46,9 +46,9 @@ type SqlAlert interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -60,9 +60,11 @@ type SqlAlert interface {
 	SetParent(val *string)
 	ParentInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() SqlAlertProviderConfigOutputReference
+	ProviderConfigInput() *SqlAlertProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -76,7 +78,7 @@ type SqlAlert interface {
 	SetRearm(val *float64)
 	RearmInput() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -92,7 +94,7 @@ type SqlAlert interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -110,9 +112,9 @@ type SqlAlert interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -128,12 +130,14 @@ type SqlAlert interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutOptions(value *SqlAlertOptions)
+	PutProviderConfig(value *SqlAlertProviderConfig)
 	ResetCreatedAt()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParent()
+	ResetProviderConfig()
 	ResetRearm()
 	ResetUpdatedAt()
 	SynthesizeAttributes() *map[string]interface{}
@@ -151,11 +155,11 @@ type SqlAlert interface {
 
 // The jsii proxy struct for SqlAlert
 type jsiiProxy_SqlAlert struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_SqlAlert) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SqlAlert) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -224,8 +228,8 @@ func (j *jsiiProxy_SqlAlert) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlAlert) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SqlAlert) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -274,8 +278,8 @@ func (j *jsiiProxy_SqlAlert) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlAlert) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SqlAlert) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -354,11 +358,31 @@ func (j *jsiiProxy_SqlAlert) ParentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlAlert) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SqlAlert) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlAlert) ProviderConfig() SqlAlertProviderConfigOutputReference {
+	var returns SqlAlertProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlAlert) ProviderConfigInput() *SqlAlertProviderConfig {
+	var returns *SqlAlertProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -424,8 +448,8 @@ func (j *jsiiProxy_SqlAlert) RearmInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SqlAlert) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SqlAlert) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -475,7 +499,7 @@ func (j *jsiiProxy_SqlAlert) UpdatedAtInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert databricks_sql_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert databricks_sql_alert} Resource.
 func NewSqlAlert(scope constructs.Construct, id *string, config *SqlAlertConfig) SqlAlert {
 	_init_.Initialize()
 
@@ -485,7 +509,7 @@ func NewSqlAlert(scope constructs.Construct, id *string, config *SqlAlertConfig)
 	j := jsiiProxy_SqlAlert{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlAlert.SqlAlert",
+		"@cdktn/provider-databricks.sqlAlert.SqlAlert",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -493,12 +517,12 @@ func NewSqlAlert(scope constructs.Construct, id *string, config *SqlAlertConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert databricks_sql_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert databricks_sql_alert} Resource.
 func NewSqlAlert_Override(s SqlAlert, scope constructs.Construct, id *string, config *SqlAlertConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlAlert.SqlAlert",
+		"@cdktn/provider-databricks.sqlAlert.SqlAlert",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -545,7 +569,7 @@ func (j *jsiiProxy_SqlAlert)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqlAlert)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SqlAlert)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -564,7 +588,7 @@ func (j *jsiiProxy_SqlAlert)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlAlert)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SqlAlert)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +621,7 @@ func (j *jsiiProxy_SqlAlert)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlAlert)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SqlAlert)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -649,17 +673,17 @@ func (j *jsiiProxy_SqlAlert)SetUpdatedAt(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a SqlAlert resource upon running "cdktf plan <stack-name>".
-func SqlAlert_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SqlAlert resource upon running "cdktn plan <stack-name>".
+func SqlAlert_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSqlAlert_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlAlert.SqlAlert",
+		"@cdktn/provider-databricks.sqlAlert.SqlAlert",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -694,7 +718,7 @@ func SqlAlert_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlAlert.SqlAlert",
+		"@cdktn/provider-databricks.sqlAlert.SqlAlert",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +737,7 @@ func SqlAlert_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlAlert.SqlAlert",
+		"@cdktn/provider-databricks.sqlAlert.SqlAlert",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -732,7 +756,7 @@ func SqlAlert_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlAlert.SqlAlert",
+		"@cdktn/provider-databricks.sqlAlert.SqlAlert",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -745,7 +769,7 @@ func SqlAlert_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.sqlAlert.SqlAlert",
+		"@cdktn/provider-databricks.sqlAlert.SqlAlert",
 		"tfResourceType",
 		&returns,
 	)
@@ -790,11 +814,11 @@ func (s *jsiiProxy_SqlAlert) GetAnyMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
-func (s *jsiiProxy_SqlAlert) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlAlert) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -931,7 +955,7 @@ func (s *jsiiProxy_SqlAlert) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SqlAlert) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SqlAlert) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -942,11 +966,11 @@ func (s *jsiiProxy_SqlAlert) ImportFrom(id *string, provider cdktf.TerraformProv
 	)
 }
 
-func (s *jsiiProxy_SqlAlert) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlAlert) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1013,6 +1037,17 @@ func (s *jsiiProxy_SqlAlert) PutOptions(value *SqlAlertOptions) {
 	)
 }
 
+func (s *jsiiProxy_SqlAlert) PutProviderConfig(value *SqlAlertProviderConfig) {
+	if err := s.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlAlert) ResetCreatedAt() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1041,6 +1076,14 @@ func (s *jsiiProxy_SqlAlert) ResetParent() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetParent",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlAlert) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package obotoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/obotoken/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/obotoken/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/obo_token databricks_obo_token}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/obo_token databricks_obo_token}.
 type OboToken interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	ApplicationId() *string
 	SetApplicationId(val *string)
 	ApplicationIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -38,9 +38,9 @@ type OboToken interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -49,18 +49,20 @@ type OboToken interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LifetimeSeconds() *float64
 	SetLifetimeSeconds(val *float64)
 	LifetimeSecondsInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() OboTokenProviderConfigOutputReference
+	ProviderConfigInput() *OboTokenProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -68,7 +70,7 @@ type OboToken interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -82,7 +84,7 @@ type OboToken interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -100,9 +102,9 @@ type OboToken interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -117,12 +119,14 @@ type OboToken interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *OboTokenProviderConfig)
 	ResetComment()
 	ResetId()
 	ResetLifetimeSeconds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -138,7 +142,7 @@ type OboToken interface {
 
 // The jsii proxy struct for OboToken
 type jsiiProxy_OboToken struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_OboToken) ApplicationId() *string {
@@ -161,8 +165,8 @@ func (j *jsiiProxy_OboToken) ApplicationIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OboToken) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_OboToken) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -231,8 +235,8 @@ func (j *jsiiProxy_OboToken) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OboToken) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_OboToken) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -281,8 +285,8 @@ func (j *jsiiProxy_OboToken) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OboToken) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_OboToken) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -321,11 +325,31 @@ func (j *jsiiProxy_OboToken) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_OboToken) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_OboToken) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OboToken) ProviderConfig() OboTokenProviderConfigOutputReference {
+	var returns OboTokenProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OboToken) ProviderConfigInput() *OboTokenProviderConfig {
+	var returns *OboTokenProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -351,8 +375,8 @@ func (j *jsiiProxy_OboToken) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OboToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_OboToken) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -392,7 +416,7 @@ func (j *jsiiProxy_OboToken) TokenValue() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/obo_token databricks_obo_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/obo_token databricks_obo_token} Resource.
 func NewOboToken(scope constructs.Construct, id *string, config *OboTokenConfig) OboToken {
 	_init_.Initialize()
 
@@ -402,7 +426,7 @@ func NewOboToken(scope constructs.Construct, id *string, config *OboTokenConfig)
 	j := jsiiProxy_OboToken{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.oboToken.OboToken",
+		"@cdktn/provider-databricks.oboToken.OboToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -410,12 +434,12 @@ func NewOboToken(scope constructs.Construct, id *string, config *OboTokenConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/obo_token databricks_obo_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/obo_token databricks_obo_token} Resource.
 func NewOboToken_Override(o OboToken, scope constructs.Construct, id *string, config *OboTokenConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.oboToken.OboToken",
+		"@cdktn/provider-databricks.oboToken.OboToken",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -473,7 +497,7 @@ func (j *jsiiProxy_OboToken)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OboToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OboToken)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -492,7 +516,7 @@ func (j *jsiiProxy_OboToken)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OboToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OboToken)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +538,7 @@ func (j *jsiiProxy_OboToken)SetLifetimeSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OboToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OboToken)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -533,17 +557,17 @@ func (j *jsiiProxy_OboToken)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a OboToken resource upon running "cdktf plan <stack-name>".
-func OboToken_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a OboToken resource upon running "cdktn plan <stack-name>".
+func OboToken_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateOboToken_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.oboToken.OboToken",
+		"@cdktn/provider-databricks.oboToken.OboToken",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -578,7 +602,7 @@ func OboToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.oboToken.OboToken",
+		"@cdktn/provider-databricks.oboToken.OboToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +621,7 @@ func OboToken_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.oboToken.OboToken",
+		"@cdktn/provider-databricks.oboToken.OboToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -616,7 +640,7 @@ func OboToken_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.oboToken.OboToken",
+		"@cdktn/provider-databricks.oboToken.OboToken",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +653,7 @@ func OboToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.oboToken.OboToken",
+		"@cdktn/provider-databricks.oboToken.OboToken",
 		"tfResourceType",
 		&returns,
 	)
@@ -674,11 +698,11 @@ func (o *jsiiProxy_OboToken) GetAnyMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
-func (o *jsiiProxy_OboToken) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OboToken) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -815,7 +839,7 @@ func (o *jsiiProxy_OboToken) HasResourceMove() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OboToken) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (o *jsiiProxy_OboToken) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -826,11 +850,11 @@ func (o *jsiiProxy_OboToken) ImportFrom(id *string, provider cdktf.TerraformProv
 	)
 }
 
-func (o *jsiiProxy_OboToken) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OboToken) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -886,6 +910,17 @@ func (o *jsiiProxy_OboToken) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (o *jsiiProxy_OboToken) PutProviderConfig(value *OboTokenProviderConfig) {
+	if err := o.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OboToken) ResetComment() {
 	_jsii_.InvokeVoid(
 		o,
@@ -914,6 +949,14 @@ func (o *jsiiProxy_OboToken) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OboToken) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

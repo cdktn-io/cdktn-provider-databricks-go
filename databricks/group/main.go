@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package group
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.group.Group",
+		"@cdktn/provider-databricks.group.Group",
 		reflect.TypeOf((*Group)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclPrincipalId", GoGetter: "AclPrincipalId"},
@@ -90,12 +90,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Group{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.group.GroupConfig",
+		"@cdktn/provider-databricks.group.GroupConfig",
 		reflect.TypeOf((*GroupConfig)(nil)).Elem(),
 	)
 }

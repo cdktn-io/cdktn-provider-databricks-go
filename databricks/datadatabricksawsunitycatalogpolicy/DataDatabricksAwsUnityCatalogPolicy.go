@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksawsunitycatalogpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksawsunitycatalogpolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksawsunitycatalogpolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy}.
 type DataDatabricksAwsUnityCatalogPolicy interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AwsAccountId() *string
 	SetAwsAccountId(val *string)
 	AwsAccountIdInput() *string
@@ -25,7 +25,7 @@ type DataDatabricksAwsUnityCatalogPolicy interface {
 	SetBucketName(val *string)
 	BucketNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -37,9 +37,9 @@ type DataDatabricksAwsUnityCatalogPolicy interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,22 +52,22 @@ type DataDatabricksAwsUnityCatalogPolicy interface {
 	SetKmsName(val *string)
 	KmsNameInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	RoleName() *string
 	SetRoleName(val *string)
 	RoleNameInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -77,7 +77,7 @@ type DataDatabricksAwsUnityCatalogPolicy interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -93,7 +93,7 @@ type DataDatabricksAwsUnityCatalogPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -119,7 +119,7 @@ type DataDatabricksAwsUnityCatalogPolicy interface {
 
 // The jsii proxy struct for DataDatabricksAwsUnityCatalogPolicy
 type jsiiProxy_DataDatabricksAwsUnityCatalogPolicy struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) AwsAccountId() *string {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) BucketNameInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) KmsNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) RoleNameInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy} Data Source.
 func NewDataDatabricksAwsUnityCatalogPolicy(scope constructs.Construct, id *string, config *DataDatabricksAwsUnityCatalogPolicyConfig) DataDatabricksAwsUnityCatalogPolicy {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataDatabricksAwsUnityCatalogPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataDatabricksAwsUnityCatalogPolicy{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
+		"@cdktn/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -411,12 +411,12 @@ func NewDataDatabricksAwsUnityCatalogPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy} Data Source.
 func NewDataDatabricksAwsUnityCatalogPolicy_Override(d DataDatabricksAwsUnityCatalogPolicy, scope constructs.Construct, id *string, config *DataDatabricksAwsUnityCatalogPolicyConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
+		"@cdktn/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -474,7 +474,7 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -504,7 +504,7 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy)SetKmsName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +515,7 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -534,17 +534,17 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy)SetRoleName(val *string) 
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksAwsUnityCatalogPolicy resource upon running "cdktf plan <stack-name>".
-func DataDatabricksAwsUnityCatalogPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksAwsUnityCatalogPolicy resource upon running "cdktn plan <stack-name>".
+func DataDatabricksAwsUnityCatalogPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksAwsUnityCatalogPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
+		"@cdktn/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -579,7 +579,7 @@ func DataDatabricksAwsUnityCatalogPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
+		"@cdktn/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func DataDatabricksAwsUnityCatalogPolicy_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
+		"@cdktn/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -617,7 +617,7 @@ func DataDatabricksAwsUnityCatalogPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
+		"@cdktn/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func DataDatabricksAwsUnityCatalogPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
+		"@cdktn/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy",
 		"tfResourceType",
 		&returns,
 	)
@@ -664,11 +664,11 @@ func (d *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -792,11 +792,11 @@ func (d *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) GetStringMapAttribute(te
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

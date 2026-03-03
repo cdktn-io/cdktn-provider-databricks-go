@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksjob/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job databricks_job}.
 type DataDatabricksJob interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,9 +28,9 @@ type DataDatabricksJob interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -47,22 +47,24 @@ type DataDatabricksJob interface {
 	JobSettings() DataDatabricksJobJobSettingsOutputReference
 	JobSettingsInput() *DataDatabricksJobJobSettings
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DataDatabricksJobProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksJobProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -72,7 +74,7 @@ type DataDatabricksJob interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,11 +90,12 @@ type DataDatabricksJob interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutJobSettings(value *DataDatabricksJobJobSettings)
+	PutProviderConfig(value *DataDatabricksJobProviderConfig)
 	ResetId()
 	ResetJobId()
 	ResetJobName()
@@ -101,6 +104,7 @@ type DataDatabricksJob interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -117,11 +121,11 @@ type DataDatabricksJob interface {
 
 // The jsii proxy struct for DataDatabricksJob
 type jsiiProxy_DataDatabricksJob struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatabricksJob) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksJob) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -160,8 +164,8 @@ func (j *jsiiProxy_DataDatabricksJob) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJob) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksJob) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -270,8 +274,8 @@ func (j *jsiiProxy_DataDatabricksJob) JobSettingsInput() *DataDatabricksJobJobSe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJob) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksJob) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -310,11 +314,31 @@ func (j *jsiiProxy_DataDatabricksJob) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJob) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksJob) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJob) ProviderConfig() DataDatabricksJobProviderConfigOutputReference {
+	var returns DataDatabricksJobProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJob) ProviderConfigInput() *DataDatabricksJobProviderConfig {
+	var returns *DataDatabricksJobProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -330,8 +354,8 @@ func (j *jsiiProxy_DataDatabricksJob) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJob) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksJob) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -361,7 +385,7 @@ func (j *jsiiProxy_DataDatabricksJob) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job databricks_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job databricks_job} Data Source.
 func NewDataDatabricksJob(scope constructs.Construct, id *string, config *DataDatabricksJobConfig) DataDatabricksJob {
 	_init_.Initialize()
 
@@ -371,7 +395,7 @@ func NewDataDatabricksJob(scope constructs.Construct, id *string, config *DataDa
 	j := jsiiProxy_DataDatabricksJob{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,12 +403,12 @@ func NewDataDatabricksJob(scope constructs.Construct, id *string, config *DataDa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job databricks_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job databricks_job} Data Source.
 func NewDataDatabricksJob_Override(d DataDatabricksJob, scope constructs.Construct, id *string, config *DataDatabricksJobConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -409,7 +433,7 @@ func (j *jsiiProxy_DataDatabricksJob)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJob)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksJob)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -450,7 +474,7 @@ func (j *jsiiProxy_DataDatabricksJob)SetJobName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksJob)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +496,7 @@ func (j *jsiiProxy_DataDatabricksJob)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJob)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksJob)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -480,17 +504,17 @@ func (j *jsiiProxy_DataDatabricksJob)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksJob resource upon running "cdktf plan <stack-name>".
-func DataDatabricksJob_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksJob resource upon running "cdktn plan <stack-name>".
+func DataDatabricksJob_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksJob_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -525,7 +549,7 @@ func DataDatabricksJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +568,7 @@ func DataDatabricksJob_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +587,7 @@ func DataDatabricksJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +600,7 @@ func DataDatabricksJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob",
 		"tfResourceType",
 		&returns,
 	)
@@ -610,11 +634,11 @@ func (d *jsiiProxy_DataDatabricksJob) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJob) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksJob) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -738,11 +762,11 @@ func (d *jsiiProxy_DataDatabricksJob) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJob) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksJob) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -772,6 +796,17 @@ func (d *jsiiProxy_DataDatabricksJob) PutJobSettings(value *DataDatabricksJobJob
 	_jsii_.InvokeVoid(
 		d,
 		"putJobSettings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJob) PutProviderConfig(value *DataDatabricksJobProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
 		[]interface{}{value},
 	)
 }
@@ -820,6 +855,14 @@ func (d *jsiiProxy_DataDatabricksJob) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJob) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

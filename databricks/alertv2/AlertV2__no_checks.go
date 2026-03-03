@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (a *jsiiProxy_AlertV2) validatePutEvaluationParameters(value *AlertV2Evalua
 	return nil
 }
 
+func (a *jsiiProxy_AlertV2) validatePutProviderConfigParameters(value *AlertV2ProviderConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertV2) validatePutRunAsParameters(value *AlertV2RunAs) error {
 	return nil
 }
@@ -123,7 +127,7 @@ func (j *jsiiProxy_AlertV2) validateSetDisplayNameParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AlertV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AlertV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -132,6 +136,10 @@ func (j *jsiiProxy_AlertV2) validateSetParentPathParameters(val *string) error {
 }
 
 func (j *jsiiProxy_AlertV2) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlertV2) validateSetPurgeOnDeleteParameters(val interface{}) error {
 	return nil
 }
 

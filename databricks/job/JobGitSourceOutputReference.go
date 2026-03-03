@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/job/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobGitSourceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Branch() *string
 	SetBranch(val *string)
 	BranchInput() *string
@@ -45,6 +45,8 @@ type JobGitSourceOutputReference interface {
 	Provider() *string
 	SetProvider(val *string)
 	ProviderInput() *string
+	SparseCheckout() JobGitSourceSparseCheckoutOutputReference
+	SparseCheckoutInput() *JobGitSourceSparseCheckout
 	Tag() *string
 	SetTag(val *string)
 	TagInput() *string
@@ -53,9 +55,9 @@ type JobGitSourceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -64,7 +66,7 @@ type JobGitSourceOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -80,20 +82,22 @@ type JobGitSourceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutGitSnapshot(value *JobGitSourceGitSnapshot)
 	PutJobSource(value *JobGitSourceJobSource)
+	PutSparseCheckout(value *JobGitSourceSparseCheckout)
 	ResetBranch()
 	ResetCommit()
 	ResetGitSnapshot()
 	ResetJobSource()
 	ResetProvider()
+	ResetSparseCheckout()
 	ResetTag()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,7 +107,7 @@ type JobGitSourceOutputReference interface {
 
 // The jsii proxy struct for JobGitSourceOutputReference
 type jsiiProxy_JobGitSourceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) Branch() *string {
@@ -256,6 +260,26 @@ func (j *jsiiProxy_JobGitSourceOutputReference) ProviderInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_JobGitSourceOutputReference) SparseCheckout() JobGitSourceSparseCheckoutOutputReference {
+	var returns JobGitSourceSparseCheckoutOutputReference
+	_jsii_.Get(
+		j,
+		"sparseCheckout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobGitSourceOutputReference) SparseCheckoutInput() *JobGitSourceSparseCheckout {
+	var returns *JobGitSourceSparseCheckout
+	_jsii_.Get(
+		j,
+		"sparseCheckoutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobGitSourceOutputReference) Tag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -286,8 +310,8 @@ func (j *jsiiProxy_JobGitSourceOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobGitSourceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -317,7 +341,7 @@ func (j *jsiiProxy_JobGitSourceOutputReference) UrlInput() *string {
 }
 
 
-func NewJobGitSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobGitSourceOutputReference {
+func NewJobGitSourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobGitSourceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobGitSourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -326,7 +350,7 @@ func NewJobGitSourceOutputReference(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_JobGitSourceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobGitSourceOutputReference",
+		"@cdktn/provider-databricks.job.JobGitSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -334,11 +358,11 @@ func NewJobGitSourceOutputReference(terraformResource cdktf.IInterpolatingParent
 	return &j
 }
 
-func NewJobGitSourceOutputReference_Override(j JobGitSourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobGitSourceOutputReference_Override(j JobGitSourceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobGitSourceOutputReference",
+		"@cdktn/provider-databricks.job.JobGitSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
@@ -432,7 +456,7 @@ func (j *jsiiProxy_JobGitSourceOutputReference)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,11 +507,11 @@ func (j *jsiiProxy_JobGitSourceOutputReference) GetAnyMapAttribute(terraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobGitSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -611,8 +635,8 @@ func (j *jsiiProxy_JobGitSourceOutputReference) GetStringMapAttribute(terraformA
 	return returns
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobGitSourceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -624,11 +648,11 @@ func (j *jsiiProxy_JobGitSourceOutputReference) InterpolationAsList() cdktf.IRes
 	return returns
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobGitSourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -658,6 +682,17 @@ func (j *jsiiProxy_JobGitSourceOutputReference) PutJobSource(value *JobGitSource
 	_jsii_.InvokeVoid(
 		j,
 		"putJobSource",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobGitSourceOutputReference) PutSparseCheckout(value *JobGitSourceSparseCheckout) {
+	if err := j.validatePutSparseCheckoutParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putSparseCheckout",
 		[]interface{}{value},
 	)
 }
@@ -702,6 +737,14 @@ func (j *jsiiProxy_JobGitSourceOutputReference) ResetProvider() {
 	)
 }
 
+func (j *jsiiProxy_JobGitSourceOutputReference) ResetSparseCheckout() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSparseCheckout",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_JobGitSourceOutputReference) ResetTag() {
 	_jsii_.InvokeVoid(
 		j,
@@ -710,7 +753,7 @@ func (j *jsiiProxy_JobGitSourceOutputReference) ResetTag() {
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobGitSourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

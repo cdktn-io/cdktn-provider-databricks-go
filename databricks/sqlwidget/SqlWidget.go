@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sqlwidget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/sqlwidget/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/sqlwidget/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget databricks_sql_widget}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget databricks_sql_widget}.
 type SqlWidget interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,9 +38,9 @@ type SqlWidget interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -49,9 +49,9 @@ type SqlWidget interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	Parameter() SqlWidgetParameterList
@@ -59,9 +59,11 @@ type SqlWidget interface {
 	Position() SqlWidgetPositionOutputReference
 	PositionInput() *SqlWidgetPosition
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() SqlWidgetProviderConfigOutputReference
+	ProviderConfigInput() *SqlWidgetProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -69,7 +71,7 @@ type SqlWidget interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -94,7 +96,7 @@ type SqlWidget interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -112,9 +114,9 @@ type SqlWidget interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -131,6 +133,7 @@ type SqlWidget interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutParameter(value interface{})
 	PutPosition(value *SqlWidgetPosition)
+	PutProviderConfig(value *SqlWidgetProviderConfig)
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -138,6 +141,7 @@ type SqlWidget interface {
 	ResetOverrideLogicalId()
 	ResetParameter()
 	ResetPosition()
+	ResetProviderConfig()
 	ResetText()
 	ResetTitle()
 	ResetVisualizationId()
@@ -157,11 +161,11 @@ type SqlWidget interface {
 
 // The jsii proxy struct for SqlWidget
 type jsiiProxy_SqlWidget struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_SqlWidget) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SqlWidget) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -250,8 +254,8 @@ func (j *jsiiProxy_SqlWidget) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlWidget) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SqlWidget) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -300,8 +304,8 @@ func (j *jsiiProxy_SqlWidget) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlWidget) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SqlWidget) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -360,11 +364,31 @@ func (j *jsiiProxy_SqlWidget) PositionInput() *SqlWidgetPosition {
 	return returns
 }
 
-func (j *jsiiProxy_SqlWidget) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SqlWidget) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlWidget) ProviderConfig() SqlWidgetProviderConfigOutputReference {
+	var returns SqlWidgetProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlWidget) ProviderConfigInput() *SqlWidgetProviderConfig {
+	var returns *SqlWidgetProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -390,8 +414,8 @@ func (j *jsiiProxy_SqlWidget) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqlWidget) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SqlWidget) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -501,7 +525,7 @@ func (j *jsiiProxy_SqlWidget) WidgetIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget databricks_sql_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget databricks_sql_widget} Resource.
 func NewSqlWidget(scope constructs.Construct, id *string, config *SqlWidgetConfig) SqlWidget {
 	_init_.Initialize()
 
@@ -511,7 +535,7 @@ func NewSqlWidget(scope constructs.Construct, id *string, config *SqlWidgetConfi
 	j := jsiiProxy_SqlWidget{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlWidget.SqlWidget",
+		"@cdktn/provider-databricks.sqlWidget.SqlWidget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -519,12 +543,12 @@ func NewSqlWidget(scope constructs.Construct, id *string, config *SqlWidgetConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget databricks_sql_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget databricks_sql_widget} Resource.
 func NewSqlWidget_Override(s SqlWidget, scope constructs.Construct, id *string, config *SqlWidgetConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlWidget.SqlWidget",
+		"@cdktn/provider-databricks.sqlWidget.SqlWidget",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -582,7 +606,7 @@ func (j *jsiiProxy_SqlWidget)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SqlWidget)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -601,7 +625,7 @@ func (j *jsiiProxy_SqlWidget)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SqlWidget)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +636,7 @@ func (j *jsiiProxy_SqlWidget)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_SqlWidget)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SqlWidget)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -675,17 +699,17 @@ func (j *jsiiProxy_SqlWidget)SetWidgetId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a SqlWidget resource upon running "cdktf plan <stack-name>".
-func SqlWidget_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SqlWidget resource upon running "cdktn plan <stack-name>".
+func SqlWidget_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSqlWidget_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlWidget.SqlWidget",
+		"@cdktn/provider-databricks.sqlWidget.SqlWidget",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -720,7 +744,7 @@ func SqlWidget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlWidget.SqlWidget",
+		"@cdktn/provider-databricks.sqlWidget.SqlWidget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +763,7 @@ func SqlWidget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlWidget.SqlWidget",
+		"@cdktn/provider-databricks.sqlWidget.SqlWidget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +782,7 @@ func SqlWidget_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlWidget.SqlWidget",
+		"@cdktn/provider-databricks.sqlWidget.SqlWidget",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +795,7 @@ func SqlWidget_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.sqlWidget.SqlWidget",
+		"@cdktn/provider-databricks.sqlWidget.SqlWidget",
 		"tfResourceType",
 		&returns,
 	)
@@ -816,11 +840,11 @@ func (s *jsiiProxy_SqlWidget) GetAnyMapAttribute(terraformAttribute *string) *ma
 	return returns
 }
 
-func (s *jsiiProxy_SqlWidget) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlWidget) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -957,7 +981,7 @@ func (s *jsiiProxy_SqlWidget) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SqlWidget) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SqlWidget) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -968,11 +992,11 @@ func (s *jsiiProxy_SqlWidget) ImportFrom(id *string, provider cdktf.TerraformPro
 	)
 }
 
-func (s *jsiiProxy_SqlWidget) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlWidget) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1050,6 +1074,17 @@ func (s *jsiiProxy_SqlWidget) PutPosition(value *SqlWidgetPosition) {
 	)
 }
 
+func (s *jsiiProxy_SqlWidget) PutProviderConfig(value *SqlWidgetProviderConfig) {
+	if err := s.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlWidget) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1086,6 +1121,14 @@ func (s *jsiiProxy_SqlWidget) ResetPosition() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPosition",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlWidget) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwscustomermanagedkeys
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys",
+		"@cdktn/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys",
 		reflect.TypeOf((*MwsCustomerManagedKeys)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -79,16 +79,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsCustomerManagedKeys{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysAwsKeyInfo",
+		"@cdktn/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysAwsKeyInfo",
 		reflect.TypeOf((*MwsCustomerManagedKeysAwsKeyInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysAwsKeyInfoOutputReference",
+		"@cdktn/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysAwsKeyInfoOutputReference",
 		reflect.TypeOf((*MwsCustomerManagedKeysAwsKeyInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,20 +123,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysConfig",
+		"@cdktn/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysConfig",
 		reflect.TypeOf((*MwsCustomerManagedKeysConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysGcpKeyInfo",
+		"@cdktn/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysGcpKeyInfo",
 		reflect.TypeOf((*MwsCustomerManagedKeysGcpKeyInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysGcpKeyInfoOutputReference",
+		"@cdktn/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysGcpKeyInfoOutputReference",
 		reflect.TypeOf((*MwsCustomerManagedKeysGcpKeyInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -165,7 +165,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsCustomerManagedKeysGcpKeyInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsworkspaces
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspaces",
 		reflect.TypeOf((*MwsWorkspaces)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -157,20 +157,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsWorkspaces{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainer",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainer",
 		reflect.TypeOf((*MwsWorkspacesCloudResourceContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcp",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcp",
 		reflect.TypeOf((*MwsWorkspacesCloudResourceContainerGcp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcpOutputReference",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcpOutputReference",
 		reflect.TypeOf((*MwsWorkspacesCloudResourceContainerGcpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,12 +199,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsWorkspacesCloudResourceContainerGcpOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerOutputReference",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerOutputReference",
 		reflect.TypeOf((*MwsWorkspacesCloudResourceContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -234,20 +234,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsWorkspacesCloudResourceContainerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig",
 		reflect.TypeOf((*MwsWorkspacesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo",
 		reflect.TypeOf((*MwsWorkspacesExternalCustomerInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfoOutputReference",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfoOutputReference",
 		reflect.TypeOf((*MwsWorkspacesExternalCustomerInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authoritativeUserEmail", GoGetter: "AuthoritativeUserEmail"},
@@ -280,16 +280,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsWorkspacesExternalCustomerInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig",
 		reflect.TypeOf((*MwsWorkspacesGcpManagedNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfigOutputReference",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfigOutputReference",
 		reflect.TypeOf((*MwsWorkspacesGcpManagedNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -324,16 +324,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsWorkspacesGcpManagedNetworkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfig",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfig",
 		reflect.TypeOf((*MwsWorkspacesGkeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfigOutputReference",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfigOutputReference",
 		reflect.TypeOf((*MwsWorkspacesGkeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -366,16 +366,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsWorkspacesGkeConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeouts",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeouts",
 		reflect.TypeOf((*MwsWorkspacesTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeoutsOutputReference",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeoutsOutputReference",
 		reflect.TypeOf((*MwsWorkspacesTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -411,16 +411,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsWorkspacesTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesToken",
 		reflect.TypeOf((*MwsWorkspacesToken)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTokenOutputReference",
+		"@cdktn/provider-databricks.mwsWorkspaces.MwsWorkspacesTokenOutputReference",
 		reflect.TypeOf((*MwsWorkspacesTokenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -459,7 +459,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsWorkspacesTokenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickszones
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones",
+		"@cdktn/provider-databricks.dataDatabricksZones.DataDatabricksZones",
 		reflect.TypeOf((*DataDatabricksZones)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,20 +63,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksZones{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig",
+		"@cdktn/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig",
 		reflect.TypeOf((*DataDatabricksZonesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksZones.DataDatabricksZonesProviderConfig",
 		reflect.TypeOf((*DataDatabricksZonesProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksZones.DataDatabricksZonesProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksZonesProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -105,7 +105,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksZonesProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

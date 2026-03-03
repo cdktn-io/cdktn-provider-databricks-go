@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickscluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscluster/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscluster/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksClusterClusterInfoTerminationReasonOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Code() *string
 	SetCode(val *string)
 	CodeInput() *string
@@ -43,9 +43,9 @@ type DataDatabricksClusterClusterInfoTerminationReasonOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -54,7 +54,7 @@ type DataDatabricksClusterClusterInfoTerminationReasonOutputReference interface 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type DataDatabricksClusterClusterInfoTerminationReasonOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCode()
 	ResetParameters()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type DataDatabricksClusterClusterInfoTerminationReasonOutputReference interface 
 
 // The jsii proxy struct for DataDatabricksClusterClusterInfoTerminationReasonOutputReference
 type jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) Code() *string {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputRefere
 }
 
 
-func NewDataDatabricksClusterClusterInfoTerminationReasonOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterClusterInfoTerminationReasonOutputReference {
+func NewDataDatabricksClusterClusterInfoTerminationReasonOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterClusterInfoTerminationReasonOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksClusterClusterInfoTerminationReasonOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewDataDatabricksClusterClusterInfoTerminationReasonOutputReference(terrafo
 	j := jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReasonOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReasonOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewDataDatabricksClusterClusterInfoTerminationReasonOutputReference(terrafo
 	return &j
 }
 
-func NewDataDatabricksClusterClusterInfoTerminationReasonOutputReference_Override(d DataDatabricksClusterClusterInfoTerminationReasonOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterClusterInfoTerminationReasonOutputReference_Override(d DataDatabricksClusterClusterInfoTerminationReasonOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReasonOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReasonOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -494,8 +494,8 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -507,11 +507,11 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -547,7 +547,7 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputRefere
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

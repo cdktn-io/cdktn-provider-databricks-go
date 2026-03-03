@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) validateGetPa
 	return nil
 }
 
-func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) validateSetWr
 	return nil
 }
 
-func validateNewAlertV2EvaluationNotificationSubscriptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlertV2EvaluationNotificationSubscriptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package modelserving
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/modelserving/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/modelserving/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ModelServingRateLimitsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Calls() *float64
 	SetCalls(val *float64)
 	CallsInput() *float64
@@ -46,15 +46,15 @@ type ModelServingRateLimitsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,13 +70,13 @@ type ModelServingRateLimitsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type ModelServingRateLimitsOutputReference interface {
 
 // The jsii proxy struct for ModelServingRateLimitsOutputReference
 type jsiiProxy_ModelServingRateLimitsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ModelServingRateLimitsOutputReference) Calls() *float64 {
@@ -209,8 +209,8 @@ func (j *jsiiProxy_ModelServingRateLimitsOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_ModelServingRateLimitsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ModelServingRateLimitsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -220,7 +220,7 @@ func (j *jsiiProxy_ModelServingRateLimitsOutputReference) TerraformResource() cd
 }
 
 
-func NewModelServingRateLimitsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ModelServingRateLimitsOutputReference {
+func NewModelServingRateLimitsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ModelServingRateLimitsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewModelServingRateLimitsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -229,7 +229,7 @@ func NewModelServingRateLimitsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ModelServingRateLimitsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServing.ModelServingRateLimitsOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingRateLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,11 +237,11 @@ func NewModelServingRateLimitsOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewModelServingRateLimitsOutputReference_Override(m ModelServingRateLimitsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewModelServingRateLimitsOutputReference_Override(m ModelServingRateLimitsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServing.ModelServingRateLimitsOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingRateLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_ModelServingRateLimitsOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ModelServingRateLimitsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ModelServingRateLimitsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,11 +364,11 @@ func (m *jsiiProxy_ModelServingRateLimitsOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingRateLimitsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingRateLimitsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -492,8 +492,8 @@ func (m *jsiiProxy_ModelServingRateLimitsOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingRateLimitsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ModelServingRateLimitsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -505,11 +505,11 @@ func (m *jsiiProxy_ModelServingRateLimitsOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingRateLimitsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingRateLimitsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -529,7 +529,7 @@ func (m *jsiiProxy_ModelServingRateLimitsOutputReference) ResetKey() {
 	)
 }
 
-func (m *jsiiProxy_ModelServingRateLimitsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ModelServingRateLimitsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksservingendpoints
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksservingendpoints/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksservingendpoints/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList in
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList in
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList in
 
 // The jsii proxy struct for DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList
 type jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTabl
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTabl
 }
 
 
-func NewDataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList {
+func NewDataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewDataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList
 	j := jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewDataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList
 	return &j
 }
 
-func NewDataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList_Override(d DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList_Override(d DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTabl
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTabl
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -231,7 +231,7 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTabl
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

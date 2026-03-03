@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,10 @@ func (a *jsiiProxy_App) validateOverrideLogicalIdParameters(newLogicalId *string
 	return nil
 }
 
+func (a *jsiiProxy_App) validatePutGitRepositoryParameters(value *AppGitRepository) error {
+	return nil
+}
+
 func (a *jsiiProxy_App) validatePutProviderConfigParameters(value *AppProviderConfig) error {
 	return nil
 }
@@ -119,7 +123,7 @@ func (j *jsiiProxy_App) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_App) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_App) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -132,6 +136,14 @@ func (j *jsiiProxy_App) validateSetNoComputeParameters(val interface{}) error {
 }
 
 func (j *jsiiProxy_App) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_App) validateSetSpaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_App) validateSetUsagePolicyIdParameters(val *string) error {
 	return nil
 }
 

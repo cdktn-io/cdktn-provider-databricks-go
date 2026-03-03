@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package notificationdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/notificationdestination/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type NotificationDestinationConfigMicrosoftTeamsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AppId() *string
 	SetAppId(val *string)
 	AppIdInput() *string
@@ -61,9 +61,9 @@ type NotificationDestinationConfigMicrosoftTeamsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -75,7 +75,7 @@ type NotificationDestinationConfigMicrosoftTeamsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type NotificationDestinationConfigMicrosoftTeamsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAppId()
 	ResetAppIdSet()
 	ResetAuthSecret()
@@ -106,7 +106,7 @@ type NotificationDestinationConfigMicrosoftTeamsOutputReference interface {
 	ResetUrlSet()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,7 +116,7 @@ type NotificationDestinationConfigMicrosoftTeamsOutputReference interface {
 
 // The jsii proxy struct for NotificationDestinationConfigMicrosoftTeamsOutputReference
 type jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) AppId() *string {
@@ -339,8 +339,8 @@ func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) U
 }
 
 
-func NewNotificationDestinationConfigMicrosoftTeamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigMicrosoftTeamsOutputReference {
+func NewNotificationDestinationConfigMicrosoftTeamsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigMicrosoftTeamsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNotificationDestinationConfigMicrosoftTeamsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -399,7 +399,7 @@ func NewNotificationDestinationConfigMicrosoftTeamsOutputReference(terraformReso
 	j := jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeamsOutputReference",
+		"@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -407,11 +407,11 @@ func NewNotificationDestinationConfigMicrosoftTeamsOutputReference(terraformReso
 	return &j
 }
 
-func NewNotificationDestinationConfigMicrosoftTeamsOutputReference_Override(n NotificationDestinationConfigMicrosoftTeamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNotificationDestinationConfigMicrosoftTeamsOutputReference_Override(n NotificationDestinationConfigMicrosoftTeamsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeamsOutputReference",
+		"@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -549,7 +549,7 @@ func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,11 +611,11 @@ func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) G
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -739,8 +739,8 @@ func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) G
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -752,11 +752,11 @@ func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) I
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -848,7 +848,7 @@ func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) R
 	)
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

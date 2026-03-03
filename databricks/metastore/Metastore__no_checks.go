@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -91,23 +91,11 @@ func validateMetastore_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Metastore) validateSetCloudParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Metastore) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_Metastore) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Metastore) validateSetCreatedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_Metastore) validateSetCreatedByParameters(val *string) error {
 	return nil
 }
 
@@ -127,11 +115,11 @@ func (j *jsiiProxy_Metastore) validateSetDeltaSharingScopeParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_Metastore) validateSetForceDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_Metastore) validateSetExternalAccessEnabledParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Metastore) validateSetGlobalMetastoreIdParameters(val *string) error {
+func (j *jsiiProxy_Metastore) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }
 
@@ -139,11 +127,7 @@ func (j *jsiiProxy_Metastore) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Metastore) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_Metastore) validateSetMetastoreIdParameters(val *string) error {
+func (j *jsiiProxy_Metastore) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -152,6 +136,10 @@ func (j *jsiiProxy_Metastore) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Metastore) validateSetOwnerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Metastore) validateSetPrivilegeModelVersionParameters(val *string) error {
 	return nil
 }
 
@@ -171,11 +159,7 @@ func (j *jsiiProxy_Metastore) validateSetStorageRootCredentialIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_Metastore) validateSetUpdatedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_Metastore) validateSetUpdatedByParameters(val *string) error {
+func (j *jsiiProxy_Metastore) validateSetStorageRootCredentialNameParameters(val *string) error {
 	return nil
 }
 

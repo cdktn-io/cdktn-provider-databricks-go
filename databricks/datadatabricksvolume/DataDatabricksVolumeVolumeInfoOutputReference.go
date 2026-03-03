@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksvolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksvolume/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksvolume/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksVolumeVolumeInfoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessPoint() *string
 	SetAccessPoint(val *string)
 	AccessPointInput() *string
@@ -75,9 +75,9 @@ type DataDatabricksVolumeVolumeInfoOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdatedAt() *float64
 	SetUpdatedAt(val *float64)
 	UpdatedAtInput() *float64
@@ -95,7 +95,7 @@ type DataDatabricksVolumeVolumeInfoOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -111,9 +111,9 @@ type DataDatabricksVolumeVolumeInfoOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEncryptionDetails(value *DataDatabricksVolumeVolumeInfoEncryptionDetails)
 	ResetAccessPoint()
 	ResetBrowseOnly()
@@ -134,7 +134,7 @@ type DataDatabricksVolumeVolumeInfoOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -144,7 +144,7 @@ type DataDatabricksVolumeVolumeInfoOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksVolumeVolumeInfoOutputReference
 type jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) AccessPoint() *string {
@@ -467,8 +467,8 @@ func (j *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -558,7 +558,7 @@ func (j *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) VolumeTypeInpu
 }
 
 
-func NewDataDatabricksVolumeVolumeInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksVolumeVolumeInfoOutputReference {
+func NewDataDatabricksVolumeVolumeInfoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksVolumeVolumeInfoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksVolumeVolumeInfoOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -567,7 +567,7 @@ func NewDataDatabricksVolumeVolumeInfoOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -575,11 +575,11 @@ func NewDataDatabricksVolumeVolumeInfoOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewDataDatabricksVolumeVolumeInfoOutputReference_Override(d DataDatabricksVolumeVolumeInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksVolumeVolumeInfoOutputReference_Override(d DataDatabricksVolumeVolumeInfoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -761,7 +761,7 @@ func (j *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -845,11 +845,11 @@ func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -973,8 +973,8 @@ func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) GetStringMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -986,11 +986,11 @@ func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) InterpolationA
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1149,7 +1149,7 @@ func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) ResetVolumeTyp
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

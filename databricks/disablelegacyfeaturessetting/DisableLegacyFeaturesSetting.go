@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package disablelegacyfeaturessetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/disablelegacyfeaturessetting/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/disablelegacyfeaturessetting/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}.
 type DisableLegacyFeaturesSetting interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,9 +37,9 @@ type DisableLegacyFeaturesSetting interface {
 	SetEtag(val *string)
 	EtagInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -48,15 +48,17 @@ type DisableLegacyFeaturesSetting interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DisableLegacyFeaturesSettingProviderConfigOutputReference
+	ProviderConfigInput() *DisableLegacyFeaturesSettingProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -67,7 +69,7 @@ type DisableLegacyFeaturesSetting interface {
 	SetSettingName(val *string)
 	SettingNameInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -80,7 +82,7 @@ type DisableLegacyFeaturesSetting interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -98,9 +100,9 @@ type DisableLegacyFeaturesSetting interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -116,11 +118,13 @@ type DisableLegacyFeaturesSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDisableLegacyFeatures(value *DisableLegacyFeaturesSettingDisableLegacyFeatures)
+	PutProviderConfig(value *DisableLegacyFeaturesSettingProviderConfig)
 	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSettingName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -137,11 +141,11 @@ type DisableLegacyFeaturesSetting interface {
 
 // The jsii proxy struct for DisableLegacyFeaturesSetting
 type jsiiProxy_DisableLegacyFeaturesSetting struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_DisableLegacyFeaturesSetting) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DisableLegacyFeaturesSetting) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -230,8 +234,8 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting) EtagInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DisableLegacyFeaturesSetting) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DisableLegacyFeaturesSetting) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -280,8 +284,8 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DisableLegacyFeaturesSetting) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DisableLegacyFeaturesSetting) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -300,11 +304,31 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DisableLegacyFeaturesSetting) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DisableLegacyFeaturesSetting) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DisableLegacyFeaturesSetting) ProviderConfig() DisableLegacyFeaturesSettingProviderConfigOutputReference {
+	var returns DisableLegacyFeaturesSettingProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DisableLegacyFeaturesSetting) ProviderConfigInput() *DisableLegacyFeaturesSettingProviderConfig {
+	var returns *DisableLegacyFeaturesSettingProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -350,8 +374,8 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting) SettingNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DisableLegacyFeaturesSetting) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DisableLegacyFeaturesSetting) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -381,7 +405,7 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
 func NewDisableLegacyFeaturesSetting(scope constructs.Construct, id *string, config *DisableLegacyFeaturesSettingConfig) DisableLegacyFeaturesSetting {
 	_init_.Initialize()
 
@@ -391,7 +415,7 @@ func NewDisableLegacyFeaturesSetting(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DisableLegacyFeaturesSetting{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
+		"@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,12 +423,12 @@ func NewDisableLegacyFeaturesSetting(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
 func NewDisableLegacyFeaturesSetting_Override(d DisableLegacyFeaturesSetting, scope constructs.Construct, id *string, config *DisableLegacyFeaturesSettingConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
+		"@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +475,7 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting)SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DisableLegacyFeaturesSetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DisableLegacyFeaturesSetting)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -470,7 +494,7 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DisableLegacyFeaturesSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DisableLegacyFeaturesSetting)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +505,7 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DisableLegacyFeaturesSetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DisableLegacyFeaturesSetting)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -511,17 +535,17 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting)SetSettingName(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DisableLegacyFeaturesSetting resource upon running "cdktf plan <stack-name>".
-func DisableLegacyFeaturesSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DisableLegacyFeaturesSetting resource upon running "cdktn plan <stack-name>".
+func DisableLegacyFeaturesSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDisableLegacyFeaturesSetting_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
+		"@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -556,7 +580,7 @@ func DisableLegacyFeaturesSetting_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
+		"@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +599,7 @@ func DisableLegacyFeaturesSetting_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
+		"@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +618,7 @@ func DisableLegacyFeaturesSetting_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
+		"@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +631,7 @@ func DisableLegacyFeaturesSetting_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
+		"@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting",
 		"tfResourceType",
 		&returns,
 	)
@@ -652,11 +676,11 @@ func (d *jsiiProxy_DisableLegacyFeaturesSetting) GetAnyMapAttribute(terraformAtt
 	return returns
 }
 
-func (d *jsiiProxy_DisableLegacyFeaturesSetting) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DisableLegacyFeaturesSetting) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -793,7 +817,7 @@ func (d *jsiiProxy_DisableLegacyFeaturesSetting) HasResourceMove() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DisableLegacyFeaturesSetting) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (d *jsiiProxy_DisableLegacyFeaturesSetting) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -804,11 +828,11 @@ func (d *jsiiProxy_DisableLegacyFeaturesSetting) ImportFrom(id *string, provider
 	)
 }
 
-func (d *jsiiProxy_DisableLegacyFeaturesSetting) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DisableLegacyFeaturesSetting) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -875,6 +899,17 @@ func (d *jsiiProxy_DisableLegacyFeaturesSetting) PutDisableLegacyFeatures(value 
 	)
 }
 
+func (d *jsiiProxy_DisableLegacyFeaturesSetting) PutProviderConfig(value *DisableLegacyFeaturesSettingProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DisableLegacyFeaturesSetting) ResetEtag() {
 	_jsii_.InvokeVoid(
 		d,
@@ -895,6 +930,14 @@ func (d *jsiiProxy_DisableLegacyFeaturesSetting) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DisableLegacyFeaturesSetting) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

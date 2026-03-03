@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickstable
@@ -7,7 +7,7 @@ package datadatabrickstable
 type DataDatabricksTableTableInfoViewDependencies struct {
 	// dependencies block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/table#dependencies DataDatabricksTable#dependencies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/table#dependencies DataDatabricksTable#dependencies}
 	Dependencies interface{} `field:"optional" json:"dependencies" yaml:"dependencies"`
 }
 

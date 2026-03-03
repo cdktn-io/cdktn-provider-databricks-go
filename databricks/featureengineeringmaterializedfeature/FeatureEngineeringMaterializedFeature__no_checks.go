@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -83,6 +83,10 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutOnlineStore
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutProviderConfigParameters(value *FeatureEngineeringMaterializedFeatureProviderConfig) error {
+	return nil
+}
+
 func validateFeatureEngineeringMaterializedFeature_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -107,11 +111,15 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetCountParame
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetCronScheduleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetFeatureNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

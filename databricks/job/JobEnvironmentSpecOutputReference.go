@@ -1,18 +1,21 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/job/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobEnvironmentSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
+	BaseEnvironment() *string
+	SetBaseEnvironment(val *string)
+	BaseEnvironmentInput() *string
 	Client() *string
 	SetClient(val *string)
 	ClientInput() *string
@@ -49,15 +52,15 @@ type JobEnvironmentSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +76,17 @@ type JobEnvironmentSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetBaseEnvironment()
 	ResetClient()
 	ResetDependencies()
 	ResetEnvironmentVersion()
 	ResetJavaDependencies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +96,27 @@ type JobEnvironmentSpecOutputReference interface {
 
 // The jsii proxy struct for JobEnvironmentSpecOutputReference
 type jsiiProxy_JobEnvironmentSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) BaseEnvironment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseEnvironment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) BaseEnvironmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseEnvironmentInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_JobEnvironmentSpecOutputReference) Client() *string {
@@ -235,8 +259,8 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_JobEnvironmentSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +270,7 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) TerraformResource() cdktf.
 }
 
 
-func NewJobEnvironmentSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobEnvironmentSpecOutputReference {
+func NewJobEnvironmentSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobEnvironmentSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobEnvironmentSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +279,7 @@ func NewJobEnvironmentSpecOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_JobEnvironmentSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobEnvironmentSpecOutputReference",
+		"@cdktn/provider-databricks.job.JobEnvironmentSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,13 +287,24 @@ func NewJobEnvironmentSpecOutputReference(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewJobEnvironmentSpecOutputReference_Override(j JobEnvironmentSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobEnvironmentSpecOutputReference_Override(j JobEnvironmentSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobEnvironmentSpecOutputReference",
+		"@cdktn/provider-databricks.job.JobEnvironmentSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
+	)
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetBaseEnvironment(val *string) {
+	if err := j.validateSetBaseEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"baseEnvironment",
+		val,
 	)
 }
 
@@ -361,7 +396,7 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,11 +436,11 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) GetAnyMapAttribute(terrafo
 	return returns
 }
 
-func (j *jsiiProxy_JobEnvironmentSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -529,8 +564,8 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) GetStringMapAttribute(terr
 	return returns
 }
 
-func (j *jsiiProxy_JobEnvironmentSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -542,11 +577,11 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_JobEnvironmentSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -556,6 +591,14 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetBaseEnvironment() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetBaseEnvironment",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetClient() {
@@ -590,7 +633,7 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetJavaDependencies() {
 	)
 }
 
-func (j *jsiiProxy_JobEnvironmentSpecOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

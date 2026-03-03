@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksregisteredmodelversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksregisteredmodelversions/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/registered_model_versions databricks_registered_model_versions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/registered_model_versions databricks_registered_model_versions}.
 type DataDatabricksRegisteredModelVersions interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,9 +28,9 @@ type DataDatabricksRegisteredModelVersions interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -39,23 +39,23 @@ type DataDatabricksRegisteredModelVersions interface {
 	SetFullName(val *string)
 	FullNameInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModelVersions() DataDatabricksRegisteredModelVersionsModelVersionsList
 	ModelVersionsInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() DataDatabricksRegisteredModelVersionsProviderConfigOutputReference
 	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type DataDatabricksRegisteredModelVersions interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,7 +81,7 @@ type DataDatabricksRegisteredModelVersions interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -108,11 +108,11 @@ type DataDatabricksRegisteredModelVersions interface {
 
 // The jsii proxy struct for DataDatabricksRegisteredModelVersions
 type jsiiProxy_DataDatabricksRegisteredModelVersions struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) DependsOn() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) FullNameInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) Node() constructs.Node
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) RawOverrides() interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -312,7 +312,7 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
 func NewDataDatabricksRegisteredModelVersions(scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelVersionsConfig) DataDatabricksRegisteredModelVersions {
 	_init_.Initialize()
 
@@ -322,7 +322,7 @@ func NewDataDatabricksRegisteredModelVersions(scope constructs.Construct, id *st
 	j := jsiiProxy_DataDatabricksRegisteredModelVersions{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
+		"@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -330,12 +330,12 @@ func NewDataDatabricksRegisteredModelVersions(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
 func NewDataDatabricksRegisteredModelVersions_Override(d DataDatabricksRegisteredModelVersions, scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelVersionsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
+		"@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -360,7 +360,7 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersions)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersions)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions)SetFullName(val *string
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersions)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersions)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersions)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -398,17 +398,17 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions)SetProvider(val cdktf.T
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksRegisteredModelVersions resource upon running "cdktf plan <stack-name>".
-func DataDatabricksRegisteredModelVersions_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksRegisteredModelVersions resource upon running "cdktn plan <stack-name>".
+func DataDatabricksRegisteredModelVersions_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksRegisteredModelVersions_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
+		"@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -443,7 +443,7 @@ func DataDatabricksRegisteredModelVersions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
+		"@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -462,7 +462,7 @@ func DataDatabricksRegisteredModelVersions_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
+		"@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -481,7 +481,7 @@ func DataDatabricksRegisteredModelVersions_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
+		"@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -494,7 +494,7 @@ func DataDatabricksRegisteredModelVersions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
+		"@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions",
 		"tfResourceType",
 		&returns,
 	)
@@ -528,11 +528,11 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelVersions) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksRegisteredModelVersions) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersions) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -656,11 +656,11 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelVersions) GetStringMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksRegisteredModelVersions) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersions) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

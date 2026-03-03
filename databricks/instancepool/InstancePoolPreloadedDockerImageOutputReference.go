@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package instancepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/instancepool/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/instancepool/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type InstancePoolPreloadedDockerImageOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BasicAuth() InstancePoolPreloadedDockerImageBasicAuthOutputReference
 	BasicAuthInput() *InstancePoolPreloadedDockerImageBasicAuth
 	// the index of the complex object in a list.
@@ -39,9 +39,9 @@ type InstancePoolPreloadedDockerImageOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -50,7 +50,7 @@ type InstancePoolPreloadedDockerImageOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type InstancePoolPreloadedDockerImageOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBasicAuth(value *InstancePoolPreloadedDockerImageBasicAuth)
 	ResetBasicAuth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type InstancePoolPreloadedDockerImageOutputReference interface {
 
 // The jsii proxy struct for InstancePoolPreloadedDockerImageOutputReference
 type jsiiProxy_InstancePoolPreloadedDockerImageOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) BasicAuth() InstancePoolPreloadedDockerImageBasicAuthOutputReference {
@@ -166,8 +166,8 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) UrlInput() *
 }
 
 
-func NewInstancePoolPreloadedDockerImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) InstancePoolPreloadedDockerImageOutputReference {
+func NewInstancePoolPreloadedDockerImageOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) InstancePoolPreloadedDockerImageOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewInstancePoolPreloadedDockerImageOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -206,7 +206,7 @@ func NewInstancePoolPreloadedDockerImageOutputReference(terraformResource cdktf.
 	j := jsiiProxy_InstancePoolPreloadedDockerImageOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolPreloadedDockerImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewInstancePoolPreloadedDockerImageOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewInstancePoolPreloadedDockerImageOutputReference_Override(i InstancePoolPreloadedDockerImageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewInstancePoolPreloadedDockerImageOutputReference_Override(i InstancePoolPreloadedDockerImageOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolPreloadedDockerImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
@@ -268,7 +268,7 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -319,11 +319,11 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -447,8 +447,8 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) GetStringMap
 	return returns
 }
 
-func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -460,11 +460,11 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) Interpolatio
 	return returns
 }
 
-func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -495,7 +495,7 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) ResetBasicAu
 	)
 }
 
-func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_InstancePoolPreloadedDockerImageOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

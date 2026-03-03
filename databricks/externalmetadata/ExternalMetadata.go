@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externalmetadata
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externalmetadata/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/externalmetadata/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata databricks_external_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata databricks_external_metadata}.
 type ExternalMetadata interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Columns() *[]*string
 	SetColumns(val *[]*string)
 	ColumnsInput() *[]*string
@@ -43,18 +43,18 @@ type ExternalMetadata interface {
 	SetEntityType(val *string)
 	EntityTypeInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetastoreId() *string
 	Name() *string
 	SetName(val *string)
@@ -68,9 +68,11 @@ type ExternalMetadata interface {
 	SetProperties(val *map[string]*string)
 	PropertiesInput() *map[string]*string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() ExternalMetadataProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -81,7 +83,7 @@ type ExternalMetadata interface {
 	SetSystemType(val *string)
 	SystemTypeInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -99,7 +101,7 @@ type ExternalMetadata interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -117,9 +119,9 @@ type ExternalMetadata interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -134,6 +136,7 @@ type ExternalMetadata interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *ExternalMetadataProviderConfig)
 	ResetColumns()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -141,6 +144,7 @@ type ExternalMetadata interface {
 	ResetOverrideLogicalId()
 	ResetOwner()
 	ResetProperties()
+	ResetProviderConfig()
 	ResetUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -157,11 +161,11 @@ type ExternalMetadata interface {
 
 // The jsii proxy struct for ExternalMetadata
 type jsiiProxy_ExternalMetadata struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_ExternalMetadata) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ExternalMetadata) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -290,8 +294,8 @@ func (j *jsiiProxy_ExternalMetadata) EntityTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalMetadata) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ExternalMetadata) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -330,8 +334,8 @@ func (j *jsiiProxy_ExternalMetadata) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalMetadata) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ExternalMetadata) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -420,11 +424,31 @@ func (j *jsiiProxy_ExternalMetadata) PropertiesInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalMetadata) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ExternalMetadata) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalMetadata) ProviderConfig() ExternalMetadataProviderConfigOutputReference {
+	var returns ExternalMetadataProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalMetadata) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -470,8 +494,8 @@ func (j *jsiiProxy_ExternalMetadata) SystemTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalMetadata) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ExternalMetadata) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -541,7 +565,7 @@ func (j *jsiiProxy_ExternalMetadata) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata databricks_external_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata databricks_external_metadata} Resource.
 func NewExternalMetadata(scope constructs.Construct, id *string, config *ExternalMetadataConfig) ExternalMetadata {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewExternalMetadata(scope constructs.Construct, id *string, config *Externa
 	j := jsiiProxy_ExternalMetadata{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.externalMetadata.ExternalMetadata",
+		"@cdktn/provider-databricks.externalMetadata.ExternalMetadata",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -559,12 +583,12 @@ func NewExternalMetadata(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata databricks_external_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata databricks_external_metadata} Resource.
 func NewExternalMetadata_Override(e ExternalMetadata, scope constructs.Construct, id *string, config *ExternalMetadataConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.externalMetadata.ExternalMetadata",
+		"@cdktn/provider-databricks.externalMetadata.ExternalMetadata",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -633,7 +657,7 @@ func (j *jsiiProxy_ExternalMetadata)SetEntityType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalMetadata)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ExternalMetadata)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -641,7 +665,7 @@ func (j *jsiiProxy_ExternalMetadata)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ExternalMetadata)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ExternalMetadata)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +709,7 @@ func (j *jsiiProxy_ExternalMetadata)SetProperties(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalMetadata)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ExternalMetadata)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -726,17 +750,17 @@ func (j *jsiiProxy_ExternalMetadata)SetUrl(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ExternalMetadata resource upon running "cdktf plan <stack-name>".
-func ExternalMetadata_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ExternalMetadata resource upon running "cdktn plan <stack-name>".
+func ExternalMetadata_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateExternalMetadata_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.externalMetadata.ExternalMetadata",
+		"@cdktn/provider-databricks.externalMetadata.ExternalMetadata",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -771,7 +795,7 @@ func ExternalMetadata_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.externalMetadata.ExternalMetadata",
+		"@cdktn/provider-databricks.externalMetadata.ExternalMetadata",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -790,7 +814,7 @@ func ExternalMetadata_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.externalMetadata.ExternalMetadata",
+		"@cdktn/provider-databricks.externalMetadata.ExternalMetadata",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +833,7 @@ func ExternalMetadata_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.externalMetadata.ExternalMetadata",
+		"@cdktn/provider-databricks.externalMetadata.ExternalMetadata",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -822,7 +846,7 @@ func ExternalMetadata_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.externalMetadata.ExternalMetadata",
+		"@cdktn/provider-databricks.externalMetadata.ExternalMetadata",
 		"tfResourceType",
 		&returns,
 	)
@@ -867,11 +891,11 @@ func (e *jsiiProxy_ExternalMetadata) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (e *jsiiProxy_ExternalMetadata) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalMetadata) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -1008,7 +1032,7 @@ func (e *jsiiProxy_ExternalMetadata) HasResourceMove() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_ExternalMetadata) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (e *jsiiProxy_ExternalMetadata) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1019,11 +1043,11 @@ func (e *jsiiProxy_ExternalMetadata) ImportFrom(id *string, provider cdktf.Terra
 	)
 }
 
-func (e *jsiiProxy_ExternalMetadata) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalMetadata) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -1079,6 +1103,17 @@ func (e *jsiiProxy_ExternalMetadata) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_ExternalMetadata) PutProviderConfig(value *ExternalMetadataProviderConfig) {
+	if err := e.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ExternalMetadata) ResetColumns() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1115,6 +1150,14 @@ func (e *jsiiProxy_ExternalMetadata) ResetProperties() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalMetadata) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

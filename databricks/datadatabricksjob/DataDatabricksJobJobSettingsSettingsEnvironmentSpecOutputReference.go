@@ -1,18 +1,21 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksjob/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
+	BaseEnvironment() *string
+	SetBaseEnvironment(val *string)
+	BaseEnvironmentInput() *string
 	Client() *string
 	SetClient(val *string)
 	ClientInput() *string
@@ -49,15 +52,15 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +76,17 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetBaseEnvironment()
 	ResetClient()
 	ResetDependencies()
 	ResetEnvironmentVersion()
 	ResetJavaDependencies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +96,27 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 
 // The jsii proxy struct for DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference
 type jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) BaseEnvironment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseEnvironment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) BaseEnvironmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseEnvironmentInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) Client() *string {
@@ -235,8 +259,8 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +270,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 }
 
 
-func NewDataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference {
+func NewDataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +279,7 @@ func NewDataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference(terra
 	j := jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,13 +287,24 @@ func NewDataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference(terra
 	return &j
 }
 
-func NewDataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference_Override(d DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference_Override(d DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference)SetBaseEnvironment(val *string) {
+	if err := j.validateSetBaseEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"baseEnvironment",
+		val,
 	)
 }
 
@@ -361,7 +396,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,11 +436,11 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -529,8 +564,8 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -542,11 +577,11 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -556,6 +591,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) ResetBaseEnvironment() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBaseEnvironment",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) ResetClient() {
@@ -590,7 +633,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

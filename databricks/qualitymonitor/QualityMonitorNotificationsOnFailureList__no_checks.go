@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (q *jsiiProxy_QualityMonitorNotificationsOnFailureList) validateGetParamete
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorNotificationsOnFailureList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QualityMonitorNotificationsOnFailureList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_QualityMonitorNotificationsOnFailureList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOnFailureList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QualityMonitorNotificationsOnFailureList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_QualityMonitorNotificationsOnFailureList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewQualityMonitorNotificationsOnFailureListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewQualityMonitorNotificationsOnFailureListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

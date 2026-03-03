@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package share
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/share/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/share/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ShareObjectPartitionValueOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type ShareObjectPartitionValueOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -57,7 +57,7 @@ type ShareObjectPartitionValueOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,14 +73,14 @@ type ShareObjectPartitionValueOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetRecipientPropertyKey()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,7 +90,7 @@ type ShareObjectPartitionValueOutputReference interface {
 
 // The jsii proxy struct for ShareObjectPartitionValueOutputReference
 type jsiiProxy_ShareObjectPartitionValueOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ShareObjectPartitionValueOutputReference) ComplexObjectIndex() interface{} {
@@ -213,8 +213,8 @@ func (j *jsiiProxy_ShareObjectPartitionValueOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_ShareObjectPartitionValueOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ShareObjectPartitionValueOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -244,7 +244,7 @@ func (j *jsiiProxy_ShareObjectPartitionValueOutputReference) ValueInput() *strin
 }
 
 
-func NewShareObjectPartitionValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ShareObjectPartitionValueOutputReference {
+func NewShareObjectPartitionValueOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ShareObjectPartitionValueOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewShareObjectPartitionValueOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -253,7 +253,7 @@ func NewShareObjectPartitionValueOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ShareObjectPartitionValueOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference",
+		"@cdktn/provider-databricks.share.ShareObjectPartitionValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,11 +261,11 @@ func NewShareObjectPartitionValueOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewShareObjectPartitionValueOutputReference_Override(s ShareObjectPartitionValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewShareObjectPartitionValueOutputReference_Override(s ShareObjectPartitionValueOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference",
+		"@cdktn/provider-databricks.share.ShareObjectPartitionValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -348,7 +348,7 @@ func (j *jsiiProxy_ShareObjectPartitionValueOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ShareObjectPartitionValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ShareObjectPartitionValueOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,11 +399,11 @@ func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -527,8 +527,8 @@ func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -540,11 +540,11 @@ func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) InterpolationAsList
 	return returns
 }
 
-func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -572,7 +572,7 @@ func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) ResetValue() {
 	)
 }
 
-func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ShareObjectPartitionValueOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

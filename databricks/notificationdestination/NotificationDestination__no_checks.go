@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (n *jsiiProxy_NotificationDestination) validatePutConfigParameters(value *N
 	return nil
 }
 
+func (n *jsiiProxy_NotificationDestination) validatePutProviderConfigParameters(value *NotificationDestinationProviderConfig) error {
+	return nil
+}
+
 func validateNotificationDestination_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -115,7 +119,7 @@ func (j *jsiiProxy_NotificationDestination) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_NotificationDestination) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NotificationDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

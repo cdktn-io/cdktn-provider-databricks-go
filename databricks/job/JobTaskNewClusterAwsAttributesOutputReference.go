@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/job/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobTaskNewClusterAwsAttributesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Availability() *string
 	SetAvailability(val *string)
 	AvailabilityInput() *string
@@ -64,9 +64,9 @@ type JobTaskNewClusterAwsAttributesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -75,7 +75,7 @@ type JobTaskNewClusterAwsAttributesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type JobTaskNewClusterAwsAttributesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAvailability()
 	ResetEbsVolumeCount()
 	ResetEbsVolumeIops()
@@ -106,7 +106,7 @@ type JobTaskNewClusterAwsAttributesOutputReference interface {
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,7 +116,7 @@ type JobTaskNewClusterAwsAttributesOutputReference interface {
 
 // The jsii proxy struct for JobTaskNewClusterAwsAttributesOutputReference
 type jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) Availability() *string {
@@ -359,8 +359,8 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) ZoneIdInput() 
 }
 
 
-func NewJobTaskNewClusterAwsAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterAwsAttributesOutputReference {
+func NewJobTaskNewClusterAwsAttributesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterAwsAttributesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobTaskNewClusterAwsAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -399,7 +399,7 @@ func NewJobTaskNewClusterAwsAttributesOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterAwsAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -407,11 +407,11 @@ func NewJobTaskNewClusterAwsAttributesOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewJobTaskNewClusterAwsAttributesOutputReference_Override(j JobTaskNewClusterAwsAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobTaskNewClusterAwsAttributesOutputReference_Override(j JobTaskNewClusterAwsAttributesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterAwsAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
@@ -560,7 +560,7 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,11 +611,11 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -739,8 +739,8 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetStringMapAt
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -752,11 +752,11 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationA
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -848,7 +848,7 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) ResetZoneId() 
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

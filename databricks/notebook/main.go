@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package notebook
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.notebook.Notebook",
+		"@cdktn/provider-databricks.notebook.Notebook",
 		reflect.TypeOf((*Notebook)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -90,20 +90,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Notebook{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.notebook.NotebookConfig",
+		"@cdktn/provider-databricks.notebook.NotebookConfig",
 		reflect.TypeOf((*NotebookConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.notebook.NotebookProviderConfig",
+		"@cdktn/provider-databricks.notebook.NotebookProviderConfig",
 		reflect.TypeOf((*NotebookProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference",
+		"@cdktn/provider-databricks.notebook.NotebookProviderConfigOutputReference",
 		reflect.TypeOf((*NotebookProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -132,7 +132,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotebookProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

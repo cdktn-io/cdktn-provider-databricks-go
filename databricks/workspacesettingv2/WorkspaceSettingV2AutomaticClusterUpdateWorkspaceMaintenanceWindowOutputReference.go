@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workspacesettingv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/workspacesettingv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputRef
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WeekDayBasedSchedule() WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference
 	WeekDayBasedScheduleInput() interface{}
 	// Experimental.
@@ -47,7 +47,7 @@ type WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputRef
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputRef
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutWeekDayBasedSchedule(value *WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule)
 	ResetWeekDayBasedSchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputRef
 
 // The jsii proxy struct for WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference
 type jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) ComplexObjectIndex() interface{} {
@@ -143,8 +143,8 @@ func (j *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 }
 
 
-func NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference {
+func NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutput
 	j := jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference",
+		"@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutput
 	return &j
 }
 
-func NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference_Override(w WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference_Override(w WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference",
+		"@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -245,7 +245,7 @@ func (j *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 	)
 }
 
-func (j *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -285,11 +285,11 @@ func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -413,8 +413,8 @@ func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -426,11 +426,11 @@ func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -461,7 +461,7 @@ func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 	)
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

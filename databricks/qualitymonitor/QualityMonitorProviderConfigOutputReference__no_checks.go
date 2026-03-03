@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (q *jsiiProxy_QualityMonitorProviderConfigOutputReference) validateInterpol
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorProviderConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QualityMonitorProviderConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (j *jsiiProxy_QualityMonitorProviderConfigOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_QualityMonitorProviderConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QualityMonitorProviderConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_QualityMonitorProviderConfigOutputReference) validateSetWorks
 	return nil
 }
 
-func validateNewQualityMonitorProviderConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewQualityMonitorProviderConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

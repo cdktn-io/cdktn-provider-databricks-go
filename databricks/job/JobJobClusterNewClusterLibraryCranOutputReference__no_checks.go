@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (j *jsiiProxy_JobJobClusterNewClusterLibraryCranOutputReference) validateIn
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterLibraryCranOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobJobClusterNewClusterLibraryCranOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -75,11 +75,11 @@ func (j *jsiiProxy_JobJobClusterNewClusterLibraryCranOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterLibraryCranOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobJobClusterNewClusterLibraryCranOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewJobJobClusterNewClusterLibraryCranOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobJobClusterNewClusterLibraryCranOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

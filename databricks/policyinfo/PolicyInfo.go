@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package policyinfo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/policyinfo/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/policyinfo/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/policy_info databricks_policy_info}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/policy_info databricks_policy_info}.
 type PolicyInfo interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ColumnMask() PolicyInfoColumnMaskOutputReference
 	ColumnMaskInput() interface{}
 	Comment() *string
@@ -42,9 +42,9 @@ type PolicyInfo interface {
 	SetExceptPrincipals(val *[]*string)
 	ExceptPrincipalsInput() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	ForSecurableType() *string
 	SetForSecurableType(val *string)
 	ForSecurableTypeInput() *string
@@ -54,9 +54,9 @@ type PolicyInfo interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MatchColumns() PolicyInfoMatchColumnsList
 	MatchColumnsInput() interface{}
 	Name() *string
@@ -74,9 +74,11 @@ type PolicyInfo interface {
 	SetPolicyType(val *string)
 	PolicyTypeInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() PolicyInfoProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -86,7 +88,7 @@ type PolicyInfo interface {
 	RowFilter() PolicyInfoRowFilterOutputReference
 	RowFilterInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,7 +109,7 @@ type PolicyInfo interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -125,9 +127,9 @@ type PolicyInfo interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -144,6 +146,7 @@ type PolicyInfo interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutColumnMask(value *PolicyInfoColumnMask)
 	PutMatchColumns(value interface{})
+	PutProviderConfig(value *PolicyInfoProviderConfig)
 	PutRowFilter(value *PolicyInfoRowFilter)
 	ResetColumnMask()
 	ResetComment()
@@ -155,6 +158,7 @@ type PolicyInfo interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetRowFilter()
 	ResetWhenCondition()
 	SynthesizeAttributes() *map[string]interface{}
@@ -172,11 +176,11 @@ type PolicyInfo interface {
 
 // The jsii proxy struct for PolicyInfo
 type jsiiProxy_PolicyInfo struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_PolicyInfo) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_PolicyInfo) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -305,8 +309,8 @@ func (j *jsiiProxy_PolicyInfo) ExceptPrincipalsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyInfo) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_PolicyInfo) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -365,8 +369,8 @@ func (j *jsiiProxy_PolicyInfo) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyInfo) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_PolicyInfo) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -485,11 +489,31 @@ func (j *jsiiProxy_PolicyInfo) PolicyTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyInfo) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_PolicyInfo) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyInfo) ProviderConfig() PolicyInfoProviderConfigOutputReference {
+	var returns PolicyInfoProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyInfo) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -535,8 +559,8 @@ func (j *jsiiProxy_PolicyInfo) RowFilterInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyInfo) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_PolicyInfo) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -626,7 +650,7 @@ func (j *jsiiProxy_PolicyInfo) WhenConditionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/policy_info databricks_policy_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/policy_info databricks_policy_info} Resource.
 func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoConfig) PolicyInfo {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoCon
 	j := jsiiProxy_PolicyInfo{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.policyInfo.PolicyInfo",
+		"@cdktn/provider-databricks.policyInfo.PolicyInfo",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -644,12 +668,12 @@ func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/policy_info databricks_policy_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/policy_info databricks_policy_info} Resource.
 func NewPolicyInfo_Override(p PolicyInfo, scope constructs.Construct, id *string, config *PolicyInfoConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.policyInfo.PolicyInfo",
+		"@cdktn/provider-databricks.policyInfo.PolicyInfo",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -707,7 +731,7 @@ func (j *jsiiProxy_PolicyInfo)SetExceptPrincipals(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyInfo)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PolicyInfo)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -726,7 +750,7 @@ func (j *jsiiProxy_PolicyInfo)SetForSecurableType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyInfo)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PolicyInfo)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +805,7 @@ func (j *jsiiProxy_PolicyInfo)SetPolicyType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyInfo)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PolicyInfo)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -822,17 +846,17 @@ func (j *jsiiProxy_PolicyInfo)SetWhenCondition(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a PolicyInfo resource upon running "cdktf plan <stack-name>".
-func PolicyInfo_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a PolicyInfo resource upon running "cdktn plan <stack-name>".
+func PolicyInfo_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validatePolicyInfo_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.policyInfo.PolicyInfo",
+		"@cdktn/provider-databricks.policyInfo.PolicyInfo",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -867,7 +891,7 @@ func PolicyInfo_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.policyInfo.PolicyInfo",
+		"@cdktn/provider-databricks.policyInfo.PolicyInfo",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -886,7 +910,7 @@ func PolicyInfo_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.policyInfo.PolicyInfo",
+		"@cdktn/provider-databricks.policyInfo.PolicyInfo",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -905,7 +929,7 @@ func PolicyInfo_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.policyInfo.PolicyInfo",
+		"@cdktn/provider-databricks.policyInfo.PolicyInfo",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -918,7 +942,7 @@ func PolicyInfo_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.policyInfo.PolicyInfo",
+		"@cdktn/provider-databricks.policyInfo.PolicyInfo",
 		"tfResourceType",
 		&returns,
 	)
@@ -963,11 +987,11 @@ func (p *jsiiProxy_PolicyInfo) GetAnyMapAttribute(terraformAttribute *string) *m
 	return returns
 }
 
-func (p *jsiiProxy_PolicyInfo) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PolicyInfo) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1104,7 +1128,7 @@ func (p *jsiiProxy_PolicyInfo) HasResourceMove() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyInfo) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (p *jsiiProxy_PolicyInfo) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1115,11 +1139,11 @@ func (p *jsiiProxy_PolicyInfo) ImportFrom(id *string, provider cdktf.TerraformPr
 	)
 }
 
-func (p *jsiiProxy_PolicyInfo) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PolicyInfo) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1197,6 +1221,17 @@ func (p *jsiiProxy_PolicyInfo) PutMatchColumns(value interface{}) {
 	)
 }
 
+func (p *jsiiProxy_PolicyInfo) PutProviderConfig(value *PolicyInfoProviderConfig) {
+	if err := p.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PolicyInfo) PutRowFilter(value *PolicyInfoRowFilter) {
 	if err := p.validatePutRowFilterParameters(value); err != nil {
 		panic(err)
@@ -1268,6 +1303,14 @@ func (p *jsiiProxy_PolicyInfo) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyInfo) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

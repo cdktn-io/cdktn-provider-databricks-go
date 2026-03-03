@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateInterp
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateSetWor
 	return nil
 }
 
-func validateNewJobTaskPowerBiTaskPowerBiModelOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobTaskPowerBiTaskPowerBiModelOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

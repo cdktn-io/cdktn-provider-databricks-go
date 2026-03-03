@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksmlflowmodel
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModel",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModel",
 		reflect.TypeOf((*DataDatabricksMlflowModel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,20 +74,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksMlflowModel{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelConfig",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelConfig",
 		reflect.TypeOf((*DataDatabricksMlflowModelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersions",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersions",
 		reflect.TypeOf((*DataDatabricksMlflowModelLatestVersions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsList",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsList",
 		reflect.TypeOf((*DataDatabricksMlflowModelLatestVersionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -104,12 +104,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksMlflowModelLatestVersionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsOutputReference",
 		reflect.TypeOf((*DataDatabricksMlflowModelLatestVersionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,16 +176,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksMlflowModelLatestVersionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsTags",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsTags",
 		reflect.TypeOf((*DataDatabricksMlflowModelLatestVersionsTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsTagsList",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsTagsList",
 		reflect.TypeOf((*DataDatabricksMlflowModelLatestVersionsTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -202,12 +202,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksMlflowModelLatestVersionsTagsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsTagsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsTagsOutputReference",
 		reflect.TypeOf((*DataDatabricksMlflowModelLatestVersionsTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -240,16 +240,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksMlflowModelLatestVersionsTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelProviderConfig",
 		reflect.TypeOf((*DataDatabricksMlflowModelProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksMlflowModelProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -278,16 +278,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksMlflowModelProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelTags",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelTags",
 		reflect.TypeOf((*DataDatabricksMlflowModelTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelTagsList",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelTagsList",
 		reflect.TypeOf((*DataDatabricksMlflowModelTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -304,12 +304,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksMlflowModelTagsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelTagsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelTagsOutputReference",
 		reflect.TypeOf((*DataDatabricksMlflowModelTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -342,7 +342,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksMlflowModelTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

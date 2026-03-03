@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package cluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/cluster/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/cluster/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ClusterAzureAttributesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Availability() *string
 	SetAvailability(val *string)
 	AvailabilityInput() *string
@@ -48,15 +48,15 @@ type ClusterAzureAttributesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type ClusterAzureAttributesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLogAnalyticsInfo(value *ClusterAzureAttributesLogAnalyticsInfo)
 	ResetAvailability()
 	ResetFirstOnDemand()
@@ -82,7 +82,7 @@ type ClusterAzureAttributesOutputReference interface {
 	ResetSpotBidMaxPrice()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type ClusterAzureAttributesOutputReference interface {
 
 // The jsii proxy struct for ClusterAzureAttributesOutputReference
 type jsiiProxy_ClusterAzureAttributesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ClusterAzureAttributesOutputReference) Availability() *string {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_ClusterAzureAttributesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ClusterAzureAttributesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference) TerraformResource() cd
 }
 
 
-func NewClusterAzureAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClusterAzureAttributesOutputReference {
+func NewClusterAzureAttributesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ClusterAzureAttributesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewClusterAzureAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +255,7 @@ func NewClusterAzureAttributesOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ClusterAzureAttributesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.cluster.ClusterAzureAttributesOutputReference",
+		"@cdktn/provider-databricks.cluster.ClusterAzureAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewClusterAzureAttributesOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewClusterAzureAttributesOutputReference_Override(c ClusterAzureAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewClusterAzureAttributesOutputReference_Override(c ClusterAzureAttributesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.cluster.ClusterAzureAttributesOutputReference",
+		"@cdktn/provider-databricks.cluster.ClusterAzureAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,11 +390,11 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -518,8 +518,8 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (c *jsiiProxy_ClusterAzureAttributesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ClusterAzureAttributesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -531,11 +531,11 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (c *jsiiProxy_ClusterAzureAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ClusterAzureAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -590,7 +590,7 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) ResetSpotBidMaxPrice()
 	)
 }
 
-func (c *jsiiProxy_ClusterAzureAttributesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClusterAzureAttributesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

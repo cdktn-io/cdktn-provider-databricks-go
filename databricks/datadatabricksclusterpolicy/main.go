@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksclusterpolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy",
+		"@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy",
 		reflect.TypeOf((*DataDatabricksClusterPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,20 +78,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyConfig",
+		"@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyConfig",
 		reflect.TypeOf((*DataDatabricksClusterPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyProviderConfig",
 		reflect.TypeOf((*DataDatabricksClusterPolicyProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterPolicyProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,7 +120,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterPolicyProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

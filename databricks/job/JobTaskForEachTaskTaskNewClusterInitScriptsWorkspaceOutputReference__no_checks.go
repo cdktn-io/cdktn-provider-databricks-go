@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,11 +71,11 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewJobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

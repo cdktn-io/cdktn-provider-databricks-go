@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package metastoredataaccess
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
 		reflect.TypeOf((*MetastoreDataAccess)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -114,16 +114,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetastoreDataAccess{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole",
 		reflect.TypeOf((*MetastoreDataAccessAwsIamRole)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRoleOutputReference",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRoleOutputReference",
 		reflect.TypeOf((*MetastoreDataAccessAwsIamRoleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,16 +158,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity",
 		reflect.TypeOf((*MetastoreDataAccessAzureManagedIdentity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentityOutputReference",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentityOutputReference",
 		reflect.TypeOf((*MetastoreDataAccessAzureManagedIdentityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConnectorId", GoGetter: "AccessConnectorId"},
@@ -202,16 +202,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal",
 		reflect.TypeOf((*MetastoreDataAccessAzureServicePrincipal)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipalOutputReference",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipalOutputReference",
 		reflect.TypeOf((*MetastoreDataAccessAzureServicePrincipalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationId", GoGetter: "ApplicationId"},
@@ -244,16 +244,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken",
 		reflect.TypeOf((*MetastoreDataAccessCloudflareApiToken)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference",
 		reflect.TypeOf((*MetastoreDataAccessCloudflareApiTokenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -286,20 +286,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetastoreDataAccessCloudflareApiTokenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig",
 		reflect.TypeOf((*MetastoreDataAccessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccount",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccount",
 		reflect.TypeOf((*MetastoreDataAccessDatabricksGcpServiceAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccountOutputReference",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccountOutputReference",
 		reflect.TypeOf((*MetastoreDataAccessDatabricksGcpServiceAccountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -332,16 +332,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey",
 		reflect.TypeOf((*MetastoreDataAccessGcpServiceAccountKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKeyOutputReference",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKeyOutputReference",
 		reflect.TypeOf((*MetastoreDataAccessGcpServiceAccountKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -374,7 +374,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetastoreDataAccessGcpServiceAccountKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

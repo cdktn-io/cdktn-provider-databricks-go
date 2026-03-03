@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accountfederationpolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.accountFederationPolicy.AccountFederationPolicy",
+		"@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy",
 		reflect.TypeOf((*AccountFederationPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -75,20 +75,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountFederationPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig",
+		"@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig",
 		reflect.TypeOf((*AccountFederationPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy",
+		"@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy",
 		reflect.TypeOf((*AccountFederationPolicyOidcPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicyOutputReference",
+		"@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicyOutputReference",
 		reflect.TypeOf((*AccountFederationPolicyOidcPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audiences", GoGetter: "Audiences"},
@@ -133,7 +133,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountFederationPolicyOidcPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

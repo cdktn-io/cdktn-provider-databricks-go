@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksdashboards
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdashboards/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksdashboards/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksDashboardsDashboardsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,9 +49,9 @@ type DataDatabricksDashboardsDashboardsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdateTime() *string
 	WarehouseId() *string
 	SetWarehouseId(val *string)
@@ -61,7 +61,7 @@ type DataDatabricksDashboardsDashboardsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -77,15 +77,15 @@ type DataDatabricksDashboardsDashboardsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDisplayName()
 	ResetSerializedDashboard()
 	ResetWarehouseId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,7 +95,7 @@ type DataDatabricksDashboardsDashboardsOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksDashboardsDashboardsOutputReference
 type jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) ComplexObjectIndex() interface{} {
@@ -258,8 +258,8 @@ func (j *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) WarehouseI
 }
 
 
-func NewDataDatabricksDashboardsDashboardsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksDashboardsDashboardsOutputReference {
+func NewDataDatabricksDashboardsDashboardsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksDashboardsDashboardsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksDashboardsDashboardsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -308,7 +308,7 @@ func NewDataDatabricksDashboardsDashboardsOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -316,11 +316,11 @@ func NewDataDatabricksDashboardsDashboardsOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewDataDatabricksDashboardsDashboardsOutputReference_Override(d DataDatabricksDashboardsDashboardsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksDashboardsDashboardsOutputReference_Override(d DataDatabricksDashboardsDashboardsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -392,7 +392,7 @@ func (j *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,11 +443,11 @@ func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) GetAnyMapA
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -571,8 +571,8 @@ func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) GetStringM
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -584,11 +584,11 @@ func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) Interpolat
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -624,7 +624,7 @@ func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) ResetWareh
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

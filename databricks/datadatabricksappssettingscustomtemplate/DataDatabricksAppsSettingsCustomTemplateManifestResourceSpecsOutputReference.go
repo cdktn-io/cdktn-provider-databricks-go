@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksappssettingscustomtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksappssettingscustomtemplate/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksappssettingscustomtemplate/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +31,8 @@ type DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReferenc
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	ExperimentSpec() DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpecOutputReference
+	ExperimentSpecInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -51,9 +53,9 @@ type DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReferenc
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UcSecurableSpec() DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutputReference
 	UcSecurableSpecInput() interface{}
 	// Experimental.
@@ -61,7 +63,7 @@ type DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReferenc
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -77,15 +79,17 @@ type DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReferenc
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutExperimentSpec(value *DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec)
 	PutJobSpec(value *DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpec)
 	PutSecretSpec(value *DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpec)
 	PutServingEndpointSpec(value *DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec)
 	PutSqlWarehouseSpec(value *DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec)
 	PutUcSecurableSpec(value *DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec)
 	ResetDescription()
+	ResetExperimentSpec()
 	ResetJobSpec()
 	ResetSecretSpec()
 	ResetServingEndpointSpec()
@@ -93,7 +97,7 @@ type DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReferenc
 	ResetUcSecurableSpec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,7 +107,7 @@ type DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReferenc
 
 // The jsii proxy struct for DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference
 type jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) ComplexObjectIndex() interface{} {
@@ -151,6 +155,26 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) ExperimentSpec() DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpecOutputReference {
+	var returns DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpecOutputReference
+	_jsii_.Get(
+		j,
+		"experimentSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) ExperimentSpecInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"experimentSpecInput",
 		&returns,
 	)
 	return returns
@@ -286,8 +310,8 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -317,7 +341,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs
 }
 
 
-func NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference {
+func NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -326,7 +350,7 @@ func NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputRefer
 	j := jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -334,11 +358,11 @@ func NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputRefer
 	return &j
 }
 
-func NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference_Override(d DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference_Override(d DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -410,7 +434,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,11 +474,11 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -578,8 +602,8 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -591,11 +615,11 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -605,6 +629,17 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) PutExperimentSpec(value *DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec) {
+	if err := d.validatePutExperimentSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putExperimentSpec",
+		[]interface{}{value},
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) PutJobSpec(value *DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpec) {
@@ -670,6 +705,14 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) ResetExperimentSpec() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExperimentSpec",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) ResetJobSpec() {
 	_jsii_.InvokeVoid(
 		d,
@@ -710,7 +753,7 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

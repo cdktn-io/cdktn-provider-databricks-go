@@ -1,23 +1,23 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externallocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/externallocation/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_location databricks_external_location}.
 type ExternalLocation interface {
-	cdktf.TerraformResource
-	BrowseOnly() cdktf.IResolvable
+	cdktn.TerraformResource
+	BrowseOnly() cdktn.IResolvable
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -41,6 +41,7 @@ type ExternalLocation interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveEnableFileEvents() cdktn.IResolvable
 	EnableFileEvents() interface{}
 	SetEnableFileEvents(val interface{})
 	EnableFileEventsInput() interface{}
@@ -58,9 +59,9 @@ type ExternalLocation interface {
 	SetForceUpdate(val interface{})
 	ForceUpdateInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -72,9 +73,9 @@ type ExternalLocation interface {
 	SetIsolationMode(val *string)
 	IsolationModeInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetastoreId() *string
 	SetMetastoreId(val *string)
 	MetastoreIdInput() *string
@@ -87,9 +88,11 @@ type ExternalLocation interface {
 	SetOwner(val *string)
 	OwnerInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() ExternalLocationProviderConfigOutputReference
+	ProviderConfigInput() *ExternalLocationProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -103,7 +106,7 @@ type ExternalLocation interface {
 	SetSkipValidation(val interface{})
 	SkipValidationInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -121,7 +124,7 @@ type ExternalLocation interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -139,9 +142,9 @@ type ExternalLocation interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -158,6 +161,7 @@ type ExternalLocation interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionDetails(value *ExternalLocationEncryptionDetails)
 	PutFileEventQueue(value *ExternalLocationFileEventQueue)
+	PutProviderConfig(value *ExternalLocationProviderConfig)
 	ResetComment()
 	ResetEnableFileEvents()
 	ResetEncryptionDetails()
@@ -172,6 +176,7 @@ type ExternalLocation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetProviderConfig()
 	ResetReadOnly()
 	ResetSkipValidation()
 	SynthesizeAttributes() *map[string]interface{}
@@ -189,11 +194,11 @@ type ExternalLocation interface {
 
 // The jsii proxy struct for ExternalLocation
 type jsiiProxy_ExternalLocation struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_ExternalLocation) BrowseOnly() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ExternalLocation) BrowseOnly() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"browseOnly",
@@ -202,8 +207,8 @@ func (j *jsiiProxy_ExternalLocation) BrowseOnly() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalLocation) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ExternalLocation) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -317,6 +322,16 @@ func (j *jsiiProxy_ExternalLocation) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) EffectiveEnableFileEvents() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"effectiveEnableFileEvents",
 		&returns,
 	)
 	return returns
@@ -442,8 +457,8 @@ func (j *jsiiProxy_ExternalLocation) ForceUpdateInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalLocation) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ExternalLocation) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -512,8 +527,8 @@ func (j *jsiiProxy_ExternalLocation) IsolationModeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalLocation) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ExternalLocation) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -592,11 +607,31 @@ func (j *jsiiProxy_ExternalLocation) OwnerInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalLocation) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ExternalLocation) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) ProviderConfig() ExternalLocationProviderConfigOutputReference {
+	var returns ExternalLocationProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) ProviderConfigInput() *ExternalLocationProviderConfig {
+	var returns *ExternalLocationProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -662,8 +697,8 @@ func (j *jsiiProxy_ExternalLocation) SkipValidationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalLocation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ExternalLocation) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -733,7 +768,7 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
@@ -743,7 +778,7 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	j := jsiiProxy_ExternalLocation{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocation",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -751,12 +786,12 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct, id *string, config *ExternalLocationConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocation",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocation",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -858,7 +893,7 @@ func (j *jsiiProxy_ExternalLocation)SetForceUpdate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ExternalLocation)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -888,7 +923,7 @@ func (j *jsiiProxy_ExternalLocation)SetIsolationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ExternalLocation)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -932,7 +967,7 @@ func (j *jsiiProxy_ExternalLocation)SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ExternalLocation)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -984,17 +1019,17 @@ func (j *jsiiProxy_ExternalLocation)SetUrl(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ExternalLocation resource upon running "cdktf plan <stack-name>".
-func ExternalLocation_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ExternalLocation resource upon running "cdktn plan <stack-name>".
+func ExternalLocation_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateExternalLocation_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocation",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocation",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1029,7 +1064,7 @@ func ExternalLocation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocation",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1048,7 +1083,7 @@ func ExternalLocation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocation",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1067,7 +1102,7 @@ func ExternalLocation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocation",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1080,7 +1115,7 @@ func ExternalLocation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocation",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocation",
 		"tfResourceType",
 		&returns,
 	)
@@ -1125,11 +1160,11 @@ func (e *jsiiProxy_ExternalLocation) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (e *jsiiProxy_ExternalLocation) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalLocation) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -1266,7 +1301,7 @@ func (e *jsiiProxy_ExternalLocation) HasResourceMove() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_ExternalLocation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (e *jsiiProxy_ExternalLocation) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1277,11 +1312,11 @@ func (e *jsiiProxy_ExternalLocation) ImportFrom(id *string, provider cdktf.Terra
 	)
 }
 
-func (e *jsiiProxy_ExternalLocation) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalLocation) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -1355,6 +1390,17 @@ func (e *jsiiProxy_ExternalLocation) PutFileEventQueue(value *ExternalLocationFi
 	_jsii_.InvokeVoid(
 		e,
 		"putFileEventQueue",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ExternalLocation) PutProviderConfig(value *ExternalLocationProviderConfig) {
+	if err := e.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putProviderConfig",
 		[]interface{}{value},
 	)
 }
@@ -1451,6 +1497,14 @@ func (e *jsiiProxy_ExternalLocation) ResetOwner() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalLocation) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

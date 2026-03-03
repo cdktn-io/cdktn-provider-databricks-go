@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) validateSetExcludedTableFullNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) validateSetInternalValueParameters(val *DataDatabricksQualityMonitorV2AnomalyDetectionConfig) error {
 	return nil
 }
@@ -67,11 +71,11 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

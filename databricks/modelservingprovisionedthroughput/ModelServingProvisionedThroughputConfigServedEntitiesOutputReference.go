@@ -1,18 +1,21 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package modelservingprovisionedthroughput
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/modelservingprovisionedthroughput/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/modelservingprovisionedthroughput/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ModelServingProvisionedThroughputConfigServedEntitiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
+	BurstScalingEnabled() interface{}
+	SetBurstScalingEnabled(val interface{})
+	BurstScalingEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,15 +52,15 @@ type ModelServingProvisionedThroughputConfigServedEntitiesOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,13 +76,14 @@ type ModelServingProvisionedThroughputConfigServedEntitiesOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetBurstScalingEnabled()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +93,27 @@ type ModelServingProvisionedThroughputConfigServedEntitiesOutputReference interf
 
 // The jsii proxy struct for ModelServingProvisionedThroughputConfigServedEntitiesOutputReference
 type jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) BurstScalingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"burstScalingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) BurstScalingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"burstScalingEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +256,8 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +267,7 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 }
 
 
-func NewModelServingProvisionedThroughputConfigServedEntitiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ModelServingProvisionedThroughputConfigServedEntitiesOutputReference {
+func NewModelServingProvisionedThroughputConfigServedEntitiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ModelServingProvisionedThroughputConfigServedEntitiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewModelServingProvisionedThroughputConfigServedEntitiesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -252,7 +276,7 @@ func NewModelServingProvisionedThroughputConfigServedEntitiesOutputReference(ter
 	j := jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigServedEntitiesOutputReference",
+		"@cdktn/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigServedEntitiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -260,13 +284,24 @@ func NewModelServingProvisionedThroughputConfigServedEntitiesOutputReference(ter
 	return &j
 }
 
-func NewModelServingProvisionedThroughputConfigServedEntitiesOutputReference_Override(m ModelServingProvisionedThroughputConfigServedEntitiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewModelServingProvisionedThroughputConfigServedEntitiesOutputReference_Override(m ModelServingProvisionedThroughputConfigServedEntitiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigServedEntitiesOutputReference",
+		"@cdktn/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigServedEntitiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
+	)
+}
+
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference)SetBurstScalingEnabled(val interface{}) {
+	if err := j.validateSetBurstScalingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"burstScalingEnabled",
+		val,
 	)
 }
 
@@ -358,7 +393,7 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	)
 }
 
-func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +433,11 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -526,8 +561,8 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -539,11 +574,11 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -555,6 +590,14 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	return returns
 }
 
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) ResetBurstScalingEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBurstScalingEnabled",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		m,
@@ -563,7 +606,7 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	)
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

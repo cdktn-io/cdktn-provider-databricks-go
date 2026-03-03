@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package modelserving
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/modelserving/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/modelserving/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerToke
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Token() *string
 	SetToken(val *string)
 	TokenInput() *string
@@ -51,7 +51,7 @@ type ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerToke
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerToke
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetToken()
 	ResetTokenPlaintext()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerToke
 
 // The jsii proxy struct for ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference
 type jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) ComplexObjectIndex() interface{} {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderCo
 	return returns
 }
 
-func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderCo
 }
 
 
-func NewModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference {
+func NewModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerT
 	j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerT
 	return &j
 }
 
-func NewModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference_Override(m ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference_Override(m ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -269,7 +269,7 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderCo
 	)
 }
 
-func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderCo
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -459,8 +459,8 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderCo
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -472,11 +472,11 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderCo
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -504,7 +504,7 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderCo
 	)
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

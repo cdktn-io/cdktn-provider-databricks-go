@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package catalogworkspacebinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/catalogworkspacebinding/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/catalogworkspacebinding/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
 type CatalogWorkspaceBinding interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	BindingType() *string
 	SetBindingType(val *string)
 	BindingTypeInput() *string
@@ -22,7 +22,7 @@ type CatalogWorkspaceBinding interface {
 	SetCatalogName(val *string)
 	CatalogNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,9 +38,9 @@ type CatalogWorkspaceBinding interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -49,15 +49,17 @@ type CatalogWorkspaceBinding interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() CatalogWorkspaceBindingProviderConfigOutputReference
+	ProviderConfigInput() *CatalogWorkspaceBindingProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -71,7 +73,7 @@ type CatalogWorkspaceBinding interface {
 	SetSecurableType(val *string)
 	SecurableTypeInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -87,7 +89,7 @@ type CatalogWorkspaceBinding interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -105,9 +107,9 @@ type CatalogWorkspaceBinding interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -122,12 +124,14 @@ type CatalogWorkspaceBinding interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *CatalogWorkspaceBindingProviderConfig)
 	ResetBindingType()
 	ResetCatalogName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSecurableName()
 	ResetSecurableType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -145,7 +149,7 @@ type CatalogWorkspaceBinding interface {
 
 // The jsii proxy struct for CatalogWorkspaceBinding
 type jsiiProxy_CatalogWorkspaceBinding struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_CatalogWorkspaceBinding) BindingType() *string {
@@ -188,8 +192,8 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) CatalogNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_CatalogWorkspaceBinding) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -238,8 +242,8 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_CatalogWorkspaceBinding) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -288,8 +292,8 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_CatalogWorkspaceBinding) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -308,11 +312,31 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_CatalogWorkspaceBinding) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding) ProviderConfig() CatalogWorkspaceBindingProviderConfigOutputReference {
+	var returns CatalogWorkspaceBindingProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding) ProviderConfigInput() *CatalogWorkspaceBindingProviderConfig {
+	var returns *CatalogWorkspaceBindingProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -378,8 +402,8 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) SecurableTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_CatalogWorkspaceBinding) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -429,7 +453,7 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
 func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *CatalogWorkspaceBindingConfig) CatalogWorkspaceBinding {
 	_init_.Initialize()
 
@@ -439,7 +463,7 @@ func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_CatalogWorkspaceBinding{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
+		"@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,12 +471,12 @@ func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
 func NewCatalogWorkspaceBinding_Override(c CatalogWorkspaceBinding, scope constructs.Construct, id *string, config *CatalogWorkspaceBindingConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
+		"@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -510,7 +534,7 @@ func (j *jsiiProxy_CatalogWorkspaceBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CatalogWorkspaceBinding)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -529,7 +553,7 @@ func (j *jsiiProxy_CatalogWorkspaceBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CatalogWorkspaceBinding)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +564,7 @@ func (j *jsiiProxy_CatalogWorkspaceBinding)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CatalogWorkspaceBinding)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -592,17 +616,17 @@ func (j *jsiiProxy_CatalogWorkspaceBinding)SetWorkspaceId(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a CatalogWorkspaceBinding resource upon running "cdktf plan <stack-name>".
-func CatalogWorkspaceBinding_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a CatalogWorkspaceBinding resource upon running "cdktn plan <stack-name>".
+func CatalogWorkspaceBinding_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCatalogWorkspaceBinding_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
+		"@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -637,7 +661,7 @@ func CatalogWorkspaceBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
+		"@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +680,7 @@ func CatalogWorkspaceBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
+		"@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +699,7 @@ func CatalogWorkspaceBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
+		"@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +712,7 @@ func CatalogWorkspaceBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
+		"@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
 		"tfResourceType",
 		&returns,
 	)
@@ -733,11 +757,11 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (c *jsiiProxy_CatalogWorkspaceBinding) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CatalogWorkspaceBinding) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -874,7 +898,7 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CatalogWorkspaceBinding) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_CatalogWorkspaceBinding) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -885,11 +909,11 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) ImportFrom(id *string, provider cdkt
 	)
 }
 
-func (c *jsiiProxy_CatalogWorkspaceBinding) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CatalogWorkspaceBinding) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -945,6 +969,17 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (c *jsiiProxy_CatalogWorkspaceBinding) PutProviderConfig(value *CatalogWorkspaceBindingProviderConfig) {
+	if err := c.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CatalogWorkspaceBinding) ResetBindingType() {
 	_jsii_.InvokeVoid(
 		c,
@@ -973,6 +1008,14 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CatalogWorkspaceBinding) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

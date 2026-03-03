@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,19 @@ func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentOutputReference) validatePutEnvVarsParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentOutputReference) validatePutGitSourceParameters(value *DataDatabricksAppAppPendingDeploymentGitSource) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentOutputReference) validateSetCommandParameters(val *[]*string) error {
 	return nil
 }
 
@@ -79,11 +91,11 @@ func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataDatabricksAppAppPendingDeploymentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksAppAppPendingDeploymentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/job/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobNewClusterClusterLogConfS3OutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CannedAcl() *string
 	SetCannedAcl(val *string)
 	CannedAclInput() *string
@@ -58,15 +58,15 @@ type JobNewClusterClusterLogConfS3OutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type JobNewClusterClusterLogConfS3OutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCannedAcl()
 	ResetEnableEncryption()
 	ResetEncryptionType()
@@ -93,7 +93,7 @@ type JobNewClusterClusterLogConfS3OutputReference interface {
 	ResetRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,7 +103,7 @@ type JobNewClusterClusterLogConfS3OutputReference interface {
 
 // The jsii proxy struct for JobNewClusterClusterLogConfS3OutputReference
 type jsiiProxy_JobNewClusterClusterLogConfS3OutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) CannedAcl() *string {
@@ -306,8 +306,8 @@ func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -317,7 +317,7 @@ func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) TerraformResour
 }
 
 
-func NewJobNewClusterClusterLogConfS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobNewClusterClusterLogConfS3OutputReference {
+func NewJobNewClusterClusterLogConfS3OutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobNewClusterClusterLogConfS3OutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobNewClusterClusterLogConfS3OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -326,7 +326,7 @@ func NewJobNewClusterClusterLogConfS3OutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_JobNewClusterClusterLogConfS3OutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3OutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterLogConfS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -334,11 +334,11 @@ func NewJobNewClusterClusterLogConfS3OutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewJobNewClusterClusterLogConfS3OutputReference_Override(j JobNewClusterClusterLogConfS3OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobNewClusterClusterLogConfS3OutputReference_Override(j JobNewClusterClusterLogConfS3OutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3OutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterLogConfS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
@@ -465,7 +465,7 @@ func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,11 +505,11 @@ func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -633,8 +633,8 @@ func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) GetStringMapAtt
 	return returns
 }
 
-func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -646,11 +646,11 @@ func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) InterpolationAs
 	return returns
 }
 
-func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -710,7 +710,7 @@ func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) ResetRegion() {
 	)
 }
 
-func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobNewClusterClusterLogConfS3OutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskDependsOnList) validateGetParameters(in
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskDependsOnList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskDependsOnList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskDependsOnList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskDependsOnList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskDependsOnList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskDependsOnList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewJobTaskForEachTaskTaskDependsOnListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobTaskForEachTaskTaskDependsOnListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsCatalogOutputR
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -75,11 +75,11 @@ func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsCatalogOutputR
 	return nil
 }
 
-func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPipelineIngestionDefinitionSourceConfigurationsCatalogOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPipelineIngestionDefinitionSourceConfigurationsCatalogOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

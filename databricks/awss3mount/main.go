@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package awss3mount
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.awsS3Mount.AwsS3Mount",
+		"@cdktn/provider-databricks.awsS3Mount.AwsS3Mount",
 		reflect.TypeOf((*AwsS3Mount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -72,12 +72,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AwsS3Mount{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.awsS3Mount.AwsS3MountConfig",
+		"@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig",
 		reflect.TypeOf((*AwsS3MountConfig)(nil)).Elem(),
 	)
 }

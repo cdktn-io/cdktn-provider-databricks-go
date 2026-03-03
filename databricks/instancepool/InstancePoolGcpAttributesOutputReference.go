@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package instancepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/instancepool/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/instancepool/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type InstancePoolGcpAttributesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type InstancePoolGcpAttributesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -54,7 +54,7 @@ type InstancePoolGcpAttributesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type InstancePoolGcpAttributesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetGcpAvailability()
 	ResetLocalSsdCount()
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type InstancePoolGcpAttributesOutputReference interface {
 
 // The jsii proxy struct for InstancePoolGcpAttributesOutputReference
 type jsiiProxy_InstancePoolGcpAttributesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) ComplexObjectIndex() interface{} {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) ZoneIdInput() *stri
 }
 
 
-func NewInstancePoolGcpAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InstancePoolGcpAttributesOutputReference {
+func NewInstancePoolGcpAttributesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) InstancePoolGcpAttributesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewInstancePoolGcpAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewInstancePoolGcpAttributesOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_InstancePoolGcpAttributesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolGcpAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewInstancePoolGcpAttributesOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewInstancePoolGcpAttributesOutputReference_Override(i InstancePoolGcpAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewInstancePoolGcpAttributesOutputReference_Override(i InstancePoolGcpAttributesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolGcpAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -494,8 +494,8 @@ func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -507,11 +507,11 @@ func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) InterpolationAsList
 	return returns
 }
 
-func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -547,7 +547,7 @@ func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) ResetZoneId() {
 	)
 }
 
-func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

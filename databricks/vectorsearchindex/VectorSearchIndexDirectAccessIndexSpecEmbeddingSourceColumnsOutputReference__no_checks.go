@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsO
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -79,11 +79,11 @@ func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsO
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewVectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

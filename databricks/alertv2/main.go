@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package alertv2
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2",
+		"@cdktn/provider-databricks.alertV2.AlertV2",
 		reflect.TypeOf((*AlertV2)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -58,8 +58,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parentPath", GoGetter: "ParentPath"},
 			_jsii_.MemberProperty{JsiiProperty: "parentPathInput", GoGetter: "ParentPathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberProperty{JsiiProperty: "purgeOnDelete", GoGetter: "PurgeOnDelete"},
+			_jsii_.MemberProperty{JsiiProperty: "purgeOnDeleteInput", GoGetter: "PurgeOnDeleteInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putEvaluation", GoMethod: "PutEvaluation"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putRunAs", GoMethod: "PutRunAs"},
 			_jsii_.MemberMethod{JsiiMethod: "putSchedule", GoMethod: "PutSchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "queryText", GoGetter: "QueryText"},
@@ -69,6 +74,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomSummary", GoMethod: "ResetCustomSummary"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParentPath", GoMethod: "ResetParentPath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPurgeOnDelete", GoMethod: "ResetPurgeOnDelete"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRunAs", GoMethod: "ResetRunAs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRunAsUserName", GoMethod: "ResetRunAsUserName"},
 			_jsii_.MemberProperty{JsiiProperty: "runAs", GoGetter: "RunAs"},
@@ -92,20 +99,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2Config",
+		"@cdktn/provider-databricks.alertV2.AlertV2Config",
 		reflect.TypeOf((*AlertV2Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs",
+		"@cdktn/provider-databricks.alertV2.AlertV2EffectiveRunAs",
 		reflect.TypeOf((*AlertV2EffectiveRunAs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference",
 		reflect.TypeOf((*AlertV2EffectiveRunAsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,20 +145,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2EffectiveRunAsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2Evaluation",
+		"@cdktn/provider-databricks.alertV2.AlertV2Evaluation",
 		reflect.TypeOf((*AlertV2Evaluation)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationNotification",
 		reflect.TypeOf((*AlertV2EvaluationNotification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationNotificationOutputReference",
 		reflect.TypeOf((*AlertV2EvaluationNotificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -190,16 +197,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2EvaluationNotificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions",
 		reflect.TypeOf((*AlertV2EvaluationNotificationSubscriptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptionsList",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptionsList",
 		reflect.TypeOf((*AlertV2EvaluationNotificationSubscriptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -216,12 +223,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptionsOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptionsOutputReference",
 		reflect.TypeOf((*AlertV2EvaluationNotificationSubscriptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -254,12 +261,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2EvaluationNotificationSubscriptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationOutputReference",
 		reflect.TypeOf((*AlertV2EvaluationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparisonOperator", GoGetter: "ComparisonOperator"},
@@ -304,16 +311,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2EvaluationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationSource",
 		reflect.TypeOf((*AlertV2EvaluationSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationSourceOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationSourceOutputReference",
 		reflect.TypeOf((*AlertV2EvaluationSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -348,20 +355,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2EvaluationSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationThreshold",
 		reflect.TypeOf((*AlertV2EvaluationThreshold)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn",
 		reflect.TypeOf((*AlertV2EvaluationThresholdColumn)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumnOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationThresholdColumnOutputReference",
 		reflect.TypeOf((*AlertV2EvaluationThresholdColumnOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -396,12 +403,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2EvaluationThresholdColumnOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationThresholdOutputReference",
 		reflect.TypeOf((*AlertV2EvaluationThresholdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -436,16 +443,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2EvaluationThresholdOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationThresholdValue",
 		reflect.TypeOf((*AlertV2EvaluationThresholdValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValueOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationThresholdValueOutputReference",
 		reflect.TypeOf((*AlertV2EvaluationThresholdValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boolValue", GoGetter: "BoolValue"},
@@ -481,16 +488,54 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2EvaluationThresholdValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2RunAs",
+		"@cdktn/provider-databricks.alertV2.AlertV2ProviderConfig",
+		reflect.TypeOf((*AlertV2ProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.alertV2.AlertV2ProviderConfigOutputReference",
+		reflect.TypeOf((*AlertV2ProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlertV2ProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.alertV2.AlertV2RunAs",
 		reflect.TypeOf((*AlertV2RunAs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2RunAsOutputReference",
 		reflect.TypeOf((*AlertV2RunAsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -523,16 +568,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2RunAsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.alertV2.AlertV2Schedule",
+		"@cdktn/provider-databricks.alertV2.AlertV2Schedule",
 		reflect.TypeOf((*AlertV2Schedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.alertV2.AlertV2ScheduleOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2ScheduleOutputReference",
 		reflect.TypeOf((*AlertV2ScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -566,7 +611,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertV2ScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (g *jsiiProxy_Grants) validatePutGrantParameters(value interface{}) error {
 	return nil
 }
 
+func (g *jsiiProxy_Grants) validatePutProviderConfigParameters(value *GrantsProviderConfig) error {
+	return nil
+}
+
 func validateGrants_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -127,7 +131,7 @@ func (j *jsiiProxy_Grants) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Grants) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Grants) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

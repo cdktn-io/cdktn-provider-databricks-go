@@ -1,18 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/pipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
+	AutoFullRefreshPolicy() PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyOutputReference
+	AutoFullRefreshPolicyInput() *PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,6 +45,9 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	PrimaryKeysInput() *[]*string
 	QueryBasedConnectorConfig() PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference
 	QueryBasedConnectorConfigInput() *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig
+	RowFilter() *string
+	SetRowFilter(val *string)
+	RowFilterInput() *string
 	SalesforceIncludeFormulaFields() interface{}
 	SetSalesforceIncludeFormulaFields(val interface{})
 	SalesforceIncludeFormulaFieldsInput() interface{}
@@ -57,9 +62,9 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WorkdayReportParameters() PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference
 	WorkdayReportParametersInput() *PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters
 	// Experimental.
@@ -67,7 +72,7 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -83,22 +88,25 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAutoFullRefreshPolicy(value *PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy)
 	PutQueryBasedConnectorConfig(value *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig)
 	PutWorkdayReportParameters(value *PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters)
+	ResetAutoFullRefreshPolicy()
 	ResetExcludeColumns()
 	ResetIncludeColumns()
 	ResetPrimaryKeys()
 	ResetQueryBasedConnectorConfig()
+	ResetRowFilter()
 	ResetSalesforceIncludeFormulaFields()
 	ResetScdType()
 	ResetSequenceBy()
 	ResetWorkdayReportParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +116,27 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 
 // The jsii proxy struct for PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference
 type jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) AutoFullRefreshPolicy() PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyOutputReference {
+	var returns PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"autoFullRefreshPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) AutoFullRefreshPolicyInput() *PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy {
+	var returns *PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy
+	_jsii_.Get(
+		j,
+		"autoFullRefreshPolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ComplexObjectIndex() interface{} {
@@ -241,6 +269,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) RowFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rowFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) RowFilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rowFilterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) SalesforceIncludeFormulaFields() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -311,8 +359,8 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return returns
 }
 
-func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -342,7 +390,7 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 }
 
 
-func NewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference {
+func NewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -351,7 +399,7 @@ func NewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReferenc
 	j := jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference",
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -359,11 +407,11 @@ func NewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReferenc
 	return &j
 }
 
-func NewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference_Override(p PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference_Override(p PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference",
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -435,6 +483,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	)
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference)SetRowFilter(val *string) {
+	if err := j.validateSetRowFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rowFilter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference)SetSalesforceIncludeFormulaFields(val interface{}) {
 	if err := j.validateSetSalesforceIncludeFormulaFieldsParameters(val); err != nil {
 		panic(err)
@@ -479,7 +538,7 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	)
 }
 
-func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,11 +578,11 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return returns
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -647,8 +706,8 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return returns
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -660,11 +719,11 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return returns
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -674,6 +733,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) PutAutoFullRefreshPolicy(value *PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy) {
+	if err := p.validatePutAutoFullRefreshPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAutoFullRefreshPolicy",
+		[]interface{}{value},
+	)
 }
 
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) PutQueryBasedConnectorConfig(value *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig) {
@@ -695,6 +765,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 		p,
 		"putWorkdayReportParameters",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetAutoFullRefreshPolicy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAutoFullRefreshPolicy",
+		nil, // no parameters
 	)
 }
 
@@ -726,6 +804,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	_jsii_.InvokeVoid(
 		p,
 		"resetQueryBasedConnectorConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetRowFilter() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRowFilter",
 		nil, // no parameters
 	)
 }
@@ -762,7 +848,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	)
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

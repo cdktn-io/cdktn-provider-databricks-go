@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sqlendpoint
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint",
 		reflect.TypeOf((*SqlEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -73,8 +73,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "odbcParams", GoGetter: "OdbcParams"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putChannel", GoMethod: "PutChannel"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTags", GoMethod: "PutTags"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -89,6 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMinNumClusters", GoMethod: "ResetMinNumClusters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoWait", GoMethod: "ResetNoWait"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSpotInstancePolicy", GoMethod: "ResetSpotInstancePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
@@ -114,16 +118,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpoint{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointChannel",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointChannel",
 		reflect.TypeOf((*SqlEndpointChannel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointChannelOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointChannelOutputReference",
 		reflect.TypeOf((*SqlEndpointChannelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,24 +160,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointChannelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointConfig",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig",
 		reflect.TypeOf((*SqlEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointHealth",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointHealth",
 		reflect.TypeOf((*SqlEndpointHealth)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointHealthFailureReason",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointHealthFailureReason",
 		reflect.TypeOf((*SqlEndpointHealthFailureReason)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointHealthFailureReasonList",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointHealthFailureReasonList",
 		reflect.TypeOf((*SqlEndpointHealthFailureReasonList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -189,12 +193,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointHealthFailureReasonList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointHealthFailureReasonOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointHealthFailureReasonOutputReference",
 		reflect.TypeOf((*SqlEndpointHealthFailureReasonOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -224,12 +228,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointHealthFailureReasonOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointHealthList",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointHealthList",
 		reflect.TypeOf((*SqlEndpointHealthList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -245,12 +249,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointHealthList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointHealthOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointHealthOutputReference",
 		reflect.TypeOf((*SqlEndpointHealthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -282,16 +286,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointHealthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointOdbcParams",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointOdbcParams",
 		reflect.TypeOf((*SqlEndpointOdbcParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointOdbcParamsList",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointOdbcParamsList",
 		reflect.TypeOf((*SqlEndpointOdbcParamsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -307,12 +311,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointOdbcParamsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointOdbcParamsOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointOdbcParamsOutputReference",
 		reflect.TypeOf((*SqlEndpointOdbcParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -343,20 +347,58 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointOdbcParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTags",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointProviderConfig",
+		reflect.TypeOf((*SqlEndpointProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointProviderConfigOutputReference",
+		reflect.TypeOf((*SqlEndpointProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SqlEndpointProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTags",
 		reflect.TypeOf((*SqlEndpointTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTags",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTags",
 		reflect.TypeOf((*SqlEndpointTagsCustomTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTagsList",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTagsList",
 		reflect.TypeOf((*SqlEndpointTagsCustomTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -373,12 +415,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointTagsCustomTagsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTagsOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTagsOutputReference",
 		reflect.TypeOf((*SqlEndpointTagsCustomTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -409,12 +451,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointTagsCustomTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTagsOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTagsOutputReference",
 		reflect.TypeOf((*SqlEndpointTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -445,16 +487,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTimeouts",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTimeouts",
 		reflect.TypeOf((*SqlEndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTimeoutsOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTimeoutsOutputReference",
 		reflect.TypeOf((*SqlEndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -484,7 +526,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpointTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

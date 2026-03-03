@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sqlalert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/sqlalert/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/sqlalert/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SqlAlertOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Column() *string
 	SetColumn(val *string)
 	ColumnInput() *string
@@ -55,9 +55,9 @@ type SqlAlertOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -66,7 +66,7 @@ type SqlAlertOptionsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,16 +82,16 @@ type SqlAlertOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCustomBody()
 	ResetCustomSubject()
 	ResetEmptyResultState()
 	ResetMuted()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type SqlAlertOptionsOutputReference interface {
 
 // The jsii proxy struct for SqlAlertOptionsOutputReference
 type jsiiProxy_SqlAlertOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SqlAlertOptionsOutputReference) Column() *string {
@@ -284,8 +284,8 @@ func (j *jsiiProxy_SqlAlertOptionsOutputReference) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_SqlAlertOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SqlAlertOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_SqlAlertOptionsOutputReference) ValueInput() *string {
 }
 
 
-func NewSqlAlertOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlAlertOptionsOutputReference {
+func NewSqlAlertOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SqlAlertOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSqlAlertOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewSqlAlertOptionsOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_SqlAlertOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlAlert.SqlAlertOptionsOutputReference",
+		"@cdktn/provider-databricks.sqlAlert.SqlAlertOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewSqlAlertOptionsOutputReference(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewSqlAlertOptionsOutputReference_Override(s SqlAlertOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSqlAlertOptionsOutputReference_Override(s SqlAlertOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlAlert.SqlAlertOptionsOutputReference",
+		"@cdktn/provider-databricks.sqlAlert.SqlAlertOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -452,7 +452,7 @@ func (j *jsiiProxy_SqlAlertOptionsOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_SqlAlertOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlAlertOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,11 +503,11 @@ func (s *jsiiProxy_SqlAlertOptionsOutputReference) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (s *jsiiProxy_SqlAlertOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlAlertOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -631,8 +631,8 @@ func (s *jsiiProxy_SqlAlertOptionsOutputReference) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (s *jsiiProxy_SqlAlertOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SqlAlertOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -644,11 +644,11 @@ func (s *jsiiProxy_SqlAlertOptionsOutputReference) InterpolationAsList() cdktf.I
 	return returns
 }
 
-func (s *jsiiProxy_SqlAlertOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlAlertOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -692,7 +692,7 @@ func (s *jsiiProxy_SqlAlertOptionsOutputReference) ResetMuted() {
 	)
 }
 
-func (s *jsiiProxy_SqlAlertOptionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlAlertOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

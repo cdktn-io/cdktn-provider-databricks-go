@@ -1,13 +1,13 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package modelserving
 
 
 type ModelServingConfigServedEntitiesExternalModelPalmConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}.
 	PalmApiKey *string `field:"optional" json:"palmApiKey" yaml:"palmApiKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/model_serving#palm_api_key_plaintext ModelServing#palm_api_key_plaintext}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/model_serving#palm_api_key_plaintext ModelServing#palm_api_key_plaintext}.
 	PalmApiKeyPlaintext *string `field:"optional" json:"palmApiKeyPlaintext" yaml:"palmApiKeyPlaintext"`
 }
 

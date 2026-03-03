@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsstorageconfigurations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/mwsstorageconfigurations/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsstorageconfigurations/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}.
 type MwsStorageConfigurations interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type MwsStorageConfigurations interface {
 	SetBucketName(val *string)
 	BucketNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -39,9 +39,9 @@ type MwsStorageConfigurations interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -50,27 +50,30 @@ type MwsStorageConfigurations interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RoleArn() *string
+	SetRoleArn(val *string)
+	RoleArnInput() *string
 	StorageConfigurationId() *string
 	StorageConfigurationName() *string
 	SetStorageConfigurationName(val *string)
 	StorageConfigurationNameInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -83,7 +86,7 @@ type MwsStorageConfigurations interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -101,9 +104,9 @@ type MwsStorageConfigurations interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -122,6 +125,7 @@ type MwsStorageConfigurations interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRoleArn()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -137,7 +141,7 @@ type MwsStorageConfigurations interface {
 
 // The jsii proxy struct for MwsStorageConfigurations
 type jsiiProxy_MwsStorageConfigurations struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_MwsStorageConfigurations) AccountId() *string {
@@ -180,8 +184,8 @@ func (j *jsiiProxy_MwsStorageConfigurations) BucketNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MwsStorageConfigurations) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -240,8 +244,8 @@ func (j *jsiiProxy_MwsStorageConfigurations) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MwsStorageConfigurations) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -290,8 +294,8 @@ func (j *jsiiProxy_MwsStorageConfigurations) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MwsStorageConfigurations) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -310,8 +314,8 @@ func (j *jsiiProxy_MwsStorageConfigurations) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MwsStorageConfigurations) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -335,6 +339,26 @@ func (j *jsiiProxy_MwsStorageConfigurations) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsStorageConfigurations) RoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsStorageConfigurations) RoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArnInput",
 		&returns,
 	)
 	return returns
@@ -370,8 +394,8 @@ func (j *jsiiProxy_MwsStorageConfigurations) StorageConfigurationNameInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MwsStorageConfigurations) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -401,7 +425,7 @@ func (j *jsiiProxy_MwsStorageConfigurations) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
 func NewMwsStorageConfigurations(scope constructs.Construct, id *string, config *MwsStorageConfigurationsConfig) MwsStorageConfigurations {
 	_init_.Initialize()
 
@@ -411,7 +435,7 @@ func NewMwsStorageConfigurations(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_MwsStorageConfigurations{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
+		"@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -419,12 +443,12 @@ func NewMwsStorageConfigurations(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
 func NewMwsStorageConfigurations_Override(m MwsStorageConfigurations, scope constructs.Construct, id *string, config *MwsStorageConfigurationsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
+		"@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -482,7 +506,7 @@ func (j *jsiiProxy_MwsStorageConfigurations)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -501,7 +525,7 @@ func (j *jsiiProxy_MwsStorageConfigurations)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +536,7 @@ func (j *jsiiProxy_MwsStorageConfigurations)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,6 +555,17 @@ func (j *jsiiProxy_MwsStorageConfigurations)SetProvisioners(val *[]interface{}) 
 	)
 }
 
+func (j *jsiiProxy_MwsStorageConfigurations)SetRoleArn(val *string) {
+	if err := j.validateSetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleArn",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MwsStorageConfigurations)SetStorageConfigurationName(val *string) {
 	if err := j.validateSetStorageConfigurationNameParameters(val); err != nil {
 		panic(err)
@@ -542,17 +577,17 @@ func (j *jsiiProxy_MwsStorageConfigurations)SetStorageConfigurationName(val *str
 	)
 }
 
-// Generates CDKTF code for importing a MwsStorageConfigurations resource upon running "cdktf plan <stack-name>".
-func MwsStorageConfigurations_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MwsStorageConfigurations resource upon running "cdktn plan <stack-name>".
+func MwsStorageConfigurations_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMwsStorageConfigurations_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
+		"@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -587,7 +622,7 @@ func MwsStorageConfigurations_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
+		"@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +641,7 @@ func MwsStorageConfigurations_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
+		"@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -625,7 +660,7 @@ func MwsStorageConfigurations_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
+		"@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +673,7 @@ func MwsStorageConfigurations_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
+		"@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
 		"tfResourceType",
 		&returns,
 	)
@@ -683,11 +718,11 @@ func (m *jsiiProxy_MwsStorageConfigurations) GetAnyMapAttribute(terraformAttribu
 	return returns
 }
 
-func (m *jsiiProxy_MwsStorageConfigurations) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsStorageConfigurations) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -824,7 +859,7 @@ func (m *jsiiProxy_MwsStorageConfigurations) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MwsStorageConfigurations) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MwsStorageConfigurations) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -835,11 +870,11 @@ func (m *jsiiProxy_MwsStorageConfigurations) ImportFrom(id *string, provider cdk
 	)
 }
 
-func (m *jsiiProxy_MwsStorageConfigurations) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsStorageConfigurations) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -907,6 +942,14 @@ func (m *jsiiProxy_MwsStorageConfigurations) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsStorageConfigurations) ResetRoleArn() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRoleArn",
 		nil, // no parameters
 	)
 }

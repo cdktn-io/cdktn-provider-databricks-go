@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsnetworkconnectivityconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/mwsnetworkconnectivityconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnetworkconnectivityconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MwsNetworkConnectivityConfigEgressConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +41,15 @@ type MwsNetworkConnectivityConfigEgressConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,16 +65,16 @@ type MwsNetworkConnectivityConfigEgressConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDefaultRules(value *MwsNetworkConnectivityConfigEgressConfigDefaultRules)
 	PutTargetRules(value *MwsNetworkConnectivityConfigEgressConfigTargetRules)
 	ResetDefaultRules()
 	ResetTargetRules()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type MwsNetworkConnectivityConfigEgressConfigOutputReference interface {
 
 // The jsii proxy struct for MwsNetworkConnectivityConfigEgressConfigOutputReference
 type jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) Terr
 }
 
 
-func NewMwsNetworkConnectivityConfigEgressConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MwsNetworkConnectivityConfigEgressConfigOutputReference {
+func NewMwsNetworkConnectivityConfigEgressConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MwsNetworkConnectivityConfigEgressConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMwsNetworkConnectivityConfigEgressConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewMwsNetworkConnectivityConfigEgressConfigOutputReference(terraformResourc
 	j := jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfigEgressConfigOutputReference",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfigEgressConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewMwsNetworkConnectivityConfigEgressConfigOutputReference(terraformResourc
 	return &j
 }
 
-func NewMwsNetworkConnectivityConfigEgressConfigOutputReference_Override(m MwsNetworkConnectivityConfigEgressConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMwsNetworkConnectivityConfigEgressConfigOutputReference_Override(m MwsNetworkConnectivityConfigEgressConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfigEgressConfigOutputReference",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfigEgressConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -269,7 +269,7 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,11 +309,11 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) GetA
 	return returns
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -437,8 +437,8 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) GetS
 	return returns
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -450,11 +450,11 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) Inte
 	return returns
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -504,7 +504,7 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) Rese
 	)
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

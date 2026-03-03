@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksShareObjectPartitionValueList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksShareObjectPartitionValueList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksShareObjectPartitionValueList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_DataDatabricksShareObjectPartitionValueList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksShareObjectPartitionValueList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksShareObjectPartitionValueList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_DataDatabricksShareObjectPartitionValueList) validateSetWraps
 	return nil
 }
 
-func validateNewDataDatabricksShareObjectPartitionValueListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataDatabricksShareObjectPartitionValueListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

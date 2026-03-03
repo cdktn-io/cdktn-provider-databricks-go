@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlTableColumnList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (s *jsiiProxy_SqlTableColumnList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlTableColumnList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_SqlTableColumnList) validateSetTerraformAttributeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SqlTableColumnList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SqlTableColumnList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_SqlTableColumnList) validateSetWrapsSetParameters(val *bool) 
 	return nil
 }
 
-func validateNewSqlTableColumnListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSqlTableColumnListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

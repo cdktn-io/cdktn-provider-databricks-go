@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksshare
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShare",
 		reflect.TypeOf((*DataDatabricksShare)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,20 +76,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksShare{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig",
 		reflect.TypeOf((*DataDatabricksShareConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObject",
 		reflect.TypeOf((*DataDatabricksShareObject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectList",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectList",
 		reflect.TypeOf((*DataDatabricksShareObjectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -106,12 +106,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksShareObjectList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectOutputReference",
 		reflect.TypeOf((*DataDatabricksShareObjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addedAt", GoGetter: "AddedAt"},
@@ -176,16 +176,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksShareObjectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartition",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartition",
 		reflect.TypeOf((*DataDatabricksShareObjectPartition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionList",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionList",
 		reflect.TypeOf((*DataDatabricksShareObjectPartitionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -202,12 +202,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksShareObjectPartitionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionOutputReference",
 		reflect.TypeOf((*DataDatabricksShareObjectPartitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,16 +238,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksShareObjectPartitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue",
 		reflect.TypeOf((*DataDatabricksShareObjectPartitionValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValueList",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValueList",
 		reflect.TypeOf((*DataDatabricksShareObjectPartitionValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -264,12 +264,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksShareObjectPartitionValueList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValueOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValueOutputReference",
 		reflect.TypeOf((*DataDatabricksShareObjectPartitionValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -308,16 +308,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksShareObjectPartitionValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareProviderConfig",
 		reflect.TypeOf((*DataDatabricksShareProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksShareProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -346,7 +346,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksShareProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsvpcendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/mwsvpcendpoint/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsvpcendpoint/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MwsVpcEndpointGcpVpcEndpointInfoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,15 +52,15 @@ type MwsVpcEndpointGcpVpcEndpointInfoOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,14 +76,14 @@ type MwsVpcEndpointGcpVpcEndpointInfoOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPscConnectionId()
 	ResetServiceAttachmentId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type MwsVpcEndpointGcpVpcEndpointInfoOutputReference interface {
 
 // The jsii proxy struct for MwsVpcEndpointGcpVpcEndpointInfoOutputReference
 type jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) ComplexObjectIndex() interface{} {
@@ -256,8 +256,8 @@ func (j *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) TerraformRes
 }
 
 
-func NewMwsVpcEndpointGcpVpcEndpointInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MwsVpcEndpointGcpVpcEndpointInfoOutputReference {
+func NewMwsVpcEndpointGcpVpcEndpointInfoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MwsVpcEndpointGcpVpcEndpointInfoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMwsVpcEndpointGcpVpcEndpointInfoOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewMwsVpcEndpointGcpVpcEndpointInfoOutputReference(terraformResource cdktf.
 	j := jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfoOutputReference",
+		"@cdktn/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewMwsVpcEndpointGcpVpcEndpointInfoOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewMwsVpcEndpointGcpVpcEndpointInfoOutputReference_Override(m MwsVpcEndpointGcpVpcEndpointInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMwsVpcEndpointGcpVpcEndpointInfoOutputReference_Override(m MwsVpcEndpointGcpVpcEndpointInfoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfoOutputReference",
+		"@cdktn/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -393,7 +393,7 @@ func (j *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -561,8 +561,8 @@ func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) GetStringMap
 	return returns
 }
 
-func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -574,11 +574,11 @@ func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) Interpolatio
 	return returns
 }
 
-func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -606,7 +606,7 @@ func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) ResetService
 	)
 }
 
-func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

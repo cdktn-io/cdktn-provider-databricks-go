@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStable
 	return nil
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,11 +71,11 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStable
 	return nil
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

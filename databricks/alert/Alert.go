@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package alert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/alert/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/alert/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert databricks_alert}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert databricks_alert}.
 type Alert interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Condition() AlertConditionOutputReference
 	ConditionInput() *AlertCondition
 	// Experimental.
@@ -44,18 +44,18 @@ type Alert interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LifecycleState() *string
 	// The tree node.
 	Node() constructs.Node
@@ -69,9 +69,11 @@ type Alert interface {
 	SetParentPath(val *string)
 	ParentPathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() AlertProviderConfigOutputReference
+	ProviderConfigInput() *AlertProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -86,7 +88,7 @@ type Alert interface {
 	SecondsToRetriggerInput() *float64
 	State() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -101,7 +103,7 @@ type Alert interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -119,9 +121,9 @@ type Alert interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -137,6 +139,7 @@ type Alert interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCondition(value *AlertCondition)
+	PutProviderConfig(value *AlertProviderConfig)
 	ResetCustomBody()
 	ResetCustomSubject()
 	ResetNotifyOnOk()
@@ -145,6 +148,7 @@ type Alert interface {
 	ResetOverrideLogicalId()
 	ResetOwnerUserName()
 	ResetParentPath()
+	ResetProviderConfig()
 	ResetSecondsToRetrigger()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -161,11 +165,11 @@ type Alert interface {
 
 // The jsii proxy struct for Alert
 type jsiiProxy_Alert struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_Alert) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Alert) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -304,8 +308,8 @@ func (j *jsiiProxy_Alert) DisplayNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Alert) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Alert) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -344,8 +348,8 @@ func (j *jsiiProxy_Alert) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Alert) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Alert) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -434,11 +438,31 @@ func (j *jsiiProxy_Alert) ParentPathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Alert) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Alert) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alert) ProviderConfig() AlertProviderConfigOutputReference {
+	var returns AlertProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alert) ProviderConfigInput() *AlertProviderConfig {
+	var returns *AlertProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -514,8 +538,8 @@ func (j *jsiiProxy_Alert) State() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Alert) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Alert) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -565,7 +589,7 @@ func (j *jsiiProxy_Alert) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert databricks_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert databricks_alert} Resource.
 func NewAlert(scope constructs.Construct, id *string, config *AlertConfig) Alert {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewAlert(scope constructs.Construct, id *string, config *AlertConfig) Alert
 	j := jsiiProxy_Alert{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.alert.Alert",
+		"@cdktn/provider-databricks.alert.Alert",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -583,12 +607,12 @@ func NewAlert(scope constructs.Construct, id *string, config *AlertConfig) Alert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert databricks_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert databricks_alert} Resource.
 func NewAlert_Override(a Alert, scope constructs.Construct, id *string, config *AlertConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.alert.Alert",
+		"@cdktn/provider-databricks.alert.Alert",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -657,7 +681,7 @@ func (j *jsiiProxy_Alert)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Alert)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Alert)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -665,7 +689,7 @@ func (j *jsiiProxy_Alert)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Alert)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Alert)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +733,7 @@ func (j *jsiiProxy_Alert)SetParentPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Alert)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Alert)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -750,17 +774,17 @@ func (j *jsiiProxy_Alert)SetSecondsToRetrigger(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a Alert resource upon running "cdktf plan <stack-name>".
-func Alert_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Alert resource upon running "cdktn plan <stack-name>".
+func Alert_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAlert_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.alert.Alert",
+		"@cdktn/provider-databricks.alert.Alert",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -795,7 +819,7 @@ func Alert_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.alert.Alert",
+		"@cdktn/provider-databricks.alert.Alert",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -814,7 +838,7 @@ func Alert_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.alert.Alert",
+		"@cdktn/provider-databricks.alert.Alert",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -833,7 +857,7 @@ func Alert_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.alert.Alert",
+		"@cdktn/provider-databricks.alert.Alert",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -846,7 +870,7 @@ func Alert_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.alert.Alert",
+		"@cdktn/provider-databricks.alert.Alert",
 		"tfResourceType",
 		&returns,
 	)
@@ -891,11 +915,11 @@ func (a *jsiiProxy_Alert) GetAnyMapAttribute(terraformAttribute *string) *map[st
 	return returns
 }
 
-func (a *jsiiProxy_Alert) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_Alert) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1032,7 +1056,7 @@ func (a *jsiiProxy_Alert) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Alert) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_Alert) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1043,11 +1067,11 @@ func (a *jsiiProxy_Alert) ImportFrom(id *string, provider cdktf.TerraformProvide
 	)
 }
 
-func (a *jsiiProxy_Alert) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_Alert) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1114,6 +1138,17 @@ func (a *jsiiProxy_Alert) PutCondition(value *AlertCondition) {
 	)
 }
 
+func (a *jsiiProxy_Alert) PutProviderConfig(value *AlertProviderConfig) {
+	if err := a.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_Alert) ResetCustomBody() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1158,6 +1193,14 @@ func (a *jsiiProxy_Alert) ResetParentPath() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetParentPath",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Alert) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

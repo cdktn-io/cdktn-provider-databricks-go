@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksEntityTagAssignment) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksEntityTagAssignment) validatePutProviderConfigParameters(value *DataDatabricksEntityTagAssignmentProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksEntityTagAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -83,7 +87,7 @@ func (j *jsiiProxy_DataDatabricksEntityTagAssignment) validateSetEntityTypeParam
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksEntityTagAssignment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataDatabricksEntityTagAssignment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

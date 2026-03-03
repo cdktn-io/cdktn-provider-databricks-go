@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validatePutComplia
 	return nil
 }
 
+func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validatePutProviderConfigParameters(value *ComplianceSecurityProfileWorkspaceSettingProviderConfig) error {
+	return nil
+}
+
 func validateComplianceSecurityProfileWorkspaceSetting_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -111,7 +115,7 @@ func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (d *jsiiProxy_DisableLegacyDbfsSetting) validatePutDisableLegacyDbfsParamet
 	return nil
 }
 
+func (d *jsiiProxy_DisableLegacyDbfsSetting) validatePutProviderConfigParameters(value *DisableLegacyDbfsSettingProviderConfig) error {
+	return nil
+}
+
 func validateDisableLegacyDbfsSetting_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -111,7 +115,7 @@ func (j *jsiiProxy_DisableLegacyDbfsSetting) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_DisableLegacyDbfsSetting) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DisableLegacyDbfsSetting) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

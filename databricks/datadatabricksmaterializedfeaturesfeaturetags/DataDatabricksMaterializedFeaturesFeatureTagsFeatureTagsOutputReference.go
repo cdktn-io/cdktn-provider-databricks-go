@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksmaterializedfeaturesfeaturetags
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmaterializedfeaturesfeaturetags/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmaterializedfeaturesfeaturetags/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,21 +35,23 @@ type DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference int
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
+	ProviderConfig() DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +67,14 @@ type DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutProviderConfig(value *DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsProviderConfig)
+	ResetProviderConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +84,7 @@ type DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference int
 
 // The jsii proxy struct for DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference
 type jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) ComplexObjectIndex() interface{} {
@@ -153,6 +157,26 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) ProviderConfig() DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsProviderConfigOutputReference {
+	var returns DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -163,8 +187,8 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -184,7 +208,7 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 }
 
 
-func NewDataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference {
+func NewDataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -193,7 +217,7 @@ func NewDataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference(
 	j := jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTags.DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTags.DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,11 +225,11 @@ func NewDataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference(
 	return &j
 }
 
-func NewDataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference_Override(d DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference_Override(d DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTags.DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTags.DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -266,7 +290,7 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +330,11 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -434,8 +458,8 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -447,11 +471,11 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -463,7 +487,26 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) PutProviderConfig(value *DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

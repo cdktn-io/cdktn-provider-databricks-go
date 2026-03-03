@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (q *jsiiProxy_Query) validatePutParameterParameters(value interface{}) erro
 	return nil
 }
 
+func (q *jsiiProxy_Query) validatePutProviderConfigParameters(value *QueryProviderConfig) error {
+	return nil
+}
+
 func validateQuery_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -119,7 +123,7 @@ func (j *jsiiProxy_Query) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Query) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Query) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

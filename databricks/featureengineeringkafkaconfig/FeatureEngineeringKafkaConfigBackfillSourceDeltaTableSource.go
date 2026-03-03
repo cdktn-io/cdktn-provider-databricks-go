@@ -1,0 +1,15 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package featureengineeringkafkaconfig
+
+
+type FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSource struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_kafka_config#entity_columns FeatureEngineeringKafkaConfig#entity_columns}.
+	EntityColumns *[]*string `field:"required" json:"entityColumns" yaml:"entityColumns"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_kafka_config#full_name FeatureEngineeringKafkaConfig#full_name}.
+	FullName *string `field:"required" json:"fullName" yaml:"fullName"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_kafka_config#timeseries_column FeatureEngineeringKafkaConfig#timeseries_column}.
+	TimeseriesColumn *string `field:"required" json:"timeseriesColumn" yaml:"timeseriesColumn"`
+}
+

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/job/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceede
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceede
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceede
 
 // The jsii proxy struct for JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList
 type jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningTh
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningTh
 }
 
 
-func NewJobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList {
+func NewJobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList {
 	_init_.Initialize()
 
 	if err := validateNewJobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewJobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExce
 	j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewJobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExce
 	return &j
 }
 
-func NewJobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList_Override(j JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewJobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList_Override(j JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningTh
 	)
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningTh
 	)
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := j.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		j,
@@ -231,7 +231,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningTh
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList) Resolve(context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

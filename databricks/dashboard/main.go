@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dashboard.Dashboard",
+		"@cdktn/provider-databricks.dashboard.Dashboard",
 		reflect.TypeOf((*Dashboard)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -26,6 +26,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dashboardChangeDetectedInput", GoGetter: "DashboardChangeDetectedInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dashboardId", GoGetter: "DashboardId"},
 			_jsii_.MemberProperty{JsiiProperty: "dashboardIdInput", GoGetter: "DashboardIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "datasetCatalog", GoGetter: "DatasetCatalog"},
+			_jsii_.MemberProperty{JsiiProperty: "datasetCatalogInput", GoGetter: "DatasetCatalogInput"},
+			_jsii_.MemberProperty{JsiiProperty: "datasetSchema", GoGetter: "DatasetSchema"},
+			_jsii_.MemberProperty{JsiiProperty: "datasetSchemaInput", GoGetter: "DatasetSchemaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
 			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
@@ -67,11 +71,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
 			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreateTime", GoMethod: "ResetCreateTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDashboardChangeDetected", GoMethod: "ResetDashboardChangeDetected"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDashboardId", GoMethod: "ResetDashboardId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDatasetCatalog", GoMethod: "ResetDatasetCatalog"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDatasetSchema", GoMethod: "ResetDatasetSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmbedCredentials", GoMethod: "ResetEmbedCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEtag", GoMethod: "ResetEtag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilePath", GoMethod: "ResetFilePath"},
@@ -80,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMd5", GoMethod: "ResetMd5"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSerializedDashboard", GoMethod: "ResetSerializedDashboard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpdateTime", GoMethod: "ResetUpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "serializedDashboard", GoGetter: "SerializedDashboard"},
@@ -100,12 +110,50 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Dashboard{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dashboard.DashboardConfig",
+		"@cdktn/provider-databricks.dashboard.DashboardConfig",
 		reflect.TypeOf((*DashboardConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dashboard.DashboardProviderConfig",
+		reflect.TypeOf((*DashboardProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference",
+		reflect.TypeOf((*DashboardProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
 	)
 }

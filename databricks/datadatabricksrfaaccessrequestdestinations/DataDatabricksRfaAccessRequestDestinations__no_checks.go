@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validateOverrideL
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validatePutProviderConfigParameters(value *DataDatabricksRfaAccessRequestDestinationsProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksRfaAccessRequestDestinations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -75,7 +79,15 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validateSetCountP
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validateSetFullNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validateSetSecurableTypeParameters(val *string) error {
 	return nil
 }
 

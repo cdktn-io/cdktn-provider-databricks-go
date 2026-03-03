@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationThresholdOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationThresholdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationThresholdOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -75,11 +75,11 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationThresholdOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationThresholdOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationThresholdOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataDatabricksAlertsV2AlertsEvaluationThresholdOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksAlertsV2AlertsEvaluationThresholdOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

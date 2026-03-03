@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -71,6 +71,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutDockerImag
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutDriverNodeTypeFlexibilityParameters(value *JobJobClusterNewClusterDriverNodeTypeFlexibility) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutGcpAttributesParameters(value *JobJobClusterNewClusterGcpAttributes) error {
 	return nil
 }
@@ -87,11 +91,15 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutProviderCo
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutWorkerNodeTypeFlexibilityParameters(value *JobJobClusterNewClusterWorkerNodeTypeFlexibility) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutWorkloadTypeParameters(value *JobJobClusterNewClusterWorkloadType) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -207,7 +215,7 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -219,7 +227,7 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetUseMlRunti
 	return nil
 }
 
-func validateNewJobJobClusterNewClusterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobJobClusterNewClusterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

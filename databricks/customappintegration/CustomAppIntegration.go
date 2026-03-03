@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customappintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/customappintegration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/customappintegration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration databricks_custom_app_integration}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration databricks_custom_app_integration}.
 type CustomAppIntegration interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -50,9 +50,9 @@ type CustomAppIntegration interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -64,18 +64,18 @@ type CustomAppIntegration interface {
 	SetIntegrationId(val *string)
 	IntegrationIdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -89,7 +89,7 @@ type CustomAppIntegration interface {
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,7 +107,7 @@ type CustomAppIntegration interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -125,9 +125,9 @@ type CustomAppIntegration interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -174,11 +174,11 @@ type CustomAppIntegration interface {
 
 // The jsii proxy struct for CustomAppIntegration
 type jsiiProxy_CustomAppIntegration struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_CustomAppIntegration) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_CustomAppIntegration) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_CustomAppIntegration) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomAppIntegration) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_CustomAppIntegration) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_CustomAppIntegration) IntegrationIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomAppIntegration) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_CustomAppIntegration) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_CustomAppIntegration) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_CustomAppIntegration) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_CustomAppIntegration) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_CustomAppIntegration) ScopesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomAppIntegration) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_CustomAppIntegration) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -598,7 +598,7 @@ func (j *jsiiProxy_CustomAppIntegration) UserAuthorizedScopesInput() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
 func NewCustomAppIntegration(scope constructs.Construct, id *string, config *CustomAppIntegrationConfig) CustomAppIntegration {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewCustomAppIntegration(scope constructs.Construct, id *string, config *Cus
 	j := jsiiProxy_CustomAppIntegration{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -616,12 +616,12 @@ func NewCustomAppIntegration(scope constructs.Construct, id *string, config *Cus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
 func NewCustomAppIntegration_Override(c CustomAppIntegration, scope constructs.Construct, id *string, config *CustomAppIntegrationConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegration",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -723,7 +723,7 @@ func (j *jsiiProxy_CustomAppIntegration)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomAppIntegration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CustomAppIntegration)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -753,7 +753,7 @@ func (j *jsiiProxy_CustomAppIntegration)SetIntegrationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomAppIntegration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CustomAppIntegration)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +775,7 @@ func (j *jsiiProxy_CustomAppIntegration)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomAppIntegration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CustomAppIntegration)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -827,17 +827,17 @@ func (j *jsiiProxy_CustomAppIntegration)SetUserAuthorizedScopes(val *[]*string) 
 	)
 }
 
-// Generates CDKTF code for importing a CustomAppIntegration resource upon running "cdktf plan <stack-name>".
-func CustomAppIntegration_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a CustomAppIntegration resource upon running "cdktn plan <stack-name>".
+func CustomAppIntegration_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCustomAppIntegration_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegration",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -872,7 +872,7 @@ func CustomAppIntegration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -891,7 +891,7 @@ func CustomAppIntegration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -910,7 +910,7 @@ func CustomAppIntegration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -923,7 +923,7 @@ func CustomAppIntegration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration",
+		"@cdktn/provider-databricks.customAppIntegration.CustomAppIntegration",
 		"tfResourceType",
 		&returns,
 	)
@@ -968,11 +968,11 @@ func (c *jsiiProxy_CustomAppIntegration) GetAnyMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (c *jsiiProxy_CustomAppIntegration) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomAppIntegration) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1109,7 +1109,7 @@ func (c *jsiiProxy_CustomAppIntegration) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CustomAppIntegration) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_CustomAppIntegration) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1120,11 +1120,11 @@ func (c *jsiiProxy_CustomAppIntegration) ImportFrom(id *string, provider cdktf.T
 	)
 }
 
-func (c *jsiiProxy_CustomAppIntegration) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomAppIntegration) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,

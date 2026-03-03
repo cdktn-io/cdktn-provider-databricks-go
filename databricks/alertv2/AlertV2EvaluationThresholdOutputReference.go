@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package alertv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/alertv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/alertv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AlertV2EvaluationThresholdOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Column() AlertV2EvaluationThresholdColumnOutputReference
 	ColumnInput() interface{}
 	// the index of the complex object in a list.
@@ -39,9 +39,9 @@ type AlertV2EvaluationThresholdOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() AlertV2EvaluationThresholdValueOutputReference
 	ValueInput() interface{}
 	// Experimental.
@@ -49,7 +49,7 @@ type AlertV2EvaluationThresholdOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,16 +65,16 @@ type AlertV2EvaluationThresholdOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutColumn(value *AlertV2EvaluationThresholdColumn)
 	PutValue(value *AlertV2EvaluationThresholdValue)
 	ResetColumn()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type AlertV2EvaluationThresholdOutputReference interface {
 
 // The jsii proxy struct for AlertV2EvaluationThresholdOutputReference
 type jsiiProxy_AlertV2EvaluationThresholdOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlertV2EvaluationThresholdOutputReference) Column() AlertV2EvaluationThresholdColumnOutputReference {
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AlertV2EvaluationThresholdOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_AlertV2EvaluationThresholdOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlertV2EvaluationThresholdOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_AlertV2EvaluationThresholdOutputReference) ValueInput() inter
 }
 
 
-func NewAlertV2EvaluationThresholdOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlertV2EvaluationThresholdOutputReference {
+func NewAlertV2EvaluationThresholdOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlertV2EvaluationThresholdOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlertV2EvaluationThresholdOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewAlertV2EvaluationThresholdOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_AlertV2EvaluationThresholdOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationThresholdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewAlertV2EvaluationThresholdOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewAlertV2EvaluationThresholdOutputReference_Override(a AlertV2EvaluationThresholdOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlertV2EvaluationThresholdOutputReference_Override(a AlertV2EvaluationThresholdOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdOutputReference",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationThresholdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -269,7 +269,7 @@ func (j *jsiiProxy_AlertV2EvaluationThresholdOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_AlertV2EvaluationThresholdOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertV2EvaluationThresholdOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,11 +309,11 @@ func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -437,8 +437,8 @@ func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -450,11 +450,11 @@ func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -504,7 +504,7 @@ func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) ResetValue() {
 	)
 }
 
-func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

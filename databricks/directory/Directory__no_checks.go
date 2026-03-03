@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,10 @@ func (d *jsiiProxy_Directory) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (d *jsiiProxy_Directory) validatePutProviderConfigParameters(value *DirectoryProviderConfig) error {
+	return nil
+}
+
 func validateDirectory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -107,7 +111,7 @@ func (j *jsiiProxy_Directory) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Directory) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Directory) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

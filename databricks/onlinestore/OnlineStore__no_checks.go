@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,10 @@ func (o *jsiiProxy_OnlineStore) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (o *jsiiProxy_OnlineStore) validatePutProviderConfigParameters(value *OnlineStoreProviderConfig) error {
+	return nil
+}
+
 func validateOnlineStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -103,7 +107,7 @@ func (j *jsiiProxy_OnlineStore) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_OnlineStore) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OnlineStore) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -116,6 +120,10 @@ func (j *jsiiProxy_OnlineStore) validateSetProvisionersParameters(val *[]interfa
 }
 
 func (j *jsiiProxy_OnlineStore) validateSetReadReplicaCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OnlineStore) validateSetUsagePolicyIdParameters(val *string) error {
 	return nil
 }
 

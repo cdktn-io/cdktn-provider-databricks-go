@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package clusterpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/clusterpolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/clusterpolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ClusterPolicyLibrariesPypiOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type ClusterPolicyLibrariesPypiOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type ClusterPolicyLibrariesPypiOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetRepo()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type ClusterPolicyLibrariesPypiOutputReference interface {
 
 // The jsii proxy struct for ClusterPolicyLibrariesPypiOutputReference
 type jsiiProxy_ClusterPolicyLibrariesPypiOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) TerraformResource(
 }
 
 
-func NewClusterPolicyLibrariesPypiOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClusterPolicyLibrariesPypiOutputReference {
+func NewClusterPolicyLibrariesPypiOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ClusterPolicyLibrariesPypiOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewClusterPolicyLibrariesPypiOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -206,7 +206,7 @@ func NewClusterPolicyLibrariesPypiOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_ClusterPolicyLibrariesPypiOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesPypiOutputReference",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesPypiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewClusterPolicyLibrariesPypiOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewClusterPolicyLibrariesPypiOutputReference_Override(c ClusterPolicyLibrariesPypiOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewClusterPolicyLibrariesPypiOutputReference_Override(c ClusterPolicyLibrariesPypiOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesPypiOutputReference",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesPypiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -290,7 +290,7 @@ func (j *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,11 +330,11 @@ func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -458,8 +458,8 @@ func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -471,11 +471,11 @@ func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -495,7 +495,7 @@ func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) ResetRepo() {
 	)
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClusterPolicyLibrariesPypiOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

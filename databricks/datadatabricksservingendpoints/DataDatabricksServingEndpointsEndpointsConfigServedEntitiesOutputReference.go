@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksservingendpoints
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksservingendpoints/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksservingendpoints/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -50,15 +50,15 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,9 +74,9 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutExternalModel(value interface{})
 	PutFoundationModel(value interface{})
 	ResetEntityName()
@@ -86,7 +86,7 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference 
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference 
 
 // The jsii proxy struct for DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference
 type jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) ComplexObjectIndex() interface{} {
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOu
 }
 
 
-func NewDataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference {
+func NewDataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -279,7 +279,7 @@ func NewDataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReferen
 	j := jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,11 +287,11 @@ func NewDataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReferen
 	return &j
 }
 
-func NewDataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference_Override(d DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference_Override(d DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -374,7 +374,7 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOu
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,11 +414,11 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -542,8 +542,8 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -555,11 +555,11 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -633,7 +633,7 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOu
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

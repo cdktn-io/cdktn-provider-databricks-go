@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickstable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickstable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksTableTableInfoSecurableKindManifestOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AssignablePrivileges() *[]*string
 	SetAssignablePrivileges(val *[]*string)
 	AssignablePrivilegesInput() *[]*string
@@ -51,15 +51,15 @@ type DataDatabricksTableTableInfoSecurableKindManifestOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,9 +75,9 @@ type DataDatabricksTableTableInfoSecurableKindManifestOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOptions(value interface{})
 	ResetAssignablePrivileges()
 	ResetCapabilities()
@@ -86,7 +86,7 @@ type DataDatabricksTableTableInfoSecurableKindManifestOutputReference interface 
 	ResetSecurableType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type DataDatabricksTableTableInfoSecurableKindManifestOutputReference interface 
 
 // The jsii proxy struct for DataDatabricksTableTableInfoSecurableKindManifestOutputReference
 type jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) AssignablePrivileges() *[]*string {
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputRefere
 }
 
 
-func NewDataDatabricksTableTableInfoSecurableKindManifestOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoSecurableKindManifestOutputReference {
+func NewDataDatabricksTableTableInfoSecurableKindManifestOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoSecurableKindManifestOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksTableTableInfoSecurableKindManifestOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -279,7 +279,7 @@ func NewDataDatabricksTableTableInfoSecurableKindManifestOutputReference(terrafo
 	j := jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifestOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,11 +287,11 @@ func NewDataDatabricksTableTableInfoSecurableKindManifestOutputReference(terrafo
 	return &j
 }
 
-func NewDataDatabricksTableTableInfoSecurableKindManifestOutputReference_Override(d DataDatabricksTableTableInfoSecurableKindManifestOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksTableTableInfoSecurableKindManifestOutputReference_Override(d DataDatabricksTableTableInfoSecurableKindManifestOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifestOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,11 +425,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -553,8 +553,8 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -566,11 +566,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -633,7 +633,7 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputRefere
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

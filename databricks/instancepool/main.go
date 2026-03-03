@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package instancepool
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePool",
+		"@cdktn/provider-databricks.instancePool.InstancePool",
 		reflect.TypeOf((*InstancePool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -67,6 +67,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeTypeFlexibility", GoGetter: "NodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeTypeFlexibilityInput", GoGetter: "NodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTypeId", GoGetter: "NodeTypeId"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTypeIdInput", GoGetter: "NodeTypeIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
@@ -75,13 +77,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "preloadedSparkVersions", GoGetter: "PreloadedSparkVersions"},
 			_jsii_.MemberProperty{JsiiProperty: "preloadedSparkVersionsInput", GoGetter: "PreloadedSparkVersionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsAttributes", GoMethod: "PutAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureAttributes", GoMethod: "PutAzureAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putDiskSpec", GoMethod: "PutDiskSpec"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpAttributes", GoMethod: "PutGcpAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putInstancePoolFleetAttributes", GoMethod: "PutInstancePoolFleetAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "putNodeTypeFlexibility", GoMethod: "PutNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putPreloadedDockerImage", GoMethod: "PutPreloadedDockerImage"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAttributes", GoMethod: "ResetAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureAttributes", GoMethod: "ResetAzureAttributes"},
@@ -94,10 +100,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetInstancePoolId", GoMethod: "ResetInstancePoolId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxCapacity", GoMethod: "ResetMaxCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinIdleInstances", GoMethod: "ResetMinIdleInstances"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNodeTypeFlexibility", GoMethod: "ResetNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeTypeId", GoMethod: "ResetNodeTypeId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreloadedDockerImage", GoMethod: "ResetPreloadedDockerImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreloadedSparkVersions", GoMethod: "ResetPreloadedSparkVersions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -110,16 +118,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePool{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes",
+		"@cdktn/provider-databricks.instancePool.InstancePoolAwsAttributes",
 		reflect.TypeOf((*InstancePoolAwsAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolAwsAttributesOutputReference",
 		reflect.TypeOf((*InstancePoolAwsAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -158,16 +166,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolAwsAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes",
+		"@cdktn/provider-databricks.instancePool.InstancePoolAzureAttributes",
 		reflect.TypeOf((*InstancePoolAzureAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributesOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolAzureAttributesOutputReference",
 		reflect.TypeOf((*InstancePoolAzureAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -200,24 +208,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolAzureAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolConfig",
+		"@cdktn/provider-databricks.instancePool.InstancePoolConfig",
 		reflect.TypeOf((*InstancePoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec",
+		"@cdktn/provider-databricks.instancePool.InstancePoolDiskSpec",
 		reflect.TypeOf((*InstancePoolDiskSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType",
+		"@cdktn/provider-databricks.instancePool.InstancePoolDiskSpecDiskType",
 		reflect.TypeOf((*InstancePoolDiskSpecDiskType)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskTypeOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolDiskSpecDiskTypeOutputReference",
 		reflect.TypeOf((*InstancePoolDiskSpecDiskTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "azureDiskVolumeType", GoGetter: "AzureDiskVolumeType"},
@@ -250,12 +258,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolDiskSpecOutputReference",
 		reflect.TypeOf((*InstancePoolDiskSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -292,16 +300,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolDiskSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes",
+		"@cdktn/provider-databricks.instancePool.InstancePoolGcpAttributes",
 		reflect.TypeOf((*InstancePoolGcpAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolGcpAttributesOutputReference",
 		reflect.TypeOf((*InstancePoolGcpAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -337,20 +345,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolGcpAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributes",
+		"@cdktn/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributes",
 		reflect.TypeOf((*InstancePoolInstancePoolFleetAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption",
+		"@cdktn/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption",
 		reflect.TypeOf((*InstancePoolInstancePoolFleetAttributesFleetOnDemandOption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference",
 		reflect.TypeOf((*InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
@@ -382,16 +390,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption",
+		"@cdktn/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption",
 		reflect.TypeOf((*InstancePoolInstancePoolFleetAttributesFleetSpotOption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference",
 		reflect.TypeOf((*InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
@@ -423,16 +431,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride",
+		"@cdktn/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride",
 		reflect.TypeOf((*InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList",
+		"@cdktn/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList",
 		reflect.TypeOf((*InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -449,12 +457,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference",
 		reflect.TypeOf((*InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
@@ -485,12 +493,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesOutputReference",
 		reflect.TypeOf((*InstancePoolInstancePoolFleetAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -528,20 +536,58 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolInstancePoolFleetAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage",
+		"@cdktn/provider-databricks.instancePool.InstancePoolNodeTypeFlexibility",
+		reflect.TypeOf((*InstancePoolNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.instancePool.InstancePoolNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*InstancePoolNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_InstancePoolNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.instancePool.InstancePoolPreloadedDockerImage",
 		reflect.TypeOf((*InstancePoolPreloadedDockerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth",
+		"@cdktn/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth",
 		reflect.TypeOf((*InstancePoolPreloadedDockerImageBasicAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuthOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuthOutputReference",
 		reflect.TypeOf((*InstancePoolPreloadedDockerImageBasicAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -572,12 +618,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageList",
+		"@cdktn/provider-databricks.instancePool.InstancePoolPreloadedDockerImageList",
 		reflect.TypeOf((*InstancePoolPreloadedDockerImageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -594,12 +640,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolPreloadedDockerImageList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolPreloadedDockerImageOutputReference",
 		reflect.TypeOf((*InstancePoolPreloadedDockerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuth", GoGetter: "BasicAuth"},
@@ -632,7 +678,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_InstancePoolPreloadedDockerImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.instancePool.InstancePoolProviderConfig",
+		reflect.TypeOf((*InstancePoolProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.instancePool.InstancePoolProviderConfigOutputReference",
+		reflect.TypeOf((*InstancePoolProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_InstancePoolProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

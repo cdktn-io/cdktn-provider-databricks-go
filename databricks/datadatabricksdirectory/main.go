@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksdirectory
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory",
+		"@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory",
 		reflect.TypeOf((*DataDatabricksDirectory)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,20 +65,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksDirectory{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig",
+		"@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig",
 		reflect.TypeOf((*DataDatabricksDirectoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryProviderConfig",
 		reflect.TypeOf((*DataDatabricksDirectoryProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksDirectoryProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -107,7 +107,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksDirectoryProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

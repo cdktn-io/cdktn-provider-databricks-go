@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package disablelegacydbfssetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/disablelegacydbfssetting/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/disablelegacydbfssetting/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() interface{}
 	SetValue(val interface{})
 	ValueInput() interface{}
@@ -48,7 +48,7 @@ type DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference interface {
 
 // The jsii proxy struct for DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference
 type jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) ComplexObjectIndex() interface{} {
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -173,7 +173,7 @@ func (j *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) Val
 }
 
 
-func NewDisableLegacyDbfsSettingDisableLegacyDbfsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference {
+func NewDisableLegacyDbfsSettingDisableLegacyDbfsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDisableLegacyDbfsSettingDisableLegacyDbfsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -182,7 +182,7 @@ func NewDisableLegacyDbfsSettingDisableLegacyDbfsOutputReference(terraformResour
 	j := jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference",
+		"@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -190,11 +190,11 @@ func NewDisableLegacyDbfsSettingDisableLegacyDbfsOutputReference(terraformResour
 	return &j
 }
 
-func NewDisableLegacyDbfsSettingDisableLegacyDbfsOutputReference_Override(d DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDisableLegacyDbfsSettingDisableLegacyDbfsOutputReference_Override(d DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference",
+		"@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -244,7 +244,7 @@ func (j *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,11 +295,11 @@ func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -423,8 +423,8 @@ func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -436,11 +436,11 @@ func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -452,7 +452,7 @@ func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

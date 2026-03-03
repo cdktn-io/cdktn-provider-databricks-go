@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,11 +47,15 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateInterpolationFor
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutGitRepositoryParameters(value *DataDatabricksAppAppGitRepository) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutResourcesParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -83,11 +87,19 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetSpaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetUsagePolicyIdParameters(val *string) error {
 	return nil
 }
 
@@ -95,7 +107,7 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetUserApiScopes
 	return nil
 }
 
-func validateNewDataDatabricksAppAppOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksAppAppOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

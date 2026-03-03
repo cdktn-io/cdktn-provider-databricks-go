@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package providerresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/providerresource/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/providerresource/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/provider databricks_provider}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/provider databricks_provider}.
 type ProviderResource interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AuthenticationType() *string
 	SetAuthenticationType(val *string)
 	AuthenticationTypeInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -38,9 +38,9 @@ type ProviderResource interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -49,18 +49,20 @@ type ProviderResource interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() ProviderResourceProviderConfigOutputReference
+	ProviderConfigInput() *ProviderResourceProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -71,7 +73,7 @@ type ProviderResource interface {
 	SetRecipientProfileStr(val *string)
 	RecipientProfileStrInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -84,7 +86,7 @@ type ProviderResource interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -102,9 +104,9 @@ type ProviderResource interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -119,11 +121,13 @@ type ProviderResource interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *ProviderResourceProviderConfig)
 	ResetComment()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -139,7 +143,7 @@ type ProviderResource interface {
 
 // The jsii proxy struct for ProviderResource
 type jsiiProxy_ProviderResource struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ProviderResource) AuthenticationType() *string {
@@ -162,8 +166,8 @@ func (j *jsiiProxy_ProviderResource) AuthenticationTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProviderResource) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ProviderResource) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -232,8 +236,8 @@ func (j *jsiiProxy_ProviderResource) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ProviderResource) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ProviderResource) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -282,8 +286,8 @@ func (j *jsiiProxy_ProviderResource) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProviderResource) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ProviderResource) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -322,11 +326,31 @@ func (j *jsiiProxy_ProviderResource) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ProviderResource) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ProviderResource) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProviderResource) ProviderConfig() ProviderResourceProviderConfigOutputReference {
+	var returns ProviderResourceProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProviderResource) ProviderConfigInput() *ProviderResourceProviderConfig {
+	var returns *ProviderResourceProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -372,8 +396,8 @@ func (j *jsiiProxy_ProviderResource) RecipientProfileStrInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProviderResource) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ProviderResource) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -403,7 +427,7 @@ func (j *jsiiProxy_ProviderResource) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/provider databricks_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/provider databricks_provider} Resource.
 func NewProviderResource(scope constructs.Construct, id *string, config *ProviderResourceConfig) ProviderResource {
 	_init_.Initialize()
 
@@ -413,7 +437,7 @@ func NewProviderResource(scope constructs.Construct, id *string, config *Provide
 	j := jsiiProxy_ProviderResource{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.providerResource.ProviderResource",
+		"@cdktn/provider-databricks.providerResource.ProviderResource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -421,12 +445,12 @@ func NewProviderResource(scope constructs.Construct, id *string, config *Provide
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/provider databricks_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/provider databricks_provider} Resource.
 func NewProviderResource_Override(p ProviderResource, scope constructs.Construct, id *string, config *ProviderResourceConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.providerResource.ProviderResource",
+		"@cdktn/provider-databricks.providerResource.ProviderResource",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -484,7 +508,7 @@ func (j *jsiiProxy_ProviderResource)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProviderResource)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProviderResource)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +527,7 @@ func (j *jsiiProxy_ProviderResource)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProviderResource)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProviderResource)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +549,7 @@ func (j *jsiiProxy_ProviderResource)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProviderResource)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProviderResource)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -555,17 +579,17 @@ func (j *jsiiProxy_ProviderResource)SetRecipientProfileStr(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ProviderResource resource upon running "cdktf plan <stack-name>".
-func ProviderResource_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ProviderResource resource upon running "cdktn plan <stack-name>".
+func ProviderResource_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateProviderResource_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.providerResource.ProviderResource",
+		"@cdktn/provider-databricks.providerResource.ProviderResource",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -600,7 +624,7 @@ func ProviderResource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.providerResource.ProviderResource",
+		"@cdktn/provider-databricks.providerResource.ProviderResource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +643,7 @@ func ProviderResource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.providerResource.ProviderResource",
+		"@cdktn/provider-databricks.providerResource.ProviderResource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +662,7 @@ func ProviderResource_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.providerResource.ProviderResource",
+		"@cdktn/provider-databricks.providerResource.ProviderResource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +675,7 @@ func ProviderResource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.providerResource.ProviderResource",
+		"@cdktn/provider-databricks.providerResource.ProviderResource",
 		"tfResourceType",
 		&returns,
 	)
@@ -696,11 +720,11 @@ func (p *jsiiProxy_ProviderResource) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (p *jsiiProxy_ProviderResource) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_ProviderResource) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -837,7 +861,7 @@ func (p *jsiiProxy_ProviderResource) HasResourceMove() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProviderResource) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (p *jsiiProxy_ProviderResource) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -848,11 +872,11 @@ func (p *jsiiProxy_ProviderResource) ImportFrom(id *string, provider cdktf.Terra
 	)
 }
 
-func (p *jsiiProxy_ProviderResource) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_ProviderResource) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -908,6 +932,17 @@ func (p *jsiiProxy_ProviderResource) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_ProviderResource) PutProviderConfig(value *ProviderResourceProviderConfig) {
+	if err := p.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_ProviderResource) ResetComment() {
 	_jsii_.InvokeVoid(
 		p,
@@ -928,6 +963,14 @@ func (p *jsiiProxy_ProviderResource) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProviderResource) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

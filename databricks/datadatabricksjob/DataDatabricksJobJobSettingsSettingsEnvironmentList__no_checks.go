@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentList) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentList) validate
 	return nil
 }
 
-func validateNewDataDatabricksJobJobSettingsSettingsEnvironmentListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataDatabricksJobJobSettingsSettingsEnvironmentListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsworkspaces
@@ -7,7 +7,7 @@ package mwsworkspaces
 type MwsWorkspacesCloudResourceContainer struct {
 	// gcp block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_workspaces#gcp MwsWorkspaces#gcp}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_workspaces#gcp MwsWorkspaces#gcp}
 	Gcp *MwsWorkspacesCloudResourceContainerGcp `field:"required" json:"gcp" yaml:"gcp"`
 }
 

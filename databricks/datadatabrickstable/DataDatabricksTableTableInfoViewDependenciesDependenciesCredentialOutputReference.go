@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickstable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickstable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputRef
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputRef
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCredentialName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputRef
 
 // The jsii proxy struct for DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference
 type jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCrede
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCrede
 }
 
 
-func NewDataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference {
+func NewDataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewDataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutput
 	j := jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewDataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutput
 	return &j
 }
 
-func NewDataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference_Override(d DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference_Override(d DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -256,7 +256,7 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCrede
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCrede
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -424,8 +424,8 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCrede
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -437,11 +437,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCrede
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -461,7 +461,7 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCrede
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

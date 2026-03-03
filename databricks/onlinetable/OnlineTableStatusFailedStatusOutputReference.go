@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package onlinetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/onlinetable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/onlinetable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type OnlineTableStatusFailedStatusOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,16 +38,16 @@ type OnlineTableStatusFailedStatusOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timestamp() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type OnlineTableStatusFailedStatusOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type OnlineTableStatusFailedStatusOutputReference interface {
 
 // The jsii proxy struct for OnlineTableStatusFailedStatusOutputReference
 type jsiiProxy_OnlineTableStatusFailedStatusOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) ComplexObjectIndex() interface{} {
@@ -151,8 +151,8 @@ func (j *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -172,7 +172,7 @@ func (j *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) Timestamp() *st
 }
 
 
-func NewOnlineTableStatusFailedStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OnlineTableStatusFailedStatusOutputReference {
+func NewOnlineTableStatusFailedStatusOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OnlineTableStatusFailedStatusOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOnlineTableStatusFailedStatusOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -181,7 +181,7 @@ func NewOnlineTableStatusFailedStatusOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_OnlineTableStatusFailedStatusOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.onlineTable.OnlineTableStatusFailedStatusOutputReference",
+		"@cdktn/provider-databricks.onlineTable.OnlineTableStatusFailedStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -189,11 +189,11 @@ func NewOnlineTableStatusFailedStatusOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewOnlineTableStatusFailedStatusOutputReference_Override(o OnlineTableStatusFailedStatusOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOnlineTableStatusFailedStatusOutputReference_Override(o OnlineTableStatusFailedStatusOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.onlineTable.OnlineTableStatusFailedStatusOutputReference",
+		"@cdktn/provider-databricks.onlineTable.OnlineTableStatusFailedStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
@@ -243,7 +243,7 @@ func (j *jsiiProxy_OnlineTableStatusFailedStatusOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_OnlineTableStatusFailedStatusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OnlineTableStatusFailedStatusOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -283,11 +283,11 @@ func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -411,8 +411,8 @@ func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -424,11 +424,11 @@ func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) InterpolationAs
 	return returns
 }
 
-func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -440,7 +440,7 @@ func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) InterpolationFo
 	return returns
 }
 
-func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OnlineTableStatusFailedStatusOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksmwscredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmwscredentials/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmwscredentials/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
 type DataDatabricksMwsCredentials interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,9 +28,9 @@ type DataDatabricksMwsCredentials interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -42,19 +42,21 @@ type DataDatabricksMwsCredentials interface {
 	SetIds(val *map[string]*string)
 	IdsInput() *map[string]*string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DataDatabricksMwsCredentialsProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksMwsCredentialsProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -64,7 +66,7 @@ type DataDatabricksMwsCredentials interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -80,15 +82,17 @@ type DataDatabricksMwsCredentials interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksMwsCredentialsProviderConfig)
 	ResetId()
 	ResetIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -105,11 +109,11 @@ type DataDatabricksMwsCredentials interface {
 
 // The jsii proxy struct for DataDatabricksMwsCredentials
 type jsiiProxy_DataDatabricksMwsCredentials struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatabricksMwsCredentials) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksMwsCredentials) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -148,8 +152,8 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksMwsCredentials) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksMwsCredentials) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -218,8 +222,8 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials) IdsInput() *map[string]*string 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksMwsCredentials) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksMwsCredentials) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -238,11 +242,31 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksMwsCredentials) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksMwsCredentials) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMwsCredentials) ProviderConfig() DataDatabricksMwsCredentialsProviderConfigOutputReference {
+	var returns DataDatabricksMwsCredentialsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMwsCredentials) ProviderConfigInput() *DataDatabricksMwsCredentialsProviderConfig {
+	var returns *DataDatabricksMwsCredentialsProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -258,8 +282,8 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksMwsCredentials) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksMwsCredentials) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -289,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
 func NewDataDatabricksMwsCredentials(scope constructs.Construct, id *string, config *DataDatabricksMwsCredentialsConfig) DataDatabricksMwsCredentials {
 	_init_.Initialize()
 
@@ -299,7 +323,7 @@ func NewDataDatabricksMwsCredentials(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataDatabricksMwsCredentials{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
+		"@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -307,12 +331,12 @@ func NewDataDatabricksMwsCredentials(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
 func NewDataDatabricksMwsCredentials_Override(d DataDatabricksMwsCredentials, scope constructs.Construct, id *string, config *DataDatabricksMwsCredentialsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
+		"@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -337,7 +361,7 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksMwsCredentials)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksMwsCredentials)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -367,7 +391,7 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials)SetIds(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksMwsCredentials)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksMwsCredentials)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,7 +402,7 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksMwsCredentials)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksMwsCredentials)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -386,17 +410,17 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials)SetProvider(val cdktf.TerraformP
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksMwsCredentials resource upon running "cdktf plan <stack-name>".
-func DataDatabricksMwsCredentials_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksMwsCredentials resource upon running "cdktn plan <stack-name>".
+func DataDatabricksMwsCredentials_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksMwsCredentials_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
+		"@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -431,7 +455,7 @@ func DataDatabricksMwsCredentials_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
+		"@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -450,7 +474,7 @@ func DataDatabricksMwsCredentials_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
+		"@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -469,7 +493,7 @@ func DataDatabricksMwsCredentials_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
+		"@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -482,7 +506,7 @@ func DataDatabricksMwsCredentials_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
+		"@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials",
 		"tfResourceType",
 		&returns,
 	)
@@ -516,11 +540,11 @@ func (d *jsiiProxy_DataDatabricksMwsCredentials) GetAnyMapAttribute(terraformAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksMwsCredentials) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksMwsCredentials) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -644,11 +668,11 @@ func (d *jsiiProxy_DataDatabricksMwsCredentials) GetStringMapAttribute(terraform
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksMwsCredentials) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksMwsCredentials) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -668,6 +692,17 @@ func (d *jsiiProxy_DataDatabricksMwsCredentials) OverrideLogicalId(newLogicalId 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMwsCredentials) PutProviderConfig(value *DataDatabricksMwsCredentialsProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
 	)
 }
 
@@ -691,6 +726,14 @@ func (d *jsiiProxy_DataDatabricksMwsCredentials) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMwsCredentials) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

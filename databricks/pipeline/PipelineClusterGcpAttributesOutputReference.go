@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/pipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PipelineClusterGcpAttributesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Availability() *string
 	SetAvailability(val *string)
 	AvailabilityInput() *string
@@ -49,9 +49,9 @@ type PipelineClusterGcpAttributesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -60,7 +60,7 @@ type PipelineClusterGcpAttributesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type PipelineClusterGcpAttributesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAvailability()
 	ResetFirstOnDemand()
 	ResetGoogleServiceAccount()
@@ -86,7 +86,7 @@ type PipelineClusterGcpAttributesOutputReference interface {
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type PipelineClusterGcpAttributesOutputReference interface {
 
 // The jsii proxy struct for PipelineClusterGcpAttributesOutputReference
 type jsiiProxy_PipelineClusterGcpAttributesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) Availability() *string {
@@ -239,8 +239,8 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ZoneIdInput() *s
 }
 
 
-func NewPipelineClusterGcpAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PipelineClusterGcpAttributesOutputReference {
+func NewPipelineClusterGcpAttributesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PipelineClusterGcpAttributesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPipelineClusterGcpAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -279,7 +279,7 @@ func NewPipelineClusterGcpAttributesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_PipelineClusterGcpAttributesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,11 +287,11 @@ func NewPipelineClusterGcpAttributesOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewPipelineClusterGcpAttributesOutputReference_Override(p PipelineClusterGcpAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPipelineClusterGcpAttributesOutputReference_Override(p PipelineClusterGcpAttributesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -385,7 +385,7 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,11 +436,11 @@ func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -564,8 +564,8 @@ func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -577,11 +577,11 @@ func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) InterpolationAsL
 	return returns
 }
 
-func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -633,7 +633,7 @@ func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ResetZoneId() {
 	)
 }
 
-func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

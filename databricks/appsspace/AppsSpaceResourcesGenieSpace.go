@@ -1,0 +1,15 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package appsspace
+
+
+type AppsSpaceResourcesGenieSpace struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_space#name AppsSpace#name}.
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_space#permission AppsSpace#permission}.
+	Permission *string `field:"required" json:"permission" yaml:"permission"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_space#space_id AppsSpace#space_id}.
+	SpaceId *string `field:"required" json:"spaceId" yaml:"spaceId"`
+}
+

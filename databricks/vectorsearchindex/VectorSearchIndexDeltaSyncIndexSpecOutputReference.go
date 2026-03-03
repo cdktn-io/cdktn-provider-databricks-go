@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package vectorsearchindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/vectorsearchindex/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchindex/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type VectorSearchIndexDeltaSyncIndexSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -51,15 +51,15 @@ type VectorSearchIndexDeltaSyncIndexSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,9 +75,9 @@ type VectorSearchIndexDeltaSyncIndexSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEmbeddingSourceColumns(value interface{})
 	PutEmbeddingVectorColumns(value interface{})
 	ResetEmbeddingSourceColumns()
@@ -87,7 +87,7 @@ type VectorSearchIndexDeltaSyncIndexSpecOutputReference interface {
 	ResetSourceTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type VectorSearchIndexDeltaSyncIndexSpecOutputReference interface {
 
 // The jsii proxy struct for VectorSearchIndexDeltaSyncIndexSpecOutputReference
 type jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -270,8 +270,8 @@ func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -281,7 +281,7 @@ func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) Terraform
 }
 
 
-func NewVectorSearchIndexDeltaSyncIndexSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDeltaSyncIndexSpecOutputReference {
+func NewVectorSearchIndexDeltaSyncIndexSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDeltaSyncIndexSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVectorSearchIndexDeltaSyncIndexSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -290,7 +290,7 @@ func NewVectorSearchIndexDeltaSyncIndexSpecOutputReference(terraformResource cdk
 	j := jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecOutputReference",
+		"@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -298,11 +298,11 @@ func NewVectorSearchIndexDeltaSyncIndexSpecOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewVectorSearchIndexDeltaSyncIndexSpecOutputReference_Override(v VectorSearchIndexDeltaSyncIndexSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVectorSearchIndexDeltaSyncIndexSpecOutputReference_Override(v VectorSearchIndexDeltaSyncIndexSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecOutputReference",
+		"@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -385,7 +385,7 @@ func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,11 +425,11 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) GetAnyMap
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -553,8 +553,8 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) GetString
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -566,11 +566,11 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) Interpola
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -644,7 +644,7 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ResetSour
 	)
 }
 
-func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

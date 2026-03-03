@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -71,6 +71,10 @@ func (j *jsiiProxy_JobNewClusterOutputReference) validatePutDockerImageParameter
 	return nil
 }
 
+func (j *jsiiProxy_JobNewClusterOutputReference) validatePutDriverNodeTypeFlexibilityParameters(value *JobNewClusterDriverNodeTypeFlexibility) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobNewClusterOutputReference) validatePutGcpAttributesParameters(value *JobNewClusterGcpAttributes) error {
 	return nil
 }
@@ -87,11 +91,15 @@ func (j *jsiiProxy_JobNewClusterOutputReference) validatePutProviderConfigParame
 	return nil
 }
 
+func (j *jsiiProxy_JobNewClusterOutputReference) validatePutWorkerNodeTypeFlexibilityParameters(value *JobNewClusterWorkerNodeTypeFlexibility) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobNewClusterOutputReference) validatePutWorkloadTypeParameters(value *JobNewClusterWorkloadType) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobNewClusterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -203,7 +211,7 @@ func (j *jsiiProxy_JobNewClusterOutputReference) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -215,7 +223,7 @@ func (j *jsiiProxy_JobNewClusterOutputReference) validateSetUseMlRuntimeParamete
 	return nil
 }
 
-func validateNewJobNewClusterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobNewClusterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

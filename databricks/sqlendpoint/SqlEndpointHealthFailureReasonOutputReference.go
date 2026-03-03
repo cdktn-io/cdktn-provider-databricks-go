@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sqlendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/sqlendpoint/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/sqlendpoint/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SqlEndpointHealthFailureReasonOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Code() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -33,22 +33,22 @@ type SqlEndpointHealthFailureReasonOutputReference interface {
 	Fqn() *string
 	InternalValue() *SqlEndpointHealthFailureReason
 	SetInternalValue(val *SqlEndpointHealthFailureReason)
-	Parameters() cdktf.StringMap
+	Parameters() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type SqlEndpointHealthFailureReasonOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type SqlEndpointHealthFailureReasonOutputReference interface {
 
 // The jsii proxy struct for SqlEndpointHealthFailureReasonOutputReference
 type jsiiProxy_SqlEndpointHealthFailureReasonOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) Code() *string {
@@ -142,8 +142,8 @@ func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) InternalValue(
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) Parameters() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) Parameters() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"parameters",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,7 +183,7 @@ func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) Type() *string
 }
 
 
-func NewSqlEndpointHealthFailureReasonOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SqlEndpointHealthFailureReasonOutputReference {
+func NewSqlEndpointHealthFailureReasonOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SqlEndpointHealthFailureReasonOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSqlEndpointHealthFailureReasonOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -192,7 +192,7 @@ func NewSqlEndpointHealthFailureReasonOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SqlEndpointHealthFailureReasonOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointHealthFailureReasonOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointHealthFailureReasonOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -200,11 +200,11 @@ func NewSqlEndpointHealthFailureReasonOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewSqlEndpointHealthFailureReasonOutputReference_Override(s SqlEndpointHealthFailureReasonOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSqlEndpointHealthFailureReasonOutputReference_Override(s SqlEndpointHealthFailureReasonOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointHealthFailureReasonOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointHealthFailureReasonOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -254,7 +254,7 @@ func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -294,11 +294,11 @@ func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -422,8 +422,8 @@ func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) GetStringMapAt
 	return returns
 }
 
-func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -435,11 +435,11 @@ func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) InterpolationA
 	return returns
 }
 
-func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -451,7 +451,7 @@ func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) InterpolationF
 	return returns
 }
 
-func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

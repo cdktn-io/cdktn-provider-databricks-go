@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sqlendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/sqlendpoint/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/sqlendpoint/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
 type SqlEndpoint interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AutoStopMins() *float64
 	SetAutoStopMins(val *float64)
 	AutoStopMinsInput() *float64
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Channel() SqlEndpointChannelOutputReference
 	ChannelInput() *SqlEndpointChannel
 	ClusterSize() *string
@@ -50,9 +50,9 @@ type SqlEndpoint interface {
 	SetEnableServerlessCompute(val interface{})
 	EnableServerlessComputeInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -66,9 +66,9 @@ type SqlEndpoint interface {
 	InstanceProfileArnInput() *string
 	JdbcUrl() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxNumClusters() *float64
 	SetMaxNumClusters(val *float64)
 	MaxNumClustersInput() *float64
@@ -87,9 +87,11 @@ type SqlEndpoint interface {
 	NumClusters() *float64
 	OdbcParams() SqlEndpointOdbcParamsList
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() SqlEndpointProviderConfigOutputReference
+	ProviderConfigInput() *SqlEndpointProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -103,7 +105,7 @@ type SqlEndpoint interface {
 	Tags() SqlEndpointTagsOutputReference
 	TagsInput() *SqlEndpointTags
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -121,7 +123,7 @@ type SqlEndpoint interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -139,9 +141,9 @@ type SqlEndpoint interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -157,6 +159,7 @@ type SqlEndpoint interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutChannel(value *SqlEndpointChannel)
+	PutProviderConfig(value *SqlEndpointProviderConfig)
 	PutTags(value *SqlEndpointTags)
 	PutTimeouts(value *SqlEndpointTimeouts)
 	ResetAutoStopMins()
@@ -172,6 +175,7 @@ type SqlEndpoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSpotInstancePolicy()
 	ResetTags()
 	ResetTimeouts()
@@ -191,7 +195,7 @@ type SqlEndpoint interface {
 
 // The jsii proxy struct for SqlEndpoint
 type jsiiProxy_SqlEndpoint struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_SqlEndpoint) AutoStopMins() *float64 {
@@ -214,8 +218,8 @@ func (j *jsiiProxy_SqlEndpoint) AutoStopMinsInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpoint) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SqlEndpoint) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -374,8 +378,8 @@ func (j *jsiiProxy_SqlEndpoint) EnableServerlessComputeInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpoint) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SqlEndpoint) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -464,8 +468,8 @@ func (j *jsiiProxy_SqlEndpoint) JdbcUrl() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpoint) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SqlEndpoint) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -594,11 +598,31 @@ func (j *jsiiProxy_SqlEndpoint) OdbcParams() SqlEndpointOdbcParamsList {
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpoint) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SqlEndpoint) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpoint) ProviderConfig() SqlEndpointProviderConfigOutputReference {
+	var returns SqlEndpointProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpoint) ProviderConfigInput() *SqlEndpointProviderConfig {
+	var returns *SqlEndpointProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -674,8 +698,8 @@ func (j *jsiiProxy_SqlEndpoint) TagsInput() *SqlEndpointTags {
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpoint) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SqlEndpoint) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -745,7 +769,7 @@ func (j *jsiiProxy_SqlEndpoint) WarehouseTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointConfig) SqlEndpoint {
 	_init_.Initialize()
 
@@ -755,7 +779,7 @@ func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointC
 	j := jsiiProxy_SqlEndpoint{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -763,12 +787,12 @@ func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint_Override(s SqlEndpoint, scope constructs.Construct, id *string, config *SqlEndpointConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -859,7 +883,7 @@ func (j *jsiiProxy_SqlEndpoint)SetEnableServerlessCompute(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SqlEndpoint)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -889,7 +913,7 @@ func (j *jsiiProxy_SqlEndpoint)SetInstanceProfileArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SqlEndpoint)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -944,7 +968,7 @@ func (j *jsiiProxy_SqlEndpoint)SetNoWait(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SqlEndpoint)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -985,17 +1009,17 @@ func (j *jsiiProxy_SqlEndpoint)SetWarehouseType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a SqlEndpoint resource upon running "cdktf plan <stack-name>".
-func SqlEndpoint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SqlEndpoint resource upon running "cdktn plan <stack-name>".
+func SqlEndpoint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSqlEndpoint_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1030,7 +1054,7 @@ func SqlEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1049,7 +1073,7 @@ func SqlEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1068,7 +1092,7 @@ func SqlEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1081,7 +1105,7 @@ func SqlEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint",
 		"tfResourceType",
 		&returns,
 	)
@@ -1126,11 +1150,11 @@ func (s *jsiiProxy_SqlEndpoint) GetAnyMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (s *jsiiProxy_SqlEndpoint) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlEndpoint) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1267,7 +1291,7 @@ func (s *jsiiProxy_SqlEndpoint) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SqlEndpoint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SqlEndpoint) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1278,11 +1302,11 @@ func (s *jsiiProxy_SqlEndpoint) ImportFrom(id *string, provider cdktf.TerraformP
 	)
 }
 
-func (s *jsiiProxy_SqlEndpoint) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlEndpoint) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1345,6 +1369,17 @@ func (s *jsiiProxy_SqlEndpoint) PutChannel(value *SqlEndpointChannel) {
 	_jsii_.InvokeVoid(
 		s,
 		"putChannel",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SqlEndpoint) PutProviderConfig(value *SqlEndpointProviderConfig) {
+	if err := s.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putProviderConfig",
 		[]interface{}{value},
 	)
 }
@@ -1455,6 +1490,14 @@ func (s *jsiiProxy_SqlEndpoint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlEndpoint) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

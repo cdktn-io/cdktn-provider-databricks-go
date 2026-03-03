@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package query
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.Query",
+		"@cdktn/provider-databricks.query.Query",
 		reflect.TypeOf((*Query)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -61,8 +61,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parentPath", GoGetter: "ParentPath"},
 			_jsii_.MemberProperty{JsiiProperty: "parentPathInput", GoGetter: "ParentPathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putParameter", GoMethod: "PutParameter"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "queryText", GoGetter: "QueryText"},
 			_jsii_.MemberProperty{JsiiProperty: "queryTextInput", GoGetter: "QueryTextInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -73,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOwnerUserName", GoMethod: "ResetOwnerUserName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParameter", GoMethod: "ResetParameter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParentPath", GoMethod: "ResetParentPath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRunAsMode", GoMethod: "ResetRunAsMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
@@ -97,28 +101,28 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Query{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryConfig",
+		"@cdktn/provider-databricks.query.QueryConfig",
 		reflect.TypeOf((*QueryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryParameter",
+		"@cdktn/provider-databricks.query.QueryParameter",
 		reflect.TypeOf((*QueryParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryParameterDateRangeValue",
+		"@cdktn/provider-databricks.query.QueryParameterDateRangeValue",
 		reflect.TypeOf((*QueryParameterDateRangeValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryParameterDateRangeValueDateRangeValue",
+		"@cdktn/provider-databricks.query.QueryParameterDateRangeValueDateRangeValue",
 		reflect.TypeOf((*QueryParameterDateRangeValueDateRangeValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterDateRangeValueDateRangeValueOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterDateRangeValueDateRangeValueOutputReference",
 		reflect.TypeOf((*QueryParameterDateRangeValueDateRangeValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -149,12 +153,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterDateRangeValueDateRangeValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterDateRangeValueOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterDateRangeValueOutputReference",
 		reflect.TypeOf((*QueryParameterDateRangeValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,16 +198,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterDateRangeValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryParameterDateValue",
+		"@cdktn/provider-databricks.query.QueryParameterDateValue",
 		reflect.TypeOf((*QueryParameterDateValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterDateValueOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterDateValueOutputReference",
 		reflect.TypeOf((*QueryParameterDateValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -239,20 +243,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterDateValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryParameterEnumValue",
+		"@cdktn/provider-databricks.query.QueryParameterEnumValue",
 		reflect.TypeOf((*QueryParameterEnumValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryParameterEnumValueMultiValuesOptions",
+		"@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptions",
 		reflect.TypeOf((*QueryParameterEnumValueMultiValuesOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterEnumValueMultiValuesOptionsOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptionsOutputReference",
 		reflect.TypeOf((*QueryParameterEnumValueMultiValuesOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -288,12 +292,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterEnumValueMultiValuesOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterEnumValueOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterEnumValueOutputReference",
 		reflect.TypeOf((*QueryParameterEnumValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -330,12 +334,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterEnumValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterList",
+		"@cdktn/provider-databricks.query.QueryParameterList",
 		reflect.TypeOf((*QueryParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -352,16 +356,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryParameterNumericValue",
+		"@cdktn/provider-databricks.query.QueryParameterNumericValue",
 		reflect.TypeOf((*QueryParameterNumericValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterNumericValueOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterNumericValueOutputReference",
 		reflect.TypeOf((*QueryParameterNumericValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -390,12 +394,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterNumericValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterOutputReference",
 		reflect.TypeOf((*QueryParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -451,20 +455,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryParameterQueryBackedValue",
+		"@cdktn/provider-databricks.query.QueryParameterQueryBackedValue",
 		reflect.TypeOf((*QueryParameterQueryBackedValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptions",
+		"@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptions",
 		reflect.TypeOf((*QueryParameterQueryBackedValueMultiValuesOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptionsOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptionsOutputReference",
 		reflect.TypeOf((*QueryParameterQueryBackedValueMultiValuesOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -500,12 +504,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterQueryBackedValueMultiValuesOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterQueryBackedValueOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterQueryBackedValueOutputReference",
 		reflect.TypeOf((*QueryParameterQueryBackedValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -541,16 +545,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterQueryBackedValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.query.QueryParameterTextValue",
+		"@cdktn/provider-databricks.query.QueryParameterTextValue",
 		reflect.TypeOf((*QueryParameterTextValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.query.QueryParameterTextValueOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterTextValueOutputReference",
 		reflect.TypeOf((*QueryParameterTextValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -579,7 +583,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueryParameterTextValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.query.QueryProviderConfig",
+		reflect.TypeOf((*QueryProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.query.QueryProviderConfigOutputReference",
+		reflect.TypeOf((*QueryProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_QueryProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

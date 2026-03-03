@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksmwsnetworkconnectivityconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmwsnetworkconnectivityconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmwsnetworkconnectivityconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AwsStableIpRule() DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference
 	AwsStableIpRuleInput() *DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule
 	AzureServiceEndpointRule() DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRuleOutputReference
@@ -41,15 +41,15 @@ type DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputRef
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,16 +65,16 @@ type DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputRef
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAwsStableIpRule(value *DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule)
 	PutAzureServiceEndpointRule(value *DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRule)
 	ResetAwsStableIpRule()
 	ResetAzureServiceEndpointRule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputRef
 
 // The jsii proxy struct for DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference
 type jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) AwsStableIpRule() DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefault
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefault
 }
 
 
-func NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference {
+func NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutput
 	j := jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutput
 	return &j
 }
 
-func NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference_Override(d DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference_Override(d DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefault
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,11 +309,11 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefault
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -437,8 +437,8 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefault
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -450,11 +450,11 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefault
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -504,7 +504,7 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefault
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

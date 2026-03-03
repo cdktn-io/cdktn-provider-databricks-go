@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package notificationdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/notificationdestination/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type NotificationDestinationConfigPagerdutyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type NotificationDestinationConfigPagerdutyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type NotificationDestinationConfigPagerdutyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetIntegrationKey()
 	ResetIntegrationKeySet()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type NotificationDestinationConfigPagerdutyOutputReference interface {
 
 // The jsii proxy struct for NotificationDestinationConfigPagerdutyOutputReference
 type jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) Terraf
 }
 
 
-func NewNotificationDestinationConfigPagerdutyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigPagerdutyOutputReference {
+func NewNotificationDestinationConfigPagerdutyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigPagerdutyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNotificationDestinationConfigPagerdutyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewNotificationDestinationConfigPagerdutyOutputReference(terraformResource 
 	j := jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigPagerdutyOutputReference",
+		"@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerdutyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewNotificationDestinationConfigPagerdutyOutputReference(terraformResource 
 	return &j
 }
 
-func NewNotificationDestinationConfigPagerdutyOutputReference_Override(n NotificationDestinationConfigPagerdutyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNotificationDestinationConfigPagerdutyOutputReference_Override(n NotificationDestinationConfigPagerdutyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigPagerdutyOutputReference",
+		"@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerdutyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -291,7 +291,7 @@ func (j *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) GetAny
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -459,8 +459,8 @@ func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) GetStr
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -472,11 +472,11 @@ func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) Interp
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -504,7 +504,7 @@ func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) ResetI
 	)
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationDestinationConfigPagerdutyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

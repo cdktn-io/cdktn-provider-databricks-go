@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package globalinitscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/globalinitscript/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/globalinitscript/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script databricks_global_init_script}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script databricks_global_init_script}.
 type GlobalInitScript interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,9 +38,9 @@ type GlobalInitScript interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -49,9 +49,9 @@ type GlobalInitScript interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Md5() *string
 	SetMd5(val *string)
 	Md5Input() *string
@@ -64,9 +64,11 @@ type GlobalInitScript interface {
 	SetPosition(val *float64)
 	PositionInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() GlobalInitScriptProviderConfigOutputReference
+	ProviderConfigInput() *GlobalInitScriptProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -77,7 +79,7 @@ type GlobalInitScript interface {
 	SetSource(val *string)
 	SourceInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -92,7 +94,7 @@ type GlobalInitScript interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -110,9 +112,9 @@ type GlobalInitScript interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -127,6 +129,7 @@ type GlobalInitScript interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *GlobalInitScriptProviderConfig)
 	PutTimeouts(value *GlobalInitScriptTimeouts)
 	ResetContentBase64()
 	ResetEnabled()
@@ -136,6 +139,7 @@ type GlobalInitScript interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPosition()
+	ResetProviderConfig()
 	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -152,11 +156,11 @@ type GlobalInitScript interface {
 
 // The jsii proxy struct for GlobalInitScript
 type jsiiProxy_GlobalInitScript struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_GlobalInitScript) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_GlobalInitScript) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -245,8 +249,8 @@ func (j *jsiiProxy_GlobalInitScript) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlobalInitScript) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_GlobalInitScript) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -295,8 +299,8 @@ func (j *jsiiProxy_GlobalInitScript) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GlobalInitScript) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_GlobalInitScript) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -375,11 +379,31 @@ func (j *jsiiProxy_GlobalInitScript) PositionInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_GlobalInitScript) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_GlobalInitScript) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlobalInitScript) ProviderConfig() GlobalInitScriptProviderConfigOutputReference {
+	var returns GlobalInitScriptProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlobalInitScript) ProviderConfigInput() *GlobalInitScriptProviderConfig {
+	var returns *GlobalInitScriptProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -425,8 +449,8 @@ func (j *jsiiProxy_GlobalInitScript) SourceInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GlobalInitScript) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_GlobalInitScript) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -476,7 +500,7 @@ func (j *jsiiProxy_GlobalInitScript) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script databricks_global_init_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script databricks_global_init_script} Resource.
 func NewGlobalInitScript(scope constructs.Construct, id *string, config *GlobalInitScriptConfig) GlobalInitScript {
 	_init_.Initialize()
 
@@ -486,7 +510,7 @@ func NewGlobalInitScript(scope constructs.Construct, id *string, config *GlobalI
 	j := jsiiProxy_GlobalInitScript{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.globalInitScript.GlobalInitScript",
+		"@cdktn/provider-databricks.globalInitScript.GlobalInitScript",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,12 +518,12 @@ func NewGlobalInitScript(scope constructs.Construct, id *string, config *GlobalI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script databricks_global_init_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script databricks_global_init_script} Resource.
 func NewGlobalInitScript_Override(g GlobalInitScript, scope constructs.Construct, id *string, config *GlobalInitScriptConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.globalInitScript.GlobalInitScript",
+		"@cdktn/provider-databricks.globalInitScript.GlobalInitScript",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +581,7 @@ func (j *jsiiProxy_GlobalInitScript)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GlobalInitScript)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -576,7 +600,7 @@ func (j *jsiiProxy_GlobalInitScript)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GlobalInitScript)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +644,7 @@ func (j *jsiiProxy_GlobalInitScript)SetPosition(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GlobalInitScript)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -650,17 +674,17 @@ func (j *jsiiProxy_GlobalInitScript)SetSource(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a GlobalInitScript resource upon running "cdktf plan <stack-name>".
-func GlobalInitScript_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a GlobalInitScript resource upon running "cdktn plan <stack-name>".
+func GlobalInitScript_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateGlobalInitScript_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.globalInitScript.GlobalInitScript",
+		"@cdktn/provider-databricks.globalInitScript.GlobalInitScript",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -695,7 +719,7 @@ func GlobalInitScript_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.globalInitScript.GlobalInitScript",
+		"@cdktn/provider-databricks.globalInitScript.GlobalInitScript",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +738,7 @@ func GlobalInitScript_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.globalInitScript.GlobalInitScript",
+		"@cdktn/provider-databricks.globalInitScript.GlobalInitScript",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +757,7 @@ func GlobalInitScript_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.globalInitScript.GlobalInitScript",
+		"@cdktn/provider-databricks.globalInitScript.GlobalInitScript",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +770,7 @@ func GlobalInitScript_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.globalInitScript.GlobalInitScript",
+		"@cdktn/provider-databricks.globalInitScript.GlobalInitScript",
 		"tfResourceType",
 		&returns,
 	)
@@ -791,11 +815,11 @@ func (g *jsiiProxy_GlobalInitScript) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (g *jsiiProxy_GlobalInitScript) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GlobalInitScript) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -932,7 +956,7 @@ func (g *jsiiProxy_GlobalInitScript) HasResourceMove() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlobalInitScript) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (g *jsiiProxy_GlobalInitScript) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -943,11 +967,11 @@ func (g *jsiiProxy_GlobalInitScript) ImportFrom(id *string, provider cdktf.Terra
 	)
 }
 
-func (g *jsiiProxy_GlobalInitScript) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GlobalInitScript) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -1000,6 +1024,17 @@ func (g *jsiiProxy_GlobalInitScript) OverrideLogicalId(newLogicalId *string) {
 		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GlobalInitScript) PutProviderConfig(value *GlobalInitScriptProviderConfig) {
+	if err := g.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProviderConfig",
+		[]interface{}{value},
 	)
 }
 
@@ -1058,6 +1093,14 @@ func (g *jsiiProxy_GlobalInitScript) ResetPosition() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPosition",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlobalInitScript) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

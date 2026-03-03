@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,10 @@ func (e *jsiiProxy_Entitlements) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (e *jsiiProxy_Entitlements) validatePutProviderConfigParameters(value *EntitlementsProviderConfig) error {
+	return nil
+}
+
 func validateEntitlements_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -119,7 +123,7 @@ func (j *jsiiProxy_Entitlements) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Entitlements) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Entitlements) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -119,6 +119,10 @@ func (w *jsiiProxy_WorkspaceSettingV2) validatePutPersonalComputeParameters(valu
 	return nil
 }
 
+func (w *jsiiProxy_WorkspaceSettingV2) validatePutProviderConfigParameters(value *WorkspaceSettingV2ProviderConfig) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspaceSettingV2) validatePutRestrictWorkspaceAdminsParameters(value *WorkspaceSettingV2RestrictWorkspaceAdmins) error {
 	return nil
 }
@@ -151,7 +155,7 @@ func (j *jsiiProxy_WorkspaceSettingV2) validateSetCountParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceSettingV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WorkspaceSettingV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

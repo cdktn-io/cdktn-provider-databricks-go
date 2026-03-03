@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package instancepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/instancepool/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/instancepool/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type InstancePoolDiskSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type InstancePoolDiskSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,16 +69,16 @@ type InstancePoolDiskSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDiskType(value *InstancePoolDiskSpecDiskType)
 	ResetDiskCount()
 	ResetDiskSize()
 	ResetDiskType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type InstancePoolDiskSpecOutputReference interface {
 
 // The jsii proxy struct for InstancePoolDiskSpecOutputReference
 type jsiiProxy_InstancePoolDiskSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_InstancePoolDiskSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_InstancePoolDiskSpecOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_InstancePoolDiskSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_InstancePoolDiskSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_InstancePoolDiskSpecOutputReference) TerraformResource() cdkt
 }
 
 
-func NewInstancePoolDiskSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InstancePoolDiskSpecOutputReference {
+func NewInstancePoolDiskSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) InstancePoolDiskSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewInstancePoolDiskSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewInstancePoolDiskSpecOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_InstancePoolDiskSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolDiskSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewInstancePoolDiskSpecOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewInstancePoolDiskSpecOutputReference_Override(i InstancePoolDiskSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewInstancePoolDiskSpecOutputReference_Override(i InstancePoolDiskSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecOutputReference",
+		"@cdktn/provider-databricks.instancePool.InstancePoolDiskSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_InstancePoolDiskSpecOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_InstancePoolDiskSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstancePoolDiskSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,11 +355,11 @@ func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -483,8 +483,8 @@ func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -496,11 +496,11 @@ func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -547,7 +547,7 @@ func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) ResetDiskType() {
 	)
 }
 
-func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_InstancePoolDiskSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

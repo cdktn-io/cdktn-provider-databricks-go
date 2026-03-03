@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package library
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.library.Library",
+		"@cdktn/provider-databricks.library.Library",
 		reflect.TypeOf((*Library)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -91,20 +91,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Library{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.library.LibraryConfig",
+		"@cdktn/provider-databricks.library.LibraryConfig",
 		reflect.TypeOf((*LibraryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.library.LibraryCran",
+		"@cdktn/provider-databricks.library.LibraryCran",
 		reflect.TypeOf((*LibraryCran)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.library.LibraryCranList",
+		"@cdktn/provider-databricks.library.LibraryCranList",
 		reflect.TypeOf((*LibraryCranList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -121,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LibraryCranList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.library.LibraryCranOutputReference",
+		"@cdktn/provider-databricks.library.LibraryCranOutputReference",
 		reflect.TypeOf((*LibraryCranOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,16 +158,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LibraryCranOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.library.LibraryMaven",
+		"@cdktn/provider-databricks.library.LibraryMaven",
 		reflect.TypeOf((*LibraryMaven)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.library.LibraryMavenList",
+		"@cdktn/provider-databricks.library.LibraryMavenList",
 		reflect.TypeOf((*LibraryMavenList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -184,12 +184,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LibraryMavenList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.library.LibraryMavenOutputReference",
+		"@cdktn/provider-databricks.library.LibraryMavenOutputReference",
 		reflect.TypeOf((*LibraryMavenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -224,16 +224,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LibraryMavenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.library.LibraryProviderConfig",
+		"@cdktn/provider-databricks.library.LibraryProviderConfig",
 		reflect.TypeOf((*LibraryProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.library.LibraryProviderConfigList",
+		"@cdktn/provider-databricks.library.LibraryProviderConfigList",
 		reflect.TypeOf((*LibraryProviderConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -250,12 +250,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LibraryProviderConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.library.LibraryProviderConfigOutputReference",
+		"@cdktn/provider-databricks.library.LibraryProviderConfigOutputReference",
 		reflect.TypeOf((*LibraryProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -284,16 +284,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LibraryProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.library.LibraryPypi",
+		"@cdktn/provider-databricks.library.LibraryPypi",
 		reflect.TypeOf((*LibraryPypi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.library.LibraryPypiList",
+		"@cdktn/provider-databricks.library.LibraryPypiList",
 		reflect.TypeOf((*LibraryPypiList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -310,12 +310,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LibraryPypiList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.library.LibraryPypiOutputReference",
+		"@cdktn/provider-databricks.library.LibraryPypiOutputReference",
 		reflect.TypeOf((*LibraryPypiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -347,7 +347,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LibraryPypiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

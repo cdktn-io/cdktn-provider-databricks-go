@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/job/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobTaskNewClusterInitScriptsFileOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type JobTaskNewClusterInitScriptsFileOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type JobTaskNewClusterInitScriptsFileOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type JobTaskNewClusterInitScriptsFileOutputReference interface {
 
 // The jsii proxy struct for JobTaskNewClusterInitScriptsFileOutputReference
 type jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -173,7 +173,7 @@ func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) TerraformRes
 }
 
 
-func NewJobTaskNewClusterInitScriptsFileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterInitScriptsFileOutputReference {
+func NewJobTaskNewClusterInitScriptsFileOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterInitScriptsFileOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobTaskNewClusterInitScriptsFileOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -182,7 +182,7 @@ func NewJobTaskNewClusterInitScriptsFileOutputReference(terraformResource cdktf.
 	j := jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsFileOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -190,11 +190,11 @@ func NewJobTaskNewClusterInitScriptsFileOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewJobTaskNewClusterInitScriptsFileOutputReference_Override(j JobTaskNewClusterInitScriptsFileOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobTaskNewClusterInitScriptsFileOutputReference_Override(j JobTaskNewClusterInitScriptsFileOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsFileOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
@@ -255,7 +255,7 @@ func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,11 +295,11 @@ func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -423,8 +423,8 @@ func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) GetStringMap
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -436,11 +436,11 @@ func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) Interpolatio
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -452,7 +452,7 @@ func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) Interpolatio
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

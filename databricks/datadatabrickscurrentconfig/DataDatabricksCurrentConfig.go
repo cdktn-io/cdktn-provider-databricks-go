@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickscurrentconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscurrentconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/current_config databricks_current_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/current_config databricks_current_config}.
 type DataDatabricksCurrentConfig interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type DataDatabricksCurrentConfig interface {
 	SetAuthType(val *string)
 	AuthTypeInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CloudType() *string
 	SetCloudType(val *string)
 	CloudTypeInput() *string
@@ -37,9 +37,9 @@ type DataDatabricksCurrentConfig interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -54,19 +54,21 @@ type DataDatabricksCurrentConfig interface {
 	SetIsAccount(val interface{})
 	IsAccountInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DataDatabricksCurrentConfigProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksCurrentConfigProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -76,7 +78,7 @@ type DataDatabricksCurrentConfig interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -92,10 +94,11 @@ type DataDatabricksCurrentConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksCurrentConfigProviderConfig)
 	ResetAccountId()
 	ResetAuthType()
 	ResetCloudType()
@@ -105,6 +108,7 @@ type DataDatabricksCurrentConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -121,7 +125,7 @@ type DataDatabricksCurrentConfig interface {
 
 // The jsii proxy struct for DataDatabricksCurrentConfig
 type jsiiProxy_DataDatabricksCurrentConfig struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataDatabricksCurrentConfig) AccountId() *string {
@@ -164,8 +168,8 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) AuthTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCurrentConfig) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksCurrentConfig) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -224,8 +228,8 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCurrentConfig) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksCurrentConfig) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -314,8 +318,8 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) IsAccountInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCurrentConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksCurrentConfig) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -334,11 +338,31 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCurrentConfig) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksCurrentConfig) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCurrentConfig) ProviderConfig() DataDatabricksCurrentConfigProviderConfigOutputReference {
+	var returns DataDatabricksCurrentConfigProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCurrentConfig) ProviderConfigInput() *DataDatabricksCurrentConfigProviderConfig {
+	var returns *DataDatabricksCurrentConfigProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -354,8 +378,8 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCurrentConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksCurrentConfig) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -385,7 +409,7 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/current_config databricks_current_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/current_config databricks_current_config} Data Source.
 func NewDataDatabricksCurrentConfig(scope constructs.Construct, id *string, config *DataDatabricksCurrentConfigConfig) DataDatabricksCurrentConfig {
 	_init_.Initialize()
 
@@ -395,7 +419,7 @@ func NewDataDatabricksCurrentConfig(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataDatabricksCurrentConfig{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
+		"@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,12 +427,12 @@ func NewDataDatabricksCurrentConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/current_config databricks_current_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/current_config databricks_current_config} Data Source.
 func NewDataDatabricksCurrentConfig_Override(d DataDatabricksCurrentConfig, scope constructs.Construct, id *string, config *DataDatabricksCurrentConfigConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
+		"@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -466,7 +490,7 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksCurrentConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksCurrentConfig)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -507,7 +531,7 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig)SetIsAccount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksCurrentConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksCurrentConfig)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +542,7 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksCurrentConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksCurrentConfig)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -526,17 +550,17 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksCurrentConfig resource upon running "cdktf plan <stack-name>".
-func DataDatabricksCurrentConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksCurrentConfig resource upon running "cdktn plan <stack-name>".
+func DataDatabricksCurrentConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksCurrentConfig_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
+		"@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -571,7 +595,7 @@ func DataDatabricksCurrentConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
+		"@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +614,7 @@ func DataDatabricksCurrentConfig_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
+		"@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +633,7 @@ func DataDatabricksCurrentConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
+		"@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +646,7 @@ func DataDatabricksCurrentConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
+		"@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig",
 		"tfResourceType",
 		&returns,
 	)
@@ -656,11 +680,11 @@ func (d *jsiiProxy_DataDatabricksCurrentConfig) GetAnyMapAttribute(terraformAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksCurrentConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksCurrentConfig) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -784,11 +808,11 @@ func (d *jsiiProxy_DataDatabricksCurrentConfig) GetStringMapAttribute(terraformA
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksCurrentConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksCurrentConfig) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -808,6 +832,17 @@ func (d *jsiiProxy_DataDatabricksCurrentConfig) OverrideLogicalId(newLogicalId *
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCurrentConfig) PutProviderConfig(value *DataDatabricksCurrentConfigProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
 	)
 }
 
@@ -863,6 +898,14 @@ func (d *jsiiProxy_DataDatabricksCurrentConfig) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCurrentConfig) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

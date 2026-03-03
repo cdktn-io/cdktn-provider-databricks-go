@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsList) validateGetPara
 	return nil
 }
 
-func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_RfaAccessRequestDestinationsDestinationsList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_RfaAccessRequestDestinationsDestinationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RfaAccessRequestDestinationsDestinationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_RfaAccessRequestDestinationsDestinationsList) validateSetWrap
 	return nil
 }
 
-func validateNewRfaAccessRequestDestinationsDestinationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRfaAccessRequestDestinationsDestinationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

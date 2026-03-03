@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package featureengineeringmaterializedfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/featureengineeringmaterializedfeature/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringmaterializedfeature/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CatalogName() *string
 	SetCatalogName(val *string)
 	CatalogNameInput() *string
@@ -49,15 +49,15 @@ type FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,12 +73,12 @@ type FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference inter
 
 // The jsii proxy struct for FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference
 type jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) CatalogName() *string {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 }
 
 
-func NewFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference {
+func NewFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference(te
 	j := jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference",
+		"@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference(te
 	return &j
 }
 
-func NewFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference_Override(f FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference_Override(f FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference",
+		"@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -357,7 +357,7 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -525,8 +525,8 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -538,11 +538,11 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -554,7 +554,7 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

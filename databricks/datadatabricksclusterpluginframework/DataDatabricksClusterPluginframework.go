@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksclusterpluginframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksclusterpluginframework/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusterpluginframework/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework}.
 type DataDatabricksClusterPluginframework interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
@@ -36,29 +36,29 @@ type DataDatabricksClusterPluginframework interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() DataDatabricksClusterPluginframeworkProviderConfigOutputReference
 	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -68,7 +68,7 @@ type DataDatabricksClusterPluginframework interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,7 +84,7 @@ type DataDatabricksClusterPluginframework interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -113,11 +113,11 @@ type DataDatabricksClusterPluginframework interface {
 
 // The jsii proxy struct for DataDatabricksClusterPluginframework
 type jsiiProxy_DataDatabricksClusterPluginframework struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframework) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksClusterPluginframework) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework) DependsOn() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframework) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksClusterPluginframework) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework) FriendlyUniqueId() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframework) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksClusterPluginframework) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework) Node() constructs.Node 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframework) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksClusterPluginframework) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework) RawOverrides() interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframework) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksClusterPluginframework) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -337,7 +337,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
 func NewDataDatabricksClusterPluginframework(scope constructs.Construct, id *string, config *DataDatabricksClusterPluginframeworkConfig) DataDatabricksClusterPluginframework {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewDataDatabricksClusterPluginframework(scope constructs.Construct, id *str
 	j := jsiiProxy_DataDatabricksClusterPluginframework{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
+		"@cdktn/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,12 +355,12 @@ func NewDataDatabricksClusterPluginframework(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
 func NewDataDatabricksClusterPluginframework_Override(d DataDatabricksClusterPluginframework, scope constructs.Construct, id *string, config *DataDatabricksClusterPluginframeworkConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
+		"@cdktn/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -407,7 +407,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframework)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksClusterPluginframework)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframework)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksClusterPluginframework)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframework)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksClusterPluginframework)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -434,17 +434,17 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework)SetProvider(val cdktf.Te
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksClusterPluginframework resource upon running "cdktf plan <stack-name>".
-func DataDatabricksClusterPluginframework_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksClusterPluginframework resource upon running "cdktn plan <stack-name>".
+func DataDatabricksClusterPluginframework_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksClusterPluginframework_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
+		"@cdktn/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -479,7 +479,7 @@ func DataDatabricksClusterPluginframework_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
+		"@cdktn/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -498,7 +498,7 @@ func DataDatabricksClusterPluginframework_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
+		"@cdktn/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func DataDatabricksClusterPluginframework_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
+		"@cdktn/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func DataDatabricksClusterPluginframework_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
+		"@cdktn/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework",
 		"tfResourceType",
 		&returns,
 	)
@@ -564,11 +564,11 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframework) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframework) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksClusterPluginframework) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -692,11 +692,11 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframework) GetStringMapAttribute(t
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframework) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksClusterPluginframework) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

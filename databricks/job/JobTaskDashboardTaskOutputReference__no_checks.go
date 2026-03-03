@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,7 @@ func (j *jsiiProxy_JobTaskDashboardTaskOutputReference) validatePutSubscriptionP
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDashboardTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskDashboardTaskOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,6 +67,10 @@ func (j *jsiiProxy_JobTaskDashboardTaskOutputReference) validateSetDashboardIdPa
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskDashboardTaskOutputReference) validateSetFiltersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskDashboardTaskOutputReference) validateSetInternalValueParameters(val *JobTaskDashboardTask) error {
 	return nil
 }
@@ -75,7 +79,7 @@ func (j *jsiiProxy_JobTaskDashboardTaskOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDashboardTaskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobTaskDashboardTaskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -83,7 +87,7 @@ func (j *jsiiProxy_JobTaskDashboardTaskOutputReference) validateSetWarehouseIdPa
 	return nil
 }
 
-func validateNewJobTaskDashboardTaskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobTaskDashboardTaskOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

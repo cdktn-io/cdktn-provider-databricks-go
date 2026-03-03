@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksjob/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogE
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogE
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogE
 
 // The jsii proxy struct for DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList
 type jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStr
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStr
 }
 
 
-func NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList {
+func NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBackl
 	j := jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBackl
 	return &j
 }
 
-func NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList_Override(d DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList_Override(d DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStr
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStr
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -231,7 +231,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStr
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

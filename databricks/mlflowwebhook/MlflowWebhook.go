@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mlflowwebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/mlflowwebhook/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mlflowwebhook/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook databricks_mlflow_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook databricks_mlflow_webhook}.
 type MlflowWebhook interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,9 +38,9 @@ type MlflowWebhook interface {
 	SetEvents(val *[]*string)
 	EventsInput() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -53,18 +53,20 @@ type MlflowWebhook interface {
 	JobSpec() MlflowWebhookJobSpecOutputReference
 	JobSpecInput() *MlflowWebhookJobSpec
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModelName() *string
 	SetModelName(val *string)
 	ModelNameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() MlflowWebhookProviderConfigOutputReference
+	ProviderConfigInput() *MlflowWebhookProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -75,7 +77,7 @@ type MlflowWebhook interface {
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -88,7 +90,7 @@ type MlflowWebhook interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -106,9 +108,9 @@ type MlflowWebhook interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -125,6 +127,7 @@ type MlflowWebhook interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutHttpUrlSpec(value *MlflowWebhookHttpUrlSpec)
 	PutJobSpec(value *MlflowWebhookJobSpec)
+	PutProviderConfig(value *MlflowWebhookProviderConfig)
 	ResetDescription()
 	ResetHttpUrlSpec()
 	ResetId()
@@ -133,6 +136,7 @@ type MlflowWebhook interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -149,11 +153,11 @@ type MlflowWebhook interface {
 
 // The jsii proxy struct for MlflowWebhook
 type jsiiProxy_MlflowWebhook struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_MlflowWebhook) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MlflowWebhook) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -242,8 +246,8 @@ func (j *jsiiProxy_MlflowWebhook) EventsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_MlflowWebhook) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MlflowWebhook) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -332,8 +336,8 @@ func (j *jsiiProxy_MlflowWebhook) JobSpecInput() *MlflowWebhookJobSpec {
 	return returns
 }
 
-func (j *jsiiProxy_MlflowWebhook) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MlflowWebhook) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -372,11 +376,31 @@ func (j *jsiiProxy_MlflowWebhook) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_MlflowWebhook) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MlflowWebhook) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MlflowWebhook) ProviderConfig() MlflowWebhookProviderConfigOutputReference {
+	var returns MlflowWebhookProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MlflowWebhook) ProviderConfigInput() *MlflowWebhookProviderConfig {
+	var returns *MlflowWebhookProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -422,8 +446,8 @@ func (j *jsiiProxy_MlflowWebhook) StatusInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MlflowWebhook) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MlflowWebhook) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -453,7 +477,7 @@ func (j *jsiiProxy_MlflowWebhook) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource.
 func NewMlflowWebhook(scope constructs.Construct, id *string, config *MlflowWebhookConfig) MlflowWebhook {
 	_init_.Initialize()
 
@@ -463,7 +487,7 @@ func NewMlflowWebhook(scope constructs.Construct, id *string, config *MlflowWebh
 	j := jsiiProxy_MlflowWebhook{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mlflowWebhook.MlflowWebhook",
+		"@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,12 +495,12 @@ func NewMlflowWebhook(scope constructs.Construct, id *string, config *MlflowWebh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource.
 func NewMlflowWebhook_Override(m MlflowWebhook, scope constructs.Construct, id *string, config *MlflowWebhookConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mlflowWebhook.MlflowWebhook",
+		"@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -534,7 +558,7 @@ func (j *jsiiProxy_MlflowWebhook)SetEvents(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhook)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MlflowWebhook)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -553,7 +577,7 @@ func (j *jsiiProxy_MlflowWebhook)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MlflowWebhook)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +599,7 @@ func (j *jsiiProxy_MlflowWebhook)SetModelName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhook)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MlflowWebhook)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -605,17 +629,17 @@ func (j *jsiiProxy_MlflowWebhook)SetStatus(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a MlflowWebhook resource upon running "cdktf plan <stack-name>".
-func MlflowWebhook_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MlflowWebhook resource upon running "cdktn plan <stack-name>".
+func MlflowWebhook_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMlflowWebhook_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mlflowWebhook.MlflowWebhook",
+		"@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -650,7 +674,7 @@ func MlflowWebhook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mlflowWebhook.MlflowWebhook",
+		"@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +693,7 @@ func MlflowWebhook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mlflowWebhook.MlflowWebhook",
+		"@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +712,7 @@ func MlflowWebhook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mlflowWebhook.MlflowWebhook",
+		"@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +725,7 @@ func MlflowWebhook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.mlflowWebhook.MlflowWebhook",
+		"@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook",
 		"tfResourceType",
 		&returns,
 	)
@@ -746,11 +770,11 @@ func (m *jsiiProxy_MlflowWebhook) GetAnyMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (m *jsiiProxy_MlflowWebhook) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MlflowWebhook) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -887,7 +911,7 @@ func (m *jsiiProxy_MlflowWebhook) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MlflowWebhook) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MlflowWebhook) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -898,11 +922,11 @@ func (m *jsiiProxy_MlflowWebhook) ImportFrom(id *string, provider cdktf.Terrafor
 	)
 }
 
-func (m *jsiiProxy_MlflowWebhook) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MlflowWebhook) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -980,6 +1004,17 @@ func (m *jsiiProxy_MlflowWebhook) PutJobSpec(value *MlflowWebhookJobSpec) {
 	)
 }
 
+func (m *jsiiProxy_MlflowWebhook) PutProviderConfig(value *MlflowWebhookProviderConfig) {
+	if err := m.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MlflowWebhook) ResetDescription() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1024,6 +1059,14 @@ func (m *jsiiProxy_MlflowWebhook) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MlflowWebhook) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

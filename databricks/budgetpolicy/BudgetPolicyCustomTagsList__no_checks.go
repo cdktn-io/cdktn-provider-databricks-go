@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (b *jsiiProxy_BudgetPolicyCustomTagsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (b *jsiiProxy_BudgetPolicyCustomTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetPolicyCustomTagsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_BudgetPolicyCustomTagsList) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_BudgetPolicyCustomTagsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BudgetPolicyCustomTagsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_BudgetPolicyCustomTagsList) validateSetWrapsSetParameters(val
 	return nil
 }
 
-func validateNewBudgetPolicyCustomTagsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBudgetPolicyCustomTagsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

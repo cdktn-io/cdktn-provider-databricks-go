@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package budget
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budget.Budget",
+		"@cdktn/provider-databricks.budget.Budget",
 		reflect.TypeOf((*Budget)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -84,20 +84,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Budget{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.budget.BudgetAlertConfigurations",
+		"@cdktn/provider-databricks.budget.BudgetAlertConfigurations",
 		reflect.TypeOf((*BudgetAlertConfigurations)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations",
+		"@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations",
 		reflect.TypeOf((*BudgetAlertConfigurationsActionConfigurations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurationsList",
+		"@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurationsList",
 		reflect.TypeOf((*BudgetAlertConfigurationsActionConfigurationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -114,12 +114,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetAlertConfigurationsActionConfigurationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurationsOutputReference",
+		"@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurationsOutputReference",
 		reflect.TypeOf((*BudgetAlertConfigurationsActionConfigurationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionConfigurationId", GoGetter: "ActionConfigurationId"},
@@ -155,12 +155,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetAlertConfigurationsActionConfigurationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budget.BudgetAlertConfigurationsList",
+		"@cdktn/provider-databricks.budget.BudgetAlertConfigurationsList",
 		reflect.TypeOf((*BudgetAlertConfigurationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -177,12 +177,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetAlertConfigurationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budget.BudgetAlertConfigurationsOutputReference",
+		"@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference",
 		reflect.TypeOf((*BudgetAlertConfigurationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionConfigurations", GoGetter: "ActionConfigurations"},
@@ -228,20 +228,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetAlertConfigurationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.budget.BudgetConfig",
+		"@cdktn/provider-databricks.budget.BudgetConfig",
 		reflect.TypeOf((*BudgetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.budget.BudgetFilter",
+		"@cdktn/provider-databricks.budget.BudgetFilter",
 		reflect.TypeOf((*BudgetFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budget.BudgetFilterOutputReference",
+		"@cdktn/provider-databricks.budget.BudgetFilterOutputReference",
 		reflect.TypeOf((*BudgetFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -276,16 +276,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.budget.BudgetFilterTags",
+		"@cdktn/provider-databricks.budget.BudgetFilterTags",
 		reflect.TypeOf((*BudgetFilterTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budget.BudgetFilterTagsList",
+		"@cdktn/provider-databricks.budget.BudgetFilterTagsList",
 		reflect.TypeOf((*BudgetFilterTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -302,12 +302,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetFilterTagsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budget.BudgetFilterTagsOutputReference",
+		"@cdktn/provider-databricks.budget.BudgetFilterTagsOutputReference",
 		reflect.TypeOf((*BudgetFilterTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -341,16 +341,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetFilterTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.budget.BudgetFilterTagsValue",
+		"@cdktn/provider-databricks.budget.BudgetFilterTagsValue",
 		reflect.TypeOf((*BudgetFilterTagsValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budget.BudgetFilterTagsValueOutputReference",
+		"@cdktn/provider-databricks.budget.BudgetFilterTagsValueOutputReference",
 		reflect.TypeOf((*BudgetFilterTagsValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -383,16 +383,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetFilterTagsValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.budget.BudgetFilterWorkspaceId",
+		"@cdktn/provider-databricks.budget.BudgetFilterWorkspaceId",
 		reflect.TypeOf((*BudgetFilterWorkspaceId)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budget.BudgetFilterWorkspaceIdOutputReference",
+		"@cdktn/provider-databricks.budget.BudgetFilterWorkspaceIdOutputReference",
 		reflect.TypeOf((*BudgetFilterWorkspaceIdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -425,7 +425,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetFilterWorkspaceIdOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/pipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PipelineNotificationList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type PipelineNotificationList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type PipelineNotificationList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) PipelineNotificationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type PipelineNotificationList interface {
 
 // The jsii proxy struct for PipelineNotificationList
 type jsiiProxy_PipelineNotificationList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_PipelineNotificationList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_PipelineNotificationList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PipelineNotificationList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PipelineNotificationList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_PipelineNotificationList) WrapsSet() *bool {
 }
 
 
-func NewPipelineNotificationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineNotificationList {
+func NewPipelineNotificationList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineNotificationList {
 	_init_.Initialize()
 
 	if err := validateNewPipelineNotificationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewPipelineNotificationList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_PipelineNotificationList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineNotificationList",
+		"@cdktn/provider-databricks.pipeline.PipelineNotificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewPipelineNotificationList(terraformResource cdktf.IInterpolatingParent, t
 	return &j
 }
 
-func NewPipelineNotificationList_Override(p PipelineNotificationList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewPipelineNotificationList_Override(p PipelineNotificationList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineNotificationList",
+		"@cdktn/provider-databricks.pipeline.PipelineNotificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_PipelineNotificationList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PipelineNotificationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineNotificationList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_PipelineNotificationList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (p *jsiiProxy_PipelineNotificationList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (p *jsiiProxy_PipelineNotificationList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := p.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		p,
@@ -231,7 +231,7 @@ func (p *jsiiProxy_PipelineNotificationList) Get(index *float64) PipelineNotific
 	return returns
 }
 
-func (p *jsiiProxy_PipelineNotificationList) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PipelineNotificationList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -142,7 +142,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutClusterMountInfo
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobTaskNewClusterClusterMountInfo:
 		value := value.(*[]*JobTaskNewClusterClusterMountInfo)
@@ -161,7 +161,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutClusterMountInfo
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobTaskNewClusterClusterMountInfo; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobTaskNewClusterClusterMountInfo; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -169,6 +169,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutClusterMountInfo
 }
 
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutDockerImageParameters(value *JobTaskNewClusterDockerImage) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutDriverNodeTypeFlexibilityParameters(value *JobTaskNewClusterDriverNodeTypeFlexibility) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -195,7 +206,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutInitScriptsParam
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobTaskNewClusterInitScripts:
 		value := value.(*[]*JobTaskNewClusterInitScripts)
@@ -214,7 +225,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutInitScriptsParam
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobTaskNewClusterInitScripts; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobTaskNewClusterInitScripts; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -226,7 +237,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutLibraryParameter
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobTaskNewClusterLibrary:
 		value := value.(*[]*JobTaskNewClusterLibrary)
@@ -245,7 +256,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutLibraryParameter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobTaskNewClusterLibrary; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobTaskNewClusterLibrary; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -253,6 +264,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutLibraryParameter
 }
 
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutProviderConfigParameters(value *JobTaskNewClusterProviderConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutWorkerNodeTypeFlexibilityParameters(value *JobTaskNewClusterWorkerNodeTypeFlexibility) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -274,7 +296,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutWorkloadTypePara
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -291,11 +313,11 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetApplyPolicyDefau
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -432,11 +454,11 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetEnableElasticDis
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -452,11 +474,11 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetEnableLocalDiskE
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -496,11 +518,11 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetIsSingleNodePara
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -603,7 +625,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -628,18 +650,18 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetUseMlRuntimePara
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func validateNewJobTaskNewClusterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobTaskNewClusterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

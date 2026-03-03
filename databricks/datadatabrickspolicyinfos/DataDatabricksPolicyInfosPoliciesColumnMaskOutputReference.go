@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickspolicyinfos
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspolicyinfos/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Using() DataDatabricksPolicyInfosPoliciesColumnMaskUsingList
 	UsingInput() interface{}
 	// Experimental.
@@ -53,7 +53,7 @@ type DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,14 +69,14 @@ type DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutUsing(value interface{})
 	ResetUsing()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference
 type jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) ComplexObjectIndex() interface{} {
@@ -189,8 +189,8 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -220,7 +220,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) U
 }
 
 
-func NewDataDatabricksPolicyInfosPoliciesColumnMaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference {
+func NewDataDatabricksPolicyInfosPoliciesColumnMaskOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksPolicyInfosPoliciesColumnMaskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -229,7 +229,7 @@ func NewDataDatabricksPolicyInfosPoliciesColumnMaskOutputReference(terraformReso
 	j := jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,11 +237,11 @@ func NewDataDatabricksPolicyInfosPoliciesColumnMaskOutputReference(terraformReso
 	return &j
 }
 
-func NewDataDatabricksPolicyInfosPoliciesColumnMaskOutputReference_Override(d DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksPolicyInfosPoliciesColumnMaskOutputReference_Override(d DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,11 +353,11 @@ func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -481,8 +481,8 @@ func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -494,11 +494,11 @@ func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -529,7 +529,7 @@ func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) R
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksnotebook
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebook",
+		"@cdktn/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebook",
 		reflect.TypeOf((*DataDatabricksNotebook)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,20 +72,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksNotebook{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebookConfig",
+		"@cdktn/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebookConfig",
 		reflect.TypeOf((*DataDatabricksNotebookConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebookProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebookProviderConfig",
 		reflect.TypeOf((*DataDatabricksNotebookProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebookProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebookProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksNotebookProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,7 +114,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksNotebookProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

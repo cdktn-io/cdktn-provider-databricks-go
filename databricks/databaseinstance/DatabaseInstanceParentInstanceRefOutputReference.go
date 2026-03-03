@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/databaseinstance/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DatabaseInstanceParentInstanceRefOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BranchTime() *string
 	SetBranchTime(val *string)
 	BranchTimeInput() *string
@@ -47,16 +47,16 @@ type DatabaseInstanceParentInstanceRefOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,15 +72,15 @@ type DatabaseInstanceParentInstanceRefOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBranchTime()
 	ResetLsn()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,7 +90,7 @@ type DatabaseInstanceParentInstanceRefOutputReference interface {
 
 // The jsii proxy struct for DatabaseInstanceParentInstanceRefOutputReference
 type jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) BranchTime() *string {
@@ -223,8 +223,8 @@ func (j *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -244,7 +244,7 @@ func (j *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) Uid() *stri
 }
 
 
-func NewDatabaseInstanceParentInstanceRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseInstanceParentInstanceRefOutputReference {
+func NewDatabaseInstanceParentInstanceRefOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatabaseInstanceParentInstanceRefOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseInstanceParentInstanceRefOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -253,7 +253,7 @@ func NewDatabaseInstanceParentInstanceRefOutputReference(terraformResource cdktf
 	j := jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceParentInstanceRefOutputReference",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceParentInstanceRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,11 +261,11 @@ func NewDatabaseInstanceParentInstanceRefOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewDatabaseInstanceParentInstanceRefOutputReference_Override(d DatabaseInstanceParentInstanceRefOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatabaseInstanceParentInstanceRefOutputReference_Override(d DatabaseInstanceParentInstanceRefOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceParentInstanceRefOutputReference",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceParentInstanceRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,11 +388,11 @@ func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -516,8 +516,8 @@ func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) GetStringMa
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -529,11 +529,11 @@ func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -569,7 +569,7 @@ func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) ResetName()
 	)
 }
 
-func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

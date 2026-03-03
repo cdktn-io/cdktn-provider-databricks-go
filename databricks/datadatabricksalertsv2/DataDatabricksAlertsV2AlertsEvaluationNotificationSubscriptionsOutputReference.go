@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksalertsv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksalertsv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksalertsv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UserEmail() *string
 	SetUserEmail(val *string)
 	UserEmailInput() *string
@@ -51,7 +51,7 @@ type DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputRefere
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDestinationId()
 	ResetUserEmail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputRefere
 
 // The jsii proxy struct for DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference
 type jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptio
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptio
 }
 
 
-func NewDataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference {
+func NewDataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -207,7 +207,7 @@ func NewDataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputRef
 	j := jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewDataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputRef
 	return &j
 }
 
-func NewDataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference_Override(d DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference_Override(d DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -280,7 +280,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptio
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptio
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -459,8 +459,8 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptio
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -472,11 +472,11 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptio
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -504,7 +504,7 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptio
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

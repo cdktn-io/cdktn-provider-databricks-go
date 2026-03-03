@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SqlQueryParameterEnumOutputReference) validatePutMultiplePara
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterEnumOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlQueryParameterEnumOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_SqlQueryParameterEnumOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SqlQueryParameterEnumOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -87,7 +87,7 @@ func (j *jsiiProxy_SqlQueryParameterEnumOutputReference) validateSetValuesParame
 	return nil
 }
 
-func validateNewSqlQueryParameterEnumOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSqlQueryParameterEnumOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

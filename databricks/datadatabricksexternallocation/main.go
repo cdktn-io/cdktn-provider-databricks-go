@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksexternallocation
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocation",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocation",
 		reflect.TypeOf((*DataDatabricksExternalLocation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,24 +63,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocation{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationConfig",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationConfig",
 		reflect.TypeOf((*DataDatabricksExternalLocationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfo",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfo",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,16 +111,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -153,20 +153,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueue",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueue",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueue)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqs",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqs",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqsOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -205,16 +205,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsub",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsub",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsubOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsubOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -247,16 +247,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsubOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqs",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqs",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqsOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -289,12 +289,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,16 +345,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqs",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqs",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqsOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -393,16 +393,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsub",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsub",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsubOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsubOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -435,16 +435,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsubOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqs",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqs",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -477,12 +477,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationExternalLocationInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "browseOnly", GoGetter: "BrowseOnly"},
@@ -501,6 +501,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "credentialIdInput", GoGetter: "CredentialIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "credentialName", GoGetter: "CredentialName"},
 			_jsii_.MemberProperty{JsiiProperty: "credentialNameInput", GoGetter: "CredentialNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveEnableFileEvents", GoGetter: "EffectiveEnableFileEvents"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveEnableFileEventsInput", GoGetter: "EffectiveEnableFileEventsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableFileEvents", GoGetter: "EnableFileEvents"},
 			_jsii_.MemberProperty{JsiiProperty: "enableFileEventsInput", GoGetter: "EnableFileEventsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "encryptionDetails", GoGetter: "EncryptionDetails"},
@@ -540,6 +542,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCreatedBy", GoMethod: "ResetCreatedBy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCredentialId", GoMethod: "ResetCredentialId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCredentialName", GoMethod: "ResetCredentialName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveEnableFileEvents", GoMethod: "ResetEffectiveEnableFileEvents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableFileEvents", GoMethod: "ResetEnableFileEvents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionDetails", GoMethod: "ResetEncryptionDetails"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFallback", GoMethod: "ResetFallback"},
@@ -565,16 +568,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationProviderConfig",
 		reflect.TypeOf((*DataDatabricksExternalLocationProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksExternalLocationProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -603,7 +606,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksExternalLocationProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

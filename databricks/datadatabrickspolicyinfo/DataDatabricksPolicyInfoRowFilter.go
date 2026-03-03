@@ -1,13 +1,13 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickspolicyinfo
 
 
 type DataDatabricksPolicyInfoRowFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#function_name DataDatabricksPolicyInfo#function_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#function_name DataDatabricksPolicyInfo#function_name}.
 	FunctionName *string `field:"required" json:"functionName" yaml:"functionName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#using DataDatabricksPolicyInfo#using}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#using DataDatabricksPolicyInfo#using}.
 	Using interface{} `field:"optional" json:"using" yaml:"using"`
 }
 

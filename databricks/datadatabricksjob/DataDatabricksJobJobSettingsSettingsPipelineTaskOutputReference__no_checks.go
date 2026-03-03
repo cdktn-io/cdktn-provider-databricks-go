@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -75,11 +75,11 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataDatabricksJobJobSettingsSettingsPipelineTaskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksJobJobSettingsSettingsPipelineTaskOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

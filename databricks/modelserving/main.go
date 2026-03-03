@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package modelserving
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServing",
+		"@cdktn/provider-databricks.modelServing.ModelServing",
 		reflect.TypeOf((*ModelServing)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -58,10 +58,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAiGateway", GoMethod: "PutAiGateway"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfig", GoMethod: "PutConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putEmailNotifications", GoMethod: "PutEmailNotifications"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putRateLimits", GoMethod: "PutRateLimits"},
 			_jsii_.MemberMethod{JsiiMethod: "putTags", GoMethod: "PutTags"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -75,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEmailNotifications", GoMethod: "ResetEmailNotifications"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRateLimits", GoMethod: "ResetRateLimits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRouteOptimized", GoMethod: "ResetRouteOptimized"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
@@ -98,20 +102,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServing{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGateway",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGateway",
 		reflect.TypeOf((*ModelServingAiGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayFallbackConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayFallbackConfig",
 		reflect.TypeOf((*ModelServingAiGatewayFallbackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayFallbackConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayFallbackConfigOutputReference",
 		reflect.TypeOf((*ModelServingAiGatewayFallbackConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,20 +144,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayFallbackConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrails",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrails",
 		reflect.TypeOf((*ModelServingAiGatewayGuardrails)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInput",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInput",
 		reflect.TypeOf((*ModelServingAiGatewayGuardrailsInput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputOutputReference",
 		reflect.TypeOf((*ModelServingAiGatewayGuardrailsInputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,16 +197,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputPii",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputPii",
 		reflect.TypeOf((*ModelServingAiGatewayGuardrailsInputPii)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputPiiOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputPiiOutputReference",
 		reflect.TypeOf((*ModelServingAiGatewayGuardrailsInputPiiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "behavior", GoGetter: "Behavior"},
@@ -232,16 +236,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayGuardrailsInputPiiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutput",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutput",
 		reflect.TypeOf((*ModelServingAiGatewayGuardrailsOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputOutputReference",
 		reflect.TypeOf((*ModelServingAiGatewayGuardrailsOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -281,16 +285,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayGuardrailsOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputPii",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputPii",
 		reflect.TypeOf((*ModelServingAiGatewayGuardrailsOutputPii)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputPiiOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputPiiOutputReference",
 		reflect.TypeOf((*ModelServingAiGatewayGuardrailsOutputPiiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "behavior", GoGetter: "Behavior"},
@@ -320,12 +324,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayGuardrailsOutputPiiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputReference",
 		reflect.TypeOf((*ModelServingAiGatewayGuardrailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -360,16 +364,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayGuardrailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfig",
 		reflect.TypeOf((*ModelServingAiGatewayInferenceTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfigOutputReference",
 		reflect.TypeOf((*ModelServingAiGatewayInferenceTableConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogName", GoGetter: "CatalogName"},
@@ -408,12 +412,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayInferenceTableConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayOutputReference",
 		reflect.TypeOf((*ModelServingAiGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -460,16 +464,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayRateLimits",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits",
 		reflect.TypeOf((*ModelServingAiGatewayRateLimits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayRateLimitsList",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimitsList",
 		reflect.TypeOf((*ModelServingAiGatewayRateLimitsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -486,12 +490,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayRateLimitsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayRateLimitsOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimitsOutputReference",
 		reflect.TypeOf((*ModelServingAiGatewayRateLimitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "calls", GoGetter: "Calls"},
@@ -532,16 +536,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayUsageTrackingConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayUsageTrackingConfig",
 		reflect.TypeOf((*ModelServingAiGatewayUsageTrackingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayUsageTrackingConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayUsageTrackingConfigOutputReference",
 		reflect.TypeOf((*ModelServingAiGatewayUsageTrackingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -571,20 +575,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingAiGatewayUsageTrackingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfig",
 		reflect.TypeOf((*ModelServingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigA",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigA",
 		reflect.TypeOf((*ModelServingConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigAOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigAOutputReference",
 		reflect.TypeOf((*ModelServingConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoCaptureConfig", GoGetter: "AutoCaptureConfig"},
@@ -627,16 +631,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigAOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfig",
 		reflect.TypeOf((*ModelServingConfigAutoCaptureConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigAutoCaptureConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogName", GoGetter: "CatalogName"},
@@ -675,24 +679,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigAutoCaptureConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntities",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities",
 		reflect.TypeOf((*ModelServingConfigServedEntities)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModel)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAi21LabsConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAi21LabsConfig",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelAi21LabsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ai21LabsApiKey", GoGetter: "Ai21LabsApiKey"},
@@ -725,16 +729,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsAccessKeyId", GoGetter: "AwsAccessKeyId"},
@@ -780,16 +784,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAnthropicConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAnthropicConfig",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelAnthropicConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anthropicApiKey", GoGetter: "AnthropicApiKey"},
@@ -822,16 +826,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfig",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelCohereConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cohereApiBase", GoGetter: "CohereApiBase"},
@@ -867,20 +871,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfig",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelCustomProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -915,16 +919,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -957,12 +961,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelCustomProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyAuth", GoGetter: "ApiKeyAuth"},
@@ -999,16 +1003,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1043,16 +1047,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1089,16 +1093,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelOpenaiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1158,12 +1162,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ai21LabsConfig", GoGetter: "Ai21LabsConfig"},
@@ -1232,16 +1236,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelPalmConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelPalmConfig",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelPalmConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1274,12 +1278,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesList",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesList",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1296,14 +1300,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedEntitiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "burstScalingEnabled", GoGetter: "BurstScalingEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "burstScalingEnabledInput", GoGetter: "BurstScalingEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1344,6 +1350,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisionedModelUnits", GoGetter: "ProvisionedModelUnits"},
 			_jsii_.MemberProperty{JsiiProperty: "provisionedModelUnitsInput", GoGetter: "ProvisionedModelUnitsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putExternalModel", GoMethod: "PutExternalModel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBurstScalingEnabled", GoMethod: "ResetBurstScalingEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEntityName", GoMethod: "ResetEntityName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEntityVersion", GoMethod: "ResetEntityVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVars", GoMethod: "ResetEnvironmentVars"},
@@ -1371,16 +1378,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedEntitiesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedModels",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels",
 		reflect.TypeOf((*ModelServingConfigServedModels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedModelsList",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedModelsList",
 		reflect.TypeOf((*ModelServingConfigServedModelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1397,14 +1404,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedModelsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedModelsOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedModelsOutputReference",
 		reflect.TypeOf((*ModelServingConfigServedModelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "burstScalingEnabled", GoGetter: "BurstScalingEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "burstScalingEnabledInput", GoGetter: "BurstScalingEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1442,6 +1451,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisionedModelUnits", GoGetter: "ProvisionedModelUnits"},
 			_jsii_.MemberProperty{JsiiProperty: "provisionedModelUnitsInput", GoGetter: "ProvisionedModelUnitsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBurstScalingEnabled", GoMethod: "ResetBurstScalingEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVars", GoMethod: "ResetEnvironmentVars"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceProfileArn", GoMethod: "ResetInstanceProfileArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxProvisionedConcurrency", GoMethod: "ResetMaxProvisionedConcurrency"},
@@ -1466,16 +1476,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedModelsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigTrafficConfig",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfig",
 		reflect.TypeOf((*ModelServingConfigTrafficConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigTrafficConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfigOutputReference",
 		reflect.TypeOf((*ModelServingConfigTrafficConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1506,16 +1516,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigTrafficConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutes",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutes",
 		reflect.TypeOf((*ModelServingConfigTrafficConfigRoutes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutesList",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutesList",
 		reflect.TypeOf((*ModelServingConfigTrafficConfigRoutesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1532,12 +1542,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigTrafficConfigRoutesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutesOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutesOutputReference",
 		reflect.TypeOf((*ModelServingConfigTrafficConfigRoutesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1572,16 +1582,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigTrafficConfigRoutesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingEmailNotifications",
+		"@cdktn/provider-databricks.modelServing.ModelServingEmailNotifications",
 		reflect.TypeOf((*ModelServingEmailNotifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingEmailNotificationsOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingEmailNotificationsOutputReference",
 		reflect.TypeOf((*ModelServingEmailNotificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1614,16 +1624,54 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingEmailNotificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingRateLimits",
+		"@cdktn/provider-databricks.modelServing.ModelServingProviderConfig",
+		reflect.TypeOf((*ModelServingProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.modelServing.ModelServingProviderConfigOutputReference",
+		reflect.TypeOf((*ModelServingProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ModelServingProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.modelServing.ModelServingRateLimits",
 		reflect.TypeOf((*ModelServingRateLimits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingRateLimitsList",
+		"@cdktn/provider-databricks.modelServing.ModelServingRateLimitsList",
 		reflect.TypeOf((*ModelServingRateLimitsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1640,12 +1688,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingRateLimitsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingRateLimitsOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingRateLimitsOutputReference",
 		reflect.TypeOf((*ModelServingRateLimitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "calls", GoGetter: "Calls"},
@@ -1679,16 +1727,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingRateLimitsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingTags",
+		"@cdktn/provider-databricks.modelServing.ModelServingTags",
 		reflect.TypeOf((*ModelServingTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingTagsList",
+		"@cdktn/provider-databricks.modelServing.ModelServingTagsList",
 		reflect.TypeOf((*ModelServingTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1705,12 +1753,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingTagsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingTagsOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingTagsOutputReference",
 		reflect.TypeOf((*ModelServingTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1742,16 +1790,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.modelServing.ModelServingTimeouts",
+		"@cdktn/provider-databricks.modelServing.ModelServingTimeouts",
 		reflect.TypeOf((*ModelServingTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.modelServing.ModelServingTimeoutsOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingTimeoutsOutputReference",
 		reflect.TypeOf((*ModelServingTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1784,7 +1832,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

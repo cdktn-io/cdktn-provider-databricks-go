@@ -1,26 +1,26 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package catalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/catalog/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/catalog/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog databricks_catalog}.
 type Catalog interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	BrowseOnly() interface{}
 	SetBrowseOnly(val interface{})
 	BrowseOnlyInput() interface{}
 	CatalogType() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -52,9 +52,9 @@ type Catalog interface {
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -67,9 +67,9 @@ type Catalog interface {
 	SetIsolationMode(val *string)
 	IsolationModeInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetastoreId() *string
 	SetMetastoreId(val *string)
 	MetastoreIdInput() *string
@@ -88,9 +88,11 @@ type Catalog interface {
 	SetProperties(val *map[string]*string)
 	PropertiesInput() *map[string]*string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() CatalogProviderConfigOutputReference
+	ProviderConfigInput() *CatalogProviderConfig
 	ProviderName() *string
 	SetProviderName(val *string)
 	ProviderNameInput() *string
@@ -111,7 +113,7 @@ type Catalog interface {
 	SetStorageRoot(val *string)
 	StorageRootInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -126,7 +128,7 @@ type Catalog interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -144,9 +146,9 @@ type Catalog interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -162,6 +164,7 @@ type Catalog interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEffectivePredictiveOptimizationFlag(value *CatalogEffectivePredictiveOptimizationFlag)
+	PutProviderConfig(value *CatalogProviderConfig)
 	PutProvisioningInfo(value *CatalogProvisioningInfo)
 	ResetBrowseOnly()
 	ResetComment()
@@ -179,6 +182,7 @@ type Catalog interface {
 	ResetOverrideLogicalId()
 	ResetOwner()
 	ResetProperties()
+	ResetProviderConfig()
 	ResetProviderName()
 	ResetProvisioningInfo()
 	ResetShareName()
@@ -198,7 +202,7 @@ type Catalog interface {
 
 // The jsii proxy struct for Catalog
 type jsiiProxy_Catalog struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Catalog) BrowseOnly() interface{} {
@@ -231,8 +235,8 @@ func (j *jsiiProxy_Catalog) CatalogType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Catalog) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -401,8 +405,8 @@ func (j *jsiiProxy_Catalog) ForceDestroyInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Catalog) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -481,8 +485,8 @@ func (j *jsiiProxy_Catalog) IsolationModeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Catalog) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -601,11 +605,31 @@ func (j *jsiiProxy_Catalog) PropertiesInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Catalog) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) ProviderConfig() CatalogProviderConfigOutputReference {
+	var returns CatalogProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) ProviderConfigInput() *CatalogProviderConfig {
+	var returns *CatalogProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -731,8 +755,8 @@ func (j *jsiiProxy_Catalog) StorageRootInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Catalog) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -782,7 +806,7 @@ func (j *jsiiProxy_Catalog) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
 	_init_.Initialize()
 
@@ -792,7 +816,7 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	j := jsiiProxy_Catalog{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.catalog.Catalog",
+		"@cdktn/provider-databricks.catalog.Catalog",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -800,12 +824,12 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.catalog.Catalog",
+		"@cdktn/provider-databricks.catalog.Catalog",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -896,7 +920,7 @@ func (j *jsiiProxy_Catalog)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Catalog)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -926,7 +950,7 @@ func (j *jsiiProxy_Catalog)SetIsolationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Catalog)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -992,7 +1016,7 @@ func (j *jsiiProxy_Catalog)SetProperties(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Catalog)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1044,17 +1068,17 @@ func (j *jsiiProxy_Catalog)SetStorageRoot(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Catalog resource upon running "cdktf plan <stack-name>".
-func Catalog_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Catalog resource upon running "cdktn plan <stack-name>".
+func Catalog_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCatalog_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.catalog.Catalog",
+		"@cdktn/provider-databricks.catalog.Catalog",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1089,7 +1113,7 @@ func Catalog_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.catalog.Catalog",
+		"@cdktn/provider-databricks.catalog.Catalog",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1108,7 +1132,7 @@ func Catalog_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.catalog.Catalog",
+		"@cdktn/provider-databricks.catalog.Catalog",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1127,7 +1151,7 @@ func Catalog_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.catalog.Catalog",
+		"@cdktn/provider-databricks.catalog.Catalog",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1140,7 +1164,7 @@ func Catalog_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.catalog.Catalog",
+		"@cdktn/provider-databricks.catalog.Catalog",
 		"tfResourceType",
 		&returns,
 	)
@@ -1185,11 +1209,11 @@ func (c *jsiiProxy_Catalog) GetAnyMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_Catalog) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1326,7 +1350,7 @@ func (c *jsiiProxy_Catalog) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_Catalog) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1337,11 +1361,11 @@ func (c *jsiiProxy_Catalog) ImportFrom(id *string, provider cdktf.TerraformProvi
 	)
 }
 
-func (c *jsiiProxy_Catalog) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_Catalog) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1404,6 +1428,17 @@ func (c *jsiiProxy_Catalog) PutEffectivePredictiveOptimizationFlag(value *Catalo
 	_jsii_.InvokeVoid(
 		c,
 		"putEffectivePredictiveOptimizationFlag",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Catalog) PutProviderConfig(value *CatalogProviderConfig) {
+	if err := c.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putProviderConfig",
 		[]interface{}{value},
 	)
 }
@@ -1527,6 +1562,14 @@ func (c *jsiiProxy_Catalog) ResetProperties() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

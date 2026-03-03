@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksaccountfederationpolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountfederationpolicies/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksaccountfederationpolicies/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_federation_policies databricks_account_federation_policies}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_federation_policies databricks_account_federation_policies}.
 type DataDatabricksAccountFederationPolicies interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,17 +28,17 @@ type DataDatabricksAccountFederationPolicies interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	PageSize() *float64
@@ -46,13 +46,13 @@ type DataDatabricksAccountFederationPolicies interface {
 	PageSizeInput() *float64
 	Policies() DataDatabricksAccountFederationPoliciesPoliciesList
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -62,7 +62,7 @@ type DataDatabricksAccountFederationPolicies interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,7 +78,7 @@ type DataDatabricksAccountFederationPolicies interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -102,11 +102,11 @@ type DataDatabricksAccountFederationPolicies interface {
 
 // The jsii proxy struct for DataDatabricksAccountFederationPolicies
 type jsiiProxy_DataDatabricksAccountFederationPolicies struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) DependsOn() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) FriendlyUniqueId() *
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) Policies() DataDatab
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) RawOverrides() inter
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicies) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_federation_policies databricks_account_federation_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_federation_policies databricks_account_federation_policies} Data Source.
 func NewDataDatabricksAccountFederationPolicies(scope constructs.Construct, id *string, config *DataDatabricksAccountFederationPoliciesConfig) DataDatabricksAccountFederationPolicies {
 	_init_.Initialize()
 
@@ -286,7 +286,7 @@ func NewDataDatabricksAccountFederationPolicies(scope constructs.Construct, id *
 	j := jsiiProxy_DataDatabricksAccountFederationPolicies{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
+		"@cdktn/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -294,12 +294,12 @@ func NewDataDatabricksAccountFederationPolicies(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_federation_policies databricks_account_federation_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_federation_policies databricks_account_federation_policies} Data Source.
 func NewDataDatabricksAccountFederationPolicies_Override(d DataDatabricksAccountFederationPolicies, scope constructs.Construct, id *string, config *DataDatabricksAccountFederationPoliciesConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
+		"@cdktn/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicies)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicies)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicies)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicies)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicies)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicies)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicies)SetPageSize(val *floa
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicies)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicies)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -362,17 +362,17 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicies)SetProvider(val cdktf
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksAccountFederationPolicies resource upon running "cdktf plan <stack-name>".
-func DataDatabricksAccountFederationPolicies_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksAccountFederationPolicies resource upon running "cdktn plan <stack-name>".
+func DataDatabricksAccountFederationPolicies_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksAccountFederationPolicies_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
+		"@cdktn/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -407,7 +407,7 @@ func DataDatabricksAccountFederationPolicies_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
+		"@cdktn/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -426,7 +426,7 @@ func DataDatabricksAccountFederationPolicies_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
+		"@cdktn/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataDatabricksAccountFederationPolicies_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
+		"@cdktn/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -458,7 +458,7 @@ func DataDatabricksAccountFederationPolicies_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
+		"@cdktn/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPolicies",
 		"tfResourceType",
 		&returns,
 	)
@@ -492,11 +492,11 @@ func (d *jsiiProxy_DataDatabricksAccountFederationPolicies) GetAnyMapAttribute(t
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAccountFederationPolicies) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAccountFederationPolicies) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -620,11 +620,11 @@ func (d *jsiiProxy_DataDatabricksAccountFederationPolicies) GetStringMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAccountFederationPolicies) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAccountFederationPolicies) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

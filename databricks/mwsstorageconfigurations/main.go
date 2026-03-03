@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsstorageconfigurations
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
+		"@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations",
 		reflect.TypeOf((*MwsStorageConfigurations)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -54,6 +54,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRoleArn", GoMethod: "ResetRoleArn"},
+			_jsii_.MemberProperty{JsiiProperty: "roleArn", GoGetter: "RoleArn"},
+			_jsii_.MemberProperty{JsiiProperty: "roleArnInput", GoGetter: "RoleArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "storageConfigurationId", GoGetter: "StorageConfigurationId"},
 			_jsii_.MemberProperty{JsiiProperty: "storageConfigurationName", GoGetter: "StorageConfigurationName"},
 			_jsii_.MemberProperty{JsiiProperty: "storageConfigurationNameInput", GoGetter: "StorageConfigurationNameInput"},
@@ -69,12 +72,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsStorageConfigurations{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig",
+		"@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig",
 		reflect.TypeOf((*MwsStorageConfigurationsConfig)(nil)).Elem(),
 	)
 }

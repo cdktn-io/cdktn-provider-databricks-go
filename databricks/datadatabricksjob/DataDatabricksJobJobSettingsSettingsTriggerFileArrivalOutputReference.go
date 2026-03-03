@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksjob/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -54,7 +54,7 @@ type DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference inter
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMinTimeBetweenTriggersSeconds()
 	ResetWaitAfterLastChangeSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference inter
 
 // The jsii proxy struct for DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference
 type jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) ComplexObjectIndex() interface{} {
@@ -170,8 +170,8 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 }
 
 
-func NewDataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference {
+func NewDataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -230,7 +230,7 @@ func NewDataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference(te
 	j := jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,11 +238,11 @@ func NewDataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference(te
 	return &j
 }
 
-func NewDataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference_Override(d DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference_Override(d DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -493,8 +493,8 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -506,11 +506,11 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -538,7 +538,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/mount/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mount/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MountWasbOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthType() *string
 	SetAuthType(val *string)
 	AuthTypeInput() *string
@@ -49,9 +49,9 @@ type MountWasbOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenSecretKey() *string
 	SetTokenSecretKey(val *string)
 	TokenSecretKeyInput() *string
@@ -63,7 +63,7 @@ type MountWasbOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,15 +79,15 @@ type MountWasbOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetContainerName()
 	ResetDirectory()
 	ResetStorageAccountName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type MountWasbOutputReference interface {
 
 // The jsii proxy struct for MountWasbOutputReference
 type jsiiProxy_MountWasbOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MountWasbOutputReference) AuthType() *string {
@@ -240,8 +240,8 @@ func (j *jsiiProxy_MountWasbOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MountWasbOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_MountWasbOutputReference) TokenSecretScopeInput() *string {
 }
 
 
-func NewMountWasbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MountWasbOutputReference {
+func NewMountWasbOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MountWasbOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMountWasbOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewMountWasbOutputReference(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_MountWasbOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mount.MountWasbOutputReference",
+		"@cdktn/provider-databricks.mount.MountWasbOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewMountWasbOutputReference(terraformResource cdktf.IInterpolatingParent, t
 	return &j
 }
 
-func NewMountWasbOutputReference_Override(m MountWasbOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMountWasbOutputReference_Override(m MountWasbOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mount.MountWasbOutputReference",
+		"@cdktn/provider-databricks.mount.MountWasbOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_MountWasbOutputReference)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MountWasbOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,11 +468,11 @@ func (m *jsiiProxy_MountWasbOutputReference) GetAnyMapAttribute(terraformAttribu
 	return returns
 }
 
-func (m *jsiiProxy_MountWasbOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MountWasbOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -596,8 +596,8 @@ func (m *jsiiProxy_MountWasbOutputReference) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
-func (m *jsiiProxy_MountWasbOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MountWasbOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -609,11 +609,11 @@ func (m *jsiiProxy_MountWasbOutputReference) InterpolationAsList() cdktf.IResolv
 	return returns
 }
 
-func (m *jsiiProxy_MountWasbOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MountWasbOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -649,7 +649,7 @@ func (m *jsiiProxy_MountWasbOutputReference) ResetStorageAccountName() {
 	)
 }
 
-func (m *jsiiProxy_MountWasbOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MountWasbOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

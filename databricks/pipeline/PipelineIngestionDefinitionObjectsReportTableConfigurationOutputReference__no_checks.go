@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validatePutAutoFullRefreshPolicyParameters(value *PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validatePutQueryBasedConnectorConfigParameters(value *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig) error {
 	return nil
 }
@@ -55,7 +59,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -83,6 +87,10 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return nil
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateSetRowFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateSetSalesforceIncludeFormulaFieldsParameters(val interface{}) error {
 	return nil
 }
@@ -99,11 +107,11 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return nil
 }
 
-func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) validat
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) validatePutProviderConfigParameters(value *DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksFeatureEngineeringMaterializedFeatures_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -79,7 +83,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,10 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutD
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutDriverNodeTypeFlexibilityParameters(value *DataDatabricksClusterClusterInfoDriverNodeTypeFlexibility) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutExecutorsParameters(value interface{}) error {
 	return nil
 }
@@ -95,11 +99,15 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutT
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutWorkerNodeTypeFlexibilityParameters(value *DataDatabricksClusterClusterInfoWorkerNodeTypeFlexibility) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutWorkloadTypeParameters(value *DataDatabricksClusterClusterInfoWorkloadType) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -259,7 +267,7 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -271,7 +279,7 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetU
 	return nil
 }
 
-func validateNewDataDatabricksClusterClusterInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterClusterInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

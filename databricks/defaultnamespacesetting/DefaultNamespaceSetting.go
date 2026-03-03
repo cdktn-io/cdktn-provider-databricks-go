@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package defaultnamespacesetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/defaultnamespacesetting/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/defaultnamespacesetting/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/default_namespace_setting databricks_default_namespace_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/default_namespace_setting databricks_default_namespace_setting}.
 type DefaultNamespaceSetting interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type DefaultNamespaceSetting interface {
 	SetEtag(val *string)
 	EtagInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -46,17 +46,19 @@ type DefaultNamespaceSetting interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() DefaultNamespaceSettingNamespaceOutputReference
 	NamespaceInput() *DefaultNamespaceSettingNamespace
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DefaultNamespaceSettingProviderConfigOutputReference
+	ProviderConfigInput() *DefaultNamespaceSettingProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -67,7 +69,7 @@ type DefaultNamespaceSetting interface {
 	SetSettingName(val *string)
 	SettingNameInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -80,7 +82,7 @@ type DefaultNamespaceSetting interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -98,9 +100,9 @@ type DefaultNamespaceSetting interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -116,11 +118,13 @@ type DefaultNamespaceSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutNamespace(value *DefaultNamespaceSettingNamespace)
+	PutProviderConfig(value *DefaultNamespaceSettingProviderConfig)
 	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSettingName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -137,11 +141,11 @@ type DefaultNamespaceSetting interface {
 
 // The jsii proxy struct for DefaultNamespaceSetting
 type jsiiProxy_DefaultNamespaceSetting struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_DefaultNamespaceSetting) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DefaultNamespaceSetting) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -210,8 +214,8 @@ func (j *jsiiProxy_DefaultNamespaceSetting) EtagInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultNamespaceSetting) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DefaultNamespaceSetting) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -260,8 +264,8 @@ func (j *jsiiProxy_DefaultNamespaceSetting) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultNamespaceSetting) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DefaultNamespaceSetting) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -300,11 +304,31 @@ func (j *jsiiProxy_DefaultNamespaceSetting) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultNamespaceSetting) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DefaultNamespaceSetting) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DefaultNamespaceSetting) ProviderConfig() DefaultNamespaceSettingProviderConfigOutputReference {
+	var returns DefaultNamespaceSettingProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DefaultNamespaceSetting) ProviderConfigInput() *DefaultNamespaceSettingProviderConfig {
+	var returns *DefaultNamespaceSettingProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -350,8 +374,8 @@ func (j *jsiiProxy_DefaultNamespaceSetting) SettingNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultNamespaceSetting) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DefaultNamespaceSetting) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -381,7 +405,7 @@ func (j *jsiiProxy_DefaultNamespaceSetting) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
 func NewDefaultNamespaceSetting(scope constructs.Construct, id *string, config *DefaultNamespaceSettingConfig) DefaultNamespaceSetting {
 	_init_.Initialize()
 
@@ -391,7 +415,7 @@ func NewDefaultNamespaceSetting(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DefaultNamespaceSetting{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
+		"@cdktn/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,12 +423,12 @@ func NewDefaultNamespaceSetting(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
 func NewDefaultNamespaceSetting_Override(d DefaultNamespaceSetting, scope constructs.Construct, id *string, config *DefaultNamespaceSettingConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
+		"@cdktn/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +475,7 @@ func (j *jsiiProxy_DefaultNamespaceSetting)SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultNamespaceSetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DefaultNamespaceSetting)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -470,7 +494,7 @@ func (j *jsiiProxy_DefaultNamespaceSetting)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultNamespaceSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DefaultNamespaceSetting)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +505,7 @@ func (j *jsiiProxy_DefaultNamespaceSetting)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DefaultNamespaceSetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DefaultNamespaceSetting)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -511,17 +535,17 @@ func (j *jsiiProxy_DefaultNamespaceSetting)SetSettingName(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DefaultNamespaceSetting resource upon running "cdktf plan <stack-name>".
-func DefaultNamespaceSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DefaultNamespaceSetting resource upon running "cdktn plan <stack-name>".
+func DefaultNamespaceSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDefaultNamespaceSetting_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
+		"@cdktn/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -556,7 +580,7 @@ func DefaultNamespaceSetting_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
+		"@cdktn/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +599,7 @@ func DefaultNamespaceSetting_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
+		"@cdktn/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +618,7 @@ func DefaultNamespaceSetting_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
+		"@cdktn/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +631,7 @@ func DefaultNamespaceSetting_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
+		"@cdktn/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting",
 		"tfResourceType",
 		&returns,
 	)
@@ -652,11 +676,11 @@ func (d *jsiiProxy_DefaultNamespaceSetting) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DefaultNamespaceSetting) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DefaultNamespaceSetting) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -793,7 +817,7 @@ func (d *jsiiProxy_DefaultNamespaceSetting) HasResourceMove() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DefaultNamespaceSetting) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (d *jsiiProxy_DefaultNamespaceSetting) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -804,11 +828,11 @@ func (d *jsiiProxy_DefaultNamespaceSetting) ImportFrom(id *string, provider cdkt
 	)
 }
 
-func (d *jsiiProxy_DefaultNamespaceSetting) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DefaultNamespaceSetting) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -875,6 +899,17 @@ func (d *jsiiProxy_DefaultNamespaceSetting) PutNamespace(value *DefaultNamespace
 	)
 }
 
+func (d *jsiiProxy_DefaultNamespaceSetting) PutProviderConfig(value *DefaultNamespaceSettingProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DefaultNamespaceSetting) ResetEtag() {
 	_jsii_.InvokeVoid(
 		d,
@@ -895,6 +930,14 @@ func (d *jsiiProxy_DefaultNamespaceSetting) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DefaultNamespaceSetting) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

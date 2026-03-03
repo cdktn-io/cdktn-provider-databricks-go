@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package metastoredataaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/metastoredataaccess/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/metastoredataaccess/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
 type MetastoreDataAccess interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AwsIamRole() MetastoreDataAccessAwsIamRoleOutputReference
 	AwsIamRoleInput() *MetastoreDataAccessAwsIamRole
 	AzureManagedIdentity() MetastoreDataAccessAzureManagedIdentityOutputReference
@@ -22,7 +22,7 @@ type MetastoreDataAccess interface {
 	AzureServicePrincipal() MetastoreDataAccessAzureServicePrincipalOutputReference
 	AzureServicePrincipalInput() *MetastoreDataAccessAzureServicePrincipal
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CloudflareApiToken() MetastoreDataAccessCloudflareApiTokenOutputReference
 	CloudflareApiTokenInput() *MetastoreDataAccessCloudflareApiToken
 	Comment() *string
@@ -51,9 +51,9 @@ type MetastoreDataAccess interface {
 	SetForceUpdate(val interface{})
 	ForceUpdateInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -70,9 +70,9 @@ type MetastoreDataAccess interface {
 	SetIsolationMode(val *string)
 	IsolationModeInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetastoreId() *string
 	SetMetastoreId(val *string)
 	MetastoreIdInput() *string
@@ -85,9 +85,9 @@ type MetastoreDataAccess interface {
 	SetOwner(val *string)
 	OwnerInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -101,7 +101,7 @@ type MetastoreDataAccess interface {
 	SetSkipValidation(val interface{})
 	SkipValidationInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -114,7 +114,7 @@ type MetastoreDataAccess interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -132,9 +132,9 @@ type MetastoreDataAccess interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -189,7 +189,7 @@ type MetastoreDataAccess interface {
 
 // The jsii proxy struct for MetastoreDataAccess
 type jsiiProxy_MetastoreDataAccess struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_MetastoreDataAccess) AwsIamRole() MetastoreDataAccessAwsIamRoleOutputReference {
@@ -252,8 +252,8 @@ func (j *jsiiProxy_MetastoreDataAccess) AzureServicePrincipalInput() *MetastoreD
 	return returns
 }
 
-func (j *jsiiProxy_MetastoreDataAccess) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MetastoreDataAccess) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_MetastoreDataAccess) ForceUpdateInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MetastoreDataAccess) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MetastoreDataAccess) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_MetastoreDataAccess) IsolationModeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MetastoreDataAccess) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MetastoreDataAccess) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -592,8 +592,8 @@ func (j *jsiiProxy_MetastoreDataAccess) OwnerInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MetastoreDataAccess) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MetastoreDataAccess) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -662,8 +662,8 @@ func (j *jsiiProxy_MetastoreDataAccess) SkipValidationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MetastoreDataAccess) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MetastoreDataAccess) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -693,7 +693,7 @@ func (j *jsiiProxy_MetastoreDataAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) MetastoreDataAccess {
 	_init_.Initialize()
 
@@ -703,7 +703,7 @@ func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *Meta
 	j := jsiiProxy_MetastoreDataAccess{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -711,12 +711,12 @@ func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess_Override(m MetastoreDataAccess, scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -785,7 +785,7 @@ func (j *jsiiProxy_MetastoreDataAccess)SetForceUpdate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccess)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MetastoreDataAccess)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -826,7 +826,7 @@ func (j *jsiiProxy_MetastoreDataAccess)SetIsolationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccess)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MetastoreDataAccess)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -870,7 +870,7 @@ func (j *jsiiProxy_MetastoreDataAccess)SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccess)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MetastoreDataAccess)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -911,17 +911,17 @@ func (j *jsiiProxy_MetastoreDataAccess)SetSkipValidation(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a MetastoreDataAccess resource upon running "cdktf plan <stack-name>".
-func MetastoreDataAccess_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MetastoreDataAccess resource upon running "cdktn plan <stack-name>".
+func MetastoreDataAccess_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMetastoreDataAccess_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -956,7 +956,7 @@ func MetastoreDataAccess_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -975,7 +975,7 @@ func MetastoreDataAccess_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -994,7 +994,7 @@ func MetastoreDataAccess_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1007,7 +1007,7 @@ func MetastoreDataAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
 		"tfResourceType",
 		&returns,
 	)
@@ -1052,11 +1052,11 @@ func (m *jsiiProxy_MetastoreDataAccess) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (m *jsiiProxy_MetastoreDataAccess) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MetastoreDataAccess) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1193,7 +1193,7 @@ func (m *jsiiProxy_MetastoreDataAccess) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MetastoreDataAccess) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MetastoreDataAccess) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1204,11 +1204,11 @@ func (m *jsiiProxy_MetastoreDataAccess) ImportFrom(id *string, provider cdktf.Te
 	)
 }
 
-func (m *jsiiProxy_MetastoreDataAccess) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MetastoreDataAccess) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,

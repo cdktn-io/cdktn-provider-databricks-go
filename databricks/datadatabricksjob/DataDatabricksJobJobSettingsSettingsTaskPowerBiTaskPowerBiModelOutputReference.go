@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksjob/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthenticationMethod() *string
 	SetAuthenticationMethod(val *string)
 	AuthenticationMethodInput() *string
@@ -49,9 +49,9 @@ type DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WorkspaceName() *string
 	SetWorkspaceName(val *string)
 	WorkspaceNameInput() *string
@@ -60,7 +60,7 @@ type DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputRefere
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAuthenticationMethod()
 	ResetModelName()
 	ResetOverwriteExisting()
@@ -86,7 +86,7 @@ type DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputRefere
 	ResetWorkspaceName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputRefere
 
 // The jsii proxy struct for DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference
 type jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) AuthenticationMethod() *string {
@@ -239,8 +239,8 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiMod
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiMod
 }
 
 
-func NewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference {
+func NewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -279,7 +279,7 @@ func NewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputRef
 	j := jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,11 +287,11 @@ func NewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputRef
 	return &j
 }
 
-func NewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference_Override(d DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference_Override(d DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiMod
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,11 +436,11 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiMod
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -564,8 +564,8 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiMod
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -577,11 +577,11 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiMod
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -633,7 +633,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiMod
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

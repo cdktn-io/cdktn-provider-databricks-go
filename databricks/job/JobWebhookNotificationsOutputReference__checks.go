@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnDuration
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobWebhookNotificationsOnDurationWarningThresholdExceeded:
 		value := value.(*[]*JobWebhookNotificationsOnDurationWarningThresholdExceeded)
@@ -117,7 +117,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnDuration
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobWebhookNotificationsOnDurationWarningThresholdExceeded; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobWebhookNotificationsOnDurationWarningThresholdExceeded; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -129,7 +129,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnFailureP
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobWebhookNotificationsOnFailure:
 		value := value.(*[]*JobWebhookNotificationsOnFailure)
@@ -148,7 +148,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnFailureP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobWebhookNotificationsOnFailure; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobWebhookNotificationsOnFailure; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -160,7 +160,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnStartPar
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobWebhookNotificationsOnStart:
 		value := value.(*[]*JobWebhookNotificationsOnStart)
@@ -179,7 +179,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnStartPar
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobWebhookNotificationsOnStart; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobWebhookNotificationsOnStart; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -191,7 +191,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnStreamin
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobWebhookNotificationsOnStreamingBacklogExceeded:
 		value := value.(*[]*JobWebhookNotificationsOnStreamingBacklogExceeded)
@@ -210,7 +210,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnStreamin
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobWebhookNotificationsOnStreamingBacklogExceeded; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobWebhookNotificationsOnStreamingBacklogExceeded; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -222,7 +222,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnSuccessP
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobWebhookNotificationsOnSuccess:
 		value := value.(*[]*JobWebhookNotificationsOnSuccess)
@@ -241,14 +241,14 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnSuccessP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobWebhookNotificationsOnSuccess; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobWebhookNotificationsOnSuccess; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -337,7 +337,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateSetTerraformR
 	return nil
 }
 
-func validateNewJobWebhookNotificationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobWebhookNotificationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

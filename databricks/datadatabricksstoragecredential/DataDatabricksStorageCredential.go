@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksstoragecredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksstoragecredential/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksstoragecredential/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/storage_credential databricks_storage_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/storage_credential databricks_storage_credential}.
 type DataDatabricksStorageCredential interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,9 +28,9 @@ type DataDatabricksStorageCredential interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -39,18 +39,18 @@ type DataDatabricksStorageCredential interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() DataDatabricksStorageCredentialProviderConfigOutputReference
 	ProviderConfigInput() *DataDatabricksStorageCredentialProviderConfig
 	// Experimental.
@@ -58,7 +58,7 @@ type DataDatabricksStorageCredential interface {
 	StorageCredentialInfo() DataDatabricksStorageCredentialStorageCredentialInfoOutputReference
 	StorageCredentialInfoInput() *DataDatabricksStorageCredentialStorageCredentialInfo
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -68,7 +68,7 @@ type DataDatabricksStorageCredential interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,7 +84,7 @@ type DataDatabricksStorageCredential interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -112,11 +112,11 @@ type DataDatabricksStorageCredential interface {
 
 // The jsii proxy struct for DataDatabricksStorageCredential
 type jsiiProxy_DataDatabricksStorageCredential struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatabricksStorageCredential) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksStorageCredential) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DataDatabricksStorageCredential) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksStorageCredential) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksStorageCredential) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataDatabricksStorageCredential) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksStorageCredential) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksStorageCredential) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_DataDatabricksStorageCredential) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksStorageCredential) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksStorageCredential) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_DataDatabricksStorageCredential) StorageCredentialInfoInput()
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksStorageCredential) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksStorageCredential) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DataDatabricksStorageCredential) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/storage_credential databricks_storage_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/storage_credential databricks_storage_credential} Data Source.
 func NewDataDatabricksStorageCredential(scope constructs.Construct, id *string, config *DataDatabricksStorageCredentialConfig) DataDatabricksStorageCredential {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataDatabricksStorageCredential(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataDatabricksStorageCredential{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
+		"@cdktn/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -354,12 +354,12 @@ func NewDataDatabricksStorageCredential(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/storage_credential databricks_storage_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/storage_credential databricks_storage_credential} Data Source.
 func NewDataDatabricksStorageCredential_Override(d DataDatabricksStorageCredential, scope constructs.Construct, id *string, config *DataDatabricksStorageCredentialConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
+		"@cdktn/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataDatabricksStorageCredential)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksStorageCredential)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksStorageCredential)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DataDatabricksStorageCredential)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksStorageCredential)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksStorageCredential)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DataDatabricksStorageCredential)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksStorageCredential)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksStorageCredential)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -433,17 +433,17 @@ func (j *jsiiProxy_DataDatabricksStorageCredential)SetProvider(val cdktf.Terrafo
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksStorageCredential resource upon running "cdktf plan <stack-name>".
-func DataDatabricksStorageCredential_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksStorageCredential resource upon running "cdktn plan <stack-name>".
+func DataDatabricksStorageCredential_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksStorageCredential_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
+		"@cdktn/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -478,7 +478,7 @@ func DataDatabricksStorageCredential_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
+		"@cdktn/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func DataDatabricksStorageCredential_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
+		"@cdktn/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func DataDatabricksStorageCredential_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
+		"@cdktn/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func DataDatabricksStorageCredential_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
+		"@cdktn/provider-databricks.dataDatabricksStorageCredential.DataDatabricksStorageCredential",
 		"tfResourceType",
 		&returns,
 	)
@@ -563,11 +563,11 @@ func (d *jsiiProxy_DataDatabricksStorageCredential) GetAnyMapAttribute(terraform
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksStorageCredential) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksStorageCredential) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -691,11 +691,11 @@ func (d *jsiiProxy_DataDatabricksStorageCredential) GetStringMapAttribute(terraf
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksStorageCredential) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksStorageCredential) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

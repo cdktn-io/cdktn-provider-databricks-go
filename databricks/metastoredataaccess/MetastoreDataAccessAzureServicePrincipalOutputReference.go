@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package metastoredataaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/metastoredataaccess/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/metastoredataaccess/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MetastoreDataAccessAzureServicePrincipalOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApplicationId() *string
 	SetApplicationId(val *string)
 	ApplicationIdInput() *string
@@ -46,15 +46,15 @@ type MetastoreDataAccessAzureServicePrincipalOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type MetastoreDataAccessAzureServicePrincipalOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type MetastoreDataAccessAzureServicePrincipalOutputReference interface {
 
 // The jsii proxy struct for MetastoreDataAccessAzureServicePrincipalOutputReference
 type jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) ApplicationId() *string {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Terr
 }
 
 
-func NewMetastoreDataAccessAzureServicePrincipalOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MetastoreDataAccessAzureServicePrincipalOutputReference {
+func NewMetastoreDataAccessAzureServicePrincipalOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MetastoreDataAccessAzureServicePrincipalOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMetastoreDataAccessAzureServicePrincipalOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewMetastoreDataAccessAzureServicePrincipalOutputReference(terraformResourc
 	j := jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipalOutputReference",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewMetastoreDataAccessAzureServicePrincipalOutputReference(terraformResourc
 	return &j
 }
 
-func NewMetastoreDataAccessAzureServicePrincipalOutputReference_Override(m MetastoreDataAccessAzureServicePrincipalOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMetastoreDataAccessAzureServicePrincipalOutputReference_Override(m MetastoreDataAccessAzureServicePrincipalOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipalOutputReference",
+		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetA
 	return returns
 }
 
-func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -491,8 +491,8 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetS
 	return returns
 }
 
-func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -504,11 +504,11 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Inte
 	return returns
 }
 
-func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -520,7 +520,7 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Inte
 	return returns
 }
 
-func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

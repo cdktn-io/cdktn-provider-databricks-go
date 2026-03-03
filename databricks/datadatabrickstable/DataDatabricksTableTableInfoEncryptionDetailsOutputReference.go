@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickstable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickstable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksTableTableInfoEncryptionDetailsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type DataDatabricksTableTableInfoEncryptionDetailsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type DataDatabricksTableTableInfoEncryptionDetailsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSseEncryptionDetails(value *DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetails)
 	ResetSseEncryptionDetails()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type DataDatabricksTableTableInfoEncryptionDetailsOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksTableTableInfoEncryptionDetailsOutputReference
 type jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)
 }
 
 
-func NewDataDatabricksTableTableInfoEncryptionDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoEncryptionDetailsOutputReference {
+func NewDataDatabricksTableTableInfoEncryptionDetailsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoEncryptionDetailsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksTableTableInfoEncryptionDetailsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewDataDatabricksTableTableInfoEncryptionDetailsOutputReference(terraformRe
 	j := jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetailsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewDataDatabricksTableTableInfoEncryptionDetailsOutputReference(terraformRe
 	return &j
 }
 
-func NewDataDatabricksTableTableInfoEncryptionDetailsOutputReference_Override(d DataDatabricksTableTableInfoEncryptionDetailsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksTableTableInfoEncryptionDetailsOutputReference_Override(d DataDatabricksTableTableInfoEncryptionDetailsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetailsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -245,7 +245,7 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -285,11 +285,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -413,8 +413,8 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -426,11 +426,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -461,7 +461,7 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

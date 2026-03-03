@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sqlwidget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/sqlwidget/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/sqlwidget/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SqlWidgetPositionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AutoHeight() interface{}
 	SetAutoHeight(val interface{})
 	AutoHeightInput() interface{}
@@ -52,15 +52,15 @@ type SqlWidgetPositionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,15 +76,15 @@ type SqlWidgetPositionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAutoHeight()
 	ResetPosX()
 	ResetPosY()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +94,7 @@ type SqlWidgetPositionOutputReference interface {
 
 // The jsii proxy struct for SqlWidgetPositionOutputReference
 type jsiiProxy_SqlWidgetPositionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SqlWidgetPositionOutputReference) AutoHeight() interface{} {
@@ -257,8 +257,8 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SqlWidgetPositionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -268,7 +268,7 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) TerraformResource() cdktf.I
 }
 
 
-func NewSqlWidgetPositionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlWidgetPositionOutputReference {
+func NewSqlWidgetPositionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SqlWidgetPositionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSqlWidgetPositionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -277,7 +277,7 @@ func NewSqlWidgetPositionOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_SqlWidgetPositionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlWidget.SqlWidgetPositionOutputReference",
+		"@cdktn/provider-databricks.sqlWidget.SqlWidgetPositionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,11 +285,11 @@ func NewSqlWidgetPositionOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewSqlWidgetPositionOutputReference_Override(s SqlWidgetPositionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSqlWidgetPositionOutputReference_Override(s SqlWidgetPositionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlWidget.SqlWidgetPositionOutputReference",
+		"@cdktn/provider-databricks.sqlWidget.SqlWidgetPositionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -394,7 +394,7 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,11 +434,11 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -562,8 +562,8 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (s *jsiiProxy_SqlWidgetPositionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SqlWidgetPositionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -575,11 +575,11 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (s *jsiiProxy_SqlWidgetPositionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlWidgetPositionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -615,7 +615,7 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) ResetPosY() {
 	)
 }
 
-func (s *jsiiProxy_SqlWidgetPositionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlWidgetPositionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

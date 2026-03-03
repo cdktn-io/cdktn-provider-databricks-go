@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsOutputReference) va
 	return nil
 }
 
-func validateNewAlertV2EvaluationNotificationSubscriptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlertV2EvaluationNotificationSubscriptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

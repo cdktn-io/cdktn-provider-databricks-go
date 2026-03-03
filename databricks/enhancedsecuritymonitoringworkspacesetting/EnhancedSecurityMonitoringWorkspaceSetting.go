@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package enhancedsecuritymonitoringworkspacesetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/enhancedsecuritymonitoringworkspacesetting/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/enhancedsecuritymonitoringworkspacesetting/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/enhanced_security_monitoring_workspace_setting databricks_enhanced_security_monitoring_workspace_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/enhanced_security_monitoring_workspace_setting databricks_enhanced_security_monitoring_workspace_setting}.
 type EnhancedSecurityMonitoringWorkspaceSetting interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,9 +37,9 @@ type EnhancedSecurityMonitoringWorkspaceSetting interface {
 	SetEtag(val *string)
 	EtagInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -48,15 +48,17 @@ type EnhancedSecurityMonitoringWorkspaceSetting interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() EnhancedSecurityMonitoringWorkspaceSettingProviderConfigOutputReference
+	ProviderConfigInput() *EnhancedSecurityMonitoringWorkspaceSettingProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -67,7 +69,7 @@ type EnhancedSecurityMonitoringWorkspaceSetting interface {
 	SetSettingName(val *string)
 	SettingNameInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -80,7 +82,7 @@ type EnhancedSecurityMonitoringWorkspaceSetting interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -98,9 +100,9 @@ type EnhancedSecurityMonitoringWorkspaceSetting interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -116,11 +118,13 @@ type EnhancedSecurityMonitoringWorkspaceSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEnhancedSecurityMonitoringWorkspace(value *EnhancedSecurityMonitoringWorkspaceSettingEnhancedSecurityMonitoringWorkspace)
+	PutProviderConfig(value *EnhancedSecurityMonitoringWorkspaceSettingProviderConfig)
 	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSettingName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -137,11 +141,11 @@ type EnhancedSecurityMonitoringWorkspaceSetting interface {
 
 // The jsii proxy struct for EnhancedSecurityMonitoringWorkspaceSetting
 type jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -230,8 +234,8 @@ func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) EtagInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -280,8 +284,8 @@ func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) IdInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -300,11 +304,31 @@ func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) Node() constructs
 	return returns
 }
 
-func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) ProviderConfig() EnhancedSecurityMonitoringWorkspaceSettingProviderConfigOutputReference {
+	var returns EnhancedSecurityMonitoringWorkspaceSettingProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) ProviderConfigInput() *EnhancedSecurityMonitoringWorkspaceSettingProviderConfig {
+	var returns *EnhancedSecurityMonitoringWorkspaceSettingProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -350,8 +374,8 @@ func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) SettingNameInput(
 	return returns
 }
 
-func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -381,7 +405,7 @@ func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/enhanced_security_monitoring_workspace_setting databricks_enhanced_security_monitoring_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/enhanced_security_monitoring_workspace_setting databricks_enhanced_security_monitoring_workspace_setting} Resource.
 func NewEnhancedSecurityMonitoringWorkspaceSetting(scope constructs.Construct, id *string, config *EnhancedSecurityMonitoringWorkspaceSettingConfig) EnhancedSecurityMonitoringWorkspaceSetting {
 	_init_.Initialize()
 
@@ -391,7 +415,7 @@ func NewEnhancedSecurityMonitoringWorkspaceSetting(scope constructs.Construct, i
 	j := jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
+		"@cdktn/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,12 +423,12 @@ func NewEnhancedSecurityMonitoringWorkspaceSetting(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/enhanced_security_monitoring_workspace_setting databricks_enhanced_security_monitoring_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/enhanced_security_monitoring_workspace_setting databricks_enhanced_security_monitoring_workspace_setting} Resource.
 func NewEnhancedSecurityMonitoringWorkspaceSetting_Override(e EnhancedSecurityMonitoringWorkspaceSetting, scope constructs.Construct, id *string, config *EnhancedSecurityMonitoringWorkspaceSettingConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
+		"@cdktn/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -451,7 +475,7 @@ func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting)SetEtag(val *strin
 	)
 }
 
-func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -470,7 +494,7 @@ func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting)SetId(val *string)
 	)
 }
 
-func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +505,7 @@ func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -511,17 +535,17 @@ func (j *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting)SetSettingName(val
 	)
 }
 
-// Generates CDKTF code for importing a EnhancedSecurityMonitoringWorkspaceSetting resource upon running "cdktf plan <stack-name>".
-func EnhancedSecurityMonitoringWorkspaceSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a EnhancedSecurityMonitoringWorkspaceSetting resource upon running "cdktn plan <stack-name>".
+func EnhancedSecurityMonitoringWorkspaceSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateEnhancedSecurityMonitoringWorkspaceSetting_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
+		"@cdktn/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -556,7 +580,7 @@ func EnhancedSecurityMonitoringWorkspaceSetting_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
+		"@cdktn/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +599,7 @@ func EnhancedSecurityMonitoringWorkspaceSetting_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
+		"@cdktn/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +618,7 @@ func EnhancedSecurityMonitoringWorkspaceSetting_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
+		"@cdktn/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +631,7 @@ func EnhancedSecurityMonitoringWorkspaceSetting_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
+		"@cdktn/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting",
 		"tfResourceType",
 		&returns,
 	)
@@ -652,11 +676,11 @@ func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) GetAnyMapAttribut
 	return returns
 }
 
-func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -793,7 +817,7 @@ func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) HasResourceMove()
 	return returns
 }
 
-func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -804,11 +828,11 @@ func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) ImportFrom(id *st
 	)
 }
 
-func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -875,6 +899,17 @@ func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) PutEnhancedSecuri
 	)
 }
 
+func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) PutProviderConfig(value *EnhancedSecurityMonitoringWorkspaceSettingProviderConfig) {
+	if err := e.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) ResetEtag() {
 	_jsii_.InvokeVoid(
 		e,
@@ -895,6 +930,14 @@ func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EnhancedSecurityMonitoringWorkspaceSetting) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

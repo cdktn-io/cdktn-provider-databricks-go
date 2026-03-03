@@ -1,18 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksapps
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksapps/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksapps/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksAppsAppResourcesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
+	App() DataDatabricksAppsAppResourcesAppOutputReference
+	AppInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -33,6 +35,8 @@ type DataDatabricksAppsAppResourcesOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Experiment() DataDatabricksAppsAppResourcesExperimentOutputReference
+	ExperimentInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GenieSpace() DataDatabricksAppsAppResourcesGenieSpaceOutputReference
@@ -55,9 +59,9 @@ type DataDatabricksAppsAppResourcesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UcSecurable() DataDatabricksAppsAppResourcesUcSecurableOutputReference
 	UcSecurableInput() interface{}
 	// Experimental.
@@ -65,7 +69,7 @@ type DataDatabricksAppsAppResourcesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,18 +85,22 @@ type DataDatabricksAppsAppResourcesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutApp(value *DataDatabricksAppsAppResourcesApp)
 	PutDatabase(value *DataDatabricksAppsAppResourcesDatabase)
+	PutExperiment(value *DataDatabricksAppsAppResourcesExperiment)
 	PutGenieSpace(value *DataDatabricksAppsAppResourcesGenieSpace)
 	PutJob(value *DataDatabricksAppsAppResourcesJob)
 	PutSecret(value *DataDatabricksAppsAppResourcesSecret)
 	PutServingEndpoint(value *DataDatabricksAppsAppResourcesServingEndpoint)
 	PutSqlWarehouse(value *DataDatabricksAppsAppResourcesSqlWarehouse)
 	PutUcSecurable(value *DataDatabricksAppsAppResourcesUcSecurable)
+	ResetApp()
 	ResetDatabase()
 	ResetDescription()
+	ResetExperiment()
 	ResetGenieSpace()
 	ResetJob()
 	ResetSecret()
@@ -101,7 +109,7 @@ type DataDatabricksAppsAppResourcesOutputReference interface {
 	ResetUcSecurable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,7 +119,27 @@ type DataDatabricksAppsAppResourcesOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksAppsAppResourcesOutputReference
 type jsiiProxy_DataDatabricksAppsAppResourcesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) App() DataDatabricksAppsAppResourcesAppOutputReference {
+	var returns DataDatabricksAppsAppResourcesAppOutputReference
+	_jsii_.Get(
+		j,
+		"app",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) AppInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) ComplexObjectIndex() interface{} {
@@ -179,6 +207,26 @@ func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) DescriptionInp
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) Experiment() DataDatabricksAppsAppResourcesExperimentOutputReference {
+	var returns DataDatabricksAppsAppResourcesExperimentOutputReference
+	_jsii_.Get(
+		j,
+		"experiment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) ExperimentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"experimentInput",
 		&returns,
 	)
 	return returns
@@ -334,8 +382,8 @@ func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -365,7 +413,7 @@ func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) UcSecurableInp
 }
 
 
-func NewDataDatabricksAppsAppResourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksAppsAppResourcesOutputReference {
+func NewDataDatabricksAppsAppResourcesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksAppsAppResourcesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksAppsAppResourcesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -374,7 +422,7 @@ func NewDataDatabricksAppsAppResourcesOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataDatabricksAppsAppResourcesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksApps.DataDatabricksAppsAppResourcesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksApps.DataDatabricksAppsAppResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -382,11 +430,11 @@ func NewDataDatabricksAppsAppResourcesOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewDataDatabricksAppsAppResourcesOutputReference_Override(d DataDatabricksAppsAppResourcesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksAppsAppResourcesOutputReference_Override(d DataDatabricksAppsAppResourcesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksApps.DataDatabricksAppsAppResourcesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksApps.DataDatabricksAppsAppResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -458,7 +506,7 @@ func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,11 +546,11 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -626,8 +674,8 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) GetStringMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -639,11 +687,11 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) InterpolationA
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -655,6 +703,17 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) InterpolationF
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) PutApp(value *DataDatabricksAppsAppResourcesApp) {
+	if err := d.validatePutAppParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putApp",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) PutDatabase(value *DataDatabricksAppsAppResourcesDatabase) {
 	if err := d.validatePutDatabaseParameters(value); err != nil {
 		panic(err)
@@ -662,6 +721,17 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) PutDatabase(va
 	_jsii_.InvokeVoid(
 		d,
 		"putDatabase",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) PutExperiment(value *DataDatabricksAppsAppResourcesExperiment) {
+	if err := d.validatePutExperimentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putExperiment",
 		[]interface{}{value},
 	)
 }
@@ -732,6 +802,14 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) PutUcSecurable
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) ResetApp() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApp",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) ResetDatabase() {
 	_jsii_.InvokeVoid(
 		d,
@@ -744,6 +822,14 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) ResetDescripti
 	_jsii_.InvokeVoid(
 		d,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) ResetExperiment() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExperiment",
 		nil, // no parameters
 	)
 }
@@ -796,7 +882,7 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) ResetUcSecurab
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

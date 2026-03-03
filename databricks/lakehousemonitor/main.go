@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package lakehousemonitor
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor",
 		reflect.TypeOf((*LakehouseMonitor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -65,11 +65,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "profileMetricsTableName", GoGetter: "ProfileMetricsTableName"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomMetrics", GoMethod: "PutCustomMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "putDataClassificationConfig", GoMethod: "PutDataClassificationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putInferenceLog", GoMethod: "PutInferenceLog"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotifications", GoMethod: "PutNotifications"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putSchedule", GoMethod: "PutSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "putSnapshot", GoMethod: "PutSnapshot"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -83,6 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLatestMonitorFailureMsg", GoMethod: "ResetLatestMonitorFailureMsg"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotifications", GoMethod: "ResetNotifications"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchedule", GoMethod: "ResetSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipBuiltinDashboard", GoMethod: "ResetSkipBuiltinDashboard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSlicingExprs", GoMethod: "ResetSlicingExprs"},
@@ -119,20 +123,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitor{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig",
 		reflect.TypeOf((*LakehouseMonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics",
 		reflect.TypeOf((*LakehouseMonitorCustomMetrics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetricsList",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetricsList",
 		reflect.TypeOf((*LakehouseMonitorCustomMetricsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -149,12 +153,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorCustomMetricsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetricsOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetricsOutputReference",
 		reflect.TypeOf((*LakehouseMonitorCustomMetricsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -191,16 +195,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorCustomMetricsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfig",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfig",
 		reflect.TypeOf((*LakehouseMonitorDataClassificationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfigOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfigOutputReference",
 		reflect.TypeOf((*LakehouseMonitorDataClassificationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,16 +234,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorDataClassificationConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog",
 		reflect.TypeOf((*LakehouseMonitorInferenceLog)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLogOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLogOutputReference",
 		reflect.TypeOf((*LakehouseMonitorInferenceLogOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -282,20 +286,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorInferenceLogOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotifications",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotifications",
 		reflect.TypeOf((*LakehouseMonitorNotifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailure",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailure",
 		reflect.TypeOf((*LakehouseMonitorNotificationsOnFailure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailureOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailureOutputReference",
 		reflect.TypeOf((*LakehouseMonitorNotificationsOnFailureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -325,16 +329,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorNotificationsOnFailureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected",
 		reflect.TypeOf((*LakehouseMonitorNotificationsOnNewClassificationTagDetected)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference",
 		reflect.TypeOf((*LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -364,12 +368,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOutputReference",
 		reflect.TypeOf((*LakehouseMonitorNotificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -404,16 +408,54 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorNotificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSchedule",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorProviderConfig",
+		reflect.TypeOf((*LakehouseMonitorProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorProviderConfigOutputReference",
+		reflect.TypeOf((*LakehouseMonitorProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LakehouseMonitorProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorSchedule",
 		reflect.TypeOf((*LakehouseMonitorSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorScheduleOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorScheduleOutputReference",
 		reflect.TypeOf((*LakehouseMonitorScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -445,16 +487,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSnapshot",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorSnapshot",
 		reflect.TypeOf((*LakehouseMonitorSnapshot)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSnapshotOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorSnapshotOutputReference",
 		reflect.TypeOf((*LakehouseMonitorSnapshotOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -481,16 +523,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorSnapshotOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeries",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeries",
 		reflect.TypeOf((*LakehouseMonitorTimeSeries)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeriesOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeriesOutputReference",
 		reflect.TypeOf((*LakehouseMonitorTimeSeriesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -521,16 +563,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorTimeSeriesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeouts",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeouts",
 		reflect.TypeOf((*LakehouseMonitorTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeoutsOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeoutsOutputReference",
 		reflect.TypeOf((*LakehouseMonitorTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -560,7 +602,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LakehouseMonitorTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

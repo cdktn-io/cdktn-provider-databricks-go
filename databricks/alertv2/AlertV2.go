@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package alertv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/alertv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/alertv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2 databricks_alert_v2}.
 type AlertV2 interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -45,18 +45,18 @@ type AlertV2 interface {
 	Evaluation() AlertV2EvaluationOutputReference
 	EvaluationInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LifecycleState() *string
 	// The tree node.
 	Node() constructs.Node
@@ -65,13 +65,18 @@ type AlertV2 interface {
 	SetParentPath(val *string)
 	ParentPathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() AlertV2ProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PurgeOnDelete() interface{}
+	SetPurgeOnDelete(val interface{})
+	PurgeOnDeleteInput() interface{}
 	QueryText() *string
 	SetQueryText(val *string)
 	QueryTextInput() *string
@@ -85,7 +90,7 @@ type AlertV2 interface {
 	Schedule() AlertV2ScheduleOutputReference
 	ScheduleInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -102,7 +107,7 @@ type AlertV2 interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -120,9 +125,9 @@ type AlertV2 interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -138,6 +143,7 @@ type AlertV2 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEvaluation(value *AlertV2Evaluation)
+	PutProviderConfig(value *AlertV2ProviderConfig)
 	PutRunAs(value *AlertV2RunAs)
 	PutSchedule(value *AlertV2Schedule)
 	ResetCustomDescription()
@@ -146,6 +152,8 @@ type AlertV2 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParentPath()
+	ResetProviderConfig()
+	ResetPurgeOnDelete()
 	ResetRunAs()
 	ResetRunAsUserName()
 	SynthesizeAttributes() *map[string]interface{}
@@ -163,11 +171,11 @@ type AlertV2 interface {
 
 // The jsii proxy struct for AlertV2
 type jsiiProxy_AlertV2 struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_AlertV2) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AlertV2) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -316,8 +324,8 @@ func (j *jsiiProxy_AlertV2) EvaluationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertV2) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AlertV2) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -356,8 +364,8 @@ func (j *jsiiProxy_AlertV2) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertV2) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AlertV2) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -416,11 +424,31 @@ func (j *jsiiProxy_AlertV2) ParentPathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertV2) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AlertV2) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertV2) ProviderConfig() AlertV2ProviderConfigOutputReference {
+	var returns AlertV2ProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertV2) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -431,6 +459,26 @@ func (j *jsiiProxy_AlertV2) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertV2) PurgeOnDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"purgeOnDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertV2) PurgeOnDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"purgeOnDeleteInput",
 		&returns,
 	)
 	return returns
@@ -526,8 +574,8 @@ func (j *jsiiProxy_AlertV2) ScheduleInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertV2) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AlertV2) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -587,7 +635,7 @@ func (j *jsiiProxy_AlertV2) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) AlertV2 {
 	_init_.Initialize()
 
@@ -597,7 +645,7 @@ func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) A
 	j := jsiiProxy_AlertV2{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.alertV2.AlertV2",
+		"@cdktn/provider-databricks.alertV2.AlertV2",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -605,12 +653,12 @@ func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2_Override(a AlertV2, scope constructs.Construct, id *string, config *AlertV2Config) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.alertV2.AlertV2",
+		"@cdktn/provider-databricks.alertV2.AlertV2",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -679,7 +727,7 @@ func (j *jsiiProxy_AlertV2)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertV2)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AlertV2)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -687,7 +735,7 @@ func (j *jsiiProxy_AlertV2)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AlertV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AlertV2)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +757,7 @@ func (j *jsiiProxy_AlertV2)SetParentPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertV2)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AlertV2)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -724,6 +772,17 @@ func (j *jsiiProxy_AlertV2)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlertV2)SetPurgeOnDelete(val interface{}) {
+	if err := j.validateSetPurgeOnDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"purgeOnDelete",
 		val,
 	)
 }
@@ -761,17 +820,17 @@ func (j *jsiiProxy_AlertV2)SetWarehouseId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a AlertV2 resource upon running "cdktf plan <stack-name>".
-func AlertV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AlertV2 resource upon running "cdktn plan <stack-name>".
+func AlertV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAlertV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.alertV2.AlertV2",
+		"@cdktn/provider-databricks.alertV2.AlertV2",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -806,7 +865,7 @@ func AlertV2_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.alertV2.AlertV2",
+		"@cdktn/provider-databricks.alertV2.AlertV2",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -825,7 +884,7 @@ func AlertV2_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.alertV2.AlertV2",
+		"@cdktn/provider-databricks.alertV2.AlertV2",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -844,7 +903,7 @@ func AlertV2_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.alertV2.AlertV2",
+		"@cdktn/provider-databricks.alertV2.AlertV2",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -857,7 +916,7 @@ func AlertV2_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.alertV2.AlertV2",
+		"@cdktn/provider-databricks.alertV2.AlertV2",
 		"tfResourceType",
 		&returns,
 	)
@@ -902,11 +961,11 @@ func (a *jsiiProxy_AlertV2) GetAnyMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
-func (a *jsiiProxy_AlertV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlertV2) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1043,7 +1102,7 @@ func (a *jsiiProxy_AlertV2) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlertV2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AlertV2) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1054,11 +1113,11 @@ func (a *jsiiProxy_AlertV2) ImportFrom(id *string, provider cdktf.TerraformProvi
 	)
 }
 
-func (a *jsiiProxy_AlertV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlertV2) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1125,6 +1184,17 @@ func (a *jsiiProxy_AlertV2) PutEvaluation(value *AlertV2Evaluation) {
 	)
 }
 
+func (a *jsiiProxy_AlertV2) PutProviderConfig(value *AlertV2ProviderConfig) {
+	if err := a.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlertV2) PutRunAs(value *AlertV2RunAs) {
 	if err := a.validatePutRunAsParameters(value); err != nil {
 		panic(err)
@@ -1175,6 +1245,22 @@ func (a *jsiiProxy_AlertV2) ResetParentPath() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetParentPath",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertV2) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertV2) ResetPurgeOnDelete() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPurgeOnDelete",
 		nil, // no parameters
 	)
 }

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databaseinstance
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstance",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstance",
 		reflect.TypeOf((*DatabaseInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -69,11 +69,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parentInstanceRefInput", GoGetter: "ParentInstanceRefInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pgVersion", GoGetter: "PgVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "purgeOnDelete", GoGetter: "PurgeOnDelete"},
 			_jsii_.MemberProperty{JsiiProperty: "purgeOnDeleteInput", GoGetter: "PurgeOnDeleteInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomTags", GoMethod: "PutCustomTags"},
 			_jsii_.MemberMethod{JsiiMethod: "putParentInstanceRef", GoMethod: "PutParentInstanceRef"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readOnlyDns", GoGetter: "ReadOnlyDns"},
 			_jsii_.MemberProperty{JsiiProperty: "readWriteDns", GoGetter: "ReadWriteDns"},
@@ -84,6 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeCount", GoMethod: "ResetNodeCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParentInstanceRef", GoMethod: "ResetParentInstanceRef"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPurgeOnDelete", GoMethod: "ResetPurgeOnDelete"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetentionWindowInDays", GoMethod: "ResetRetentionWindowInDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStopped", GoMethod: "ResetStopped"},
@@ -108,16 +112,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceChildInstanceRefs",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceChildInstanceRefs",
 		reflect.TypeOf((*DatabaseInstanceChildInstanceRefs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceChildInstanceRefsList",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceChildInstanceRefsList",
 		reflect.TypeOf((*DatabaseInstanceChildInstanceRefsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -134,12 +138,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseInstanceChildInstanceRefsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceChildInstanceRefsOutputReference",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceChildInstanceRefsOutputReference",
 		reflect.TypeOf((*DatabaseInstanceChildInstanceRefsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchTime", GoGetter: "BranchTime"},
@@ -177,20 +181,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseInstanceChildInstanceRefsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceConfig",
 		reflect.TypeOf((*DatabaseInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceCustomTags",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceCustomTags",
 		reflect.TypeOf((*DatabaseInstanceCustomTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceCustomTagsList",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceCustomTagsList",
 		reflect.TypeOf((*DatabaseInstanceCustomTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -207,12 +211,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseInstanceCustomTagsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceCustomTagsOutputReference",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceCustomTagsOutputReference",
 		reflect.TypeOf((*DatabaseInstanceCustomTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -245,16 +249,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseInstanceCustomTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceEffectiveCustomTags",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceEffectiveCustomTags",
 		reflect.TypeOf((*DatabaseInstanceEffectiveCustomTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceEffectiveCustomTagsList",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceEffectiveCustomTagsList",
 		reflect.TypeOf((*DatabaseInstanceEffectiveCustomTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -271,12 +275,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseInstanceEffectiveCustomTagsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceEffectiveCustomTagsOutputReference",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceEffectiveCustomTagsOutputReference",
 		reflect.TypeOf((*DatabaseInstanceEffectiveCustomTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -309,16 +313,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseInstanceEffectiveCustomTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceParentInstanceRef",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceParentInstanceRef",
 		reflect.TypeOf((*DatabaseInstanceParentInstanceRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.databaseInstance.DatabaseInstanceParentInstanceRefOutputReference",
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceParentInstanceRefOutputReference",
 		reflect.TypeOf((*DatabaseInstanceParentInstanceRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchTime", GoGetter: "BranchTime"},
@@ -356,7 +360,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseInstanceParentInstanceRefOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceProviderConfig",
+		reflect.TypeOf((*DatabaseInstanceProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.databaseInstance.DatabaseInstanceProviderConfigOutputReference",
+		reflect.TypeOf((*DatabaseInstanceProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DatabaseInstanceProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

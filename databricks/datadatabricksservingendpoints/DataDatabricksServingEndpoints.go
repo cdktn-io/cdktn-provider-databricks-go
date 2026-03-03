@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksservingendpoints
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksservingendpoints/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksservingendpoints/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}.
 type DataDatabricksServingEndpoints interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -30,29 +30,29 @@ type DataDatabricksServingEndpoints interface {
 	Endpoints() DataDatabricksServingEndpointsEndpointsList
 	EndpointsInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() DataDatabricksServingEndpointsProviderConfigOutputReference
 	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -62,7 +62,7 @@ type DataDatabricksServingEndpoints interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,7 +78,7 @@ type DataDatabricksServingEndpoints interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -105,11 +105,11 @@ type DataDatabricksServingEndpoints interface {
 
 // The jsii proxy struct for DataDatabricksServingEndpoints
 type jsiiProxy_DataDatabricksServingEndpoints struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpoints) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksServingEndpoints) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints) EndpointsInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpoints) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksServingEndpoints) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpoints) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksServingEndpoints) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpoints) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksServingEndpoints) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpoints) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksServingEndpoints) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -289,7 +289,7 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
 func NewDataDatabricksServingEndpoints(scope constructs.Construct, id *string, config *DataDatabricksServingEndpointsConfig) DataDatabricksServingEndpoints {
 	_init_.Initialize()
 
@@ -299,7 +299,7 @@ func NewDataDatabricksServingEndpoints(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataDatabricksServingEndpoints{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -307,12 +307,12 @@ func NewDataDatabricksServingEndpoints(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
 func NewDataDatabricksServingEndpoints_Override(d DataDatabricksServingEndpoints, scope constructs.Construct, id *string, config *DataDatabricksServingEndpointsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -337,7 +337,7 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpoints)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksServingEndpoints)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpoints)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksServingEndpoints)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksServingEndpoints)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksServingEndpoints)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -364,17 +364,17 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints)SetProvider(val cdktf.Terrafor
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksServingEndpoints resource upon running "cdktf plan <stack-name>".
-func DataDatabricksServingEndpoints_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksServingEndpoints resource upon running "cdktn plan <stack-name>".
+func DataDatabricksServingEndpoints_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksServingEndpoints_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -409,7 +409,7 @@ func DataDatabricksServingEndpoints_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -428,7 +428,7 @@ func DataDatabricksServingEndpoints_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -447,7 +447,7 @@ func DataDatabricksServingEndpoints_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -460,7 +460,7 @@ func DataDatabricksServingEndpoints_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
+		"@cdktn/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints",
 		"tfResourceType",
 		&returns,
 	)
@@ -494,11 +494,11 @@ func (d *jsiiProxy_DataDatabricksServingEndpoints) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpoints) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksServingEndpoints) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -622,11 +622,11 @@ func (d *jsiiProxy_DataDatabricksServingEndpoints) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpoints) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksServingEndpoints) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

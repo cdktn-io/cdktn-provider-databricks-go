@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workspaceconf
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/workspaceconf/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspaceconf/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_conf databricks_workspace_conf}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_conf databricks_workspace_conf}.
 type WorkspaceConf interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type WorkspaceConf interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -46,15 +46,17 @@ type WorkspaceConf interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() WorkspaceConfProviderConfigOutputReference
+	ProviderConfigInput() *WorkspaceConfProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -62,7 +64,7 @@ type WorkspaceConf interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -75,7 +77,7 @@ type WorkspaceConf interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -93,9 +95,9 @@ type WorkspaceConf interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -110,11 +112,13 @@ type WorkspaceConf interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *WorkspaceConfProviderConfig)
 	ResetCustomConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -130,11 +134,11 @@ type WorkspaceConf interface {
 
 // The jsii proxy struct for WorkspaceConf
 type jsiiProxy_WorkspaceConf struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_WorkspaceConf) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_WorkspaceConf) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -203,8 +207,8 @@ func (j *jsiiProxy_WorkspaceConf) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceConf) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_WorkspaceConf) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -253,8 +257,8 @@ func (j *jsiiProxy_WorkspaceConf) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceConf) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_WorkspaceConf) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -273,11 +277,31 @@ func (j *jsiiProxy_WorkspaceConf) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceConf) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_WorkspaceConf) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceConf) ProviderConfig() WorkspaceConfProviderConfigOutputReference {
+	var returns WorkspaceConfProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceConf) ProviderConfigInput() *WorkspaceConfProviderConfig {
+	var returns *WorkspaceConfProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -303,8 +327,8 @@ func (j *jsiiProxy_WorkspaceConf) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceConf) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_WorkspaceConf) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -334,7 +358,7 @@ func (j *jsiiProxy_WorkspaceConf) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_conf databricks_workspace_conf} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_conf databricks_workspace_conf} Resource.
 func NewWorkspaceConf(scope constructs.Construct, id *string, config *WorkspaceConfConfig) WorkspaceConf {
 	_init_.Initialize()
 
@@ -344,7 +368,7 @@ func NewWorkspaceConf(scope constructs.Construct, id *string, config *WorkspaceC
 	j := jsiiProxy_WorkspaceConf{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.workspaceConf.WorkspaceConf",
+		"@cdktn/provider-databricks.workspaceConf.WorkspaceConf",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -352,12 +376,12 @@ func NewWorkspaceConf(scope constructs.Construct, id *string, config *WorkspaceC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_conf databricks_workspace_conf} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_conf databricks_workspace_conf} Resource.
 func NewWorkspaceConf_Override(w WorkspaceConf, scope constructs.Construct, id *string, config *WorkspaceConfConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.workspaceConf.WorkspaceConf",
+		"@cdktn/provider-databricks.workspaceConf.WorkspaceConf",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -404,7 +428,7 @@ func (j *jsiiProxy_WorkspaceConf)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspaceConf)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkspaceConf)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -423,7 +447,7 @@ func (j *jsiiProxy_WorkspaceConf)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspaceConf)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkspaceConf)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +458,7 @@ func (j *jsiiProxy_WorkspaceConf)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_WorkspaceConf)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkspaceConf)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -453,17 +477,17 @@ func (j *jsiiProxy_WorkspaceConf)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a WorkspaceConf resource upon running "cdktf plan <stack-name>".
-func WorkspaceConf_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a WorkspaceConf resource upon running "cdktn plan <stack-name>".
+func WorkspaceConf_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateWorkspaceConf_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.workspaceConf.WorkspaceConf",
+		"@cdktn/provider-databricks.workspaceConf.WorkspaceConf",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -498,7 +522,7 @@ func WorkspaceConf_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.workspaceConf.WorkspaceConf",
+		"@cdktn/provider-databricks.workspaceConf.WorkspaceConf",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +541,7 @@ func WorkspaceConf_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.workspaceConf.WorkspaceConf",
+		"@cdktn/provider-databricks.workspaceConf.WorkspaceConf",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +560,7 @@ func WorkspaceConf_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.workspaceConf.WorkspaceConf",
+		"@cdktn/provider-databricks.workspaceConf.WorkspaceConf",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +573,7 @@ func WorkspaceConf_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.workspaceConf.WorkspaceConf",
+		"@cdktn/provider-databricks.workspaceConf.WorkspaceConf",
 		"tfResourceType",
 		&returns,
 	)
@@ -594,11 +618,11 @@ func (w *jsiiProxy_WorkspaceConf) GetAnyMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceConf) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkspaceConf) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -735,7 +759,7 @@ func (w *jsiiProxy_WorkspaceConf) HasResourceMove() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceConf) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (w *jsiiProxy_WorkspaceConf) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := w.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -746,11 +770,11 @@ func (w *jsiiProxy_WorkspaceConf) ImportFrom(id *string, provider cdktf.Terrafor
 	)
 }
 
-func (w *jsiiProxy_WorkspaceConf) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkspaceConf) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -806,6 +830,17 @@ func (w *jsiiProxy_WorkspaceConf) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (w *jsiiProxy_WorkspaceConf) PutProviderConfig(value *WorkspaceConfProviderConfig) {
+	if err := w.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkspaceConf) ResetCustomConfig() {
 	_jsii_.InvokeVoid(
 		w,
@@ -826,6 +861,14 @@ func (w *jsiiProxy_WorkspaceConf) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspaceConf) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

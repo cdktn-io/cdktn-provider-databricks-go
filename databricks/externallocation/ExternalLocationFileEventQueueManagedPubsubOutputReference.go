@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externallocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/externallocation/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ExternalLocationFileEventQueueManagedPubsubOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +41,15 @@ type ExternalLocationFileEventQueueManagedPubsubOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,13 +65,13 @@ type ExternalLocationFileEventQueueManagedPubsubOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetSubscriptionName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ExternalLocationFileEventQueueManagedPubsubOutputReference interface {
 
 // The jsii proxy struct for ExternalLocationFileEventQueueManagedPubsubOutputReference
 type jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) ComplexObjectIndex() interface{} {
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -185,7 +185,7 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) T
 }
 
 
-func NewExternalLocationFileEventQueueManagedPubsubOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ExternalLocationFileEventQueueManagedPubsubOutputReference {
+func NewExternalLocationFileEventQueueManagedPubsubOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ExternalLocationFileEventQueueManagedPubsubOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewExternalLocationFileEventQueueManagedPubsubOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -194,7 +194,7 @@ func NewExternalLocationFileEventQueueManagedPubsubOutputReference(terraformReso
 	j := jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedPubsubOutputReference",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedPubsubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,11 +202,11 @@ func NewExternalLocationFileEventQueueManagedPubsubOutputReference(terraformReso
 	return &j
 }
 
-func NewExternalLocationFileEventQueueManagedPubsubOutputReference_Override(e ExternalLocationFileEventQueueManagedPubsubOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewExternalLocationFileEventQueueManagedPubsubOutputReference_Override(e ExternalLocationFileEventQueueManagedPubsubOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedPubsubOutputReference",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedPubsubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -267,7 +267,7 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -307,11 +307,11 @@ func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) G
 	return returns
 }
 
-func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -435,8 +435,8 @@ func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) G
 	return returns
 }
 
-func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -448,11 +448,11 @@ func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) I
 	return returns
 }
 
-func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -472,7 +472,7 @@ func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) R
 	)
 }
 
-func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

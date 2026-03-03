@@ -1,15 +1,15 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 
 type JobTaskForEachTaskTaskLibraryMaven struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#coordinates Job#coordinates}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#coordinates Job#coordinates}.
 	Coordinates *string `field:"required" json:"coordinates" yaml:"coordinates"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#exclusions Job#exclusions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#exclusions Job#exclusions}.
 	Exclusions *[]*string `field:"optional" json:"exclusions" yaml:"exclusions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#repo Job#repo}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#repo Job#repo}.
 	Repo *string `field:"optional" json:"repo" yaml:"repo"`
 }
 

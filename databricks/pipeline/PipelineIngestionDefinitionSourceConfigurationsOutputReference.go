@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/pipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PipelineIngestionDefinitionSourceConfigurationsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Catalog() PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference
 	CatalogInput() *PipelineIngestionDefinitionSourceConfigurationsCatalog
 	// the index of the complex object in a list.
@@ -39,15 +39,15 @@ type PipelineIngestionDefinitionSourceConfigurationsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type PipelineIngestionDefinitionSourceConfigurationsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCatalog(value *PipelineIngestionDefinitionSourceConfigurationsCatalog)
 	ResetCatalog()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type PipelineIngestionDefinitionSourceConfigurationsOutputReference interface {
 
 // The jsii proxy struct for PipelineIngestionDefinitionSourceConfigurationsOutputReference
 type jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) Catalog() PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 }
 
 
-func NewPipelineIngestionDefinitionSourceConfigurationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionSourceConfigurationsOutputReference {
+func NewPipelineIngestionDefinitionSourceConfigurationsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionSourceConfigurationsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPipelineIngestionDefinitionSourceConfigurationsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -183,7 +183,7 @@ func NewPipelineIngestionDefinitionSourceConfigurationsOutputReference(terraform
 	j := jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference",
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewPipelineIngestionDefinitionSourceConfigurationsOutputReference(terraform
 	return &j
 }
 
-func NewPipelineIngestionDefinitionSourceConfigurationsOutputReference_Override(p PipelineIngestionDefinitionSourceConfigurationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPipelineIngestionDefinitionSourceConfigurationsOutputReference_Override(p PipelineIngestionDefinitionSourceConfigurationsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference",
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -245,7 +245,7 @@ func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -285,11 +285,11 @@ func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -413,8 +413,8 @@ func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -426,11 +426,11 @@ func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -461,7 +461,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	)
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package modelserving
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/modelserving/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/modelserving/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CohereApiBase() *string
 	SetCohereApiBase(val *string)
 	CohereApiBaseInput() *string
@@ -46,15 +46,15 @@ type ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCohereApiBase()
 	ResetCohereApiKey()
 	ResetCohereApiKeyPlaintext()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference in
 
 // The jsii proxy struct for ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference
 type jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) CohereApiBase() *string {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	return returns
 }
 
-func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 }
 
 
-func NewModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference {
+func NewModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewModelServingConfigServedEntitiesExternalModelCohereConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference
 	j := jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference
 	return &j
 }
 
-func NewModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference_Override(m ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference_Override(m ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	)
 }
 
-func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -494,8 +494,8 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -507,11 +507,11 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -547,7 +547,7 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	)
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

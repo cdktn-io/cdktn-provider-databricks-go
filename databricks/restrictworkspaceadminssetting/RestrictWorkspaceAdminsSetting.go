@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package restrictworkspaceadminssetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/restrictworkspaceadminssetting/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/restrictworkspaceadminssetting/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting}.
 type RestrictWorkspaceAdminsSetting interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type RestrictWorkspaceAdminsSetting interface {
 	SetEtag(val *string)
 	EtagInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -46,15 +46,17 @@ type RestrictWorkspaceAdminsSetting interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() RestrictWorkspaceAdminsSettingProviderConfigOutputReference
+	ProviderConfigInput() *RestrictWorkspaceAdminsSettingProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -67,7 +69,7 @@ type RestrictWorkspaceAdminsSetting interface {
 	SetSettingName(val *string)
 	SettingNameInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -80,7 +82,7 @@ type RestrictWorkspaceAdminsSetting interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -98,9 +100,9 @@ type RestrictWorkspaceAdminsSetting interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -115,12 +117,14 @@ type RestrictWorkspaceAdminsSetting interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *RestrictWorkspaceAdminsSettingProviderConfig)
 	PutRestrictWorkspaceAdmins(value *RestrictWorkspaceAdminsSettingRestrictWorkspaceAdmins)
 	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSettingName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -137,11 +141,11 @@ type RestrictWorkspaceAdminsSetting interface {
 
 // The jsii proxy struct for RestrictWorkspaceAdminsSetting
 type jsiiProxy_RestrictWorkspaceAdminsSetting struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -210,8 +214,8 @@ func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) EtagInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -260,8 +264,8 @@ func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -280,11 +284,31 @@ func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) ProviderConfig() RestrictWorkspaceAdminsSettingProviderConfigOutputReference {
+	var returns RestrictWorkspaceAdminsSettingProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) ProviderConfigInput() *RestrictWorkspaceAdminsSettingProviderConfig {
+	var returns *RestrictWorkspaceAdminsSettingProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -350,8 +374,8 @@ func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) SettingNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -381,7 +405,7 @@ func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting} Resource.
 func NewRestrictWorkspaceAdminsSetting(scope constructs.Construct, id *string, config *RestrictWorkspaceAdminsSettingConfig) RestrictWorkspaceAdminsSetting {
 	_init_.Initialize()
 
@@ -391,7 +415,7 @@ func NewRestrictWorkspaceAdminsSetting(scope constructs.Construct, id *string, c
 	j := jsiiProxy_RestrictWorkspaceAdminsSetting{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
+		"@cdktn/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,12 +423,12 @@ func NewRestrictWorkspaceAdminsSetting(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting} Resource.
 func NewRestrictWorkspaceAdminsSetting_Override(r RestrictWorkspaceAdminsSetting, scope constructs.Construct, id *string, config *RestrictWorkspaceAdminsSettingConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
+		"@cdktn/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -451,7 +475,7 @@ func (j *jsiiProxy_RestrictWorkspaceAdminsSetting)SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RestrictWorkspaceAdminsSetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RestrictWorkspaceAdminsSetting)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -470,7 +494,7 @@ func (j *jsiiProxy_RestrictWorkspaceAdminsSetting)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RestrictWorkspaceAdminsSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RestrictWorkspaceAdminsSetting)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +505,7 @@ func (j *jsiiProxy_RestrictWorkspaceAdminsSetting)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_RestrictWorkspaceAdminsSetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RestrictWorkspaceAdminsSetting)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -511,17 +535,17 @@ func (j *jsiiProxy_RestrictWorkspaceAdminsSetting)SetSettingName(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a RestrictWorkspaceAdminsSetting resource upon running "cdktf plan <stack-name>".
-func RestrictWorkspaceAdminsSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a RestrictWorkspaceAdminsSetting resource upon running "cdktn plan <stack-name>".
+func RestrictWorkspaceAdminsSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateRestrictWorkspaceAdminsSetting_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
+		"@cdktn/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -556,7 +580,7 @@ func RestrictWorkspaceAdminsSetting_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
+		"@cdktn/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +599,7 @@ func RestrictWorkspaceAdminsSetting_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
+		"@cdktn/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +618,7 @@ func RestrictWorkspaceAdminsSetting_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
+		"@cdktn/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +631,7 @@ func RestrictWorkspaceAdminsSetting_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
+		"@cdktn/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting",
 		"tfResourceType",
 		&returns,
 	)
@@ -652,11 +676,11 @@ func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -793,7 +817,7 @@ func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) HasResourceMove() interface{}
 	return returns
 }
 
-func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -804,11 +828,11 @@ func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) ImportFrom(id *string, provid
 	)
 }
 
-func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -864,6 +888,17 @@ func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) PutProviderConfig(value *RestrictWorkspaceAdminsSettingProviderConfig) {
+	if err := r.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) PutRestrictWorkspaceAdmins(value *RestrictWorkspaceAdminsSettingRestrictWorkspaceAdmins) {
 	if err := r.validatePutRestrictWorkspaceAdminsParameters(value); err != nil {
 		panic(err)
@@ -895,6 +930,14 @@ func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

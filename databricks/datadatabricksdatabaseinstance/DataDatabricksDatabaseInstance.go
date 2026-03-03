@@ -1,23 +1,23 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksdatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdatabaseinstance/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksdatabaseinstance/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/database_instance databricks_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/database_instance databricks_database_instance}.
 type DataDatabricksDatabaseInstance interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	Capacity() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ChildInstanceRefs() DataDatabricksDatabaseInstanceChildInstanceRefsList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -34,26 +34,26 @@ type DataDatabricksDatabaseInstance interface {
 	SetDependsOn(val *[]*string)
 	EffectiveCapacity() *string
 	EffectiveCustomTags() DataDatabricksDatabaseInstanceEffectiveCustomTagsList
-	EffectiveEnablePgNativeLogin() cdktf.IResolvable
-	EffectiveEnableReadableSecondaries() cdktf.IResolvable
+	EffectiveEnablePgNativeLogin() cdktn.IResolvable
+	EffectiveEnableReadableSecondaries() cdktn.IResolvable
 	EffectiveNodeCount() *float64
 	EffectiveRetentionWindowInDays() *float64
-	EffectiveStopped() cdktf.IResolvable
+	EffectiveStopped() cdktn.IResolvable
 	EffectiveUsagePolicyId() *string
-	EnablePgNativeLogin() cdktf.IResolvable
-	EnableReadableSecondaries() cdktf.IResolvable
+	EnablePgNativeLogin() cdktn.IResolvable
+	EnableReadableSecondaries() cdktn.IResolvable
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -63,18 +63,20 @@ type DataDatabricksDatabaseInstance interface {
 	ParentInstanceRef() DataDatabricksDatabaseInstanceParentInstanceRefOutputReference
 	PgVersion() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DataDatabricksDatabaseInstanceProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ReadOnlyDns() *string
 	ReadWriteDns() *string
 	RetentionWindowInDays() *float64
 	State() *string
-	Stopped() cdktf.IResolvable
+	Stopped() cdktn.IResolvable
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -86,7 +88,7 @@ type DataDatabricksDatabaseInstance interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -102,13 +104,15 @@ type DataDatabricksDatabaseInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksDatabaseInstanceProviderConfig)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -125,7 +129,7 @@ type DataDatabricksDatabaseInstance interface {
 
 // The jsii proxy struct for DataDatabricksDatabaseInstance
 type jsiiProxy_DataDatabricksDatabaseInstance struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) Capacity() *string {
@@ -138,8 +142,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) Capacity() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -238,8 +242,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveCustomTags() DataDat
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveEnablePgNativeLogin() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveEnablePgNativeLogin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveEnablePgNativeLogin",
@@ -248,8 +252,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveEnablePgNativeLogin(
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveEnableReadableSecondaries() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveEnableReadableSecondaries() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveEnableReadableSecondaries",
@@ -278,8 +282,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveRetentionWindowInDay
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveStopped() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveStopped() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveStopped",
@@ -298,8 +302,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveUsagePolicyId() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) EnablePgNativeLogin() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EnablePgNativeLogin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enablePgNativeLogin",
@@ -308,8 +312,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) EnablePgNativeLogin() cdktf.I
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) EnableReadableSecondaries() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EnableReadableSecondaries() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableReadableSecondaries",
@@ -318,8 +322,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) EnableReadableSecondaries() c
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -348,8 +352,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -418,11 +422,31 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) PgVersion() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) ProviderConfig() DataDatabricksDatabaseInstanceProviderConfigOutputReference {
+	var returns DataDatabricksDatabaseInstanceProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -478,8 +502,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) State() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) Stopped() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) Stopped() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"stopped",
@@ -488,8 +512,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) Stopped() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -539,7 +563,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) UsagePolicyId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
 func NewDataDatabricksDatabaseInstance(scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstanceConfig) DataDatabricksDatabaseInstance {
 	_init_.Initialize()
 
@@ -549,7 +573,7 @@ func NewDataDatabricksDatabaseInstance(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataDatabricksDatabaseInstance{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -557,12 +581,12 @@ func NewDataDatabricksDatabaseInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
 func NewDataDatabricksDatabaseInstance_Override(d DataDatabricksDatabaseInstance, scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstanceConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -587,7 +611,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -595,7 +619,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +641,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -625,17 +649,17 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetProvider(val cdktf.Terrafor
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksDatabaseInstance resource upon running "cdktf plan <stack-name>".
-func DataDatabricksDatabaseInstance_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksDatabaseInstance resource upon running "cdktn plan <stack-name>".
+func DataDatabricksDatabaseInstance_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksDatabaseInstance_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -670,7 +694,7 @@ func DataDatabricksDatabaseInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +713,7 @@ func DataDatabricksDatabaseInstance_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -708,7 +732,7 @@ func DataDatabricksDatabaseInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -721,7 +745,7 @@ func DataDatabricksDatabaseInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseInstance.DataDatabricksDatabaseInstance",
 		"tfResourceType",
 		&returns,
 	)
@@ -755,11 +779,11 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstance) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseInstance) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -883,11 +907,11 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstance) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseInstance) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -910,10 +934,29 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstance) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) PutProviderConfig(value *DataDatabricksDatabaseInstanceProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

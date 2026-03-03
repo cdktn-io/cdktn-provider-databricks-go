@@ -1,0 +1,11 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package datadatabricksqualitymonitorsv2
+
+
+type DataDatabricksQualityMonitorsV2QualityMonitorsProviderConfig struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/quality_monitors_v2#workspace_id DataDatabricksQualityMonitorsV2#workspace_id}.
+	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
+}
+

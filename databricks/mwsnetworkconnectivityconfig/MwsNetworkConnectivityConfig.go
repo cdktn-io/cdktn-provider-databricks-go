@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsnetworkconnectivityconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/mwsnetworkconnectivityconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnetworkconnectivityconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config}.
 type MwsNetworkConnectivityConfig interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -40,9 +40,9 @@ type MwsNetworkConnectivityConfig interface {
 	EgressConfig() MwsNetworkConnectivityConfigEgressConfigOutputReference
 	EgressConfigInput() *MwsNetworkConnectivityConfigEgressConfig
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -51,9 +51,9 @@ type MwsNetworkConnectivityConfig interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -63,9 +63,9 @@ type MwsNetworkConnectivityConfig interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -76,7 +76,7 @@ type MwsNetworkConnectivityConfig interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -92,7 +92,7 @@ type MwsNetworkConnectivityConfig interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -110,9 +110,9 @@ type MwsNetworkConnectivityConfig interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -152,7 +152,7 @@ type MwsNetworkConnectivityConfig interface {
 
 // The jsii proxy struct for MwsNetworkConnectivityConfig
 type jsiiProxy_MwsNetworkConnectivityConfig struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_MwsNetworkConnectivityConfig) AccountId() *string {
@@ -175,8 +175,8 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfig) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MwsNetworkConnectivityConfig) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig) EgressConfigInput() *MwsNetwork
 	return returns
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfig) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MwsNetworkConnectivityConfig) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MwsNetworkConnectivityConfig) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfig) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MwsNetworkConnectivityConfig) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig) RegionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MwsNetworkConnectivityConfig) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -476,7 +476,7 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig) UpdatedTimeInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
 func NewMwsNetworkConnectivityConfig(scope constructs.Construct, id *string, config *MwsNetworkConnectivityConfigConfig) MwsNetworkConnectivityConfig {
 	_init_.Initialize()
 
@@ -486,7 +486,7 @@ func NewMwsNetworkConnectivityConfig(scope constructs.Construct, id *string, con
 	j := jsiiProxy_MwsNetworkConnectivityConfig{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,12 +494,12 @@ func NewMwsNetworkConnectivityConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
 func NewMwsNetworkConnectivityConfig_Override(m MwsNetworkConnectivityConfig, scope constructs.Construct, id *string, config *MwsNetworkConnectivityConfigConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -557,7 +557,7 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -576,7 +576,7 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +609,7 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetNetworkConnectivityConfigId(v
 	)
 }
 
-func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -650,17 +650,17 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetUpdatedTime(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a MwsNetworkConnectivityConfig resource upon running "cdktf plan <stack-name>".
-func MwsNetworkConnectivityConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MwsNetworkConnectivityConfig resource upon running "cdktn plan <stack-name>".
+func MwsNetworkConnectivityConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMwsNetworkConnectivityConfig_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -695,7 +695,7 @@ func MwsNetworkConnectivityConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func MwsNetworkConnectivityConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func MwsNetworkConnectivityConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func MwsNetworkConnectivityConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
+		"@cdktn/provider-databricks.mwsNetworkConnectivityConfig.MwsNetworkConnectivityConfig",
 		"tfResourceType",
 		&returns,
 	)
@@ -791,11 +791,11 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfig) GetAnyMapAttribute(terraformAtt
 	return returns
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsNetworkConnectivityConfig) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -932,7 +932,7 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfig) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfig) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MwsNetworkConnectivityConfig) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -943,11 +943,11 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfig) ImportFrom(id *string, provider
 	)
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsNetworkConnectivityConfig) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,

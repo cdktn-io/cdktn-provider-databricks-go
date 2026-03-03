@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sqlendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/sqlendpoint/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/sqlendpoint/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SqlEndpointHealthOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type SqlEndpointHealthOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type SqlEndpointHealthOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type SqlEndpointHealthOutputReference interface {
 
 // The jsii proxy struct for SqlEndpointHealthOutputReference
 type jsiiProxy_SqlEndpointHealthOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SqlEndpointHealthOutputReference) ComplexObjectIndex() interface{} {
@@ -194,8 +194,8 @@ func (j *jsiiProxy_SqlEndpointHealthOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpointHealthOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SqlEndpointHealthOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_SqlEndpointHealthOutputReference) TerraformResource() cdktf.I
 }
 
 
-func NewSqlEndpointHealthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SqlEndpointHealthOutputReference {
+func NewSqlEndpointHealthOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SqlEndpointHealthOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSqlEndpointHealthOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewSqlEndpointHealthOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_SqlEndpointHealthOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointHealthOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointHealthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewSqlEndpointHealthOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewSqlEndpointHealthOutputReference_Override(s SqlEndpointHealthOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSqlEndpointHealthOutputReference_Override(s SqlEndpointHealthOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointHealthOutputReference",
+		"@cdktn/provider-databricks.sqlEndpoint.SqlEndpointHealthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_SqlEndpointHealthOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_SqlEndpointHealthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlEndpointHealthOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (s *jsiiProxy_SqlEndpointHealthOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (s *jsiiProxy_SqlEndpointHealthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlEndpointHealthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -444,8 +444,8 @@ func (s *jsiiProxy_SqlEndpointHealthOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (s *jsiiProxy_SqlEndpointHealthOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SqlEndpointHealthOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -457,11 +457,11 @@ func (s *jsiiProxy_SqlEndpointHealthOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (s *jsiiProxy_SqlEndpointHealthOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlEndpointHealthOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -473,7 +473,7 @@ func (s *jsiiProxy_SqlEndpointHealthOutputReference) InterpolationForAttribute(t
 	return returns
 }
 
-func (s *jsiiProxy_SqlEndpointHealthOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlEndpointHealthOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

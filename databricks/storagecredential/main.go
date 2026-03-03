@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package storagecredential
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.storageCredential.StorageCredential",
+		"@cdktn/provider-databricks.storageCredential.StorageCredential",
 		reflect.TypeOf((*StorageCredential)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -112,16 +112,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageCredential{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRole",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialAwsIamRole",
 		reflect.TypeOf((*StorageCredentialAwsIamRole)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRoleOutputReference",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialAwsIamRoleOutputReference",
 		reflect.TypeOf((*StorageCredentialAwsIamRoleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,16 +156,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageCredentialAwsIamRoleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity",
 		reflect.TypeOf((*StorageCredentialAzureManagedIdentity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentityOutputReference",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentityOutputReference",
 		reflect.TypeOf((*StorageCredentialAzureManagedIdentityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConnectorId", GoGetter: "AccessConnectorId"},
@@ -200,16 +200,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal",
 		reflect.TypeOf((*StorageCredentialAzureServicePrincipal)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipalOutputReference",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipalOutputReference",
 		reflect.TypeOf((*StorageCredentialAzureServicePrincipalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationId", GoGetter: "ApplicationId"},
@@ -242,16 +242,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken",
 		reflect.TypeOf((*StorageCredentialCloudflareApiToken)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference",
 		reflect.TypeOf((*StorageCredentialCloudflareApiTokenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -284,20 +284,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageCredentialCloudflareApiTokenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialConfig",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialConfig",
 		reflect.TypeOf((*StorageCredentialConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount",
 		reflect.TypeOf((*StorageCredentialDatabricksGcpServiceAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccountOutputReference",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccountOutputReference",
 		reflect.TypeOf((*StorageCredentialDatabricksGcpServiceAccountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -330,16 +330,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageCredentialDatabricksGcpServiceAccountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey",
 		reflect.TypeOf((*StorageCredentialGcpServiceAccountKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKeyOutputReference",
+		"@cdktn/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKeyOutputReference",
 		reflect.TypeOf((*StorageCredentialGcpServiceAccountKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -372,7 +372,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageCredentialGcpServiceAccountKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

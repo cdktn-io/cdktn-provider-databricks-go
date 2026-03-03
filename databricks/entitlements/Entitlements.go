@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package entitlements
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/entitlements/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlements/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/entitlements databricks_entitlements}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/entitlements databricks_entitlements}.
 type Entitlements interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AllowClusterCreate() interface{}
 	SetAllowClusterCreate(val interface{})
 	AllowClusterCreateInput() interface{}
@@ -22,7 +22,7 @@ type Entitlements interface {
 	SetAllowInstancePoolCreate(val interface{})
 	AllowInstancePoolCreateInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -41,9 +41,9 @@ type Entitlements interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -55,15 +55,17 @@ type Entitlements interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() EntitlementsProviderConfigOutputReference
+	ProviderConfigInput() *EntitlementsProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -74,7 +76,7 @@ type Entitlements interface {
 	SetServicePrincipalId(val *string)
 	ServicePrincipalIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -96,7 +98,7 @@ type Entitlements interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -114,9 +116,9 @@ type Entitlements interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -131,6 +133,7 @@ type Entitlements interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *EntitlementsProviderConfig)
 	ResetAllowClusterCreate()
 	ResetAllowInstancePoolCreate()
 	ResetDatabricksSqlAccess()
@@ -139,6 +142,7 @@ type Entitlements interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetServicePrincipalId()
 	ResetUserId()
 	ResetWorkspaceAccess()
@@ -158,7 +162,7 @@ type Entitlements interface {
 
 // The jsii proxy struct for Entitlements
 type jsiiProxy_Entitlements struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Entitlements) AllowClusterCreate() interface{} {
@@ -201,8 +205,8 @@ func (j *jsiiProxy_Entitlements) AllowInstancePoolCreateInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Entitlements) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Entitlements) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -271,8 +275,8 @@ func (j *jsiiProxy_Entitlements) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Entitlements) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Entitlements) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -341,8 +345,8 @@ func (j *jsiiProxy_Entitlements) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Entitlements) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Entitlements) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -361,11 +365,31 @@ func (j *jsiiProxy_Entitlements) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Entitlements) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Entitlements) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Entitlements) ProviderConfig() EntitlementsProviderConfigOutputReference {
+	var returns EntitlementsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Entitlements) ProviderConfigInput() *EntitlementsProviderConfig {
+	var returns *EntitlementsProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -411,8 +435,8 @@ func (j *jsiiProxy_Entitlements) ServicePrincipalIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Entitlements) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Entitlements) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -502,7 +526,7 @@ func (j *jsiiProxy_Entitlements) WorkspaceConsumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/entitlements databricks_entitlements} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/entitlements databricks_entitlements} Resource.
 func NewEntitlements(scope constructs.Construct, id *string, config *EntitlementsConfig) Entitlements {
 	_init_.Initialize()
 
@@ -512,7 +536,7 @@ func NewEntitlements(scope constructs.Construct, id *string, config *Entitlement
 	j := jsiiProxy_Entitlements{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.entitlements.Entitlements",
+		"@cdktn/provider-databricks.entitlements.Entitlements",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,12 +544,12 @@ func NewEntitlements(scope constructs.Construct, id *string, config *Entitlement
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/entitlements databricks_entitlements} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/entitlements databricks_entitlements} Resource.
 func NewEntitlements_Override(e Entitlements, scope constructs.Construct, id *string, config *EntitlementsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.entitlements.Entitlements",
+		"@cdktn/provider-databricks.entitlements.Entitlements",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -594,7 +618,7 @@ func (j *jsiiProxy_Entitlements)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Entitlements)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Entitlements)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -624,7 +648,7 @@ func (j *jsiiProxy_Entitlements)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Entitlements)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Entitlements)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +659,7 @@ func (j *jsiiProxy_Entitlements)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_Entitlements)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Entitlements)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -698,17 +722,17 @@ func (j *jsiiProxy_Entitlements)SetWorkspaceConsume(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a Entitlements resource upon running "cdktf plan <stack-name>".
-func Entitlements_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Entitlements resource upon running "cdktn plan <stack-name>".
+func Entitlements_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateEntitlements_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.entitlements.Entitlements",
+		"@cdktn/provider-databricks.entitlements.Entitlements",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -743,7 +767,7 @@ func Entitlements_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.entitlements.Entitlements",
+		"@cdktn/provider-databricks.entitlements.Entitlements",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +786,7 @@ func Entitlements_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.entitlements.Entitlements",
+		"@cdktn/provider-databricks.entitlements.Entitlements",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +805,7 @@ func Entitlements_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.entitlements.Entitlements",
+		"@cdktn/provider-databricks.entitlements.Entitlements",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +818,7 @@ func Entitlements_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.entitlements.Entitlements",
+		"@cdktn/provider-databricks.entitlements.Entitlements",
 		"tfResourceType",
 		&returns,
 	)
@@ -839,11 +863,11 @@ func (e *jsiiProxy_Entitlements) GetAnyMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (e *jsiiProxy_Entitlements) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_Entitlements) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -980,7 +1004,7 @@ func (e *jsiiProxy_Entitlements) HasResourceMove() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Entitlements) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (e *jsiiProxy_Entitlements) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -991,11 +1015,11 @@ func (e *jsiiProxy_Entitlements) ImportFrom(id *string, provider cdktf.Terraform
 	)
 }
 
-func (e *jsiiProxy_Entitlements) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_Entitlements) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -1051,6 +1075,17 @@ func (e *jsiiProxy_Entitlements) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_Entitlements) PutProviderConfig(value *EntitlementsProviderConfig) {
+	if err := e.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_Entitlements) ResetAllowClusterCreate() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1095,6 +1130,14 @@ func (e *jsiiProxy_Entitlements) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Entitlements) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

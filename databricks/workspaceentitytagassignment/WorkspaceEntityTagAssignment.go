@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workspaceentitytagassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/workspaceentitytagassignment/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspaceentitytagassignment/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment}.
 type WorkspaceEntityTagAssignment interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,23 +38,25 @@ type WorkspaceEntityTagAssignment interface {
 	SetEntityType(val *string)
 	EntityTypeInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() WorkspaceEntityTagAssignmentProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -68,7 +70,7 @@ type WorkspaceEntityTagAssignment interface {
 	SetTagValue(val *string)
 	TagValueInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -81,7 +83,7 @@ type WorkspaceEntityTagAssignment interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -99,9 +101,9 @@ type WorkspaceEntityTagAssignment interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -116,9 +118,11 @@ type WorkspaceEntityTagAssignment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *WorkspaceEntityTagAssignmentProviderConfig)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetTagValue()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -135,11 +139,11 @@ type WorkspaceEntityTagAssignment interface {
 
 // The jsii proxy struct for WorkspaceEntityTagAssignment
 type jsiiProxy_WorkspaceEntityTagAssignment struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_WorkspaceEntityTagAssignment) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_WorkspaceEntityTagAssignment) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -228,8 +232,8 @@ func (j *jsiiProxy_WorkspaceEntityTagAssignment) EntityTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceEntityTagAssignment) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_WorkspaceEntityTagAssignment) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -258,8 +262,8 @@ func (j *jsiiProxy_WorkspaceEntityTagAssignment) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceEntityTagAssignment) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_WorkspaceEntityTagAssignment) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -278,11 +282,31 @@ func (j *jsiiProxy_WorkspaceEntityTagAssignment) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceEntityTagAssignment) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_WorkspaceEntityTagAssignment) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceEntityTagAssignment) ProviderConfig() WorkspaceEntityTagAssignmentProviderConfigOutputReference {
+	var returns WorkspaceEntityTagAssignmentProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceEntityTagAssignment) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -348,8 +372,8 @@ func (j *jsiiProxy_WorkspaceEntityTagAssignment) TagValueInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceEntityTagAssignment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_WorkspaceEntityTagAssignment) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -379,7 +403,7 @@ func (j *jsiiProxy_WorkspaceEntityTagAssignment) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Resource.
 func NewWorkspaceEntityTagAssignment(scope constructs.Construct, id *string, config *WorkspaceEntityTagAssignmentConfig) WorkspaceEntityTagAssignment {
 	_init_.Initialize()
 
@@ -389,7 +413,7 @@ func NewWorkspaceEntityTagAssignment(scope constructs.Construct, id *string, con
 	j := jsiiProxy_WorkspaceEntityTagAssignment{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
+		"@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -397,12 +421,12 @@ func NewWorkspaceEntityTagAssignment(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Resource.
 func NewWorkspaceEntityTagAssignment_Override(w WorkspaceEntityTagAssignment, scope constructs.Construct, id *string, config *WorkspaceEntityTagAssignmentConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
+		"@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -460,7 +484,7 @@ func (j *jsiiProxy_WorkspaceEntityTagAssignment)SetEntityType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspaceEntityTagAssignment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkspaceEntityTagAssignment)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -468,7 +492,7 @@ func (j *jsiiProxy_WorkspaceEntityTagAssignment)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_WorkspaceEntityTagAssignment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkspaceEntityTagAssignment)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +503,7 @@ func (j *jsiiProxy_WorkspaceEntityTagAssignment)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_WorkspaceEntityTagAssignment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkspaceEntityTagAssignment)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -520,17 +544,17 @@ func (j *jsiiProxy_WorkspaceEntityTagAssignment)SetTagValue(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a WorkspaceEntityTagAssignment resource upon running "cdktf plan <stack-name>".
-func WorkspaceEntityTagAssignment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a WorkspaceEntityTagAssignment resource upon running "cdktn plan <stack-name>".
+func WorkspaceEntityTagAssignment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateWorkspaceEntityTagAssignment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
+		"@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -565,7 +589,7 @@ func WorkspaceEntityTagAssignment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
+		"@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +608,7 @@ func WorkspaceEntityTagAssignment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
+		"@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -603,7 +627,7 @@ func WorkspaceEntityTagAssignment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
+		"@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -616,7 +640,7 @@ func WorkspaceEntityTagAssignment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
+		"@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment",
 		"tfResourceType",
 		&returns,
 	)
@@ -661,11 +685,11 @@ func (w *jsiiProxy_WorkspaceEntityTagAssignment) GetAnyMapAttribute(terraformAtt
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceEntityTagAssignment) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkspaceEntityTagAssignment) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -802,7 +826,7 @@ func (w *jsiiProxy_WorkspaceEntityTagAssignment) HasResourceMove() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceEntityTagAssignment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (w *jsiiProxy_WorkspaceEntityTagAssignment) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := w.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -813,11 +837,11 @@ func (w *jsiiProxy_WorkspaceEntityTagAssignment) ImportFrom(id *string, provider
 	)
 }
 
-func (w *jsiiProxy_WorkspaceEntityTagAssignment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkspaceEntityTagAssignment) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -873,10 +897,29 @@ func (w *jsiiProxy_WorkspaceEntityTagAssignment) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (w *jsiiProxy_WorkspaceEntityTagAssignment) PutProviderConfig(value *WorkspaceEntityTagAssignmentProviderConfig) {
+	if err := w.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkspaceEntityTagAssignment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspaceEntityTagAssignment) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

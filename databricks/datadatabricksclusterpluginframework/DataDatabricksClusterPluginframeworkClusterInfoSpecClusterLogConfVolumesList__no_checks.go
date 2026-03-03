@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLog
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLog
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLog
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

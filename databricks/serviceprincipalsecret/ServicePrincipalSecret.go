@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package serviceprincipalsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/serviceprincipalsecret/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/serviceprincipalsecret/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
 type ServicePrincipalSecret interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,9 +38,9 @@ type ServicePrincipalSecret interface {
 	SetExpireTime(val *string)
 	ExpireTimeInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -49,18 +49,20 @@ type ServicePrincipalSecret interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Lifetime() *string
 	SetLifetime(val *string)
 	LifetimeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() ServicePrincipalSecretProviderConfigOutputReference
+	ProviderConfigInput() *ServicePrincipalSecretProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -80,7 +82,7 @@ type ServicePrincipalSecret interface {
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -99,7 +101,7 @@ type ServicePrincipalSecret interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -117,9 +119,9 @@ type ServicePrincipalSecret interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -134,6 +136,7 @@ type ServicePrincipalSecret interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *ServicePrincipalSecretProviderConfig)
 	ResetCreateTime()
 	ResetExpireTime()
 	ResetId()
@@ -141,6 +144,7 @@ type ServicePrincipalSecret interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSecret()
 	ResetSecretHash()
 	ResetStatus()
@@ -161,11 +165,11 @@ type ServicePrincipalSecret interface {
 
 // The jsii proxy struct for ServicePrincipalSecret
 type jsiiProxy_ServicePrincipalSecret struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_ServicePrincipalSecret) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ServicePrincipalSecret) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -254,8 +258,8 @@ func (j *jsiiProxy_ServicePrincipalSecret) ExpireTimeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipalSecret) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ServicePrincipalSecret) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -304,8 +308,8 @@ func (j *jsiiProxy_ServicePrincipalSecret) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipalSecret) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ServicePrincipalSecret) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -344,11 +348,31 @@ func (j *jsiiProxy_ServicePrincipalSecret) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipalSecret) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ServicePrincipalSecret) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) ProviderConfig() ServicePrincipalSecretProviderConfigOutputReference {
+	var returns ServicePrincipalSecretProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) ProviderConfigInput() *ServicePrincipalSecretProviderConfig {
+	var returns *ServicePrincipalSecretProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -454,8 +478,8 @@ func (j *jsiiProxy_ServicePrincipalSecret) StatusInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServicePrincipalSecret) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ServicePrincipalSecret) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -525,7 +549,7 @@ func (j *jsiiProxy_ServicePrincipalSecret) UpdateTimeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
 func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *ServicePrincipalSecretConfig) ServicePrincipalSecret {
 	_init_.Initialize()
 
@@ -535,7 +559,7 @@ func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *S
 	j := jsiiProxy_ServicePrincipalSecret{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
+		"@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,12 +567,12 @@ func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
 func NewServicePrincipalSecret_Override(s ServicePrincipalSecret, scope constructs.Construct, id *string, config *ServicePrincipalSecretConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
+		"@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -606,7 +630,7 @@ func (j *jsiiProxy_ServicePrincipalSecret)SetExpireTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalSecret)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicePrincipalSecret)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -625,7 +649,7 @@ func (j *jsiiProxy_ServicePrincipalSecret)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalSecret)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicePrincipalSecret)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +671,7 @@ func (j *jsiiProxy_ServicePrincipalSecret)SetLifetime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePrincipalSecret)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicePrincipalSecret)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -732,17 +756,17 @@ func (j *jsiiProxy_ServicePrincipalSecret)SetUpdateTime(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ServicePrincipalSecret resource upon running "cdktf plan <stack-name>".
-func ServicePrincipalSecret_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ServicePrincipalSecret resource upon running "cdktn plan <stack-name>".
+func ServicePrincipalSecret_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateServicePrincipalSecret_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
+		"@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -777,7 +801,7 @@ func ServicePrincipalSecret_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
+		"@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +820,7 @@ func ServicePrincipalSecret_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
+		"@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -815,7 +839,7 @@ func ServicePrincipalSecret_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
+		"@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -828,7 +852,7 @@ func ServicePrincipalSecret_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
+		"@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
 		"tfResourceType",
 		&returns,
 	)
@@ -873,11 +897,11 @@ func (s *jsiiProxy_ServicePrincipalSecret) GetAnyMapAttribute(terraformAttribute
 	return returns
 }
 
-func (s *jsiiProxy_ServicePrincipalSecret) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServicePrincipalSecret) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1014,7 +1038,7 @@ func (s *jsiiProxy_ServicePrincipalSecret) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ServicePrincipalSecret) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_ServicePrincipalSecret) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1025,11 +1049,11 @@ func (s *jsiiProxy_ServicePrincipalSecret) ImportFrom(id *string, provider cdktf
 	)
 }
 
-func (s *jsiiProxy_ServicePrincipalSecret) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServicePrincipalSecret) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1085,6 +1109,17 @@ func (s *jsiiProxy_ServicePrincipalSecret) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (s *jsiiProxy_ServicePrincipalSecret) PutProviderConfig(value *ServicePrincipalSecretProviderConfig) {
+	if err := s.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_ServicePrincipalSecret) ResetCreateTime() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1121,6 +1156,14 @@ func (s *jsiiProxy_ServicePrincipalSecret) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipalSecret) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

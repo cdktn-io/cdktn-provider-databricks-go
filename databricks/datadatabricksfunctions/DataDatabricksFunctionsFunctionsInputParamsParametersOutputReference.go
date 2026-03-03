@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksfunctions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfunctions/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -55,9 +55,9 @@ type DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TypeIntervalType() *string
 	SetTypeIntervalType(val *string)
 	TypeIntervalTypeInput() *string
@@ -81,7 +81,7 @@ type DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference interf
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -97,9 +97,9 @@ type DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetComment()
 	ResetParameterDefault()
 	ResetParameterMode()
@@ -110,7 +110,7 @@ type DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference interf
 	ResetTypeScale()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,7 +120,7 @@ type DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference interf
 
 // The jsii proxy struct for DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference
 type jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) Comment() *string {
@@ -303,8 +303,8 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -434,7 +434,7 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputRe
 }
 
 
-func NewDataDatabricksFunctionsFunctionsInputParamsParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference {
+func NewDataDatabricksFunctionsFunctionsInputParamsParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksFunctionsFunctionsInputParamsParametersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -443,7 +443,7 @@ func NewDataDatabricksFunctionsFunctionsInputParamsParametersOutputReference(ter
 	j := jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -451,11 +451,11 @@ func NewDataDatabricksFunctionsFunctionsInputParamsParametersOutputReference(ter
 	return &j
 }
 
-func NewDataDatabricksFunctionsFunctionsInputParamsParametersOutputReference_Override(d DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksFunctionsFunctionsInputParamsParametersOutputReference_Override(d DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -571,7 +571,7 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputRe
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,11 +677,11 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -805,8 +805,8 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -818,11 +818,11 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -898,7 +898,7 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputRe
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

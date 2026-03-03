@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package qualitymonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/qualitymonitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/qualitymonitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type QualityMonitorScheduleList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type QualityMonitorScheduleList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type QualityMonitorScheduleList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) QualityMonitorScheduleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type QualityMonitorScheduleList interface {
 
 // The jsii proxy struct for QualityMonitorScheduleList
 type jsiiProxy_QualityMonitorScheduleList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_QualityMonitorScheduleList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_QualityMonitorScheduleList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorScheduleList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_QualityMonitorScheduleList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_QualityMonitorScheduleList) WrapsSet() *bool {
 }
 
 
-func NewQualityMonitorScheduleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorScheduleList {
+func NewQualityMonitorScheduleList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorScheduleList {
 	_init_.Initialize()
 
 	if err := validateNewQualityMonitorScheduleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewQualityMonitorScheduleList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_QualityMonitorScheduleList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewQualityMonitorScheduleList(terraformResource cdktf.IInterpolatingParent,
 	return &j
 }
 
-func NewQualityMonitorScheduleList_Override(q QualityMonitorScheduleList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewQualityMonitorScheduleList_Override(q QualityMonitorScheduleList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		q,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_QualityMonitorScheduleList)SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorScheduleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QualityMonitorScheduleList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_QualityMonitorScheduleList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (q *jsiiProxy_QualityMonitorScheduleList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (q *jsiiProxy_QualityMonitorScheduleList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := q.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		q,
@@ -231,7 +231,7 @@ func (q *jsiiProxy_QualityMonitorScheduleList) Get(index *float64) QualityMonito
 	return returns
 }
 
-func (q *jsiiProxy_QualityMonitorScheduleList) Resolve(context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QualityMonitorScheduleList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validatePutEmailsPar
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataDatabricksUsersUsersEmails:
 		value := value.(*[]*DataDatabricksUsersUsersEmails)
@@ -117,7 +117,7 @@ func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validatePutEmailsPar
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksUsersUsersEmails; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksUsersUsersEmails; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validatePutEntitleme
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataDatabricksUsersUsersEntitlements:
 		value := value.(*[]*DataDatabricksUsersUsersEntitlements)
@@ -148,7 +148,7 @@ func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validatePutEntitleme
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksUsersUsersEntitlements; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksUsersUsersEntitlements; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validatePutGroupsPar
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataDatabricksUsersUsersGroups:
 		value := value.(*[]*DataDatabricksUsersUsersGroups)
@@ -179,7 +179,7 @@ func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validatePutGroupsPar
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksUsersUsersGroups; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksUsersUsersGroups; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -202,7 +202,7 @@ func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validatePutRolesPara
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataDatabricksUsersUsersRoles:
 		value := value.(*[]*DataDatabricksUsersUsersRoles)
@@ -221,14 +221,14 @@ func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validatePutRolesPara
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksUsersUsersRoles; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksUsersUsersRoles; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -245,11 +245,11 @@ func (j *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateSetActivePar
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateSetIdParamet
 
 func (j *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *DataDatabricksUsersUsers:
 		val := val.(*DataDatabricksUsersUsers)
@@ -362,7 +362,7 @@ func (j *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateSetInternalV
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksUsersUsers; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DataDatabricksUsersUsers; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataDatabricksUsersUsersOutputReference) validateSetUserNameP
 	return nil
 }
 
-func validateNewDataDatabricksUsersUsersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataDatabricksUsersUsersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

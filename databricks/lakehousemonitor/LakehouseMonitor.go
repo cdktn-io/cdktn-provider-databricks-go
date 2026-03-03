@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package lakehousemonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/lakehousemonitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/lakehousemonitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}.
 type LakehouseMonitor interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AssetsDir() *string
 	SetAssetsDir(val *string)
 	AssetsDirInput() *string
@@ -22,7 +22,7 @@ type LakehouseMonitor interface {
 	SetBaselineTableName(val *string)
 	BaselineTableNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -44,9 +44,9 @@ type LakehouseMonitor interface {
 	SetDependsOn(val *[]*string)
 	DriftMetricsTableName() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -60,9 +60,9 @@ type LakehouseMonitor interface {
 	SetLatestMonitorFailureMsg(val *string)
 	LatestMonitorFailureMsgInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MonitorVersion() *float64
 	// The tree node.
 	Node() constructs.Node
@@ -73,9 +73,11 @@ type LakehouseMonitor interface {
 	OutputSchemaNameInput() *string
 	ProfileMetricsTableName() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() LakehouseMonitorProviderConfigOutputReference
+	ProviderConfigInput() *LakehouseMonitorProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -97,7 +99,7 @@ type LakehouseMonitor interface {
 	SetTableName(val *string)
 	TableNameInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -117,7 +119,7 @@ type LakehouseMonitor interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -135,9 +137,9 @@ type LakehouseMonitor interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -156,6 +158,7 @@ type LakehouseMonitor interface {
 	PutDataClassificationConfig(value *LakehouseMonitorDataClassificationConfig)
 	PutInferenceLog(value *LakehouseMonitorInferenceLog)
 	PutNotifications(value *LakehouseMonitorNotifications)
+	PutProviderConfig(value *LakehouseMonitorProviderConfig)
 	PutSchedule(value *LakehouseMonitorSchedule)
 	PutSnapshot(value *LakehouseMonitorSnapshot)
 	PutTimeouts(value *LakehouseMonitorTimeouts)
@@ -170,6 +173,7 @@ type LakehouseMonitor interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSchedule()
 	ResetSkipBuiltinDashboard()
 	ResetSlicingExprs()
@@ -192,7 +196,7 @@ type LakehouseMonitor interface {
 
 // The jsii proxy struct for LakehouseMonitor
 type jsiiProxy_LakehouseMonitor struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_LakehouseMonitor) AssetsDir() *string {
@@ -235,8 +239,8 @@ func (j *jsiiProxy_LakehouseMonitor) BaselineTableNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LakehouseMonitor) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_LakehouseMonitor) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -345,8 +349,8 @@ func (j *jsiiProxy_LakehouseMonitor) DriftMetricsTableName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LakehouseMonitor) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_LakehouseMonitor) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -435,8 +439,8 @@ func (j *jsiiProxy_LakehouseMonitor) LatestMonitorFailureMsgInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LakehouseMonitor) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_LakehouseMonitor) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -515,11 +519,31 @@ func (j *jsiiProxy_LakehouseMonitor) ProfileMetricsTableName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LakehouseMonitor) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_LakehouseMonitor) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakehouseMonitor) ProviderConfig() LakehouseMonitorProviderConfigOutputReference {
+	var returns LakehouseMonitorProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakehouseMonitor) ProviderConfigInput() *LakehouseMonitorProviderConfig {
+	var returns *LakehouseMonitorProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -655,8 +679,8 @@ func (j *jsiiProxy_LakehouseMonitor) TableNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LakehouseMonitor) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_LakehouseMonitor) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -746,7 +770,7 @@ func (j *jsiiProxy_LakehouseMonitor) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
 func NewLakehouseMonitor(scope constructs.Construct, id *string, config *LakehouseMonitorConfig) LakehouseMonitor {
 	_init_.Initialize()
 
@@ -756,7 +780,7 @@ func NewLakehouseMonitor(scope constructs.Construct, id *string, config *Lakehou
 	j := jsiiProxy_LakehouseMonitor{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -764,12 +788,12 @@ func NewLakehouseMonitor(scope constructs.Construct, id *string, config *Lakehou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
 func NewLakehouseMonitor_Override(l LakehouseMonitor, scope constructs.Construct, id *string, config *LakehouseMonitorConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -827,7 +851,7 @@ func (j *jsiiProxy_LakehouseMonitor)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LakehouseMonitor)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LakehouseMonitor)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -857,7 +881,7 @@ func (j *jsiiProxy_LakehouseMonitor)SetLatestMonitorFailureMsg(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LakehouseMonitor)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LakehouseMonitor)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -879,7 +903,7 @@ func (j *jsiiProxy_LakehouseMonitor)SetOutputSchemaName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LakehouseMonitor)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LakehouseMonitor)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -942,17 +966,17 @@ func (j *jsiiProxy_LakehouseMonitor)SetWarehouseId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a LakehouseMonitor resource upon running "cdktf plan <stack-name>".
-func LakehouseMonitor_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a LakehouseMonitor resource upon running "cdktn plan <stack-name>".
+func LakehouseMonitor_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateLakehouseMonitor_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -987,7 +1011,7 @@ func LakehouseMonitor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1006,7 +1030,7 @@ func LakehouseMonitor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1025,7 +1049,7 @@ func LakehouseMonitor_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1038,7 +1062,7 @@ func LakehouseMonitor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor",
 		"tfResourceType",
 		&returns,
 	)
@@ -1083,11 +1107,11 @@ func (l *jsiiProxy_LakehouseMonitor) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (l *jsiiProxy_LakehouseMonitor) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LakehouseMonitor) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -1224,7 +1248,7 @@ func (l *jsiiProxy_LakehouseMonitor) HasResourceMove() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LakehouseMonitor) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (l *jsiiProxy_LakehouseMonitor) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1235,11 +1259,11 @@ func (l *jsiiProxy_LakehouseMonitor) ImportFrom(id *string, provider cdktf.Terra
 	)
 }
 
-func (l *jsiiProxy_LakehouseMonitor) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LakehouseMonitor) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -1335,6 +1359,17 @@ func (l *jsiiProxy_LakehouseMonitor) PutNotifications(value *LakehouseMonitorNot
 	_jsii_.InvokeVoid(
 		l,
 		"putNotifications",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LakehouseMonitor) PutProviderConfig(value *LakehouseMonitorProviderConfig) {
+	if err := l.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putProviderConfig",
 		[]interface{}{value},
 	)
 }
@@ -1443,6 +1478,14 @@ func (l *jsiiProxy_LakehouseMonitor) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakehouseMonitor) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

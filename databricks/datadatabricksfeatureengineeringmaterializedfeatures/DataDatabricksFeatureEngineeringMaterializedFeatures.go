@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksfeatureengineeringmaterializedfeatures
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeatures/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfeatureengineeringmaterializedfeatures/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features}.
 type DataDatabricksFeatureEngineeringMaterializedFeatures interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -31,17 +31,17 @@ type DataDatabricksFeatureEngineeringMaterializedFeatures interface {
 	SetFeatureName(val *string)
 	FeatureNameInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaterializedFeatures() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesList
 	// The tree node.
 	Node() constructs.Node
@@ -49,13 +49,15 @@ type DataDatabricksFeatureEngineeringMaterializedFeatures interface {
 	SetPageSize(val *float64)
 	PageSizeInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -65,7 +67,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeatures interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,15 +83,17 @@ type DataDatabricksFeatureEngineeringMaterializedFeatures interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfig)
 	ResetFeatureName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPageSize()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -106,11 +110,11 @@ type DataDatabricksFeatureEngineeringMaterializedFeatures interface {
 
 // The jsii proxy struct for DataDatabricksFeatureEngineeringMaterializedFeatures
 type jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -169,8 +173,8 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) Feature
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -199,8 +203,8 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) Friendl
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -249,11 +253,31 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) PageSiz
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) ProviderConfig() DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfigOutputReference {
+	var returns DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -269,8 +293,8 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) RawOver
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -300,7 +324,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) Terrafo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source.
 func NewDataDatabricksFeatureEngineeringMaterializedFeatures(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringMaterializedFeaturesConfig) DataDatabricksFeatureEngineeringMaterializedFeatures {
 	_init_.Initialize()
 
@@ -310,7 +334,7 @@ func NewDataDatabricksFeatureEngineeringMaterializedFeatures(scope constructs.Co
 	j := jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -318,12 +342,12 @@ func NewDataDatabricksFeatureEngineeringMaterializedFeatures(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source.
 func NewDataDatabricksFeatureEngineeringMaterializedFeatures_Override(d DataDatabricksFeatureEngineeringMaterializedFeatures, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringMaterializedFeaturesConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -359,7 +383,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures)SetFeatu
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -367,7 +391,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures)SetForEa
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +413,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures)SetPageS
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -397,17 +421,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures)SetProvi
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksFeatureEngineeringMaterializedFeatures resource upon running "cdktf plan <stack-name>".
-func DataDatabricksFeatureEngineeringMaterializedFeatures_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksFeatureEngineeringMaterializedFeatures resource upon running "cdktn plan <stack-name>".
+func DataDatabricksFeatureEngineeringMaterializedFeatures_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksFeatureEngineeringMaterializedFeatures_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -442,7 +466,7 @@ func DataDatabricksFeatureEngineeringMaterializedFeatures_IsConstruct(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -461,7 +485,7 @@ func DataDatabricksFeatureEngineeringMaterializedFeatures_IsTerraformDataSource(
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +504,7 @@ func DataDatabricksFeatureEngineeringMaterializedFeatures_IsTerraformElement(x i
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -493,7 +517,7 @@ func DataDatabricksFeatureEngineeringMaterializedFeatures_TfResourceType() *stri
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeatures.DataDatabricksFeatureEngineeringMaterializedFeatures",
 		"tfResourceType",
 		&returns,
 	)
@@ -527,11 +551,11 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -655,11 +679,11 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -679,6 +703,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) Overrid
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) PutProviderConfig(value *DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
 	)
 }
 
@@ -702,6 +737,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) ResetPa
 	_jsii_.InvokeVoid(
 		d,
 		"resetPageSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

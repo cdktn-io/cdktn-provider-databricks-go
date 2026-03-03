@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspa
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -87,11 +87,11 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspa
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

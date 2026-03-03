@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package modelservingprovisionedthroughput
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/modelservingprovisionedthroughput/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/modelservingprovisionedthroughput/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ModelServingProvisionedThroughputConfigAOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,9 +39,9 @@ type ModelServingProvisionedThroughputConfigAOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TrafficConfig() ModelServingProvisionedThroughputConfigTrafficConfigOutputReference
 	TrafficConfigInput() *ModelServingProvisionedThroughputConfigTrafficConfig
 	// Experimental.
@@ -49,7 +49,7 @@ type ModelServingProvisionedThroughputConfigAOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,16 +65,16 @@ type ModelServingProvisionedThroughputConfigAOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutServedEntities(value interface{})
 	PutTrafficConfig(value *ModelServingProvisionedThroughputConfigTrafficConfig)
 	ResetServedEntities()
 	ResetTrafficConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ModelServingProvisionedThroughputConfigAOutputReference interface {
 
 // The jsii proxy struct for ModelServingProvisionedThroughputConfigAOutputReference
 type jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) ComplexObjectIndex() interface{} {
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) Traf
 }
 
 
-func NewModelServingProvisionedThroughputConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputConfigAOutputReference {
+func NewModelServingProvisionedThroughputConfigAOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputConfigAOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewModelServingProvisionedThroughputConfigAOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewModelServingProvisionedThroughputConfigAOutputReference(terraformResourc
 	j := jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigAOutputReference",
+		"@cdktn/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewModelServingProvisionedThroughputConfigAOutputReference(terraformResourc
 	return &j
 }
 
-func NewModelServingProvisionedThroughputConfigAOutputReference_Override(m ModelServingProvisionedThroughputConfigAOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewModelServingProvisionedThroughputConfigAOutputReference_Override(m ModelServingProvisionedThroughputConfigAOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigAOutputReference",
+		"@cdktn/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -269,7 +269,7 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,11 +309,11 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) GetA
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -437,8 +437,8 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) GetS
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -450,11 +450,11 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) Inte
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -504,7 +504,7 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) Rese
 	)
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigAOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

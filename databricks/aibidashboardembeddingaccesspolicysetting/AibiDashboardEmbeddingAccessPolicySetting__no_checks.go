@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validatePutAibiDas
 	return nil
 }
 
+func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validatePutProviderConfigParameters(value *AibiDashboardEmbeddingAccessPolicySettingProviderConfig) error {
+	return nil
+}
+
 func validateAibiDashboardEmbeddingAccessPolicySetting_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -111,7 +115,7 @@ func (j *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

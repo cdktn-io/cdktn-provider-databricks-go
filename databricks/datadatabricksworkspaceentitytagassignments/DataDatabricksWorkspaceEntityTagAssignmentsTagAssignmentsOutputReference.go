@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksworkspaceentitytagassignments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksworkspaceentitytagassignments/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksworkspaceentitytagassignments/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,6 +38,8 @@ type DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference in
 	Fqn() *string
 	InternalValue() *DataDatabricksWorkspaceEntityTagAssignmentsTagAssignments
 	SetInternalValue(val *DataDatabricksWorkspaceEntityTagAssignmentsTagAssignments)
+	ProviderConfig() DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	TagKey() *string
 	SetTagKey(val *string)
 	TagKeyInput() *string
@@ -47,15 +49,15 @@ type DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,12 +73,14 @@ type DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutProviderConfig(value *DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfig)
+	ResetProviderConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +90,7 @@ type DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference in
 
 // The jsii proxy struct for DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference
 type jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) ComplexObjectIndex() interface{} {
@@ -179,6 +183,26 @@ func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutp
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) ProviderConfig() DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfigOutputReference {
+	var returns DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) TagKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -219,8 +243,8 @@ func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutp
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -230,7 +254,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutp
 }
 
 
-func NewDataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference {
+func NewDataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -239,7 +263,7 @@ func NewDataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference
 	j := jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksWorkspaceEntityTagAssignments.DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksWorkspaceEntityTagAssignments.DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -247,11 +271,11 @@ func NewDataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference
 	return &j
 }
 
-func NewDataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference_Override(d DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference_Override(d DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksWorkspaceEntityTagAssignments.DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksWorkspaceEntityTagAssignments.DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -334,7 +358,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutp
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,11 +398,11 @@ func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutp
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -502,8 +526,8 @@ func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutp
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -515,11 +539,11 @@ func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutp
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -531,7 +555,26 @@ func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutp
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) PutProviderConfig(value *DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

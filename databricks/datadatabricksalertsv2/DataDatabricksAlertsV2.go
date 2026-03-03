@@ -1,23 +1,23 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksalertsv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksalertsv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksalertsv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/alerts_v2 databricks_alerts_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/alerts_v2 databricks_alerts_v2}.
 type DataDatabricksAlertsV2 interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	Alerts() DataDatabricksAlertsV2AlertsList
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,30 +29,32 @@ type DataDatabricksAlertsV2 interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	PageSize() *float64
 	SetPageSize(val *float64)
 	PageSizeInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DataDatabricksAlertsV2ProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -62,7 +64,7 @@ type DataDatabricksAlertsV2 interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,14 +80,16 @@ type DataDatabricksAlertsV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksAlertsV2ProviderConfig)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPageSize()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -102,7 +106,7 @@ type DataDatabricksAlertsV2 interface {
 
 // The jsii proxy struct for DataDatabricksAlertsV2
 type jsiiProxy_DataDatabricksAlertsV2 struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataDatabricksAlertsV2) Alerts() DataDatabricksAlertsV2AlertsList {
@@ -115,8 +119,8 @@ func (j *jsiiProxy_DataDatabricksAlertsV2) Alerts() DataDatabricksAlertsV2Alerts
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksAlertsV2) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -155,8 +159,8 @@ func (j *jsiiProxy_DataDatabricksAlertsV2) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksAlertsV2) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -185,8 +189,8 @@ func (j *jsiiProxy_DataDatabricksAlertsV2) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksAlertsV2) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -225,11 +229,31 @@ func (j *jsiiProxy_DataDatabricksAlertsV2) PageSizeInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksAlertsV2) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2) ProviderConfig() DataDatabricksAlertsV2ProviderConfigOutputReference {
+	var returns DataDatabricksAlertsV2ProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -245,8 +269,8 @@ func (j *jsiiProxy_DataDatabricksAlertsV2) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksAlertsV2) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -276,7 +300,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
 func NewDataDatabricksAlertsV2(scope constructs.Construct, id *string, config *DataDatabricksAlertsV2Config) DataDatabricksAlertsV2 {
 	_init_.Initialize()
 
@@ -286,7 +310,7 @@ func NewDataDatabricksAlertsV2(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataDatabricksAlertsV2{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
+		"@cdktn/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -294,12 +318,12 @@ func NewDataDatabricksAlertsV2(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
 func NewDataDatabricksAlertsV2_Override(d DataDatabricksAlertsV2, scope constructs.Construct, id *string, config *DataDatabricksAlertsV2Config) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
+		"@cdktn/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -324,7 +348,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksAlertsV2)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -332,7 +356,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksAlertsV2)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,7 +378,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2)SetPageSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksAlertsV2)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -362,17 +386,17 @@ func (j *jsiiProxy_DataDatabricksAlertsV2)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksAlertsV2 resource upon running "cdktf plan <stack-name>".
-func DataDatabricksAlertsV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksAlertsV2 resource upon running "cdktn plan <stack-name>".
+func DataDatabricksAlertsV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksAlertsV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
+		"@cdktn/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -407,7 +431,7 @@ func DataDatabricksAlertsV2_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
+		"@cdktn/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -426,7 +450,7 @@ func DataDatabricksAlertsV2_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
+		"@cdktn/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +469,7 @@ func DataDatabricksAlertsV2_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
+		"@cdktn/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -458,7 +482,7 @@ func DataDatabricksAlertsV2_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
+		"@cdktn/provider-databricks.dataDatabricksAlertsV2.DataDatabricksAlertsV2",
 		"tfResourceType",
 		&returns,
 	)
@@ -492,11 +516,11 @@ func (d *jsiiProxy_DataDatabricksAlertsV2) GetAnyMapAttribute(terraformAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAlertsV2) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -620,11 +644,11 @@ func (d *jsiiProxy_DataDatabricksAlertsV2) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAlertsV2) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -647,6 +671,17 @@ func (d *jsiiProxy_DataDatabricksAlertsV2) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAlertsV2) PutProviderConfig(value *DataDatabricksAlertsV2ProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAlertsV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -659,6 +694,14 @@ func (d *jsiiProxy_DataDatabricksAlertsV2) ResetPageSize() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPageSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAlertsV2) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

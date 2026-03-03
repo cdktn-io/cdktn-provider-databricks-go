@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package notificationdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/notificationdestination/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type NotificationDestinationConfigEmailOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Addresses() *[]*string
 	SetAddresses(val *[]*string)
 	AddressesInput() *[]*string
@@ -40,15 +40,15 @@ type NotificationDestinationConfigEmailOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type NotificationDestinationConfigEmailOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAddresses()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type NotificationDestinationConfigEmailOutputReference interface {
 
 // The jsii proxy struct for NotificationDestinationConfigEmailOutputReference
 type jsiiProxy_NotificationDestinationConfigEmailOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NotificationDestinationConfigEmailOutputReference) Addresses() *[]*string {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_NotificationDestinationConfigEmailOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestinationConfigEmailOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NotificationDestinationConfigEmailOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_NotificationDestinationConfigEmailOutputReference) TerraformR
 }
 
 
-func NewNotificationDestinationConfigEmailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigEmailOutputReference {
+func NewNotificationDestinationConfigEmailOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigEmailOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNotificationDestinationConfigEmailOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewNotificationDestinationConfigEmailOutputReference(terraformResource cdkt
 	j := jsiiProxy_NotificationDestinationConfigEmailOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigEmailOutputReference",
+		"@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigEmailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewNotificationDestinationConfigEmailOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewNotificationDestinationConfigEmailOutputReference_Override(n NotificationDestinationConfigEmailOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNotificationDestinationConfigEmailOutputReference_Override(n NotificationDestinationConfigEmailOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigEmailOutputReference",
+		"@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigEmailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -256,7 +256,7 @@ func (j *jsiiProxy_NotificationDestinationConfigEmailOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_NotificationDestinationConfigEmailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationDestinationConfigEmailOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) GetAnyMapA
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -424,8 +424,8 @@ func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) GetStringM
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -437,11 +437,11 @@ func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) Interpolat
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -461,7 +461,7 @@ func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) ResetAddre
 	)
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationDestinationConfigEmailOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

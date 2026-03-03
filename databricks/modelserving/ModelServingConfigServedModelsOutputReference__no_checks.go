@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,11 @@ func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateInterp
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetBurstScalingEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -111,7 +115,7 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -123,7 +127,7 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetWor
 	return nil
 }
 
-func validateNewModelServingConfigServedModelsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewModelServingConfigServedModelsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package featureengineeringkafkaconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/featureengineeringkafkaconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FeatureEngineeringKafkaConfigValueSchemaOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type FeatureEngineeringKafkaConfigValueSchemaOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type FeatureEngineeringKafkaConfigValueSchemaOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetJsonSchema()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type FeatureEngineeringKafkaConfigValueSchemaOutputReference interface {
 
 // The jsii proxy struct for FeatureEngineeringKafkaConfigValueSchemaOutputReference
 type jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) Terr
 }
 
 
-func NewFeatureEngineeringKafkaConfigValueSchemaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FeatureEngineeringKafkaConfigValueSchemaOutputReference {
+func NewFeatureEngineeringKafkaConfigValueSchemaOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FeatureEngineeringKafkaConfigValueSchemaOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFeatureEngineeringKafkaConfigValueSchemaOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewFeatureEngineeringKafkaConfigValueSchemaOutputReference(terraformResourc
 	j := jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigValueSchemaOutputReference",
+		"@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigValueSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewFeatureEngineeringKafkaConfigValueSchemaOutputReference(terraformResourc
 	return &j
 }
 
-func NewFeatureEngineeringKafkaConfigValueSchemaOutputReference_Override(f FeatureEngineeringKafkaConfigValueSchemaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFeatureEngineeringKafkaConfigValueSchemaOutputReference_Override(f FeatureEngineeringKafkaConfigValueSchemaOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigValueSchemaOutputReference",
+		"@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigValueSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -256,7 +256,7 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) GetA
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -424,8 +424,8 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) GetS
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -437,11 +437,11 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) Inte
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -461,7 +461,7 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) Rese
 	)
 }
 
-func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

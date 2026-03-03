@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package qualitymonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/qualitymonitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/qualitymonitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type QualityMonitorProviderConfigList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type QualityMonitorProviderConfigList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type QualityMonitorProviderConfigList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) QualityMonitorProviderConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type QualityMonitorProviderConfigList interface {
 
 // The jsii proxy struct for QualityMonitorProviderConfigList
 type jsiiProxy_QualityMonitorProviderConfigList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_QualityMonitorProviderConfigList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_QualityMonitorProviderConfigList) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorProviderConfigList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_QualityMonitorProviderConfigList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_QualityMonitorProviderConfigList) WrapsSet() *bool {
 }
 
 
-func NewQualityMonitorProviderConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorProviderConfigList {
+func NewQualityMonitorProviderConfigList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorProviderConfigList {
 	_init_.Initialize()
 
 	if err := validateNewQualityMonitorProviderConfigListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewQualityMonitorProviderConfigList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_QualityMonitorProviderConfigList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorProviderConfigList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorProviderConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewQualityMonitorProviderConfigList(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewQualityMonitorProviderConfigList_Override(q QualityMonitorProviderConfigList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewQualityMonitorProviderConfigList_Override(q QualityMonitorProviderConfigList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorProviderConfigList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorProviderConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		q,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_QualityMonitorProviderConfigList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorProviderConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QualityMonitorProviderConfigList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_QualityMonitorProviderConfigList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (q *jsiiProxy_QualityMonitorProviderConfigList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (q *jsiiProxy_QualityMonitorProviderConfigList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := q.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		q,
@@ -231,7 +231,7 @@ func (q *jsiiProxy_QualityMonitorProviderConfigList) Get(index *float64) Quality
 	return returns
 }
 
-func (q *jsiiProxy_QualityMonitorProviderConfigList) Resolve(context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QualityMonitorProviderConfigList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

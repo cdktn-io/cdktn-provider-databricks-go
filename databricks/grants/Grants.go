@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package grants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/grants/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/grants/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grants databricks_grants}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grants databricks_grants}.
 type Grants interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Catalog() *string
 	SetCatalog(val *string)
 	CatalogInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -41,9 +41,9 @@ type Grants interface {
 	SetExternalLocation(val *string)
 	ExternalLocationInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	ForeignConnection() *string
 	SetForeignConnection(val *string)
 	ForeignConnectionInput() *string
@@ -60,9 +60,9 @@ type Grants interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Metastore() *string
 	SetMetastore(val *string)
 	MetastoreInput() *string
@@ -75,9 +75,11 @@ type Grants interface {
 	SetPipeline(val *string)
 	PipelineInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() GrantsProviderConfigOutputReference
+	ProviderConfigInput() *GrantsProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -100,7 +102,7 @@ type Grants interface {
 	SetTable(val *string)
 	TableInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -116,7 +118,7 @@ type Grants interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -134,9 +136,9 @@ type Grants interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -152,6 +154,7 @@ type Grants interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGrant(value interface{})
+	PutProviderConfig(value *GrantsProviderConfig)
 	ResetCatalog()
 	ResetCredential()
 	ResetExternalLocation()
@@ -164,6 +167,7 @@ type Grants interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPipeline()
+	ResetProviderConfig()
 	ResetRecipient()
 	ResetSchema()
 	ResetShare()
@@ -185,7 +189,7 @@ type Grants interface {
 
 // The jsii proxy struct for Grants
 type jsiiProxy_Grants struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Grants) Catalog() *string {
@@ -208,8 +212,8 @@ func (j *jsiiProxy_Grants) CatalogInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Grants) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Grants) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -298,8 +302,8 @@ func (j *jsiiProxy_Grants) ExternalLocationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Grants) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Grants) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -408,8 +412,8 @@ func (j *jsiiProxy_Grants) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Grants) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Grants) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -488,11 +492,31 @@ func (j *jsiiProxy_Grants) PipelineInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Grants) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Grants) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) ProviderConfig() GrantsProviderConfigOutputReference {
+	var returns GrantsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) ProviderConfigInput() *GrantsProviderConfig {
+	var returns *GrantsProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -618,8 +642,8 @@ func (j *jsiiProxy_Grants) TableInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Grants) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Grants) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -669,7 +693,7 @@ func (j *jsiiProxy_Grants) VolumeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Grants {
 	_init_.Initialize()
 
@@ -679,7 +703,7 @@ func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Gra
 	j := jsiiProxy_Grants{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.grants.Grants",
+		"@cdktn/provider-databricks.grants.Grants",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -687,12 +711,12 @@ func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Gra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants_Override(g Grants, scope constructs.Construct, id *string, config *GrantsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.grants.Grants",
+		"@cdktn/provider-databricks.grants.Grants",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -761,7 +785,7 @@ func (j *jsiiProxy_Grants)SetExternalLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Grants)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Grants)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -802,7 +826,7 @@ func (j *jsiiProxy_Grants)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Grants)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Grants)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +870,7 @@ func (j *jsiiProxy_Grants)SetPipeline(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Grants)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Grants)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -931,17 +955,17 @@ func (j *jsiiProxy_Grants)SetVolume(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Grants resource upon running "cdktf plan <stack-name>".
-func Grants_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Grants resource upon running "cdktn plan <stack-name>".
+func Grants_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateGrants_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.grants.Grants",
+		"@cdktn/provider-databricks.grants.Grants",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -976,7 +1000,7 @@ func Grants_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.grants.Grants",
+		"@cdktn/provider-databricks.grants.Grants",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -995,7 +1019,7 @@ func Grants_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.grants.Grants",
+		"@cdktn/provider-databricks.grants.Grants",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1014,7 +1038,7 @@ func Grants_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.grants.Grants",
+		"@cdktn/provider-databricks.grants.Grants",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1027,7 +1051,7 @@ func Grants_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.grants.Grants",
+		"@cdktn/provider-databricks.grants.Grants",
 		"tfResourceType",
 		&returns,
 	)
@@ -1072,11 +1096,11 @@ func (g *jsiiProxy_Grants) GetAnyMapAttribute(terraformAttribute *string) *map[s
 	return returns
 }
 
-func (g *jsiiProxy_Grants) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_Grants) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -1213,7 +1237,7 @@ func (g *jsiiProxy_Grants) HasResourceMove() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_Grants) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (g *jsiiProxy_Grants) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1224,11 +1248,11 @@ func (g *jsiiProxy_Grants) ImportFrom(id *string, provider cdktf.TerraformProvid
 	)
 }
 
-func (g *jsiiProxy_Grants) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_Grants) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -1291,6 +1315,17 @@ func (g *jsiiProxy_Grants) PutGrant(value interface{}) {
 	_jsii_.InvokeVoid(
 		g,
 		"putGrant",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_Grants) PutProviderConfig(value *GrantsProviderConfig) {
+	if err := g.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProviderConfig",
 		[]interface{}{value},
 	)
 }
@@ -1371,6 +1406,14 @@ func (g *jsiiProxy_Grants) ResetPipeline() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPipeline",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grants) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

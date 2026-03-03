@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -63,7 +63,7 @@ func (j *jsiiProxy_JobTaskNewClusterLibraryOutputReference) validatePutPypiParam
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterLibraryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskNewClusterLibraryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -95,7 +95,7 @@ func (j *jsiiProxy_JobTaskNewClusterLibraryOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterLibraryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobTaskNewClusterLibraryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -103,7 +103,7 @@ func (j *jsiiProxy_JobTaskNewClusterLibraryOutputReference) validateSetWhlParame
 	return nil
 }
 
-func validateNewJobTaskNewClusterLibraryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewJobTaskNewClusterLibraryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

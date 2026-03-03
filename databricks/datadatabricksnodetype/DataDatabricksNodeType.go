@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksnodetype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksnodetype/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnodetype/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type databricks_node_type}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type databricks_node_type}.
 type DataDatabricksNodeType interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	Arm() interface{}
 	SetArm(val interface{})
 	ArmInput() interface{}
@@ -22,7 +22,7 @@ type DataDatabricksNodeType interface {
 	SetCategory(val *string)
 	CategoryInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -37,9 +37,9 @@ type DataDatabricksNodeType interface {
 	SetFleet(val interface{})
 	FleetInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -57,9 +57,9 @@ type DataDatabricksNodeType interface {
 	SetIsIoCacheEnabled(val interface{})
 	IsIoCacheEnabledInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LocalDisk() interface{}
 	SetLocalDisk(val interface{})
 	LocalDiskInput() interface{}
@@ -84,9 +84,9 @@ type DataDatabricksNodeType interface {
 	SetPhotonWorkerCapable(val interface{})
 	PhotonWorkerCapableInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() DataDatabricksNodeTypeProviderConfigOutputReference
 	ProviderConfigInput() *DataDatabricksNodeTypeProviderConfig
 	// Experimental.
@@ -95,7 +95,7 @@ type DataDatabricksNodeType interface {
 	SetSupportPortForwarding(val interface{})
 	SupportPortForwardingInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -105,7 +105,7 @@ type DataDatabricksNodeType interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -121,7 +121,7 @@ type DataDatabricksNodeType interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -161,7 +161,7 @@ type DataDatabricksNodeType interface {
 
 // The jsii proxy struct for DataDatabricksNodeType
 type jsiiProxy_DataDatabricksNodeType struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataDatabricksNodeType) Arm() interface{} {
@@ -204,8 +204,8 @@ func (j *jsiiProxy_DataDatabricksNodeType) CategoryInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNodeType) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksNodeType) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_DataDatabricksNodeType) FleetInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNodeType) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksNodeType) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_DataDatabricksNodeType) IsIoCacheEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNodeType) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksNodeType) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_DataDatabricksNodeType) PhotonWorkerCapableInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNodeType) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksNodeType) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -594,8 +594,8 @@ func (j *jsiiProxy_DataDatabricksNodeType) SupportPortForwardingInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNodeType) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksNodeType) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -625,7 +625,7 @@ func (j *jsiiProxy_DataDatabricksNodeType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type databricks_node_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type databricks_node_type} Data Source.
 func NewDataDatabricksNodeType(scope constructs.Construct, id *string, config *DataDatabricksNodeTypeConfig) DataDatabricksNodeType {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewDataDatabricksNodeType(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataDatabricksNodeType{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
+		"@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -643,12 +643,12 @@ func NewDataDatabricksNodeType(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type databricks_node_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type databricks_node_type} Data Source.
 func NewDataDatabricksNodeType_Override(d DataDatabricksNodeType, scope constructs.Construct, id *string, config *DataDatabricksNodeTypeConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
+		"@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -706,7 +706,7 @@ func (j *jsiiProxy_DataDatabricksNodeType)SetFleet(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNodeType)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksNodeType)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -758,7 +758,7 @@ func (j *jsiiProxy_DataDatabricksNodeType)SetIsIoCacheEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNodeType)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksNodeType)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +846,7 @@ func (j *jsiiProxy_DataDatabricksNodeType)SetPhotonWorkerCapable(val interface{}
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNodeType)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksNodeType)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -865,17 +865,17 @@ func (j *jsiiProxy_DataDatabricksNodeType)SetSupportPortForwarding(val interface
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksNodeType resource upon running "cdktf plan <stack-name>".
-func DataDatabricksNodeType_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksNodeType resource upon running "cdktn plan <stack-name>".
+func DataDatabricksNodeType_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksNodeType_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
+		"@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -910,7 +910,7 @@ func DataDatabricksNodeType_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
+		"@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -929,7 +929,7 @@ func DataDatabricksNodeType_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
+		"@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -948,7 +948,7 @@ func DataDatabricksNodeType_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
+		"@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -961,7 +961,7 @@ func DataDatabricksNodeType_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
+		"@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType",
 		"tfResourceType",
 		&returns,
 	)
@@ -995,11 +995,11 @@ func (d *jsiiProxy_DataDatabricksNodeType) GetAnyMapAttribute(terraformAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNodeType) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksNodeType) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1123,11 +1123,11 @@ func (d *jsiiProxy_DataDatabricksNodeType) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNodeType) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksNodeType) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

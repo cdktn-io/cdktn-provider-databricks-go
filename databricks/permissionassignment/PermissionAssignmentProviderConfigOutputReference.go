@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package permissionassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/permissionassignment/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/permissionassignment/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PermissionAssignmentProviderConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type PermissionAssignmentProviderConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WorkspaceId() *string
 	SetWorkspaceId(val *string)
 	WorkspaceIdInput() *string
@@ -48,7 +48,7 @@ type PermissionAssignmentProviderConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type PermissionAssignmentProviderConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type PermissionAssignmentProviderConfigOutputReference interface {
 
 // The jsii proxy struct for PermissionAssignmentProviderConfigOutputReference
 type jsiiProxy_PermissionAssignmentProviderConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -142,8 +142,8 @@ func (j *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -173,7 +173,7 @@ func (j *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) WorkspaceI
 }
 
 
-func NewPermissionAssignmentProviderConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PermissionAssignmentProviderConfigOutputReference {
+func NewPermissionAssignmentProviderConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PermissionAssignmentProviderConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPermissionAssignmentProviderConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -182,7 +182,7 @@ func NewPermissionAssignmentProviderConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_PermissionAssignmentProviderConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference",
+		"@cdktn/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -190,11 +190,11 @@ func NewPermissionAssignmentProviderConfigOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewPermissionAssignmentProviderConfigOutputReference_Override(p PermissionAssignmentProviderConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPermissionAssignmentProviderConfigOutputReference_Override(p PermissionAssignmentProviderConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference",
+		"@cdktn/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -244,7 +244,7 @@ func (j *jsiiProxy_PermissionAssignmentProviderConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_PermissionAssignmentProviderConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PermissionAssignmentProviderConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,11 +295,11 @@ func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) GetAnyMapA
 	return returns
 }
 
-func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -423,8 +423,8 @@ func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) GetStringM
 	return returns
 }
 
-func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -436,11 +436,11 @@ func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) Interpolat
 	return returns
 }
 
-func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -452,7 +452,7 @@ func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) Interpolat
 	return returns
 }
 
-func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PermissionAssignmentProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

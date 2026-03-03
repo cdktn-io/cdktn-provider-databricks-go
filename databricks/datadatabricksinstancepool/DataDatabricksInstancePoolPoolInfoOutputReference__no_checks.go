@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validatePu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validatePutNodeTypeFlexibilityParameters(value *DataDatabricksInstancePoolPoolInfoNodeTypeFlexibility) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validatePutPreloadedDockerImageParameters(value interface{}) error {
 	return nil
 }
@@ -75,7 +79,7 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -139,11 +143,11 @@ func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataDatabricksInstancePoolPoolInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksInstancePoolPoolInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

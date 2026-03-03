@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (w *jsiiProxy_WorkspaceSettingV2IntegerValOutputReference) validateInterpol
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2IntegerValOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceSettingV2IntegerValOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (j *jsiiProxy_WorkspaceSettingV2IntegerValOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceSettingV2IntegerValOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkspaceSettingV2IntegerValOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_WorkspaceSettingV2IntegerValOutputReference) validateSetValue
 	return nil
 }
 
-func validateNewWorkspaceSettingV2IntegerValOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkspaceSettingV2IntegerValOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

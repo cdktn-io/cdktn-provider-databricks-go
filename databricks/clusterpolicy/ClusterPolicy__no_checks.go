@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (c *jsiiProxy_ClusterPolicy) validatePutLibrariesParameters(value interface
 	return nil
 }
 
+func (c *jsiiProxy_ClusterPolicy) validatePutProviderConfigParameters(value *ClusterPolicyProviderConfig) error {
+	return nil
+}
+
 func validateClusterPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -115,7 +119,7 @@ func (j *jsiiProxy_ClusterPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ClusterPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ClusterPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package modelserving
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/modelserving/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/modelserving/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ModelServingAiGatewayGuardrailsInputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,9 +45,9 @@ type ModelServingAiGatewayGuardrailsInputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ValidTopics() *[]*string
 	SetValidTopics(val *[]*string)
 	ValidTopicsInput() *[]*string
@@ -56,7 +56,7 @@ type ModelServingAiGatewayGuardrailsInputOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type ModelServingAiGatewayGuardrailsInputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPii(value *ModelServingAiGatewayGuardrailsInputPii)
 	ResetInvalidKeywords()
 	ResetPii()
@@ -82,7 +82,7 @@ type ModelServingAiGatewayGuardrailsInputOutputReference interface {
 	ResetValidTopics()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type ModelServingAiGatewayGuardrailsInputOutputReference interface {
 
 // The jsii proxy struct for ModelServingAiGatewayGuardrailsInputOutputReference
 type jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) ComplexObjectIndex() interface{} {
@@ -215,8 +215,8 @@ func (j *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) ValidTop
 }
 
 
-func NewModelServingAiGatewayGuardrailsInputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ModelServingAiGatewayGuardrailsInputOutputReference {
+func NewModelServingAiGatewayGuardrailsInputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ModelServingAiGatewayGuardrailsInputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewModelServingAiGatewayGuardrailsInputOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +255,7 @@ func NewModelServingAiGatewayGuardrailsInputOutputReference(terraformResource cd
 	j := jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewModelServingAiGatewayGuardrailsInputOutputReference(terraformResource cd
 	return &j
 }
 
-func NewModelServingAiGatewayGuardrailsInputOutputReference_Override(m ModelServingAiGatewayGuardrailsInputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewModelServingAiGatewayGuardrailsInputOutputReference_Override(m ModelServingAiGatewayGuardrailsInputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputOutputReference",
+		"@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,11 +390,11 @@ func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) GetAnyMa
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -518,8 +518,8 @@ func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) GetStrin
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -531,11 +531,11 @@ func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) Interpol
 	return returns
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -590,7 +590,7 @@ func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) ResetVal
 	)
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

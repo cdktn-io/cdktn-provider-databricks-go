@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package qualitymonitor
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitor",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitor",
 		reflect.TypeOf((*QualityMonitor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -119,20 +119,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitor{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorConfig",
 		reflect.TypeOf((*QualityMonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics",
 		reflect.TypeOf((*QualityMonitorCustomMetrics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetricsList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorCustomMetricsList",
 		reflect.TypeOf((*QualityMonitorCustomMetricsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -149,12 +149,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorCustomMetricsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetricsOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorCustomMetricsOutputReference",
 		reflect.TypeOf((*QualityMonitorCustomMetricsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -191,16 +191,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorCustomMetricsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig",
 		reflect.TypeOf((*QualityMonitorDataClassificationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList",
 		reflect.TypeOf((*QualityMonitorDataClassificationConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -217,12 +217,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorDataClassificationConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference",
 		reflect.TypeOf((*QualityMonitorDataClassificationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -252,16 +252,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorDataClassificationConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorInferenceLog",
 		reflect.TypeOf((*QualityMonitorInferenceLog)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList",
 		reflect.TypeOf((*QualityMonitorInferenceLogList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -278,12 +278,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorInferenceLogList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference",
 		reflect.TypeOf((*QualityMonitorInferenceLogOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -326,16 +326,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorInferenceLogOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorNotifications",
 		reflect.TypeOf((*QualityMonitorNotifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorNotificationsList",
 		reflect.TypeOf((*QualityMonitorNotificationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -352,16 +352,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorNotificationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure",
 		reflect.TypeOf((*QualityMonitorNotificationsOnFailure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList",
 		reflect.TypeOf((*QualityMonitorNotificationsOnFailureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -378,12 +378,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorNotificationsOnFailureList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference",
 		reflect.TypeOf((*QualityMonitorNotificationsOnFailureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -413,16 +413,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorNotificationsOnFailureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected",
 		reflect.TypeOf((*QualityMonitorNotificationsOnNewClassificationTagDetected)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList",
 		reflect.TypeOf((*QualityMonitorNotificationsOnNewClassificationTagDetectedList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -439,12 +439,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference",
 		reflect.TypeOf((*QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -474,12 +474,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference",
 		reflect.TypeOf((*QualityMonitorNotificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -514,16 +514,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorNotificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorProviderConfig",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorProviderConfig",
 		reflect.TypeOf((*QualityMonitorProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorProviderConfigList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorProviderConfigList",
 		reflect.TypeOf((*QualityMonitorProviderConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -540,12 +540,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorProviderConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorProviderConfigOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorProviderConfigOutputReference",
 		reflect.TypeOf((*QualityMonitorProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -574,16 +574,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorSchedule",
 		reflect.TypeOf((*QualityMonitorSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorScheduleList",
 		reflect.TypeOf((*QualityMonitorScheduleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -600,12 +600,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorScheduleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference",
 		reflect.TypeOf((*QualityMonitorScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -637,16 +637,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorSnapshot",
 		reflect.TypeOf((*QualityMonitorSnapshot)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorSnapshotList",
 		reflect.TypeOf((*QualityMonitorSnapshotList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -663,12 +663,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorSnapshotList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference",
 		reflect.TypeOf((*QualityMonitorSnapshotOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -695,16 +695,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorSnapshotOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorTimeSeries",
 		reflect.TypeOf((*QualityMonitorTimeSeries)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList",
 		reflect.TypeOf((*QualityMonitorTimeSeriesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -721,12 +721,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorTimeSeriesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference",
+		"@cdktn/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference",
 		reflect.TypeOf((*QualityMonitorTimeSeriesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -757,7 +757,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorTimeSeriesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

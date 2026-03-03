@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/pipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PipelineIngestionDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -33,6 +33,8 @@ type PipelineIngestionDefinitionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	FullRefreshWindow() PipelineIngestionDefinitionFullRefreshWindowOutputReference
+	FullRefreshWindowInput() *PipelineIngestionDefinitionFullRefreshWindow
 	IngestFromUcForeignCatalog() interface{}
 	SetIngestFromUcForeignCatalog(val interface{})
 	IngestFromUcForeignCatalogInput() interface{}
@@ -58,15 +60,15 @@ type PipelineIngestionDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,13 +84,15 @@ type PipelineIngestionDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutFullRefreshWindow(value *PipelineIngestionDefinitionFullRefreshWindow)
 	PutObjects(value interface{})
 	PutSourceConfigurations(value interface{})
 	PutTableConfiguration(value *PipelineIngestionDefinitionTableConfiguration)
 	ResetConnectionName()
+	ResetFullRefreshWindow()
 	ResetIngestFromUcForeignCatalog()
 	ResetIngestionGatewayId()
 	ResetNetsuiteJarPath()
@@ -98,7 +102,7 @@ type PipelineIngestionDefinitionOutputReference interface {
 	ResetTableConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +112,7 @@ type PipelineIngestionDefinitionOutputReference interface {
 
 // The jsii proxy struct for PipelineIngestionDefinitionOutputReference
 type jsiiProxy_PipelineIngestionDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -166,6 +170,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) FullRefreshWindow() PipelineIngestionDefinitionFullRefreshWindowOutputReference {
+	var returns PipelineIngestionDefinitionFullRefreshWindowOutputReference
+	_jsii_.Get(
+		j,
+		"fullRefreshWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) FullRefreshWindowInput() *PipelineIngestionDefinitionFullRefreshWindow {
+	var returns *PipelineIngestionDefinitionFullRefreshWindow
+	_jsii_.Get(
+		j,
+		"fullRefreshWindowInput",
 		&returns,
 	)
 	return returns
@@ -331,8 +355,8 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -342,7 +366,7 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) TerraformResource
 }
 
 
-func NewPipelineIngestionDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionOutputReference {
+func NewPipelineIngestionDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPipelineIngestionDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -351,7 +375,7 @@ func NewPipelineIngestionDefinitionOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_PipelineIngestionDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference",
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -359,11 +383,11 @@ func NewPipelineIngestionDefinitionOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewPipelineIngestionDefinitionOutputReference_Override(p PipelineIngestionDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPipelineIngestionDefinitionOutputReference_Override(p PipelineIngestionDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference",
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -468,7 +492,7 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,11 +532,11 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -636,8 +660,8 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -649,11 +673,11 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -663,6 +687,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) PutFullRefreshWindow(value *PipelineIngestionDefinitionFullRefreshWindow) {
+	if err := p.validatePutFullRefreshWindowParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putFullRefreshWindow",
+		[]interface{}{value},
+	)
 }
 
 func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) PutObjects(value interface{}) {
@@ -702,6 +737,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetConnectionNa
 	_jsii_.InvokeVoid(
 		p,
 		"resetConnectionName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetFullRefreshWindow() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFullRefreshWindow",
 		nil, // no parameters
 	)
 }
@@ -762,7 +805,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetTableConfigu
 	)
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

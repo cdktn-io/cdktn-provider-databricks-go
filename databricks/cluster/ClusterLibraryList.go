@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package cluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/cluster/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/cluster/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ClusterLibraryList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type ClusterLibraryList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type ClusterLibraryList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ClusterLibraryOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type ClusterLibraryList interface {
 
 // The jsii proxy struct for ClusterLibraryList
 type jsiiProxy_ClusterLibraryList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ClusterLibraryList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_ClusterLibraryList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ClusterLibraryList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ClusterLibraryList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_ClusterLibraryList) WrapsSet() *bool {
 }
 
 
-func NewClusterLibraryList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterLibraryList {
+func NewClusterLibraryList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterLibraryList {
 	_init_.Initialize()
 
 	if err := validateNewClusterLibraryListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewClusterLibraryList(terraformResource cdktf.IInterpolatingParent, terrafo
 	j := jsiiProxy_ClusterLibraryList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.cluster.ClusterLibraryList",
+		"@cdktn/provider-databricks.cluster.ClusterLibraryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewClusterLibraryList(terraformResource cdktf.IInterpolatingParent, terrafo
 	return &j
 }
 
-func NewClusterLibraryList_Override(c ClusterLibraryList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewClusterLibraryList_Override(c ClusterLibraryList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.cluster.ClusterLibraryList",
+		"@cdktn/provider-databricks.cluster.ClusterLibraryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_ClusterLibraryList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterLibraryList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClusterLibraryList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_ClusterLibraryList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (c *jsiiProxy_ClusterLibraryList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (c *jsiiProxy_ClusterLibraryList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := c.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		c,
@@ -231,7 +231,7 @@ func (c *jsiiProxy_ClusterLibraryList) Get(index *float64) ClusterLibraryOutputR
 	return returns
 }
 
-func (c *jsiiProxy_ClusterLibraryList) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClusterLibraryList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

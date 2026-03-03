@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -48,6 +48,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateInterpolationF
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutCleanRoomsNotebookTaskParameters(value *JobTaskForEachTaskTaskCleanRoomsNotebookTask) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutComputeParameters(value *JobTaskForEachTaskTaskCompute) error {
 	return nil
 }
 
@@ -139,7 +143,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutWebhookNoti
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -203,7 +207,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -211,7 +215,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetTimeoutSeco
 	return nil
 }
 
-func validateNewJobTaskForEachTaskTaskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobTaskForEachTaskTaskOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

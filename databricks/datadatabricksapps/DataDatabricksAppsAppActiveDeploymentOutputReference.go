@@ -1,18 +1,21 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksapps
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksapps/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksapps/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksAppsAppActiveDeploymentOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
+	Command() *[]*string
+	SetCommand(val *[]*string)
+	CommandInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,8 +37,12 @@ type DataDatabricksAppsAppActiveDeploymentOutputReference interface {
 	DeploymentId() *string
 	SetDeploymentId(val *string)
 	DeploymentIdInput() *string
+	EnvVars() DataDatabricksAppsAppActiveDeploymentEnvVarsList
+	EnvVarsInput() interface{}
 	// Experimental.
 	Fqn() *string
+	GitSource() DataDatabricksAppsAppActiveDeploymentGitSourceOutputReference
+	GitSourceInput() interface{}
 	InternalValue() *DataDatabricksAppsAppActiveDeployment
 	SetInternalValue(val *DataDatabricksAppsAppActiveDeployment)
 	Mode() *string
@@ -50,16 +57,16 @@ type DataDatabricksAppsAppActiveDeploymentOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdateTime() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,15 +82,20 @@ type DataDatabricksAppsAppActiveDeploymentOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutEnvVars(value interface{})
+	PutGitSource(value *DataDatabricksAppsAppActiveDeploymentGitSource)
+	ResetCommand()
 	ResetDeploymentId()
+	ResetEnvVars()
+	ResetGitSource()
 	ResetMode()
 	ResetSourceCodePath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +105,27 @@ type DataDatabricksAppsAppActiveDeploymentOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksAppsAppActiveDeploymentOutputReference
 type jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) Command() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"command",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) CommandInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"commandInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) ComplexObjectIndex() interface{} {
@@ -176,11 +208,51 @@ func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) Deploym
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) EnvVars() DataDatabricksAppsAppActiveDeploymentEnvVarsList {
+	var returns DataDatabricksAppsAppActiveDeploymentEnvVarsList
+	_jsii_.Get(
+		j,
+		"envVars",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) EnvVarsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"envVarsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) GitSource() DataDatabricksAppsAppActiveDeploymentGitSourceOutputReference {
+	var returns DataDatabricksAppsAppActiveDeploymentGitSourceOutputReference
+	_jsii_.Get(
+		j,
+		"gitSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) GitSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitSourceInput",
 		&returns,
 	)
 	return returns
@@ -256,8 +328,8 @@ func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -277,7 +349,7 @@ func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) UpdateT
 }
 
 
-func NewDataDatabricksAppsAppActiveDeploymentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksAppsAppActiveDeploymentOutputReference {
+func NewDataDatabricksAppsAppActiveDeploymentOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksAppsAppActiveDeploymentOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksAppsAppActiveDeploymentOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -286,7 +358,7 @@ func NewDataDatabricksAppsAppActiveDeploymentOutputReference(terraformResource c
 	j := jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksApps.DataDatabricksAppsAppActiveDeploymentOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksApps.DataDatabricksAppsAppActiveDeploymentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -294,13 +366,24 @@ func NewDataDatabricksAppsAppActiveDeploymentOutputReference(terraformResource c
 	return &j
 }
 
-func NewDataDatabricksAppsAppActiveDeploymentOutputReference_Override(d DataDatabricksAppsAppActiveDeploymentOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksAppsAppActiveDeploymentOutputReference_Override(d DataDatabricksAppsAppActiveDeploymentOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksApps.DataDatabricksAppsAppActiveDeploymentOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksApps.DataDatabricksAppsAppActiveDeploymentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference)SetCommand(val *[]*string) {
+	if err := j.validateSetCommandParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"command",
+		val,
 	)
 }
 
@@ -381,7 +464,7 @@ func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,11 +504,11 @@ func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -549,8 +632,8 @@ func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -562,11 +645,11 @@ func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -578,10 +661,56 @@ func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) Interpo
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) PutEnvVars(value interface{}) {
+	if err := d.validatePutEnvVarsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putEnvVars",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) PutGitSource(value *DataDatabricksAppsAppActiveDeploymentGitSource) {
+	if err := d.validatePutGitSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGitSource",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) ResetCommand() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCommand",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) ResetDeploymentId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDeploymentId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) ResetEnvVars() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnvVars",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) ResetGitSource() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGitSource",
 		nil, // no parameters
 	)
 }
@@ -602,7 +731,7 @@ func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) ResetSo
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

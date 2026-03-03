@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (a *jsiiProxy_AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReferen
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,11 +71,11 @@ func (j *jsiiProxy_AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

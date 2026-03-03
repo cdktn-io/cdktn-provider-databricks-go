@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickscluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscluster/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscluster/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,14 +69,14 @@ type DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutNetworkFilesystemInfo(value *DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo)
 	ResetRemoteMountDirPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference interfa
 
 // The jsii proxy struct for DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference
 type jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) ComplexObjectIndex() interface{} {
@@ -209,8 +209,8 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -220,7 +220,7 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputRef
 }
 
 
-func NewDataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference {
+func NewDataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -229,7 +229,7 @@ func NewDataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference(terr
 	j := jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,11 +237,11 @@ func NewDataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference(terr
 	return &j
 }
 
-func NewDataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference_Override(d DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference_Override(d DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,11 +353,11 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -481,8 +481,8 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -494,11 +494,11 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -529,7 +529,7 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputRef
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package query
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/query/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/query/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type QueryParameterDateRangeValueOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,15 +48,15 @@ type QueryParameterDateRangeValueOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type QueryParameterDateRangeValueOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDateRangeValue(value *QueryParameterDateRangeValueDateRangeValue)
 	ResetDateRangeValue()
 	ResetDynamicDateRangeValue()
@@ -82,7 +82,7 @@ type QueryParameterDateRangeValueOutputReference interface {
 	ResetStartDayOfWeek()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type QueryParameterDateRangeValueOutputReference interface {
 
 // The jsii proxy struct for QueryParameterDateRangeValueOutputReference
 type jsiiProxy_QueryParameterDateRangeValueOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_QueryParameterDateRangeValueOutputReference) ComplexObjectIndex() interface{} {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_QueryParameterDateRangeValueOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_QueryParameterDateRangeValueOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_QueryParameterDateRangeValueOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_QueryParameterDateRangeValueOutputReference) TerraformResourc
 }
 
 
-func NewQueryParameterDateRangeValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QueryParameterDateRangeValueOutputReference {
+func NewQueryParameterDateRangeValueOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) QueryParameterDateRangeValueOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewQueryParameterDateRangeValueOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +255,7 @@ func NewQueryParameterDateRangeValueOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_QueryParameterDateRangeValueOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.query.QueryParameterDateRangeValueOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterDateRangeValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewQueryParameterDateRangeValueOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewQueryParameterDateRangeValueOutputReference_Override(q QueryParameterDateRangeValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQueryParameterDateRangeValueOutputReference_Override(q QueryParameterDateRangeValueOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.query.QueryParameterDateRangeValueOutputReference",
+		"@cdktn/provider-databricks.query.QueryParameterDateRangeValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_QueryParameterDateRangeValueOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_QueryParameterDateRangeValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QueryParameterDateRangeValueOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,11 +390,11 @@ func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -518,8 +518,8 @@ func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -531,11 +531,11 @@ func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) InterpolationAsL
 	return returns
 }
 
-func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -590,7 +590,7 @@ func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) ResetStartDayOfW
 	)
 }
 
-func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QueryParameterDateRangeValueOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

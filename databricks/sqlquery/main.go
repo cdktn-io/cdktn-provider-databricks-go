@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sqlquery
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQuery",
+		"@cdktn/provider-databricks.sqlQuery.SqlQuery",
 		reflect.TypeOf((*SqlQuery)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -57,8 +57,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parent", GoGetter: "Parent"},
 			_jsii_.MemberProperty{JsiiProperty: "parentInput", GoGetter: "ParentInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putParameter", GoMethod: "PutParameter"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putSchedule", GoMethod: "PutSchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
@@ -69,6 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParameter", GoMethod: "ResetParameter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParent", GoMethod: "ResetParent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRunAsRole", GoMethod: "ResetRunAsRole"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchedule", GoMethod: "ResetSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
@@ -93,24 +97,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQuery{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryConfig",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryConfig",
 		reflect.TypeOf((*SqlQueryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameter",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameter",
 		reflect.TypeOf((*SqlQueryParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDate",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDate",
 		reflect.TypeOf((*SqlQueryParameterDate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDateOutputReference",
 		reflect.TypeOf((*SqlQueryParameterDateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,16 +143,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterDateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRange",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDateRange",
 		reflect.TypeOf((*SqlQueryParameterDateRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDateRangeOutputReference",
 		reflect.TypeOf((*SqlQueryParameterDateRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -182,16 +186,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterDateRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRange",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRange",
 		reflect.TypeOf((*SqlQueryParameterDateRangeRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRangeOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRangeOutputReference",
 		reflect.TypeOf((*SqlQueryParameterDateRangeRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,16 +226,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterDateRangeRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetime",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetime",
 		reflect.TypeOf((*SqlQueryParameterDatetime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimeOutputReference",
 		reflect.TypeOf((*SqlQueryParameterDatetimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -260,16 +264,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterDatetimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRange",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRange",
 		reflect.TypeOf((*SqlQueryParameterDatetimeRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeOutputReference",
 		reflect.TypeOf((*SqlQueryParameterDatetimeRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -303,16 +307,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterDatetimeRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRange",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRange",
 		reflect.TypeOf((*SqlQueryParameterDatetimeRangeRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRangeOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRangeOutputReference",
 		reflect.TypeOf((*SqlQueryParameterDatetimeRangeRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -343,16 +347,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterDatetimeRangeRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesec",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimesec",
 		reflect.TypeOf((*SqlQueryParameterDatetimesec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecOutputReference",
 		reflect.TypeOf((*SqlQueryParameterDatetimesecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -381,16 +385,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterDatetimesecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRange",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRange",
 		reflect.TypeOf((*SqlQueryParameterDatetimesecRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeOutputReference",
 		reflect.TypeOf((*SqlQueryParameterDatetimesecRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -424,16 +428,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRange",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRange",
 		reflect.TypeOf((*SqlQueryParameterDatetimesecRangeRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRangeOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRangeOutputReference",
 		reflect.TypeOf((*SqlQueryParameterDatetimesecRangeRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -464,20 +468,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterDatetimesecRangeRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnum",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterEnum",
 		reflect.TypeOf((*SqlQueryParameterEnum)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultiple",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterEnumMultiple",
 		reflect.TypeOf((*SqlQueryParameterEnumMultiple)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultipleOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterEnumMultipleOutputReference",
 		reflect.TypeOf((*SqlQueryParameterEnumMultipleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -512,12 +516,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterEnumMultipleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterEnumOutputReference",
 		reflect.TypeOf((*SqlQueryParameterEnumOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -556,12 +560,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterEnumOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterList",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterList",
 		reflect.TypeOf((*SqlQueryParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -578,16 +582,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterNumber",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterNumber",
 		reflect.TypeOf((*SqlQueryParameterNumber)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterNumberOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterNumberOutputReference",
 		reflect.TypeOf((*SqlQueryParameterNumberOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -616,12 +620,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterNumberOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterOutputReference",
 		reflect.TypeOf((*SqlQueryParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -693,20 +697,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQuery",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterQuery",
 		reflect.TypeOf((*SqlQueryParameterQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultiple",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterQueryMultiple",
 		reflect.TypeOf((*SqlQueryParameterQueryMultiple)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultipleOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterQueryMultipleOutputReference",
 		reflect.TypeOf((*SqlQueryParameterQueryMultipleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -741,12 +745,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterQueryMultipleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterQueryOutputReference",
 		reflect.TypeOf((*SqlQueryParameterQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -785,16 +789,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterText",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterText",
 		reflect.TypeOf((*SqlQueryParameterText)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterTextOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterTextOutputReference",
 		reflect.TypeOf((*SqlQueryParameterTextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -823,20 +827,58 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryParameterTextOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQuerySchedule",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryProviderConfig",
+		reflect.TypeOf((*SqlQueryProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryProviderConfigOutputReference",
+		reflect.TypeOf((*SqlQueryProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SqlQueryProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.sqlQuery.SqlQuerySchedule",
 		reflect.TypeOf((*SqlQuerySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleContinuous",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryScheduleContinuous",
 		reflect.TypeOf((*SqlQueryScheduleContinuous)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleContinuousOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryScheduleContinuousOutputReference",
 		reflect.TypeOf((*SqlQueryScheduleContinuousOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -868,16 +910,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryScheduleContinuousOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleDaily",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryScheduleDaily",
 		reflect.TypeOf((*SqlQueryScheduleDaily)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleDailyOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryScheduleDailyOutputReference",
 		reflect.TypeOf((*SqlQueryScheduleDailyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -911,12 +953,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryScheduleDailyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryScheduleOutputReference",
 		reflect.TypeOf((*SqlQueryScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -955,16 +997,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeekly",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryScheduleWeekly",
 		reflect.TypeOf((*SqlQueryScheduleWeekly)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeeklyOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryScheduleWeeklyOutputReference",
 		reflect.TypeOf((*SqlQueryScheduleWeeklyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1000,7 +1042,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlQueryScheduleWeeklyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

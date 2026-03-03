@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,7 @@ func (q *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validatePutMul
 	return nil
 }
 
-func (q *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateSetVal
 	return nil
 }
 
-func validateNewQueryParameterQueryBackedValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQueryParameterQueryBackedValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

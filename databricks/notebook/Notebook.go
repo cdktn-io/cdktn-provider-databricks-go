@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package notebook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notebook/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/notebook/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook databricks_notebook}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook databricks_notebook}.
 type Notebook interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type Notebook interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	Format() *string
 	SetFormat(val *string)
 	FormatInput() *string
@@ -52,9 +52,9 @@ type Notebook interface {
 	SetLanguage(val *string)
 	LanguageInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Md5() *string
 	SetMd5(val *string)
 	Md5Input() *string
@@ -70,9 +70,9 @@ type Notebook interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() NotebookProviderConfigOutputReference
 	ProviderConfigInput() *NotebookProviderConfig
 	// Experimental.
@@ -85,7 +85,7 @@ type Notebook interface {
 	SetSource(val *string)
 	SourceInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -100,7 +100,7 @@ type Notebook interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -118,9 +118,9 @@ type Notebook interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -163,11 +163,11 @@ type Notebook interface {
 
 // The jsii proxy struct for Notebook
 type jsiiProxy_Notebook struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_Notebook) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Notebook) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_Notebook) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Notebook) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Notebook) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_Notebook) LanguageInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Notebook) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Notebook) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_Notebook) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Notebook) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Notebook) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_Notebook) SourceInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Notebook) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Notebook) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -547,7 +547,7 @@ func (j *jsiiProxy_Notebook) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig) Notebook {
 	_init_.Initialize()
 
@@ -557,7 +557,7 @@ func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig)
 	j := jsiiProxy_Notebook{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.notebook.Notebook",
+		"@cdktn/provider-databricks.notebook.Notebook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -565,12 +565,12 @@ func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook_Override(n Notebook, scope constructs.Construct, id *string, config *NotebookConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.notebook.Notebook",
+		"@cdktn/provider-databricks.notebook.Notebook",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -617,7 +617,7 @@ func (j *jsiiProxy_Notebook)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Notebook)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -658,7 +658,7 @@ func (j *jsiiProxy_Notebook)SetLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Notebook)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +713,7 @@ func (j *jsiiProxy_Notebook)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Notebook)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -743,17 +743,17 @@ func (j *jsiiProxy_Notebook)SetSource(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Notebook resource upon running "cdktf plan <stack-name>".
-func Notebook_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Notebook resource upon running "cdktn plan <stack-name>".
+func Notebook_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateNotebook_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.notebook.Notebook",
+		"@cdktn/provider-databricks.notebook.Notebook",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -788,7 +788,7 @@ func Notebook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.notebook.Notebook",
+		"@cdktn/provider-databricks.notebook.Notebook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func Notebook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.notebook.Notebook",
+		"@cdktn/provider-databricks.notebook.Notebook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -826,7 +826,7 @@ func Notebook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.notebook.Notebook",
+		"@cdktn/provider-databricks.notebook.Notebook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +839,7 @@ func Notebook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.notebook.Notebook",
+		"@cdktn/provider-databricks.notebook.Notebook",
 		"tfResourceType",
 		&returns,
 	)
@@ -884,11 +884,11 @@ func (n *jsiiProxy_Notebook) GetAnyMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
-func (n *jsiiProxy_Notebook) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_Notebook) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -1025,7 +1025,7 @@ func (n *jsiiProxy_Notebook) HasResourceMove() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_Notebook) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (n *jsiiProxy_Notebook) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1036,11 +1036,11 @@ func (n *jsiiProxy_Notebook) ImportFrom(id *string, provider cdktf.TerraformProv
 	)
 }
 
-func (n *jsiiProxy_Notebook) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_Notebook) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,

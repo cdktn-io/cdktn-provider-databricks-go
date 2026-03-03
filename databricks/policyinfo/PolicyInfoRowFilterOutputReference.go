@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package policyinfo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/policyinfo/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/policyinfo/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PolicyInfoRowFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type PolicyInfoRowFilterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Using() PolicyInfoRowFilterUsingList
 	UsingInput() interface{}
 	// Experimental.
@@ -50,7 +50,7 @@ type PolicyInfoRowFilterOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type PolicyInfoRowFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutUsing(value interface{})
 	ResetUsing()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type PolicyInfoRowFilterOutputReference interface {
 
 // The jsii proxy struct for PolicyInfoRowFilterOutputReference
 type jsiiProxy_PolicyInfoRowFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PolicyInfoRowFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -166,8 +166,8 @@ func (j *jsiiProxy_PolicyInfoRowFilterOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_PolicyInfoRowFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PolicyInfoRowFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_PolicyInfoRowFilterOutputReference) UsingInput() interface{} 
 }
 
 
-func NewPolicyInfoRowFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PolicyInfoRowFilterOutputReference {
+func NewPolicyInfoRowFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PolicyInfoRowFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPolicyInfoRowFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -206,7 +206,7 @@ func NewPolicyInfoRowFilterOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_PolicyInfoRowFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.policyInfo.PolicyInfoRowFilterOutputReference",
+		"@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewPolicyInfoRowFilterOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewPolicyInfoRowFilterOutputReference_Override(p PolicyInfoRowFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPolicyInfoRowFilterOutputReference_Override(p PolicyInfoRowFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.policyInfo.PolicyInfoRowFilterOutputReference",
+		"@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -279,7 +279,7 @@ func (j *jsiiProxy_PolicyInfoRowFilterOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_PolicyInfoRowFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PolicyInfoRowFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -319,11 +319,11 @@ func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -447,8 +447,8 @@ func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -460,11 +460,11 @@ func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -495,7 +495,7 @@ func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) ResetUsing() {
 	)
 }
 
-func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

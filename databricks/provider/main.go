@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.provider.DatabricksProvider",
+		"@cdktn/provider-databricks.provider.DatabricksProvider",
 		reflect.TypeOf((*DatabricksProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -59,6 +59,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "debugHeadersInput", GoGetter: "DebugHeadersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "debugTruncateBytes", GoGetter: "DebugTruncateBytes"},
 			_jsii_.MemberProperty{JsiiProperty: "debugTruncateBytesInput", GoGetter: "DebugTruncateBytesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "disableOauthRefreshToken", GoGetter: "DisableOauthRefreshToken"},
+			_jsii_.MemberProperty{JsiiProperty: "disableOauthRefreshTokenInput", GoGetter: "DisableOauthRefreshTokenInput"},
 			_jsii_.MemberProperty{JsiiProperty: "experimentalIsUnifiedHost", GoGetter: "ExperimentalIsUnifiedHost"},
 			_jsii_.MemberProperty{JsiiProperty: "experimentalIsUnifiedHostInput", GoGetter: "ExperimentalIsUnifiedHostInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -108,6 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksIdTokenFilepath", GoMethod: "ResetDatabricksIdTokenFilepath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDebugHeaders", GoMethod: "ResetDebugHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDebugTruncateBytes", GoMethod: "ResetDebugTruncateBytes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisableOauthRefreshToken", GoMethod: "ResetDisableOauthRefreshToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExperimentalIsUnifiedHost", GoMethod: "ResetExperimentalIsUnifiedHost"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGoogleCredentials", GoMethod: "ResetGoogleCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGoogleServiceAccount", GoMethod: "ResetGoogleServiceAccount"},
@@ -121,6 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProfile", GoMethod: "ResetProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRateLimit", GoMethod: "ResetRateLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetryTimeoutSeconds", GoMethod: "ResetRetryTimeoutSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScopes", GoMethod: "ResetScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServerlessComputeId", GoMethod: "ResetServerlessComputeId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipVerify", GoMethod: "ResetSkipVerify"},
 			_jsii_.MemberMethod{JsiiMethod: "resetToken", GoMethod: "ResetToken"},
@@ -129,6 +133,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceId", GoMethod: "ResetWorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "retryTimeoutSeconds", GoGetter: "RetryTimeoutSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "retryTimeoutSecondsInput", GoGetter: "RetryTimeoutSecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "scopes", GoGetter: "Scopes"},
+			_jsii_.MemberProperty{JsiiProperty: "scopesInput", GoGetter: "ScopesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serverlessComputeId", GoGetter: "ServerlessComputeId"},
 			_jsii_.MemberProperty{JsiiProperty: "serverlessComputeIdInput", GoGetter: "ServerlessComputeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skipVerify", GoGetter: "SkipVerify"},
@@ -153,12 +159,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabricksProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.provider.DatabricksProviderConfig",
+		"@cdktn/provider-databricks.provider.DatabricksProviderConfig",
 		reflect.TypeOf((*DatabricksProviderConfig)(nil)).Elem(),
 	)
 }

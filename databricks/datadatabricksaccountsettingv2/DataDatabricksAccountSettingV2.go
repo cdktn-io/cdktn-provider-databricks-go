@@ -1,26 +1,26 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksaccountsettingv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountsettingv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksaccountsettingv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
 type DataDatabricksAccountSettingV2 interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AibiDashboardEmbeddingAccessPolicy() DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
 	AibiDashboardEmbeddingApprovedDomains() DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference
 	AutomaticClusterUpdateWorkspace() DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference
 	BooleanVal() DataDatabricksAccountSettingV2BooleanValOutputReference
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -40,18 +40,18 @@ type DataDatabricksAccountSettingV2 interface {
 	EffectiveRestrictWorkspaceAdmins() DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference
 	EffectiveStringVal() DataDatabricksAccountSettingV2EffectiveStringValOutputReference
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	IntegerVal() DataDatabricksAccountSettingV2IntegerValOutputReference
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -59,15 +59,15 @@ type DataDatabricksAccountSettingV2 interface {
 	Node() constructs.Node
 	PersonalCompute() DataDatabricksAccountSettingV2PersonalComputeOutputReference
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	RestrictWorkspaceAdmins() DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputReference
 	StringVal() DataDatabricksAccountSettingV2StringValOutputReference
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -77,7 +77,7 @@ type DataDatabricksAccountSettingV2 interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -93,7 +93,7 @@ type DataDatabricksAccountSettingV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -116,7 +116,7 @@ type DataDatabricksAccountSettingV2 interface {
 
 // The jsii proxy struct for DataDatabricksAccountSettingV2
 type jsiiProxy_DataDatabricksAccountSettingV2 struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) AibiDashboardEmbeddingAccessPolicy() DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) BooleanVal() DataDatabricksAc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveStringVal() DataData
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) IntegerVal() DataDatabricksAc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) PersonalCompute() DataDatabri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) StringVal() DataDatabricksAcc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) DataDatabricksAccountSettingV2 {
 	_init_.Initialize()
 
@@ -450,7 +450,7 @@ func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataDatabricksAccountSettingV2{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
+		"@cdktn/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -458,12 +458,12 @@ func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2_Override(d DataDatabricksAccountSettingV2, scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
+		"@cdktn/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -488,7 +488,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -496,7 +496,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +518,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -526,17 +526,17 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2)SetProvider(val cdktf.Terrafor
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksAccountSettingV2 resource upon running "cdktf plan <stack-name>".
-func DataDatabricksAccountSettingV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksAccountSettingV2 resource upon running "cdktn plan <stack-name>".
+func DataDatabricksAccountSettingV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksAccountSettingV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
+		"@cdktn/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -571,7 +571,7 @@ func DataDatabricksAccountSettingV2_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
+		"@cdktn/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func DataDatabricksAccountSettingV2_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
+		"@cdktn/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func DataDatabricksAccountSettingV2_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
+		"@cdktn/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func DataDatabricksAccountSettingV2_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
+		"@cdktn/provider-databricks.dataDatabricksAccountSettingV2.DataDatabricksAccountSettingV2",
 		"tfResourceType",
 		&returns,
 	)
@@ -656,11 +656,11 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAccountSettingV2) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -784,11 +784,11 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAccountSettingV2) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

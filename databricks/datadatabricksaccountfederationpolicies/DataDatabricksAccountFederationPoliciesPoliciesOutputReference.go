@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksaccountfederationpolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountfederationpolicies/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksaccountfederationpolicies/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksAccountFederationPoliciesPoliciesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,9 +45,9 @@ type DataDatabricksAccountFederationPoliciesPoliciesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	UpdateTime() *string
 	// Experimental.
@@ -55,7 +55,7 @@ type DataDatabricksAccountFederationPoliciesPoliciesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,12 +71,12 @@ type DataDatabricksAccountFederationPoliciesPoliciesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type DataDatabricksAccountFederationPoliciesPoliciesOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksAccountFederationPoliciesPoliciesOutputReference
 type jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) ComplexObjectIndex() interface{} {
@@ -219,8 +219,8 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -250,7 +250,7 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 }
 
 
-func NewDataDatabricksAccountFederationPoliciesPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksAccountFederationPoliciesPoliciesOutputReference {
+func NewDataDatabricksAccountFederationPoliciesPoliciesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksAccountFederationPoliciesPoliciesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksAccountFederationPoliciesPoliciesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -259,7 +259,7 @@ func NewDataDatabricksAccountFederationPoliciesPoliciesOutputReference(terraform
 	j := jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPoliciesPoliciesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPoliciesPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -267,11 +267,11 @@ func NewDataDatabricksAccountFederationPoliciesPoliciesOutputReference(terraform
 	return &j
 }
 
-func NewDataDatabricksAccountFederationPoliciesPoliciesOutputReference_Override(d DataDatabricksAccountFederationPoliciesPoliciesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksAccountFederationPoliciesPoliciesOutputReference_Override(d DataDatabricksAccountFederationPoliciesPoliciesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPoliciesPoliciesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksAccountFederationPolicies.DataDatabricksAccountFederationPoliciesPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,11 +372,11 @@ func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -500,8 +500,8 @@ func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -513,11 +513,11 @@ func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -529,7 +529,7 @@ func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

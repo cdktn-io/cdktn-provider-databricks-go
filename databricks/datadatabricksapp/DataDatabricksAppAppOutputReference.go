@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksapp/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksapp/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksAppAppOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ActiveDeployment() DataDatabricksAppAppActiveDeploymentOutputReference
 	AppStatus() DataDatabricksAppAppAppStatusOutputReference
 	BudgetPolicyId() *string
@@ -44,9 +44,12 @@ type DataDatabricksAppAppOutputReference interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveBudgetPolicyId() *string
+	EffectiveUsagePolicyId() *string
 	EffectiveUserApiScopes() *[]*string
 	// Experimental.
 	Fqn() *string
+	GitRepository() DataDatabricksAppAppGitRepositoryOutputReference
+	GitRepositoryInput() interface{}
 	Id() *string
 	InternalValue() *DataDatabricksAppApp
 	SetInternalValue(val *DataDatabricksAppApp)
@@ -61,17 +64,23 @@ type DataDatabricksAppAppOutputReference interface {
 	ServicePrincipalClientId() *string
 	ServicePrincipalId() *float64
 	ServicePrincipalName() *string
+	Space() *string
+	SetSpace(val *string)
+	SpaceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Updater() *string
 	UpdateTime() *string
 	Url() *string
+	UsagePolicyId() *string
+	SetUsagePolicyId(val *string)
+	UsagePolicyIdInput() *string
 	UserApiScopes() *[]*string
 	SetUserApiScopes(val *[]*string)
 	UserApiScopesInput() *[]*string
@@ -80,7 +89,7 @@ type DataDatabricksAppAppOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -96,18 +105,22 @@ type DataDatabricksAppAppOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutGitRepository(value *DataDatabricksAppAppGitRepository)
 	PutResources(value interface{})
 	ResetBudgetPolicyId()
 	ResetComputeSize()
 	ResetDescription()
+	ResetGitRepository()
 	ResetResources()
+	ResetSpace()
+	ResetUsagePolicyId()
 	ResetUserApiScopes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -117,7 +130,7 @@ type DataDatabricksAppAppOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksAppAppOutputReference
 type jsiiProxy_DataDatabricksAppAppOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ActiveDeployment() DataDatabricksAppAppActiveDeploymentOutputReference {
@@ -280,6 +293,16 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) EffectiveBudgetPolicyId(
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) EffectiveUsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveUsagePolicyId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) EffectiveUserApiScopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -295,6 +318,26 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) GitRepository() DataDatabricksAppAppGitRepositoryOutputReference {
+	var returns DataDatabricksAppAppGitRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"gitRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) GitRepositoryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitRepositoryInput",
 		&returns,
 	)
 	return returns
@@ -420,6 +463,26 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ServicePrincipalName() *
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Space() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"space",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) SpaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spaceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -430,8 +493,8 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -470,6 +533,26 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Url() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UsagePolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UserApiScopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -491,7 +574,7 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UserApiScopesInput() *[]
 }
 
 
-func NewDataDatabricksAppAppOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksAppAppOutputReference {
+func NewDataDatabricksAppAppOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksAppAppOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksAppAppOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -500,7 +583,7 @@ func NewDataDatabricksAppAppOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataDatabricksAppAppOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksApp.DataDatabricksAppAppOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksApp.DataDatabricksAppAppOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -508,11 +591,11 @@ func NewDataDatabricksAppAppOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewDataDatabricksAppAppOutputReference_Override(d DataDatabricksAppAppOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksAppAppOutputReference_Override(d DataDatabricksAppAppOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksApp.DataDatabricksAppAppOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksApp.DataDatabricksAppAppOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -595,6 +678,17 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetSpace(val *string) {
+	if err := j.validateSetSpaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"space",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -606,13 +700,24 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetUsagePolicyId(val *string) {
+	if err := j.validateSetUsagePolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usagePolicyId",
 		val,
 	)
 }
@@ -657,11 +762,11 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -785,8 +890,8 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -798,11 +903,11 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -812,6 +917,17 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) PutGitRepository(value *DataDatabricksAppAppGitRepository) {
+	if err := d.validatePutGitRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGitRepository",
+		[]interface{}{value},
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksAppAppOutputReference) PutResources(value interface{}) {
@@ -849,10 +965,34 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetDescription() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetGitRepository() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGitRepository",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetResources() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetSpace() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSpace",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetUsagePolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsagePolicyId",
 		nil, // no parameters
 	)
 }
@@ -865,7 +1005,7 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetUserApiScopes() {
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

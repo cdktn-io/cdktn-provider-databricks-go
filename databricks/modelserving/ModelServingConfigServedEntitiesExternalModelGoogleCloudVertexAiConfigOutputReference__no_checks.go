@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelGoogleCloudVerte
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -83,11 +83,11 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelGoogleCloudVerte
 	return nil
 }
 
-func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

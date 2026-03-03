@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package permissionassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/permissionassignment/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/permissionassignment/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permission_assignment databricks_permission_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permission_assignment databricks_permission_assignment}.
 type PermissionAssignment interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -33,9 +33,9 @@ type PermissionAssignment interface {
 	SetDependsOn(val *[]*string)
 	DisplayName() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -47,9 +47,9 @@ type PermissionAssignment interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	Permissions() *[]*string
@@ -59,9 +59,9 @@ type PermissionAssignment interface {
 	SetPrincipalId(val *float64)
 	PrincipalIdInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() PermissionAssignmentProviderConfigOutputReference
 	ProviderConfigInput() *PermissionAssignmentProviderConfig
 	// Experimental.
@@ -74,7 +74,7 @@ type PermissionAssignment interface {
 	SetServicePrincipalName(val *string)
 	ServicePrincipalNameInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -90,7 +90,7 @@ type PermissionAssignment interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -108,9 +108,9 @@ type PermissionAssignment interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -150,11 +150,11 @@ type PermissionAssignment interface {
 
 // The jsii proxy struct for PermissionAssignment
 type jsiiProxy_PermissionAssignment struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_PermissionAssignment) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_PermissionAssignment) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_PermissionAssignment) DisplayName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PermissionAssignment) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_PermissionAssignment) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_PermissionAssignment) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PermissionAssignment) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_PermissionAssignment) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_PermissionAssignment) PrincipalIdInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_PermissionAssignment) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_PermissionAssignment) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_PermissionAssignment) ServicePrincipalNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PermissionAssignment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_PermissionAssignment) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -464,7 +464,7 @@ func (j *jsiiProxy_PermissionAssignment) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
 func NewPermissionAssignment(scope constructs.Construct, id *string, config *PermissionAssignmentConfig) PermissionAssignment {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func NewPermissionAssignment(scope constructs.Construct, id *string, config *Per
 	j := jsiiProxy_PermissionAssignment{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignment",
+		"@cdktn/provider-databricks.permissionAssignment.PermissionAssignment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -482,12 +482,12 @@ func NewPermissionAssignment(scope constructs.Construct, id *string, config *Per
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
 func NewPermissionAssignment_Override(p PermissionAssignment, scope constructs.Construct, id *string, config *PermissionAssignmentConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignment",
+		"@cdktn/provider-databricks.permissionAssignment.PermissionAssignment",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -523,7 +523,7 @@ func (j *jsiiProxy_PermissionAssignment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PermissionAssignment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PermissionAssignment)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -553,7 +553,7 @@ func (j *jsiiProxy_PermissionAssignment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PermissionAssignment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PermissionAssignment)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +586,7 @@ func (j *jsiiProxy_PermissionAssignment)SetPrincipalId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PermissionAssignment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PermissionAssignment)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -627,17 +627,17 @@ func (j *jsiiProxy_PermissionAssignment)SetUserName(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a PermissionAssignment resource upon running "cdktf plan <stack-name>".
-func PermissionAssignment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a PermissionAssignment resource upon running "cdktn plan <stack-name>".
+func PermissionAssignment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validatePermissionAssignment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignment",
+		"@cdktn/provider-databricks.permissionAssignment.PermissionAssignment",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -672,7 +672,7 @@ func PermissionAssignment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignment",
+		"@cdktn/provider-databricks.permissionAssignment.PermissionAssignment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func PermissionAssignment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignment",
+		"@cdktn/provider-databricks.permissionAssignment.PermissionAssignment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func PermissionAssignment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignment",
+		"@cdktn/provider-databricks.permissionAssignment.PermissionAssignment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func PermissionAssignment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignment",
+		"@cdktn/provider-databricks.permissionAssignment.PermissionAssignment",
 		"tfResourceType",
 		&returns,
 	)
@@ -768,11 +768,11 @@ func (p *jsiiProxy_PermissionAssignment) GetAnyMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (p *jsiiProxy_PermissionAssignment) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PermissionAssignment) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -909,7 +909,7 @@ func (p *jsiiProxy_PermissionAssignment) HasResourceMove() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PermissionAssignment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (p *jsiiProxy_PermissionAssignment) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -920,11 +920,11 @@ func (p *jsiiProxy_PermissionAssignment) ImportFrom(id *string, provider cdktf.T
 	)
 }
 
-func (p *jsiiProxy_PermissionAssignment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PermissionAssignment) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,

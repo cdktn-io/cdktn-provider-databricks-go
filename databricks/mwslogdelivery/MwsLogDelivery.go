@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwslogdelivery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/mwslogdelivery/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwslogdelivery/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_log_delivery databricks_mws_log_delivery}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_log_delivery databricks_mws_log_delivery}.
 type MwsLogDelivery interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ConfigId() *string
 	SetConfigId(val *string)
 	ConfigIdInput() *string
@@ -50,9 +50,9 @@ type MwsLogDelivery interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -61,9 +61,9 @@ type MwsLogDelivery interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LogType() *string
 	SetLogType(val *string)
 	LogTypeInput() *string
@@ -73,9 +73,9 @@ type MwsLogDelivery interface {
 	SetOutputFormat(val *string)
 	OutputFormatInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -89,7 +89,7 @@ type MwsLogDelivery interface {
 	SetStorageConfigurationId(val *string)
 	StorageConfigurationIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -105,7 +105,7 @@ type MwsLogDelivery interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -123,9 +123,9 @@ type MwsLogDelivery interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -165,7 +165,7 @@ type MwsLogDelivery interface {
 
 // The jsii proxy struct for MwsLogDelivery
 type jsiiProxy_MwsLogDelivery struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_MwsLogDelivery) AccountId() *string {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_MwsLogDelivery) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsLogDelivery) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MwsLogDelivery) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_MwsLogDelivery) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsLogDelivery) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MwsLogDelivery) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_MwsLogDelivery) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsLogDelivery) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MwsLogDelivery) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_MwsLogDelivery) OutputFormatInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsLogDelivery) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MwsLogDelivery) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_MwsLogDelivery) StorageConfigurationIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsLogDelivery) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MwsLogDelivery) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -569,7 +569,7 @@ func (j *jsiiProxy_MwsLogDelivery) WorkspaceIdsFilterInput() *[]*float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_log_delivery databricks_mws_log_delivery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_log_delivery databricks_mws_log_delivery} Resource.
 func NewMwsLogDelivery(scope constructs.Construct, id *string, config *MwsLogDeliveryConfig) MwsLogDelivery {
 	_init_.Initialize()
 
@@ -579,7 +579,7 @@ func NewMwsLogDelivery(scope constructs.Construct, id *string, config *MwsLogDel
 	j := jsiiProxy_MwsLogDelivery{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery",
+		"@cdktn/provider-databricks.mwsLogDelivery.MwsLogDelivery",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -587,12 +587,12 @@ func NewMwsLogDelivery(scope constructs.Construct, id *string, config *MwsLogDel
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_log_delivery databricks_mws_log_delivery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_log_delivery databricks_mws_log_delivery} Resource.
 func NewMwsLogDelivery_Override(m MwsLogDelivery, scope constructs.Construct, id *string, config *MwsLogDeliveryConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery",
+		"@cdktn/provider-databricks.mwsLogDelivery.MwsLogDelivery",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -694,7 +694,7 @@ func (j *jsiiProxy_MwsLogDelivery)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MwsLogDelivery)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MwsLogDelivery)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -713,7 +713,7 @@ func (j *jsiiProxy_MwsLogDelivery)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsLogDelivery)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MwsLogDelivery)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +746,7 @@ func (j *jsiiProxy_MwsLogDelivery)SetOutputFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsLogDelivery)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MwsLogDelivery)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -798,17 +798,17 @@ func (j *jsiiProxy_MwsLogDelivery)SetWorkspaceIdsFilter(val *[]*float64) {
 	)
 }
 
-// Generates CDKTF code for importing a MwsLogDelivery resource upon running "cdktf plan <stack-name>".
-func MwsLogDelivery_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MwsLogDelivery resource upon running "cdktn plan <stack-name>".
+func MwsLogDelivery_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMwsLogDelivery_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery",
+		"@cdktn/provider-databricks.mwsLogDelivery.MwsLogDelivery",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -843,7 +843,7 @@ func MwsLogDelivery_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery",
+		"@cdktn/provider-databricks.mwsLogDelivery.MwsLogDelivery",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -862,7 +862,7 @@ func MwsLogDelivery_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery",
+		"@cdktn/provider-databricks.mwsLogDelivery.MwsLogDelivery",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -881,7 +881,7 @@ func MwsLogDelivery_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery",
+		"@cdktn/provider-databricks.mwsLogDelivery.MwsLogDelivery",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -894,7 +894,7 @@ func MwsLogDelivery_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery",
+		"@cdktn/provider-databricks.mwsLogDelivery.MwsLogDelivery",
 		"tfResourceType",
 		&returns,
 	)
@@ -939,11 +939,11 @@ func (m *jsiiProxy_MwsLogDelivery) GetAnyMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (m *jsiiProxy_MwsLogDelivery) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsLogDelivery) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1080,7 +1080,7 @@ func (m *jsiiProxy_MwsLogDelivery) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MwsLogDelivery) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MwsLogDelivery) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1091,11 +1091,11 @@ func (m *jsiiProxy_MwsLogDelivery) ImportFrom(id *string, provider cdktf.Terrafo
 	)
 }
 
-func (m *jsiiProxy_MwsLogDelivery) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MwsLogDelivery) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,

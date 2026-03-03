@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksdataqualityrefreshes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdataqualityrefreshes/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksdataqualityrefreshes/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksDataQualityRefreshesRefreshesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,6 +40,8 @@ type DataDatabricksDataQualityRefreshesRefreshesOutputReference interface {
 	ObjectType() *string
 	SetObjectType(val *string)
 	ObjectTypeInput() *string
+	ProviderConfig() DataDatabricksDataQualityRefreshesRefreshesProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	RefreshId() *float64
 	SetRefreshId(val *float64)
 	RefreshIdInput() *float64
@@ -50,16 +52,16 @@ type DataDatabricksDataQualityRefreshesRefreshesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Trigger() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,12 +77,14 @@ type DataDatabricksDataQualityRefreshesRefreshesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutProviderConfig(value *DataDatabricksDataQualityRefreshesRefreshesProviderConfig)
+	ResetProviderConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,7 +94,7 @@ type DataDatabricksDataQualityRefreshesRefreshesOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksDataQualityRefreshesRefreshesOutputReference
 type jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) ComplexObjectIndex() interface{} {
@@ -203,6 +207,26 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) O
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) ProviderConfig() DataDatabricksDataQualityRefreshesRefreshesProviderConfigOutputReference {
+	var returns DataDatabricksDataQualityRefreshesRefreshesProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) RefreshId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -253,8 +277,8 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -274,7 +298,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) T
 }
 
 
-func NewDataDatabricksDataQualityRefreshesRefreshesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksDataQualityRefreshesRefreshesOutputReference {
+func NewDataDatabricksDataQualityRefreshesRefreshesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksDataQualityRefreshesRefreshesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksDataQualityRefreshesRefreshesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -283,7 +307,7 @@ func NewDataDatabricksDataQualityRefreshesRefreshesOutputReference(terraformReso
 	j := jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -291,11 +315,11 @@ func NewDataDatabricksDataQualityRefreshesRefreshesOutputReference(terraformReso
 	return &j
 }
 
-func NewDataDatabricksDataQualityRefreshesRefreshesOutputReference_Override(d DataDatabricksDataQualityRefreshesRefreshesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksDataQualityRefreshesRefreshesOutputReference_Override(d DataDatabricksDataQualityRefreshesRefreshesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -378,7 +402,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,11 +442,11 @@ func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -546,8 +570,8 @@ func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -559,11 +583,11 @@ func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -575,7 +599,26 @@ func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) PutProviderConfig(value *DataDatabricksDataQualityRefreshesRefreshesProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

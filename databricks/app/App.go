@@ -1,27 +1,27 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package app
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/app/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/app/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/app databricks_app}.
 type App interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
 	AppStatus() AppAppStatusOutputReference
 	BudgetPolicyId() *string
 	SetBudgetPolicyId(val *string)
 	BudgetPolicyIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ComputeSize() *string
 	SetComputeSize(val *string)
 	ComputeSizeInput() *string
@@ -47,20 +47,23 @@ type App interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveBudgetPolicyId() *string
+	EffectiveUsagePolicyId() *string
 	EffectiveUserApiScopes() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GitRepository() AppGitRepositoryOutputReference
+	GitRepositoryInput() interface{}
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -73,9 +76,9 @@ type App interface {
 	Oauth2AppIntegrationId() *string
 	PendingDeployment() AppPendingDeploymentOutputReference
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() AppProviderConfigOutputReference
 	ProviderConfigInput() interface{}
 	// Experimental.
@@ -89,8 +92,11 @@ type App interface {
 	ServicePrincipalClientId() *string
 	ServicePrincipalId() *float64
 	ServicePrincipalName() *string
+	Space() *string
+	SetSpace(val *string)
+	SpaceInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -98,6 +104,9 @@ type App interface {
 	Updater() *string
 	UpdateTime() *string
 	Url() *string
+	UsagePolicyId() *string
+	SetUsagePolicyId(val *string)
+	UsagePolicyIdInput() *string
 	UserApiScopes() *[]*string
 	SetUserApiScopes(val *[]*string)
 	UserApiScopesInput() *[]*string
@@ -109,7 +118,7 @@ type App interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -127,9 +136,9 @@ type App interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -144,17 +153,21 @@ type App interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutGitRepository(value *AppGitRepository)
 	PutProviderConfig(value *AppProviderConfig)
 	PutResources(value interface{})
 	ResetBudgetPolicyId()
 	ResetComputeSize()
 	ResetDescription()
+	ResetGitRepository()
 	ResetNoCompute()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
 	ResetResources()
+	ResetSpace()
+	ResetUsagePolicyId()
 	ResetUserApiScopes()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -171,7 +184,7 @@ type App interface {
 
 // The jsii proxy struct for App
 type jsiiProxy_App struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_App) ActiveDeployment() AppActiveDeploymentOutputReference {
@@ -214,8 +227,8 @@ func (j *jsiiProxy_App) BudgetPolicyIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_App) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_App) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -354,6 +367,16 @@ func (j *jsiiProxy_App) EffectiveBudgetPolicyId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) EffectiveUsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveUsagePolicyId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) EffectiveUserApiScopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -364,8 +387,8 @@ func (j *jsiiProxy_App) EffectiveUserApiScopes() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_App) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_App) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -394,6 +417,26 @@ func (j *jsiiProxy_App) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) GitRepository() AppGitRepositoryOutputReference {
+	var returns AppGitRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"gitRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) GitRepositoryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitRepositoryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -404,8 +447,8 @@ func (j *jsiiProxy_App) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_App) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_App) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -494,8 +537,8 @@ func (j *jsiiProxy_App) PendingDeployment() AppPendingDeploymentOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_App) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_App) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -594,8 +637,28 @@ func (j *jsiiProxy_App) ServicePrincipalName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_App) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_App) Space() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"space",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) SpaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -654,6 +717,26 @@ func (j *jsiiProxy_App) Url() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) UsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) UsagePolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) UserApiScopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -675,7 +758,7 @@ func (j *jsiiProxy_App) UserApiScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -685,7 +768,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	j := jsiiProxy_App{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.app.App",
+		"@cdktn/provider-databricks.app.App",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -693,12 +776,12 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.app.App",
+		"@cdktn/provider-databricks.app.App",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -767,7 +850,7 @@ func (j *jsiiProxy_App)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_App)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_App)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -775,7 +858,7 @@ func (j *jsiiProxy_App)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_App)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_App)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +891,7 @@ func (j *jsiiProxy_App)SetNoCompute(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_App)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_App)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -827,6 +910,28 @@ func (j *jsiiProxy_App)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_App)SetSpace(val *string) {
+	if err := j.validateSetSpaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"space",
+		val,
+	)
+}
+
+func (j *jsiiProxy_App)SetUsagePolicyId(val *string) {
+	if err := j.validateSetUsagePolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usagePolicyId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_App)SetUserApiScopes(val *[]*string) {
 	if err := j.validateSetUserApiScopesParameters(val); err != nil {
 		panic(err)
@@ -838,17 +943,17 @@ func (j *jsiiProxy_App)SetUserApiScopes(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a App resource upon running "cdktf plan <stack-name>".
-func App_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a App resource upon running "cdktn plan <stack-name>".
+func App_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateApp_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.app.App",
+		"@cdktn/provider-databricks.app.App",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -883,7 +988,7 @@ func App_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.app.App",
+		"@cdktn/provider-databricks.app.App",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -902,7 +1007,7 @@ func App_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.app.App",
+		"@cdktn/provider-databricks.app.App",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -921,7 +1026,7 @@ func App_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.app.App",
+		"@cdktn/provider-databricks.app.App",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -934,7 +1039,7 @@ func App_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.app.App",
+		"@cdktn/provider-databricks.app.App",
 		"tfResourceType",
 		&returns,
 	)
@@ -979,11 +1084,11 @@ func (a *jsiiProxy_App) GetAnyMapAttribute(terraformAttribute *string) *map[stri
 	return returns
 }
 
-func (a *jsiiProxy_App) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_App) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1120,7 +1225,7 @@ func (a *jsiiProxy_App) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_App) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_App) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1131,11 +1236,11 @@ func (a *jsiiProxy_App) ImportFrom(id *string, provider cdktf.TerraformProvider)
 	)
 }
 
-func (a *jsiiProxy_App) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_App) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1191,6 +1296,17 @@ func (a *jsiiProxy_App) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_App) PutGitRepository(value *AppGitRepository) {
+	if err := a.validatePutGitRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putGitRepository",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_App) PutProviderConfig(value *AppProviderConfig) {
 	if err := a.validatePutProviderConfigParameters(value); err != nil {
 		panic(err)
@@ -1237,6 +1353,14 @@ func (a *jsiiProxy_App) ResetDescription() {
 	)
 }
 
+func (a *jsiiProxy_App) ResetGitRepository() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGitRepository",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_App) ResetNoCompute() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1265,6 +1389,22 @@ func (a *jsiiProxy_App) ResetResources() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetSpace() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSpace",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetUsagePolicyId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUsagePolicyId",
 		nil, // no parameters
 	)
 }

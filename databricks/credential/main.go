@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package credential
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.credential.Credential",
+		"@cdktn/provider-databricks.credential.Credential",
 		reflect.TypeOf((*Credential)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -124,16 +124,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Credential{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.credential.CredentialAwsIamRole",
+		"@cdktn/provider-databricks.credential.CredentialAwsIamRole",
 		reflect.TypeOf((*CredentialAwsIamRole)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.credential.CredentialAwsIamRoleOutputReference",
+		"@cdktn/provider-databricks.credential.CredentialAwsIamRoleOutputReference",
 		reflect.TypeOf((*CredentialAwsIamRoleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -169,16 +169,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CredentialAwsIamRoleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.credential.CredentialAzureManagedIdentity",
+		"@cdktn/provider-databricks.credential.CredentialAzureManagedIdentity",
 		reflect.TypeOf((*CredentialAzureManagedIdentity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.credential.CredentialAzureManagedIdentityOutputReference",
+		"@cdktn/provider-databricks.credential.CredentialAzureManagedIdentityOutputReference",
 		reflect.TypeOf((*CredentialAzureManagedIdentityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConnectorId", GoGetter: "AccessConnectorId"},
@@ -213,16 +213,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CredentialAzureManagedIdentityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.credential.CredentialAzureServicePrincipal",
+		"@cdktn/provider-databricks.credential.CredentialAzureServicePrincipal",
 		reflect.TypeOf((*CredentialAzureServicePrincipal)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.credential.CredentialAzureServicePrincipalOutputReference",
+		"@cdktn/provider-databricks.credential.CredentialAzureServicePrincipalOutputReference",
 		reflect.TypeOf((*CredentialAzureServicePrincipalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationId", GoGetter: "ApplicationId"},
@@ -255,20 +255,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CredentialAzureServicePrincipalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.credential.CredentialConfig",
+		"@cdktn/provider-databricks.credential.CredentialConfig",
 		reflect.TypeOf((*CredentialConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.credential.CredentialDatabricksGcpServiceAccount",
+		"@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccount",
 		reflect.TypeOf((*CredentialDatabricksGcpServiceAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.credential.CredentialDatabricksGcpServiceAccountOutputReference",
+		"@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccountOutputReference",
 		reflect.TypeOf((*CredentialDatabricksGcpServiceAccountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,7 +304,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CredentialDatabricksGcpServiceAccountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

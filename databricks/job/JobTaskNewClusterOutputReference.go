@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/job/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobTaskNewClusterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApplyPolicyDefaultValues() interface{}
 	SetApplyPolicyDefaultValues(val interface{})
 	ApplyPolicyDefaultValuesAllowList() *[]*string
@@ -61,6 +61,8 @@ type JobTaskNewClusterOutputReference interface {
 	DriverInstancePoolId() *string
 	SetDriverInstancePoolId(val *string)
 	DriverInstancePoolIdInput() *string
+	DriverNodeTypeFlexibility() JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference
+	DriverNodeTypeFlexibilityInput() *JobTaskNewClusterDriverNodeTypeFlexibility
 	DriverNodeTypeId() *string
 	SetDriverNodeTypeId(val *string)
 	DriverNodeTypeIdInput() *string
@@ -129,15 +131,17 @@ type JobTaskNewClusterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TotalInitialRemoteDiskSize() *float64
 	SetTotalInitialRemoteDiskSize(val *float64)
 	TotalInitialRemoteDiskSizeInput() *float64
 	UseMlRuntime() interface{}
 	SetUseMlRuntime(val interface{})
 	UseMlRuntimeInput() interface{}
+	WorkerNodeTypeFlexibility() JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference
+	WorkerNodeTypeFlexibilityInput() *JobTaskNewClusterWorkerNodeTypeFlexibility
 	WorkloadType() JobTaskNewClusterWorkloadTypeOutputReference
 	WorkloadTypeInput() *JobTaskNewClusterWorkloadType
 	// Experimental.
@@ -145,7 +149,7 @@ type JobTaskNewClusterOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -161,19 +165,21 @@ type JobTaskNewClusterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAutoscale(value *JobTaskNewClusterAutoscale)
 	PutAwsAttributes(value *JobTaskNewClusterAwsAttributes)
 	PutAzureAttributes(value *JobTaskNewClusterAzureAttributes)
 	PutClusterLogConf(value *JobTaskNewClusterClusterLogConf)
 	PutClusterMountInfo(value interface{})
 	PutDockerImage(value *JobTaskNewClusterDockerImage)
+	PutDriverNodeTypeFlexibility(value *JobTaskNewClusterDriverNodeTypeFlexibility)
 	PutGcpAttributes(value *JobTaskNewClusterGcpAttributes)
 	PutInitScripts(value interface{})
 	PutLibrary(value interface{})
 	PutProviderConfig(value *JobTaskNewClusterProviderConfig)
+	PutWorkerNodeTypeFlexibility(value *JobTaskNewClusterWorkerNodeTypeFlexibility)
 	PutWorkloadType(value *JobTaskNewClusterWorkloadType)
 	ResetApplyPolicyDefaultValues()
 	ResetApplyPolicyDefaultValuesAllowList()
@@ -188,6 +194,7 @@ type JobTaskNewClusterOutputReference interface {
 	ResetDataSecurityMode()
 	ResetDockerImage()
 	ResetDriverInstancePoolId()
+	ResetDriverNodeTypeFlexibility()
 	ResetDriverNodeTypeId()
 	ResetEnableElasticDisk()
 	ResetEnableLocalDiskEncryption()
@@ -211,10 +218,11 @@ type JobTaskNewClusterOutputReference interface {
 	ResetSshPublicKeys()
 	ResetTotalInitialRemoteDiskSize()
 	ResetUseMlRuntime()
+	ResetWorkerNodeTypeFlexibility()
 	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -224,7 +232,7 @@ type JobTaskNewClusterOutputReference interface {
 
 // The jsii proxy struct for JobTaskNewClusterOutputReference
 type jsiiProxy_JobTaskNewClusterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) ApplyPolicyDefaultValues() interface{} {
@@ -512,6 +520,26 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) DriverInstancePoolIdInput()
 	_jsii_.Get(
 		j,
 		"driverInstancePoolIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) DriverNodeTypeFlexibility() JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference {
+	var returns JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference
+	_jsii_.Get(
+		j,
+		"driverNodeTypeFlexibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) DriverNodeTypeFlexibilityInput() *JobTaskNewClusterDriverNodeTypeFlexibility {
+	var returns *JobTaskNewClusterDriverNodeTypeFlexibility
+	_jsii_.Get(
+		j,
+		"driverNodeTypeFlexibilityInput",
 		&returns,
 	)
 	return returns
@@ -967,8 +995,8 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -1017,6 +1045,26 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) UseMlRuntimeInput() interfa
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) WorkerNodeTypeFlexibility() JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference {
+	var returns JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference
+	_jsii_.Get(
+		j,
+		"workerNodeTypeFlexibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) WorkerNodeTypeFlexibilityInput() *JobTaskNewClusterWorkerNodeTypeFlexibility {
+	var returns *JobTaskNewClusterWorkerNodeTypeFlexibility
+	_jsii_.Get(
+		j,
+		"workerNodeTypeFlexibilityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) WorkloadType() JobTaskNewClusterWorkloadTypeOutputReference {
 	var returns JobTaskNewClusterWorkloadTypeOutputReference
 	_jsii_.Get(
@@ -1038,7 +1086,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) WorkloadTypeInput() *JobTas
 }
 
 
-func NewJobTaskNewClusterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterOutputReference {
+func NewJobTaskNewClusterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobTaskNewClusterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -1047,7 +1095,7 @@ func NewJobTaskNewClusterOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_JobTaskNewClusterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -1055,11 +1103,11 @@ func NewJobTaskNewClusterOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewJobTaskNewClusterOutputReference_Override(j JobTaskNewClusterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobTaskNewClusterOutputReference_Override(j JobTaskNewClusterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
@@ -1373,7 +1421,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1435,11 +1483,11 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -1563,8 +1611,8 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -1576,11 +1624,11 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -1658,6 +1706,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutDockerImage(value *JobTa
 	)
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutDriverNodeTypeFlexibility(value *JobTaskNewClusterDriverNodeTypeFlexibility) {
+	if err := j.validatePutDriverNodeTypeFlexibilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putDriverNodeTypeFlexibility",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutGcpAttributes(value *JobTaskNewClusterGcpAttributes) {
 	if err := j.validatePutGcpAttributesParameters(value); err != nil {
 		panic(err)
@@ -1698,6 +1757,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutProviderConfig(value *Jo
 	_jsii_.InvokeVoid(
 		j,
 		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutWorkerNodeTypeFlexibility(value *JobTaskNewClusterWorkerNodeTypeFlexibility) {
+	if err := j.validatePutWorkerNodeTypeFlexibilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putWorkerNodeTypeFlexibility",
 		[]interface{}{value},
 	)
 }
@@ -1813,6 +1883,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetDriverInstancePoolId()
 	_jsii_.InvokeVoid(
 		j,
 		"resetDriverInstancePoolId",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetDriverNodeTypeFlexibility() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDriverNodeTypeFlexibility",
 		nil, // no parameters
 	)
 }
@@ -2001,6 +2079,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetUseMlRuntime() {
 	)
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetWorkerNodeTypeFlexibility() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetWorkerNodeTypeFlexibility",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetWorkloadType() {
 	_jsii_.InvokeVoid(
 		j,
@@ -2009,7 +2095,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetWorkloadType() {
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (m *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateInterpolationFor
 	return nil
 }
 
-func (m *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateSetWorkspaceUrlP
 	return nil
 }
 
-func validateNewMlflowWebhookJobSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMlflowWebhookJobSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

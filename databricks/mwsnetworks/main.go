@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mwsnetworks
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsNetworks.MwsNetworks",
+		"@cdktn/provider-databricks.mwsNetworks.MwsNetworks",
 		reflect.TypeOf((*MwsNetworks)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -98,20 +98,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsNetworks{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig",
+		"@cdktn/provider-databricks.mwsNetworks.MwsNetworksConfig",
 		reflect.TypeOf((*MwsNetworksConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessages",
+		"@cdktn/provider-databricks.mwsNetworks.MwsNetworksErrorMessages",
 		reflect.TypeOf((*MwsNetworksErrorMessages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList",
+		"@cdktn/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList",
 		reflect.TypeOf((*MwsNetworksErrorMessagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -128,12 +128,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsNetworksErrorMessagesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesOutputReference",
+		"@cdktn/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesOutputReference",
 		reflect.TypeOf((*MwsNetworksErrorMessagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -166,16 +166,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsNetworksErrorMessagesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo",
+		"@cdktn/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo",
 		reflect.TypeOf((*MwsNetworksGcpNetworkInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfoOutputReference",
+		"@cdktn/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfoOutputReference",
 		reflect.TypeOf((*MwsNetworksGcpNetworkInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -216,16 +216,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsNetworksGcpNetworkInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpoints",
+		"@cdktn/provider-databricks.mwsNetworks.MwsNetworksVpcEndpoints",
 		reflect.TypeOf((*MwsNetworksVpcEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpointsOutputReference",
+		"@cdktn/provider-databricks.mwsNetworks.MwsNetworksVpcEndpointsOutputReference",
 		reflect.TypeOf((*MwsNetworksVpcEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -256,7 +256,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsNetworksVpcEndpointsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

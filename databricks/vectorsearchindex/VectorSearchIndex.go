@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package vectorsearchindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/vectorsearchindex/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchindex/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index databricks_vector_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index databricks_vector_search_index}.
 type VectorSearchIndex interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -40,9 +40,9 @@ type VectorSearchIndex interface {
 	SetEndpointName(val *string)
 	EndpointNameInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -54,9 +54,9 @@ type VectorSearchIndex interface {
 	SetIndexType(val *string)
 	IndexTypeInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -66,9 +66,11 @@ type VectorSearchIndex interface {
 	SetPrimaryKey(val *string)
 	PrimaryKeyInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() VectorSearchIndexProviderConfigOutputReference
+	ProviderConfigInput() *VectorSearchIndexProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -77,7 +79,7 @@ type VectorSearchIndex interface {
 	RawOverrides() interface{}
 	Status() VectorSearchIndexStatusList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -92,7 +94,7 @@ type VectorSearchIndex interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -110,9 +112,9 @@ type VectorSearchIndex interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -129,6 +131,7 @@ type VectorSearchIndex interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDeltaSyncIndexSpec(value *VectorSearchIndexDeltaSyncIndexSpec)
 	PutDirectAccessIndexSpec(value *VectorSearchIndexDirectAccessIndexSpec)
+	PutProviderConfig(value *VectorSearchIndexProviderConfig)
 	PutTimeouts(value *VectorSearchIndexTimeouts)
 	ResetDeltaSyncIndexSpec()
 	ResetDirectAccessIndexSpec()
@@ -136,6 +139,7 @@ type VectorSearchIndex interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -152,11 +156,11 @@ type VectorSearchIndex interface {
 
 // The jsii proxy struct for VectorSearchIndex
 type jsiiProxy_VectorSearchIndex struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_VectorSearchIndex) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_VectorSearchIndex) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -275,8 +279,8 @@ func (j *jsiiProxy_VectorSearchIndex) EndpointNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchIndex) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_VectorSearchIndex) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -345,8 +349,8 @@ func (j *jsiiProxy_VectorSearchIndex) IndexTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchIndex) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_VectorSearchIndex) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -405,11 +409,31 @@ func (j *jsiiProxy_VectorSearchIndex) PrimaryKeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchIndex) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_VectorSearchIndex) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndex) ProviderConfig() VectorSearchIndexProviderConfigOutputReference {
+	var returns VectorSearchIndexProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndex) ProviderConfigInput() *VectorSearchIndexProviderConfig {
+	var returns *VectorSearchIndexProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -445,8 +469,8 @@ func (j *jsiiProxy_VectorSearchIndex) Status() VectorSearchIndexStatusList {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchIndex) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_VectorSearchIndex) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -496,7 +520,7 @@ func (j *jsiiProxy_VectorSearchIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
 func NewVectorSearchIndex(scope constructs.Construct, id *string, config *VectorSearchIndexConfig) VectorSearchIndex {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewVectorSearchIndex(scope constructs.Construct, id *string, config *Vector
 	j := jsiiProxy_VectorSearchIndex{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex",
+		"@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -514,12 +538,12 @@ func NewVectorSearchIndex(scope constructs.Construct, id *string, config *Vector
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
 func NewVectorSearchIndex_Override(v VectorSearchIndex, scope constructs.Construct, id *string, config *VectorSearchIndexConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex",
+		"@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -566,7 +590,7 @@ func (j *jsiiProxy_VectorSearchIndex)SetEndpointName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchIndex)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VectorSearchIndex)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -596,7 +620,7 @@ func (j *jsiiProxy_VectorSearchIndex)SetIndexType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchIndex)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VectorSearchIndex)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +653,7 @@ func (j *jsiiProxy_VectorSearchIndex)SetPrimaryKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchIndex)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VectorSearchIndex)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -648,17 +672,17 @@ func (j *jsiiProxy_VectorSearchIndex)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a VectorSearchIndex resource upon running "cdktf plan <stack-name>".
-func VectorSearchIndex_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a VectorSearchIndex resource upon running "cdktn plan <stack-name>".
+func VectorSearchIndex_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateVectorSearchIndex_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex",
+		"@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -693,7 +717,7 @@ func VectorSearchIndex_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex",
+		"@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +736,7 @@ func VectorSearchIndex_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex",
+		"@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -731,7 +755,7 @@ func VectorSearchIndex_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex",
+		"@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -744,7 +768,7 @@ func VectorSearchIndex_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex",
+		"@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex",
 		"tfResourceType",
 		&returns,
 	)
@@ -789,11 +813,11 @@ func (v *jsiiProxy_VectorSearchIndex) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchIndex) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VectorSearchIndex) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -930,7 +954,7 @@ func (v *jsiiProxy_VectorSearchIndex) HasResourceMove() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchIndex) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (v *jsiiProxy_VectorSearchIndex) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -941,11 +965,11 @@ func (v *jsiiProxy_VectorSearchIndex) ImportFrom(id *string, provider cdktf.Terr
 	)
 }
 
-func (v *jsiiProxy_VectorSearchIndex) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VectorSearchIndex) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -1023,6 +1047,17 @@ func (v *jsiiProxy_VectorSearchIndex) PutDirectAccessIndexSpec(value *VectorSear
 	)
 }
 
+func (v *jsiiProxy_VectorSearchIndex) PutProviderConfig(value *VectorSearchIndexProviderConfig) {
+	if err := v.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VectorSearchIndex) PutTimeouts(value *VectorSearchIndexTimeouts) {
 	if err := v.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1062,6 +1097,14 @@ func (v *jsiiProxy_VectorSearchIndex) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VectorSearchIndex) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

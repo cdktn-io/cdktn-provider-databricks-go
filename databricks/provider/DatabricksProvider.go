@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/provider/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs databricks}.
 type DatabricksProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -55,7 +55,7 @@ type DatabricksProvider interface {
 	SetAzureWorkspaceResourceId(val *string)
 	AzureWorkspaceResourceIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -82,6 +82,9 @@ type DatabricksProvider interface {
 	DebugTruncateBytes() *float64
 	SetDebugTruncateBytes(val *float64)
 	DebugTruncateBytesInput() *float64
+	DisableOauthRefreshToken() interface{}
+	SetDisableOauthRefreshToken(val interface{})
+	DisableOauthRefreshTokenInput() interface{}
 	ExperimentalIsUnifiedHost() interface{}
 	SetExperimentalIsUnifiedHost(val interface{})
 	ExperimentalIsUnifiedHostInput() interface{}
@@ -128,6 +131,9 @@ type DatabricksProvider interface {
 	RetryTimeoutSeconds() *float64
 	SetRetryTimeoutSeconds(val *float64)
 	RetryTimeoutSecondsInput() *float64
+	Scopes() *[]*string
+	SetScopes(val *[]*string)
+	ScopesInput() *[]*string
 	ServerlessComputeId() *string
 	SetServerlessComputeId(val *string)
 	ServerlessComputeIdInput() *string
@@ -135,7 +141,7 @@ type DatabricksProvider interface {
 	SetSkipVerify(val interface{})
 	SkipVerifyInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -178,6 +184,7 @@ type DatabricksProvider interface {
 	ResetDatabricksIdTokenFilepath()
 	ResetDebugHeaders()
 	ResetDebugTruncateBytes()
+	ResetDisableOauthRefreshToken()
 	ResetExperimentalIsUnifiedHost()
 	ResetGoogleCredentials()
 	ResetGoogleServiceAccount()
@@ -193,6 +200,7 @@ type DatabricksProvider interface {
 	ResetProfile()
 	ResetRateLimit()
 	ResetRetryTimeoutSeconds()
+	ResetScopes()
 	ResetServerlessComputeId()
 	ResetSkipVerify()
 	ResetToken()
@@ -214,7 +222,7 @@ type DatabricksProvider interface {
 
 // The jsii proxy struct for DatabricksProvider
 type jsiiProxy_DatabricksProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_DatabricksProvider) AccountId() *string {
@@ -477,8 +485,8 @@ func (j *jsiiProxy_DatabricksProvider) AzureWorkspaceResourceIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatabricksProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DatabricksProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -652,6 +660,26 @@ func (j *jsiiProxy_DatabricksProvider) DebugTruncateBytesInput() *float64 {
 	_jsii_.Get(
 		j,
 		"debugTruncateBytesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) DisableOauthRefreshToken() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableOauthRefreshToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) DisableOauthRefreshTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableOauthRefreshTokenInput",
 		&returns,
 	)
 	return returns
@@ -947,6 +975,26 @@ func (j *jsiiProxy_DatabricksProvider) RetryTimeoutSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) Scopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabricksProvider) ServerlessComputeId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -987,8 +1035,8 @@ func (j *jsiiProxy_DatabricksProvider) SkipVerifyInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DatabricksProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DatabricksProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -1098,7 +1146,7 @@ func (j *jsiiProxy_DatabricksProvider) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -1108,7 +1156,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	j := jsiiProxy_DatabricksProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.provider.DatabricksProvider",
+		"@cdktn/provider-databricks.provider.DatabricksProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1116,12 +1164,12 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.provider.DatabricksProvider",
+		"@cdktn/provider-databricks.provider.DatabricksProvider",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1301,6 +1349,17 @@ func (j *jsiiProxy_DatabricksProvider)SetDebugTruncateBytes(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_DatabricksProvider)SetDisableOauthRefreshToken(val interface{}) {
+	if err := j.validateSetDisableOauthRefreshTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableOauthRefreshToken",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabricksProvider)SetExperimentalIsUnifiedHost(val interface{}) {
 	if err := j.validateSetExperimentalIsUnifiedHostParameters(val); err != nil {
 		panic(err)
@@ -1400,6 +1459,14 @@ func (j *jsiiProxy_DatabricksProvider)SetRetryTimeoutSeconds(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_DatabricksProvider)SetScopes(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"scopes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabricksProvider)SetServerlessComputeId(val *string) {
 	_jsii_.Set(
 		j,
@@ -1451,17 +1518,17 @@ func (j *jsiiProxy_DatabricksProvider)SetWorkspaceId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DatabricksProvider resource upon running "cdktf plan <stack-name>".
-func DatabricksProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DatabricksProvider resource upon running "cdktn plan <stack-name>".
+func DatabricksProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDatabricksProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.provider.DatabricksProvider",
+		"@cdktn/provider-databricks.provider.DatabricksProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1496,7 +1563,7 @@ func DatabricksProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.provider.DatabricksProvider",
+		"@cdktn/provider-databricks.provider.DatabricksProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1515,7 +1582,7 @@ func DatabricksProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.provider.DatabricksProvider",
+		"@cdktn/provider-databricks.provider.DatabricksProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1534,7 +1601,7 @@ func DatabricksProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.provider.DatabricksProvider",
+		"@cdktn/provider-databricks.provider.DatabricksProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -1547,7 +1614,7 @@ func DatabricksProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.provider.DatabricksProvider",
+		"@cdktn/provider-databricks.provider.DatabricksProvider",
 		"tfResourceType",
 		&returns,
 	)
@@ -1744,6 +1811,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetDebugTruncateBytes() {
 	)
 }
 
+func (d *jsiiProxy_DatabricksProvider) ResetDisableOauthRefreshToken() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDisableOauthRefreshToken",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabricksProvider) ResetExperimentalIsUnifiedHost() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1844,6 +1919,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetRetryTimeoutSeconds() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRetryTimeoutSeconds",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetScopes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScopes",
 		nil, // no parameters
 	)
 }

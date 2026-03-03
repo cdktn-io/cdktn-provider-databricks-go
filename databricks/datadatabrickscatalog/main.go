@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickscatalog
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
 		reflect.TypeOf((*DataDatabricksCatalog)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,20 +63,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksCatalog{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo",
 		reflect.TypeOf((*DataDatabricksCatalogCatalogInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag",
 		reflect.TypeOf((*DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlagOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlagOutputReference",
 		reflect.TypeOf((*DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlagOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,12 +111,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlagOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksCatalogCatalogInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "browseOnly", GoGetter: "BrowseOnly"},
@@ -214,16 +214,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfo",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfo",
 		reflect.TypeOf((*DataDatabricksCatalogCatalogInfoProvisioningInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -253,20 +253,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig",
 		reflect.TypeOf((*DataDatabricksCatalogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfig",
 		reflect.TypeOf((*DataDatabricksCatalogProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksCatalogProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,7 +295,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksCatalogProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

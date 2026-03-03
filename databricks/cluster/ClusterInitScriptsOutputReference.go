@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package cluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/cluster/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/cluster/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ClusterInitScriptsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Abfss() ClusterInitScriptsAbfssOutputReference
 	AbfssInput() *ClusterInitScriptsAbfss
 	// the index of the complex object in a list.
@@ -47,9 +47,9 @@ type ClusterInitScriptsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Volumes() ClusterInitScriptsVolumesOutputReference
 	VolumesInput() *ClusterInitScriptsVolumes
 	Workspace() ClusterInitScriptsWorkspaceOutputReference
@@ -59,7 +59,7 @@ type ClusterInitScriptsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,9 +75,9 @@ type ClusterInitScriptsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAbfss(value *ClusterInitScriptsAbfss)
 	PutDbfs(value *ClusterInitScriptsDbfs)
 	PutFile(value *ClusterInitScriptsFile)
@@ -94,7 +94,7 @@ type ClusterInitScriptsOutputReference interface {
 	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,7 +104,7 @@ type ClusterInitScriptsOutputReference interface {
 
 // The jsii proxy struct for ClusterInitScriptsOutputReference
 type jsiiProxy_ClusterInitScriptsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ClusterInitScriptsOutputReference) Abfss() ClusterInitScriptsAbfssOutputReference {
@@ -267,8 +267,8 @@ func (j *jsiiProxy_ClusterInitScriptsOutputReference) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ClusterInitScriptsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ClusterInitScriptsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -318,7 +318,7 @@ func (j *jsiiProxy_ClusterInitScriptsOutputReference) WorkspaceInput() *ClusterI
 }
 
 
-func NewClusterInitScriptsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClusterInitScriptsOutputReference {
+func NewClusterInitScriptsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClusterInitScriptsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewClusterInitScriptsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -327,7 +327,7 @@ func NewClusterInitScriptsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_ClusterInitScriptsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference",
+		"@cdktn/provider-databricks.cluster.ClusterInitScriptsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -335,11 +335,11 @@ func NewClusterInitScriptsOutputReference(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewClusterInitScriptsOutputReference_Override(c ClusterInitScriptsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewClusterInitScriptsOutputReference_Override(c ClusterInitScriptsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference",
+		"@cdktn/provider-databricks.cluster.ClusterInitScriptsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -389,7 +389,7 @@ func (j *jsiiProxy_ClusterInitScriptsOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_ClusterInitScriptsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClusterInitScriptsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,11 +429,11 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) GetAnyMapAttribute(terrafo
 	return returns
 }
 
-func (c *jsiiProxy_ClusterInitScriptsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -557,8 +557,8 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) GetStringMapAttribute(terr
 	return returns
 }
 
-func (c *jsiiProxy_ClusterInitScriptsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -570,11 +570,11 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (c *jsiiProxy_ClusterInitScriptsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -719,7 +719,7 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) ResetWorkspace() {
 	)
 }
 
-func (c *jsiiProxy_ClusterInitScriptsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksvolume
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolume",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume",
 		reflect.TypeOf((*DataDatabricksVolume)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,20 +63,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksVolume{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig",
 		reflect.TypeOf((*DataDatabricksVolumeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfig",
 		reflect.TypeOf((*DataDatabricksVolumeProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksVolumeProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -105,20 +105,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksVolumeProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo",
 		reflect.TypeOf((*DataDatabricksVolumeVolumeInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetails",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetails",
 		reflect.TypeOf((*DataDatabricksVolumeVolumeInfoEncryptionDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference",
 		reflect.TypeOf((*DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -149,16 +149,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails",
 		reflect.TypeOf((*DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference",
 		reflect.TypeOf((*DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -191,12 +191,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksVolumeVolumeInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPoint", GoGetter: "AccessPoint"},
@@ -275,7 +275,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksVolumeVolumeInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

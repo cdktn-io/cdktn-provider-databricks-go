@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package featureengineeringfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/featureengineeringfeature/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringfeature/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
 type FeatureEngineeringFeature interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,9 +38,9 @@ type FeatureEngineeringFeature interface {
 	SetFilterCondition(val *string)
 	FilterConditionInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -54,17 +54,19 @@ type FeatureEngineeringFeature interface {
 	SetInputs(val *[]*string)
 	InputsInput() *[]*string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LineageContext() FeatureEngineeringFeatureLineageContextOutputReference
 	LineageContextInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() FeatureEngineeringFeatureProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -74,7 +76,7 @@ type FeatureEngineeringFeature interface {
 	Source() FeatureEngineeringFeatureSourceOutputReference
 	SourceInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -89,7 +91,7 @@ type FeatureEngineeringFeature interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -107,9 +109,9 @@ type FeatureEngineeringFeature interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -126,6 +128,7 @@ type FeatureEngineeringFeature interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFunction(value *FeatureEngineeringFeatureFunction)
 	PutLineageContext(value *FeatureEngineeringFeatureLineageContext)
+	PutProviderConfig(value *FeatureEngineeringFeatureProviderConfig)
 	PutSource(value *FeatureEngineeringFeatureSource)
 	PutTimeWindow(value *FeatureEngineeringFeatureTimeWindow)
 	ResetDescription()
@@ -134,6 +137,8 @@ type FeatureEngineeringFeature interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
+	ResetTimeWindow()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -149,11 +154,11 @@ type FeatureEngineeringFeature interface {
 
 // The jsii proxy struct for FeatureEngineeringFeature
 type jsiiProxy_FeatureEngineeringFeature struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeature) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_FeatureEngineeringFeature) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -242,8 +247,8 @@ func (j *jsiiProxy_FeatureEngineeringFeature) FilterConditionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeature) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_FeatureEngineeringFeature) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -332,8 +337,8 @@ func (j *jsiiProxy_FeatureEngineeringFeature) InputsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeature) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_FeatureEngineeringFeature) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -372,11 +377,31 @@ func (j *jsiiProxy_FeatureEngineeringFeature) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeature) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_FeatureEngineeringFeature) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) ProviderConfig() FeatureEngineeringFeatureProviderConfigOutputReference {
+	var returns FeatureEngineeringFeatureProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -422,8 +447,8 @@ func (j *jsiiProxy_FeatureEngineeringFeature) SourceInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeature) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_FeatureEngineeringFeature) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -473,7 +498,7 @@ func (j *jsiiProxy_FeatureEngineeringFeature) TimeWindowInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) FeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -483,7 +508,7 @@ func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config
 	j := jsiiProxy_FeatureEngineeringFeature{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -491,12 +516,12 @@ func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature_Override(f FeatureEngineeringFeature, scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -554,7 +579,7 @@ func (j *jsiiProxy_FeatureEngineeringFeature)SetFilterCondition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeature)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FeatureEngineeringFeature)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -584,7 +609,7 @@ func (j *jsiiProxy_FeatureEngineeringFeature)SetInputs(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeature)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FeatureEngineeringFeature)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +620,7 @@ func (j *jsiiProxy_FeatureEngineeringFeature)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeature)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FeatureEngineeringFeature)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -614,17 +639,17 @@ func (j *jsiiProxy_FeatureEngineeringFeature)SetProvisioners(val *[]interface{})
 	)
 }
 
-// Generates CDKTF code for importing a FeatureEngineeringFeature resource upon running "cdktf plan <stack-name>".
-func FeatureEngineeringFeature_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a FeatureEngineeringFeature resource upon running "cdktn plan <stack-name>".
+func FeatureEngineeringFeature_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateFeatureEngineeringFeature_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -659,7 +684,7 @@ func FeatureEngineeringFeature_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +703,7 @@ func FeatureEngineeringFeature_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -697,7 +722,7 @@ func FeatureEngineeringFeature_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +735,7 @@ func FeatureEngineeringFeature_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
+		"@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature",
 		"tfResourceType",
 		&returns,
 	)
@@ -755,11 +780,11 @@ func (f *jsiiProxy_FeatureEngineeringFeature) GetAnyMapAttribute(terraformAttrib
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeature) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FeatureEngineeringFeature) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -896,7 +921,7 @@ func (f *jsiiProxy_FeatureEngineeringFeature) HasResourceMove() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeature) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (f *jsiiProxy_FeatureEngineeringFeature) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -907,11 +932,11 @@ func (f *jsiiProxy_FeatureEngineeringFeature) ImportFrom(id *string, provider cd
 	)
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeature) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FeatureEngineeringFeature) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -989,6 +1014,17 @@ func (f *jsiiProxy_FeatureEngineeringFeature) PutLineageContext(value *FeatureEn
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeature) PutProviderConfig(value *FeatureEngineeringFeatureProviderConfig) {
+	if err := f.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeature) PutSource(value *FeatureEngineeringFeatureSource) {
 	if err := f.validatePutSourceParameters(value); err != nil {
 		panic(err)
@@ -1039,6 +1075,22 @@ func (f *jsiiProxy_FeatureEngineeringFeature) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeature) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeature) ResetTimeWindow() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTimeWindow",
 		nil, // no parameters
 	)
 }

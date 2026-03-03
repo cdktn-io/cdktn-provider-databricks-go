@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,11 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) validatePutProviderConfigParameters(value *DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,11 +75,11 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

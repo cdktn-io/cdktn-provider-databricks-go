@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputRefer
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptions:
 		value := value.(*[]*DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptions)
@@ -117,14 +117,14 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptions; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptions; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputRefer
 
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *DataDatabricksAlertsV2AlertsEvaluationNotification:
 		val := val.(*DataDatabricksAlertsV2AlertsEvaluationNotification)
@@ -214,7 +214,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksAlertsV2AlertsEvaluationNotification; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DataDatabricksAlertsV2AlertsEvaluationNotification; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -230,11 +230,11 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputRefer
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -257,7 +257,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,7 +265,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputRefer
 	return nil
 }
 
-func validateNewDataDatabricksAlertsV2AlertsEvaluationNotificationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksAlertsV2AlertsEvaluationNotificationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

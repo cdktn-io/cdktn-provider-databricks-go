@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksappssettingscustomtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksappssettingscustomtemplate/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksappssettingscustomtemplate/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template}.
 type DataDatabricksAppsSettingsCustomTemplate interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -30,9 +30,9 @@ type DataDatabricksAppsSettingsCustomTemplate interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -40,9 +40,9 @@ type DataDatabricksAppsSettingsCustomTemplate interface {
 	GitProvider() *string
 	GitRepo() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Manifest() DataDatabricksAppsSettingsCustomTemplateManifestOutputReference
 	Name() *string
 	SetName(val *string)
@@ -51,13 +51,15 @@ type DataDatabricksAppsSettingsCustomTemplate interface {
 	Node() constructs.Node
 	Path() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DataDatabricksAppsSettingsCustomTemplateProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -67,7 +69,7 @@ type DataDatabricksAppsSettingsCustomTemplate interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -83,13 +85,15 @@ type DataDatabricksAppsSettingsCustomTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksAppsSettingsCustomTemplateProviderConfig)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -106,11 +110,11 @@ type DataDatabricksAppsSettingsCustomTemplate interface {
 
 // The jsii proxy struct for DataDatabricksAppsSettingsCustomTemplate
 type jsiiProxy_DataDatabricksAppsSettingsCustomTemplate struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -169,8 +173,8 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) Description() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -219,8 +223,8 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) GitRepo() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -279,11 +283,31 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) Path() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) ProviderConfig() DataDatabricksAppsSettingsCustomTemplateProviderConfigOutputReference {
+	var returns DataDatabricksAppsSettingsCustomTemplateProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -299,8 +323,8 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) RawOverrides() inte
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -330,7 +354,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
 func NewDataDatabricksAppsSettingsCustomTemplate(scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplateConfig) DataDatabricksAppsSettingsCustomTemplate {
 	_init_.Initialize()
 
@@ -340,7 +364,7 @@ func NewDataDatabricksAppsSettingsCustomTemplate(scope constructs.Construct, id 
 	j := jsiiProxy_DataDatabricksAppsSettingsCustomTemplate{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
+		"@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -348,12 +372,12 @@ func NewDataDatabricksAppsSettingsCustomTemplate(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
 func NewDataDatabricksAppsSettingsCustomTemplate_Override(d DataDatabricksAppsSettingsCustomTemplate, scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplateConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
+		"@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -378,7 +402,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -386,7 +410,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +432,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetName(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -416,17 +440,17 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetProvider(val cdkt
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksAppsSettingsCustomTemplate resource upon running "cdktf plan <stack-name>".
-func DataDatabricksAppsSettingsCustomTemplate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksAppsSettingsCustomTemplate resource upon running "cdktn plan <stack-name>".
+func DataDatabricksAppsSettingsCustomTemplate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksAppsSettingsCustomTemplate_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
+		"@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -461,7 +485,7 @@ func DataDatabricksAppsSettingsCustomTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
+		"@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +504,7 @@ func DataDatabricksAppsSettingsCustomTemplate_IsTerraformDataSource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
+		"@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +523,7 @@ func DataDatabricksAppsSettingsCustomTemplate_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
+		"@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +536,7 @@ func DataDatabricksAppsSettingsCustomTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
+		"@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate",
 		"tfResourceType",
 		&returns,
 	)
@@ -546,11 +570,11 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) GetAnyMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -674,11 +698,11 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) GetStringMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -701,10 +725,29 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) OverrideLogicalId(n
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) PutProviderConfig(value *DataDatabricksAppsSettingsCustomTemplateProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

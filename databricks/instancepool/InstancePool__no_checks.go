@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -95,7 +95,15 @@ func (i *jsiiProxy_InstancePool) validatePutInstancePoolFleetAttributesParameter
 	return nil
 }
 
+func (i *jsiiProxy_InstancePool) validatePutNodeTypeFlexibilityParameters(value *InstancePoolNodeTypeFlexibility) error {
+	return nil
+}
+
 func (i *jsiiProxy_InstancePool) validatePutPreloadedDockerImageParameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_InstancePool) validatePutProviderConfigParameters(value *InstancePoolProviderConfig) error {
 	return nil
 }
 
@@ -147,7 +155,7 @@ func (j *jsiiProxy_InstancePool) validateSetInstancePoolNameParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_InstancePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_InstancePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

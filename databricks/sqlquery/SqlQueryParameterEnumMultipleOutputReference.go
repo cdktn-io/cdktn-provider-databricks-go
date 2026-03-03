@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sqlquery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/sqlquery/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/sqlquery/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SqlQueryParameterEnumMultipleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type SqlQueryParameterEnumMultipleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type SqlQueryParameterEnumMultipleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPrefix()
 	ResetSuffix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type SqlQueryParameterEnumMultipleOutputReference interface {
 
 // The jsii proxy struct for SqlQueryParameterEnumMultipleOutputReference
 type jsiiProxy_SqlQueryParameterEnumMultipleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) ComplexObjectIndex() interface{} {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) TerraformResour
 }
 
 
-func NewSqlQueryParameterEnumMultipleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlQueryParameterEnumMultipleOutputReference {
+func NewSqlQueryParameterEnumMultipleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SqlQueryParameterEnumMultipleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSqlQueryParameterEnumMultipleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -230,7 +230,7 @@ func NewSqlQueryParameterEnumMultipleOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_SqlQueryParameterEnumMultipleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultipleOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterEnumMultipleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,11 +238,11 @@ func NewSqlQueryParameterEnumMultipleOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewSqlQueryParameterEnumMultipleOutputReference_Override(s SqlQueryParameterEnumMultipleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSqlQueryParameterEnumMultipleOutputReference_Override(s SqlQueryParameterEnumMultipleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultipleOutputReference",
+		"@cdktn/provider-databricks.sqlQuery.SqlQueryParameterEnumMultipleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -493,8 +493,8 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -506,11 +506,11 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) InterpolationAs
 	return returns
 }
 
-func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -538,7 +538,7 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) ResetSuffix() {
 	)
 }
 
-func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

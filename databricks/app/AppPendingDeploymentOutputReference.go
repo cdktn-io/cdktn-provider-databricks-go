@@ -1,18 +1,21 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package app
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/app/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/app/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AppPendingDeploymentOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
+	Command() *[]*string
+	SetCommand(val *[]*string)
+	CommandInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,8 +37,12 @@ type AppPendingDeploymentOutputReference interface {
 	DeploymentId() *string
 	SetDeploymentId(val *string)
 	DeploymentIdInput() *string
+	EnvVars() AppPendingDeploymentEnvVarsList
+	EnvVarsInput() interface{}
 	// Experimental.
 	Fqn() *string
+	GitSource() AppPendingDeploymentGitSourceOutputReference
+	GitSourceInput() interface{}
 	InternalValue() *AppPendingDeployment
 	SetInternalValue(val *AppPendingDeployment)
 	Mode() *string
@@ -50,16 +57,16 @@ type AppPendingDeploymentOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdateTime() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,15 +82,20 @@ type AppPendingDeploymentOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutEnvVars(value interface{})
+	PutGitSource(value *AppPendingDeploymentGitSource)
+	ResetCommand()
 	ResetDeploymentId()
+	ResetEnvVars()
+	ResetGitSource()
 	ResetMode()
 	ResetSourceCodePath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +105,27 @@ type AppPendingDeploymentOutputReference interface {
 
 // The jsii proxy struct for AppPendingDeploymentOutputReference
 type jsiiProxy_AppPendingDeploymentOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_AppPendingDeploymentOutputReference) Command() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"command",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppPendingDeploymentOutputReference) CommandInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"commandInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AppPendingDeploymentOutputReference) ComplexObjectIndex() interface{} {
@@ -176,11 +208,51 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference) DeploymentIdInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_AppPendingDeploymentOutputReference) EnvVars() AppPendingDeploymentEnvVarsList {
+	var returns AppPendingDeploymentEnvVarsList
+	_jsii_.Get(
+		j,
+		"envVars",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppPendingDeploymentOutputReference) EnvVarsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"envVarsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppPendingDeploymentOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppPendingDeploymentOutputReference) GitSource() AppPendingDeploymentGitSourceOutputReference {
+	var returns AppPendingDeploymentGitSourceOutputReference
+	_jsii_.Get(
+		j,
+		"gitSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppPendingDeploymentOutputReference) GitSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitSourceInput",
 		&returns,
 	)
 	return returns
@@ -256,8 +328,8 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_AppPendingDeploymentOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppPendingDeploymentOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -277,7 +349,7 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference) UpdateTime() *string {
 }
 
 
-func NewAppPendingDeploymentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppPendingDeploymentOutputReference {
+func NewAppPendingDeploymentOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppPendingDeploymentOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppPendingDeploymentOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -286,7 +358,7 @@ func NewAppPendingDeploymentOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_AppPendingDeploymentOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference",
+		"@cdktn/provider-databricks.app.AppPendingDeploymentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -294,13 +366,24 @@ func NewAppPendingDeploymentOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewAppPendingDeploymentOutputReference_Override(a AppPendingDeploymentOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppPendingDeploymentOutputReference_Override(a AppPendingDeploymentOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference",
+		"@cdktn/provider-databricks.app.AppPendingDeploymentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AppPendingDeploymentOutputReference)SetCommand(val *[]*string) {
+	if err := j.validateSetCommandParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"command",
+		val,
 	)
 }
 
@@ -381,7 +464,7 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_AppPendingDeploymentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppPendingDeploymentOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,11 +504,11 @@ func (a *jsiiProxy_AppPendingDeploymentOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -549,8 +632,8 @@ func (a *jsiiProxy_AppPendingDeploymentOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -562,11 +645,11 @@ func (a *jsiiProxy_AppPendingDeploymentOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -578,10 +661,56 @@ func (a *jsiiProxy_AppPendingDeploymentOutputReference) InterpolationForAttribut
 	return returns
 }
 
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) PutEnvVars(value interface{}) {
+	if err := a.validatePutEnvVarsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putEnvVars",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) PutGitSource(value *AppPendingDeploymentGitSource) {
+	if err := a.validatePutGitSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putGitSource",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetCommand() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCommand",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetDeploymentId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDeploymentId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetEnvVars() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnvVars",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetGitSource() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGitSource",
 		nil, // no parameters
 	)
 }
@@ -602,7 +731,7 @@ func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetSourceCodePath() {
 	)
 }
 
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

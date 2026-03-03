@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksworkspacesettingv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksworkspacesettingv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksworkspacesettingv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -48,7 +48,7 @@ type DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference int
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference int
 
 // The jsii proxy struct for DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference
 type jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) ComplexObjectIndex() interface{} {
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutpu
 }
 
 
-func NewDataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference {
+func NewDataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewDataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference(
 	j := jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewDataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference(
 	return &j
 }
 
-func NewDataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference_Override(d DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference_Override(d DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -245,7 +245,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutpu
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -424,8 +424,8 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -437,11 +437,11 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -461,7 +461,7 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutpu
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

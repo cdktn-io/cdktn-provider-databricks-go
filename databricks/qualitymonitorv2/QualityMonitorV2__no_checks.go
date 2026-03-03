@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,14 @@ func (q *jsiiProxy_QualityMonitorV2) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (q *jsiiProxy_QualityMonitorV2) validatePutProviderConfigParameters(value *QualityMonitorV2ProviderConfig) error {
+	return nil
+}
+
+func (q *jsiiProxy_QualityMonitorV2) validatePutValidityCheckConfigurationsParameters(value interface{}) error {
+	return nil
+}
+
 func validateQualityMonitorV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -99,7 +107,7 @@ func (j *jsiiProxy_QualityMonitorV2) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_QualityMonitorV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_QualityMonitorV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickscluster
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksCluster",
 		reflect.TypeOf((*DataDatabricksCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,20 +67,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAutoscale",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAutoscale",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoAutoscale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAutoscaleOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAutoscaleOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoAutoscaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -113,16 +113,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoAutoscaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoAwsAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoAwsAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -179,20 +179,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoAwsAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoAzureAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,12 +225,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoAzureAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -270,20 +270,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConf",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConf",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoClusterLogConf)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfDbfs",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfDbfs",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoClusterLogConfDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfDbfsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfDbfsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoClusterLogConfDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -312,12 +312,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoClusterLogConfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -356,16 +356,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoClusterLogConfS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -412,16 +412,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfVolumes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfVolumes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoClusterLogConfVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfVolumesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfVolumesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoClusterLogConfVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -450,16 +450,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogStatus",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogStatus",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoClusterLogStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogStatusOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogStatusOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoClusterLogStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -492,20 +492,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoClusterLogStatusOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImage",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImage",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoDockerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageBasicAuth",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageBasicAuth",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoDockerImageBasicAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageBasicAuthOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageBasicAuthOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoDockerImageBasicAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -538,12 +538,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoDockerImageBasicAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoDockerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuth", GoGetter: "BasicAuth"},
@@ -577,20 +577,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoDockerImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoDriver)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoDriverNodeAwsAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -620,12 +620,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeTypeFlexibility",
+		reflect.TypeOf((*DataDatabricksClusterClusterInfoDriverNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*DataDatabricksClusterClusterInfoDriverNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoDriverOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -674,16 +713,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoDriverOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoExecutors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsList",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsList",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoExecutorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -700,16 +739,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoExecutorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -739,12 +778,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoExecutorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -793,16 +832,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoGcpAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoGcpAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -850,20 +889,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoGcpAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScripts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsAbfss",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsAbfss",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsAbfss)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -892,16 +931,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsDbfs",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsDbfs",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsDbfsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsDbfsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -930,16 +969,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsFile",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsFile",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsFileOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsFileOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -968,16 +1007,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsFileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsGcs",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsGcs",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsGcs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1006,12 +1045,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsList",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsList",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1028,12 +1067,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abfss", GoGetter: "Abfss"},
@@ -1088,16 +1127,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -1144,16 +1183,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsVolumes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsVolumes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsVolumesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsVolumesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1182,16 +1221,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsWorkspace",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsWorkspace",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsWorkspace)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsWorkspaceOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsWorkspaceOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoInitScriptsWorkspaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1220,12 +1259,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsWorkspaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscale", GoGetter: "Autoscale"},
@@ -1268,6 +1307,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "driverInput", GoGetter: "DriverInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolId", GoGetter: "DriverInstancePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolIdInput", GoGetter: "DriverInstancePoolIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibility", GoGetter: "DriverNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibilityInput", GoGetter: "DriverNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeId", GoGetter: "DriverNodeTypeId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeIdInput", GoGetter: "DriverNodeTypeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableElasticDisk", GoGetter: "EnableElasticDisk"},
@@ -1318,11 +1359,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putClusterLogStatus", GoMethod: "PutClusterLogStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "putDockerImage", GoMethod: "PutDockerImage"},
 			_jsii_.MemberMethod{JsiiMethod: "putDriver", GoMethod: "PutDriver"},
+			_jsii_.MemberMethod{JsiiMethod: "putDriverNodeTypeFlexibility", GoMethod: "PutDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putExecutors", GoMethod: "PutExecutors"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpAttributes", GoMethod: "PutGcpAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putInitScripts", GoMethod: "PutInitScripts"},
 			_jsii_.MemberMethod{JsiiMethod: "putSpec", GoMethod: "PutSpec"},
 			_jsii_.MemberMethod{JsiiMethod: "putTerminationReason", GoMethod: "PutTerminationReason"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkerNodeTypeFlexibility", GoMethod: "PutWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkloadType", GoMethod: "PutWorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughput", GoGetter: "RemoteDiskThroughput"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughputInput", GoGetter: "RemoteDiskThroughputInput"},
@@ -1344,6 +1387,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDockerImage", GoMethod: "ResetDockerImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriver", GoMethod: "ResetDriver"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverInstancePoolId", GoMethod: "ResetDriverInstancePoolId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeFlexibility", GoMethod: "ResetDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeId", GoMethod: "ResetDriverNodeTypeId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableElasticDisk", GoMethod: "ResetEnableElasticDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableLocalDiskEncryption", GoMethod: "ResetEnableLocalDiskEncryption"},
@@ -1375,6 +1419,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTerminationReason", GoMethod: "ResetTerminationReason"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTotalInitialRemoteDiskSize", GoMethod: "ResetTotalInitialRemoteDiskSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseMlRuntime", GoMethod: "ResetUseMlRuntime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkerNodeTypeFlexibility", GoMethod: "ResetWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadType", GoMethod: "ResetWorkloadType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeEngine", GoGetter: "RuntimeEngine"},
@@ -1410,25 +1455,27 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalInitialRemoteDiskSizeInput", GoGetter: "TotalInitialRemoteDiskSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntime", GoGetter: "UseMlRuntime"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntimeInput", GoGetter: "UseMlRuntimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibility", GoGetter: "WorkerNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibilityInput", GoGetter: "WorkerNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadType", GoGetter: "WorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadTypeInput", GoGetter: "WorkloadTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscale",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscale",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecAutoscale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscaleOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscaleOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecAutoscaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1461,16 +1508,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecAutoscaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecAwsAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecAwsAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -1527,20 +1574,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecAwsAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecAzureAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1573,12 +1620,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecAzureAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -1618,20 +1665,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecAzureAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConf",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConf",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterLogConf)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfDbfs",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfDbfs",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterLogConfDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfDbfsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfDbfsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterLogConfDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1660,12 +1707,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterLogConfDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterLogConfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1704,16 +1751,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterLogConfOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterLogConfS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -1760,16 +1807,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfVolumes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfVolumes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterLogConfVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfVolumesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfVolumesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterLogConfVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1798,16 +1845,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterLogConfVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterMountInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoList",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoList",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterMountInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1824,16 +1871,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1865,12 +1912,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1905,20 +1952,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImage",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImage",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecDockerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageBasicAuthOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageBasicAuthOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecDockerImageBasicAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1949,12 +1996,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecDockerImageBasicAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecDockerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuth", GoGetter: "BasicAuth"},
@@ -1987,16 +2034,55 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecDockerImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDriverNodeTypeFlexibility",
+		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecDriverNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDriverNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecDriverNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecDriverNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecGcpAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -2044,20 +2130,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScripts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsAbfss",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsAbfss",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsAbfss)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsAbfssOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsAbfssOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsAbfssOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2086,16 +2172,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecInitScriptsAbfssOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsDbfs",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsDbfs",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsDbfsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsDbfsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2124,16 +2210,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecInitScriptsDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsFile",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsFile",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsFileOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsFileOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2162,16 +2248,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecInitScriptsFileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsGcs",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsGcs",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsGcs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsGcsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsGcsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsGcsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2200,12 +2286,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecInitScriptsGcsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsList",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsList",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2222,12 +2308,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecInitScriptsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abfss", GoGetter: "Abfss"},
@@ -2282,16 +2368,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -2338,16 +2424,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsVolumes",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsVolumes",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsVolumesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsVolumesOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2376,16 +2462,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecInitScriptsVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsWorkspace",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsWorkspace",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsWorkspace)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsWorkspaceOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsWorkspaceOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecInitScriptsWorkspaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2414,20 +2500,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecInitScriptsWorkspaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibrary)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryCran",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryCran",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibraryCran)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryCranOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryCranOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibraryCranOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2459,12 +2545,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryCranOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryList",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryList",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibraryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2481,16 +2567,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMaven",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMaven",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibraryMaven)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMavenOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMavenOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibraryMavenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2525,12 +2611,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryMavenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibraryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2585,16 +2671,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryProviderConfig",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibraryProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibraryProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2623,16 +2709,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryPypi",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryPypi",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibraryPypi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryPypiOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryPypiOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecLibraryPypiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2664,12 +2750,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryPypiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValues", GoGetter: "ApplyPolicyDefaultValues"},
@@ -2699,6 +2785,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dockerImageInput", GoGetter: "DockerImageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolId", GoGetter: "DriverInstancePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolIdInput", GoGetter: "DriverInstancePoolIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibility", GoGetter: "DriverNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibilityInput", GoGetter: "DriverNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeId", GoGetter: "DriverNodeTypeId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeIdInput", GoGetter: "DriverNodeTypeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableElasticDisk", GoGetter: "EnableElasticDisk"},
@@ -2746,10 +2834,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putClusterLogConf", GoMethod: "PutClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterMountInfo", GoMethod: "PutClusterMountInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putDockerImage", GoMethod: "PutDockerImage"},
+			_jsii_.MemberMethod{JsiiMethod: "putDriverNodeTypeFlexibility", GoMethod: "PutDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpAttributes", GoMethod: "PutGcpAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putInitScripts", GoMethod: "PutInitScripts"},
 			_jsii_.MemberMethod{JsiiMethod: "putLibrary", GoMethod: "PutLibrary"},
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkerNodeTypeFlexibility", GoMethod: "PutWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkloadType", GoMethod: "PutWorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughput", GoGetter: "RemoteDiskThroughput"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughputInput", GoGetter: "RemoteDiskThroughputInput"},
@@ -2764,6 +2854,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSecurityMode", GoMethod: "ResetDataSecurityMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDockerImage", GoMethod: "ResetDockerImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverInstancePoolId", GoMethod: "ResetDriverInstancePoolId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeFlexibility", GoMethod: "ResetDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeId", GoMethod: "ResetDriverNodeTypeId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableElasticDisk", GoMethod: "ResetEnableElasticDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableLocalDiskEncryption", GoMethod: "ResetEnableLocalDiskEncryption"},
@@ -2787,6 +2878,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSshPublicKeys", GoMethod: "ResetSshPublicKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTotalInitialRemoteDiskSize", GoMethod: "ResetTotalInitialRemoteDiskSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseMlRuntime", GoMethod: "ResetUseMlRuntime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkerNodeTypeFlexibility", GoMethod: "ResetWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadType", GoMethod: "ResetWorkloadType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeEngine", GoGetter: "RuntimeEngine"},
@@ -2808,21 +2900,23 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalInitialRemoteDiskSizeInput", GoGetter: "TotalInitialRemoteDiskSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntime", GoGetter: "UseMlRuntime"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntimeInput", GoGetter: "UseMlRuntimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibility", GoGetter: "WorkerNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibilityInput", GoGetter: "WorkerNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadType", GoGetter: "WorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadTypeInput", GoGetter: "WorkloadTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecProviderConfig",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2851,20 +2945,59 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadType",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkerNodeTypeFlexibility",
+		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecWorkerNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkerNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecWorkerNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecWorkerNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadType",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecWorkloadType)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecWorkloadTypeClients)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2897,12 +3030,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoSpecWorkloadTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clients", GoGetter: "Clients"},
@@ -2932,16 +3065,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoSpecWorkloadTypeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoTerminationReason)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReasonOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReasonOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoTerminationReasonOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -2977,20 +3110,59 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoTerminationReasonOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadType",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkerNodeTypeFlexibility",
+		reflect.TypeOf((*DataDatabricksClusterClusterInfoWorkerNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkerNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*DataDatabricksClusterClusterInfoWorkerNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksClusterClusterInfoWorkerNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadType",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoWorkloadType)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoWorkloadTypeClients)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3023,12 +3195,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterClusterInfoWorkloadTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clients", GoGetter: "Clients"},
@@ -3058,20 +3230,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterClusterInfoWorkloadTypeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig",
 		reflect.TypeOf((*DataDatabricksClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterProviderConfig",
 		reflect.TypeOf((*DataDatabricksClusterProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksCluster.DataDatabricksClusterProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksClusterProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3100,7 +3272,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusterProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

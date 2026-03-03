@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -79,6 +79,10 @@ func (c *jsiiProxy_Catalog) validatePutEffectivePredictiveOptimizationFlagParame
 	return nil
 }
 
+func (c *jsiiProxy_Catalog) validatePutProviderConfigParameters(value *CatalogProviderConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_Catalog) validatePutProvisioningInfoParameters(value *CatalogProvisioningInfo) error {
 	return nil
 }
@@ -135,7 +139,7 @@ func (j *jsiiProxy_Catalog) validateSetIsolationModeParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_Catalog) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Catalog) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

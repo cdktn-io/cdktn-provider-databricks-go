@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/job/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobTaskNewClusterDockerImageOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BasicAuth() JobTaskNewClusterDockerImageBasicAuthOutputReference
 	BasicAuthInput() *JobTaskNewClusterDockerImageBasicAuth
 	// the index of the complex object in a list.
@@ -39,9 +39,9 @@ type JobTaskNewClusterDockerImageOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -50,7 +50,7 @@ type JobTaskNewClusterDockerImageOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type JobTaskNewClusterDockerImageOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBasicAuth(value *JobTaskNewClusterDockerImageBasicAuth)
 	ResetBasicAuth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type JobTaskNewClusterDockerImageOutputReference interface {
 
 // The jsii proxy struct for JobTaskNewClusterDockerImageOutputReference
 type jsiiProxy_JobTaskNewClusterDockerImageOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) BasicAuth() JobTaskNewClusterDockerImageBasicAuthOutputReference {
@@ -166,8 +166,8 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) UrlInput() *stri
 }
 
 
-func NewJobTaskNewClusterDockerImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterDockerImageOutputReference {
+func NewJobTaskNewClusterDockerImageOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterDockerImageOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobTaskNewClusterDockerImageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -206,7 +206,7 @@ func NewJobTaskNewClusterDockerImageOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_JobTaskNewClusterDockerImageOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterDockerImageOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterDockerImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewJobTaskNewClusterDockerImageOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewJobTaskNewClusterDockerImageOutputReference_Override(j JobTaskNewClusterDockerImageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobTaskNewClusterDockerImageOutputReference_Override(j JobTaskNewClusterDockerImageOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterDockerImageOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterDockerImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
@@ -268,7 +268,7 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -319,11 +319,11 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -447,8 +447,8 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -460,11 +460,11 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) InterpolationAsL
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -495,7 +495,7 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) ResetBasicAuth()
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

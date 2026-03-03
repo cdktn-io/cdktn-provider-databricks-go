@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -36,6 +36,10 @@ func (j *jsiiProxy_DatabricksProvider) validateSetAzureUseMsiParameters(val inte
 }
 
 func (j *jsiiProxy_DatabricksProvider) validateSetDebugHeadersParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabricksProvider) validateSetDisableOauthRefreshTokenParameters(val interface{}) error {
 	return nil
 }
 

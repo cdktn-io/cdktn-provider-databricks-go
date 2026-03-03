@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksdatabaseinstances
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdatabaseinstances/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksdatabaseinstances/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Capacity() *string
 	ChildInstanceRefs() DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefsList
 	// the index of the complex object in a list.
@@ -35,14 +35,14 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	CustomTags() DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsList
 	EffectiveCapacity() *string
 	EffectiveCustomTags() DataDatabricksDatabaseInstancesDatabaseInstancesEffectiveCustomTagsList
-	EffectiveEnablePgNativeLogin() cdktf.IResolvable
-	EffectiveEnableReadableSecondaries() cdktf.IResolvable
+	EffectiveEnablePgNativeLogin() cdktn.IResolvable
+	EffectiveEnableReadableSecondaries() cdktn.IResolvable
 	EffectiveNodeCount() *float64
 	EffectiveRetentionWindowInDays() *float64
-	EffectiveStopped() cdktf.IResolvable
+	EffectiveStopped() cdktn.IResolvable
 	EffectiveUsagePolicyId() *string
-	EnablePgNativeLogin() cdktf.IResolvable
-	EnableReadableSecondaries() cdktf.IResolvable
+	EnablePgNativeLogin() cdktn.IResolvable
+	EnableReadableSecondaries() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksDatabaseInstancesDatabaseInstances
@@ -53,19 +53,21 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	NodeCount() *float64
 	ParentInstanceRef() DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputReference
 	PgVersion() *string
+	ProviderConfig() DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	ReadOnlyDns() *string
 	ReadWriteDns() *string
 	RetentionWindowInDays() *float64
 	State() *string
-	Stopped() cdktf.IResolvable
+	Stopped() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	UsagePolicyId() *string
 	// Experimental.
@@ -73,7 +75,7 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -89,12 +91,14 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutProviderConfig(value *DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig)
+	ResetProviderConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,7 +108,7 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference
 type jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) Capacity() *string {
@@ -207,8 +211,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveEnablePgNativeLogin() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveEnablePgNativeLogin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveEnablePgNativeLogin",
@@ -217,8 +221,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveEnableReadableSecondaries() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveEnableReadableSecondaries() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveEnableReadableSecondaries",
@@ -247,8 +251,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveStopped() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveStopped() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveStopped",
@@ -267,8 +271,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EnablePgNativeLogin() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EnablePgNativeLogin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enablePgNativeLogin",
@@ -277,8 +281,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EnableReadableSecondaries() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EnableReadableSecondaries() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableReadableSecondaries",
@@ -357,6 +361,26 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) ProviderConfig() DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfigOutputReference {
+	var returns DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) ReadOnlyDns() *string {
 	var returns *string
 	_jsii_.Get(
@@ -397,8 +421,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) Stopped() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) Stopped() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"stopped",
@@ -417,8 +441,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -448,7 +472,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 }
 
 
-func NewDataDatabricksDatabaseInstancesDatabaseInstancesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference {
+func NewDataDatabricksDatabaseInstancesDatabaseInstancesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksDatabaseInstancesDatabaseInstancesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -457,7 +481,7 @@ func NewDataDatabricksDatabaseInstancesDatabaseInstancesOutputReference(terrafor
 	j := jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -465,11 +489,11 @@ func NewDataDatabricksDatabaseInstancesDatabaseInstancesOutputReference(terrafor
 	return &j
 }
 
-func NewDataDatabricksDatabaseInstancesDatabaseInstancesOutputReference_Override(d DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksDatabaseInstancesDatabaseInstancesOutputReference_Override(d DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -530,7 +554,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,11 +594,11 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -698,8 +722,8 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -711,11 +735,11 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -727,7 +751,26 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) PutProviderConfig(value *DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

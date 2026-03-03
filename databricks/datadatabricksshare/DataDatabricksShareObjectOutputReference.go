@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksshare
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksshare/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksshare/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksShareObjectOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AddedAt() *float64
 	AddedBy() *string
 	CdfEnabled() interface{}
@@ -42,7 +42,7 @@ type DataDatabricksShareObjectOutputReference interface {
 	DataObjectType() *string
 	SetDataObjectType(val *string)
 	DataObjectTypeInput() *string
-	EffectiveCdfEnabled() cdktf.IResolvable
+	EffectiveCdfEnabled() cdktn.IResolvable
 	EffectiveHistoryDataSharingStatus() *string
 	EffectiveSharedAs() *string
 	EffectiveStartVersion() *float64
@@ -74,15 +74,15 @@ type DataDatabricksShareObjectOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -98,9 +98,9 @@ type DataDatabricksShareObjectOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPartition(value interface{})
 	ResetCdfEnabled()
 	ResetComment()
@@ -113,7 +113,7 @@ type DataDatabricksShareObjectOutputReference interface {
 	ResetStringSharedAs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -123,7 +123,7 @@ type DataDatabricksShareObjectOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksShareObjectOutputReference
 type jsiiProxy_DataDatabricksShareObjectOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) AddedAt() *float64 {
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) DataObjectTypeInput
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) EffectiveCdfEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) EffectiveCdfEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveCdfEnabled",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -477,7 +477,7 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) TerraformResource()
 }
 
 
-func NewDataDatabricksShareObjectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksShareObjectOutputReference {
+func NewDataDatabricksShareObjectOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksShareObjectOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksShareObjectOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -486,7 +486,7 @@ func NewDataDatabricksShareObjectOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataDatabricksShareObjectOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -494,11 +494,11 @@ func NewDataDatabricksShareObjectOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewDataDatabricksShareObjectOutputReference_Override(d DataDatabricksShareObjectOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksShareObjectOutputReference_Override(d DataDatabricksShareObjectOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -647,7 +647,7 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,11 +687,11 @@ func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -815,8 +815,8 @@ func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -828,11 +828,11 @@ func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) InterpolationAsList
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -927,7 +927,7 @@ func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetStringSharedAs
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package clusterpolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicy",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicy",
 		reflect.TypeOf((*ClusterPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -60,8 +60,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "policyFamilyIdInput", GoGetter: "PolicyFamilyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "policyId", GoGetter: "PolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfig", GoGetter: "ProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putLibraries", GoMethod: "PutLibraries"},
+			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefinition", GoMethod: "ResetDefinition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -72,6 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicyFamilyDefinitionOverrides", GoMethod: "ResetPolicyFamilyDefinitionOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicyFamilyId", GoMethod: "ResetPolicyFamilyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -84,24 +88,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClusterPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyConfig",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyConfig",
 		reflect.TypeOf((*ClusterPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibraries",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibraries",
 		reflect.TypeOf((*ClusterPolicyLibraries)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesCran",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesCran",
 		reflect.TypeOf((*ClusterPolicyLibrariesCran)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesCranOutputReference",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesCranOutputReference",
 		reflect.TypeOf((*ClusterPolicyLibrariesCranOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,12 +137,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClusterPolicyLibrariesCranOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesList",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesList",
 		reflect.TypeOf((*ClusterPolicyLibrariesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -155,16 +159,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClusterPolicyLibrariesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesMaven",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesMaven",
 		reflect.TypeOf((*ClusterPolicyLibrariesMaven)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesMavenOutputReference",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesMavenOutputReference",
 		reflect.TypeOf((*ClusterPolicyLibrariesMavenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,12 +203,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClusterPolicyLibrariesMavenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesOutputReference",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesOutputReference",
 		reflect.TypeOf((*ClusterPolicyLibrariesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -259,16 +263,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClusterPolicyLibrariesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesProviderConfig",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesProviderConfig",
 		reflect.TypeOf((*ClusterPolicyLibrariesProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesProviderConfigOutputReference",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesProviderConfigOutputReference",
 		reflect.TypeOf((*ClusterPolicyLibrariesProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -297,16 +301,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClusterPolicyLibrariesProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesPypi",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesPypi",
 		reflect.TypeOf((*ClusterPolicyLibrariesPypi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesPypiOutputReference",
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyLibrariesPypiOutputReference",
 		reflect.TypeOf((*ClusterPolicyLibrariesPypiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -338,7 +342,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClusterPolicyLibrariesPypiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyProviderConfig",
+		reflect.TypeOf((*ClusterPolicyProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.clusterPolicy.ClusterPolicyProviderConfigOutputReference",
+		reflect.TypeOf((*ClusterPolicyProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ClusterPolicyProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

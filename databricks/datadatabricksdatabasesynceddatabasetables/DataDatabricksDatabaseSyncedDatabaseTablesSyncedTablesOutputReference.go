@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksdatabasesynceddatabasetables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdatabasesynceddatabasetables/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksdatabasesynceddatabasetables/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,22 +40,24 @@ type DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference inter
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	ProviderConfig() DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	Spec() DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesSpecOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UnityCatalogProvisioningState() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,12 +73,14 @@ type DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutProviderConfig(value *DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesProviderConfig)
+	ResetProviderConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +90,7 @@ type DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference inter
 
 // The jsii proxy struct for DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference
 type jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) ComplexObjectIndex() interface{} {
@@ -209,6 +213,26 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) ProviderConfig() DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesProviderConfigOutputReference {
+	var returns DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) Spec() DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesSpecOutputReference {
 	var returns DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesSpecOutputReference
 	_jsii_.Get(
@@ -229,8 +253,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -250,7 +274,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 }
 
 
-func NewDataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference {
+func NewDataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -259,7 +283,7 @@ func NewDataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference(te
 	j := jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTables.DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTables.DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -267,11 +291,11 @@ func NewDataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference(te
 	return &j
 }
 
-func NewDataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference_Override(d DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference_Override(d DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTables.DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTables.DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -332,7 +356,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,11 +396,11 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -500,8 +524,8 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -513,11 +537,11 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -529,7 +553,26 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) PutProviderConfig(value *DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package lakehousemonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/lakehousemonitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/lakehousemonitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LakehouseMonitorTimeSeriesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type LakehouseMonitorTimeSeriesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimestampCol() *string
 	SetTimestampCol(val *string)
 	TimestampColInput() *string
@@ -51,7 +51,7 @@ type LakehouseMonitorTimeSeriesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type LakehouseMonitorTimeSeriesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type LakehouseMonitorTimeSeriesOutputReference interface {
 
 // The jsii proxy struct for LakehouseMonitorTimeSeriesOutputReference
 type jsiiProxy_LakehouseMonitorTimeSeriesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) ComplexObjectIndex() interface{} {
@@ -165,8 +165,8 @@ func (j *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) TimestampColInput(
 }
 
 
-func NewLakehouseMonitorTimeSeriesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LakehouseMonitorTimeSeriesOutputReference {
+func NewLakehouseMonitorTimeSeriesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LakehouseMonitorTimeSeriesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLakehouseMonitorTimeSeriesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -205,7 +205,7 @@ func NewLakehouseMonitorTimeSeriesOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_LakehouseMonitorTimeSeriesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeriesOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -213,11 +213,11 @@ func NewLakehouseMonitorTimeSeriesOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewLakehouseMonitorTimeSeriesOutputReference_Override(l LakehouseMonitorTimeSeriesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLakehouseMonitorTimeSeriesOutputReference_Override(l LakehouseMonitorTimeSeriesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeriesOutputReference",
+		"@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -278,7 +278,7 @@ func (j *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -457,8 +457,8 @@ func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -470,11 +470,11 @@ func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -486,7 +486,7 @@ func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) InterpolationForAt
 	return returns
 }
 
-func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

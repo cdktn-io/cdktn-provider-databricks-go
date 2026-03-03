@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -83,6 +83,10 @@ func (e *jsiiProxy_ExternalLocation) validatePutFileEventQueueParameters(value *
 	return nil
 }
 
+func (e *jsiiProxy_ExternalLocation) validatePutProviderConfigParameters(value *ExternalLocationProviderConfig) error {
+	return nil
+}
+
 func validateExternalLocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -139,7 +143,7 @@ func (j *jsiiProxy_ExternalLocation) validateSetIsolationModeParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ExternalLocation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ExternalLocation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

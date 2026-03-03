@@ -1,25 +1,23 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package metastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/metastore/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/metastore/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore databricks_metastore}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore databricks_metastore}.
 type Metastore interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Cloud() *string
-	SetCloud(val *string)
-	CloudInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -31,11 +29,7 @@ type Metastore interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *float64
-	SetCreatedAt(val *float64)
-	CreatedAtInput() *float64
 	CreatedBy() *string
-	SetCreatedBy(val *string)
-	CreatedByInput() *string
 	DefaultDataAccessConfigId() *string
 	SetDefaultDataAccessConfigId(val *string)
 	DefaultDataAccessConfigIdInput() *string
@@ -52,30 +46,29 @@ type Metastore interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalAccessEnabled() interface{}
+	SetExternalAccessEnabled(val interface{})
+	ExternalAccessEnabledInput() interface{}
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	GlobalMetastoreId() *string
-	SetGlobalMetastoreId(val *string)
-	GlobalMetastoreIdInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetastoreId() *string
-	SetMetastoreId(val *string)
-	MetastoreIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -84,10 +77,13 @@ type Metastore interface {
 	Owner() *string
 	SetOwner(val *string)
 	OwnerInput() *string
+	PrivilegeModelVersion() *string
+	SetPrivilegeModelVersion(val *string)
+	PrivilegeModelVersionInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -102,19 +98,18 @@ type Metastore interface {
 	StorageRootCredentialId() *string
 	SetStorageRootCredentialId(val *string)
 	StorageRootCredentialIdInput() *string
+	StorageRootCredentialName() *string
+	SetStorageRootCredentialName(val *string)
+	StorageRootCredentialNameInput() *string
 	StorageRootInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *float64
-	SetUpdatedAt(val *float64)
-	UpdatedAtInput() *float64
 	UpdatedBy() *string
-	SetUpdatedBy(val *string)
-	UpdatedByInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -123,7 +118,7 @@ type Metastore interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -141,9 +136,9 @@ type Metastore interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -158,26 +153,23 @@ type Metastore interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetCloud()
-	ResetCreatedAt()
-	ResetCreatedBy()
 	ResetDefaultDataAccessConfigId()
 	ResetDeltaSharingOrganizationName()
 	ResetDeltaSharingRecipientTokenLifetimeInSeconds()
 	ResetDeltaSharingScope()
+	ResetExternalAccessEnabled()
 	ResetForceDestroy()
-	ResetGlobalMetastoreId()
 	ResetId()
-	ResetMetastoreId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetPrivilegeModelVersion()
 	ResetRegion()
 	ResetStorageRoot()
 	ResetStorageRootCredentialId()
-	ResetUpdatedAt()
-	ResetUpdatedBy()
+	ResetStorageRootCredentialName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -193,11 +185,11 @@ type Metastore interface {
 
 // The jsii proxy struct for Metastore
 type jsiiProxy_Metastore struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_Metastore) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Metastore) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -211,16 +203,6 @@ func (j *jsiiProxy_Metastore) Cloud() *string {
 	_jsii_.Get(
 		j,
 		"cloud",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Metastore) CloudInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudInput",
 		&returns,
 	)
 	return returns
@@ -266,31 +248,11 @@ func (j *jsiiProxy_Metastore) CreatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Metastore) CreatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"createdAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Metastore) CreatedBy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"createdBy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Metastore) CreatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdByInput",
 		&returns,
 	)
 	return returns
@@ -386,6 +348,26 @@ func (j *jsiiProxy_Metastore) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Metastore) ExternalAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metastore) ExternalAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalAccessEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Metastore) ForceDestroy() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -406,8 +388,8 @@ func (j *jsiiProxy_Metastore) ForceDestroyInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Metastore) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Metastore) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -446,16 +428,6 @@ func (j *jsiiProxy_Metastore) GlobalMetastoreId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Metastore) GlobalMetastoreIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"globalMetastoreIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Metastore) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -476,8 +448,8 @@ func (j *jsiiProxy_Metastore) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Metastore) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Metastore) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -491,16 +463,6 @@ func (j *jsiiProxy_Metastore) MetastoreId() *string {
 	_jsii_.Get(
 		j,
 		"metastoreId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Metastore) MetastoreIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"metastoreIdInput",
 		&returns,
 	)
 	return returns
@@ -556,8 +518,28 @@ func (j *jsiiProxy_Metastore) OwnerInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Metastore) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Metastore) PrivilegeModelVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privilegeModelVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metastore) PrivilegeModelVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privilegeModelVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metastore) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -636,6 +618,26 @@ func (j *jsiiProxy_Metastore) StorageRootCredentialIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Metastore) StorageRootCredentialName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRootCredentialName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metastore) StorageRootCredentialNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRootCredentialNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Metastore) StorageRootInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -646,8 +648,8 @@ func (j *jsiiProxy_Metastore) StorageRootInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Metastore) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Metastore) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -686,16 +688,6 @@ func (j *jsiiProxy_Metastore) UpdatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Metastore) UpdatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"updatedAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Metastore) UpdatedBy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -706,18 +698,8 @@ func (j *jsiiProxy_Metastore) UpdatedBy() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Metastore) UpdatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedByInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore databricks_metastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore databricks_metastore} Resource.
 func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfig) Metastore {
 	_init_.Initialize()
 
@@ -727,7 +709,7 @@ func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfi
 	j := jsiiProxy_Metastore{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.metastore.Metastore",
+		"@cdktn/provider-databricks.metastore.Metastore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -735,25 +717,14 @@ func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore databricks_metastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore databricks_metastore} Resource.
 func NewMetastore_Override(m Metastore, scope constructs.Construct, id *string, config *MetastoreConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.metastore.Metastore",
+		"@cdktn/provider-databricks.metastore.Metastore",
 		[]interface{}{scope, id, config},
 		m,
-	)
-}
-
-func (j *jsiiProxy_Metastore)SetCloud(val *string) {
-	if err := j.validateSetCloudParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"cloud",
-		val,
 	)
 }
 
@@ -775,28 +746,6 @@ func (j *jsiiProxy_Metastore)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Metastore)SetCreatedAt(val *float64) {
-	if err := j.validateSetCreatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Metastore)SetCreatedBy(val *string) {
-	if err := j.validateSetCreatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdBy",
 		val,
 	)
 }
@@ -853,6 +802,17 @@ func (j *jsiiProxy_Metastore)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Metastore)SetExternalAccessEnabled(val interface{}) {
+	if err := j.validateSetExternalAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalAccessEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Metastore)SetForceDestroy(val interface{}) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
@@ -864,21 +824,10 @@ func (j *jsiiProxy_Metastore)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Metastore)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Metastore)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Metastore)SetGlobalMetastoreId(val *string) {
-	if err := j.validateSetGlobalMetastoreIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"globalMetastoreId",
 		val,
 	)
 }
@@ -894,24 +843,13 @@ func (j *jsiiProxy_Metastore)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Metastore)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Metastore)SetMetastoreId(val *string) {
-	if err := j.validateSetMetastoreIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"metastoreId",
 		val,
 	)
 }
@@ -938,7 +876,18 @@ func (j *jsiiProxy_Metastore)SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Metastore)SetPrivilegeModelVersion(val *string) {
+	if err := j.validateSetPrivilegeModelVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privilegeModelVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Metastore)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -990,39 +939,28 @@ func (j *jsiiProxy_Metastore)SetStorageRootCredentialId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore)SetUpdatedAt(val *float64) {
-	if err := j.validateSetUpdatedAtParameters(val); err != nil {
+func (j *jsiiProxy_Metastore)SetStorageRootCredentialName(val *string) {
+	if err := j.validateSetStorageRootCredentialNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"updatedAt",
+		"storageRootCredentialName",
 		val,
 	)
 }
 
-func (j *jsiiProxy_Metastore)SetUpdatedBy(val *string) {
-	if err := j.validateSetUpdatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updatedBy",
-		val,
-	)
-}
-
-// Generates CDKTF code for importing a Metastore resource upon running "cdktf plan <stack-name>".
-func Metastore_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Metastore resource upon running "cdktn plan <stack-name>".
+func Metastore_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMetastore_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.metastore.Metastore",
+		"@cdktn/provider-databricks.metastore.Metastore",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1057,7 +995,7 @@ func Metastore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.metastore.Metastore",
+		"@cdktn/provider-databricks.metastore.Metastore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1076,7 +1014,7 @@ func Metastore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.metastore.Metastore",
+		"@cdktn/provider-databricks.metastore.Metastore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1095,7 +1033,7 @@ func Metastore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.metastore.Metastore",
+		"@cdktn/provider-databricks.metastore.Metastore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1108,7 +1046,7 @@ func Metastore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.metastore.Metastore",
+		"@cdktn/provider-databricks.metastore.Metastore",
 		"tfResourceType",
 		&returns,
 	)
@@ -1153,11 +1091,11 @@ func (m *jsiiProxy_Metastore) GetAnyMapAttribute(terraformAttribute *string) *ma
 	return returns
 }
 
-func (m *jsiiProxy_Metastore) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_Metastore) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1294,7 +1232,7 @@ func (m *jsiiProxy_Metastore) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_Metastore) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_Metastore) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1305,11 +1243,11 @@ func (m *jsiiProxy_Metastore) ImportFrom(id *string, provider cdktf.TerraformPro
 	)
 }
 
-func (m *jsiiProxy_Metastore) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_Metastore) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1365,30 +1303,6 @@ func (m *jsiiProxy_Metastore) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (m *jsiiProxy_Metastore) ResetCloud() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetCloud",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_Metastore) ResetCreatedAt() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetCreatedAt",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_Metastore) ResetCreatedBy() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetCreatedBy",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_Metastore) ResetDefaultDataAccessConfigId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1421,18 +1335,18 @@ func (m *jsiiProxy_Metastore) ResetDeltaSharingScope() {
 	)
 }
 
-func (m *jsiiProxy_Metastore) ResetForceDestroy() {
+func (m *jsiiProxy_Metastore) ResetExternalAccessEnabled() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetForceDestroy",
+		"resetExternalAccessEnabled",
 		nil, // no parameters
 	)
 }
 
-func (m *jsiiProxy_Metastore) ResetGlobalMetastoreId() {
+func (m *jsiiProxy_Metastore) ResetForceDestroy() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetGlobalMetastoreId",
+		"resetForceDestroy",
 		nil, // no parameters
 	)
 }
@@ -1445,10 +1359,10 @@ func (m *jsiiProxy_Metastore) ResetId() {
 	)
 }
 
-func (m *jsiiProxy_Metastore) ResetMetastoreId() {
+func (m *jsiiProxy_Metastore) ResetName() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetMetastoreId",
+		"resetName",
 		nil, // no parameters
 	)
 }
@@ -1465,6 +1379,14 @@ func (m *jsiiProxy_Metastore) ResetOwner() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Metastore) ResetPrivilegeModelVersion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPrivilegeModelVersion",
 		nil, // no parameters
 	)
 }
@@ -1493,18 +1415,10 @@ func (m *jsiiProxy_Metastore) ResetStorageRootCredentialId() {
 	)
 }
 
-func (m *jsiiProxy_Metastore) ResetUpdatedAt() {
+func (m *jsiiProxy_Metastore) ResetStorageRootCredentialName() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetUpdatedAt",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_Metastore) ResetUpdatedBy() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetUpdatedBy",
+		"resetStorageRootCredentialName",
 		nil, // no parameters
 	)
 }

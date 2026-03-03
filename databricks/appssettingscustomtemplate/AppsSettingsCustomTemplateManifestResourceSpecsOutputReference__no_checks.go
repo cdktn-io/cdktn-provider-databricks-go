@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,6 +47,10 @@ func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsOutputReferenc
 	return nil
 }
 
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsOutputReference) validatePutExperimentSpecParameters(value *AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsOutputReference) validatePutJobSpecParameters(value *AppsSettingsCustomTemplateManifestResourceSpecsJobSpec) error {
 	return nil
 }
@@ -67,7 +71,7 @@ func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsOutputReferenc
 	return nil
 }
 
-func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -95,11 +99,11 @@ func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppsSettingsCustomTemplateManifestResourceSpecsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAppsSettingsCustomTemplateManifestResourceSpecsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

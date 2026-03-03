@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -87,7 +87,7 @@ func (s *jsiiProxy_SqlQueryParameterOutputReference) validatePutTextParameters(v
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlQueryParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -111,7 +111,7 @@ func (j *jsiiProxy_SqlQueryParameterOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_SqlQueryParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SqlQueryParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -119,7 +119,7 @@ func (j *jsiiProxy_SqlQueryParameterOutputReference) validateSetTitleParameters(
 	return nil
 }
 
-func validateNewSqlQueryParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSqlQueryParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

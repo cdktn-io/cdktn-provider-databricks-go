@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksclusters
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters",
+		"@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClusters",
 		reflect.TypeOf((*DataDatabricksClusters)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,20 +67,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClusters{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig",
+		"@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig",
 		reflect.TypeOf((*DataDatabricksClustersConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy",
+		"@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy",
 		reflect.TypeOf((*DataDatabricksClustersFilterBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterByOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterByOutputReference",
 		reflect.TypeOf((*DataDatabricksClustersFilterByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterSources", GoGetter: "ClusterSources"},
@@ -119,16 +119,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClustersFilterByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClustersProviderConfig",
 		reflect.TypeOf((*DataDatabricksClustersProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClustersProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksClustersProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,7 +157,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksClustersProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

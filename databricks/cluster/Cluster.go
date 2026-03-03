@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package cluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/cluster/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/cluster/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster databricks_cluster}.
 type Cluster interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	ApplyPolicyDefaultValues() interface{}
 	SetApplyPolicyDefaultValues(val interface{})
 	ApplyPolicyDefaultValuesInput() interface{}
@@ -28,7 +28,7 @@ type Cluster interface {
 	AzureAttributes() ClusterAzureAttributesOutputReference
 	AzureAttributesInput() *ClusterAzureAttributes
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClusterId() *string
 	ClusterLogConf() ClusterClusterLogConfOutputReference
 	ClusterLogConfInput() *ClusterClusterLogConf
@@ -53,7 +53,7 @@ type Cluster interface {
 	DataSecurityMode() *string
 	SetDataSecurityMode(val *string)
 	DataSecurityModeInput() *string
-	DefaultTags() cdktf.StringMap
+	DefaultTags() cdktn.StringMap
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,6 +63,8 @@ type Cluster interface {
 	DriverInstancePoolId() *string
 	SetDriverInstancePoolId(val *string)
 	DriverInstancePoolIdInput() *string
+	DriverNodeTypeFlexibility() ClusterDriverNodeTypeFlexibilityOutputReference
+	DriverNodeTypeFlexibilityInput() *ClusterDriverNodeTypeFlexibility
 	DriverNodeTypeId() *string
 	SetDriverNodeTypeId(val *string)
 	DriverNodeTypeIdInput() *string
@@ -73,9 +75,9 @@ type Cluster interface {
 	SetEnableLocalDiskEncryption(val interface{})
 	EnableLocalDiskEncryptionInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -105,9 +107,9 @@ type Cluster interface {
 	Library() ClusterLibraryList
 	LibraryInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	NodeTypeId() *string
@@ -123,9 +125,9 @@ type Cluster interface {
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() ClusterProviderConfigOutputReference
 	ProviderConfigInput() *ClusterProviderConfig
 	// Experimental.
@@ -157,7 +159,7 @@ type Cluster interface {
 	SshPublicKeysInput() *[]*string
 	State() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -171,6 +173,8 @@ type Cluster interface {
 	UseMlRuntime() interface{}
 	SetUseMlRuntime(val interface{})
 	UseMlRuntimeInput() interface{}
+	WorkerNodeTypeFlexibility() ClusterWorkerNodeTypeFlexibilityOutputReference
+	WorkerNodeTypeFlexibilityInput() *ClusterWorkerNodeTypeFlexibility
 	WorkloadType() ClusterWorkloadTypeOutputReference
 	WorkloadTypeInput() *ClusterWorkloadType
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -181,7 +185,7 @@ type Cluster interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -199,9 +203,9 @@ type Cluster interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -222,11 +226,13 @@ type Cluster interface {
 	PutClusterLogConf(value *ClusterClusterLogConf)
 	PutClusterMountInfo(value interface{})
 	PutDockerImage(value *ClusterDockerImage)
+	PutDriverNodeTypeFlexibility(value *ClusterDriverNodeTypeFlexibility)
 	PutGcpAttributes(value *ClusterGcpAttributes)
 	PutInitScripts(value interface{})
 	PutLibrary(value interface{})
 	PutProviderConfig(value *ClusterProviderConfig)
 	PutTimeouts(value *ClusterTimeouts)
+	PutWorkerNodeTypeFlexibility(value *ClusterWorkerNodeTypeFlexibility)
 	PutWorkloadType(value *ClusterWorkloadType)
 	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
@@ -240,6 +246,7 @@ type Cluster interface {
 	ResetDataSecurityMode()
 	ResetDockerImage()
 	ResetDriverInstancePoolId()
+	ResetDriverNodeTypeFlexibility()
 	ResetDriverNodeTypeId()
 	ResetEnableElasticDisk()
 	ResetEnableLocalDiskEncryption()
@@ -269,6 +276,7 @@ type Cluster interface {
 	ResetTimeouts()
 	ResetTotalInitialRemoteDiskSize()
 	ResetUseMlRuntime()
+	ResetWorkerNodeTypeFlexibility()
 	ResetWorkloadType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -285,7 +293,7 @@ type Cluster interface {
 
 // The jsii proxy struct for Cluster
 type jsiiProxy_Cluster struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Cluster) ApplyPolicyDefaultValues() interface{} {
@@ -388,8 +396,8 @@ func (j *jsiiProxy_Cluster) AzureAttributesInput() *ClusterAzureAttributes {
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Cluster) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -538,8 +546,8 @@ func (j *jsiiProxy_Cluster) DataSecurityModeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) DefaultTags() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_Cluster) DefaultTags() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"defaultTags",
@@ -593,6 +601,26 @@ func (j *jsiiProxy_Cluster) DriverInstancePoolIdInput() *string {
 	_jsii_.Get(
 		j,
 		"driverInstancePoolIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) DriverNodeTypeFlexibility() ClusterDriverNodeTypeFlexibilityOutputReference {
+	var returns ClusterDriverNodeTypeFlexibilityOutputReference
+	_jsii_.Get(
+		j,
+		"driverNodeTypeFlexibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) DriverNodeTypeFlexibilityInput() *ClusterDriverNodeTypeFlexibility {
+	var returns *ClusterDriverNodeTypeFlexibility
+	_jsii_.Get(
+		j,
+		"driverNodeTypeFlexibilityInput",
 		&returns,
 	)
 	return returns
@@ -658,8 +686,8 @@ func (j *jsiiProxy_Cluster) EnableLocalDiskEncryptionInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Cluster) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -868,8 +896,8 @@ func (j *jsiiProxy_Cluster) LibraryInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Cluster) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -968,8 +996,8 @@ func (j *jsiiProxy_Cluster) PolicyIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Cluster) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -1168,8 +1196,8 @@ func (j *jsiiProxy_Cluster) State() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Cluster) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -1268,6 +1296,26 @@ func (j *jsiiProxy_Cluster) UseMlRuntimeInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Cluster) WorkerNodeTypeFlexibility() ClusterWorkerNodeTypeFlexibilityOutputReference {
+	var returns ClusterWorkerNodeTypeFlexibilityOutputReference
+	_jsii_.Get(
+		j,
+		"workerNodeTypeFlexibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) WorkerNodeTypeFlexibilityInput() *ClusterWorkerNodeTypeFlexibility {
+	var returns *ClusterWorkerNodeTypeFlexibility
+	_jsii_.Get(
+		j,
+		"workerNodeTypeFlexibilityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cluster) WorkloadType() ClusterWorkloadTypeOutputReference {
 	var returns ClusterWorkloadTypeOutputReference
 	_jsii_.Get(
@@ -1289,7 +1337,7 @@ func (j *jsiiProxy_Cluster) WorkloadTypeInput() *ClusterWorkloadType {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1299,7 +1347,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	j := jsiiProxy_Cluster{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.cluster.Cluster",
+		"@cdktn/provider-databricks.cluster.Cluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1307,12 +1355,12 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.cluster.Cluster",
+		"@cdktn/provider-databricks.cluster.Cluster",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1447,7 +1495,7 @@ func (j *jsiiProxy_Cluster)SetEnableLocalDiskEncryption(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Cluster)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1521,7 +1569,7 @@ func (j *jsiiProxy_Cluster)SetKind(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Cluster)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1576,7 +1624,7 @@ func (j *jsiiProxy_Cluster)SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Cluster)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1694,17 +1742,17 @@ func (j *jsiiProxy_Cluster)SetUseMlRuntime(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a Cluster resource upon running "cdktf plan <stack-name>".
-func Cluster_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Cluster resource upon running "cdktn plan <stack-name>".
+func Cluster_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCluster_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.cluster.Cluster",
+		"@cdktn/provider-databricks.cluster.Cluster",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1739,7 +1787,7 @@ func Cluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.cluster.Cluster",
+		"@cdktn/provider-databricks.cluster.Cluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1758,7 +1806,7 @@ func Cluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.cluster.Cluster",
+		"@cdktn/provider-databricks.cluster.Cluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1777,7 +1825,7 @@ func Cluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.cluster.Cluster",
+		"@cdktn/provider-databricks.cluster.Cluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1790,7 +1838,7 @@ func Cluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.cluster.Cluster",
+		"@cdktn/provider-databricks.cluster.Cluster",
 		"tfResourceType",
 		&returns,
 	)
@@ -1835,11 +1883,11 @@ func (c *jsiiProxy_Cluster) GetAnyMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
-func (c *jsiiProxy_Cluster) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_Cluster) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1976,7 +2024,7 @@ func (c *jsiiProxy_Cluster) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_Cluster) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_Cluster) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1987,11 +2035,11 @@ func (c *jsiiProxy_Cluster) ImportFrom(id *string, provider cdktf.TerraformProvi
 	)
 }
 
-func (c *jsiiProxy_Cluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_Cluster) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -2113,6 +2161,17 @@ func (c *jsiiProxy_Cluster) PutDockerImage(value *ClusterDockerImage) {
 	)
 }
 
+func (c *jsiiProxy_Cluster) PutDriverNodeTypeFlexibility(value *ClusterDriverNodeTypeFlexibility) {
+	if err := c.validatePutDriverNodeTypeFlexibilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDriverNodeTypeFlexibility",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Cluster) PutGcpAttributes(value *ClusterGcpAttributes) {
 	if err := c.validatePutGcpAttributesParameters(value); err != nil {
 		panic(err)
@@ -2164,6 +2223,17 @@ func (c *jsiiProxy_Cluster) PutTimeouts(value *ClusterTimeouts) {
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Cluster) PutWorkerNodeTypeFlexibility(value *ClusterWorkerNodeTypeFlexibility) {
+	if err := c.validatePutWorkerNodeTypeFlexibilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putWorkerNodeTypeFlexibility",
 		[]interface{}{value},
 	)
 }
@@ -2271,6 +2341,14 @@ func (c *jsiiProxy_Cluster) ResetDriverInstancePoolId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDriverInstancePoolId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetDriverNodeTypeFlexibility() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDriverNodeTypeFlexibility",
 		nil, // no parameters
 	)
 }
@@ -2487,6 +2565,14 @@ func (c *jsiiProxy_Cluster) ResetUseMlRuntime() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetUseMlRuntime",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetWorkerNodeTypeFlexibility() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWorkerNodeTypeFlexibility",
 		nil, // no parameters
 	)
 }

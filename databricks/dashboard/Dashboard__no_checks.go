@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,10 @@ func (d *jsiiProxy_Dashboard) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (d *jsiiProxy_Dashboard) validatePutProviderConfigParameters(value *DashboardProviderConfig) error {
+	return nil
+}
+
 func validateDashboard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -111,6 +115,14 @@ func (j *jsiiProxy_Dashboard) validateSetDashboardIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_Dashboard) validateSetDatasetCatalogParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Dashboard) validateSetDatasetSchemaParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Dashboard) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }
@@ -131,7 +143,7 @@ func (j *jsiiProxy_Dashboard) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Dashboard) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Dashboard) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

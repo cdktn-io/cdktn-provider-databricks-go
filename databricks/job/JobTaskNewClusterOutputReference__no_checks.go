@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -71,6 +71,10 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutDockerImageParam
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutDriverNodeTypeFlexibilityParameters(value *JobTaskNewClusterDriverNodeTypeFlexibility) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutGcpAttributesParameters(value *JobTaskNewClusterGcpAttributes) error {
 	return nil
 }
@@ -87,11 +91,15 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutProviderConfigPa
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutWorkerNodeTypeFlexibilityParameters(value *JobTaskNewClusterWorkerNodeTypeFlexibility) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutWorkloadTypeParameters(value *JobTaskNewClusterWorkloadType) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -207,7 +215,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -219,7 +227,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetUseMlRuntimePara
 	return nil
 }
 
-func validateNewJobTaskNewClusterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobTaskNewClusterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

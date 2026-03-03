@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickscatalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscatalog/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscatalog/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/catalog databricks_catalog}.
 type DataDatabricksCatalog interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	CatalogInfo() DataDatabricksCatalogCatalogInfoOutputReference
 	CatalogInfoInput() *DataDatabricksCatalogCatalogInfo
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -30,9 +30,9 @@ type DataDatabricksCatalog interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -41,24 +41,24 @@ type DataDatabricksCatalog interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() DataDatabricksCatalogProviderConfigOutputReference
 	ProviderConfigInput() *DataDatabricksCatalogProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -68,7 +68,7 @@ type DataDatabricksCatalog interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,7 +84,7 @@ type DataDatabricksCatalog interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -112,7 +112,7 @@ type DataDatabricksCatalog interface {
 
 // The jsii proxy struct for DataDatabricksCatalog
 type jsiiProxy_DataDatabricksCatalog struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataDatabricksCatalog) CatalogInfo() DataDatabricksCatalogCatalogInfoOutputReference {
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataDatabricksCatalog) CatalogInfoInput() *DataDatabricksCata
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCatalog) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatabricksCatalog) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataDatabricksCatalog) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCatalog) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatabricksCatalog) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_DataDatabricksCatalog) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCatalog) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatabricksCatalog) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_DataDatabricksCatalog) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCatalog) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatabricksCatalog) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_DataDatabricksCatalog) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCatalog) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatabricksCatalog) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DataDatabricksCatalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/catalog databricks_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/catalog databricks_catalog} Data Source.
 func NewDataDatabricksCatalog(scope constructs.Construct, id *string, config *DataDatabricksCatalogConfig) DataDatabricksCatalog {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataDatabricksCatalog(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataDatabricksCatalog{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -354,12 +354,12 @@ func NewDataDatabricksCatalog(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/catalog databricks_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/catalog databricks_catalog} Data Source.
 func NewDataDatabricksCatalog_Override(d DataDatabricksCatalog, scope constructs.Construct, id *string, config *DataDatabricksCatalogConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataDatabricksCatalog)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksCatalog)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksCatalog)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DataDatabricksCatalog)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksCatalog)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksCatalog)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DataDatabricksCatalog)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksCatalog)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksCatalog)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -433,17 +433,17 @@ func (j *jsiiProxy_DataDatabricksCatalog)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-// Generates CDKTF code for importing a DataDatabricksCatalog resource upon running "cdktf plan <stack-name>".
-func DataDatabricksCatalog_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatabricksCatalog resource upon running "cdktn plan <stack-name>".
+func DataDatabricksCatalog_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatabricksCatalog_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -478,7 +478,7 @@ func DataDatabricksCatalog_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func DataDatabricksCatalog_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func DataDatabricksCatalog_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func DataDatabricksCatalog_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog",
 		"tfResourceType",
 		&returns,
 	)
@@ -563,11 +563,11 @@ func (d *jsiiProxy_DataDatabricksCatalog) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksCatalog) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksCatalog) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -691,11 +691,11 @@ func (d *jsiiProxy_DataDatabricksCatalog) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksCatalog) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksCatalog) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

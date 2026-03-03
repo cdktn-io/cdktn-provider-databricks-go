@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package credential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/credential/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type CredentialAzureManagedIdentityOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessConnectorId() *string
 	SetAccessConnectorId(val *string)
 	AccessConnectorIdInput() *string
@@ -46,15 +46,15 @@ type CredentialAzureManagedIdentityOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type CredentialAzureManagedIdentityOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCredentialId()
 	ResetManagedIdentityId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type CredentialAzureManagedIdentityOutputReference interface {
 
 // The jsii proxy struct for CredentialAzureManagedIdentityOutputReference
 type jsiiProxy_CredentialAzureManagedIdentityOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CredentialAzureManagedIdentityOutputReference) AccessConnectorId() *string {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_CredentialAzureManagedIdentityOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_CredentialAzureManagedIdentityOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CredentialAzureManagedIdentityOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_CredentialAzureManagedIdentityOutputReference) TerraformResou
 }
 
 
-func NewCredentialAzureManagedIdentityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CredentialAzureManagedIdentityOutputReference {
+func NewCredentialAzureManagedIdentityOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CredentialAzureManagedIdentityOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCredentialAzureManagedIdentityOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -230,7 +230,7 @@ func NewCredentialAzureManagedIdentityOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_CredentialAzureManagedIdentityOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.credential.CredentialAzureManagedIdentityOutputReference",
+		"@cdktn/provider-databricks.credential.CredentialAzureManagedIdentityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,11 +238,11 @@ func NewCredentialAzureManagedIdentityOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewCredentialAzureManagedIdentityOutputReference_Override(c CredentialAzureManagedIdentityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCredentialAzureManagedIdentityOutputReference_Override(c CredentialAzureManagedIdentityOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.credential.CredentialAzureManagedIdentityOutputReference",
+		"@cdktn/provider-databricks.credential.CredentialAzureManagedIdentityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_CredentialAzureManagedIdentityOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_CredentialAzureManagedIdentityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CredentialAzureManagedIdentityOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -493,8 +493,8 @@ func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) GetStringMapAt
 	return returns
 }
 
-func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -506,11 +506,11 @@ func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) InterpolationA
 	return returns
 }
 
-func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -538,7 +538,7 @@ func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) ResetManagedId
 	)
 }
 
-func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CredentialAzureManagedIdentityOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

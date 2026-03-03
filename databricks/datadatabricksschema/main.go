@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksschema
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchema",
+		"@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchema",
 		reflect.TypeOf((*DataDatabricksSchema)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,20 +63,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksSchema{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig",
+		"@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig",
 		reflect.TypeOf((*DataDatabricksSchemaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaProviderConfig",
 		reflect.TypeOf((*DataDatabricksSchemaProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksSchemaProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -105,20 +105,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksSchemaProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo",
+		"@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo",
 		reflect.TypeOf((*DataDatabricksSchemaSchemaInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag",
+		"@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag",
 		reflect.TypeOf((*DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlagOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlagOutputReference",
 		reflect.TypeOf((*DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlagOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -153,12 +153,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlagOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksSchemaSchemaInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "browseOnly", GoGetter: "BrowseOnly"},
@@ -240,7 +240,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

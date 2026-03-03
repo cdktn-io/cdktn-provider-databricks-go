@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/pipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PipelineClusterAwsAttributesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Availability() *string
 	SetAvailability(val *string)
 	AvailabilityInput() *string
@@ -64,9 +64,9 @@ type PipelineClusterAwsAttributesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -75,7 +75,7 @@ type PipelineClusterAwsAttributesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type PipelineClusterAwsAttributesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAvailability()
 	ResetEbsVolumeCount()
 	ResetEbsVolumeIops()
@@ -106,7 +106,7 @@ type PipelineClusterAwsAttributesOutputReference interface {
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,7 +116,7 @@ type PipelineClusterAwsAttributesOutputReference interface {
 
 // The jsii proxy struct for PipelineClusterAwsAttributesOutputReference
 type jsiiProxy_PipelineClusterAwsAttributesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) Availability() *string {
@@ -359,8 +359,8 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ZoneIdInput() *s
 }
 
 
-func NewPipelineClusterAwsAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PipelineClusterAwsAttributesOutputReference {
+func NewPipelineClusterAwsAttributesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PipelineClusterAwsAttributesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPipelineClusterAwsAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -399,7 +399,7 @@ func NewPipelineClusterAwsAttributesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_PipelineClusterAwsAttributesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -407,11 +407,11 @@ func NewPipelineClusterAwsAttributesOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewPipelineClusterAwsAttributesOutputReference_Override(p PipelineClusterAwsAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPipelineClusterAwsAttributesOutputReference_Override(p PipelineClusterAwsAttributesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -560,7 +560,7 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,11 +611,11 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -739,8 +739,8 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -752,11 +752,11 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) InterpolationAsL
 	return returns
 }
 
-func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -848,7 +848,7 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ResetZoneId() {
 	)
 }
 
-func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

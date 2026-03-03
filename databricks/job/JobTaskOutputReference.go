@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/job/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobTaskOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CleanRoomsNotebookTask() JobTaskCleanRoomsNotebookTaskOutputReference
 	CleanRoomsNotebookTaskInput() *JobTaskCleanRoomsNotebookTask
 	// the index of the complex object in a list.
@@ -25,6 +25,8 @@ type JobTaskOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Compute() JobTaskComputeOutputReference
+	ComputeInput() *JobTaskCompute
 	ConditionTask() JobTaskConditionTaskOutputReference
 	ConditionTaskInput() *JobTaskConditionTask
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -116,9 +118,9 @@ type JobTaskOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
@@ -129,7 +131,7 @@ type JobTaskOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -145,10 +147,11 @@ type JobTaskOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCleanRoomsNotebookTask(value *JobTaskCleanRoomsNotebookTask)
+	PutCompute(value *JobTaskCompute)
 	PutConditionTask(value *JobTaskConditionTask)
 	PutDashboardTask(value *JobTaskDashboardTask)
 	PutDbtCloudTask(value *JobTaskDbtCloudTask)
@@ -173,6 +176,7 @@ type JobTaskOutputReference interface {
 	PutSqlTask(value *JobTaskSqlTask)
 	PutWebhookNotifications(value *JobTaskWebhookNotifications)
 	ResetCleanRoomsNotebookTask()
+	ResetCompute()
 	ResetConditionTask()
 	ResetDashboardTask()
 	ResetDbtCloudTask()
@@ -209,7 +213,7 @@ type JobTaskOutputReference interface {
 	ResetWebhookNotifications()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -219,7 +223,7 @@ type JobTaskOutputReference interface {
 
 // The jsii proxy struct for JobTaskOutputReference
 type jsiiProxy_JobTaskOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) CleanRoomsNotebookTask() JobTaskCleanRoomsNotebookTaskOutputReference {
@@ -257,6 +261,26 @@ func (j *jsiiProxy_JobTaskOutputReference) ComplexObjectIsFromSet() *bool {
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) Compute() JobTaskComputeOutputReference {
+	var returns JobTaskComputeOutputReference
+	_jsii_.Get(
+		j,
+		"compute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ComputeInput() *JobTaskCompute {
+	var returns *JobTaskCompute
+	_jsii_.Get(
+		j,
+		"computeInput",
 		&returns,
 	)
 	return returns
@@ -962,8 +986,8 @@ func (j *jsiiProxy_JobTaskOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobTaskOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -1013,7 +1037,7 @@ func (j *jsiiProxy_JobTaskOutputReference) WebhookNotificationsInput() *JobTaskW
 }
 
 
-func NewJobTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobTaskOutputReference {
+func NewJobTaskOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobTaskOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobTaskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -1022,7 +1046,7 @@ func NewJobTaskOutputReference(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_JobTaskOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -1030,11 +1054,11 @@ func NewJobTaskOutputReference(terraformResource cdktf.IInterpolatingParent, ter
 	return &j
 }
 
-func NewJobTaskOutputReference_Override(j JobTaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewJobTaskOutputReference_Override(j JobTaskOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.job.JobTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)
@@ -1205,7 +1229,7 @@ func (j *jsiiProxy_JobTaskOutputReference)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTaskOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1256,11 +1280,11 @@ func (j *jsiiProxy_JobTaskOutputReference) GetAnyMapAttribute(terraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -1384,8 +1408,8 @@ func (j *jsiiProxy_JobTaskOutputReference) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobTaskOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -1397,11 +1421,11 @@ func (j *jsiiProxy_JobTaskOutputReference) InterpolationAsList() cdktf.IResolvab
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobTaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -1420,6 +1444,17 @@ func (j *jsiiProxy_JobTaskOutputReference) PutCleanRoomsNotebookTask(value *JobT
 	_jsii_.InvokeVoid(
 		j,
 		"putCleanRoomsNotebookTask",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) PutCompute(value *JobTaskCompute) {
+	if err := j.validatePutComputeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putCompute",
 		[]interface{}{value},
 	)
 }
@@ -1681,6 +1716,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetCleanRoomsNotebookTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetCleanRoomsNotebookTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetCompute() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetCompute",
 		nil, // no parameters
 	)
 }
@@ -1957,7 +2000,7 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetWebhookNotifications() {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobTaskOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package instanceprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/instanceprofile/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/instanceprofile/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_profile databricks_instance_profile}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_profile databricks_instance_profile}.
 type InstanceProfile interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,9 +32,9 @@ type InstanceProfile interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,15 +52,17 @@ type InstanceProfile interface {
 	SetIsMetaInstanceProfile(val interface{})
 	IsMetaInstanceProfileInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() InstanceProfileProviderConfigOutputReference
+	ProviderConfigInput() *InstanceProfileProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -71,7 +73,7 @@ type InstanceProfile interface {
 	SetSkipValidation(val interface{})
 	SkipValidationInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -84,7 +86,7 @@ type InstanceProfile interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -102,9 +104,9 @@ type InstanceProfile interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -119,12 +121,14 @@ type InstanceProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *InstanceProfileProviderConfig)
 	ResetIamRoleArn()
 	ResetId()
 	ResetIsMetaInstanceProfile()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSkipValidation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -141,11 +145,11 @@ type InstanceProfile interface {
 
 // The jsii proxy struct for InstanceProfile
 type jsiiProxy_InstanceProfile struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_InstanceProfile) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_InstanceProfile) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -194,8 +198,8 @@ func (j *jsiiProxy_InstanceProfile) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_InstanceProfile) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_InstanceProfile) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -304,8 +308,8 @@ func (j *jsiiProxy_InstanceProfile) IsMetaInstanceProfileInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_InstanceProfile) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_InstanceProfile) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -324,11 +328,31 @@ func (j *jsiiProxy_InstanceProfile) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_InstanceProfile) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_InstanceProfile) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceProfile) ProviderConfig() InstanceProfileProviderConfigOutputReference {
+	var returns InstanceProfileProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceProfile) ProviderConfigInput() *InstanceProfileProviderConfig {
+	var returns *InstanceProfileProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -374,8 +398,8 @@ func (j *jsiiProxy_InstanceProfile) SkipValidationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_InstanceProfile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_InstanceProfile) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -405,7 +429,7 @@ func (j *jsiiProxy_InstanceProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_profile databricks_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_profile databricks_instance_profile} Resource.
 func NewInstanceProfile(scope constructs.Construct, id *string, config *InstanceProfileConfig) InstanceProfile {
 	_init_.Initialize()
 
@@ -415,7 +439,7 @@ func NewInstanceProfile(scope constructs.Construct, id *string, config *Instance
 	j := jsiiProxy_InstanceProfile{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.instanceProfile.InstanceProfile",
+		"@cdktn/provider-databricks.instanceProfile.InstanceProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -423,12 +447,12 @@ func NewInstanceProfile(scope constructs.Construct, id *string, config *Instance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_profile databricks_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_profile databricks_instance_profile} Resource.
 func NewInstanceProfile_Override(i InstanceProfile, scope constructs.Construct, id *string, config *InstanceProfileConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.instanceProfile.InstanceProfile",
+		"@cdktn/provider-databricks.instanceProfile.InstanceProfile",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -464,7 +488,7 @@ func (j *jsiiProxy_InstanceProfile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_InstanceProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_InstanceProfile)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -516,7 +540,7 @@ func (j *jsiiProxy_InstanceProfile)SetIsMetaInstanceProfile(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_InstanceProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_InstanceProfile)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +551,7 @@ func (j *jsiiProxy_InstanceProfile)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_InstanceProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_InstanceProfile)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -557,17 +581,17 @@ func (j *jsiiProxy_InstanceProfile)SetSkipValidation(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a InstanceProfile resource upon running "cdktf plan <stack-name>".
-func InstanceProfile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a InstanceProfile resource upon running "cdktn plan <stack-name>".
+func InstanceProfile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateInstanceProfile_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.instanceProfile.InstanceProfile",
+		"@cdktn/provider-databricks.instanceProfile.InstanceProfile",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -602,7 +626,7 @@ func InstanceProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.instanceProfile.InstanceProfile",
+		"@cdktn/provider-databricks.instanceProfile.InstanceProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +645,7 @@ func InstanceProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.instanceProfile.InstanceProfile",
+		"@cdktn/provider-databricks.instanceProfile.InstanceProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +664,7 @@ func InstanceProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.instanceProfile.InstanceProfile",
+		"@cdktn/provider-databricks.instanceProfile.InstanceProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +677,7 @@ func InstanceProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.instanceProfile.InstanceProfile",
+		"@cdktn/provider-databricks.instanceProfile.InstanceProfile",
 		"tfResourceType",
 		&returns,
 	)
@@ -698,11 +722,11 @@ func (i *jsiiProxy_InstanceProfile) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (i *jsiiProxy_InstanceProfile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InstanceProfile) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -839,7 +863,7 @@ func (i *jsiiProxy_InstanceProfile) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_InstanceProfile) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_InstanceProfile) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -850,11 +874,11 @@ func (i *jsiiProxy_InstanceProfile) ImportFrom(id *string, provider cdktf.Terraf
 	)
 }
 
-func (i *jsiiProxy_InstanceProfile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InstanceProfile) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -910,6 +934,17 @@ func (i *jsiiProxy_InstanceProfile) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_InstanceProfile) PutProviderConfig(value *InstanceProfileProviderConfig) {
+	if err := i.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_InstanceProfile) ResetIamRoleArn() {
 	_jsii_.InvokeVoid(
 		i,
@@ -938,6 +973,14 @@ func (i *jsiiProxy_InstanceProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InstanceProfile) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

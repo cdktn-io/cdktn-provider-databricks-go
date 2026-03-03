@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,10 @@ func (t *jsiiProxy_TagPolicy) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (t *jsiiProxy_TagPolicy) validatePutProviderConfigParameters(value *TagPolicyProviderConfig) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagPolicy) validatePutValuesParameters(value interface{}) error {
 	return nil
 }
@@ -107,7 +111,7 @@ func (j *jsiiProxy_TagPolicy) validateSetDescriptionParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_TagPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TagPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

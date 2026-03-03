@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksalertv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksalertv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksalertv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksAlertV2EvaluationNotificationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,7 +28,7 @@ type DataDatabricksAlertV2EvaluationNotificationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EffectiveNotifyOnOk() cdktf.IResolvable
+	EffectiveNotifyOnOk() cdktn.IResolvable
 	EffectiveRetriggerSeconds() *float64
 	// Experimental.
 	Fqn() *string
@@ -47,15 +47,15 @@ type DataDatabricksAlertV2EvaluationNotificationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,16 +71,16 @@ type DataDatabricksAlertV2EvaluationNotificationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSubscriptions(value interface{})
 	ResetNotifyOnOk()
 	ResetRetriggerSeconds()
 	ResetSubscriptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,7 +90,7 @@ type DataDatabricksAlertV2EvaluationNotificationOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksAlertV2EvaluationNotificationOutputReference
 type jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) ComplexObjectIndex() interface{} {
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) EffectiveNotifyOnOk() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) EffectiveNotifyOnOk() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveNotifyOnOk",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -244,7 +244,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) T
 }
 
 
-func NewDataDatabricksAlertV2EvaluationNotificationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2EvaluationNotificationOutputReference {
+func NewDataDatabricksAlertV2EvaluationNotificationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2EvaluationNotificationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksAlertV2EvaluationNotificationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -253,7 +253,7 @@ func NewDataDatabricksAlertV2EvaluationNotificationOutputReference(terraformReso
 	j := jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotificationOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,11 +261,11 @@ func NewDataDatabricksAlertV2EvaluationNotificationOutputReference(terraformReso
 	return &j
 }
 
-func NewDataDatabricksAlertV2EvaluationNotificationOutputReference_Override(d DataDatabricksAlertV2EvaluationNotificationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksAlertV2EvaluationNotificationOutputReference_Override(d DataDatabricksAlertV2EvaluationNotificationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotificationOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -337,7 +337,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,11 +377,11 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -505,8 +505,8 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -518,11 +518,11 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -569,7 +569,7 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) R
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksAlertV2EvaluationNotificationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

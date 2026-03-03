@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package userinstanceprofile
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.userInstanceProfile.UserInstanceProfile",
+		"@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile",
 		reflect.TypeOf((*UserInstanceProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -65,12 +65,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_UserInstanceProfile{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.userInstanceProfile.UserInstanceProfileConfig",
+		"@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig",
 		reflect.TypeOf((*UserInstanceProfileConfig)(nil)).Elem(),
 	)
 }

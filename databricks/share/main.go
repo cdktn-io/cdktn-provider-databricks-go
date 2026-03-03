@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package share
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.share.Share",
+		"@cdktn/provider-databricks.share.Share",
 		reflect.TypeOf((*Share)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -84,20 +84,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Share{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.share.ShareConfig",
+		"@cdktn/provider-databricks.share.ShareConfig",
 		reflect.TypeOf((*ShareConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.share.ShareObject",
+		"@cdktn/provider-databricks.share.ShareObject",
 		reflect.TypeOf((*ShareObject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.share.ShareObjectList",
+		"@cdktn/provider-databricks.share.ShareObjectList",
 		reflect.TypeOf((*ShareObjectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -114,12 +114,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ShareObjectList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.share.ShareObjectOutputReference",
+		"@cdktn/provider-databricks.share.ShareObjectOutputReference",
 		reflect.TypeOf((*ShareObjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addedAt", GoGetter: "AddedAt"},
@@ -183,16 +183,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ShareObjectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.share.ShareObjectPartition",
+		"@cdktn/provider-databricks.share.ShareObjectPartition",
 		reflect.TypeOf((*ShareObjectPartition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.share.ShareObjectPartitionList",
+		"@cdktn/provider-databricks.share.ShareObjectPartitionList",
 		reflect.TypeOf((*ShareObjectPartitionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -209,12 +209,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ShareObjectPartitionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference",
+		"@cdktn/provider-databricks.share.ShareObjectPartitionOutputReference",
 		reflect.TypeOf((*ShareObjectPartitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -245,16 +245,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ShareObjectPartitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.share.ShareObjectPartitionValue",
+		"@cdktn/provider-databricks.share.ShareObjectPartitionValue",
 		reflect.TypeOf((*ShareObjectPartitionValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.share.ShareObjectPartitionValueList",
+		"@cdktn/provider-databricks.share.ShareObjectPartitionValueList",
 		reflect.TypeOf((*ShareObjectPartitionValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -271,12 +271,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ShareObjectPartitionValueList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference",
+		"@cdktn/provider-databricks.share.ShareObjectPartitionValueOutputReference",
 		reflect.TypeOf((*ShareObjectPartitionValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -313,16 +313,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ShareObjectPartitionValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.share.ShareProviderConfig",
+		"@cdktn/provider-databricks.share.ShareProviderConfig",
 		reflect.TypeOf((*ShareProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.share.ShareProviderConfigList",
+		"@cdktn/provider-databricks.share.ShareProviderConfigList",
 		reflect.TypeOf((*ShareProviderConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -339,12 +339,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ShareProviderConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.share.ShareProviderConfigOutputReference",
+		"@cdktn/provider-databricks.share.ShareProviderConfigOutputReference",
 		reflect.TypeOf((*ShareProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -373,7 +373,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ShareProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

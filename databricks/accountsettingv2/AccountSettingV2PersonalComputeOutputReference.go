@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accountsettingv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/accountsettingv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountsettingv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AccountSettingV2PersonalComputeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type AccountSettingV2PersonalComputeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -48,7 +48,7 @@ type AccountSettingV2PersonalComputeOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type AccountSettingV2PersonalComputeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type AccountSettingV2PersonalComputeOutputReference interface {
 
 // The jsii proxy struct for AccountSettingV2PersonalComputeOutputReference
 type jsiiProxy_AccountSettingV2PersonalComputeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) ComplexObjectIndex() interface{} {
@@ -143,8 +143,8 @@ func (j *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) ValueInput() 
 }
 
 
-func NewAccountSettingV2PersonalComputeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccountSettingV2PersonalComputeOutputReference {
+func NewAccountSettingV2PersonalComputeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AccountSettingV2PersonalComputeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAccountSettingV2PersonalComputeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewAccountSettingV2PersonalComputeOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_AccountSettingV2PersonalComputeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.accountSettingV2.AccountSettingV2PersonalComputeOutputReference",
+		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalComputeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewAccountSettingV2PersonalComputeOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewAccountSettingV2PersonalComputeOutputReference_Override(a AccountSettingV2PersonalComputeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAccountSettingV2PersonalComputeOutputReference_Override(a AccountSettingV2PersonalComputeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.accountSettingV2.AccountSettingV2PersonalComputeOutputReference",
+		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalComputeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -245,7 +245,7 @@ func (j *jsiiProxy_AccountSettingV2PersonalComputeOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_AccountSettingV2PersonalComputeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccountSettingV2PersonalComputeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -424,8 +424,8 @@ func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) GetStringMapA
 	return returns
 }
 
-func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -437,11 +437,11 @@ func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) Interpolation
 	return returns
 }
 
-func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -461,7 +461,7 @@ func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) ResetValue() 
 	)
 }
 
-func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccountSettingV2PersonalComputeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

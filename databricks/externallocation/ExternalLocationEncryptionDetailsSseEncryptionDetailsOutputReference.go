@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externallocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/externallocation/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Algorithm() *string
 	SetAlgorithm(val *string)
 	AlgorithmInput() *string
@@ -43,15 +43,15 @@ type ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAlgorithm()
 	ResetAwsKmsKeyArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference interf
 
 // The jsii proxy struct for ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference
 type jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) Algorithm() *string {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputRe
 }
 
 
-func NewExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference {
+func NewExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference(ter
 	j := jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference(ter
 	return &j
 }
 
-func NewExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference_Override(e ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference_Override(e ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference",
+		"@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -291,7 +291,7 @@ func (j *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputRe
 	)
 }
 
-func (j *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputRe
 	return returns
 }
 
-func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -459,8 +459,8 @@ func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputRe
 	return returns
 }
 
-func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -472,11 +472,11 @@ func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputRe
 	return returns
 }
 
-func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -504,7 +504,7 @@ func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputRe
 	)
 }
 
-func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabrickstable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickstable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksTableTableInfoColumnsMaskOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,11 @@ type DataDatabricksTableTableInfoColumnsMaskOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UsingArguments() DataDatabricksTableTableInfoColumnsMaskUsingArgumentsList
+	UsingArgumentsInput() interface{}
 	UsingColumnNames() *[]*string
 	SetUsingColumnNames(val *[]*string)
 	UsingColumnNamesInput() *[]*string
@@ -51,7 +53,7 @@ type DataDatabricksTableTableInfoColumnsMaskOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +69,16 @@ type DataDatabricksTableTableInfoColumnsMaskOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutUsingArguments(value interface{})
 	ResetFunctionName()
+	ResetUsingArguments()
 	ResetUsingColumnNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +88,7 @@ type DataDatabricksTableTableInfoColumnsMaskOutputReference interface {
 
 // The jsii proxy struct for DataDatabricksTableTableInfoColumnsMaskOutputReference
 type jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) ComplexObjectIndex() interface{} {
@@ -167,11 +171,31 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) UsingArguments() DataDatabricksTableTableInfoColumnsMaskUsingArgumentsList {
+	var returns DataDatabricksTableTableInfoColumnsMaskUsingArgumentsList
+	_jsii_.Get(
+		j,
+		"usingArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) UsingArgumentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"usingArgumentsInput",
 		&returns,
 	)
 	return returns
@@ -198,7 +222,7 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) Using
 }
 
 
-func NewDataDatabricksTableTableInfoColumnsMaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoColumnsMaskOutputReference {
+func NewDataDatabricksTableTableInfoColumnsMaskOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoColumnsMaskOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatabricksTableTableInfoColumnsMaskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +231,7 @@ func NewDataDatabricksTableTableInfoColumnsMaskOutputReference(terraformResource
 	j := jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMaskOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +239,11 @@ func NewDataDatabricksTableTableInfoColumnsMaskOutputReference(terraformResource
 	return &j
 }
 
-func NewDataDatabricksTableTableInfoColumnsMaskOutputReference_Override(d DataDatabricksTableTableInfoColumnsMaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksTableTableInfoColumnsMaskOutputReference_Override(d DataDatabricksTableTableInfoColumnsMaskOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMaskOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -280,7 +304,7 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +355,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) GetAn
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -459,8 +483,8 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) GetSt
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -472,11 +496,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -488,10 +512,29 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) Inter
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) PutUsingArguments(value interface{}) {
+	if err := d.validatePutUsingArgumentsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putUsingArguments",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) ResetFunctionName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetFunctionName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) ResetUsingArguments() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsingArguments",
 		nil, // no parameters
 	)
 }
@@ -504,7 +547,7 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksTableTableInfoColumnsMaskOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

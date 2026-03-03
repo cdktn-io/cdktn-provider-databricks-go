@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dbfsfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/dbfsfile/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/dbfsfile/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dbfs_file databricks_dbfs_file}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dbfs_file databricks_dbfs_file}.
 type DbfsFile interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,9 +37,9 @@ type DbfsFile interface {
 	SetDependsOn(val *[]*string)
 	FileSize() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -48,9 +48,9 @@ type DbfsFile interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Md5() *string
 	SetMd5(val *string)
 	Md5Input() *string
@@ -60,9 +60,11 @@ type DbfsFile interface {
 	SetPath(val *string)
 	PathInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DbfsFileProviderConfigOutputReference
+	ProviderConfigInput() *DbfsFileProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -73,7 +75,7 @@ type DbfsFile interface {
 	SetSource(val *string)
 	SourceInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -86,7 +88,7 @@ type DbfsFile interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -104,9 +106,9 @@ type DbfsFile interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -121,12 +123,14 @@ type DbfsFile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DbfsFileProviderConfig)
 	ResetContentBase64()
 	ResetId()
 	ResetMd5()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -143,11 +147,11 @@ type DbfsFile interface {
 
 // The jsii proxy struct for DbfsFile
 type jsiiProxy_DbfsFile struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_DbfsFile) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DbfsFile) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -236,8 +240,8 @@ func (j *jsiiProxy_DbfsFile) FileSize() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DbfsFile) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DbfsFile) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -286,8 +290,8 @@ func (j *jsiiProxy_DbfsFile) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbfsFile) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DbfsFile) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -346,11 +350,31 @@ func (j *jsiiProxy_DbfsFile) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbfsFile) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DbfsFile) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbfsFile) ProviderConfig() DbfsFileProviderConfigOutputReference {
+	var returns DbfsFileProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbfsFile) ProviderConfigInput() *DbfsFileProviderConfig {
+	var returns *DbfsFileProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -396,8 +420,8 @@ func (j *jsiiProxy_DbfsFile) SourceInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbfsFile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DbfsFile) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -427,7 +451,7 @@ func (j *jsiiProxy_DbfsFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
 func NewDbfsFile(scope constructs.Construct, id *string, config *DbfsFileConfig) DbfsFile {
 	_init_.Initialize()
 
@@ -437,7 +461,7 @@ func NewDbfsFile(scope constructs.Construct, id *string, config *DbfsFileConfig)
 	j := jsiiProxy_DbfsFile{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dbfsFile.DbfsFile",
+		"@cdktn/provider-databricks.dbfsFile.DbfsFile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -445,12 +469,12 @@ func NewDbfsFile(scope constructs.Construct, id *string, config *DbfsFileConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
 func NewDbfsFile_Override(d DbfsFile, scope constructs.Construct, id *string, config *DbfsFileConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dbfsFile.DbfsFile",
+		"@cdktn/provider-databricks.dbfsFile.DbfsFile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -497,7 +521,7 @@ func (j *jsiiProxy_DbfsFile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DbfsFile)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -516,7 +540,7 @@ func (j *jsiiProxy_DbfsFile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DbfsFile)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +573,7 @@ func (j *jsiiProxy_DbfsFile)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DbfsFile)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -579,17 +603,17 @@ func (j *jsiiProxy_DbfsFile)SetSource(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DbfsFile resource upon running "cdktf plan <stack-name>".
-func DbfsFile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DbfsFile resource upon running "cdktn plan <stack-name>".
+func DbfsFile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDbfsFile_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dbfsFile.DbfsFile",
+		"@cdktn/provider-databricks.dbfsFile.DbfsFile",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -624,7 +648,7 @@ func DbfsFile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dbfsFile.DbfsFile",
+		"@cdktn/provider-databricks.dbfsFile.DbfsFile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +667,7 @@ func DbfsFile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dbfsFile.DbfsFile",
+		"@cdktn/provider-databricks.dbfsFile.DbfsFile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -662,7 +686,7 @@ func DbfsFile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.dbfsFile.DbfsFile",
+		"@cdktn/provider-databricks.dbfsFile.DbfsFile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +699,7 @@ func DbfsFile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.dbfsFile.DbfsFile",
+		"@cdktn/provider-databricks.dbfsFile.DbfsFile",
 		"tfResourceType",
 		&returns,
 	)
@@ -720,11 +744,11 @@ func (d *jsiiProxy_DbfsFile) GetAnyMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
-func (d *jsiiProxy_DbfsFile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DbfsFile) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -861,7 +885,7 @@ func (d *jsiiProxy_DbfsFile) HasResourceMove() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DbfsFile) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (d *jsiiProxy_DbfsFile) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -872,11 +896,11 @@ func (d *jsiiProxy_DbfsFile) ImportFrom(id *string, provider cdktf.TerraformProv
 	)
 }
 
-func (d *jsiiProxy_DbfsFile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DbfsFile) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -932,6 +956,17 @@ func (d *jsiiProxy_DbfsFile) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DbfsFile) PutProviderConfig(value *DbfsFileProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DbfsFile) ResetContentBase64() {
 	_jsii_.InvokeVoid(
 		d,
@@ -960,6 +995,14 @@ func (d *jsiiProxy_DbfsFile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbfsFile) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

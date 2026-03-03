@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksdashboards
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards",
+		"@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards",
 		reflect.TypeOf((*DataDatabricksDashboards)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,20 +58,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksDashboards{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig",
+		"@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig",
 		reflect.TypeOf((*DataDatabricksDashboardsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards",
+		"@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards",
 		reflect.TypeOf((*DataDatabricksDashboardsDashboards)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsList",
+		"@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsList",
 		reflect.TypeOf((*DataDatabricksDashboardsDashboardsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -88,12 +88,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksDashboardsDashboardsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsOutputReference",
 		reflect.TypeOf((*DataDatabricksDashboardsDashboardsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,16 +136,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksDashboardsDashboardsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig",
 		reflect.TypeOf((*DataDatabricksDashboardsProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksDashboardsProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -174,7 +174,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksDashboardsProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package azureadlsgen1mount
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1Mount",
+		"@cdktn/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1Mount",
 		reflect.TypeOf((*AzureAdlsGen1Mount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -83,12 +83,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureAdlsGen1Mount{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1MountConfig",
+		"@cdktn/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1MountConfig",
 		reflect.TypeOf((*AzureAdlsGen1MountConfig)(nil)).Elem(),
 	)
 }

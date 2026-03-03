@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package budgetpolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budgetPolicy.BudgetPolicy",
+		"@cdktn/provider-databricks.budgetPolicy.BudgetPolicy",
 		reflect.TypeOf((*BudgetPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -71,20 +71,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig",
+		"@cdktn/provider-databricks.budgetPolicy.BudgetPolicyConfig",
 		reflect.TypeOf((*BudgetPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags",
+		"@cdktn/provider-databricks.budgetPolicy.BudgetPolicyCustomTags",
 		reflect.TypeOf((*BudgetPolicyCustomTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTagsList",
+		"@cdktn/provider-databricks.budgetPolicy.BudgetPolicyCustomTagsList",
 		reflect.TypeOf((*BudgetPolicyCustomTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -101,12 +101,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetPolicyCustomTagsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTagsOutputReference",
+		"@cdktn/provider-databricks.budgetPolicy.BudgetPolicyCustomTagsOutputReference",
 		reflect.TypeOf((*BudgetPolicyCustomTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,7 +138,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetPolicyCustomTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

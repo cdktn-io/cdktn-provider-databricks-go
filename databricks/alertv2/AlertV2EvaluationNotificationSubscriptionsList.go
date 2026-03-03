@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package alertv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/alertv2/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/alertv2/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AlertV2EvaluationNotificationSubscriptionsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type AlertV2EvaluationNotificationSubscriptionsList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type AlertV2EvaluationNotificationSubscriptionsList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) AlertV2EvaluationNotificationSubscriptionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type AlertV2EvaluationNotificationSubscriptionsList interface {
 
 // The jsii proxy struct for AlertV2EvaluationNotificationSubscriptionsList
 type jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) WrapsSet() *b
 }
 
 
-func NewAlertV2EvaluationNotificationSubscriptionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertV2EvaluationNotificationSubscriptionsList {
+func NewAlertV2EvaluationNotificationSubscriptionsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertV2EvaluationNotificationSubscriptionsList {
 	_init_.Initialize()
 
 	if err := validateNewAlertV2EvaluationNotificationSubscriptionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewAlertV2EvaluationNotificationSubscriptionsList(terraformResource cdktf.I
 	j := jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptionsList",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewAlertV2EvaluationNotificationSubscriptionsList(terraformResource cdktf.I
 	return &j
 }
 
-func NewAlertV2EvaluationNotificationSubscriptionsList_Override(a AlertV2EvaluationNotificationSubscriptionsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewAlertV2EvaluationNotificationSubscriptionsList_Override(a AlertV2EvaluationNotificationSubscriptionsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptionsList",
+		"@cdktn/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList)SetWrapsSet(va
 	)
 }
 
-func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := a.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		a,
@@ -231,7 +231,7 @@ func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) Get(index *fl
 	return returns
 }
 
-func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

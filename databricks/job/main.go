@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package job
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.Job",
+		"@cdktn/provider-databricks.job.Job",
 		reflect.TypeOf((*Job)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -218,20 +218,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Job{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobConfig",
+		"@cdktn/provider-databricks.job.JobConfig",
 		reflect.TypeOf((*JobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobContinuous",
+		"@cdktn/provider-databricks.job.JobContinuous",
 		reflect.TypeOf((*JobContinuous)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobContinuousOutputReference",
+		"@cdktn/provider-databricks.job.JobContinuousOutputReference",
 		reflect.TypeOf((*JobContinuousOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,16 +264,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobContinuousOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobDbtTask",
+		"@cdktn/provider-databricks.job.JobDbtTask",
 		reflect.TypeOf((*JobDbtTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobDbtTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobDbtTaskOutputReference",
 		reflect.TypeOf((*JobDbtTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
@@ -320,16 +320,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobDbtTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobDeployment",
+		"@cdktn/provider-databricks.job.JobDeployment",
 		reflect.TypeOf((*JobDeployment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobDeploymentOutputReference",
+		"@cdktn/provider-databricks.job.JobDeploymentOutputReference",
 		reflect.TypeOf((*JobDeploymentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -361,16 +361,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobDeploymentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobEmailNotifications",
+		"@cdktn/provider-databricks.job.JobEmailNotifications",
 		reflect.TypeOf((*JobEmailNotifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobEmailNotificationsOutputReference",
+		"@cdktn/provider-databricks.job.JobEmailNotificationsOutputReference",
 		reflect.TypeOf((*JobEmailNotificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -415,16 +415,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobEmailNotificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobEnvironment",
+		"@cdktn/provider-databricks.job.JobEnvironment",
 		reflect.TypeOf((*JobEnvironment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobEnvironmentList",
+		"@cdktn/provider-databricks.job.JobEnvironmentList",
 		reflect.TypeOf((*JobEnvironmentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -441,12 +441,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobEnvironmentList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobEnvironmentOutputReference",
+		"@cdktn/provider-databricks.job.JobEnvironmentOutputReference",
 		reflect.TypeOf((*JobEnvironmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -479,18 +479,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobEnvironmentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobEnvironmentSpec",
+		"@cdktn/provider-databricks.job.JobEnvironmentSpec",
 		reflect.TypeOf((*JobEnvironmentSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobEnvironmentSpecOutputReference",
+		"@cdktn/provider-databricks.job.JobEnvironmentSpecOutputReference",
 		reflect.TypeOf((*JobEnvironmentSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "baseEnvironment", GoGetter: "BaseEnvironment"},
+			_jsii_.MemberProperty{JsiiProperty: "baseEnvironmentInput", GoGetter: "BaseEnvironmentInput"},
 			_jsii_.MemberProperty{JsiiProperty: "client", GoGetter: "Client"},
 			_jsii_.MemberProperty{JsiiProperty: "clientInput", GoGetter: "ClientInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -516,6 +518,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "javaDependencies", GoGetter: "JavaDependencies"},
 			_jsii_.MemberProperty{JsiiProperty: "javaDependenciesInput", GoGetter: "JavaDependenciesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBaseEnvironment", GoMethod: "ResetBaseEnvironment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClient", GoMethod: "ResetClient"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDependencies", GoMethod: "ResetDependencies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVersion", GoMethod: "ResetEnvironmentVersion"},
@@ -527,20 +530,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobEnvironmentSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobGitSource",
+		"@cdktn/provider-databricks.job.JobGitSource",
 		reflect.TypeOf((*JobGitSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobGitSourceGitSnapshot",
+		"@cdktn/provider-databricks.job.JobGitSourceGitSnapshot",
 		reflect.TypeOf((*JobGitSourceGitSnapshot)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobGitSourceGitSnapshotOutputReference",
+		"@cdktn/provider-databricks.job.JobGitSourceGitSnapshotOutputReference",
 		reflect.TypeOf((*JobGitSourceGitSnapshotOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -570,16 +573,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobGitSourceGitSnapshotOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobGitSourceJobSource",
+		"@cdktn/provider-databricks.job.JobGitSourceJobSource",
 		reflect.TypeOf((*JobGitSourceJobSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobGitSourceJobSourceOutputReference",
+		"@cdktn/provider-databricks.job.JobGitSourceJobSourceOutputReference",
 		reflect.TypeOf((*JobGitSourceJobSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -613,12 +616,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobGitSourceJobSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobGitSourceOutputReference",
+		"@cdktn/provider-databricks.job.JobGitSourceOutputReference",
 		reflect.TypeOf((*JobGitSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -650,13 +653,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "providerInput", GoGetter: "ProviderInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putGitSnapshot", GoMethod: "PutGitSnapshot"},
 			_jsii_.MemberMethod{JsiiMethod: "putJobSource", GoMethod: "PutJobSource"},
+			_jsii_.MemberMethod{JsiiMethod: "putSparseCheckout", GoMethod: "PutSparseCheckout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBranch", GoMethod: "ResetBranch"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCommit", GoMethod: "ResetCommit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGitSnapshot", GoMethod: "ResetGitSnapshot"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJobSource", GoMethod: "ResetJobSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProvider", GoMethod: "ResetProvider"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSparseCheckout", GoMethod: "ResetSparseCheckout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTag", GoMethod: "ResetTag"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sparseCheckout", GoGetter: "SparseCheckout"},
+			_jsii_.MemberProperty{JsiiProperty: "sparseCheckoutInput", GoGetter: "SparseCheckoutInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tag", GoGetter: "Tag"},
 			_jsii_.MemberProperty{JsiiProperty: "tagInput", GoGetter: "TagInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -667,16 +674,55 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobGitSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobHealth",
+		"@cdktn/provider-databricks.job.JobGitSourceSparseCheckout",
+		reflect.TypeOf((*JobGitSourceSparseCheckout)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobGitSourceSparseCheckoutOutputReference",
+		reflect.TypeOf((*JobGitSourceSparseCheckoutOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "patterns", GoGetter: "Patterns"},
+			_jsii_.MemberProperty{JsiiProperty: "patternsInput", GoGetter: "PatternsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPatterns", GoMethod: "ResetPatterns"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobGitSourceSparseCheckoutOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobHealth",
 		reflect.TypeOf((*JobHealth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobHealthOutputReference",
+		"@cdktn/provider-databricks.job.JobHealthOutputReference",
 		reflect.TypeOf((*JobHealthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -706,16 +752,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobHealthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobHealthRules",
+		"@cdktn/provider-databricks.job.JobHealthRules",
 		reflect.TypeOf((*JobHealthRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobHealthRulesList",
+		"@cdktn/provider-databricks.job.JobHealthRulesList",
 		reflect.TypeOf((*JobHealthRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -732,12 +778,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobHealthRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobHealthRulesOutputReference",
+		"@cdktn/provider-databricks.job.JobHealthRulesOutputReference",
 		reflect.TypeOf((*JobHealthRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -770,16 +816,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobHealthRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobCluster",
+		"@cdktn/provider-databricks.job.JobJobCluster",
 		reflect.TypeOf((*JobJobCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterList",
+		"@cdktn/provider-databricks.job.JobJobClusterList",
 		reflect.TypeOf((*JobJobClusterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -796,20 +842,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewCluster",
+		"@cdktn/provider-databricks.job.JobJobClusterNewCluster",
 		reflect.TypeOf((*JobJobClusterNewCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterAutoscale",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterAutoscale",
 		reflect.TypeOf((*JobJobClusterNewClusterAutoscale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterAutoscaleOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterAutoscaleOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterAutoscaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -842,16 +888,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterAutoscaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterAwsAttributes",
 		reflect.TypeOf((*JobJobClusterNewClusterAwsAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterAwsAttributesOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterAwsAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -908,20 +954,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterAwsAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributes",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterAzureAttributes",
 		reflect.TypeOf((*JobJobClusterNewClusterAzureAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributesLogAnalyticsInfo",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterAzureAttributesLogAnalyticsInfo",
 		reflect.TypeOf((*JobJobClusterNewClusterAzureAttributesLogAnalyticsInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributesLogAnalyticsInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterAzureAttributesLogAnalyticsInfoOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterAzureAttributesLogAnalyticsInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -954,12 +1000,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterAzureAttributesLogAnalyticsInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterAzureAttributesOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterAzureAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -999,20 +1045,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterAzureAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConf",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterLogConf",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterLogConf)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfDbfs",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterLogConfDbfs",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterLogConfDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfDbfsOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterLogConfDbfsOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterLogConfDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1041,12 +1087,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterClusterLogConfDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterLogConfOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterLogConfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1085,16 +1131,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterClusterLogConfOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterLogConfS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3OutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3OutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterLogConfS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -1141,16 +1187,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterClusterLogConfS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfVolumes",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterLogConfVolumes",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterLogConfVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfVolumesOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterLogConfVolumesOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterLogConfVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1179,16 +1225,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterClusterLogConfVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterMountInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoList",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoList",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterMountInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1205,16 +1251,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterClusterMountInfoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1246,12 +1292,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterMountInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1286,20 +1332,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterClusterMountInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImage",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterDockerImage",
 		reflect.TypeOf((*JobJobClusterNewClusterDockerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImageBasicAuth",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterDockerImageBasicAuth",
 		reflect.TypeOf((*JobJobClusterNewClusterDockerImageBasicAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImageBasicAuthOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterDockerImageBasicAuthOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterDockerImageBasicAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1330,12 +1376,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterDockerImageBasicAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImageOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterDockerImageOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterDockerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuth", GoGetter: "BasicAuth"},
@@ -1368,16 +1414,55 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterDockerImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterDriverNodeTypeFlexibility",
+		reflect.TypeOf((*JobJobClusterNewClusterDriverNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterDriverNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*JobJobClusterNewClusterDriverNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobJobClusterNewClusterDriverNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterGcpAttributes",
 		reflect.TypeOf((*JobJobClusterNewClusterGcpAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterGcpAttributesOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterGcpAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -1425,20 +1510,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScripts",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScripts",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScripts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsAbfss",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsAbfss",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsAbfss)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsAbfssOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsAbfssOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsAbfssOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1467,16 +1552,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterInitScriptsAbfssOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsDbfs",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsDbfs",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsDbfsOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsDbfsOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1505,16 +1590,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterInitScriptsDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsFile",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsFile",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsFileOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsFileOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1543,16 +1628,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterInitScriptsFileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsGcs",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsGcs",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsGcs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsGcsOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsGcsOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsGcsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1581,12 +1666,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterInitScriptsGcsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsList",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsList",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1603,12 +1688,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterInitScriptsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abfss", GoGetter: "Abfss"},
@@ -1663,16 +1748,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3OutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3OutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -1719,16 +1804,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterInitScriptsS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsVolumes",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsVolumes",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsVolumesOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsVolumesOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1757,16 +1842,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterInitScriptsVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsWorkspace",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsWorkspace",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsWorkspace)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsWorkspaceOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterInitScriptsWorkspaceOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterInitScriptsWorkspaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1795,20 +1880,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterInitScriptsWorkspaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibrary",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibrary",
 		reflect.TypeOf((*JobJobClusterNewClusterLibrary)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibraryCran",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibraryCran",
 		reflect.TypeOf((*JobJobClusterNewClusterLibraryCran)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibraryCranOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibraryCranOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterLibraryCranOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1840,12 +1925,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterLibraryCranOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibraryList",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibraryList",
 		reflect.TypeOf((*JobJobClusterNewClusterLibraryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1862,16 +1947,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterLibraryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibraryMaven",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibraryMaven",
 		reflect.TypeOf((*JobJobClusterNewClusterLibraryMaven)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibraryMavenOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibraryMavenOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterLibraryMavenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1906,12 +1991,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterLibraryMavenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibraryOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibraryOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterLibraryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1966,16 +2051,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterLibraryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibraryProviderConfig",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibraryProviderConfig",
 		reflect.TypeOf((*JobJobClusterNewClusterLibraryProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibraryProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibraryProviderConfigOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterLibraryProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2004,16 +2089,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterLibraryProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibraryPypi",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibraryPypi",
 		reflect.TypeOf((*JobJobClusterNewClusterLibraryPypi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterLibraryPypiOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterLibraryPypiOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterLibraryPypiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2045,12 +2130,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterLibraryPypiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValues", GoGetter: "ApplyPolicyDefaultValues"},
@@ -2083,6 +2168,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dockerImageInput", GoGetter: "DockerImageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolId", GoGetter: "DriverInstancePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolIdInput", GoGetter: "DriverInstancePoolIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibility", GoGetter: "DriverNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibilityInput", GoGetter: "DriverNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeId", GoGetter: "DriverNodeTypeId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeIdInput", GoGetter: "DriverNodeTypeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableElasticDisk", GoGetter: "EnableElasticDisk"},
@@ -2130,10 +2217,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putClusterLogConf", GoMethod: "PutClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterMountInfo", GoMethod: "PutClusterMountInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putDockerImage", GoMethod: "PutDockerImage"},
+			_jsii_.MemberMethod{JsiiMethod: "putDriverNodeTypeFlexibility", GoMethod: "PutDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpAttributes", GoMethod: "PutGcpAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putInitScripts", GoMethod: "PutInitScripts"},
 			_jsii_.MemberMethod{JsiiMethod: "putLibrary", GoMethod: "PutLibrary"},
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkerNodeTypeFlexibility", GoMethod: "PutWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkloadType", GoMethod: "PutWorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughput", GoGetter: "RemoteDiskThroughput"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughputInput", GoGetter: "RemoteDiskThroughputInput"},
@@ -2150,6 +2239,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSecurityMode", GoMethod: "ResetDataSecurityMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDockerImage", GoMethod: "ResetDockerImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverInstancePoolId", GoMethod: "ResetDriverInstancePoolId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeFlexibility", GoMethod: "ResetDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeId", GoMethod: "ResetDriverNodeTypeId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableElasticDisk", GoMethod: "ResetEnableElasticDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableLocalDiskEncryption", GoMethod: "ResetEnableLocalDiskEncryption"},
@@ -2173,6 +2263,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSshPublicKeys", GoMethod: "ResetSshPublicKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTotalInitialRemoteDiskSize", GoMethod: "ResetTotalInitialRemoteDiskSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseMlRuntime", GoMethod: "ResetUseMlRuntime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkerNodeTypeFlexibility", GoMethod: "ResetWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadType", GoMethod: "ResetWorkloadType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeEngine", GoGetter: "RuntimeEngine"},
@@ -2194,21 +2285,23 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalInitialRemoteDiskSizeInput", GoGetter: "TotalInitialRemoteDiskSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntime", GoGetter: "UseMlRuntime"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntimeInput", GoGetter: "UseMlRuntimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibility", GoGetter: "WorkerNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibilityInput", GoGetter: "WorkerNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadType", GoGetter: "WorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadTypeInput", GoGetter: "WorkloadTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterProviderConfig",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterProviderConfig",
 		reflect.TypeOf((*JobJobClusterNewClusterProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterProviderConfigOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2237,20 +2330,59 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterWorkloadType",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterWorkerNodeTypeFlexibility",
+		reflect.TypeOf((*JobJobClusterNewClusterWorkerNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterWorkerNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*JobJobClusterNewClusterWorkerNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobJobClusterNewClusterWorkerNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterWorkloadType",
 		reflect.TypeOf((*JobJobClusterNewClusterWorkloadType)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterWorkloadTypeClients",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterWorkloadTypeClients",
 		reflect.TypeOf((*JobJobClusterNewClusterWorkloadTypeClients)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterWorkloadTypeClientsOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterWorkloadTypeClientsOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterWorkloadTypeClientsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2283,12 +2415,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterWorkloadTypeClientsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterWorkloadTypeOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterNewClusterWorkloadTypeOutputReference",
 		reflect.TypeOf((*JobJobClusterNewClusterWorkloadTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clients", GoGetter: "Clients"},
@@ -2318,12 +2450,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterNewClusterWorkloadTypeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterOutputReference",
+		"@cdktn/provider-databricks.job.JobJobClusterOutputReference",
 		reflect.TypeOf((*JobJobClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2355,20 +2487,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobJobClusterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobLibrary",
+		"@cdktn/provider-databricks.job.JobLibrary",
 		reflect.TypeOf((*JobLibrary)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobLibraryCran",
+		"@cdktn/provider-databricks.job.JobLibraryCran",
 		reflect.TypeOf((*JobLibraryCran)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobLibraryCranOutputReference",
+		"@cdktn/provider-databricks.job.JobLibraryCranOutputReference",
 		reflect.TypeOf((*JobLibraryCranOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2400,12 +2532,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobLibraryCranOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobLibraryList",
+		"@cdktn/provider-databricks.job.JobLibraryList",
 		reflect.TypeOf((*JobLibraryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2422,16 +2554,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobLibraryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobLibraryMaven",
+		"@cdktn/provider-databricks.job.JobLibraryMaven",
 		reflect.TypeOf((*JobLibraryMaven)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobLibraryMavenOutputReference",
+		"@cdktn/provider-databricks.job.JobLibraryMavenOutputReference",
 		reflect.TypeOf((*JobLibraryMavenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2466,12 +2598,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobLibraryMavenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobLibraryOutputReference",
+		"@cdktn/provider-databricks.job.JobLibraryOutputReference",
 		reflect.TypeOf((*JobLibraryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2526,16 +2658,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobLibraryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobLibraryProviderConfig",
+		"@cdktn/provider-databricks.job.JobLibraryProviderConfig",
 		reflect.TypeOf((*JobLibraryProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobLibraryProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobLibraryProviderConfigOutputReference",
 		reflect.TypeOf((*JobLibraryProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2564,16 +2696,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobLibraryProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobLibraryPypi",
+		"@cdktn/provider-databricks.job.JobLibraryPypi",
 		reflect.TypeOf((*JobLibraryPypi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobLibraryPypiOutputReference",
+		"@cdktn/provider-databricks.job.JobLibraryPypiOutputReference",
 		reflect.TypeOf((*JobLibraryPypiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2605,20 +2737,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobLibraryPypiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewCluster",
+		"@cdktn/provider-databricks.job.JobNewCluster",
 		reflect.TypeOf((*JobNewCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterAutoscale",
+		"@cdktn/provider-databricks.job.JobNewClusterAutoscale",
 		reflect.TypeOf((*JobNewClusterAutoscale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterAutoscaleOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterAutoscaleOutputReference",
 		reflect.TypeOf((*JobNewClusterAutoscaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2651,16 +2783,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterAutoscaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterAwsAttributes",
+		"@cdktn/provider-databricks.job.JobNewClusterAwsAttributes",
 		reflect.TypeOf((*JobNewClusterAwsAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterAwsAttributesOutputReference",
 		reflect.TypeOf((*JobNewClusterAwsAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -2717,20 +2849,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterAwsAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterAzureAttributes",
+		"@cdktn/provider-databricks.job.JobNewClusterAzureAttributes",
 		reflect.TypeOf((*JobNewClusterAzureAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterAzureAttributesLogAnalyticsInfo",
+		"@cdktn/provider-databricks.job.JobNewClusterAzureAttributesLogAnalyticsInfo",
 		reflect.TypeOf((*JobNewClusterAzureAttributesLogAnalyticsInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterAzureAttributesLogAnalyticsInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterAzureAttributesLogAnalyticsInfoOutputReference",
 		reflect.TypeOf((*JobNewClusterAzureAttributesLogAnalyticsInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2763,12 +2895,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterAzureAttributesLogAnalyticsInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterAzureAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterAzureAttributesOutputReference",
 		reflect.TypeOf((*JobNewClusterAzureAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -2808,20 +2940,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterAzureAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterLogConf",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterLogConf",
 		reflect.TypeOf((*JobNewClusterClusterLogConf)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterLogConfDbfs",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterLogConfDbfs",
 		reflect.TypeOf((*JobNewClusterClusterLogConfDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterLogConfDbfsOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterLogConfDbfsOutputReference",
 		reflect.TypeOf((*JobNewClusterClusterLogConfDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2850,12 +2982,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterClusterLogConfDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterLogConfOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterLogConfOutputReference",
 		reflect.TypeOf((*JobNewClusterClusterLogConfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2894,16 +3026,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterClusterLogConfOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterLogConfS3",
 		reflect.TypeOf((*JobNewClusterClusterLogConfS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3OutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterLogConfS3OutputReference",
 		reflect.TypeOf((*JobNewClusterClusterLogConfS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -2950,16 +3082,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterClusterLogConfS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterLogConfVolumes",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterLogConfVolumes",
 		reflect.TypeOf((*JobNewClusterClusterLogConfVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterLogConfVolumesOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterLogConfVolumesOutputReference",
 		reflect.TypeOf((*JobNewClusterClusterLogConfVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2988,16 +3120,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterClusterLogConfVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterMountInfo",
 		reflect.TypeOf((*JobNewClusterClusterMountInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoList",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterMountInfoList",
 		reflect.TypeOf((*JobNewClusterClusterMountInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3014,16 +3146,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterClusterMountInfoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoNetworkFilesystemInfo",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterMountInfoNetworkFilesystemInfo",
 		reflect.TypeOf((*JobNewClusterClusterMountInfoNetworkFilesystemInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference",
 		reflect.TypeOf((*JobNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3055,12 +3187,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference",
 		reflect.TypeOf((*JobNewClusterClusterMountInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3095,20 +3227,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterClusterMountInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterDockerImage",
+		"@cdktn/provider-databricks.job.JobNewClusterDockerImage",
 		reflect.TypeOf((*JobNewClusterDockerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterDockerImageBasicAuth",
+		"@cdktn/provider-databricks.job.JobNewClusterDockerImageBasicAuth",
 		reflect.TypeOf((*JobNewClusterDockerImageBasicAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterDockerImageBasicAuthOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterDockerImageBasicAuthOutputReference",
 		reflect.TypeOf((*JobNewClusterDockerImageBasicAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3139,12 +3271,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterDockerImageBasicAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterDockerImageOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterDockerImageOutputReference",
 		reflect.TypeOf((*JobNewClusterDockerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuth", GoGetter: "BasicAuth"},
@@ -3177,16 +3309,55 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterDockerImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterGcpAttributes",
+		"@cdktn/provider-databricks.job.JobNewClusterDriverNodeTypeFlexibility",
+		reflect.TypeOf((*JobNewClusterDriverNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobNewClusterDriverNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*JobNewClusterDriverNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobNewClusterDriverNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobNewClusterGcpAttributes",
 		reflect.TypeOf((*JobNewClusterGcpAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterGcpAttributesOutputReference",
 		reflect.TypeOf((*JobNewClusterGcpAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -3234,20 +3405,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterGcpAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScripts",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScripts",
 		reflect.TypeOf((*JobNewClusterInitScripts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsAbfss",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsAbfss",
 		reflect.TypeOf((*JobNewClusterInitScriptsAbfss)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsAbfssOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsAbfssOutputReference",
 		reflect.TypeOf((*JobNewClusterInitScriptsAbfssOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3276,16 +3447,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterInitScriptsAbfssOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsDbfs",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsDbfs",
 		reflect.TypeOf((*JobNewClusterInitScriptsDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsDbfsOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsDbfsOutputReference",
 		reflect.TypeOf((*JobNewClusterInitScriptsDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3314,16 +3485,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterInitScriptsDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsFile",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsFile",
 		reflect.TypeOf((*JobNewClusterInitScriptsFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsFileOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsFileOutputReference",
 		reflect.TypeOf((*JobNewClusterInitScriptsFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3352,16 +3523,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterInitScriptsFileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsGcs",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsGcs",
 		reflect.TypeOf((*JobNewClusterInitScriptsGcs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsGcsOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsGcsOutputReference",
 		reflect.TypeOf((*JobNewClusterInitScriptsGcsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3390,12 +3561,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterInitScriptsGcsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsList",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsList",
 		reflect.TypeOf((*JobNewClusterInitScriptsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3412,12 +3583,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterInitScriptsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsOutputReference",
 		reflect.TypeOf((*JobNewClusterInitScriptsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abfss", GoGetter: "Abfss"},
@@ -3472,16 +3643,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterInitScriptsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsS3",
 		reflect.TypeOf((*JobNewClusterInitScriptsS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3OutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsS3OutputReference",
 		reflect.TypeOf((*JobNewClusterInitScriptsS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -3528,16 +3699,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterInitScriptsS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsVolumes",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsVolumes",
 		reflect.TypeOf((*JobNewClusterInitScriptsVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsVolumesOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsVolumesOutputReference",
 		reflect.TypeOf((*JobNewClusterInitScriptsVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3566,16 +3737,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterInitScriptsVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsWorkspace",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsWorkspace",
 		reflect.TypeOf((*JobNewClusterInitScriptsWorkspace)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterInitScriptsWorkspaceOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterInitScriptsWorkspaceOutputReference",
 		reflect.TypeOf((*JobNewClusterInitScriptsWorkspaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3604,20 +3775,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterInitScriptsWorkspaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterLibrary",
+		"@cdktn/provider-databricks.job.JobNewClusterLibrary",
 		reflect.TypeOf((*JobNewClusterLibrary)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterLibraryCran",
+		"@cdktn/provider-databricks.job.JobNewClusterLibraryCran",
 		reflect.TypeOf((*JobNewClusterLibraryCran)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterLibraryCranOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterLibraryCranOutputReference",
 		reflect.TypeOf((*JobNewClusterLibraryCranOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3649,12 +3820,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterLibraryCranOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterLibraryList",
+		"@cdktn/provider-databricks.job.JobNewClusterLibraryList",
 		reflect.TypeOf((*JobNewClusterLibraryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3671,16 +3842,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterLibraryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterLibraryMaven",
+		"@cdktn/provider-databricks.job.JobNewClusterLibraryMaven",
 		reflect.TypeOf((*JobNewClusterLibraryMaven)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterLibraryMavenOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterLibraryMavenOutputReference",
 		reflect.TypeOf((*JobNewClusterLibraryMavenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3715,12 +3886,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterLibraryMavenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterLibraryOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterLibraryOutputReference",
 		reflect.TypeOf((*JobNewClusterLibraryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3775,16 +3946,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterLibraryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterLibraryProviderConfig",
+		"@cdktn/provider-databricks.job.JobNewClusterLibraryProviderConfig",
 		reflect.TypeOf((*JobNewClusterLibraryProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterLibraryProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterLibraryProviderConfigOutputReference",
 		reflect.TypeOf((*JobNewClusterLibraryProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3813,16 +3984,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterLibraryProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterLibraryPypi",
+		"@cdktn/provider-databricks.job.JobNewClusterLibraryPypi",
 		reflect.TypeOf((*JobNewClusterLibraryPypi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterLibraryPypiOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterLibraryPypiOutputReference",
 		reflect.TypeOf((*JobNewClusterLibraryPypiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3854,12 +4025,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterLibraryPypiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterOutputReference",
 		reflect.TypeOf((*JobNewClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValues", GoGetter: "ApplyPolicyDefaultValues"},
@@ -3890,6 +4061,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dockerImageInput", GoGetter: "DockerImageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolId", GoGetter: "DriverInstancePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolIdInput", GoGetter: "DriverInstancePoolIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibility", GoGetter: "DriverNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibilityInput", GoGetter: "DriverNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeId", GoGetter: "DriverNodeTypeId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeIdInput", GoGetter: "DriverNodeTypeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableElasticDisk", GoGetter: "EnableElasticDisk"},
@@ -3937,10 +4110,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putClusterLogConf", GoMethod: "PutClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterMountInfo", GoMethod: "PutClusterMountInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putDockerImage", GoMethod: "PutDockerImage"},
+			_jsii_.MemberMethod{JsiiMethod: "putDriverNodeTypeFlexibility", GoMethod: "PutDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpAttributes", GoMethod: "PutGcpAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putInitScripts", GoMethod: "PutInitScripts"},
 			_jsii_.MemberMethod{JsiiMethod: "putLibrary", GoMethod: "PutLibrary"},
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkerNodeTypeFlexibility", GoMethod: "PutWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkloadType", GoMethod: "PutWorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughput", GoGetter: "RemoteDiskThroughput"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughputInput", GoGetter: "RemoteDiskThroughputInput"},
@@ -3956,6 +4131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSecurityMode", GoMethod: "ResetDataSecurityMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDockerImage", GoMethod: "ResetDockerImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverInstancePoolId", GoMethod: "ResetDriverInstancePoolId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeFlexibility", GoMethod: "ResetDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeId", GoMethod: "ResetDriverNodeTypeId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableElasticDisk", GoMethod: "ResetEnableElasticDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableLocalDiskEncryption", GoMethod: "ResetEnableLocalDiskEncryption"},
@@ -3979,6 +4155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSshPublicKeys", GoMethod: "ResetSshPublicKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTotalInitialRemoteDiskSize", GoMethod: "ResetTotalInitialRemoteDiskSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseMlRuntime", GoMethod: "ResetUseMlRuntime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkerNodeTypeFlexibility", GoMethod: "ResetWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadType", GoMethod: "ResetWorkloadType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeEngine", GoGetter: "RuntimeEngine"},
@@ -4000,21 +4177,23 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalInitialRemoteDiskSizeInput", GoGetter: "TotalInitialRemoteDiskSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntime", GoGetter: "UseMlRuntime"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntimeInput", GoGetter: "UseMlRuntimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibility", GoGetter: "WorkerNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibilityInput", GoGetter: "WorkerNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadType", GoGetter: "WorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadTypeInput", GoGetter: "WorkloadTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterProviderConfig",
+		"@cdktn/provider-databricks.job.JobNewClusterProviderConfig",
 		reflect.TypeOf((*JobNewClusterProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterProviderConfigOutputReference",
 		reflect.TypeOf((*JobNewClusterProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4043,20 +4222,59 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterWorkloadType",
+		"@cdktn/provider-databricks.job.JobNewClusterWorkerNodeTypeFlexibility",
+		reflect.TypeOf((*JobNewClusterWorkerNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobNewClusterWorkerNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*JobNewClusterWorkerNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobNewClusterWorkerNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobNewClusterWorkloadType",
 		reflect.TypeOf((*JobNewClusterWorkloadType)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterWorkloadTypeClients",
+		"@cdktn/provider-databricks.job.JobNewClusterWorkloadTypeClients",
 		reflect.TypeOf((*JobNewClusterWorkloadTypeClients)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterWorkloadTypeClientsOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterWorkloadTypeClientsOutputReference",
 		reflect.TypeOf((*JobNewClusterWorkloadTypeClientsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4089,12 +4307,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterWorkloadTypeClientsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterWorkloadTypeOutputReference",
+		"@cdktn/provider-databricks.job.JobNewClusterWorkloadTypeOutputReference",
 		reflect.TypeOf((*JobNewClusterWorkloadTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clients", GoGetter: "Clients"},
@@ -4124,16 +4342,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterWorkloadTypeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNotebookTask",
+		"@cdktn/provider-databricks.job.JobNotebookTask",
 		reflect.TypeOf((*JobNotebookTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNotebookTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobNotebookTaskOutputReference",
 		reflect.TypeOf((*JobNotebookTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseParameters", GoGetter: "BaseParameters"},
@@ -4171,16 +4389,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNotebookTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNotificationSettings",
+		"@cdktn/provider-databricks.job.JobNotificationSettings",
 		reflect.TypeOf((*JobNotificationSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNotificationSettingsOutputReference",
+		"@cdktn/provider-databricks.job.JobNotificationSettingsOutputReference",
 		reflect.TypeOf((*JobNotificationSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4213,16 +4431,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNotificationSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobParameter",
+		"@cdktn/provider-databricks.job.JobParameter",
 		reflect.TypeOf((*JobParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobParameterList",
+		"@cdktn/provider-databricks.job.JobParameterList",
 		reflect.TypeOf((*JobParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4239,12 +4457,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobParameterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobParameterOutputReference",
+		"@cdktn/provider-databricks.job.JobParameterOutputReference",
 		reflect.TypeOf((*JobParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4275,16 +4493,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobParameterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobPipelineTask",
+		"@cdktn/provider-databricks.job.JobPipelineTask",
 		reflect.TypeOf((*JobPipelineTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobPipelineTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobPipelineTaskOutputReference",
 		reflect.TypeOf((*JobPipelineTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4316,16 +4534,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobPipelineTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobProviderConfig",
+		"@cdktn/provider-databricks.job.JobProviderConfig",
 		reflect.TypeOf((*JobProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobProviderConfigOutputReference",
 		reflect.TypeOf((*JobProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4354,16 +4572,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobPythonWheelTask",
+		"@cdktn/provider-databricks.job.JobPythonWheelTask",
 		reflect.TypeOf((*JobPythonWheelTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobPythonWheelTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobPythonWheelTaskOutputReference",
 		reflect.TypeOf((*JobPythonWheelTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4402,16 +4620,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobPythonWheelTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobQueue",
+		"@cdktn/provider-databricks.job.JobQueue",
 		reflect.TypeOf((*JobQueue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobQueueOutputReference",
+		"@cdktn/provider-databricks.job.JobQueueOutputReference",
 		reflect.TypeOf((*JobQueueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4440,16 +4658,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobQueueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobRunAs",
+		"@cdktn/provider-databricks.job.JobRunAs",
 		reflect.TypeOf((*JobRunAs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobRunAsOutputReference",
+		"@cdktn/provider-databricks.job.JobRunAsOutputReference",
 		reflect.TypeOf((*JobRunAsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4466,9 +4684,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "groupName", GoGetter: "GroupName"},
+			_jsii_.MemberProperty{JsiiProperty: "groupNameInput", GoGetter: "GroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupName", GoMethod: "ResetGroupName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServicePrincipalName", GoMethod: "ResetServicePrincipalName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserName", GoMethod: "ResetUserName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -4482,16 +4703,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobRunAsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobRunJobTask",
+		"@cdktn/provider-databricks.job.JobRunJobTask",
 		reflect.TypeOf((*JobRunJobTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobRunJobTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobRunJobTaskOutputReference",
 		reflect.TypeOf((*JobRunJobTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4523,16 +4744,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobRunJobTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobSchedule",
+		"@cdktn/provider-databricks.job.JobSchedule",
 		reflect.TypeOf((*JobSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobScheduleOutputReference",
+		"@cdktn/provider-databricks.job.JobScheduleOutputReference",
 		reflect.TypeOf((*JobScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4566,16 +4787,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobSparkJarTask",
+		"@cdktn/provider-databricks.job.JobSparkJarTask",
 		reflect.TypeOf((*JobSparkJarTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobSparkJarTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobSparkJarTaskOutputReference",
 		reflect.TypeOf((*JobSparkJarTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4611,16 +4832,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobSparkJarTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobSparkPythonTask",
+		"@cdktn/provider-databricks.job.JobSparkPythonTask",
 		reflect.TypeOf((*JobSparkPythonTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobSparkPythonTaskOutputReference",
 		reflect.TypeOf((*JobSparkPythonTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4655,16 +4876,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobSparkPythonTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobSparkSubmitTask",
+		"@cdktn/provider-databricks.job.JobSparkSubmitTask",
 		reflect.TypeOf((*JobSparkSubmitTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobSparkSubmitTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobSparkSubmitTaskOutputReference",
 		reflect.TypeOf((*JobSparkSubmitTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4694,20 +4915,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobSparkSubmitTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTask",
+		"@cdktn/provider-databricks.job.JobTask",
 		reflect.TypeOf((*JobTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskCleanRoomsNotebookTask",
+		"@cdktn/provider-databricks.job.JobTaskCleanRoomsNotebookTask",
 		reflect.TypeOf((*JobTaskCleanRoomsNotebookTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskCleanRoomsNotebookTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskCleanRoomsNotebookTaskOutputReference",
 		reflect.TypeOf((*JobTaskCleanRoomsNotebookTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cleanRoomName", GoGetter: "CleanRoomName"},
@@ -4744,16 +4965,55 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskCleanRoomsNotebookTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskConditionTask",
+		"@cdktn/provider-databricks.job.JobTaskCompute",
+		reflect.TypeOf((*JobTaskCompute)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskComputeOutputReference",
+		reflect.TypeOf((*JobTaskComputeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hardwareAccelerator", GoGetter: "HardwareAccelerator"},
+			_jsii_.MemberProperty{JsiiProperty: "hardwareAcceleratorInput", GoGetter: "HardwareAcceleratorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHardwareAccelerator", GoMethod: "ResetHardwareAccelerator"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskComputeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskConditionTask",
 		reflect.TypeOf((*JobTaskConditionTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskConditionTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskConditionTaskOutputReference",
 		reflect.TypeOf((*JobTaskConditionTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4786,16 +5046,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskConditionTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskDashboardTask",
+		"@cdktn/provider-databricks.job.JobTaskDashboardTask",
 		reflect.TypeOf((*JobTaskDashboardTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskDashboardTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskOutputReference",
 		reflect.TypeOf((*JobTaskDashboardTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4804,6 +5064,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "dashboardId", GoGetter: "DashboardId"},
 			_jsii_.MemberProperty{JsiiProperty: "dashboardIdInput", GoGetter: "DashboardIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "filters", GoGetter: "Filters"},
+			_jsii_.MemberProperty{JsiiProperty: "filtersInput", GoGetter: "FiltersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -4819,6 +5081,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putSubscription", GoMethod: "PutSubscription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDashboardId", GoMethod: "ResetDashboardId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilters", GoMethod: "ResetFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubscription", GoMethod: "ResetSubscription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWarehouseId", GoMethod: "ResetWarehouseId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -4832,16 +5095,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskDashboardTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskDashboardTaskSubscription",
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscription",
 		reflect.TypeOf((*JobTaskDashboardTaskSubscription)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskDashboardTaskSubscriptionOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionOutputReference",
 		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4878,16 +5141,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskDashboardTaskSubscriptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskDashboardTaskSubscriptionSubscribers",
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionSubscribers",
 		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionSubscribers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskDashboardTaskSubscriptionSubscribersList",
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionSubscribersList",
 		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionSubscribersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4904,12 +5167,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskDashboardTaskSubscriptionSubscribersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskDashboardTaskSubscriptionSubscribersOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionSubscribersOutputReference",
 		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionSubscribersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4942,16 +5205,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskDashboardTaskSubscriptionSubscribersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskDbtCloudTask",
+		"@cdktn/provider-databricks.job.JobTaskDbtCloudTask",
 		reflect.TypeOf((*JobTaskDbtCloudTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskDbtCloudTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskDbtCloudTaskOutputReference",
 		reflect.TypeOf((*JobTaskDbtCloudTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4984,16 +5247,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskDbtCloudTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskDbtPlatformTask",
+		"@cdktn/provider-databricks.job.JobTaskDbtPlatformTask",
 		reflect.TypeOf((*JobTaskDbtPlatformTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskDbtPlatformTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskDbtPlatformTaskOutputReference",
 		reflect.TypeOf((*JobTaskDbtPlatformTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5026,16 +5289,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskDbtPlatformTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskDbtTask",
+		"@cdktn/provider-databricks.job.JobTaskDbtTask",
 		reflect.TypeOf((*JobTaskDbtTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskDbtTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskDbtTaskOutputReference",
 		reflect.TypeOf((*JobTaskDbtTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
@@ -5082,16 +5345,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskDbtTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskDependsOn",
+		"@cdktn/provider-databricks.job.JobTaskDependsOn",
 		reflect.TypeOf((*JobTaskDependsOn)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskDependsOnList",
+		"@cdktn/provider-databricks.job.JobTaskDependsOnList",
 		reflect.TypeOf((*JobTaskDependsOnList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5108,12 +5371,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskDependsOnList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskDependsOnOutputReference",
 		reflect.TypeOf((*JobTaskDependsOnOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5145,16 +5408,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskDependsOnOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskEmailNotifications",
+		"@cdktn/provider-databricks.job.JobTaskEmailNotifications",
 		reflect.TypeOf((*JobTaskEmailNotifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskEmailNotificationsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskEmailNotificationsOutputReference",
 		reflect.TypeOf((*JobTaskEmailNotificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5199,16 +5462,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskEmailNotificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTask",
 		reflect.TypeOf((*JobTaskForEachTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5243,20 +5506,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTask",
 		reflect.TypeOf((*JobTaskForEachTaskTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskCleanRoomsNotebookTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskCleanRoomsNotebookTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskCleanRoomsNotebookTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskCleanRoomsNotebookTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskCleanRoomsNotebookTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskCleanRoomsNotebookTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cleanRoomName", GoGetter: "CleanRoomName"},
@@ -5293,16 +5556,55 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskCleanRoomsNotebookTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskConditionTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskCompute",
+		reflect.TypeOf((*JobTaskForEachTaskTaskCompute)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskComputeOutputReference",
+		reflect.TypeOf((*JobTaskForEachTaskTaskComputeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hardwareAccelerator", GoGetter: "HardwareAccelerator"},
+			_jsii_.MemberProperty{JsiiProperty: "hardwareAcceleratorInput", GoGetter: "HardwareAcceleratorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHardwareAccelerator", GoMethod: "ResetHardwareAccelerator"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskComputeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskConditionTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskConditionTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskConditionTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskConditionTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskConditionTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5335,16 +5637,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDashboardTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5353,6 +5655,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "dashboardId", GoGetter: "DashboardId"},
 			_jsii_.MemberProperty{JsiiProperty: "dashboardIdInput", GoGetter: "DashboardIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "filters", GoGetter: "Filters"},
+			_jsii_.MemberProperty{JsiiProperty: "filtersInput", GoGetter: "FiltersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -5368,6 +5672,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putSubscription", GoMethod: "PutSubscription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDashboardId", GoMethod: "ResetDashboardId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilters", GoMethod: "ResetFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubscription", GoMethod: "ResetSubscription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWarehouseId", GoMethod: "ResetWarehouseId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -5381,16 +5686,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskDashboardTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscription",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscription",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscription)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5427,16 +5732,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5453,12 +5758,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5491,16 +5796,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDbtCloudTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDbtCloudTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDbtCloudTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDbtCloudTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDbtCloudTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDbtCloudTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5533,16 +5838,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskDbtCloudTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDbtPlatformTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDbtPlatformTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDbtPlatformTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDbtPlatformTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDbtPlatformTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDbtPlatformTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5575,16 +5880,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskDbtPlatformTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDbtTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDbtTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDbtTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDbtTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDbtTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDbtTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
@@ -5631,16 +5936,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskDbtTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDependsOn",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDependsOn",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDependsOn)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDependsOnList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDependsOnList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDependsOnList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5657,12 +5962,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskDependsOnList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskDependsOnOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDependsOnOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDependsOnOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5694,16 +5999,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskDependsOnOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskEmailNotifications",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskEmailNotifications",
 		reflect.TypeOf((*JobTaskForEachTaskTaskEmailNotifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskEmailNotificationsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskEmailNotificationsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskEmailNotificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5748,20 +6053,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskGenAiComputeTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskGenAiComputeTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskGenAiComputeTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskGenAiComputeTaskCompute",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskGenAiComputeTaskCompute",
 		reflect.TypeOf((*JobTaskForEachTaskTaskGenAiComputeTaskCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskGenAiComputeTaskComputeOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskGenAiComputeTaskComputeOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskGenAiComputeTaskComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5796,12 +6101,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskGenAiComputeTaskComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskGenAiComputeTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskGenAiComputeTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskGenAiComputeTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -5852,16 +6157,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskGenAiComputeTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskHealth",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskHealth",
 		reflect.TypeOf((*JobTaskForEachTaskTaskHealth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskHealthOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskHealthOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskHealthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5891,16 +6196,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskHealthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskHealthRules",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskHealthRules",
 		reflect.TypeOf((*JobTaskForEachTaskTaskHealthRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskHealthRulesList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskHealthRulesList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskHealthRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5917,12 +6222,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskHealthRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskHealthRulesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskHealthRulesOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskHealthRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5955,20 +6260,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskHealthRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibrary",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibrary",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibrary)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibraryCran",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibraryCran",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibraryCran)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibraryCranOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibraryCranOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibraryCranOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6000,12 +6305,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskLibraryCranOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibraryList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibraryList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibraryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -6022,16 +6327,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskLibraryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibraryMaven",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibraryMaven",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibraryMaven)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibraryMavenOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibraryMavenOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibraryMavenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6066,12 +6371,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskLibraryMavenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibraryOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibraryOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibraryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6126,16 +6431,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibraryProviderConfig",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibraryProviderConfig",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibraryProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibraryProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibraryProviderConfigOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibraryProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6164,16 +6469,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskLibraryProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibraryPypi",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibraryPypi",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibraryPypi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskLibraryPypiOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskLibraryPypiOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskLibraryPypiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6205,20 +6510,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskLibraryPypiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewCluster",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewCluster",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAutoscale",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAutoscale",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterAutoscale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAutoscaleOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAutoscaleOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterAutoscaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6251,16 +6556,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterAutoscaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAwsAttributes",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAwsAttributes",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterAwsAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -6317,20 +6622,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAzureAttributes",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAzureAttributes",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterAzureAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6363,12 +6668,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -6408,20 +6713,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConf",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConf",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterLogConf)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6450,12 +6755,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6494,16 +6799,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfS3",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfS3",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterLogConfS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -6550,16 +6855,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6588,16 +6893,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterMountInfo",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterMountInfo",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterMountInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterMountInfoList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterMountInfoList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterMountInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -6614,16 +6919,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterMountInfoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6655,12 +6960,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6695,20 +7000,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterDockerImage",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterDockerImage",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterDockerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6739,12 +7044,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterDockerImageOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterDockerImageOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterDockerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuth", GoGetter: "BasicAuth"},
@@ -6777,16 +7082,55 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterDockerImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterGcpAttributes",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility",
+		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterGcpAttributes",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterGcpAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -6834,20 +7178,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScripts",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScripts",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScripts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsAbfss",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsAbfss",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsAbfss)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6876,16 +7220,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsDbfs",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsDbfs",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6914,16 +7258,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsFile",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsFile",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6952,16 +7296,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsGcs",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsGcs",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsGcs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6990,12 +7334,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -7012,12 +7356,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abfss", GoGetter: "Abfss"},
@@ -7072,16 +7416,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsS3",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsS3",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -7128,16 +7472,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsVolumes",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsVolumes",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7166,16 +7510,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7204,20 +7548,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibrary",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibrary",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibrary)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryCran",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryCran",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibraryCran)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7249,12 +7593,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibraryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -7271,16 +7615,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryMaven",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryMaven",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibraryMaven)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7315,12 +7659,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibraryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7375,16 +7719,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryProviderConfig",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryProviderConfig",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibraryProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7413,16 +7757,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryPypi",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryPypi",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibraryPypi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7454,12 +7798,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValues", GoGetter: "ApplyPolicyDefaultValues"},
@@ -7490,6 +7834,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dockerImageInput", GoGetter: "DockerImageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolId", GoGetter: "DriverInstancePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolIdInput", GoGetter: "DriverInstancePoolIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibility", GoGetter: "DriverNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibilityInput", GoGetter: "DriverNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeId", GoGetter: "DriverNodeTypeId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeIdInput", GoGetter: "DriverNodeTypeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableElasticDisk", GoGetter: "EnableElasticDisk"},
@@ -7537,10 +7883,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putClusterLogConf", GoMethod: "PutClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterMountInfo", GoMethod: "PutClusterMountInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putDockerImage", GoMethod: "PutDockerImage"},
+			_jsii_.MemberMethod{JsiiMethod: "putDriverNodeTypeFlexibility", GoMethod: "PutDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpAttributes", GoMethod: "PutGcpAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putInitScripts", GoMethod: "PutInitScripts"},
 			_jsii_.MemberMethod{JsiiMethod: "putLibrary", GoMethod: "PutLibrary"},
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkerNodeTypeFlexibility", GoMethod: "PutWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkloadType", GoMethod: "PutWorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughput", GoGetter: "RemoteDiskThroughput"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughputInput", GoGetter: "RemoteDiskThroughputInput"},
@@ -7556,6 +7904,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSecurityMode", GoMethod: "ResetDataSecurityMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDockerImage", GoMethod: "ResetDockerImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverInstancePoolId", GoMethod: "ResetDriverInstancePoolId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeFlexibility", GoMethod: "ResetDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeId", GoMethod: "ResetDriverNodeTypeId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableElasticDisk", GoMethod: "ResetEnableElasticDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableLocalDiskEncryption", GoMethod: "ResetEnableLocalDiskEncryption"},
@@ -7579,6 +7928,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSshPublicKeys", GoMethod: "ResetSshPublicKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTotalInitialRemoteDiskSize", GoMethod: "ResetTotalInitialRemoteDiskSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseMlRuntime", GoMethod: "ResetUseMlRuntime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkerNodeTypeFlexibility", GoMethod: "ResetWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadType", GoMethod: "ResetWorkloadType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeEngine", GoGetter: "RuntimeEngine"},
@@ -7600,21 +7950,23 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalInitialRemoteDiskSizeInput", GoGetter: "TotalInitialRemoteDiskSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntime", GoGetter: "UseMlRuntime"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntimeInput", GoGetter: "UseMlRuntimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibility", GoGetter: "WorkerNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibilityInput", GoGetter: "WorkerNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadType", GoGetter: "WorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadTypeInput", GoGetter: "WorkloadTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterProviderConfig",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterProviderConfig",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7643,20 +7995,59 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterWorkloadType",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility",
+		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterWorkloadType",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterWorkloadType)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterWorkloadTypeClients",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterWorkloadTypeClients",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterWorkloadTypeClients)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7689,12 +8080,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clients", GoGetter: "Clients"},
@@ -7724,16 +8115,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNotebookTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNotebookTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNotebookTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNotebookTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNotebookTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNotebookTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseParameters", GoGetter: "BaseParameters"},
@@ -7771,16 +8162,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNotebookTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNotificationSettings",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNotificationSettings",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNotificationSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNotificationSettingsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskNotificationSettingsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNotificationSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertOnLastAttempt", GoGetter: "AlertOnLastAttempt"},
@@ -7816,19 +8207,21 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskNotificationSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cleanRoomsNotebookTask", GoGetter: "CleanRoomsNotebookTask"},
 			_jsii_.MemberProperty{JsiiProperty: "cleanRoomsNotebookTaskInput", GoGetter: "CleanRoomsNotebookTaskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberProperty{JsiiProperty: "compute", GoGetter: "Compute"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "computeInput", GoGetter: "ComputeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "conditionTask", GoGetter: "ConditionTask"},
 			_jsii_.MemberProperty{JsiiProperty: "conditionTaskInput", GoGetter: "ConditionTaskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -7890,6 +8283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "powerBiTask", GoGetter: "PowerBiTask"},
 			_jsii_.MemberProperty{JsiiProperty: "powerBiTaskInput", GoGetter: "PowerBiTaskInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCleanRoomsNotebookTask", GoMethod: "PutCleanRoomsNotebookTask"},
+			_jsii_.MemberMethod{JsiiMethod: "putCompute", GoMethod: "PutCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionTask", GoMethod: "PutConditionTask"},
 			_jsii_.MemberMethod{JsiiMethod: "putDashboardTask", GoMethod: "PutDashboardTask"},
 			_jsii_.MemberMethod{JsiiMethod: "putDbtCloudTask", GoMethod: "PutDbtCloudTask"},
@@ -7915,6 +8309,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pythonWheelTask", GoGetter: "PythonWheelTask"},
 			_jsii_.MemberProperty{JsiiProperty: "pythonWheelTaskInput", GoGetter: "PythonWheelTaskInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCleanRoomsNotebookTask", GoMethod: "ResetCleanRoomsNotebookTask"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCompute", GoMethod: "ResetCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionTask", GoMethod: "ResetConditionTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDashboardTask", GoMethod: "ResetDashboardTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDbtCloudTask", GoMethod: "ResetDbtCloudTask"},
@@ -7975,16 +8370,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPipelineTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPipelineTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPipelineTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPipelineTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPipelineTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPipelineTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8016,16 +8411,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskPipelineTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPowerBiTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPowerBiTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8069,16 +8464,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskPowerBiTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskPowerBiModel",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskPowerBiModel",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPowerBiTaskPowerBiModel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationMethod", GoGetter: "AuthenticationMethod"},
@@ -8120,16 +8515,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskTables",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskTables",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPowerBiTaskTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskTablesList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskTablesList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPowerBiTaskTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8146,12 +8541,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskPowerBiTaskTablesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskTablesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPowerBiTaskTablesOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPowerBiTaskTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
@@ -8190,16 +8585,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskPowerBiTaskTablesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPythonWheelTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPythonWheelTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPythonWheelTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskPythonWheelTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskPythonWheelTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskPythonWheelTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8238,16 +8633,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskPythonWheelTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskRunJobTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskRunJobTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskRunJobTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskRunJobTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskRunJobTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskRunJobTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8304,16 +8699,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskRunJobTaskPipelineParams",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskRunJobTaskPipelineParams",
 		reflect.TypeOf((*JobTaskForEachTaskTaskRunJobTaskPipelineParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8343,16 +8738,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSparkJarTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSparkJarTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSparkJarTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSparkJarTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSparkJarTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSparkJarTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8391,16 +8786,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSparkJarTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSparkPythonTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSparkPythonTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSparkPythonTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSparkPythonTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSparkPythonTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSparkPythonTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8435,16 +8830,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSparkPythonTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSparkSubmitTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSparkSubmitTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSparkSubmitTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSparkSubmitTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSparkSubmitTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSparkSubmitTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8474,20 +8869,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSparkSubmitTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTask",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTask",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskAlert",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskAlert",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskAlert)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskAlertOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskAlertOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskAlertOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertId", GoGetter: "AlertId"},
@@ -8523,16 +8918,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSqlTaskAlertOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskAlertSubscriptions",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskAlertSubscriptions",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskAlertSubscriptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8549,12 +8944,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8587,16 +8982,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskDashboard",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskDashboard",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskDashboard)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskDashboardOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskDashboardOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskDashboardOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8635,16 +9030,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSqlTaskDashboardOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8661,12 +9056,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8699,16 +9094,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskFile",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskFile",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskFileOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskFileOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8740,12 +9135,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSqlTaskFileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alert", GoGetter: "Alert"},
@@ -8793,16 +9188,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSqlTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskQuery",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskQuery",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskQueryOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskSqlTaskQueryOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskSqlTaskQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8831,20 +9226,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskSqlTaskQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotifications",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotifications",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8861,12 +9256,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8895,16 +9290,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnFailure",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnFailure",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnFailure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnFailureList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnFailureList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnFailureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8921,12 +9316,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnFailureList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8955,16 +9350,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStart",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStart",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnStart)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStartList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStartList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnStartList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8981,12 +9376,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnStartList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9015,16 +9410,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9041,12 +9436,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9075,16 +9470,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnSuccess",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnSuccess",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnSuccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9101,12 +9496,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9135,12 +9530,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9187,20 +9582,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskGenAiComputeTask",
+		"@cdktn/provider-databricks.job.JobTaskGenAiComputeTask",
 		reflect.TypeOf((*JobTaskGenAiComputeTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskGenAiComputeTaskCompute",
+		"@cdktn/provider-databricks.job.JobTaskGenAiComputeTaskCompute",
 		reflect.TypeOf((*JobTaskGenAiComputeTaskCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskGenAiComputeTaskComputeOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskGenAiComputeTaskComputeOutputReference",
 		reflect.TypeOf((*JobTaskGenAiComputeTaskComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9235,12 +9630,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskGenAiComputeTaskComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskGenAiComputeTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskGenAiComputeTaskOutputReference",
 		reflect.TypeOf((*JobTaskGenAiComputeTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -9291,16 +9686,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskGenAiComputeTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskHealth",
+		"@cdktn/provider-databricks.job.JobTaskHealth",
 		reflect.TypeOf((*JobTaskHealth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskHealthOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskHealthOutputReference",
 		reflect.TypeOf((*JobTaskHealthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9330,16 +9725,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskHealthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskHealthRules",
+		"@cdktn/provider-databricks.job.JobTaskHealthRules",
 		reflect.TypeOf((*JobTaskHealthRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskHealthRulesList",
+		"@cdktn/provider-databricks.job.JobTaskHealthRulesList",
 		reflect.TypeOf((*JobTaskHealthRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9356,12 +9751,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskHealthRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskHealthRulesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskHealthRulesOutputReference",
 		reflect.TypeOf((*JobTaskHealthRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9394,20 +9789,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskHealthRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskLibrary",
+		"@cdktn/provider-databricks.job.JobTaskLibrary",
 		reflect.TypeOf((*JobTaskLibrary)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskLibraryCran",
+		"@cdktn/provider-databricks.job.JobTaskLibraryCran",
 		reflect.TypeOf((*JobTaskLibraryCran)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskLibraryCranOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskLibraryCranOutputReference",
 		reflect.TypeOf((*JobTaskLibraryCranOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9439,12 +9834,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskLibraryCranOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskLibraryList",
+		"@cdktn/provider-databricks.job.JobTaskLibraryList",
 		reflect.TypeOf((*JobTaskLibraryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9461,16 +9856,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskLibraryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskLibraryMaven",
+		"@cdktn/provider-databricks.job.JobTaskLibraryMaven",
 		reflect.TypeOf((*JobTaskLibraryMaven)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskLibraryMavenOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskLibraryMavenOutputReference",
 		reflect.TypeOf((*JobTaskLibraryMavenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9505,12 +9900,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskLibraryMavenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskLibraryOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskLibraryOutputReference",
 		reflect.TypeOf((*JobTaskLibraryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9565,16 +9960,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskLibraryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskLibraryProviderConfig",
+		"@cdktn/provider-databricks.job.JobTaskLibraryProviderConfig",
 		reflect.TypeOf((*JobTaskLibraryProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskLibraryProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskLibraryProviderConfigOutputReference",
 		reflect.TypeOf((*JobTaskLibraryProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9603,16 +9998,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskLibraryProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskLibraryPypi",
+		"@cdktn/provider-databricks.job.JobTaskLibraryPypi",
 		reflect.TypeOf((*JobTaskLibraryPypi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskLibraryPypiOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskLibraryPypiOutputReference",
 		reflect.TypeOf((*JobTaskLibraryPypiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9644,12 +10039,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskLibraryPypiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskList",
+		"@cdktn/provider-databricks.job.JobTaskList",
 		reflect.TypeOf((*JobTaskList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9666,20 +10061,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewCluster",
+		"@cdktn/provider-databricks.job.JobTaskNewCluster",
 		reflect.TypeOf((*JobTaskNewCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterAutoscale",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterAutoscale",
 		reflect.TypeOf((*JobTaskNewClusterAutoscale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterAutoscaleOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterAutoscaleOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterAutoscaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9712,16 +10107,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterAutoscaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterAwsAttributes",
 		reflect.TypeOf((*JobTaskNewClusterAwsAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterAwsAttributesOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterAwsAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -9778,20 +10173,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributes",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterAzureAttributes",
 		reflect.TypeOf((*JobTaskNewClusterAzureAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributesLogAnalyticsInfo",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterAzureAttributesLogAnalyticsInfo",
 		reflect.TypeOf((*JobTaskNewClusterAzureAttributesLogAnalyticsInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9824,12 +10219,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterAzureAttributesOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterAzureAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -9869,20 +10264,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConf",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterLogConf",
 		reflect.TypeOf((*JobTaskNewClusterClusterLogConf)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfDbfs",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterLogConfDbfs",
 		reflect.TypeOf((*JobTaskNewClusterClusterLogConfDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfDbfsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterLogConfDbfsOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterClusterLogConfDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9911,12 +10306,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterClusterLogConfDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterLogConfOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterClusterLogConfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9955,16 +10350,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterClusterLogConfOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterLogConfS3",
 		reflect.TypeOf((*JobTaskNewClusterClusterLogConfS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3OutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterLogConfS3OutputReference",
 		reflect.TypeOf((*JobTaskNewClusterClusterLogConfS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -10011,16 +10406,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterClusterLogConfS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfVolumes",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterLogConfVolumes",
 		reflect.TypeOf((*JobTaskNewClusterClusterLogConfVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfVolumesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterLogConfVolumesOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterClusterLogConfVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10049,16 +10444,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterClusterLogConfVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterMountInfo",
 		reflect.TypeOf((*JobTaskNewClusterClusterMountInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoList",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterMountInfoList",
 		reflect.TypeOf((*JobTaskNewClusterClusterMountInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -10075,16 +10470,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterClusterMountInfoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo",
 		reflect.TypeOf((*JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10116,12 +10511,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterClusterMountInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10156,20 +10551,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterClusterMountInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterDockerImage",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterDockerImage",
 		reflect.TypeOf((*JobTaskNewClusterDockerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterDockerImageBasicAuth",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterDockerImageBasicAuth",
 		reflect.TypeOf((*JobTaskNewClusterDockerImageBasicAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterDockerImageBasicAuthOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterDockerImageBasicAuthOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterDockerImageBasicAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10200,12 +10595,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterDockerImageOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterDockerImageOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterDockerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuth", GoGetter: "BasicAuth"},
@@ -10238,16 +10633,55 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterDockerImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterDriverNodeTypeFlexibility",
+		reflect.TypeOf((*JobTaskNewClusterDriverNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskNewClusterGcpAttributes",
 		reflect.TypeOf((*JobTaskNewClusterGcpAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterGcpAttributesOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterGcpAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -10295,20 +10729,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterGcpAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScripts",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScripts",
 		reflect.TypeOf((*JobTaskNewClusterInitScripts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsAbfss",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsAbfss",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsAbfss)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsAbfssOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsAbfssOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsAbfssOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10337,16 +10771,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterInitScriptsAbfssOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsDbfs",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsDbfs",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsDbfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsDbfsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsDbfsOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsDbfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10375,16 +10809,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterInitScriptsDbfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsFile",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsFile",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsFileOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsFileOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10413,16 +10847,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterInitScriptsFileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsGcs",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsGcs",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsGcs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsGcsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsGcsOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsGcsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10451,12 +10885,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterInitScriptsGcsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsList",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsList",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -10473,12 +10907,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterInitScriptsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abfss", GoGetter: "Abfss"},
@@ -10533,16 +10967,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterInitScriptsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsS3",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3OutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsS3OutputReference",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -10589,16 +11023,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterInitScriptsS3OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsVolumes",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsVolumes",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsVolumesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsVolumesOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10627,16 +11061,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterInitScriptsVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsWorkspace",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsWorkspace",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsWorkspace)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsWorkspaceOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterInitScriptsWorkspaceOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterInitScriptsWorkspaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10665,20 +11099,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterInitScriptsWorkspaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibrary",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibrary",
 		reflect.TypeOf((*JobTaskNewClusterLibrary)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibraryCran",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibraryCran",
 		reflect.TypeOf((*JobTaskNewClusterLibraryCran)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibraryCranOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibraryCranOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterLibraryCranOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10710,12 +11144,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterLibraryCranOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibraryList",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibraryList",
 		reflect.TypeOf((*JobTaskNewClusterLibraryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -10732,16 +11166,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterLibraryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibraryMaven",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibraryMaven",
 		reflect.TypeOf((*JobTaskNewClusterLibraryMaven)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibraryMavenOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibraryMavenOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterLibraryMavenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10776,12 +11210,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterLibraryMavenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibraryOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibraryOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterLibraryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10836,16 +11270,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterLibraryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibraryProviderConfig",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibraryProviderConfig",
 		reflect.TypeOf((*JobTaskNewClusterLibraryProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibraryProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibraryProviderConfigOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterLibraryProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10874,16 +11308,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterLibraryProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibraryPypi",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibraryPypi",
 		reflect.TypeOf((*JobTaskNewClusterLibraryPypi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterLibraryPypiOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterLibraryPypiOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterLibraryPypiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10915,12 +11349,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterLibraryPypiOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValues", GoGetter: "ApplyPolicyDefaultValues"},
@@ -10953,6 +11387,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dockerImageInput", GoGetter: "DockerImageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolId", GoGetter: "DriverInstancePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverInstancePoolIdInput", GoGetter: "DriverInstancePoolIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibility", GoGetter: "DriverNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeFlexibilityInput", GoGetter: "DriverNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeId", GoGetter: "DriverNodeTypeId"},
 			_jsii_.MemberProperty{JsiiProperty: "driverNodeTypeIdInput", GoGetter: "DriverNodeTypeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableElasticDisk", GoGetter: "EnableElasticDisk"},
@@ -11000,10 +11436,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putClusterLogConf", GoMethod: "PutClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterMountInfo", GoMethod: "PutClusterMountInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putDockerImage", GoMethod: "PutDockerImage"},
+			_jsii_.MemberMethod{JsiiMethod: "putDriverNodeTypeFlexibility", GoMethod: "PutDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpAttributes", GoMethod: "PutGcpAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putInitScripts", GoMethod: "PutInitScripts"},
 			_jsii_.MemberMethod{JsiiMethod: "putLibrary", GoMethod: "PutLibrary"},
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkerNodeTypeFlexibility", GoMethod: "PutWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkloadType", GoMethod: "PutWorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughput", GoGetter: "RemoteDiskThroughput"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughputInput", GoGetter: "RemoteDiskThroughputInput"},
@@ -11020,6 +11458,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSecurityMode", GoMethod: "ResetDataSecurityMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDockerImage", GoMethod: "ResetDockerImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverInstancePoolId", GoMethod: "ResetDriverInstancePoolId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeFlexibility", GoMethod: "ResetDriverNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverNodeTypeId", GoMethod: "ResetDriverNodeTypeId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableElasticDisk", GoMethod: "ResetEnableElasticDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableLocalDiskEncryption", GoMethod: "ResetEnableLocalDiskEncryption"},
@@ -11043,6 +11482,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSshPublicKeys", GoMethod: "ResetSshPublicKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTotalInitialRemoteDiskSize", GoMethod: "ResetTotalInitialRemoteDiskSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseMlRuntime", GoMethod: "ResetUseMlRuntime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkerNodeTypeFlexibility", GoMethod: "ResetWorkerNodeTypeFlexibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadType", GoMethod: "ResetWorkloadType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeEngine", GoGetter: "RuntimeEngine"},
@@ -11064,21 +11504,23 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalInitialRemoteDiskSizeInput", GoGetter: "TotalInitialRemoteDiskSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntime", GoGetter: "UseMlRuntime"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntimeInput", GoGetter: "UseMlRuntimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibility", GoGetter: "WorkerNodeTypeFlexibility"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibilityInput", GoGetter: "WorkerNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadType", GoGetter: "WorkloadType"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadTypeInput", GoGetter: "WorkloadTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterProviderConfig",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterProviderConfig",
 		reflect.TypeOf((*JobTaskNewClusterProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterProviderConfigOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterProviderConfigOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11107,20 +11549,59 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterWorkloadType",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterWorkerNodeTypeFlexibility",
+		reflect.TypeOf((*JobTaskNewClusterWorkerNodeTypeFlexibility)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference",
+		reflect.TypeOf((*JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskNewClusterWorkloadType",
 		reflect.TypeOf((*JobTaskNewClusterWorkloadType)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterWorkloadTypeClients",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterWorkloadTypeClients",
 		reflect.TypeOf((*JobTaskNewClusterWorkloadTypeClients)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterWorkloadTypeClientsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterWorkloadTypeClientsOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterWorkloadTypeClientsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11153,12 +11634,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterWorkloadTypeClientsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterWorkloadTypeOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNewClusterWorkloadTypeOutputReference",
 		reflect.TypeOf((*JobTaskNewClusterWorkloadTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clients", GoGetter: "Clients"},
@@ -11188,16 +11669,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNewClusterWorkloadTypeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNotebookTask",
+		"@cdktn/provider-databricks.job.JobTaskNotebookTask",
 		reflect.TypeOf((*JobTaskNotebookTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNotebookTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNotebookTaskOutputReference",
 		reflect.TypeOf((*JobTaskNotebookTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseParameters", GoGetter: "BaseParameters"},
@@ -11235,16 +11716,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNotebookTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNotificationSettings",
+		"@cdktn/provider-databricks.job.JobTaskNotificationSettings",
 		reflect.TypeOf((*JobTaskNotificationSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNotificationSettingsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskNotificationSettingsOutputReference",
 		reflect.TypeOf((*JobTaskNotificationSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertOnLastAttempt", GoGetter: "AlertOnLastAttempt"},
@@ -11280,19 +11761,21 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskNotificationSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskOutputReference",
 		reflect.TypeOf((*JobTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cleanRoomsNotebookTask", GoGetter: "CleanRoomsNotebookTask"},
 			_jsii_.MemberProperty{JsiiProperty: "cleanRoomsNotebookTaskInput", GoGetter: "CleanRoomsNotebookTaskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberProperty{JsiiProperty: "compute", GoGetter: "Compute"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "computeInput", GoGetter: "ComputeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "conditionTask", GoGetter: "ConditionTask"},
 			_jsii_.MemberProperty{JsiiProperty: "conditionTaskInput", GoGetter: "ConditionTaskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -11356,6 +11839,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "powerBiTask", GoGetter: "PowerBiTask"},
 			_jsii_.MemberProperty{JsiiProperty: "powerBiTaskInput", GoGetter: "PowerBiTaskInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCleanRoomsNotebookTask", GoMethod: "PutCleanRoomsNotebookTask"},
+			_jsii_.MemberMethod{JsiiMethod: "putCompute", GoMethod: "PutCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionTask", GoMethod: "PutConditionTask"},
 			_jsii_.MemberMethod{JsiiMethod: "putDashboardTask", GoMethod: "PutDashboardTask"},
 			_jsii_.MemberMethod{JsiiMethod: "putDbtCloudTask", GoMethod: "PutDbtCloudTask"},
@@ -11382,6 +11866,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pythonWheelTask", GoGetter: "PythonWheelTask"},
 			_jsii_.MemberProperty{JsiiProperty: "pythonWheelTaskInput", GoGetter: "PythonWheelTaskInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCleanRoomsNotebookTask", GoMethod: "ResetCleanRoomsNotebookTask"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCompute", GoMethod: "ResetCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionTask", GoMethod: "ResetConditionTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDashboardTask", GoMethod: "ResetDashboardTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDbtCloudTask", GoMethod: "ResetDbtCloudTask"},
@@ -11443,16 +11928,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskPipelineTask",
+		"@cdktn/provider-databricks.job.JobTaskPipelineTask",
 		reflect.TypeOf((*JobTaskPipelineTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskPipelineTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskPipelineTaskOutputReference",
 		reflect.TypeOf((*JobTaskPipelineTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11484,16 +11969,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskPipelineTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskPowerBiTask",
+		"@cdktn/provider-databricks.job.JobTaskPowerBiTask",
 		reflect.TypeOf((*JobTaskPowerBiTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskPowerBiTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskPowerBiTaskOutputReference",
 		reflect.TypeOf((*JobTaskPowerBiTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11537,16 +12022,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskPowerBiTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskPowerBiTaskPowerBiModel",
+		"@cdktn/provider-databricks.job.JobTaskPowerBiTaskPowerBiModel",
 		reflect.TypeOf((*JobTaskPowerBiTaskPowerBiModel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskPowerBiTaskPowerBiModelOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskPowerBiTaskPowerBiModelOutputReference",
 		reflect.TypeOf((*JobTaskPowerBiTaskPowerBiModelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationMethod", GoGetter: "AuthenticationMethod"},
@@ -11588,16 +12073,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskPowerBiTaskTables",
+		"@cdktn/provider-databricks.job.JobTaskPowerBiTaskTables",
 		reflect.TypeOf((*JobTaskPowerBiTaskTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskPowerBiTaskTablesList",
+		"@cdktn/provider-databricks.job.JobTaskPowerBiTaskTablesList",
 		reflect.TypeOf((*JobTaskPowerBiTaskTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -11614,12 +12099,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskPowerBiTaskTablesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskPowerBiTaskTablesOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskPowerBiTaskTablesOutputReference",
 		reflect.TypeOf((*JobTaskPowerBiTaskTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
@@ -11658,16 +12143,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskPowerBiTaskTablesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskPythonWheelTask",
+		"@cdktn/provider-databricks.job.JobTaskPythonWheelTask",
 		reflect.TypeOf((*JobTaskPythonWheelTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskPythonWheelTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskPythonWheelTaskOutputReference",
 		reflect.TypeOf((*JobTaskPythonWheelTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11706,16 +12191,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskPythonWheelTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskRunJobTask",
+		"@cdktn/provider-databricks.job.JobTaskRunJobTask",
 		reflect.TypeOf((*JobTaskRunJobTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskRunJobTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskRunJobTaskOutputReference",
 		reflect.TypeOf((*JobTaskRunJobTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11772,16 +12257,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskRunJobTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskRunJobTaskPipelineParams",
+		"@cdktn/provider-databricks.job.JobTaskRunJobTaskPipelineParams",
 		reflect.TypeOf((*JobTaskRunJobTaskPipelineParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskRunJobTaskPipelineParamsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskRunJobTaskPipelineParamsOutputReference",
 		reflect.TypeOf((*JobTaskRunJobTaskPipelineParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11811,16 +12296,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskRunJobTaskPipelineParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskSparkJarTask",
+		"@cdktn/provider-databricks.job.JobTaskSparkJarTask",
 		reflect.TypeOf((*JobTaskSparkJarTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSparkJarTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskSparkJarTaskOutputReference",
 		reflect.TypeOf((*JobTaskSparkJarTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11859,16 +12344,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSparkJarTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskSparkPythonTask",
+		"@cdktn/provider-databricks.job.JobTaskSparkPythonTask",
 		reflect.TypeOf((*JobTaskSparkPythonTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskSparkPythonTaskOutputReference",
 		reflect.TypeOf((*JobTaskSparkPythonTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11903,16 +12388,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSparkPythonTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskSparkSubmitTask",
+		"@cdktn/provider-databricks.job.JobTaskSparkSubmitTask",
 		reflect.TypeOf((*JobTaskSparkSubmitTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSparkSubmitTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskSparkSubmitTaskOutputReference",
 		reflect.TypeOf((*JobTaskSparkSubmitTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11942,20 +12427,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSparkSubmitTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskSqlTask",
+		"@cdktn/provider-databricks.job.JobTaskSqlTask",
 		reflect.TypeOf((*JobTaskSqlTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskAlert",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskAlert",
 		reflect.TypeOf((*JobTaskSqlTaskAlert)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskAlertOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskAlertOutputReference",
 		reflect.TypeOf((*JobTaskSqlTaskAlertOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertId", GoGetter: "AlertId"},
@@ -11991,16 +12476,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSqlTaskAlertOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskAlertSubscriptions",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskAlertSubscriptions",
 		reflect.TypeOf((*JobTaskSqlTaskAlertSubscriptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskAlertSubscriptionsList",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskAlertSubscriptionsList",
 		reflect.TypeOf((*JobTaskSqlTaskAlertSubscriptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12017,12 +12502,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSqlTaskAlertSubscriptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskAlertSubscriptionsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskAlertSubscriptionsOutputReference",
 		reflect.TypeOf((*JobTaskSqlTaskAlertSubscriptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12055,16 +12540,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSqlTaskAlertSubscriptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskDashboard",
 		reflect.TypeOf((*JobTaskSqlTaskDashboard)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskDashboardOutputReference",
 		reflect.TypeOf((*JobTaskSqlTaskDashboardOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12103,16 +12588,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSqlTaskDashboardOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptions",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptions",
 		reflect.TypeOf((*JobTaskSqlTaskDashboardSubscriptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptionsList",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptionsList",
 		reflect.TypeOf((*JobTaskSqlTaskDashboardSubscriptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12129,12 +12614,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSqlTaskDashboardSubscriptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptionsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptionsOutputReference",
 		reflect.TypeOf((*JobTaskSqlTaskDashboardSubscriptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12167,16 +12652,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSqlTaskDashboardSubscriptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskFile",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskFile",
 		reflect.TypeOf((*JobTaskSqlTaskFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskFileOutputReference",
 		reflect.TypeOf((*JobTaskSqlTaskFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12208,12 +12693,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSqlTaskFileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskOutputReference",
 		reflect.TypeOf((*JobTaskSqlTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alert", GoGetter: "Alert"},
@@ -12261,16 +12746,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSqlTaskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskQuery",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskQuery",
 		reflect.TypeOf((*JobTaskSqlTaskQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskSqlTaskQueryOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskSqlTaskQueryOutputReference",
 		reflect.TypeOf((*JobTaskSqlTaskQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12299,20 +12784,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskSqlTaskQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotifications",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotifications",
 		reflect.TypeOf((*JobTaskWebhookNotifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnDurationWarningThresholdExceededList",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnDurationWarningThresholdExceededList",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnDurationWarningThresholdExceededList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12329,12 +12814,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOnDurationWarningThresholdExceededList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12363,16 +12848,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnFailure",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnFailure",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnFailure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnFailureList",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnFailureList",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnFailureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12389,12 +12874,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOnFailureList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnFailureOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnFailureOutputReference",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnFailureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12423,16 +12908,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOnFailureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnStart",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnStart",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnStart)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnStartList",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnStartList",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnStartList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12449,12 +12934,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOnStartList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnStartOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnStartOutputReference",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnStartOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12483,16 +12968,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOnStartOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnStreamingBacklogExceeded",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnStreamingBacklogExceeded",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnStreamingBacklogExceeded)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnStreamingBacklogExceededList",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnStreamingBacklogExceededList",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnStreamingBacklogExceededList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12509,12 +12994,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOnStreamingBacklogExceededList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12543,16 +13028,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnSuccess",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnSuccess",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnSuccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnSuccessList",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnSuccessList",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnSuccessList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12569,12 +13054,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOnSuccessList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOnSuccessOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnSuccessOutputReference",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnSuccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12603,12 +13088,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOnSuccessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskWebhookNotificationsOutputReference",
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOutputReference",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12655,16 +13140,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTaskWebhookNotificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTimeouts",
+		"@cdktn/provider-databricks.job.JobTimeouts",
 		reflect.TypeOf((*JobTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTimeoutsOutputReference",
+		"@cdktn/provider-databricks.job.JobTimeoutsOutputReference",
 		reflect.TypeOf((*JobTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12697,20 +13182,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTrigger",
+		"@cdktn/provider-databricks.job.JobTrigger",
 		reflect.TypeOf((*JobTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTriggerFileArrival",
+		"@cdktn/provider-databricks.job.JobTriggerFileArrival",
 		reflect.TypeOf((*JobTriggerFileArrival)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference",
+		"@cdktn/provider-databricks.job.JobTriggerFileArrivalOutputReference",
 		reflect.TypeOf((*JobTriggerFileArrivalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12745,16 +13230,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTriggerFileArrivalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTriggerModel",
+		"@cdktn/provider-databricks.job.JobTriggerModel",
 		reflect.TypeOf((*JobTriggerModel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTriggerModelOutputReference",
+		"@cdktn/provider-databricks.job.JobTriggerModelOutputReference",
 		reflect.TypeOf((*JobTriggerModelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aliases", GoGetter: "Aliases"},
@@ -12795,12 +13280,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTriggerModelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTriggerOutputReference",
+		"@cdktn/provider-databricks.job.JobTriggerOutputReference",
 		reflect.TypeOf((*JobTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12846,16 +13331,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTriggerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTriggerPeriodic",
+		"@cdktn/provider-databricks.job.JobTriggerPeriodic",
 		reflect.TypeOf((*JobTriggerPeriodic)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTriggerPeriodicOutputReference",
+		"@cdktn/provider-databricks.job.JobTriggerPeriodicOutputReference",
 		reflect.TypeOf((*JobTriggerPeriodicOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12886,16 +13371,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTriggerPeriodicOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTriggerTableUpdate",
+		"@cdktn/provider-databricks.job.JobTriggerTableUpdate",
 		reflect.TypeOf((*JobTriggerTableUpdate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTriggerTableUpdateOutputReference",
+		"@cdktn/provider-databricks.job.JobTriggerTableUpdateOutputReference",
 		reflect.TypeOf((*JobTriggerTableUpdateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12933,20 +13418,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTriggerTableUpdateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobWebhookNotifications",
+		"@cdktn/provider-databricks.job.JobWebhookNotifications",
 		reflect.TypeOf((*JobWebhookNotifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnDurationWarningThresholdExceeded",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnDurationWarningThresholdExceeded",
 		reflect.TypeOf((*JobWebhookNotificationsOnDurationWarningThresholdExceeded)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnDurationWarningThresholdExceededList",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnDurationWarningThresholdExceededList",
 		reflect.TypeOf((*JobWebhookNotificationsOnDurationWarningThresholdExceededList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12963,12 +13448,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOnDurationWarningThresholdExceededList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnDurationWarningThresholdExceededOutputReference",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnDurationWarningThresholdExceededOutputReference",
 		reflect.TypeOf((*JobWebhookNotificationsOnDurationWarningThresholdExceededOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12997,16 +13482,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOnDurationWarningThresholdExceededOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnFailure",
 		reflect.TypeOf((*JobWebhookNotificationsOnFailure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureList",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnFailureList",
 		reflect.TypeOf((*JobWebhookNotificationsOnFailureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13023,12 +13508,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOnFailureList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference",
 		reflect.TypeOf((*JobWebhookNotificationsOnFailureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13057,16 +13542,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOnFailureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnStart",
 		reflect.TypeOf((*JobWebhookNotificationsOnStart)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartList",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnStartList",
 		reflect.TypeOf((*JobWebhookNotificationsOnStartList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13083,12 +13568,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOnStartList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference",
 		reflect.TypeOf((*JobWebhookNotificationsOnStartOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13117,16 +13602,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOnStartOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnStreamingBacklogExceeded",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnStreamingBacklogExceeded",
 		reflect.TypeOf((*JobWebhookNotificationsOnStreamingBacklogExceeded)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnStreamingBacklogExceededList",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnStreamingBacklogExceededList",
 		reflect.TypeOf((*JobWebhookNotificationsOnStreamingBacklogExceededList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13143,12 +13628,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOnStreamingBacklogExceededList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnStreamingBacklogExceededOutputReference",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnStreamingBacklogExceededOutputReference",
 		reflect.TypeOf((*JobWebhookNotificationsOnStreamingBacklogExceededOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13177,16 +13662,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOnStreamingBacklogExceededOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnSuccess",
 		reflect.TypeOf((*JobWebhookNotificationsOnSuccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessList",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnSuccessList",
 		reflect.TypeOf((*JobWebhookNotificationsOnSuccessList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13203,12 +13688,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOnSuccessList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference",
 		reflect.TypeOf((*JobWebhookNotificationsOnSuccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13237,12 +13722,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOnSuccessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobWebhookNotificationsOutputReference",
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOutputReference",
 		reflect.TypeOf((*JobWebhookNotificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13289,7 +13774,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobWebhookNotificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

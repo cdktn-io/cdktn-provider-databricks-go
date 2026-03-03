@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatabricksjobs
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksJobs.DataDatabricksJobs",
+		"@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs",
 		reflect.TypeOf((*DataDatabricksJobs)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,20 +66,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksJobs{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig",
+		"@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig",
 		reflect.TypeOf((*DataDatabricksJobsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfig",
+		"@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfig",
 		reflect.TypeOf((*DataDatabricksJobsProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfigOutputReference",
+		"@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfigOutputReference",
 		reflect.TypeOf((*DataDatabricksJobsProviderConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -108,7 +108,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksJobsProviderConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

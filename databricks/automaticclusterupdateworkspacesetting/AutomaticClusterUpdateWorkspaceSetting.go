@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package automaticclusterupdateworkspacesetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/automaticclusterupdateworkspacesetting/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/automaticclusterupdateworkspacesetting/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting}.
 type AutomaticClusterUpdateWorkspaceSetting interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AutomaticClusterUpdateWorkspace() AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference
 	AutomaticClusterUpdateWorkspaceInput() *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspace
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,9 +37,9 @@ type AutomaticClusterUpdateWorkspaceSetting interface {
 	SetEtag(val *string)
 	EtagInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -48,15 +48,17 @@ type AutomaticClusterUpdateWorkspaceSetting interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() AutomaticClusterUpdateWorkspaceSettingProviderConfigOutputReference
+	ProviderConfigInput() *AutomaticClusterUpdateWorkspaceSettingProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -67,7 +69,7 @@ type AutomaticClusterUpdateWorkspaceSetting interface {
 	SetSettingName(val *string)
 	SettingNameInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -80,7 +82,7 @@ type AutomaticClusterUpdateWorkspaceSetting interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -98,9 +100,9 @@ type AutomaticClusterUpdateWorkspaceSetting interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -116,11 +118,13 @@ type AutomaticClusterUpdateWorkspaceSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomaticClusterUpdateWorkspace(value *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspace)
+	PutProviderConfig(value *AutomaticClusterUpdateWorkspaceSettingProviderConfig)
 	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSettingName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -137,7 +141,7 @@ type AutomaticClusterUpdateWorkspaceSetting interface {
 
 // The jsii proxy struct for AutomaticClusterUpdateWorkspaceSetting
 type jsiiProxy_AutomaticClusterUpdateWorkspaceSetting struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) AutomaticClusterUpdateWorkspace() AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference {
@@ -160,8 +164,8 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) AutomaticClusterUpdat
 	return returns
 }
 
-func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -230,8 +234,8 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) EtagInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -280,8 +284,8 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -300,11 +304,31 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) Node() constructs.Nod
 	return returns
 }
 
-func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) ProviderConfig() AutomaticClusterUpdateWorkspaceSettingProviderConfigOutputReference {
+	var returns AutomaticClusterUpdateWorkspaceSettingProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) ProviderConfigInput() *AutomaticClusterUpdateWorkspaceSettingProviderConfig {
+	var returns *AutomaticClusterUpdateWorkspaceSettingProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -350,8 +374,8 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) SettingNameInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -381,7 +405,7 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
 func NewAutomaticClusterUpdateWorkspaceSetting(scope constructs.Construct, id *string, config *AutomaticClusterUpdateWorkspaceSettingConfig) AutomaticClusterUpdateWorkspaceSetting {
 	_init_.Initialize()
 
@@ -391,7 +415,7 @@ func NewAutomaticClusterUpdateWorkspaceSetting(scope constructs.Construct, id *s
 	j := jsiiProxy_AutomaticClusterUpdateWorkspaceSetting{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
+		"@cdktn/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,12 +423,12 @@ func NewAutomaticClusterUpdateWorkspaceSetting(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
 func NewAutomaticClusterUpdateWorkspaceSetting_Override(a AutomaticClusterUpdateWorkspaceSetting, scope constructs.Construct, id *string, config *AutomaticClusterUpdateWorkspaceSettingConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
+		"@cdktn/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -451,7 +475,7 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting)SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -470,7 +494,7 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +505,7 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -511,17 +535,17 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting)SetSettingName(val *st
 	)
 }
 
-// Generates CDKTF code for importing a AutomaticClusterUpdateWorkspaceSetting resource upon running "cdktf plan <stack-name>".
-func AutomaticClusterUpdateWorkspaceSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AutomaticClusterUpdateWorkspaceSetting resource upon running "cdktn plan <stack-name>".
+func AutomaticClusterUpdateWorkspaceSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAutomaticClusterUpdateWorkspaceSetting_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
+		"@cdktn/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -556,7 +580,7 @@ func AutomaticClusterUpdateWorkspaceSetting_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
+		"@cdktn/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +599,7 @@ func AutomaticClusterUpdateWorkspaceSetting_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
+		"@cdktn/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +618,7 @@ func AutomaticClusterUpdateWorkspaceSetting_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
+		"@cdktn/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +631,7 @@ func AutomaticClusterUpdateWorkspaceSetting_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
+		"@cdktn/provider-databricks.automaticClusterUpdateWorkspaceSetting.AutomaticClusterUpdateWorkspaceSetting",
 		"tfResourceType",
 		&returns,
 	)
@@ -652,11 +676,11 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) GetAnyMapAttribute(te
 	return returns
 }
 
-func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -793,7 +817,7 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) HasResourceMove() int
 	return returns
 }
 
-func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -804,11 +828,11 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) ImportFrom(id *string
 	)
 }
 
-func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -875,6 +899,17 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) PutAutomaticClusterUp
 	)
 }
 
+func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) PutProviderConfig(value *AutomaticClusterUpdateWorkspaceSettingProviderConfig) {
+	if err := a.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) ResetEtag() {
 	_jsii_.InvokeVoid(
 		a,
@@ -895,6 +930,14 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) ResetOverrideLogicalI
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

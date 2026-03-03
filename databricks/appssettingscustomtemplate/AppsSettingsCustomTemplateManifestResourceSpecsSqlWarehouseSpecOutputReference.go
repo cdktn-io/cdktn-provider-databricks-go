@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package appssettingscustomtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/appssettingscustomtemplate/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/appssettingscustomtemplate/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputRefere
 
 // The jsii proxy struct for AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference
 type jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSp
 	return returns
 }
 
-func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -173,7 +173,7 @@ func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSp
 }
 
 
-func NewAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference {
+func NewAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -182,7 +182,7 @@ func NewAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputRef
 	j := jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.appsSettingsCustomTemplate.AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference",
+		"@cdktn/provider-databricks.appsSettingsCustomTemplate.AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -190,11 +190,11 @@ func NewAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputRef
 	return &j
 }
 
-func NewAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference_Override(a AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference_Override(a AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.appsSettingsCustomTemplate.AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference",
+		"@cdktn/provider-databricks.appsSettingsCustomTemplate.AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -255,7 +255,7 @@ func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSp
 	)
 }
 
-func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,11 +295,11 @@ func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSp
 	return returns
 }
 
-func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -423,8 +423,8 @@ func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSp
 	return returns
 }
 
-func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -436,11 +436,11 @@ func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSp
 	return returns
 }
 
-func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -452,7 +452,7 @@ func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSp
 	return returns
 }
 
-func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

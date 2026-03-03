@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,14 @@ func (v *jsiiProxy_VectorSearchEndpoint) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (v *jsiiProxy_VectorSearchEndpoint) validatePutProviderConfigParameters(value *VectorSearchEndpointProviderConfig) error {
+	return nil
+}
+
+func (v *jsiiProxy_VectorSearchEndpoint) validatePutScalingInfoParameters(value *VectorSearchEndpointScalingInfo) error {
+	return nil
+}
+
 func (v *jsiiProxy_VectorSearchEndpoint) validatePutTimeoutsParameters(value *VectorSearchEndpointTimeouts) error {
 	return nil
 }
@@ -115,7 +123,7 @@ func (j *jsiiProxy_VectorSearchEndpoint) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VectorSearchEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

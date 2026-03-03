@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package groupinstanceprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/groupinstanceprofile/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/groupinstanceprofile/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/group_instance_profile databricks_group_instance_profile}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/group_instance_profile databricks_group_instance_profile}.
 type GroupInstanceProfile interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,9 +32,9 @@ type GroupInstanceProfile interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -49,15 +49,15 @@ type GroupInstanceProfile interface {
 	SetInstanceProfileId(val *string)
 	InstanceProfileIdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type GroupInstanceProfile interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -78,7 +78,7 @@ type GroupInstanceProfile interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -96,9 +96,9 @@ type GroupInstanceProfile interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -132,11 +132,11 @@ type GroupInstanceProfile interface {
 
 // The jsii proxy struct for GroupInstanceProfile
 type jsiiProxy_GroupInstanceProfile struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_GroupInstanceProfile) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_GroupInstanceProfile) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_GroupInstanceProfile) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupInstanceProfile) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_GroupInstanceProfile) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_GroupInstanceProfile) InstanceProfileIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupInstanceProfile) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_GroupInstanceProfile) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_GroupInstanceProfile) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_GroupInstanceProfile) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_GroupInstanceProfile) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_GroupInstanceProfile) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GroupInstanceProfile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_GroupInstanceProfile) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_GroupInstanceProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/group_instance_profile databricks_group_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/group_instance_profile databricks_group_instance_profile} Resource.
 func NewGroupInstanceProfile(scope constructs.Construct, id *string, config *GroupInstanceProfileConfig) GroupInstanceProfile {
 	_init_.Initialize()
 
@@ -366,7 +366,7 @@ func NewGroupInstanceProfile(scope constructs.Construct, id *string, config *Gro
 	j := jsiiProxy_GroupInstanceProfile{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
+		"@cdktn/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,12 +374,12 @@ func NewGroupInstanceProfile(scope constructs.Construct, id *string, config *Gro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/group_instance_profile databricks_group_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/group_instance_profile databricks_group_instance_profile} Resource.
 func NewGroupInstanceProfile_Override(g GroupInstanceProfile, scope constructs.Construct, id *string, config *GroupInstanceProfileConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
+		"@cdktn/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GroupInstanceProfile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GroupInstanceProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GroupInstanceProfile)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -456,7 +456,7 @@ func (j *jsiiProxy_GroupInstanceProfile)SetInstanceProfileId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupInstanceProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GroupInstanceProfile)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +467,7 @@ func (j *jsiiProxy_GroupInstanceProfile)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_GroupInstanceProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GroupInstanceProfile)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,17 +486,17 @@ func (j *jsiiProxy_GroupInstanceProfile)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a GroupInstanceProfile resource upon running "cdktf plan <stack-name>".
-func GroupInstanceProfile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a GroupInstanceProfile resource upon running "cdktn plan <stack-name>".
+func GroupInstanceProfile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateGroupInstanceProfile_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
+		"@cdktn/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -531,7 +531,7 @@ func GroupInstanceProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
+		"@cdktn/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GroupInstanceProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
+		"@cdktn/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func GroupInstanceProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
+		"@cdktn/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func GroupInstanceProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
+		"@cdktn/provider-databricks.groupInstanceProfile.GroupInstanceProfile",
 		"tfResourceType",
 		&returns,
 	)
@@ -627,11 +627,11 @@ func (g *jsiiProxy_GroupInstanceProfile) GetAnyMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (g *jsiiProxy_GroupInstanceProfile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GroupInstanceProfile) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -768,7 +768,7 @@ func (g *jsiiProxy_GroupInstanceProfile) HasResourceMove() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GroupInstanceProfile) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (g *jsiiProxy_GroupInstanceProfile) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -779,11 +779,11 @@ func (g *jsiiProxy_GroupInstanceProfile) ImportFrom(id *string, provider cdktf.T
 	)
 }
 
-func (g *jsiiProxy_GroupInstanceProfile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GroupInstanceProfile) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,

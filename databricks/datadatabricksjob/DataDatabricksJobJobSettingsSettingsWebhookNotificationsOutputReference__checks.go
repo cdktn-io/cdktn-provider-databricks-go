@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded:
 		value := value.(*[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded)
@@ -117,7 +117,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure:
 		value := value.(*[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure)
@@ -148,7 +148,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart:
 		value := value.(*[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart)
@@ -179,7 +179,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -191,7 +191,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceeded:
 		value := value.(*[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceeded)
@@ -210,7 +210,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceeded; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceeded; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -222,7 +222,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess:
 		value := value.(*[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess)
@@ -241,14 +241,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -337,7 +337,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 	return nil
 }
 
-func validateNewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

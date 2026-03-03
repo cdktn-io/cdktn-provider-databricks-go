@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package defaultnamespacesetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/defaultnamespacesetting/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/defaultnamespacesetting/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DefaultNamespaceSettingNamespaceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type DefaultNamespaceSettingNamespaceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -48,7 +48,7 @@ type DefaultNamespaceSettingNamespaceOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type DefaultNamespaceSettingNamespaceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type DefaultNamespaceSettingNamespaceOutputReference interface {
 
 // The jsii proxy struct for DefaultNamespaceSettingNamespaceOutputReference
 type jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) ComplexObjectIndex() interface{} {
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) ValueInput()
 }
 
 
-func NewDefaultNamespaceSettingNamespaceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DefaultNamespaceSettingNamespaceOutputReference {
+func NewDefaultNamespaceSettingNamespaceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DefaultNamespaceSettingNamespaceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDefaultNamespaceSettingNamespaceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewDefaultNamespaceSettingNamespaceOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespaceOutputReference",
+		"@cdktn/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewDefaultNamespaceSettingNamespaceOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewDefaultNamespaceSettingNamespaceOutputReference_Override(d DefaultNamespaceSettingNamespaceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDefaultNamespaceSettingNamespaceOutputReference_Override(d DefaultNamespaceSettingNamespaceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespaceOutputReference",
+		"@cdktn/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -245,7 +245,7 @@ func (j *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -424,8 +424,8 @@ func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) GetStringMap
 	return returns
 }
 
-func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -437,11 +437,11 @@ func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) Interpolatio
 	return returns
 }
 
-func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -461,7 +461,7 @@ func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) ResetValue()
 	)
 }
 
-func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DefaultNamespaceSettingNamespaceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -91,6 +91,10 @@ func (l *jsiiProxy_LakehouseMonitor) validatePutNotificationsParameters(value *L
 	return nil
 }
 
+func (l *jsiiProxy_LakehouseMonitor) validatePutProviderConfigParameters(value *LakehouseMonitorProviderConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakehouseMonitor) validatePutScheduleParameters(value *LakehouseMonitorSchedule) error {
 	return nil
 }
@@ -147,7 +151,7 @@ func (j *jsiiProxy_LakehouseMonitor) validateSetLatestMonitorFailureMsgParameter
 	return nil
 }
 
-func (j *jsiiProxy_LakehouseMonitor) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LakehouseMonitor) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
