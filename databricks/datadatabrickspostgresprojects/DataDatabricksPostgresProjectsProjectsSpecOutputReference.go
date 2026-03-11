@@ -38,6 +38,9 @@ type DataDatabricksPostgresProjectsProjectsSpecOutputReference interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EnablePgNativeLogin() interface{}
+	SetEnablePgNativeLogin(val interface{})
+	EnablePgNativeLoginInput() interface{}
 	// Experimental.
 	Fqn() *string
 	HistoryRetentionDuration() *string
@@ -86,6 +89,7 @@ type DataDatabricksPostgresProjectsProjectsSpecOutputReference interface {
 	ResetCustomTags()
 	ResetDefaultEndpointSettings()
 	ResetDisplayName()
+	ResetEnablePgNativeLogin()
 	ResetHistoryRetentionDuration()
 	ResetPgVersion()
 	// Produce the Token's value at resolution time.
@@ -208,6 +212,26 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) Di
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) EnablePgNativeLogin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePgNativeLogin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) EnablePgNativeLoginInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePgNativeLoginInput",
 		&returns,
 	)
 	return returns
@@ -361,6 +385,17 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference)Set
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference)SetEnablePgNativeLogin(val interface{}) {
+	if err := j.validateSetEnablePgNativeLoginParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePgNativeLogin",
 		val,
 	)
 }
@@ -656,6 +691,14 @@ func (d *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) Re
 	_jsii_.InvokeVoid(
 		d,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) ResetEnablePgNativeLogin() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnablePgNativeLogin",
 		nil, // no parameters
 	)
 }

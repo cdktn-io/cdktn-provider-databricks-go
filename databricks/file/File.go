@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file databricks_file}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/file databricks_file}.
 type File interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -147,6 +147,15 @@ type File interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for File
@@ -475,7 +484,7 @@ func (j *jsiiProxy_File) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file databricks_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/file databricks_file} Resource.
 func NewFile(scope constructs.Construct, id *string, config *FileConfig) File {
 	_init_.Initialize()
 
@@ -493,7 +502,7 @@ func NewFile(scope constructs.Construct, id *string, config *FileConfig) File {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file databricks_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/file databricks_file} Resource.
 func NewFile_Override(f File, scope constructs.Construct, id *string, config *FileConfig) {
 	_init_.Initialize()
 
@@ -1130,6 +1139,24 @@ func (f *jsiiProxy_File) ToTerraform() interface{} {
 		f,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_File) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		f,
+		"with",
+		args,
 		&returns,
 	)
 

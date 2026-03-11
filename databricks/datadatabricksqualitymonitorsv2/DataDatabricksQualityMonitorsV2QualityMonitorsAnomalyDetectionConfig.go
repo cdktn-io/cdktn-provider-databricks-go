@@ -5,7 +5,7 @@ package datadatabricksqualitymonitorsv2
 
 
 type DataDatabricksQualityMonitorsV2QualityMonitorsAnomalyDetectionConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/quality_monitors_v2#excluded_table_full_names DataDatabricksQualityMonitorsV2#excluded_table_full_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/quality_monitors_v2#excluded_table_full_names DataDatabricksQualityMonitorsV2#excluded_table_full_names}.
 	ExcludedTableFullNames *[]*string `field:"optional" json:"excludedTableFullNames" yaml:"excludedTableFullNames"`
 }
 

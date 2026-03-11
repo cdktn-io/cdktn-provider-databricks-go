@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/token databricks_token}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/token databricks_token}.
 type Token interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -147,6 +147,15 @@ type Token interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Token
@@ -465,7 +474,7 @@ func (j *jsiiProxy_Token) TokenValue() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/token databricks_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/token databricks_token} Resource.
 func NewToken(scope constructs.Construct, id *string, config *TokenConfig) Token {
 	_init_.Initialize()
 
@@ -483,7 +492,7 @@ func NewToken(scope constructs.Construct, id *string, config *TokenConfig) Token
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/token databricks_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/token databricks_token} Resource.
 func NewToken_Override(t Token, scope constructs.Construct, id *string, config *TokenConfig) {
 	_init_.Initialize()
 
@@ -1128,6 +1137,24 @@ func (t *jsiiProxy_Token) ToTerraform() interface{} {
 		t,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_Token) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		t,
+		"with",
+		args,
 		&returns,
 	)
 

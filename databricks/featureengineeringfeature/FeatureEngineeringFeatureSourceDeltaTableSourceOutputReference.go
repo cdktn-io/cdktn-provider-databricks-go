@@ -28,9 +28,15 @@ type FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataframeSchema() *string
+	SetDataframeSchema(val *string)
+	DataframeSchemaInput() *string
 	EntityColumns() *[]*string
 	SetEntityColumns(val *[]*string)
 	EntityColumnsInput() *[]*string
+	FilterCondition() *string
+	SetFilterCondition(val *string)
+	FilterConditionInput() *string
 	// Experimental.
 	Fqn() *string
 	FullName() *string
@@ -49,6 +55,9 @@ type FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference interface {
 	TimeseriesColumn() *string
 	SetTimeseriesColumn(val *string)
 	TimeseriesColumnInput() *string
+	TransformationSql() *string
+	SetTransformationSql(val *string)
+	TransformationSqlInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +82,9 @@ type FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDataframeSchema()
+	ResetFilterCondition()
+	ResetTransformationSql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -118,6 +130,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) DataframeSchema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataframeSchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) DataframeSchemaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataframeSchemaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) EntityColumns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -133,6 +165,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	_jsii_.Get(
 		j,
 		"entityColumnsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) FilterCondition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterCondition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) FilterConditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterConditionInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +270,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) TransformationSql() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformationSql",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) TransformationSqlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformationSqlInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference {
 	_init_.Initialize()
@@ -268,6 +340,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference)SetDataframeSchema(val *string) {
+	if err := j.validateSetDataframeSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataframeSchema",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference)SetEntityColumns(val *[]*string) {
 	if err := j.validateSetEntityColumnsParameters(val); err != nil {
 		panic(err)
@@ -275,6 +358,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	_jsii_.Set(
 		j,
 		"entityColumns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference)SetFilterCondition(val *string) {
+	if err := j.validateSetFilterConditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterCondition",
 		val,
 	)
 }
@@ -330,6 +424,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	_jsii_.Set(
 		j,
 		"timeseriesColumn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference)SetTransformationSql(val *string) {
+	if err := j.validateSetTransformationSqlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transformationSql",
 		val,
 	)
 }
@@ -518,6 +623,30 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) ResetDataframeSchema() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDataframeSchema",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) ResetFilterCondition() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) ResetTransformationSql() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTransformationSql",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

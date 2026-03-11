@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query databricks_query}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/query databricks_query}.
 type Query interface {
 	cdktn.TerraformResource
 	ApplyAutoLimit() interface{}
@@ -172,6 +172,15 @@ type Query interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Query
@@ -650,7 +659,7 @@ func (j *jsiiProxy_Query) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query databricks_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/query databricks_query} Resource.
 func NewQuery(scope constructs.Construct, id *string, config *QueryConfig) Query {
 	_init_.Initialize()
 
@@ -668,7 +677,7 @@ func NewQuery(scope constructs.Construct, id *string, config *QueryConfig) Query
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query databricks_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/query databricks_query} Resource.
 func NewQuery_Override(q Query, scope constructs.Construct, id *string, config *QueryConfig) {
 	_init_.Initialize()
 
@@ -1403,6 +1412,24 @@ func (q *jsiiProxy_Query) ToTerraform() interface{} {
 		q,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (q *jsiiProxy_Query) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		q,
+		"with",
+		args,
 		&returns,
 	)
 

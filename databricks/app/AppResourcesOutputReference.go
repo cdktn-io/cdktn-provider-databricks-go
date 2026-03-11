@@ -48,6 +48,8 @@ type AppResourcesOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Postgres() AppResourcesPostgresOutputReference
+	PostgresInput() interface{}
 	Secret() AppResourcesSecretOutputReference
 	SecretInput() interface{}
 	ServingEndpoint() AppResourcesServingEndpointOutputReference
@@ -93,6 +95,7 @@ type AppResourcesOutputReference interface {
 	PutExperiment(value *AppResourcesExperiment)
 	PutGenieSpace(value *AppResourcesGenieSpace)
 	PutJob(value *AppResourcesJob)
+	PutPostgres(value *AppResourcesPostgres)
 	PutSecret(value *AppResourcesSecret)
 	PutServingEndpoint(value *AppResourcesServingEndpoint)
 	PutSqlWarehouse(value *AppResourcesSqlWarehouse)
@@ -103,6 +106,7 @@ type AppResourcesOutputReference interface {
 	ResetExperiment()
 	ResetGenieSpace()
 	ResetJob()
+	ResetPostgres()
 	ResetSecret()
 	ResetServingEndpoint()
 	ResetSqlWarehouse()
@@ -307,6 +311,26 @@ func (j *jsiiProxy_AppResourcesOutputReference) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesOutputReference) Postgres() AppResourcesPostgresOutputReference {
+	var returns AppResourcesPostgresOutputReference
+	_jsii_.Get(
+		j,
+		"postgres",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesOutputReference) PostgresInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"postgresInput",
 		&returns,
 	)
 	return returns
@@ -758,6 +782,17 @@ func (a *jsiiProxy_AppResourcesOutputReference) PutJob(value *AppResourcesJob) {
 	)
 }
 
+func (a *jsiiProxy_AppResourcesOutputReference) PutPostgres(value *AppResourcesPostgres) {
+	if err := a.validatePutPostgresParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPostgres",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppResourcesOutputReference) PutSecret(value *AppResourcesSecret) {
 	if err := a.validatePutSecretParameters(value); err != nil {
 		panic(err)
@@ -846,6 +881,14 @@ func (a *jsiiProxy_AppResourcesOutputReference) ResetJob() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetJob",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppResourcesOutputReference) ResetPostgres() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPostgres",
 		nil, // no parameters
 	)
 }

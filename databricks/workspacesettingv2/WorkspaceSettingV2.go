@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}.
 type WorkspaceSettingV2 interface {
 	cdktn.TerraformResource
 	AibiDashboardEmbeddingAccessPolicy() WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -181,6 +181,15 @@ type WorkspaceSettingV2 interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for WorkspaceSettingV2
@@ -679,7 +688,7 @@ func (j *jsiiProxy_WorkspaceSettingV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
 func NewWorkspaceSettingV2(scope constructs.Construct, id *string, config *WorkspaceSettingV2Config) WorkspaceSettingV2 {
 	_init_.Initialize()
 
@@ -697,7 +706,7 @@ func NewWorkspaceSettingV2(scope constructs.Construct, id *string, config *Works
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
 func NewWorkspaceSettingV2_Override(w WorkspaceSettingV2, scope constructs.Construct, id *string, config *WorkspaceSettingV2Config) {
 	_init_.Initialize()
 
@@ -1494,6 +1503,24 @@ func (w *jsiiProxy_WorkspaceSettingV2) ToTerraform() interface{} {
 		w,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspaceSettingV2) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		w,
+		"with",
+		args,
 		&returns,
 	)
 

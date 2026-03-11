@@ -215,6 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usagePolicyIdInput", GoGetter: "UsagePolicyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookNotifications", GoGetter: "WebhookNotifications"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookNotificationsInput", GoGetter: "WebhookNotificationsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Job{}

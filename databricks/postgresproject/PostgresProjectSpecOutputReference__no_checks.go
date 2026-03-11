@@ -75,6 +75,10 @@ func (j *jsiiProxy_PostgresProjectSpecOutputReference) validateSetDisplayNamePar
 	return nil
 }
 
+func (j *jsiiProxy_PostgresProjectSpecOutputReference) validateSetEnablePgNativeLoginParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresProjectSpecOutputReference) validateSetHistoryRetentionDurationParameters(val *string) error {
 	return nil
 }

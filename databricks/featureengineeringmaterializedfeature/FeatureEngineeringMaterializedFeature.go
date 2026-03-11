@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
 type FeatureEngineeringMaterializedFeature interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -51,6 +51,8 @@ type FeatureEngineeringMaterializedFeature interface {
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaterializedFeatureId() *string
+	SetMaterializedFeatureId(val *string)
+	MaterializedFeatureIdInput() *string
 	// The tree node.
 	Node() constructs.Node
 	OfflineStoreConfig() FeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference
@@ -126,6 +128,7 @@ type FeatureEngineeringMaterializedFeature interface {
 	PutOnlineStoreConfig(value *FeatureEngineeringMaterializedFeatureOnlineStoreConfig)
 	PutProviderConfig(value *FeatureEngineeringMaterializedFeatureProviderConfig)
 	ResetCronSchedule()
+	ResetMaterializedFeatureId()
 	ResetOfflineStoreConfig()
 	ResetOnlineStoreConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -144,6 +147,15 @@ type FeatureEngineeringMaterializedFeature interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for FeatureEngineeringMaterializedFeature
@@ -296,6 +308,16 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) MaterializedFeatureId(
 	_jsii_.Get(
 		j,
 		"materializedFeatureId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) MaterializedFeatureIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"materializedFeatureIdInput",
 		&returns,
 	)
 	return returns
@@ -462,7 +484,7 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
 func NewFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *string, config *FeatureEngineeringMaterializedFeatureConfig) FeatureEngineeringMaterializedFeature {
 	_init_.Initialize()
 
@@ -480,7 +502,7 @@ func NewFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
 func NewFeatureEngineeringMaterializedFeature_Override(f FeatureEngineeringMaterializedFeature, scope constructs.Construct, id *string, config *FeatureEngineeringMaterializedFeatureConfig) {
 	_init_.Initialize()
 
@@ -558,6 +580,17 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetLifecycle(val *cdktn
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetMaterializedFeatureId(val *string) {
+	if err := j.validateSetMaterializedFeatureIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"materializedFeatureId",
 		val,
 	)
 }
@@ -986,6 +1019,14 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetCronSchedule() {
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetMaterializedFeatureId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetMaterializedFeatureId",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetOfflineStoreConfig() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1098,6 +1139,24 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ToTerraform() interfac
 		f,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		f,
+		"with",
+		args,
 		&returns,
 	)
 

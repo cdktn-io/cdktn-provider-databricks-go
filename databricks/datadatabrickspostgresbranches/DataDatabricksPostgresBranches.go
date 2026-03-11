@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_branches databricks_postgres_branches}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_branches databricks_postgres_branches}.
 type DataDatabricksPostgresBranches interface {
 	cdktn.TerraformDataSource
 	Branches() DataDatabricksPostgresBranchesBranchesList
@@ -105,6 +105,15 @@ type DataDatabricksPostgresBranches interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksPostgresBranches
@@ -323,7 +332,7 @@ func (j *jsiiProxy_DataDatabricksPostgresBranches) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_branches databricks_postgres_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_branches databricks_postgres_branches} Data Source.
 func NewDataDatabricksPostgresBranches(scope constructs.Construct, id *string, config *DataDatabricksPostgresBranchesConfig) DataDatabricksPostgresBranches {
 	_init_.Initialize()
 
@@ -341,7 +350,7 @@ func NewDataDatabricksPostgresBranches(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_branches databricks_postgres_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_branches databricks_postgres_branches} Data Source.
 func NewDataDatabricksPostgresBranches_Override(d DataDatabricksPostgresBranches, scope constructs.Construct, id *string, config *DataDatabricksPostgresBranchesConfig) {
 	_init_.Initialize()
 
@@ -812,6 +821,24 @@ func (d *jsiiProxy_DataDatabricksPostgresBranches) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresBranches) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

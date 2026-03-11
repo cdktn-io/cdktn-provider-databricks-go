@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutJobP
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutPostgresParameters(value *DataDatabricksAppAppResourcesPostgres) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutSecretParameters(value *DataDatabricksAppAppResourcesSecret) error {
 	return nil
 }

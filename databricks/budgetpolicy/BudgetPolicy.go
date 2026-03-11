@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget_policy databricks_budget_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/budget_policy databricks_budget_policy}.
 type BudgetPolicy interface {
 	cdktn.TerraformResource
 	BindingWorkspaceIds() *[]*float64
@@ -134,6 +134,15 @@ type BudgetPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for BudgetPolicy
@@ -382,7 +391,7 @@ func (j *jsiiProxy_BudgetPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget_policy databricks_budget_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/budget_policy databricks_budget_policy} Resource.
 func NewBudgetPolicy(scope constructs.Construct, id *string, config *BudgetPolicyConfig) BudgetPolicy {
 	_init_.Initialize()
 
@@ -400,7 +409,7 @@ func NewBudgetPolicy(scope constructs.Construct, id *string, config *BudgetPolic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget_policy databricks_budget_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/budget_policy databricks_budget_policy} Resource.
 func NewBudgetPolicy_Override(b BudgetPolicy, scope constructs.Construct, id *string, config *BudgetPolicyConfig) {
 	_init_.Initialize()
 
@@ -988,6 +997,24 @@ func (b *jsiiProxy_BudgetPolicy) ToTerraform() interface{} {
 		b,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		b,
+		"with",
+		args,
 		&returns,
 	)
 

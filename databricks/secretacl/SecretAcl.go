@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/secret_acl databricks_secret_acl}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/secret_acl databricks_secret_acl}.
 type SecretAcl interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -135,6 +135,15 @@ type SecretAcl interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SecretAcl
@@ -403,7 +412,7 @@ func (j *jsiiProxy_SecretAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/secret_acl databricks_secret_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/secret_acl databricks_secret_acl} Resource.
 func NewSecretAcl(scope constructs.Construct, id *string, config *SecretAclConfig) SecretAcl {
 	_init_.Initialize()
 
@@ -421,7 +430,7 @@ func NewSecretAcl(scope constructs.Construct, id *string, config *SecretAclConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/secret_acl databricks_secret_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/secret_acl databricks_secret_acl} Resource.
 func NewSecretAcl_Override(s SecretAcl, scope constructs.Construct, id *string, config *SecretAclConfig) {
 	_init_.Initialize()
 
@@ -1004,6 +1013,24 @@ func (s *jsiiProxy_SecretAcl) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecretAcl) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

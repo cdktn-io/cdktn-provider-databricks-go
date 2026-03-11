@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model databricks_registered_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/registered_model databricks_registered_model}.
 type RegisteredModel interface {
 	cdktn.TerraformResource
 	Aliases() RegisteredModelAliasesList
@@ -182,6 +182,15 @@ type RegisteredModel interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for RegisteredModel
@@ -670,7 +679,7 @@ func (j *jsiiProxy_RegisteredModel) UpdatedByInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model databricks_registered_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/registered_model databricks_registered_model} Resource.
 func NewRegisteredModel(scope constructs.Construct, id *string, config *RegisteredModelConfig) RegisteredModel {
 	_init_.Initialize()
 
@@ -688,7 +697,7 @@ func NewRegisteredModel(scope constructs.Construct, id *string, config *Register
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model databricks_registered_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/registered_model databricks_registered_model} Resource.
 func NewRegisteredModel_Override(r RegisteredModel, scope constructs.Construct, id *string, config *RegisteredModelConfig) {
 	_init_.Initialize()
 
@@ -1504,6 +1513,24 @@ func (r *jsiiProxy_RegisteredModel) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RegisteredModel) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

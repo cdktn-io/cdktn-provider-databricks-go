@@ -123,6 +123,10 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetLifecyclePa
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetMaterializedFeatureIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetPipelineScheduleStateParameters(val *string) error {
 	return nil
 }

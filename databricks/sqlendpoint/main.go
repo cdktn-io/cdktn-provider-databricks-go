@@ -115,6 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseType", GoGetter: "WarehouseType"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseTypeInput", GoGetter: "WarehouseTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpoint{}

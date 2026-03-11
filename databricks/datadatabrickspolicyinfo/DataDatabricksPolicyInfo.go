@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info databricks_policy_info}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/policy_info databricks_policy_info}.
 type DataDatabricksPolicyInfo interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -120,6 +120,15 @@ type DataDatabricksPolicyInfo interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksPolicyInfo
@@ -488,7 +497,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfo) WhenCondition() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
 func NewDataDatabricksPolicyInfo(scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) DataDatabricksPolicyInfo {
 	_init_.Initialize()
 
@@ -506,7 +515,7 @@ func NewDataDatabricksPolicyInfo(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
 func NewDataDatabricksPolicyInfo_Override(d DataDatabricksPolicyInfo, scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) {
 	_init_.Initialize()
 
@@ -980,6 +989,24 @@ func (d *jsiiProxy_DataDatabricksPolicyInfo) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfo) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

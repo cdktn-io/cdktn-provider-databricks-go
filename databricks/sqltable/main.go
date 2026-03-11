@@ -112,6 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "viewDefinitionInput", GoGetter: "ViewDefinitionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseId", GoGetter: "WarehouseId"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseIdInput", GoGetter: "WarehouseIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlTable{}

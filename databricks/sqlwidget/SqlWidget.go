@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget databricks_sql_widget}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_widget databricks_sql_widget}.
 type SqlWidget interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -157,6 +157,15 @@ type SqlWidget interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SqlWidget
@@ -525,7 +534,7 @@ func (j *jsiiProxy_SqlWidget) WidgetIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget databricks_sql_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_widget databricks_sql_widget} Resource.
 func NewSqlWidget(scope constructs.Construct, id *string, config *SqlWidgetConfig) SqlWidget {
 	_init_.Initialize()
 
@@ -543,7 +552,7 @@ func NewSqlWidget(scope constructs.Construct, id *string, config *SqlWidgetConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget databricks_sql_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_widget databricks_sql_widget} Resource.
 func NewSqlWidget_Override(s SqlWidget, scope constructs.Construct, id *string, config *SqlWidgetConfig) {
 	_init_.Initialize()
 
@@ -1237,6 +1246,24 @@ func (s *jsiiProxy_SqlWidget) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SqlWidget) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

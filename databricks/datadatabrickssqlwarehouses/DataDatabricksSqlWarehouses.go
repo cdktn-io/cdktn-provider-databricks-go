@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouses databricks_sql_warehouses}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/sql_warehouses databricks_sql_warehouses}.
 type DataDatabricksSqlWarehouses interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -109,6 +109,15 @@ type DataDatabricksSqlWarehouses interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksSqlWarehouses
@@ -337,7 +346,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouses) WarehouseNameContainsInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouses databricks_sql_warehouses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/sql_warehouses databricks_sql_warehouses} Data Source.
 func NewDataDatabricksSqlWarehouses(scope constructs.Construct, id *string, config *DataDatabricksSqlWarehousesConfig) DataDatabricksSqlWarehouses {
 	_init_.Initialize()
 
@@ -355,7 +364,7 @@ func NewDataDatabricksSqlWarehouses(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouses databricks_sql_warehouses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/sql_warehouses databricks_sql_warehouses} Data Source.
 func NewDataDatabricksSqlWarehouses_Override(d DataDatabricksSqlWarehouses, scope constructs.Construct, id *string, config *DataDatabricksSqlWarehousesConfig) {
 	_init_.Initialize()
 
@@ -853,6 +862,24 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouses) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouses) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}.
 type DisableLegacyFeaturesSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -137,6 +137,15 @@ type DisableLegacyFeaturesSetting interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DisableLegacyFeaturesSetting
@@ -405,7 +414,7 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
 func NewDisableLegacyFeaturesSetting(scope constructs.Construct, id *string, config *DisableLegacyFeaturesSettingConfig) DisableLegacyFeaturesSetting {
 	_init_.Initialize()
 
@@ -423,7 +432,7 @@ func NewDisableLegacyFeaturesSetting(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
 func NewDisableLegacyFeaturesSetting_Override(d DisableLegacyFeaturesSetting, scope constructs.Construct, id *string, config *DisableLegacyFeaturesSettingConfig) {
 	_init_.Initialize()
 
@@ -1022,6 +1031,24 @@ func (d *jsiiProxy_DisableLegacyFeaturesSetting) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DisableLegacyFeaturesSetting) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

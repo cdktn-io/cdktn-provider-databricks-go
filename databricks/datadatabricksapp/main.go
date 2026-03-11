@@ -54,6 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksApp{}
@@ -523,12 +524,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pendingDeployment", GoGetter: "PendingDeployment"},
 			_jsii_.MemberMethod{JsiiMethod: "putGitRepository", GoMethod: "PutGitRepository"},
 			_jsii_.MemberMethod{JsiiMethod: "putResources", GoMethod: "PutResources"},
+			_jsii_.MemberMethod{JsiiMethod: "putTelemetryExportDestinations", GoMethod: "PutTelemetryExportDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBudgetPolicyId", GoMethod: "ResetBudgetPolicyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComputeSize", GoMethod: "ResetComputeSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGitRepository", GoMethod: "ResetGitRepository"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResources", GoMethod: "ResetResources"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSpace", GoMethod: "ResetSpace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTelemetryExportDestinations", GoMethod: "ResetTelemetryExportDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsagePolicyId", GoMethod: "ResetUsagePolicyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserApiScopes", GoMethod: "ResetUserApiScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -539,6 +542,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "servicePrincipalName", GoGetter: "ServicePrincipalName"},
 			_jsii_.MemberProperty{JsiiProperty: "space", GoGetter: "Space"},
 			_jsii_.MemberProperty{JsiiProperty: "spaceInput", GoGetter: "SpaceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "telemetryExportDestinations", GoGetter: "TelemetryExportDestinations"},
+			_jsii_.MemberProperty{JsiiProperty: "telemetryExportDestinationsInput", GoGetter: "TelemetryExportDestinationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -1112,11 +1117,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jobInput", GoGetter: "JobInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "postgres", GoGetter: "Postgres"},
+			_jsii_.MemberProperty{JsiiProperty: "postgresInput", GoGetter: "PostgresInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putApp", GoMethod: "PutApp"},
 			_jsii_.MemberMethod{JsiiMethod: "putDatabase", GoMethod: "PutDatabase"},
 			_jsii_.MemberMethod{JsiiMethod: "putExperiment", GoMethod: "PutExperiment"},
 			_jsii_.MemberMethod{JsiiMethod: "putGenieSpace", GoMethod: "PutGenieSpace"},
 			_jsii_.MemberMethod{JsiiMethod: "putJob", GoMethod: "PutJob"},
+			_jsii_.MemberMethod{JsiiMethod: "putPostgres", GoMethod: "PutPostgres"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecret", GoMethod: "PutSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "putServingEndpoint", GoMethod: "PutServingEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "putSqlWarehouse", GoMethod: "PutSqlWarehouse"},
@@ -1127,6 +1135,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetExperiment", GoMethod: "ResetExperiment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGenieSpace", GoMethod: "ResetGenieSpace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJob", GoMethod: "ResetJob"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPostgres", GoMethod: "ResetPostgres"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecret", GoMethod: "ResetSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServingEndpoint", GoMethod: "ResetServingEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlWarehouse", GoMethod: "ResetSqlWarehouse"},
@@ -1146,6 +1155,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksAppAppResourcesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksApp.DataDatabricksAppAppResourcesPostgres",
+		reflect.TypeOf((*DataDatabricksAppAppResourcesPostgres)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksApp.DataDatabricksAppAppResourcesPostgresOutputReference",
+		reflect.TypeOf((*DataDatabricksAppAppResourcesPostgresOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
+			_jsii_.MemberProperty{JsiiProperty: "branchInput", GoGetter: "BranchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "database", GoGetter: "Database"},
+			_jsii_.MemberProperty{JsiiProperty: "databaseInput", GoGetter: "DatabaseInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "permission", GoGetter: "Permission"},
+			_jsii_.MemberProperty{JsiiProperty: "permissionInput", GoGetter: "PermissionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBranch", GoMethod: "ResetBranch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDatabase", GoMethod: "ResetDatabase"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPermission", GoMethod: "ResetPermission"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAppAppResourcesPostgresOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -1311,6 +1365,110 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksAppAppResourcesUcSecurableOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksApp.DataDatabricksAppAppTelemetryExportDestinations",
+		reflect.TypeOf((*DataDatabricksAppAppTelemetryExportDestinations)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksApp.DataDatabricksAppAppTelemetryExportDestinationsList",
+		reflect.TypeOf((*DataDatabricksAppAppTelemetryExportDestinationsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAppAppTelemetryExportDestinationsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksApp.DataDatabricksAppAppTelemetryExportDestinationsOutputReference",
+		reflect.TypeOf((*DataDatabricksAppAppTelemetryExportDestinationsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putUnityCatalog", GoMethod: "PutUnityCatalog"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUnityCatalog", GoMethod: "ResetUnityCatalog"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "unityCatalog", GoGetter: "UnityCatalog"},
+			_jsii_.MemberProperty{JsiiProperty: "unityCatalogInput", GoGetter: "UnityCatalogInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAppAppTelemetryExportDestinationsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksApp.DataDatabricksAppAppTelemetryExportDestinationsUnityCatalog",
+		reflect.TypeOf((*DataDatabricksAppAppTelemetryExportDestinationsUnityCatalog)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksApp.DataDatabricksAppAppTelemetryExportDestinationsUnityCatalogOutputReference",
+		reflect.TypeOf((*DataDatabricksAppAppTelemetryExportDestinationsUnityCatalogOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "logsTable", GoGetter: "LogsTable"},
+			_jsii_.MemberProperty{JsiiProperty: "logsTableInput", GoGetter: "LogsTableInput"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsTable", GoGetter: "MetricsTable"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsTableInput", GoGetter: "MetricsTableInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "tracesTable", GoGetter: "TracesTable"},
+			_jsii_.MemberProperty{JsiiProperty: "tracesTableInput", GoGetter: "TracesTableInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAppAppTelemetryExportDestinationsUnityCatalogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

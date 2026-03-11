@@ -61,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "unityCatalogIamArn", GoGetter: "UnityCatalogIamArn"},
 			_jsii_.MemberProperty{JsiiProperty: "unityCatalogIamArnInput", GoGetter: "UnityCatalogIamArnInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy{}

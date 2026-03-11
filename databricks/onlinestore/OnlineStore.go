@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_store databricks_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/online_store databricks_online_store}.
 type OnlineStore interface {
 	cdktn.TerraformResource
 	Capacity() *string
@@ -139,6 +139,15 @@ type OnlineStore interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for OnlineStore
@@ -437,7 +446,7 @@ func (j *jsiiProxy_OnlineStore) UsagePolicyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_store databricks_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/online_store databricks_online_store} Resource.
 func NewOnlineStore(scope constructs.Construct, id *string, config *OnlineStoreConfig) OnlineStore {
 	_init_.Initialize()
 
@@ -455,7 +464,7 @@ func NewOnlineStore(scope constructs.Construct, id *string, config *OnlineStoreC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_store databricks_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/online_store databricks_online_store} Resource.
 func NewOnlineStore_Override(o OnlineStore, scope constructs.Construct, id *string, config *OnlineStoreConfig) {
 	_init_.Initialize()
 
@@ -1046,6 +1055,24 @@ func (o *jsiiProxy_OnlineStore) ToTerraform() interface{} {
 		o,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OnlineStore) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		o,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_model databricks_mlflow_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/mlflow_model databricks_mlflow_model}.
 type MlflowModel interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -138,6 +138,15 @@ type MlflowModel interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MlflowModel
@@ -416,7 +425,7 @@ func (j *jsiiProxy_MlflowModel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
 func NewMlflowModel(scope constructs.Construct, id *string, config *MlflowModelConfig) MlflowModel {
 	_init_.Initialize()
 
@@ -434,7 +443,7 @@ func NewMlflowModel(scope constructs.Construct, id *string, config *MlflowModelC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
 func NewMlflowModel_Override(m MlflowModel, scope constructs.Construct, id *string, config *MlflowModelConfig) {
 	_init_.Initialize()
 
@@ -1033,6 +1042,24 @@ func (m *jsiiProxy_MlflowModel) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MlflowModel) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

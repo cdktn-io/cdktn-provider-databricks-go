@@ -22,9 +22,9 @@ type DataDatabricksExternalMetadataConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_metadata#provider_config DataDatabricksExternalMetadata#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/external_metadata#provider_config DataDatabricksExternalMetadata#provider_config}.
 	ProviderConfig *DataDatabricksExternalMetadataProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

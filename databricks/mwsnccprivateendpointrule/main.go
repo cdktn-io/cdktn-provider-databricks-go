@@ -108,6 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedTimeInput", GoGetter: "UpdatedTimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointId", GoGetter: "VpcEndpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointIdInput", GoGetter: "VpcEndpointIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsNccPrivateEndpointRule{}

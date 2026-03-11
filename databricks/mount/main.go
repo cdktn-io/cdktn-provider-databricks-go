@@ -105,6 +105,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 			_jsii_.MemberProperty{JsiiProperty: "wasb", GoGetter: "Wasb"},
 			_jsii_.MemberProperty{JsiiProperty: "wasbInput", GoGetter: "WasbInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Mount{}

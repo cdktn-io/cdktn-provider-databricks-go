@@ -93,6 +93,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "viewDefinition", GoGetter: "ViewDefinition"},
 			_jsii_.MemberProperty{JsiiProperty: "viewDefinitionInput", GoGetter: "ViewDefinitionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Table{}

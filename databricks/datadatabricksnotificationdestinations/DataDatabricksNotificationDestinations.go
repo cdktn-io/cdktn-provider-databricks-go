@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notification_destinations databricks_notification_destinations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/notification_destinations databricks_notification_destinations}.
 type DataDatabricksNotificationDestinations interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -106,6 +106,15 @@ type DataDatabricksNotificationDestinations interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksNotificationDestinations
@@ -324,7 +333,7 @@ func (j *jsiiProxy_DataDatabricksNotificationDestinations) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
 func NewDataDatabricksNotificationDestinations(scope constructs.Construct, id *string, config *DataDatabricksNotificationDestinationsConfig) DataDatabricksNotificationDestinations {
 	_init_.Initialize()
 
@@ -342,7 +351,7 @@ func NewDataDatabricksNotificationDestinations(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
 func NewDataDatabricksNotificationDestinations_Override(d DataDatabricksNotificationDestinations, scope constructs.Construct, id *string, config *DataDatabricksNotificationDestinationsConfig) {
 	_init_.Initialize()
 
@@ -821,6 +830,24 @@ func (d *jsiiProxy_DataDatabricksNotificationDestinations) ToTerraform() interfa
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksNotificationDestinations) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

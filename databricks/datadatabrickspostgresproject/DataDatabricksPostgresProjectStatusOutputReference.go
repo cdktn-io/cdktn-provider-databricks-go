@@ -33,6 +33,7 @@ type DataDatabricksPostgresProjectStatusOutputReference interface {
 	CustomTags() DataDatabricksPostgresProjectStatusCustomTagsList
 	DefaultEndpointSettings() DataDatabricksPostgresProjectStatusDefaultEndpointSettingsOutputReference
 	DisplayName() *string
+	EnablePgNativeLogin() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	HistoryRetentionDuration() *string
@@ -163,6 +164,16 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectStatusOutputReference) DisplayNa
 	_jsii_.Get(
 		j,
 		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectStatusOutputReference) EnablePgNativeLogin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"enablePgNativeLogin",
 		&returns,
 	)
 	return returns

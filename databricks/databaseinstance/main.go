@@ -109,6 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "usagePolicyId", GoGetter: "UsagePolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "usagePolicyIdInput", GoGetter: "UsagePolicyIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseInstance{}

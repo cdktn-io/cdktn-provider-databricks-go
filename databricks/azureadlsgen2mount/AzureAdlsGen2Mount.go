@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount}.
 type AzureAdlsGen2Mount interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -159,6 +159,15 @@ type AzureAdlsGen2Mount interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AzureAdlsGen2Mount
@@ -577,7 +586,7 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
 func NewAzureAdlsGen2Mount(scope constructs.Construct, id *string, config *AzureAdlsGen2MountConfig) AzureAdlsGen2Mount {
 	_init_.Initialize()
 
@@ -595,7 +604,7 @@ func NewAzureAdlsGen2Mount(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
 func NewAzureAdlsGen2Mount_Override(a AzureAdlsGen2Mount, scope constructs.Construct, id *string, config *AzureAdlsGen2MountConfig) {
 	_init_.Initialize()
 
@@ -1271,6 +1280,24 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AzureAdlsGen2Mount) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

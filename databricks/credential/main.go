@@ -121,6 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedByInput", GoGetter: "UpdatedByInput"},
 			_jsii_.MemberProperty{JsiiProperty: "usedForManagedStorage", GoGetter: "UsedForManagedStorage"},
 			_jsii_.MemberProperty{JsiiProperty: "usedForManagedStorageInput", GoGetter: "UsedForManagedStorageInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Credential{}

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/registered_model databricks_registered_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/registered_model databricks_registered_model}.
 type DataDatabricksRegisteredModel interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -112,6 +112,15 @@ type DataDatabricksRegisteredModel interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksRegisteredModel
@@ -360,7 +369,7 @@ func (j *jsiiProxy_DataDatabricksRegisteredModel) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/registered_model databricks_registered_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/registered_model databricks_registered_model} Data Source.
 func NewDataDatabricksRegisteredModel(scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelConfig) DataDatabricksRegisteredModel {
 	_init_.Initialize()
 
@@ -378,7 +387,7 @@ func NewDataDatabricksRegisteredModel(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/registered_model databricks_registered_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/registered_model databricks_registered_model} Data Source.
 func NewDataDatabricksRegisteredModel_Override(d DataDatabricksRegisteredModel, scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelConfig) {
 	_init_.Initialize()
 
@@ -887,6 +896,24 @@ func (d *jsiiProxy_DataDatabricksRegisteredModel) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksRegisteredModel) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables}.
 type DataDatabricksDatabaseSyncedDatabaseTables interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -105,6 +105,15 @@ type DataDatabricksDatabaseSyncedDatabaseTables interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksDatabaseSyncedDatabaseTables
@@ -323,7 +332,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTables(scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTablesConfig) DataDatabricksDatabaseSyncedDatabaseTables {
 	_init_.Initialize()
 
@@ -341,7 +350,7 @@ func NewDataDatabricksDatabaseSyncedDatabaseTables(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTables_Override(d DataDatabricksDatabaseSyncedDatabaseTables, scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTablesConfig) {
 	_init_.Initialize()
 
@@ -812,6 +821,24 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) ToTerraform() int
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

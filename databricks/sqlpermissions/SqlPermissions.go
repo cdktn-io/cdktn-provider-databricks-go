@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_permissions databricks_sql_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_permissions databricks_sql_permissions}.
 type SqlPermissions interface {
 	cdktn.TerraformResource
 	AnonymousFunction() interface{}
@@ -154,6 +154,15 @@ type SqlPermissions interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SqlPermissions
@@ -502,7 +511,7 @@ func (j *jsiiProxy_SqlPermissions) ViewInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
 func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermissionsConfig) SqlPermissions {
 	_init_.Initialize()
 
@@ -520,7 +529,7 @@ func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
 func NewSqlPermissions_Override(s SqlPermissions, scope constructs.Construct, id *string, config *SqlPermissionsConfig) {
 	_init_.Initialize()
 
@@ -1203,6 +1212,24 @@ func (s *jsiiProxy_SqlPermissions) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SqlPermissions) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

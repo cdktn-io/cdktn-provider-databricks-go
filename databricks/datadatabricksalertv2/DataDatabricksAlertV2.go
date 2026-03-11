@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/alert_v2 databricks_alert_v2}.
 type DataDatabricksAlertV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -115,6 +115,15 @@ type DataDatabricksAlertV2 interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksAlertV2
@@ -453,7 +462,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2) WarehouseId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) DataDatabricksAlertV2 {
 	_init_.Initialize()
 
@@ -471,7 +480,7 @@ func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2_Override(d DataDatabricksAlertV2, scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) {
 	_init_.Initialize()
 
@@ -923,6 +932,24 @@ func (d *jsiiProxy_DataDatabricksAlertV2) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksAlertV2) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

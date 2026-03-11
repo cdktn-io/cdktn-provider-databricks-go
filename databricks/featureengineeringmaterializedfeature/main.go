@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lastMaterializationTime", GoGetter: "LastMaterializationTime"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "materializedFeatureId", GoGetter: "MaterializedFeatureId"},
+			_jsii_.MemberProperty{JsiiProperty: "materializedFeatureIdInput", GoGetter: "MaterializedFeatureIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -63,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCronSchedule", GoMethod: "ResetCronSchedule"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaterializedFeatureId", GoMethod: "ResetMaterializedFeatureId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOfflineStoreConfig", GoMethod: "ResetOfflineStoreConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnlineStoreConfig", GoMethod: "ResetOnlineStoreConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -78,6 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_FeatureEngineeringMaterializedFeature{}

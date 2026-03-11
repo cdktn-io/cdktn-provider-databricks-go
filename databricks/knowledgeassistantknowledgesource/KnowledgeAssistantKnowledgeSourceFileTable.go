@@ -1,0 +1,13 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package knowledgeassistantknowledgesource
+
+
+type KnowledgeAssistantKnowledgeSourceFileTable struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/knowledge_assistant_knowledge_source#file_col KnowledgeAssistantKnowledgeSource#file_col}.
+	FileCol *string `field:"required" json:"fileCol" yaml:"fileCol"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/knowledge_assistant_knowledge_source#table_name KnowledgeAssistantKnowledgeSource#table_name}.
+	TableName *string `field:"required" json:"tableName" yaml:"tableName"`
+}
+

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/quality_monitor databricks_quality_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/quality_monitor databricks_quality_monitor}.
 type QualityMonitor interface {
 	cdktn.TerraformResource
 	AssetsDir() *string
@@ -188,6 +188,15 @@ type QualityMonitor interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for QualityMonitor
@@ -746,7 +755,7 @@ func (j *jsiiProxy_QualityMonitor) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
 func NewQualityMonitor(scope constructs.Construct, id *string, config *QualityMonitorConfig) QualityMonitor {
 	_init_.Initialize()
 
@@ -764,7 +773,7 @@ func NewQualityMonitor(scope constructs.Construct, id *string, config *QualityMo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
 func NewQualityMonitor_Override(q QualityMonitor, scope constructs.Construct, id *string, config *QualityMonitorConfig) {
 	_init_.Initialize()
 
@@ -1575,6 +1584,24 @@ func (q *jsiiProxy_QualityMonitor) ToTerraform() interface{} {
 		q,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (q *jsiiProxy_QualityMonitor) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		q,
+		"with",
+		args,
 		&returns,
 	)
 

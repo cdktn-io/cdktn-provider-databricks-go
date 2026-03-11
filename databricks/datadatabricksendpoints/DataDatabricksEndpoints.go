@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/endpoints databricks_endpoints}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/endpoints databricks_endpoints}.
 type DataDatabricksEndpoints interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -101,6 +101,15 @@ type DataDatabricksEndpoints interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksEndpoints
@@ -299,7 +308,7 @@ func (j *jsiiProxy_DataDatabricksEndpoints) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/endpoints databricks_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/endpoints databricks_endpoints} Data Source.
 func NewDataDatabricksEndpoints(scope constructs.Construct, id *string, config *DataDatabricksEndpointsConfig) DataDatabricksEndpoints {
 	_init_.Initialize()
 
@@ -317,7 +326,7 @@ func NewDataDatabricksEndpoints(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/endpoints databricks_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/endpoints databricks_endpoints} Data Source.
 func NewDataDatabricksEndpoints_Override(d DataDatabricksEndpoints, scope constructs.Construct, id *string, config *DataDatabricksEndpointsConfig) {
 	_init_.Initialize()
 
@@ -769,6 +778,24 @@ func (d *jsiiProxy_DataDatabricksEndpoints) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksEndpoints) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

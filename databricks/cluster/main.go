@@ -194,6 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntime", GoGetter: "UseMlRuntime"},
 			_jsii_.MemberProperty{JsiiProperty: "useMlRuntimeInput", GoGetter: "UseMlRuntimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibility", GoGetter: "WorkerNodeTypeFlexibility"},
 			_jsii_.MemberProperty{JsiiProperty: "workerNodeTypeFlexibilityInput", GoGetter: "WorkerNodeTypeFlexibilityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadType", GoGetter: "WorkloadType"},

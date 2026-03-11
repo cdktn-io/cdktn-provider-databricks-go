@@ -48,6 +48,8 @@ type DataDatabricksAppAppResourcesOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Postgres() DataDatabricksAppAppResourcesPostgresOutputReference
+	PostgresInput() interface{}
 	Secret() DataDatabricksAppAppResourcesSecretOutputReference
 	SecretInput() interface{}
 	ServingEndpoint() DataDatabricksAppAppResourcesServingEndpointOutputReference
@@ -93,6 +95,7 @@ type DataDatabricksAppAppResourcesOutputReference interface {
 	PutExperiment(value *DataDatabricksAppAppResourcesExperiment)
 	PutGenieSpace(value *DataDatabricksAppAppResourcesGenieSpace)
 	PutJob(value *DataDatabricksAppAppResourcesJob)
+	PutPostgres(value *DataDatabricksAppAppResourcesPostgres)
 	PutSecret(value *DataDatabricksAppAppResourcesSecret)
 	PutServingEndpoint(value *DataDatabricksAppAppResourcesServingEndpoint)
 	PutSqlWarehouse(value *DataDatabricksAppAppResourcesSqlWarehouse)
@@ -103,6 +106,7 @@ type DataDatabricksAppAppResourcesOutputReference interface {
 	ResetExperiment()
 	ResetGenieSpace()
 	ResetJob()
+	ResetPostgres()
 	ResetSecret()
 	ResetServingEndpoint()
 	ResetSqlWarehouse()
@@ -307,6 +311,26 @@ func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) NameInput() *st
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) Postgres() DataDatabricksAppAppResourcesPostgresOutputReference {
+	var returns DataDatabricksAppAppResourcesPostgresOutputReference
+	_jsii_.Get(
+		j,
+		"postgres",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) PostgresInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"postgresInput",
 		&returns,
 	)
 	return returns
@@ -758,6 +782,17 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) PutJob(value *D
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) PutPostgres(value *DataDatabricksAppAppResourcesPostgres) {
+	if err := d.validatePutPostgresParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPostgres",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) PutSecret(value *DataDatabricksAppAppResourcesSecret) {
 	if err := d.validatePutSecretParameters(value); err != nil {
 		panic(err)
@@ -846,6 +881,14 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) ResetJob() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetJob",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) ResetPostgres() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPostgres",
 		nil, // no parameters
 	)
 }

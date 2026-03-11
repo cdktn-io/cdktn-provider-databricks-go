@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook databricks_notebook}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/notebook databricks_notebook}.
 type Notebook interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -159,6 +159,15 @@ type Notebook interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Notebook
@@ -547,7 +556,7 @@ func (j *jsiiProxy_Notebook) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig) Notebook {
 	_init_.Initialize()
 
@@ -565,7 +574,7 @@ func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook_Override(n Notebook, scope constructs.Construct, id *string, config *NotebookConfig) {
 	_init_.Initialize()
 
@@ -1259,6 +1268,24 @@ func (n *jsiiProxy_Notebook) ToTerraform() interface{} {
 		n,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_Notebook) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		n,
+		"with",
+		args,
 		&returns,
 	)
 

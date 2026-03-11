@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "useCases", GoGetter: "UseCases"},
 			_jsii_.MemberProperty{JsiiProperty: "useCasesInput", GoGetter: "UseCasesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MwsCustomerManagedKeys{}

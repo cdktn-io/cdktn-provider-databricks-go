@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/apps databricks_apps}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/apps databricks_apps}.
 type DataDatabricksApps interface {
 	cdktn.TerraformDataSource
 	App() DataDatabricksAppsAppList
@@ -98,6 +98,15 @@ type DataDatabricksApps interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksApps
@@ -276,7 +285,7 @@ func (j *jsiiProxy_DataDatabricksApps) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/apps databricks_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/apps databricks_apps} Data Source.
 func NewDataDatabricksApps(scope constructs.Construct, id *string, config *DataDatabricksAppsConfig) DataDatabricksApps {
 	_init_.Initialize()
 
@@ -294,7 +303,7 @@ func NewDataDatabricksApps(scope constructs.Construct, id *string, config *DataD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/apps databricks_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/apps databricks_apps} Data Source.
 func NewDataDatabricksApps_Override(d DataDatabricksApps, scope constructs.Construct, id *string, config *DataDatabricksAppsConfig) {
 	_init_.Initialize()
 
@@ -735,6 +744,24 @@ func (d *jsiiProxy_DataDatabricksApps) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksApps) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

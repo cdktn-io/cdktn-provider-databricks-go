@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting}.
 type DisableLegacyAccessSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -137,6 +137,15 @@ type DisableLegacyAccessSetting interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DisableLegacyAccessSetting
@@ -405,7 +414,7 @@ func (j *jsiiProxy_DisableLegacyAccessSetting) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting} Resource.
 func NewDisableLegacyAccessSetting(scope constructs.Construct, id *string, config *DisableLegacyAccessSettingConfig) DisableLegacyAccessSetting {
 	_init_.Initialize()
 
@@ -423,7 +432,7 @@ func NewDisableLegacyAccessSetting(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting} Resource.
 func NewDisableLegacyAccessSetting_Override(d DisableLegacyAccessSetting, scope constructs.Construct, id *string, config *DisableLegacyAccessSettingConfig) {
 	_init_.Initialize()
 
@@ -1022,6 +1031,24 @@ func (d *jsiiProxy_DisableLegacyAccessSetting) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DisableLegacyAccessSetting) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

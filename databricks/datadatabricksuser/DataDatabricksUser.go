@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/user databricks_user}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/user databricks_user}.
 type DataDatabricksUser interface {
 	cdktn.TerraformDataSource
 	AclPrincipalId() *string
@@ -117,6 +117,15 @@ type DataDatabricksUser interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksUser
@@ -425,7 +434,7 @@ func (j *jsiiProxy_DataDatabricksUser) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/user databricks_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/user databricks_user} Data Source.
 func NewDataDatabricksUser(scope constructs.Construct, id *string, config *DataDatabricksUserConfig) DataDatabricksUser {
 	_init_.Initialize()
 
@@ -443,7 +452,7 @@ func NewDataDatabricksUser(scope constructs.Construct, id *string, config *DataD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/user databricks_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/user databricks_user} Data Source.
 func NewDataDatabricksUser_Override(d DataDatabricksUser, scope constructs.Construct, id *string, config *DataDatabricksUserConfig) {
 	_init_.Initialize()
 
@@ -941,6 +950,24 @@ func (d *jsiiProxy_DataDatabricksUser) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksUser) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

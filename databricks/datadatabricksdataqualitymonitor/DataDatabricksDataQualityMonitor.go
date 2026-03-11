@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor}.
 type DataDatabricksDataQualityMonitor interface {
 	cdktn.TerraformDataSource
 	AnomalyDetectionConfig() DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference
@@ -105,6 +105,15 @@ type DataDatabricksDataQualityMonitor interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksDataQualityMonitor
@@ -333,7 +342,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitor) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
 func NewDataDatabricksDataQualityMonitor(scope constructs.Construct, id *string, config *DataDatabricksDataQualityMonitorConfig) DataDatabricksDataQualityMonitor {
 	_init_.Initialize()
 
@@ -351,7 +360,7 @@ func NewDataDatabricksDataQualityMonitor(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
 func NewDataDatabricksDataQualityMonitor_Override(d DataDatabricksDataQualityMonitor, scope constructs.Construct, id *string, config *DataDatabricksDataQualityMonitorConfig) {
 	_init_.Initialize()
 
@@ -814,6 +823,24 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitor) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksDataQualityMonitor) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

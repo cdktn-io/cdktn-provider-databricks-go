@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/ip_access_list databricks_ip_access_list}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/ip_access_list databricks_ip_access_list}.
 type IpAccessList interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -139,6 +139,15 @@ type IpAccessList interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for IpAccessList
@@ -427,7 +436,7 @@ func (j *jsiiProxy_IpAccessList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/ip_access_list databricks_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/ip_access_list databricks_ip_access_list} Resource.
 func NewIpAccessList(scope constructs.Construct, id *string, config *IpAccessListConfig) IpAccessList {
 	_init_.Initialize()
 
@@ -445,7 +454,7 @@ func NewIpAccessList(scope constructs.Construct, id *string, config *IpAccessLis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/ip_access_list databricks_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/ip_access_list databricks_ip_access_list} Resource.
 func NewIpAccessList_Override(i IpAccessList, scope constructs.Construct, id *string, config *IpAccessListConfig) {
 	_init_.Initialize()
 
@@ -1047,6 +1056,24 @@ func (i *jsiiProxy_IpAccessList) ToTerraform() interface{} {
 		i,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IpAccessList) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		i,
+		"with",
+		args,
 		&returns,
 	)
 

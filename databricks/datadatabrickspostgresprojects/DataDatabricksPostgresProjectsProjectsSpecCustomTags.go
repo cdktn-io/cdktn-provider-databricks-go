@@ -5,9 +5,9 @@ package datadatabrickspostgresprojects
 
 
 type DataDatabricksPostgresProjectsProjectsSpecCustomTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_projects#key DataDatabricksPostgresProjects#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_projects#key DataDatabricksPostgresProjects#key}.
 	Key *string `field:"optional" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_projects#value DataDatabricksPostgresProjects#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_projects#value DataDatabricksPostgresProjects#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

@@ -71,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedTime", GoGetter: "UpdatedTime"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedTimeInput", GoGetter: "UpdatedTimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig{}

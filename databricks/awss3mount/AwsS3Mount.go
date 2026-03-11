@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/aws_s3_mount databricks_aws_s3_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/aws_s3_mount databricks_aws_s3_mount}.
 type AwsS3Mount interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -137,6 +137,15 @@ type AwsS3Mount interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AwsS3Mount
@@ -415,7 +424,7 @@ func (j *jsiiProxy_AwsS3Mount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource.
 func NewAwsS3Mount(scope constructs.Construct, id *string, config *AwsS3MountConfig) AwsS3Mount {
 	_init_.Initialize()
 
@@ -433,7 +442,7 @@ func NewAwsS3Mount(scope constructs.Construct, id *string, config *AwsS3MountCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource.
 func NewAwsS3Mount_Override(a AwsS3Mount, scope constructs.Construct, id *string, config *AwsS3MountConfig) {
 	_init_.Initialize()
 
@@ -1024,6 +1033,24 @@ func (a *jsiiProxy_AwsS3Mount) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AwsS3Mount) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

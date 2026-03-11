@@ -87,6 +87,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "visualizationIdInput", GoGetter: "VisualizationIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "widgetId", GoGetter: "WidgetId"},
 			_jsii_.MemberProperty{JsiiProperty: "widgetIdInput", GoGetter: "WidgetIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlWidget{}

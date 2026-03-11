@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/azure_blob_mount databricks_azure_blob_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/azure_blob_mount databricks_azure_blob_mount}.
 type AzureBlobMount interface {
 	cdktn.TerraformResource
 	AuthType() *string
@@ -149,6 +149,15 @@ type AzureBlobMount interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AzureBlobMount
@@ -507,7 +516,7 @@ func (j *jsiiProxy_AzureBlobMount) TokenSecretScopeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/azure_blob_mount databricks_azure_blob_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/azure_blob_mount databricks_azure_blob_mount} Resource.
 func NewAzureBlobMount(scope constructs.Construct, id *string, config *AzureBlobMountConfig) AzureBlobMount {
 	_init_.Initialize()
 
@@ -525,7 +534,7 @@ func NewAzureBlobMount(scope constructs.Construct, id *string, config *AzureBlob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/azure_blob_mount databricks_azure_blob_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/azure_blob_mount databricks_azure_blob_mount} Resource.
 func NewAzureBlobMount_Override(a AzureBlobMount, scope constructs.Construct, id *string, config *AzureBlobMountConfig) {
 	_init_.Initialize()
 
@@ -1160,6 +1169,24 @@ func (a *jsiiProxy_AzureBlobMount) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AzureBlobMount) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

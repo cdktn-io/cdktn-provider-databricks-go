@@ -63,6 +63,10 @@ func (j *jsiiProxy_PipelineEnvironmentOutputReference) validateSetDependenciesPa
 	return nil
 }
 
+func (j *jsiiProxy_PipelineEnvironmentOutputReference) validateSetEnvironmentVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineEnvironmentOutputReference) validateSetInternalValueParameters(val *PipelineEnvironment) error {
 	return nil
 }

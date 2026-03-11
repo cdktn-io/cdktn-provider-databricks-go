@@ -38,6 +38,9 @@ type DataDatabricksPostgresProjectSpecOutputReference interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EnablePgNativeLogin() interface{}
+	SetEnablePgNativeLogin(val interface{})
+	EnablePgNativeLoginInput() interface{}
 	// Experimental.
 	Fqn() *string
 	HistoryRetentionDuration() *string
@@ -86,6 +89,7 @@ type DataDatabricksPostgresProjectSpecOutputReference interface {
 	ResetCustomTags()
 	ResetDefaultEndpointSettings()
 	ResetDisplayName()
+	ResetEnablePgNativeLogin()
 	ResetHistoryRetentionDuration()
 	ResetPgVersion()
 	// Produce the Token's value at resolution time.
@@ -208,6 +212,26 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference) DisplayName
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference) EnablePgNativeLogin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePgNativeLogin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference) EnablePgNativeLoginInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePgNativeLoginInput",
 		&returns,
 	)
 	return returns
@@ -361,6 +385,17 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference)SetDisplayNa
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference)SetEnablePgNativeLogin(val interface{}) {
+	if err := j.validateSetEnablePgNativeLoginParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePgNativeLogin",
 		val,
 	)
 }
@@ -656,6 +691,14 @@ func (d *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference) ResetDispla
 	_jsii_.InvokeVoid(
 		d,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference) ResetEnablePgNativeLogin() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnablePgNativeLogin",
 		nil, // no parameters
 	)
 }

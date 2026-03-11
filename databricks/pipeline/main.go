@@ -196,6 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "usagePolicyId", GoGetter: "UsagePolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "usagePolicyIdInput", GoGetter: "UsagePolicyIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Pipeline{}
@@ -1184,6 +1185,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "dependencies", GoGetter: "Dependencies"},
 			_jsii_.MemberProperty{JsiiProperty: "dependenciesInput", GoGetter: "DependenciesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentVersion", GoGetter: "EnvironmentVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentVersionInput", GoGetter: "EnvironmentVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -1198,6 +1201,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDependencies", GoMethod: "ResetDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVersion", GoMethod: "ResetEnvironmentVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

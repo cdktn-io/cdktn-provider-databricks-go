@@ -59,7 +59,15 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOu
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) validateSetDataframeSchemaParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) validateSetEntityColumnsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) validateSetFilterConditionParameters(val *string) error {
 	return nil
 }
 
@@ -80,6 +88,10 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOu
 }
 
 func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) validateSetTimeseriesColumnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) validateSetTransformationSqlParameters(val *string) error {
 	return nil
 }
 

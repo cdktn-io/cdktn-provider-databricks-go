@@ -38,6 +38,9 @@ type PostgresProjectSpecOutputReference interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EnablePgNativeLogin() interface{}
+	SetEnablePgNativeLogin(val interface{})
+	EnablePgNativeLoginInput() interface{}
 	// Experimental.
 	Fqn() *string
 	HistoryRetentionDuration() *string
@@ -86,6 +89,7 @@ type PostgresProjectSpecOutputReference interface {
 	ResetCustomTags()
 	ResetDefaultEndpointSettings()
 	ResetDisplayName()
+	ResetEnablePgNativeLogin()
 	ResetHistoryRetentionDuration()
 	ResetPgVersion()
 	// Produce the Token's value at resolution time.
@@ -208,6 +212,26 @@ func (j *jsiiProxy_PostgresProjectSpecOutputReference) DisplayNameInput() *strin
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectSpecOutputReference) EnablePgNativeLogin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePgNativeLogin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectSpecOutputReference) EnablePgNativeLoginInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePgNativeLoginInput",
 		&returns,
 	)
 	return returns
@@ -361,6 +385,17 @@ func (j *jsiiProxy_PostgresProjectSpecOutputReference)SetDisplayName(val *string
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresProjectSpecOutputReference)SetEnablePgNativeLogin(val interface{}) {
+	if err := j.validateSetEnablePgNativeLoginParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePgNativeLogin",
 		val,
 	)
 }
@@ -656,6 +691,14 @@ func (p *jsiiProxy_PostgresProjectSpecOutputReference) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresProjectSpecOutputReference) ResetEnablePgNativeLogin() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnablePgNativeLogin",
 		nil, // no parameters
 	)
 }

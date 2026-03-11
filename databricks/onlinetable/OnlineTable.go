@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table databricks_online_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/online_table databricks_online_table}.
 type OnlineTable interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -140,6 +140,15 @@ type OnlineTable interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for OnlineTable
@@ -438,7 +447,7 @@ func (j *jsiiProxy_OnlineTable) UnityCatalogProvisioningState() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table databricks_online_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/online_table databricks_online_table} Resource.
 func NewOnlineTable(scope constructs.Construct, id *string, config *OnlineTableConfig) OnlineTable {
 	_init_.Initialize()
 
@@ -456,7 +465,7 @@ func NewOnlineTable(scope constructs.Construct, id *string, config *OnlineTableC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table databricks_online_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/online_table databricks_online_table} Resource.
 func NewOnlineTable_Override(o OnlineTable, scope constructs.Construct, id *string, config *OnlineTableConfig) {
 	_init_.Initialize()
 
@@ -1055,6 +1064,24 @@ func (o *jsiiProxy_OnlineTable) ToTerraform() interface{} {
 		o,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OnlineTable) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		o,
+		"with",
+		args,
 		&returns,
 	)
 

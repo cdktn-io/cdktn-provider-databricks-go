@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_endpoints databricks_postgres_endpoints}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_endpoints databricks_postgres_endpoints}.
 type DataDatabricksPostgresEndpoints interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -105,6 +105,15 @@ type DataDatabricksPostgresEndpoints interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksPostgresEndpoints
@@ -323,7 +332,7 @@ func (j *jsiiProxy_DataDatabricksPostgresEndpoints) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_endpoints databricks_postgres_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_endpoints databricks_postgres_endpoints} Data Source.
 func NewDataDatabricksPostgresEndpoints(scope constructs.Construct, id *string, config *DataDatabricksPostgresEndpointsConfig) DataDatabricksPostgresEndpoints {
 	_init_.Initialize()
 
@@ -341,7 +350,7 @@ func NewDataDatabricksPostgresEndpoints(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_endpoints databricks_postgres_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_endpoints databricks_postgres_endpoints} Data Source.
 func NewDataDatabricksPostgresEndpoints_Override(d DataDatabricksPostgresEndpoints, scope constructs.Construct, id *string, config *DataDatabricksPostgresEndpointsConfig) {
 	_init_.Initialize()
 
@@ -812,6 +821,24 @@ func (d *jsiiProxy_DataDatabricksPostgresEndpoints) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresEndpoints) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

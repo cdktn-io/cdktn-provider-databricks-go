@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/alert_v2 databricks_alert_v2}.
 type AlertV2 interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -167,6 +167,15 @@ type AlertV2 interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AlertV2
@@ -635,7 +644,7 @@ func (j *jsiiProxy_AlertV2) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) AlertV2 {
 	_init_.Initialize()
 
@@ -653,7 +662,7 @@ func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2_Override(a AlertV2, scope constructs.Construct, id *string, config *AlertV2Config) {
 	_init_.Initialize()
 
@@ -1353,6 +1362,24 @@ func (a *jsiiProxy_AlertV2) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlertV2) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

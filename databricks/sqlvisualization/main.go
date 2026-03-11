@@ -79,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "visualizationId", GoGetter: "VisualizationId"},
 			_jsii_.MemberProperty{JsiiProperty: "visualizationIdInput", GoGetter: "VisualizationIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlVisualization{}

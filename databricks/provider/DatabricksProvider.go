@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktn.TerraformProvider
 	AccountId() *string
@@ -62,6 +62,9 @@ type DatabricksProvider interface {
 	ClientSecret() *string
 	SetClientSecret(val *string)
 	ClientSecretInput() *string
+	Cloud() *string
+	SetCloud(val *string)
+	CloudInput() *string
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
@@ -85,6 +88,9 @@ type DatabricksProvider interface {
 	DisableOauthRefreshToken() interface{}
 	SetDisableOauthRefreshToken(val interface{})
 	DisableOauthRefreshTokenInput() interface{}
+	DiscoveryUrl() *string
+	SetDiscoveryUrl(val *string)
+	DiscoveryUrlInput() *string
 	ExperimentalIsUnifiedHost() interface{}
 	SetExperimentalIsUnifiedHost(val interface{})
 	ExperimentalIsUnifiedHostInput() interface{}
@@ -178,6 +184,7 @@ type DatabricksProvider interface {
 	ResetAzureWorkspaceResourceId()
 	ResetClientId()
 	ResetClientSecret()
+	ResetCloud()
 	ResetClusterId()
 	ResetConfigFile()
 	ResetDatabricksCliPath()
@@ -185,6 +192,7 @@ type DatabricksProvider interface {
 	ResetDebugHeaders()
 	ResetDebugTruncateBytes()
 	ResetDisableOauthRefreshToken()
+	ResetDiscoveryUrl()
 	ResetExperimentalIsUnifiedHost()
 	ResetGoogleCredentials()
 	ResetGoogleServiceAccount()
@@ -218,6 +226,15 @@ type DatabricksProvider interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DatabricksProvider
@@ -535,6 +552,26 @@ func (j *jsiiProxy_DatabricksProvider) ClientSecretInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) Cloud() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloud",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) CloudInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabricksProvider) ClusterId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -680,6 +717,26 @@ func (j *jsiiProxy_DatabricksProvider) DisableOauthRefreshTokenInput() interface
 	_jsii_.Get(
 		j,
 		"disableOauthRefreshTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) DiscoveryUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) DiscoveryUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryUrlInput",
 		&returns,
 	)
 	return returns
@@ -1146,7 +1203,7 @@ func (j *jsiiProxy_DatabricksProvider) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -1164,7 +1221,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -1298,6 +1355,14 @@ func (j *jsiiProxy_DatabricksProvider)SetClientSecret(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DatabricksProvider)SetCloud(val *string) {
+	_jsii_.Set(
+		j,
+		"cloud",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabricksProvider)SetClusterId(val *string) {
 	_jsii_.Set(
 		j,
@@ -1356,6 +1421,14 @@ func (j *jsiiProxy_DatabricksProvider)SetDisableOauthRefreshToken(val interface{
 	_jsii_.Set(
 		j,
 		"disableOauthRefreshToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetDiscoveryUrl(val *string) {
+	_jsii_.Set(
+		j,
+		"discoveryUrl",
 		val,
 	)
 }
@@ -1763,6 +1836,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetClientSecret() {
 	)
 }
 
+func (d *jsiiProxy_DatabricksProvider) ResetCloud() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloud",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabricksProvider) ResetClusterId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1815,6 +1896,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetDisableOauthRefreshToken() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDisableOauthRefreshToken",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetDiscoveryUrl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDiscoveryUrl",
 		nil, // no parameters
 	)
 }
@@ -2051,6 +2140,24 @@ func (d *jsiiProxy_DatabricksProvider) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabricksProvider) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

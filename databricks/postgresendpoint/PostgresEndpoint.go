@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/postgres_endpoint databricks_postgres_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_endpoint databricks_postgres_endpoint}.
 type PostgresEndpoint interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -137,6 +137,15 @@ type PostgresEndpoint interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for PostgresEndpoint
@@ -435,7 +444,7 @@ func (j *jsiiProxy_PostgresEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/postgres_endpoint databricks_postgres_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_endpoint databricks_postgres_endpoint} Resource.
 func NewPostgresEndpoint(scope constructs.Construct, id *string, config *PostgresEndpointConfig) PostgresEndpoint {
 	_init_.Initialize()
 
@@ -453,7 +462,7 @@ func NewPostgresEndpoint(scope constructs.Construct, id *string, config *Postgre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/postgres_endpoint databricks_postgres_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_endpoint databricks_postgres_endpoint} Resource.
 func NewPostgresEndpoint_Override(p PostgresEndpoint, scope constructs.Construct, id *string, config *PostgresEndpointConfig) {
 	_init_.Initialize()
 
@@ -1025,6 +1034,24 @@ func (p *jsiiProxy_PostgresEndpoint) ToTerraform() interface{} {
 		p,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresEndpoint) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		p,
+		"with",
+		args,
 		&returns,
 	)
 

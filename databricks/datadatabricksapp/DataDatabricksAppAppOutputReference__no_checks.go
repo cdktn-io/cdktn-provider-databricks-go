@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutResourcesPara
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutTelemetryExportDestinationsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

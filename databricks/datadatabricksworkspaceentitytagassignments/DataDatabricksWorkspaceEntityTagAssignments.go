@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments}.
 type DataDatabricksWorkspaceEntityTagAssignments interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -108,6 +108,15 @@ type DataDatabricksWorkspaceEntityTagAssignments interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksWorkspaceEntityTagAssignments
@@ -346,7 +355,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignments) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments} Data Source.
 func NewDataDatabricksWorkspaceEntityTagAssignments(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceEntityTagAssignmentsConfig) DataDatabricksWorkspaceEntityTagAssignments {
 	_init_.Initialize()
 
@@ -364,7 +373,7 @@ func NewDataDatabricksWorkspaceEntityTagAssignments(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments} Data Source.
 func NewDataDatabricksWorkspaceEntityTagAssignments_Override(d DataDatabricksWorkspaceEntityTagAssignments, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceEntityTagAssignmentsConfig) {
 	_init_.Initialize()
 
@@ -846,6 +855,24 @@ func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignments) ToTerraform() in
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignments) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

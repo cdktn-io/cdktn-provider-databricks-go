@@ -68,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validityCheckConfigurations", GoGetter: "ValidityCheckConfigurations"},
 			_jsii_.MemberProperty{JsiiProperty: "validityCheckConfigurationsInput", GoGetter: "ValidityCheckConfigurationsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_QualityMonitorV2{}

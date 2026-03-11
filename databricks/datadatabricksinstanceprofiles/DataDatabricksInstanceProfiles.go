@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles databricks_instance_profiles}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/instance_profiles databricks_instance_profiles}.
 type DataDatabricksInstanceProfiles interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -105,6 +105,15 @@ type DataDatabricksInstanceProfiles interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksInstanceProfiles
@@ -313,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksInstanceProfiles) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
 func NewDataDatabricksInstanceProfiles(scope constructs.Construct, id *string, config *DataDatabricksInstanceProfilesConfig) DataDatabricksInstanceProfiles {
 	_init_.Initialize()
 
@@ -331,7 +340,7 @@ func NewDataDatabricksInstanceProfiles(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
 func NewDataDatabricksInstanceProfiles_Override(d DataDatabricksInstanceProfiles, scope constructs.Construct, id *string, config *DataDatabricksInstanceProfilesConfig) {
 	_init_.Initialize()
 
@@ -810,6 +819,24 @@ func (d *jsiiProxy_DataDatabricksInstanceProfiles) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksInstanceProfiles) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

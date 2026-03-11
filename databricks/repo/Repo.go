@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo databricks_repo}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/repo databricks_repo}.
 type Repo interface {
 	cdktn.TerraformResource
 	Branch() *string
@@ -154,6 +154,15 @@ type Repo interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Repo
@@ -512,7 +521,7 @@ func (j *jsiiProxy_Repo) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/repo databricks_repo} Resource.
 func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	_init_.Initialize()
 
@@ -530,7 +539,7 @@ func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/repo databricks_repo} Resource.
 func NewRepo_Override(r Repo, scope constructs.Construct, id *string, config *RepoConfig) {
 	_init_.Initialize()
 
@@ -1205,6 +1214,24 @@ func (r *jsiiProxy_Repo) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Repo) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

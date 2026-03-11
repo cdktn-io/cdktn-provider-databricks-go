@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksPostgresProject{}
@@ -326,6 +327,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "defaultEndpointSettingsInput", GoGetter: "DefaultEndpointSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
 			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePgNativeLogin", GoGetter: "EnablePgNativeLogin"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePgNativeLoginInput", GoGetter: "EnablePgNativeLoginInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -349,6 +352,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomTags", GoMethod: "ResetCustomTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultEndpointSettings", GoMethod: "ResetDefaultEndpointSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnablePgNativeLogin", GoMethod: "ResetEnablePgNativeLogin"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHistoryRetentionDuration", GoMethod: "ResetHistoryRetentionDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPgVersion", GoMethod: "ResetPgVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -494,6 +498,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "customTags", GoGetter: "CustomTags"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultEndpointSettings", GoGetter: "DefaultEndpointSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePgNativeLogin", GoGetter: "EnablePgNativeLogin"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},

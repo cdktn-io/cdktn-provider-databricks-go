@@ -28,9 +28,15 @@ type FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataframeSchema() *string
+	SetDataframeSchema(val *string)
+	DataframeSchemaInput() *string
 	EntityColumns() *[]*string
 	SetEntityColumns(val *[]*string)
 	EntityColumnsInput() *[]*string
+	FilterCondition() *string
+	SetFilterCondition(val *string)
+	FilterConditionInput() *string
 	// Experimental.
 	Fqn() *string
 	FullName() *string
@@ -49,6 +55,9 @@ type FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference 
 	TimeseriesColumn() *string
 	SetTimeseriesColumn(val *string)
 	TimeseriesColumnInput() *string
+	TransformationSql() *string
+	SetTransformationSql(val *string)
+	TransformationSqlInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +82,9 @@ type FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference 
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDataframeSchema()
+	ResetFilterCondition()
+	ResetTransformationSql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -118,6 +130,26 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOu
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) DataframeSchema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataframeSchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) DataframeSchemaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataframeSchemaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) EntityColumns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -133,6 +165,26 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOu
 	_jsii_.Get(
 		j,
 		"entityColumnsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) FilterCondition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterCondition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) FilterConditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterConditionInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +270,26 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOu
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) TransformationSql() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformationSql",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) TransformationSqlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformationSqlInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewFeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference {
 	_init_.Initialize()
@@ -268,6 +340,17 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOu
 	)
 }
 
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference)SetDataframeSchema(val *string) {
+	if err := j.validateSetDataframeSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataframeSchema",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference)SetEntityColumns(val *[]*string) {
 	if err := j.validateSetEntityColumnsParameters(val); err != nil {
 		panic(err)
@@ -275,6 +358,17 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOu
 	_jsii_.Set(
 		j,
 		"entityColumns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference)SetFilterCondition(val *string) {
+	if err := j.validateSetFilterConditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterCondition",
 		val,
 	)
 }
@@ -330,6 +424,17 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOu
 	_jsii_.Set(
 		j,
 		"timeseriesColumn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference)SetTransformationSql(val *string) {
+	if err := j.validateSetTransformationSqlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transformationSql",
 		val,
 	)
 }
@@ -518,6 +623,30 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOu
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) ResetDataframeSchema() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDataframeSchema",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) ResetFilterCondition() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) ResetTransformationSql() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTransformationSql",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

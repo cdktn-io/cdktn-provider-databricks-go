@@ -5,7 +5,7 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2RestrictWorkspaceAdmins struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}.
 	Status *string `field:"required" json:"status" yaml:"status"`
 }
 

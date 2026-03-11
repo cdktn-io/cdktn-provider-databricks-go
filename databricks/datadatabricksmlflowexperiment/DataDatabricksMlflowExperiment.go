@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}.
 type DataDatabricksMlflowExperiment interface {
 	cdktn.TerraformDataSource
 	ArtifactLocation() *string
@@ -129,6 +129,15 @@ type DataDatabricksMlflowExperiment interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksMlflowExperiment
@@ -457,7 +466,7 @@ func (j *jsiiProxy_DataDatabricksMlflowExperiment) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
 func NewDataDatabricksMlflowExperiment(scope constructs.Construct, id *string, config *DataDatabricksMlflowExperimentConfig) DataDatabricksMlflowExperiment {
 	_init_.Initialize()
 
@@ -475,7 +484,7 @@ func NewDataDatabricksMlflowExperiment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
 func NewDataDatabricksMlflowExperiment_Override(d DataDatabricksMlflowExperiment, scope constructs.Construct, id *string, config *DataDatabricksMlflowExperimentConfig) {
 	_init_.Initialize()
 
@@ -1068,6 +1077,24 @@ func (d *jsiiProxy_DataDatabricksMlflowExperiment) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksMlflowExperiment) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -5,7 +5,7 @@ package entitytagassignment
 
 
 type EntityTagAssignmentProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

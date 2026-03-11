@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding}.
 type MwsNccBinding interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -128,6 +128,15 @@ type MwsNccBinding interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MwsNccBinding
@@ -356,7 +365,7 @@ func (j *jsiiProxy_MwsNccBinding) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
 func NewMwsNccBinding(scope constructs.Construct, id *string, config *MwsNccBindingConfig) MwsNccBinding {
 	_init_.Initialize()
 
@@ -374,7 +383,7 @@ func NewMwsNccBinding(scope constructs.Construct, id *string, config *MwsNccBind
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
 func NewMwsNccBinding_Override(m MwsNccBinding, scope constructs.Construct, id *string, config *MwsNccBindingConfig) {
 	_init_.Initialize()
 
@@ -927,6 +936,24 @@ func (m *jsiiProxy_MwsNccBinding) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MwsNccBinding) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

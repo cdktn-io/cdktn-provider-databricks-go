@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/cluster_policy databricks_cluster_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/cluster_policy databricks_cluster_policy}.
 type DataDatabricksClusterPolicy interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -129,6 +129,15 @@ type DataDatabricksClusterPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksClusterPolicy
@@ -457,7 +466,7 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
 func NewDataDatabricksClusterPolicy(scope constructs.Construct, id *string, config *DataDatabricksClusterPolicyConfig) DataDatabricksClusterPolicy {
 	_init_.Initialize()
 
@@ -475,7 +484,7 @@ func NewDataDatabricksClusterPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
 func NewDataDatabricksClusterPolicy_Override(d DataDatabricksClusterPolicy, scope constructs.Construct, id *string, config *DataDatabricksClusterPolicyConfig) {
 	_init_.Initialize()
 
@@ -1068,6 +1077,24 @@ func (d *jsiiProxy_DataDatabricksClusterPolicy) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

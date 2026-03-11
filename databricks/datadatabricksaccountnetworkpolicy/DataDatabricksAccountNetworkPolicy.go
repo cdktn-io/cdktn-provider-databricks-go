@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policy databricks_account_network_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/account_network_policy databricks_account_network_policy}.
 type DataDatabricksAccountNetworkPolicy interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -98,6 +98,15 @@ type DataDatabricksAccountNetworkPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksAccountNetworkPolicy
@@ -286,7 +295,7 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
 func NewDataDatabricksAccountNetworkPolicy(scope constructs.Construct, id *string, config *DataDatabricksAccountNetworkPolicyConfig) DataDatabricksAccountNetworkPolicy {
 	_init_.Initialize()
 
@@ -304,7 +313,7 @@ func NewDataDatabricksAccountNetworkPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
 func NewDataDatabricksAccountNetworkPolicy_Override(d DataDatabricksAccountNetworkPolicy, scope constructs.Construct, id *string, config *DataDatabricksAccountNetworkPolicyConfig) {
 	_init_.Initialize()
 
@@ -737,6 +746,24 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) ToTerraform() interface{}
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

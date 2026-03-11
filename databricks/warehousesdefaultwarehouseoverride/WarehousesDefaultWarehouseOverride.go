@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override}.
 type WarehousesDefaultWarehouseOverride interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -133,6 +133,15 @@ type WarehousesDefaultWarehouseOverride interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for WarehousesDefaultWarehouseOverride
@@ -391,7 +400,7 @@ func (j *jsiiProxy_WarehousesDefaultWarehouseOverride) WarehouseIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Resource.
 func NewWarehousesDefaultWarehouseOverride(scope constructs.Construct, id *string, config *WarehousesDefaultWarehouseOverrideConfig) WarehousesDefaultWarehouseOverride {
 	_init_.Initialize()
 
@@ -409,7 +418,7 @@ func NewWarehousesDefaultWarehouseOverride(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Resource.
 func NewWarehousesDefaultWarehouseOverride_Override(w WarehousesDefaultWarehouseOverride, scope constructs.Construct, id *string, config *WarehousesDefaultWarehouseOverrideConfig) {
 	_init_.Initialize()
 
@@ -981,6 +990,24 @@ func (w *jsiiProxy_WarehousesDefaultWarehouseOverride) ToTerraform() interface{}
 		w,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WarehousesDefaultWarehouseOverride) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		w,
+		"with",
+		args,
 		&returns,
 	)
 

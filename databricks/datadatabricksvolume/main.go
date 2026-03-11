@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeInfo", GoGetter: "VolumeInfo"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeInfoInput", GoGetter: "VolumeInfoInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksVolume{}

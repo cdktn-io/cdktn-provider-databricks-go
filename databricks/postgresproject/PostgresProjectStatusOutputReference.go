@@ -33,6 +33,7 @@ type PostgresProjectStatusOutputReference interface {
 	CustomTags() PostgresProjectStatusCustomTagsList
 	DefaultEndpointSettings() PostgresProjectStatusDefaultEndpointSettingsOutputReference
 	DisplayName() *string
+	EnablePgNativeLogin() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	HistoryRetentionDuration() *string
@@ -163,6 +164,16 @@ func (j *jsiiProxy_PostgresProjectStatusOutputReference) DisplayName() *string {
 	_jsii_.Get(
 		j,
 		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectStatusOutputReference) EnablePgNativeLogin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"enablePgNativeLogin",
 		&returns,
 	)
 	return returns

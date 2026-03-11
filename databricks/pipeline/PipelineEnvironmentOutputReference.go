@@ -31,6 +31,9 @@ type PipelineEnvironmentOutputReference interface {
 	Dependencies() *[]*string
 	SetDependencies(val *[]*string)
 	DependenciesInput() *[]*string
+	EnvironmentVersion() *string
+	SetEnvironmentVersion(val *string)
+	EnvironmentVersionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PipelineEnvironment
@@ -68,6 +71,7 @@ type PipelineEnvironmentOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDependencies()
+	ResetEnvironmentVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -128,6 +132,26 @@ func (j *jsiiProxy_PipelineEnvironmentOutputReference) DependenciesInput() *[]*s
 	_jsii_.Get(
 		j,
 		"dependenciesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineEnvironmentOutputReference) EnvironmentVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineEnvironmentOutputReference) EnvironmentVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentVersionInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_PipelineEnvironmentOutputReference)SetDependencies(val *[]*st
 	_jsii_.Set(
 		j,
 		"dependencies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineEnvironmentOutputReference)SetEnvironmentVersion(val *string) {
+	if err := j.validateSetEnvironmentVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentVersion",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (p *jsiiProxy_PipelineEnvironmentOutputReference) ResetDependencies() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetDependencies",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineEnvironmentOutputReference) ResetEnvironmentVersion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnvironmentVersion",
 		nil, // no parameters
 	)
 }

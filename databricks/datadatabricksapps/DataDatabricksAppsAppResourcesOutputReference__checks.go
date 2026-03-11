@@ -148,6 +148,17 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) validatePutJob
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) validatePutPostgresParameters(value *DataDatabricksAppsAppResourcesPostgres) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) validatePutSecretParameters(value *DataDatabricksAppsAppResourcesSecret) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

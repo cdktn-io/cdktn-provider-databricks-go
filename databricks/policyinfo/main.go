@@ -100,6 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedBy", GoGetter: "UpdatedBy"},
 			_jsii_.MemberProperty{JsiiProperty: "whenCondition", GoGetter: "WhenCondition"},
 			_jsii_.MemberProperty{JsiiProperty: "whenConditionInput", GoGetter: "WhenConditionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyInfo{}

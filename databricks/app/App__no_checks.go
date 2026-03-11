@@ -87,6 +87,10 @@ func (a *jsiiProxy_App) validatePutResourcesParameters(value interface{}) error 
 	return nil
 }
 
+func (a *jsiiProxy_App) validatePutTelemetryExportDestinationsParameters(value interface{}) error {
+	return nil
+}
+
 func validateApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

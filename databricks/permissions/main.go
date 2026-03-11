@@ -145,6 +145,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorSearchEndpointId", GoGetter: "VectorSearchEndpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorSearchEndpointIdInput", GoGetter: "VectorSearchEndpointIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceFileId", GoGetter: "WorkspaceFileId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceFileIdInput", GoGetter: "WorkspaceFileIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceFilePath", GoGetter: "WorkspaceFilePath"},

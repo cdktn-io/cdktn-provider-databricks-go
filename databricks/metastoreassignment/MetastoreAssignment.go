@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_assignment databricks_metastore_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/metastore_assignment databricks_metastore_assignment}.
 type MetastoreAssignment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -132,6 +132,15 @@ type MetastoreAssignment interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MetastoreAssignment
@@ -380,7 +389,7 @@ func (j *jsiiProxy_MetastoreAssignment) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
 func NewMetastoreAssignment(scope constructs.Construct, id *string, config *MetastoreAssignmentConfig) MetastoreAssignment {
 	_init_.Initialize()
 
@@ -398,7 +407,7 @@ func NewMetastoreAssignment(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
 func NewMetastoreAssignment_Override(m MetastoreAssignment, scope constructs.Construct, id *string, config *MetastoreAssignmentConfig) {
 	_init_.Initialize()
 
@@ -970,6 +979,24 @@ func (m *jsiiProxy_MetastoreAssignment) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MetastoreAssignment) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

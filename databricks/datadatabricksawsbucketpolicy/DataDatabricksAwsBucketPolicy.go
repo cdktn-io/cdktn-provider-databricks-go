@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy}.
 type DataDatabricksAwsBucketPolicy interface {
 	cdktn.TerraformDataSource
 	AwsPartition() *string
@@ -117,6 +117,15 @@ type DataDatabricksAwsBucketPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksAwsBucketPolicy
@@ -395,7 +404,7 @@ func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
 func NewDataDatabricksAwsBucketPolicy(scope constructs.Construct, id *string, config *DataDatabricksAwsBucketPolicyConfig) DataDatabricksAwsBucketPolicy {
 	_init_.Initialize()
 
@@ -413,7 +422,7 @@ func NewDataDatabricksAwsBucketPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
 func NewDataDatabricksAwsBucketPolicy_Override(d DataDatabricksAwsBucketPolicy, scope constructs.Construct, id *string, config *DataDatabricksAwsBucketPolicyConfig) {
 	_init_.Initialize()
 
@@ -941,6 +950,24 @@ func (d *jsiiProxy_DataDatabricksAwsBucketPolicy) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksAwsBucketPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

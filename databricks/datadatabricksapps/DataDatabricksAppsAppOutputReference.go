@@ -67,6 +67,8 @@ type DataDatabricksAppsAppOutputReference interface {
 	Space() *string
 	SetSpace(val *string)
 	SpaceInput() *string
+	TelemetryExportDestinations() DataDatabricksAppsAppTelemetryExportDestinationsList
+	TelemetryExportDestinationsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -110,12 +112,14 @@ type DataDatabricksAppsAppOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutGitRepository(value *DataDatabricksAppsAppGitRepository)
 	PutResources(value interface{})
+	PutTelemetryExportDestinations(value interface{})
 	ResetBudgetPolicyId()
 	ResetComputeSize()
 	ResetDescription()
 	ResetGitRepository()
 	ResetResources()
 	ResetSpace()
+	ResetTelemetryExportDestinations()
 	ResetUsagePolicyId()
 	ResetUserApiScopes()
 	// Produce the Token's value at resolution time.
@@ -478,6 +482,26 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) SpaceInput() *string {
 	_jsii_.Get(
 		j,
 		"spaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) TelemetryExportDestinations() DataDatabricksAppsAppTelemetryExportDestinationsList {
+	var returns DataDatabricksAppsAppTelemetryExportDestinationsList
+	_jsii_.Get(
+		j,
+		"telemetryExportDestinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) TelemetryExportDestinationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"telemetryExportDestinationsInput",
 		&returns,
 	)
 	return returns
@@ -941,6 +965,17 @@ func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) PutResources(value inte
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) PutTelemetryExportDestinations(value interface{}) {
+	if err := d.validatePutTelemetryExportDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTelemetryExportDestinations",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetBudgetPolicyId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -985,6 +1020,14 @@ func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetSpace() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSpace",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetTelemetryExportDestinations() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTelemetryExportDestinations",
 		nil, // no parameters
 	)
 }

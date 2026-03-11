@@ -93,6 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcStatus", GoGetter: "VpcStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcStatusInput", GoGetter: "VpcStatusInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},

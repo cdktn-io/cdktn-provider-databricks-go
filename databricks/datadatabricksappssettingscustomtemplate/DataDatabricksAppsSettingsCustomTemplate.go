@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template}.
 type DataDatabricksAppsSettingsCustomTemplate interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -106,6 +106,15 @@ type DataDatabricksAppsSettingsCustomTemplate interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksAppsSettingsCustomTemplate
@@ -354,7 +363,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
 func NewDataDatabricksAppsSettingsCustomTemplate(scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplateConfig) DataDatabricksAppsSettingsCustomTemplate {
 	_init_.Initialize()
 
@@ -372,7 +381,7 @@ func NewDataDatabricksAppsSettingsCustomTemplate(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
 func NewDataDatabricksAppsSettingsCustomTemplate_Override(d DataDatabricksAppsSettingsCustomTemplate, scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplateConfig) {
 	_init_.Initialize()
 
@@ -824,6 +833,24 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) ToTerraform() inter
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_projects databricks_postgres_projects}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_projects databricks_postgres_projects}.
 type DataDatabricksPostgresProjects interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -102,6 +102,15 @@ type DataDatabricksPostgresProjects interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksPostgresProjects
@@ -300,7 +309,7 @@ func (j *jsiiProxy_DataDatabricksPostgresProjects) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
 func NewDataDatabricksPostgresProjects(scope constructs.Construct, id *string, config *DataDatabricksPostgresProjectsConfig) DataDatabricksPostgresProjects {
 	_init_.Initialize()
 
@@ -318,7 +327,7 @@ func NewDataDatabricksPostgresProjects(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
 func NewDataDatabricksPostgresProjects_Override(d DataDatabricksPostgresProjects, scope constructs.Construct, id *string, config *DataDatabricksPostgresProjectsConfig) {
 	_init_.Initialize()
 
@@ -778,6 +787,24 @@ func (d *jsiiProxy_DataDatabricksPostgresProjects) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresProjects) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

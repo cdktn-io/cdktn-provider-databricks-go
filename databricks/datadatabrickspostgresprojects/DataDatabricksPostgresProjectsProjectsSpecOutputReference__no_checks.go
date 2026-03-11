@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) validateSetEnablePgNativeLoginParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) validateSetHistoryRetentionDurationParameters(val *string) error {
 	return nil
 }

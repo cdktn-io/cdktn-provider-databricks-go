@@ -67,6 +67,10 @@ func (a *jsiiProxy_AppResourcesOutputReference) validatePutJobParameters(value *
 	return nil
 }
 
+func (a *jsiiProxy_AppResourcesOutputReference) validatePutPostgresParameters(value *AppResourcesPostgres) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppResourcesOutputReference) validatePutSecretParameters(value *AppResourcesSecret) error {
 	return nil
 }

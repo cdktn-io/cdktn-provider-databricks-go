@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/storage_credential databricks_storage_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/storage_credential databricks_storage_credential}.
 type StorageCredential interface {
 	cdktn.TerraformResource
 	AwsIamRole() StorageCredentialAwsIamRoleOutputReference
@@ -182,6 +182,15 @@ type StorageCredential interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for StorageCredential
@@ -680,7 +689,7 @@ func (j *jsiiProxy_StorageCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential(scope constructs.Construct, id *string, config *StorageCredentialConfig) StorageCredential {
 	_init_.Initialize()
 
@@ -698,7 +707,7 @@ func NewStorageCredential(scope constructs.Construct, id *string, config *Storag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential_Override(s StorageCredential, scope constructs.Construct, id *string, config *StorageCredentialConfig) {
 	_init_.Initialize()
 
@@ -1506,6 +1515,24 @@ func (s *jsiiProxy_StorageCredential) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageCredential) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

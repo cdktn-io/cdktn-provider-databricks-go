@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/app databricks_app}.
 type App interface {
 	cdktn.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
@@ -95,6 +95,8 @@ type App interface {
 	Space() *string
 	SetSpace(val *string)
 	SpaceInput() *string
+	TelemetryExportDestinations() AppTelemetryExportDestinationsList
+	TelemetryExportDestinationsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -156,6 +158,7 @@ type App interface {
 	PutGitRepository(value *AppGitRepository)
 	PutProviderConfig(value *AppProviderConfig)
 	PutResources(value interface{})
+	PutTelemetryExportDestinations(value interface{})
 	ResetBudgetPolicyId()
 	ResetComputeSize()
 	ResetDescription()
@@ -167,6 +170,7 @@ type App interface {
 	ResetProviderConfig()
 	ResetResources()
 	ResetSpace()
+	ResetTelemetryExportDestinations()
 	ResetUsagePolicyId()
 	ResetUserApiScopes()
 	SynthesizeAttributes() *map[string]interface{}
@@ -180,6 +184,15 @@ type App interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for App
@@ -657,6 +670,26 @@ func (j *jsiiProxy_App) SpaceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) TelemetryExportDestinations() AppTelemetryExportDestinationsList {
+	var returns AppTelemetryExportDestinationsList
+	_jsii_.Get(
+		j,
+		"telemetryExportDestinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) TelemetryExportDestinationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"telemetryExportDestinationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -758,7 +791,7 @@ func (j *jsiiProxy_App) UserApiScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -776,7 +809,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
@@ -1329,6 +1362,17 @@ func (a *jsiiProxy_App) PutResources(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_App) PutTelemetryExportDestinations(value interface{}) {
+	if err := a.validatePutTelemetryExportDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTelemetryExportDestinations",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_App) ResetBudgetPolicyId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1397,6 +1441,14 @@ func (a *jsiiProxy_App) ResetSpace() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSpace",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetTelemetryExportDestinations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTelemetryExportDestinations",
 		nil, // no parameters
 	)
 }
@@ -1489,6 +1541,24 @@ func (a *jsiiProxy_App) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_App) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

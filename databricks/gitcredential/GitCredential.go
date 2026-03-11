@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential databricks_git_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/git_credential databricks_git_credential}.
 type GitCredential interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -157,6 +157,15 @@ type GitCredential interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for GitCredential
@@ -525,7 +534,7 @@ func (j *jsiiProxy_GitCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential(scope constructs.Construct, id *string, config *GitCredentialConfig) GitCredential {
 	_init_.Initialize()
 
@@ -543,7 +552,7 @@ func NewGitCredential(scope constructs.Construct, id *string, config *GitCredent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential_Override(g GitCredential, scope constructs.Construct, id *string, config *GitCredentialConfig) {
 	_init_.Initialize()
 
@@ -1237,6 +1246,24 @@ func (g *jsiiProxy_GitCredential) ToTerraform() interface{} {
 		g,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GitCredential) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		g,
+		"with",
+		args,
 		&returns,
 	)
 

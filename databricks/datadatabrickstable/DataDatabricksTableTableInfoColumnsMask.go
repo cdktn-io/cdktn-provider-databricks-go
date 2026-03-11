@@ -5,13 +5,13 @@ package datadatabrickstable
 
 
 type DataDatabricksTableTableInfoColumnsMask struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/table#function_name DataDatabricksTable#function_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/table#function_name DataDatabricksTable#function_name}.
 	FunctionName *string `field:"optional" json:"functionName" yaml:"functionName"`
 	// using_arguments block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/table#using_arguments DataDatabricksTable#using_arguments}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/table#using_arguments DataDatabricksTable#using_arguments}
 	UsingArguments interface{} `field:"optional" json:"usingArguments" yaml:"usingArguments"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/table#using_column_names DataDatabricksTable#using_column_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/table#using_column_names DataDatabricksTable#using_column_names}.
 	UsingColumnNames *[]*string `field:"optional" json:"usingColumnNames" yaml:"usingColumnNames"`
 }
 

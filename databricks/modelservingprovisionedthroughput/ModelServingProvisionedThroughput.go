@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput}.
 type ModelServingProvisionedThroughput interface {
 	cdktn.TerraformResource
 	AiGateway() ModelServingProvisionedThroughputAiGatewayOutputReference
@@ -153,6 +153,15 @@ type ModelServingProvisionedThroughput interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ModelServingProvisionedThroughput
@@ -511,7 +520,7 @@ func (j *jsiiProxy_ModelServingProvisionedThroughput) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
 func NewModelServingProvisionedThroughput(scope constructs.Construct, id *string, config *ModelServingProvisionedThroughputConfig) ModelServingProvisionedThroughput {
 	_init_.Initialize()
 
@@ -529,7 +538,7 @@ func NewModelServingProvisionedThroughput(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
 func NewModelServingProvisionedThroughput_Override(m ModelServingProvisionedThroughput, scope constructs.Construct, id *string, config *ModelServingProvisionedThroughputConfig) {
 	_init_.Initialize()
 
@@ -1196,6 +1205,24 @@ func (m *jsiiProxy_ModelServingProvisionedThroughput) ToTerraform() interface{} 
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_ModelServingProvisionedThroughput) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

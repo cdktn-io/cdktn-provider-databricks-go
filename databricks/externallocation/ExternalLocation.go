@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/external_location databricks_external_location}.
 type ExternalLocation interface {
 	cdktn.TerraformResource
 	BrowseOnly() cdktn.IResolvable
@@ -190,6 +190,15 @@ type ExternalLocation interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ExternalLocation
@@ -768,7 +777,7 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
@@ -786,7 +795,7 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct, id *string, config *ExternalLocationConfig) {
 	_init_.Initialize()
 
@@ -1597,6 +1606,24 @@ func (e *jsiiProxy_ExternalLocation) ToTerraform() interface{} {
 		e,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ExternalLocation) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		e,
+		"with",
+		args,
 		&returns,
 	)
 

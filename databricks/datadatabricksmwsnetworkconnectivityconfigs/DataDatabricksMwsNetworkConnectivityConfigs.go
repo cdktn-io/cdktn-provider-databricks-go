@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs}.
 type DataDatabricksMwsNetworkConnectivityConfigs interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -105,6 +105,15 @@ type DataDatabricksMwsNetworkConnectivityConfigs interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksMwsNetworkConnectivityConfigs
@@ -313,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigs) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs} Data Source.
 func NewDataDatabricksMwsNetworkConnectivityConfigs(scope constructs.Construct, id *string, config *DataDatabricksMwsNetworkConnectivityConfigsConfig) DataDatabricksMwsNetworkConnectivityConfigs {
 	_init_.Initialize()
 
@@ -331,7 +340,7 @@ func NewDataDatabricksMwsNetworkConnectivityConfigs(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs} Data Source.
 func NewDataDatabricksMwsNetworkConnectivityConfigs_Override(d DataDatabricksMwsNetworkConnectivityConfigs, scope constructs.Construct, id *string, config *DataDatabricksMwsNetworkConnectivityConfigsConfig) {
 	_init_.Initialize()
 
@@ -810,6 +819,24 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigs) ToTerraform() in
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigs) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

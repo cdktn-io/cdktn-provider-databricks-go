@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grants databricks_grants}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/grants databricks_grants}.
 type Grants interface {
 	cdktn.TerraformResource
 	Catalog() *string
@@ -185,6 +185,15 @@ type Grants interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Grants
@@ -693,7 +702,7 @@ func (j *jsiiProxy_Grants) VolumeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Grants {
 	_init_.Initialize()
 
@@ -711,7 +720,7 @@ func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Gra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants_Override(g Grants, scope constructs.Construct, id *string, config *GrantsConfig) {
 	_init_.Initialize()
 
@@ -1538,6 +1547,24 @@ func (g *jsiiProxy_Grants) ToTerraform() interface{} {
 		g,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_Grants) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		g,
+		"with",
+		args,
 		&returns,
 	)
 

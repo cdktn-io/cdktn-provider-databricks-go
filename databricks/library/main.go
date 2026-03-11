@@ -88,6 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "whl", GoGetter: "Whl"},
 			_jsii_.MemberProperty{JsiiProperty: "whlInput", GoGetter: "WhlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Library{}

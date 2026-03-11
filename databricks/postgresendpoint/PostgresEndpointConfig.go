@@ -22,13 +22,13 @@ type PostgresEndpointConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/postgres_endpoint#endpoint_id PostgresEndpoint#endpoint_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_endpoint#endpoint_id PostgresEndpoint#endpoint_id}.
 	EndpointId *string `field:"required" json:"endpointId" yaml:"endpointId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/postgres_endpoint#parent PostgresEndpoint#parent}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_endpoint#parent PostgresEndpoint#parent}.
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/postgres_endpoint#provider_config PostgresEndpoint#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_endpoint#provider_config PostgresEndpoint#provider_config}.
 	ProviderConfig *PostgresEndpointProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/postgres_endpoint#spec PostgresEndpoint#spec}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_endpoint#spec PostgresEndpoint#spec}.
 	Spec *PostgresEndpointSpec `field:"optional" json:"spec" yaml:"spec"`
 }
 

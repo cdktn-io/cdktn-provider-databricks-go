@@ -5,7 +5,7 @@ package datadatabricksdataqualitymonitor
 
 
 type DataDatabricksDataQualityMonitorAnomalyDetectionConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#excluded_table_full_names DataDatabricksDataQualityMonitor#excluded_table_full_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/data_quality_monitor#excluded_table_full_names DataDatabricksDataQualityMonitor#excluded_table_full_names}.
 	ExcludedTableFullNames *[]*string `field:"optional" json:"excludedTableFullNames" yaml:"excludedTableFullNames"`
 }
 

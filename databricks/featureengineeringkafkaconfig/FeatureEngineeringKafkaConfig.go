@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}.
 type FeatureEngineeringKafkaConfig interface {
 	cdktn.TerraformResource
 	AuthConfig() FeatureEngineeringKafkaConfigAuthConfigOutputReference
@@ -148,6 +148,15 @@ type FeatureEngineeringKafkaConfig interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for FeatureEngineeringKafkaConfig
@@ -486,7 +495,7 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) ValueSchemaInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
 func NewFeatureEngineeringKafkaConfig(scope constructs.Construct, id *string, config *FeatureEngineeringKafkaConfigConfig) FeatureEngineeringKafkaConfig {
 	_init_.Initialize()
 
@@ -504,7 +513,7 @@ func NewFeatureEngineeringKafkaConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
 func NewFeatureEngineeringKafkaConfig_Override(f FeatureEngineeringKafkaConfig, scope constructs.Construct, id *string, config *FeatureEngineeringKafkaConfigConfig) {
 	_init_.Initialize()
 
@@ -1144,6 +1153,24 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) ToTerraform() interface{} {
 		f,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		f,
+		"with",
+		args,
 		&returns,
 	)
 

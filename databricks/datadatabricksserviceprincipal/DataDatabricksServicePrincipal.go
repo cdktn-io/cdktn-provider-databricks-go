@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal databricks_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/service_principal databricks_service_principal}.
 type DataDatabricksServicePrincipal interface {
 	cdktn.TerraformDataSource
 	AclPrincipalId() *string
@@ -137,6 +137,15 @@ type DataDatabricksServicePrincipal interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatabricksServicePrincipal
@@ -505,7 +514,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
 func NewDataDatabricksServicePrincipal(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalConfig) DataDatabricksServicePrincipal {
 	_init_.Initialize()
 
@@ -523,7 +532,7 @@ func NewDataDatabricksServicePrincipal(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
 func NewDataDatabricksServicePrincipal_Override(d DataDatabricksServicePrincipal, scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -1154,6 +1163,24 @@ func (d *jsiiProxy_DataDatabricksServicePrincipal) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksServicePrincipal) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 
