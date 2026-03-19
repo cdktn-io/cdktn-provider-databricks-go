@@ -30,6 +30,9 @@ type DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference int
 	CreationStack() *[]*string
 	EntityColumnIdentifiers() DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList
 	EntityColumnIdentifiersInput() interface{}
+	FilterCondition() *string
+	SetFilterCondition(val *string)
+	FilterConditionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -46,7 +49,7 @@ type DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference int
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeseriesColumnIdentifier() DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifierOutputReference
-	TimeseriesColumnIdentifierInput() *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier
+	TimeseriesColumnIdentifierInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +76,9 @@ type DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference int
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEntityColumnIdentifiers(value interface{})
 	PutTimeseriesColumnIdentifier(value *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier)
+	ResetEntityColumnIdentifiers()
+	ResetFilterCondition()
+	ResetTimeseriesColumnIdentifier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -133,6 +139,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutpu
 	_jsii_.Get(
 		j,
 		"entityColumnIdentifiersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference) FilterCondition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterCondition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference) FilterConditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterConditionInput",
 		&returns,
 	)
 	return returns
@@ -208,8 +234,8 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference) TimeseriesColumnIdentifierInput() *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier {
-	var returns *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference) TimeseriesColumnIdentifierInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"timeseriesColumnIdentifierInput",
@@ -264,6 +290,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutpu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference)SetFilterCondition(val *string) {
+	if err := j.validateSetFilterConditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterCondition",
 		val,
 	)
 }
@@ -517,6 +554,30 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutpu
 		d,
 		"putTimeseriesColumnIdentifier",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference) ResetEntityColumnIdentifiers() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEntityColumnIdentifiers",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference) ResetFilterCondition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputReference) ResetTimeseriesColumnIdentifier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeseriesColumnIdentifier",
+		nil, // no parameters
 	)
 }
 

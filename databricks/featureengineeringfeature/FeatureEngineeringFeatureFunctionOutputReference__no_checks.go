@@ -47,6 +47,10 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validateInt
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validatePutAggregationFunctionParameters(value *FeatureEngineeringFeatureFunctionAggregationFunction) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validatePutExtraParametersParameters(value interface{}) error {
 	return nil
 }

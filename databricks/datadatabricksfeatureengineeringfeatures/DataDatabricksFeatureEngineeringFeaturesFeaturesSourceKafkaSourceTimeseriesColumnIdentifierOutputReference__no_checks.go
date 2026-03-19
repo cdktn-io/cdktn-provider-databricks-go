@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSo
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier) error {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

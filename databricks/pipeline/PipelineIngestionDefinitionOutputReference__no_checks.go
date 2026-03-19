@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateInterpola
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validatePutDataStagingOptionsParameters(value *PipelineIngestionDefinitionDataStagingOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validatePutFullRefreshWindowParameters(value *PipelineIngestionDefinitionFullRefreshWindow) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetComple
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetConnectionNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetConnectorTypeParameters(val *string) error {
 	return nil
 }
 

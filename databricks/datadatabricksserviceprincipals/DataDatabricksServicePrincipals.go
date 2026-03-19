@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/service_principals databricks_service_principals}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/service_principals databricks_service_principals}.
 type DataDatabricksServicePrincipals interface {
 	cdktn.TerraformDataSource
 	ApplicationIds() *[]*string
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipals) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/service_principals databricks_service_principals} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/service_principals databricks_service_principals} Data Source.
 func NewDataDatabricksServicePrincipals(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalsConfig) DataDatabricksServicePrincipals {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataDatabricksServicePrincipals(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/service_principals databricks_service_principals} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/service_principals databricks_service_principals} Data Source.
 func NewDataDatabricksServicePrincipals_Override(d DataDatabricksServicePrincipals, scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalsConfig) {
 	_init_.Initialize()
 

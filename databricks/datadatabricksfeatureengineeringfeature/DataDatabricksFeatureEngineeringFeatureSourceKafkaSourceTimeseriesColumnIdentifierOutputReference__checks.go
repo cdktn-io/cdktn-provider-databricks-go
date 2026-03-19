@@ -166,9 +166,25 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimes
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifierOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifierOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier:
+		val := val.(*DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier:
+		val_ := val.(DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

@@ -5,7 +5,7 @@ package datadatabrickspolicyinfo
 
 
 type DataDatabricksPolicyInfoProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/policy_info#workspace_id DataDatabricksPolicyInfo#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/policy_info#workspace_id DataDatabricksPolicyInfo#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

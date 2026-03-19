@@ -93,6 +93,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateInterpola
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validatePutDataStagingOptionsParameters(value *PipelineIngestionDefinitionDataStagingOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validatePutFullRefreshWindowParameters(value *PipelineIngestionDefinitionFullRefreshWindow) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -251,6 +262,14 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetComple
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetConnectionNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetConnectorTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

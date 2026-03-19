@@ -13,6 +13,8 @@ import (
 
 type FeatureEngineeringFeatureFunctionOutputReference interface {
 	cdktn.ComplexObject
+	AggregationFunction() FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference
+	AggregationFunctionInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,8 +71,11 @@ type FeatureEngineeringFeatureFunctionOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAggregationFunction(value *FeatureEngineeringFeatureFunctionAggregationFunction)
 	PutExtraParameters(value interface{})
+	ResetAggregationFunction()
 	ResetExtraParameters()
+	ResetFunctionType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -84,6 +89,26 @@ type FeatureEngineeringFeatureFunctionOutputReference interface {
 // The jsii proxy struct for FeatureEngineeringFeatureFunctionOutputReference
 type jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) AggregationFunction() FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference {
+	var returns FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference
+	_jsii_.Get(
+		j,
+		"aggregationFunction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) AggregationFunctionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aggregationFunctionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ComplexObjectIndex() interface{} {
@@ -476,6 +501,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) Interpolati
 	return returns
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutAggregationFunction(value *FeatureEngineeringFeatureFunctionAggregationFunction) {
+	if err := f.validatePutAggregationFunctionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putAggregationFunction",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutExtraParameters(value interface{}) {
 	if err := f.validatePutExtraParametersParameters(value); err != nil {
 		panic(err)
@@ -487,10 +523,26 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutExtraPar
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetAggregationFunction() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetAggregationFunction",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetExtraParameters() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetExtraParameters",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetFunctionType() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFunctionType",
 		nil, // no parameters
 	)
 }

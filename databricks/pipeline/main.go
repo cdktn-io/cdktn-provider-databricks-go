@@ -1395,6 +1395,49 @@ func init() {
 		reflect.TypeOf((*PipelineIngestionDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionDataStagingOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionDataStagingOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "catalogName", GoGetter: "CatalogName"},
+			_jsii_.MemberProperty{JsiiProperty: "catalogNameInput", GoGetter: "CatalogNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVolumeName", GoMethod: "ResetVolumeName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaName", GoGetter: "SchemaName"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaNameInput", GoGetter: "SchemaNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "volumeName", GoGetter: "VolumeName"},
+			_jsii_.MemberProperty{JsiiProperty: "volumeNameInput", GoGetter: "VolumeNameInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionDataStagingOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionFullRefreshWindow",
 		reflect.TypeOf((*PipelineIngestionDefinitionFullRefreshWindow)(nil)).Elem(),
 	)
@@ -2465,7 +2508,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectorType", GoGetter: "ConnectorType"},
+			_jsii_.MemberProperty{JsiiProperty: "connectorTypeInput", GoGetter: "ConnectorTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataStagingOptions", GoGetter: "DataStagingOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "dataStagingOptionsInput", GoGetter: "DataStagingOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "fullRefreshWindow", GoGetter: "FullRefreshWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "fullRefreshWindowInput", GoGetter: "FullRefreshWindowInput"},
@@ -2489,11 +2536,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "netsuiteJarPathInput", GoGetter: "NetsuiteJarPathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "objects", GoGetter: "Objects"},
 			_jsii_.MemberProperty{JsiiProperty: "objectsInput", GoGetter: "ObjectsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDataStagingOptions", GoMethod: "PutDataStagingOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putFullRefreshWindow", GoMethod: "PutFullRefreshWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "putObjects", GoMethod: "PutObjects"},
 			_jsii_.MemberMethod{JsiiMethod: "putSourceConfigurations", GoMethod: "PutSourceConfigurations"},
 			_jsii_.MemberMethod{JsiiMethod: "putTableConfiguration", GoMethod: "PutTableConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectorType", GoMethod: "ResetConnectorType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataStagingOptions", GoMethod: "ResetDataStagingOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFullRefreshWindow", GoMethod: "ResetFullRefreshWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIngestFromUcForeignCatalog", GoMethod: "ResetIngestFromUcForeignCatalog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIngestionGatewayId", GoMethod: "ResetIngestionGatewayId"},

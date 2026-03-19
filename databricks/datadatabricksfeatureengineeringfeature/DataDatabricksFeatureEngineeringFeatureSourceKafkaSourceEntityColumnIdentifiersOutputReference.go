@@ -30,8 +30,8 @@ type DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentif
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers
-	SetInternalValue(val *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntit
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersOutputReference) InternalValue() *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers {
-	var returns *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntit
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersOutputReference)SetInternalValue(val *DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers) {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

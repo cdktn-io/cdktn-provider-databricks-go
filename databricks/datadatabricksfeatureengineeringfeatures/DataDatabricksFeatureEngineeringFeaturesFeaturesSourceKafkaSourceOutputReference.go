@@ -30,6 +30,9 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputRefe
 	CreationStack() *[]*string
 	EntityColumnIdentifiers() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersList
 	EntityColumnIdentifiersInput() interface{}
+	FilterCondition() *string
+	SetFilterCondition(val *string)
+	FilterConditionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -46,7 +49,7 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputRefe
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeseriesColumnIdentifier() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierOutputReference
-	TimeseriesColumnIdentifierInput() *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier
+	TimeseriesColumnIdentifierInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +76,9 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputRefe
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEntityColumnIdentifiers(value interface{})
 	PutTimeseriesColumnIdentifier(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier)
+	ResetEntityColumnIdentifiers()
+	ResetFilterCondition()
+	ResetTimeseriesColumnIdentifier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -133,6 +139,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSo
 	_jsii_.Get(
 		j,
 		"entityColumnIdentifiersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) FilterCondition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterCondition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) FilterConditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterConditionInput",
 		&returns,
 	)
 	return returns
@@ -208,8 +234,8 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSo
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) TimeseriesColumnIdentifierInput() *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier {
-	var returns *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) TimeseriesColumnIdentifierInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"timeseriesColumnIdentifierInput",
@@ -264,6 +290,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSo
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference)SetFilterCondition(val *string) {
+	if err := j.validateSetFilterConditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterCondition",
 		val,
 	)
 }
@@ -517,6 +554,30 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSo
 		d,
 		"putTimeseriesColumnIdentifier",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) ResetEntityColumnIdentifiers() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEntityColumnIdentifiers",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) ResetFilterCondition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) ResetTimeseriesColumnIdentifier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeseriesColumnIdentifier",
+		nil, // no parameters
 	)
 }
 

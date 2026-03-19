@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/directory databricks_directory}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/directory databricks_directory}.
 type Directory interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_Directory) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/directory databricks_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/directory databricks_directory} Resource.
 func NewDirectory(scope constructs.Construct, id *string, config *DirectoryConfig) Directory {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDirectory(scope constructs.Construct, id *string, config *DirectoryConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/directory databricks_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/directory databricks_directory} Resource.
 func NewDirectory_Override(d Directory, scope constructs.Construct, id *string, config *DirectoryConfig) {
 	_init_.Initialize()
 

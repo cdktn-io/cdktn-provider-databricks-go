@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/account_network_policy databricks_account_network_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy databricks_account_network_policy}.
 type AccountNetworkPolicy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_AccountNetworkPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
 func NewAccountNetworkPolicy(scope constructs.Construct, id *string, config *AccountNetworkPolicyConfig) AccountNetworkPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewAccountNetworkPolicy(scope constructs.Construct, id *string, config *Acc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
 func NewAccountNetworkPolicy_Override(a AccountNetworkPolicy, scope constructs.Construct, id *string, config *AccountNetworkPolicyConfig) {
 	_init_.Initialize()
 

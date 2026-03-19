@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_federation_policy databricks_service_principal_federation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_federation_policy databricks_service_principal_federation_policy}.
 type ServicePrincipalFederationPolicy interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_ServicePrincipalFederationPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_federation_policy databricks_service_principal_federation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_federation_policy databricks_service_principal_federation_policy} Resource.
 func NewServicePrincipalFederationPolicy(scope constructs.Construct, id *string, config *ServicePrincipalFederationPolicyConfig) ServicePrincipalFederationPolicy {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewServicePrincipalFederationPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_federation_policy databricks_service_principal_federation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_federation_policy databricks_service_principal_federation_policy} Resource.
 func NewServicePrincipalFederationPolicy_Override(s ServicePrincipalFederationPolicy, scope constructs.Construct, id *string, config *ServicePrincipalFederationPolicyConfig) {
 	_init_.Initialize()
 

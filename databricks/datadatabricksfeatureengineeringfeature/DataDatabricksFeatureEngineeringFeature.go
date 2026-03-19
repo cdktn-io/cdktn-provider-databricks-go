@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}.
 type DataDatabricksFeatureEngineeringFeature interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -28,6 +28,7 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	Entities() DataDatabricksFeatureEngineeringFeatureEntitiesList
 	FilterCondition() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
@@ -64,6 +65,7 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeseriesColumn() DataDatabricksFeatureEngineeringFeatureTimeseriesColumnOutputReference
 	TimeWindow() DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -168,6 +170,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Description() *strin
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Entities() DataDatabricksFeatureEngineeringFeatureEntitiesList {
+	var returns DataDatabricksFeatureEngineeringFeatureEntitiesList
+	_jsii_.Get(
+		j,
+		"entities",
 		&returns,
 	)
 	return returns
@@ -363,6 +375,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TerraformResourceTyp
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TimeseriesColumn() DataDatabricksFeatureEngineeringFeatureTimeseriesColumnOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeatureTimeseriesColumnOutputReference
+	_jsii_.Get(
+		j,
+		"timeseriesColumn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TimeWindow() DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference {
 	var returns DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference
 	_jsii_.Get(
@@ -374,7 +396,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TimeWindow() DataDat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringFeature(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeatureConfig) DataDatabricksFeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -392,7 +414,7 @@ func NewDataDatabricksFeatureEngineeringFeature(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringFeature_Override(d DataDatabricksFeatureEngineeringFeature, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 

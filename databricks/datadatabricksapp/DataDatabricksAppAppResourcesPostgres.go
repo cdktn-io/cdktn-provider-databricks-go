@@ -5,11 +5,11 @@ package datadatabricksapp
 
 
 type DataDatabricksAppAppResourcesPostgres struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/app#branch DataDatabricksApp#branch}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/app#branch DataDatabricksApp#branch}.
 	Branch *string `field:"optional" json:"branch" yaml:"branch"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/app#database DataDatabricksApp#database}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/app#database DataDatabricksApp#database}.
 	Database *string `field:"optional" json:"database" yaml:"database"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/app#permission DataDatabricksApp#permission}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/app#permission DataDatabricksApp#permission}.
 	Permission *string `field:"optional" json:"permission" yaml:"permission"`
 }
 

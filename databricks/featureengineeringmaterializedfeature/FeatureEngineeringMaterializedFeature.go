@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
 type FeatureEngineeringMaterializedFeature interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
 func NewFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *string, config *FeatureEngineeringMaterializedFeatureConfig) FeatureEngineeringMaterializedFeature {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
 func NewFeatureEngineeringMaterializedFeature_Override(f FeatureEngineeringMaterializedFeature, scope constructs.Construct, id *string, config *FeatureEngineeringMaterializedFeatureConfig) {
 	_init_.Initialize()
 

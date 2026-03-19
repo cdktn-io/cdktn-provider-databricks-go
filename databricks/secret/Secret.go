@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/secret databricks_secret}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/secret databricks_secret}.
 type Secret interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_Secret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/secret databricks_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/secret databricks_secret} Resource.
 func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Secret {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/secret databricks_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/secret databricks_secret} Resource.
 func NewSecret_Override(s Secret, scope constructs.Construct, id *string, config *SecretConfig) {
 	_init_.Initialize()
 

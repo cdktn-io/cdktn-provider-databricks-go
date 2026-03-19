@@ -75,6 +75,10 @@ func (f *jsiiProxy_FeatureEngineeringFeature) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeature) validatePutEntitiesParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeature) validatePutFunctionParameters(value *FeatureEngineeringFeatureFunction) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (f *jsiiProxy_FeatureEngineeringFeature) validatePutProviderConfigParameter
 }
 
 func (f *jsiiProxy_FeatureEngineeringFeature) validatePutSourceParameters(value *FeatureEngineeringFeatureSource) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeature) validatePutTimeseriesColumnParameters(value *FeatureEngineeringFeatureTimeseriesColumn) error {
 	return nil
 }
 

@@ -67,6 +67,10 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) validateSetFilterConditionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

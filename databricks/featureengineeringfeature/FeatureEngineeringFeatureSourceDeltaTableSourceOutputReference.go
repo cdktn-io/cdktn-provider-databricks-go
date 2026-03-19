@@ -83,7 +83,9 @@ type FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDataframeSchema()
+	ResetEntityColumns()
 	ResetFilterCondition()
+	ResetTimeseriesColumn()
 	ResetTransformationSql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -633,10 +635,26 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) ResetEntityColumns() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEntityColumns",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) ResetFilterCondition() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) ResetTimeseriesColumn() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTimeseriesColumn",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
 type FeatureEngineeringFeature interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -34,6 +34,8 @@ type FeatureEngineeringFeature interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Entities() FeatureEngineeringFeatureEntitiesList
+	EntitiesInput() interface{}
 	FilterCondition() *string
 	SetFilterCondition(val *string)
 	FilterConditionInput() *string
@@ -81,6 +83,8 @@ type FeatureEngineeringFeature interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeseriesColumn() FeatureEngineeringFeatureTimeseriesColumnOutputReference
+	TimeseriesColumnInput() interface{}
 	TimeWindow() FeatureEngineeringFeatureTimeWindowOutputReference
 	TimeWindowInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -126,18 +130,23 @@ type FeatureEngineeringFeature interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEntities(value interface{})
 	PutFunction(value *FeatureEngineeringFeatureFunction)
 	PutLineageContext(value *FeatureEngineeringFeatureLineageContext)
 	PutProviderConfig(value *FeatureEngineeringFeatureProviderConfig)
 	PutSource(value *FeatureEngineeringFeatureSource)
+	PutTimeseriesColumn(value *FeatureEngineeringFeatureTimeseriesColumn)
 	PutTimeWindow(value *FeatureEngineeringFeatureTimeWindow)
 	ResetDescription()
+	ResetEntities()
 	ResetFilterCondition()
+	ResetInputs()
 	ResetLineageContext()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetTimeseriesColumn()
 	ResetTimeWindow()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -231,6 +240,26 @@ func (j *jsiiProxy_FeatureEngineeringFeature) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) Entities() FeatureEngineeringFeatureEntitiesList {
+	var returns FeatureEngineeringFeatureEntitiesList
+	_jsii_.Get(
+		j,
+		"entities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) EntitiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"entitiesInput",
 		&returns,
 	)
 	return returns
@@ -486,6 +515,26 @@ func (j *jsiiProxy_FeatureEngineeringFeature) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeature) TimeseriesColumn() FeatureEngineeringFeatureTimeseriesColumnOutputReference {
+	var returns FeatureEngineeringFeatureTimeseriesColumnOutputReference
+	_jsii_.Get(
+		j,
+		"timeseriesColumn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) TimeseriesColumnInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeseriesColumnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeature) TimeWindow() FeatureEngineeringFeatureTimeWindowOutputReference {
 	var returns FeatureEngineeringFeatureTimeWindowOutputReference
 	_jsii_.Get(
@@ -507,7 +556,7 @@ func (j *jsiiProxy_FeatureEngineeringFeature) TimeWindowInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) FeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -525,7 +574,7 @@ func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature_Override(f FeatureEngineeringFeature, scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 
@@ -1001,6 +1050,17 @@ func (f *jsiiProxy_FeatureEngineeringFeature) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeature) PutEntities(value interface{}) {
+	if err := f.validatePutEntitiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putEntities",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeature) PutFunction(value *FeatureEngineeringFeatureFunction) {
 	if err := f.validatePutFunctionParameters(value); err != nil {
 		panic(err)
@@ -1045,6 +1105,17 @@ func (f *jsiiProxy_FeatureEngineeringFeature) PutSource(value *FeatureEngineerin
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeature) PutTimeseriesColumn(value *FeatureEngineeringFeatureTimeseriesColumn) {
+	if err := f.validatePutTimeseriesColumnParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putTimeseriesColumn",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeature) PutTimeWindow(value *FeatureEngineeringFeatureTimeWindow) {
 	if err := f.validatePutTimeWindowParameters(value); err != nil {
 		panic(err)
@@ -1064,10 +1135,26 @@ func (f *jsiiProxy_FeatureEngineeringFeature) ResetDescription() {
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeature) ResetEntities() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEntities",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeature) ResetFilterCondition() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeature) ResetInputs() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetInputs",
 		nil, // no parameters
 	)
 }
@@ -1092,6 +1179,14 @@ func (f *jsiiProxy_FeatureEngineeringFeature) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeature) ResetTimeseriesColumn() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTimeseriesColumn",
 		nil, // no parameters
 	)
 }

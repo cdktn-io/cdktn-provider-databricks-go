@@ -5,7 +5,7 @@ package databasesynceddatabasetable
 
 
 type DatabaseSyncedDatabaseTableProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/database_synced_database_table#workspace_id DatabaseSyncedDatabaseTable#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_synced_database_table#workspace_id DatabaseSyncedDatabaseTable#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

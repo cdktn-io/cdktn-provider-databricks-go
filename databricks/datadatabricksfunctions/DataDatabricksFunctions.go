@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/functions databricks_functions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/functions databricks_functions}.
 type DataDatabricksFunctions interface {
 	cdktn.TerraformDataSource
 	CatalogName() *string
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataDatabricksFunctions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/functions databricks_functions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/functions databricks_functions} Data Source.
 func NewDataDatabricksFunctions(scope constructs.Construct, id *string, config *DataDatabricksFunctionsConfig) DataDatabricksFunctions {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataDatabricksFunctions(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/functions databricks_functions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/functions databricks_functions} Data Source.
 func NewDataDatabricksFunctions_Override(d DataDatabricksFunctions, scope constructs.Construct, id *string, config *DataDatabricksFunctionsConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package datadatabrickspostgresendpoint
 
 
 type DataDatabricksPostgresEndpointStatusSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/postgres_endpoint#pg_settings DataDatabricksPostgresEndpoint#pg_settings}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/postgres_endpoint#pg_settings DataDatabricksPostgresEndpoint#pg_settings}.
 	PgSettings *map[string]*string `field:"optional" json:"pgSettings" yaml:"pgSettings"`
 }
 

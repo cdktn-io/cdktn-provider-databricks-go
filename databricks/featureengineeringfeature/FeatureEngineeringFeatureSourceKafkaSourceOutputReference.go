@@ -30,6 +30,9 @@ type FeatureEngineeringFeatureSourceKafkaSourceOutputReference interface {
 	CreationStack() *[]*string
 	EntityColumnIdentifiers() FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList
 	EntityColumnIdentifiersInput() interface{}
+	FilterCondition() *string
+	SetFilterCondition(val *string)
+	FilterConditionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -73,6 +76,9 @@ type FeatureEngineeringFeatureSourceKafkaSourceOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEntityColumnIdentifiers(value interface{})
 	PutTimeseriesColumnIdentifier(value *FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier)
+	ResetEntityColumnIdentifiers()
+	ResetFilterCondition()
+	ResetTimeseriesColumnIdentifier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -133,6 +139,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) En
 	_jsii_.Get(
 		j,
 		"entityColumnIdentifiersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) FilterCondition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterCondition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) FilterConditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterConditionInput",
 		&returns,
 	)
 	return returns
@@ -264,6 +290,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference)Set
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference)SetFilterCondition(val *string) {
+	if err := j.validateSetFilterConditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterCondition",
 		val,
 	)
 }
@@ -517,6 +554,30 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) Pu
 		f,
 		"putTimeseriesColumnIdentifier",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) ResetEntityColumnIdentifiers() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEntityColumnIdentifiers",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) ResetFilterCondition() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) ResetTimeseriesColumnIdentifier() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTimeseriesColumnIdentifier",
+		nil, // no parameters
 	)
 }
 

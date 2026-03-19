@@ -83,7 +83,9 @@ type FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference 
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDataframeSchema()
+	ResetEntityColumns()
 	ResetFilterCondition()
+	ResetTimeseriesColumn()
 	ResetTransformationSql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -633,10 +635,26 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOu
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) ResetEntityColumns() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEntityColumns",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) ResetFilterCondition() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference) ResetTimeseriesColumn() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTimeseriesColumn",
 		nil, // no parameters
 	)
 }

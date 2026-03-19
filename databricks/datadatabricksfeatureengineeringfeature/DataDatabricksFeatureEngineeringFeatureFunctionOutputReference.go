@@ -13,6 +13,8 @@ import (
 
 type DataDatabricksFeatureEngineeringFeatureFunctionOutputReference interface {
 	cdktn.ComplexObject
+	AggregationFunction() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference
+	AggregationFunctionInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,8 +71,11 @@ type DataDatabricksFeatureEngineeringFeatureFunctionOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAggregationFunction(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunction)
 	PutExtraParameters(value interface{})
+	ResetAggregationFunction()
 	ResetExtraParameters()
+	ResetFunctionType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -84,6 +89,26 @@ type DataDatabricksFeatureEngineeringFeatureFunctionOutputReference interface {
 // The jsii proxy struct for DataDatabricksFeatureEngineeringFeatureFunctionOutputReference
 type jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) AggregationFunction() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference
+	_jsii_.Get(
+		j,
+		"aggregationFunction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) AggregationFunctionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aggregationFunctionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) ComplexObjectIndex() interface{} {
@@ -476,6 +501,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) PutAggregationFunction(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunction) {
+	if err := d.validatePutAggregationFunctionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAggregationFunction",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) PutExtraParameters(value interface{}) {
 	if err := d.validatePutExtraParametersParameters(value); err != nil {
 		panic(err)
@@ -487,10 +523,26 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) ResetAggregationFunction() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAggregationFunction",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) ResetExtraParameters() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetExtraParameters",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) ResetFunctionType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFunctionType",
 		nil, // no parameters
 	)
 }

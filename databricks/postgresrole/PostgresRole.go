@@ -1,0 +1,1058 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package postgresrole
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
+)
+
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_role databricks_postgres_role}.
+type PostgresRole interface {
+	cdktn.TerraformResource
+	// Experimental.
+	CdktfStack() cdktn.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreateTime() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktn.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktn.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	// Experimental.
+	Lifecycle() *cdktn.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
+	// Experimental.
+	Provider() cdktn.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() PostgresRoleProviderConfigOutputReference
+	ProviderConfigInput() interface{}
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RoleId() *string
+	SetRoleId(val *string)
+	RoleIdInput() *string
+	Spec() PostgresRoleSpecOutputReference
+	SpecInput() interface{}
+	Status() PostgresRoleStatusOutputReference
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	UpdateTime() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *PostgresRoleProviderConfig)
+	PutSpec(value *PostgresRoleSpec)
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProviderConfig()
+	ResetRoleId()
+	ResetSpec()
+	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
+}
+
+// The jsii proxy struct for PostgresRole
+type jsiiProxy_PostgresRole struct {
+	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_PostgresRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) ProviderConfig() PostgresRoleProviderConfigOutputReference {
+	var returns PostgresRoleProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) RoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) RoleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Spec() PostgresRoleSpecOutputReference {
+	var returns PostgresRoleSpecOutputReference
+	_jsii_.Get(
+		j,
+		"spec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) SpecInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"specInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) Status() PostgresRoleStatusOutputReference {
+	var returns PostgresRoleStatusOutputReference
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_role databricks_postgres_role} Resource.
+func NewPostgresRole(scope constructs.Construct, id *string, config *PostgresRoleConfig) PostgresRole {
+	_init_.Initialize()
+
+	if err := validateNewPostgresRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_PostgresRole{}
+
+	_jsii_.Create(
+		"@cdktn/provider-databricks.postgresRole.PostgresRole",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_role databricks_postgres_role} Resource.
+func NewPostgresRole_Override(p PostgresRole, scope constructs.Construct, id *string, config *PostgresRoleConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktn/provider-databricks.postgresRole.PostgresRole",
+		[]interface{}{scope, id, config},
+		p,
+	)
+}
+
+func (j *jsiiProxy_PostgresRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresRole)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresRole)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresRole)SetForEach(val cdktn.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresRole)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresRole)SetProvider(val cdktn.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresRole)SetRoleId(val *string) {
+	if err := j.validateSetRoleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleId",
+		val,
+	)
+}
+
+// Generates CDKTN code for importing a PostgresRole resource upon running "cdktn plan <stack-name>".
+func PostgresRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
+	_init_.Initialize()
+
+	if err := validatePostgresRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktn.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktn/provider-databricks.postgresRole.PostgresRole",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func PostgresRole_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePostgresRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktn/provider-databricks.postgresRole.PostgresRole",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PostgresRole_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePostgresRole_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktn/provider-databricks.postgresRole.PostgresRole",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PostgresRole_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePostgresRole_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktn/provider-databricks.postgresRole.PostgresRole",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func PostgresRole_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktn/provider-databricks.postgresRole.PostgresRole",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) AddMoveTarget(moveTarget *string) {
+	if err := p.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktn.IResolvable
+
+	_jsii_.Invoke(
+		p,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		p,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		p,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		p,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		p,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		p,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		p,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		p,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
+	if err := p.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktn.IResolvable
+
+	_jsii_.Invoke(
+		p,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) MoveTo(moveTarget *string, index interface{}) {
+	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) PutProviderConfig(value *PostgresRoleProviderConfig) {
+	if err := p.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) PutSpec(value *PostgresRoleSpec) {
+	if err := p.validatePutSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSpec",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) ResetRoleId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRoleId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) ResetSpec() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSpec",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toHclTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		p,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresRole) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		p,
+		"with",
+		args,
+		&returns,
+	)
+
+	return returns
+}
+

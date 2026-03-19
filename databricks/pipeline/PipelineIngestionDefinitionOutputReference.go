@@ -26,11 +26,16 @@ type PipelineIngestionDefinitionOutputReference interface {
 	ConnectionName() *string
 	SetConnectionName(val *string)
 	ConnectionNameInput() *string
+	ConnectorType() *string
+	SetConnectorType(val *string)
+	ConnectorTypeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataStagingOptions() PipelineIngestionDefinitionDataStagingOptionsOutputReference
+	DataStagingOptionsInput() *PipelineIngestionDefinitionDataStagingOptions
 	// Experimental.
 	Fqn() *string
 	FullRefreshWindow() PipelineIngestionDefinitionFullRefreshWindowOutputReference
@@ -87,11 +92,14 @@ type PipelineIngestionDefinitionOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutDataStagingOptions(value *PipelineIngestionDefinitionDataStagingOptions)
 	PutFullRefreshWindow(value *PipelineIngestionDefinitionFullRefreshWindow)
 	PutObjects(value interface{})
 	PutSourceConfigurations(value interface{})
 	PutTableConfiguration(value *PipelineIngestionDefinitionTableConfiguration)
 	ResetConnectionName()
+	ResetConnectorType()
+	ResetDataStagingOptions()
 	ResetFullRefreshWindow()
 	ResetIngestFromUcForeignCatalog()
 	ResetIngestionGatewayId()
@@ -155,11 +163,51 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) ConnectionNameInp
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) ConnectorType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectorType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) ConnectorTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectorTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) DataStagingOptions() PipelineIngestionDefinitionDataStagingOptionsOutputReference {
+	var returns PipelineIngestionDefinitionDataStagingOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"dataStagingOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) DataStagingOptionsInput() *PipelineIngestionDefinitionDataStagingOptions {
+	var returns *PipelineIngestionDefinitionDataStagingOptions
+	_jsii_.Get(
+		j,
+		"dataStagingOptionsInput",
 		&returns,
 	)
 	return returns
@@ -422,6 +470,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetConnectionName(
 	_jsii_.Set(
 		j,
 		"connectionName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetConnectorType(val *string) {
+	if err := j.validateSetConnectorTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectorType",
 		val,
 	)
 }
@@ -689,6 +748,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) InterpolationForA
 	return returns
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) PutDataStagingOptions(value *PipelineIngestionDefinitionDataStagingOptions) {
+	if err := p.validatePutDataStagingOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putDataStagingOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) PutFullRefreshWindow(value *PipelineIngestionDefinitionFullRefreshWindow) {
 	if err := p.validatePutFullRefreshWindowParameters(value); err != nil {
 		panic(err)
@@ -737,6 +807,22 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetConnectionNa
 	_jsii_.InvokeVoid(
 		p,
 		"resetConnectionName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetConnectorType() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetConnectorType",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetDataStagingOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDataStagingOptions",
 		nil, // no parameters
 	)
 }

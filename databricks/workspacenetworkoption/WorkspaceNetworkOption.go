@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/workspace_network_option databricks_workspace_network_option}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/workspace_network_option databricks_workspace_network_option}.
 type WorkspaceNetworkOption interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_WorkspaceNetworkOption) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/workspace_network_option databricks_workspace_network_option} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/workspace_network_option databricks_workspace_network_option} Resource.
 func NewWorkspaceNetworkOption(scope constructs.Construct, id *string, config *WorkspaceNetworkOptionConfig) WorkspaceNetworkOption {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewWorkspaceNetworkOption(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/workspace_network_option databricks_workspace_network_option} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/workspace_network_option databricks_workspace_network_option} Resource.
 func NewWorkspaceNetworkOption_Override(w WorkspaceNetworkOption, scope constructs.Construct, id *string, config *WorkspaceNetworkOptionConfig) {
 	_init_.Initialize()
 

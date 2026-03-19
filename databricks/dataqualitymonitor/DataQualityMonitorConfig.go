@@ -22,15 +22,15 @@ type DataQualityMonitorConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/data_quality_monitor#object_id DataQualityMonitor#object_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/data_quality_monitor#object_id DataQualityMonitor#object_id}.
 	ObjectId *string `field:"required" json:"objectId" yaml:"objectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/data_quality_monitor#object_type DataQualityMonitor#object_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/data_quality_monitor#object_type DataQualityMonitor#object_type}.
 	ObjectType *string `field:"required" json:"objectType" yaml:"objectType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/data_quality_monitor#anomaly_detection_config DataQualityMonitor#anomaly_detection_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/data_quality_monitor#anomaly_detection_config DataQualityMonitor#anomaly_detection_config}.
 	AnomalyDetectionConfig *DataQualityMonitorAnomalyDetectionConfig `field:"optional" json:"anomalyDetectionConfig" yaml:"anomalyDetectionConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/data_quality_monitor#data_profiling_config DataQualityMonitor#data_profiling_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/data_quality_monitor#data_profiling_config DataQualityMonitor#data_profiling_config}.
 	DataProfilingConfig *DataQualityMonitorDataProfilingConfig `field:"optional" json:"dataProfilingConfig" yaml:"dataProfilingConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/data_quality_monitor#provider_config DataQualityMonitor#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/data_quality_monitor#provider_config DataQualityMonitor#provider_config}.
 	ProviderConfig *DataQualityMonitorProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

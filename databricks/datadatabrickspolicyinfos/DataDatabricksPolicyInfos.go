@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/policy_infos databricks_policy_infos}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/policy_infos databricks_policy_infos}.
 type DataDatabricksPolicyInfos interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfos) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/policy_infos databricks_policy_infos} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/policy_infos databricks_policy_infos} Data Source.
 func NewDataDatabricksPolicyInfos(scope constructs.Construct, id *string, config *DataDatabricksPolicyInfosConfig) DataDatabricksPolicyInfos {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDataDatabricksPolicyInfos(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/policy_infos databricks_policy_infos} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/policy_infos databricks_policy_infos} Data Source.
 func NewDataDatabricksPolicyInfos_Override(d DataDatabricksPolicyInfos, scope constructs.Construct, id *string, config *DataDatabricksPolicyInfosConfig) {
 	_init_.Initialize()
 

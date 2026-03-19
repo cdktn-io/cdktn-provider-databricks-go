@@ -29,6 +29,7 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
+	Entities() DataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesList
 	FilterCondition() *string
 	// Experimental.
 	Fqn() *string
@@ -51,6 +52,7 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TimeseriesColumn() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumnOutputReference
 	TimeWindow() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference
 	// Experimental.
 	ComputeFqn() *string
@@ -128,6 +130,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) Entities() DataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesList {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesList
+	_jsii_.Get(
+		j,
+		"entities",
 		&returns,
 	)
 	return returns
@@ -258,6 +270,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) TimeseriesColumn() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumnOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumnOutputReference
+	_jsii_.Get(
+		j,
+		"timeseriesColumn",
 		&returns,
 	)
 	return returns
