@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validatePutEffectiveFileEventQueueParameters(value *DataDatabricksExternalLocationExternalLocationInfoEffectiveFileEventQueue) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validatePutEncryptionDetailsParameters(value *DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails) error {
 	return nil
 }

@@ -51,6 +51,10 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validatePut
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validatePutColumnSelectionParameters(value *FeatureEngineeringFeatureFunctionColumnSelection) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validatePutExtraParametersParameters(value interface{}) error {
 	return nil
 }

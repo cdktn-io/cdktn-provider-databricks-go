@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group databricks_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group databricks_group}.
 type Group interface {
 	cdktn.TerraformResource
 	AclPrincipalId() *string
@@ -24,6 +24,9 @@ type Group interface {
 	AllowInstancePoolCreate() interface{}
 	SetAllowInstancePoolCreate(val interface{})
 	AllowInstancePoolCreateInput() interface{}
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -73,6 +76,8 @@ type Group interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() GroupProviderConfigOutputReference
+	ProviderConfigInput() *GroupProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -137,9 +142,11 @@ type Group interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *GroupProviderConfig)
 	ResetAclPrincipalId()
 	ResetAllowClusterCreate()
 	ResetAllowInstancePoolCreate()
+	ResetApi()
 	ResetDatabricksSqlAccess()
 	ResetExternalId()
 	ResetForce()
@@ -147,6 +154,7 @@ type Group interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetUrl()
 	ResetWorkspaceAccess()
 	ResetWorkspaceConsume()
@@ -232,6 +240,26 @@ func (j *jsiiProxy_Group) AllowInstancePoolCreateInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowInstancePoolCreateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +475,26 @@ func (j *jsiiProxy_Group) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_Group) ProviderConfig() GroupProviderConfigOutputReference {
+	var returns GroupProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) ProviderConfigInput() *GroupProviderConfig {
+	var returns *GroupProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -558,7 +606,7 @@ func (j *jsiiProxy_Group) WorkspaceConsumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group databricks_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group databricks_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -576,7 +624,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group databricks_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group databricks_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -616,6 +664,17 @@ func (j *jsiiProxy_Group)SetAllowInstancePoolCreate(val interface{}) {
 	_jsii_.Set(
 		j,
 		"allowInstancePoolCreate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
 		val,
 	)
 }
@@ -1129,6 +1188,17 @@ func (g *jsiiProxy_Group) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_Group) PutProviderConfig(value *GroupProviderConfig) {
+	if err := g.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_Group) ResetAclPrincipalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1149,6 +1219,14 @@ func (g *jsiiProxy_Group) ResetAllowInstancePoolCreate() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAllowInstancePoolCreate",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetApi() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApi",
 		nil, // no parameters
 	)
 }
@@ -1189,6 +1267,14 @@ func (g *jsiiProxy_Group) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

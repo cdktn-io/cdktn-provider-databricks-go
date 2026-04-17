@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/storage_credential databricks_storage_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/storage_credential databricks_storage_credential}.
 type StorageCredential interface {
 	cdktn.TerraformResource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	AwsIamRole() StorageCredentialAwsIamRoleOutputReference
 	AwsIamRoleInput() *StorageCredentialAwsIamRole
 	AzureManagedIdentity() StorageCredentialAzureManagedIdentityOutputReference
@@ -85,6 +88,8 @@ type StorageCredential interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() StorageCredentialProviderConfigOutputReference
+	ProviderConfigInput() *StorageCredentialProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -153,6 +158,8 @@ type StorageCredential interface {
 	PutCloudflareApiToken(value *StorageCredentialCloudflareApiToken)
 	PutDatabricksGcpServiceAccount(value *StorageCredentialDatabricksGcpServiceAccount)
 	PutGcpServiceAccountKey(value *StorageCredentialGcpServiceAccountKey)
+	PutProviderConfig(value *StorageCredentialProviderConfig)
+	ResetApi()
 	ResetAwsIamRole()
 	ResetAzureManagedIdentity()
 	ResetAzureServicePrincipal()
@@ -169,6 +176,7 @@ type StorageCredential interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetProviderConfig()
 	ResetReadOnly()
 	ResetSkipValidation()
 	SynthesizeAttributes() *map[string]interface{}
@@ -196,6 +204,26 @@ type StorageCredential interface {
 // The jsii proxy struct for StorageCredential
 type jsiiProxy_StorageCredential struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_StorageCredential) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StorageCredential) AwsIamRole() StorageCredentialAwsIamRoleOutputReference {
@@ -588,6 +616,26 @@ func (j *jsiiProxy_StorageCredential) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_StorageCredential) ProviderConfig() StorageCredentialProviderConfigOutputReference {
+	var returns StorageCredentialProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) ProviderConfigInput() *StorageCredentialProviderConfig {
+	var returns *StorageCredentialProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageCredential) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -689,7 +737,7 @@ func (j *jsiiProxy_StorageCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential(scope constructs.Construct, id *string, config *StorageCredentialConfig) StorageCredential {
 	_init_.Initialize()
 
@@ -707,7 +755,7 @@ func NewStorageCredential(scope constructs.Construct, id *string, config *Storag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential_Override(s StorageCredential, scope constructs.Construct, id *string, config *StorageCredentialConfig) {
 	_init_.Initialize()
 
@@ -715,6 +763,17 @@ func NewStorageCredential_Override(s StorageCredential, scope constructs.Constru
 		"@cdktn/provider-databricks.storageCredential.StorageCredential",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_StorageCredential)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -1315,6 +1374,25 @@ func (s *jsiiProxy_StorageCredential) PutGcpServiceAccountKey(value *StorageCred
 	)
 }
 
+func (s *jsiiProxy_StorageCredential) PutProviderConfig(value *StorageCredentialProviderConfig) {
+	if err := s.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageCredential) ResetApi() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApi",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StorageCredential) ResetAwsIamRole() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1423,6 +1501,14 @@ func (s *jsiiProxy_StorageCredential) ResetOwner() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageCredential) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -190,6 +190,22 @@ func (j *jsiiProxy_DataDatabricksAppSpaceResourcesAppOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppSpaceResourcesAppOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAppSpaceResourcesAppOutputReference) validateSetPermissionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppSpaceResourcesAppOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

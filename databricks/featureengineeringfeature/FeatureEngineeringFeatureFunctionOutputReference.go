@@ -15,6 +15,8 @@ type FeatureEngineeringFeatureFunctionOutputReference interface {
 	cdktn.ComplexObject
 	AggregationFunction() FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference
 	AggregationFunctionInput() interface{}
+	ColumnSelection() FeatureEngineeringFeatureFunctionColumnSelectionOutputReference
+	ColumnSelectionInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -72,8 +74,10 @@ type FeatureEngineeringFeatureFunctionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAggregationFunction(value *FeatureEngineeringFeatureFunctionAggregationFunction)
+	PutColumnSelection(value *FeatureEngineeringFeatureFunctionColumnSelection)
 	PutExtraParameters(value interface{})
 	ResetAggregationFunction()
+	ResetColumnSelection()
 	ResetExtraParameters()
 	ResetFunctionType()
 	// Produce the Token's value at resolution time.
@@ -106,6 +110,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) Aggregation
 	_jsii_.Get(
 		j,
 		"aggregationFunctionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ColumnSelection() FeatureEngineeringFeatureFunctionColumnSelectionOutputReference {
+	var returns FeatureEngineeringFeatureFunctionColumnSelectionOutputReference
+	_jsii_.Get(
+		j,
+		"columnSelection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ColumnSelectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"columnSelectionInput",
 		&returns,
 	)
 	return returns
@@ -512,6 +536,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutAggregat
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutColumnSelection(value *FeatureEngineeringFeatureFunctionColumnSelection) {
+	if err := f.validatePutColumnSelectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putColumnSelection",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutExtraParameters(value interface{}) {
 	if err := f.validatePutExtraParametersParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetAggreg
 	_jsii_.InvokeVoid(
 		f,
 		"resetAggregationFunction",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetColumnSelection() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetColumnSelection",
 		nil, // no parameters
 	)
 }

@@ -79,7 +79,15 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) validateSetAccountIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCurrentConfig) validateSetApiParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksCurrentConfig) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksCurrentConfig) validateSetCloudParameters(val *string) error {
 	return nil
 }
 

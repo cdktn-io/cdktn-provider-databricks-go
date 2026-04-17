@@ -32,6 +32,8 @@ type DataDatabricksAccountNetworkPoliciesItemsOutputReference interface {
 	Egress() DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference
 	// Experimental.
 	Fqn() *string
+	Ingress() DataDatabricksAccountNetworkPoliciesItemsIngressOutputReference
+	IngressDryRun() DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference
 	InternalValue() *DataDatabricksAccountNetworkPoliciesItems
 	SetInternalValue(val *DataDatabricksAccountNetworkPoliciesItems)
 	NetworkPolicyId() *string
@@ -139,6 +141,26 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) Fqn
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) Ingress() DataDatabricksAccountNetworkPoliciesItemsIngressOutputReference {
+	var returns DataDatabricksAccountNetworkPoliciesItemsIngressOutputReference
+	_jsii_.Get(
+		j,
+		"ingress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) IngressDryRun() DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference {
+	var returns DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference
+	_jsii_.Get(
+		j,
+		"ingressDryRun",
 		&returns,
 	)
 	return returns

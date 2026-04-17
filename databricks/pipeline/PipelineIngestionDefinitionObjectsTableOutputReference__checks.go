@@ -93,6 +93,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) valid
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) validatePutConnectorOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) validatePutTableConfigurationParameters(value *PipelineIngestionDefinitionObjectsTableTableConfiguration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

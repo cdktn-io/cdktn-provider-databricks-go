@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions databricks_sql_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions databricks_sql_permissions}.
 type SqlPermissions interface {
 	cdktn.TerraformResource
 	AnonymousFunction() interface{}
@@ -69,6 +69,8 @@ type SqlPermissions interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() SqlPermissionsProviderConfigOutputReference
+	ProviderConfigInput() *SqlPermissionsProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -131,6 +133,7 @@ type SqlPermissions interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPrivilegeAssignments(value interface{})
+	PutProviderConfig(value *SqlPermissionsProviderConfig)
 	ResetAnonymousFunction()
 	ResetAnyFile()
 	ResetCatalog()
@@ -141,6 +144,7 @@ type SqlPermissions interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivilegeAssignments()
+	ResetProviderConfig()
 	ResetTable()
 	ResetView()
 	SynthesizeAttributes() *map[string]interface{}
@@ -420,6 +424,26 @@ func (j *jsiiProxy_SqlPermissions) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_SqlPermissions) ProviderConfig() SqlPermissionsProviderConfigOutputReference {
+	var returns SqlPermissionsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlPermissions) ProviderConfigInput() *SqlPermissionsProviderConfig {
+	var returns *SqlPermissionsProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlPermissions) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -511,7 +535,7 @@ func (j *jsiiProxy_SqlPermissions) ViewInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
 func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermissionsConfig) SqlPermissions {
 	_init_.Initialize()
 
@@ -529,7 +553,7 @@ func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
 func NewSqlPermissions_Override(s SqlPermissions, scope constructs.Construct, id *string, config *SqlPermissionsConfig) {
 	_init_.Initialize()
 
@@ -1060,6 +1084,17 @@ func (s *jsiiProxy_SqlPermissions) PutPrivilegeAssignments(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_SqlPermissions) PutProviderConfig(value *SqlPermissionsProviderConfig) {
+	if err := s.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlPermissions) ResetAnonymousFunction() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1120,6 +1155,14 @@ func (s *jsiiProxy_SqlPermissions) ResetPrivilegeAssignments() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPrivilegeAssignments",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlPermissions) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (m *jsiiProxy_MetastoreAssignment) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (m *jsiiProxy_MetastoreAssignment) validatePutProviderConfigParameters(value *MetastoreAssignmentProviderConfig) error {
+	return nil
+}
+
 func validateMetastoreAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func validateMetastoreAssignment_IsTerraformElementParameters(x interface{}) err
 }
 
 func validateMetastoreAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MetastoreAssignment) validateSetApiParameters(val *string) error {
 	return nil
 }
 

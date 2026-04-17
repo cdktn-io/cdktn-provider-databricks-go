@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user_instance_profile databricks_user_instance_profile}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user_instance_profile databricks_user_instance_profile}.
 type UserInstanceProfile interface {
 	cdktn.TerraformResource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -55,6 +58,8 @@ type UserInstanceProfile interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() UserInstanceProfileProviderConfigOutputReference
+	ProviderConfigInput() *UserInstanceProfileProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -113,10 +118,13 @@ type UserInstanceProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *UserInstanceProfileProviderConfig)
+	ResetApi()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -142,6 +150,26 @@ type UserInstanceProfile interface {
 // The jsii proxy struct for UserInstanceProfile
 type jsiiProxy_UserInstanceProfile struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_UserInstanceProfile) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserInstanceProfile) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_UserInstanceProfile) CdktfStack() cdktn.TerraformStack {
@@ -294,6 +322,26 @@ func (j *jsiiProxy_UserInstanceProfile) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_UserInstanceProfile) ProviderConfig() UserInstanceProfileProviderConfigOutputReference {
+	var returns UserInstanceProfileProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserInstanceProfile) ProviderConfigInput() *UserInstanceProfileProviderConfig {
+	var returns *UserInstanceProfileProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_UserInstanceProfile) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -365,7 +413,7 @@ func (j *jsiiProxy_UserInstanceProfile) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
 func NewUserInstanceProfile(scope constructs.Construct, id *string, config *UserInstanceProfileConfig) UserInstanceProfile {
 	_init_.Initialize()
 
@@ -383,7 +431,7 @@ func NewUserInstanceProfile(scope constructs.Construct, id *string, config *User
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
 func NewUserInstanceProfile_Override(u UserInstanceProfile, scope constructs.Construct, id *string, config *UserInstanceProfileConfig) {
 	_init_.Initialize()
 
@@ -391,6 +439,17 @@ func NewUserInstanceProfile_Override(u UserInstanceProfile, scope constructs.Con
 		"@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile",
 		[]interface{}{scope, id, config},
 		u,
+	)
+}
+
+func (j *jsiiProxy_UserInstanceProfile)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -848,6 +907,25 @@ func (u *jsiiProxy_UserInstanceProfile) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (u *jsiiProxy_UserInstanceProfile) PutProviderConfig(value *UserInstanceProfileProviderConfig) {
+	if err := u.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (u *jsiiProxy_UserInstanceProfile) ResetApi() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetApi",
+		nil, // no parameters
+	)
+}
+
 func (u *jsiiProxy_UserInstanceProfile) ResetId() {
 	_jsii_.InvokeVoid(
 		u,
@@ -860,6 +938,14 @@ func (u *jsiiProxy_UserInstanceProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserInstanceProfile) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

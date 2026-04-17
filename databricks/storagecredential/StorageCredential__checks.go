@@ -273,6 +273,17 @@ func (s *jsiiProxy_StorageCredential) validatePutGcpServiceAccountKeyParameters(
 	return nil
 }
 
+func (s *jsiiProxy_StorageCredential) validatePutProviderConfigParameters(value *StorageCredentialProviderConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateStorageCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -308,6 +319,14 @@ func validateStorageCredential_IsTerraformElementParameters(x interface{}) error
 func validateStorageCredential_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StorageCredential) validateSetApiParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

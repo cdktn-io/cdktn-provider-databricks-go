@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user databricks_user}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user databricks_user}.
 type User interface {
 	cdktn.TerraformResource
 	AclPrincipalId() *string
@@ -27,6 +27,9 @@ type User interface {
 	AllowInstancePoolCreate() interface{}
 	SetAllowInstancePoolCreate(val interface{})
 	AllowInstancePoolCreateInput() interface{}
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -88,6 +91,8 @@ type User interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() UserProviderConfigOutputReference
+	ProviderConfigInput() *UserProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -155,10 +160,12 @@ type User interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *UserProviderConfig)
 	ResetAclPrincipalId()
 	ResetActive()
 	ResetAllowClusterCreate()
 	ResetAllowInstancePoolCreate()
+	ResetApi()
 	ResetDatabricksSqlAccess()
 	ResetDisableAsUserDeletion()
 	ResetDisplayName()
@@ -171,6 +178,7 @@ type User interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetRepos()
 	ResetWorkspaceAccess()
 	ResetWorkspaceConsume()
@@ -276,6 +284,26 @@ func (j *jsiiProxy_User) AllowInstancePoolCreateInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowInstancePoolCreateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
 		&returns,
 	)
 	return returns
@@ -571,6 +599,26 @@ func (j *jsiiProxy_User) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_User) ProviderConfig() UserProviderConfigOutputReference {
+	var returns UserProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) ProviderConfigInput() *UserProviderConfig {
+	var returns *UserProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_User) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -702,7 +750,7 @@ func (j *jsiiProxy_User) WorkspaceConsumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user databricks_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user databricks_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
 
@@ -720,7 +768,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user databricks_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user databricks_user} Resource.
 func NewUser_Override(u User, scope constructs.Construct, id *string, config *UserConfig) {
 	_init_.Initialize()
 
@@ -771,6 +819,17 @@ func (j *jsiiProxy_User)SetAllowInstancePoolCreate(val interface{}) {
 	_jsii_.Set(
 		j,
 		"allowInstancePoolCreate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_User)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
 		val,
 	)
 }
@@ -1339,6 +1398,17 @@ func (u *jsiiProxy_User) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (u *jsiiProxy_User) PutProviderConfig(value *UserProviderConfig) {
+	if err := u.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (u *jsiiProxy_User) ResetAclPrincipalId() {
 	_jsii_.InvokeVoid(
 		u,
@@ -1367,6 +1437,14 @@ func (u *jsiiProxy_User) ResetAllowInstancePoolCreate() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetAllowInstancePoolCreate",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetApi() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetApi",
 		nil, // no parameters
 	)
 }
@@ -1447,6 +1525,14 @@ func (u *jsiiProxy_User) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

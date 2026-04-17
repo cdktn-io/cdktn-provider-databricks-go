@@ -397,6 +397,14 @@ func (j *jsiiProxy_VectorSearchIndex) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchIndex) validateSetIndexSubtypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchIndex) validateSetIndexTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

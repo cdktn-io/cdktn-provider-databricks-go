@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user_role databricks_user_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user_role databricks_user_role}.
 type UserRole interface {
 	cdktn.TerraformResource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -52,6 +55,8 @@ type UserRole interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() UserRoleProviderConfigOutputReference
+	ProviderConfigInput() *UserRoleProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -113,10 +118,13 @@ type UserRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *UserRoleProviderConfig)
+	ResetApi()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -142,6 +150,26 @@ type UserRole interface {
 // The jsii proxy struct for UserRole
 type jsiiProxy_UserRole struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_UserRole) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserRole) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_UserRole) CdktfStack() cdktn.TerraformStack {
@@ -274,6 +302,26 @@ func (j *jsiiProxy_UserRole) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_UserRole) ProviderConfig() UserRoleProviderConfigOutputReference {
+	var returns UserRoleProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserRole) ProviderConfigInput() *UserRoleProviderConfig {
+	var returns *UserRoleProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_UserRole) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -365,7 +413,7 @@ func (j *jsiiProxy_UserRole) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user_role databricks_user_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user_role databricks_user_role} Resource.
 func NewUserRole(scope constructs.Construct, id *string, config *UserRoleConfig) UserRole {
 	_init_.Initialize()
 
@@ -383,7 +431,7 @@ func NewUserRole(scope constructs.Construct, id *string, config *UserRoleConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user_role databricks_user_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user_role databricks_user_role} Resource.
 func NewUserRole_Override(u UserRole, scope constructs.Construct, id *string, config *UserRoleConfig) {
 	_init_.Initialize()
 
@@ -391,6 +439,17 @@ func NewUserRole_Override(u UserRole, scope constructs.Construct, id *string, co
 		"@cdktn/provider-databricks.userRole.UserRole",
 		[]interface{}{scope, id, config},
 		u,
+	)
+}
+
+func (j *jsiiProxy_UserRole)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -848,6 +907,25 @@ func (u *jsiiProxy_UserRole) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (u *jsiiProxy_UserRole) PutProviderConfig(value *UserRoleProviderConfig) {
+	if err := u.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (u *jsiiProxy_UserRole) ResetApi() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetApi",
+		nil, // no parameters
+	)
+}
+
 func (u *jsiiProxy_UserRole) ResetId() {
 	_jsii_.InvokeVoid(
 		u,
@@ -860,6 +938,14 @@ func (u *jsiiProxy_UserRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserRole) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

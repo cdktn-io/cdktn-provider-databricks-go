@@ -75,6 +75,10 @@ func (e *jsiiProxy_ExternalLocation) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (e *jsiiProxy_ExternalLocation) validatePutEffectiveFileEventQueueParameters(value *ExternalLocationEffectiveFileEventQueue) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExternalLocation) validatePutEncryptionDetailsParameters(value *ExternalLocationEncryptionDetails) error {
 	return nil
 }

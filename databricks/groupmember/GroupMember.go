@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group_member databricks_group_member}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group_member databricks_group_member}.
 type GroupMember interface {
 	cdktn.TerraformResource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -58,6 +61,8 @@ type GroupMember interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() GroupMemberProviderConfigOutputReference
+	ProviderConfigInput() *GroupMemberProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -113,10 +118,13 @@ type GroupMember interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *GroupMemberProviderConfig)
+	ResetApi()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -142,6 +150,26 @@ type GroupMember interface {
 // The jsii proxy struct for GroupMember
 type jsiiProxy_GroupMember struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_GroupMember) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupMember) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GroupMember) CdktfStack() cdktn.TerraformStack {
@@ -314,6 +342,26 @@ func (j *jsiiProxy_GroupMember) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_GroupMember) ProviderConfig() GroupMemberProviderConfigOutputReference {
+	var returns GroupMemberProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupMember) ProviderConfigInput() *GroupMemberProviderConfig {
+	var returns *GroupMemberProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupMember) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -365,7 +413,7 @@ func (j *jsiiProxy_GroupMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group_member databricks_group_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group_member databricks_group_member} Resource.
 func NewGroupMember(scope constructs.Construct, id *string, config *GroupMemberConfig) GroupMember {
 	_init_.Initialize()
 
@@ -383,7 +431,7 @@ func NewGroupMember(scope constructs.Construct, id *string, config *GroupMemberC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group_member databricks_group_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group_member databricks_group_member} Resource.
 func NewGroupMember_Override(g GroupMember, scope constructs.Construct, id *string, config *GroupMemberConfig) {
 	_init_.Initialize()
 
@@ -391,6 +439,17 @@ func NewGroupMember_Override(g GroupMember, scope constructs.Construct, id *stri
 		"@cdktn/provider-databricks.groupMember.GroupMember",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GroupMember)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -848,6 +907,25 @@ func (g *jsiiProxy_GroupMember) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GroupMember) PutProviderConfig(value *GroupMemberProviderConfig) {
+	if err := g.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GroupMember) ResetApi() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApi",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GroupMember) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -860,6 +938,14 @@ func (g *jsiiProxy_GroupMember) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupMember) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

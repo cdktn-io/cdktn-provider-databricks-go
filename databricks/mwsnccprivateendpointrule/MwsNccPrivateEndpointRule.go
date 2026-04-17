@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}.
 type MwsNccPrivateEndpointRule interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -69,6 +69,8 @@ type MwsNccPrivateEndpointRule interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcpEndpoint() MwsNccPrivateEndpointRuleGcpEndpointOutputReference
+	GcpEndpointInput() *MwsNccPrivateEndpointRuleGcpEndpoint
 	GroupId() *string
 	SetGroupId(val *string)
 	GroupIdInput() *string
@@ -158,6 +160,7 @@ type MwsNccPrivateEndpointRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutGcpEndpoint(value *MwsNccPrivateEndpointRuleGcpEndpoint)
 	ResetAccountId()
 	ResetConnectionState()
 	ResetCreationTime()
@@ -168,6 +171,7 @@ type MwsNccPrivateEndpointRule interface {
 	ResetEndpointName()
 	ResetEndpointService()
 	ResetErrorMessage()
+	ResetGcpEndpoint()
 	ResetGroupId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -485,6 +489,26 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) GcpEndpoint() MwsNccPrivateEndpointRuleGcpEndpointOutputReference {
+	var returns MwsNccPrivateEndpointRuleGcpEndpointOutputReference
+	_jsii_.Get(
+		j,
+		"gcpEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) GcpEndpointInput() *MwsNccPrivateEndpointRuleGcpEndpoint {
+	var returns *MwsNccPrivateEndpointRuleGcpEndpoint
+	_jsii_.Get(
+		j,
+		"gcpEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) GroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -726,7 +750,7 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) VpcEndpointIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
 func NewMwsNccPrivateEndpointRule(scope constructs.Construct, id *string, config *MwsNccPrivateEndpointRuleConfig) MwsNccPrivateEndpointRule {
 	_init_.Initialize()
 
@@ -744,7 +768,7 @@ func NewMwsNccPrivateEndpointRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
 func NewMwsNccPrivateEndpointRule_Override(m MwsNccPrivateEndpointRule, scope constructs.Construct, id *string, config *MwsNccPrivateEndpointRuleConfig) {
 	_init_.Initialize()
 
@@ -1374,6 +1398,17 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRule) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (m *jsiiProxy_MwsNccPrivateEndpointRule) PutGcpEndpoint(value *MwsNccPrivateEndpointRuleGcpEndpoint) {
+	if err := m.validatePutGcpEndpointParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putGcpEndpoint",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1450,6 +1485,14 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetErrorMessage() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetErrorMessage",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetGcpEndpoint() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGcpEndpoint",
 		nil, // no parameters
 	)
 }

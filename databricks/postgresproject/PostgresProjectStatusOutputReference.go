@@ -31,6 +31,7 @@ type PostgresProjectStatusOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomTags() PostgresProjectStatusCustomTagsList
+	DefaultBranch() *string
 	DefaultEndpointSettings() PostgresProjectStatusDefaultEndpointSettingsOutputReference
 	DisplayName() *string
 	EnablePgNativeLogin() cdktn.IResolvable
@@ -144,6 +145,16 @@ func (j *jsiiProxy_PostgresProjectStatusOutputReference) CustomTags() PostgresPr
 	_jsii_.Get(
 		j,
 		"customTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectStatusOutputReference) DefaultBranch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranch",
 		&returns,
 	)
 	return returns

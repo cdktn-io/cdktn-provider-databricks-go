@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/group databricks_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/group databricks_group}.
 type DataDatabricksGroup interface {
 	cdktn.TerraformDataSource
 	AclPrincipalId() *string
@@ -24,6 +24,9 @@ type DataDatabricksGroup interface {
 	AllowInstancePoolCreate() interface{}
 	SetAllowInstancePoolCreate(val interface{})
 	AllowInstancePoolCreateInput() interface{}
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	ChildGroups() *[]*string
@@ -132,6 +135,7 @@ type DataDatabricksGroup interface {
 	ResetAclPrincipalId()
 	ResetAllowClusterCreate()
 	ResetAllowInstancePoolCreate()
+	ResetApi()
 	ResetChildGroups()
 	ResetDatabricksSqlAccess()
 	ResetExternalId()
@@ -231,6 +235,26 @@ func (j *jsiiProxy_DataDatabricksGroup) AllowInstancePoolCreateInput() interface
 	_jsii_.Get(
 		j,
 		"allowInstancePoolCreateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksGroup) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksGroup) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
 		&returns,
 	)
 	return returns
@@ -657,7 +681,7 @@ func (j *jsiiProxy_DataDatabricksGroup) WorkspaceConsumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/group databricks_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/group databricks_group} Data Source.
 func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) DataDatabricksGroup {
 	_init_.Initialize()
 
@@ -675,7 +699,7 @@ func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/group databricks_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/group databricks_group} Data Source.
 func NewDataDatabricksGroup_Override(d DataDatabricksGroup, scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) {
 	_init_.Initialize()
 
@@ -715,6 +739,17 @@ func (j *jsiiProxy_DataDatabricksGroup)SetAllowInstancePoolCreate(val interface{
 	_jsii_.Set(
 		j,
 		"allowInstancePoolCreate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksGroup)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
 		val,
 	)
 }
@@ -1224,6 +1259,14 @@ func (d *jsiiProxy_DataDatabricksGroup) ResetAllowInstancePoolCreate() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAllowInstancePoolCreate",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksGroup) ResetApi() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApi",
 		nil, // no parameters
 	)
 }

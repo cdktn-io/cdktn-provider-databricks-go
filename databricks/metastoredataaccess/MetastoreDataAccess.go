@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
 type MetastoreDataAccess interface {
 	cdktn.TerraformResource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	AwsIamRole() MetastoreDataAccessAwsIamRoleOutputReference
 	AwsIamRoleInput() *MetastoreDataAccessAwsIamRole
 	AzureManagedIdentity() MetastoreDataAccessAzureManagedIdentityOutputReference
@@ -88,6 +91,8 @@ type MetastoreDataAccess interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() MetastoreDataAccessProviderConfigOutputReference
+	ProviderConfigInput() *MetastoreDataAccessProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -155,6 +160,8 @@ type MetastoreDataAccess interface {
 	PutCloudflareApiToken(value *MetastoreDataAccessCloudflareApiToken)
 	PutDatabricksGcpServiceAccount(value *MetastoreDataAccessDatabricksGcpServiceAccount)
 	PutGcpServiceAccountKey(value *MetastoreDataAccessGcpServiceAccountKey)
+	PutProviderConfig(value *MetastoreDataAccessProviderConfig)
+	ResetApi()
 	ResetAwsIamRole()
 	ResetAzureManagedIdentity()
 	ResetAzureServicePrincipal()
@@ -172,6 +179,7 @@ type MetastoreDataAccess interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetProviderConfig()
 	ResetReadOnly()
 	ResetSkipValidation()
 	SynthesizeAttributes() *map[string]interface{}
@@ -199,6 +207,26 @@ type MetastoreDataAccess interface {
 // The jsii proxy struct for MetastoreDataAccess
 type jsiiProxy_MetastoreDataAccess struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MetastoreDataAccess) AwsIamRole() MetastoreDataAccessAwsIamRoleOutputReference {
@@ -611,6 +639,26 @@ func (j *jsiiProxy_MetastoreDataAccess) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_MetastoreDataAccess) ProviderConfig() MetastoreDataAccessProviderConfigOutputReference {
+	var returns MetastoreDataAccessProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) ProviderConfigInput() *MetastoreDataAccessProviderConfig {
+	var returns *MetastoreDataAccessProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MetastoreDataAccess) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -702,7 +750,7 @@ func (j *jsiiProxy_MetastoreDataAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) MetastoreDataAccess {
 	_init_.Initialize()
 
@@ -720,7 +768,7 @@ func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess_Override(m MetastoreDataAccess, scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) {
 	_init_.Initialize()
 
@@ -728,6 +776,17 @@ func NewMetastoreDataAccess_Override(m MetastoreDataAccess, scope constructs.Con
 		"@cdktn/provider-databricks.metastoreDataAccess.MetastoreDataAccess",
 		[]interface{}{scope, id, config},
 		m,
+	)
+}
+
+func (j *jsiiProxy_MetastoreDataAccess)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -1339,6 +1398,25 @@ func (m *jsiiProxy_MetastoreDataAccess) PutGcpServiceAccountKey(value *Metastore
 	)
 }
 
+func (m *jsiiProxy_MetastoreDataAccess) PutProviderConfig(value *MetastoreDataAccessProviderConfig) {
+	if err := m.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetApi() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetApi",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MetastoreDataAccess) ResetAwsIamRole() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1455,6 +1533,14 @@ func (m *jsiiProxy_MetastoreDataAccess) ResetOwner() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

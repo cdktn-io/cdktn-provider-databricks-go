@@ -34,6 +34,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOut
 	Fqn() *string
 	InternalValue() *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeatures
 	SetInternalValue(val *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeatures)
+	IsOnline() cdktn.IResolvable
 	LastMaterializationTime() *string
 	MaterializedFeatureId() *string
 	SetMaterializedFeatureId(val *string)
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) IsOnline() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isOnline",
 		&returns,
 	)
 	return returns

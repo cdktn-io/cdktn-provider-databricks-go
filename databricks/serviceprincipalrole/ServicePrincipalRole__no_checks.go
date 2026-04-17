@@ -75,6 +75,10 @@ func (s *jsiiProxy_ServicePrincipalRole) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipalRole) validatePutProviderConfigParameters(value *ServicePrincipalRoleProviderConfig) error {
+	return nil
+}
+
 func validateServicePrincipalRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func validateServicePrincipalRole_IsTerraformElementParameters(x interface{}) er
 }
 
 func validateServicePrincipalRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServicePrincipalRole) validateSetApiParameters(val *string) error {
 	return nil
 }
 

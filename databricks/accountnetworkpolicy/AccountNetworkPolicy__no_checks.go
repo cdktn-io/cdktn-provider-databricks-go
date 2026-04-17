@@ -79,6 +79,14 @@ func (a *jsiiProxy_AccountNetworkPolicy) validatePutEgressParameters(value *Acco
 	return nil
 }
 
+func (a *jsiiProxy_AccountNetworkPolicy) validatePutIngressParameters(value *AccountNetworkPolicyIngress) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicy) validatePutIngressDryRunParameters(value *AccountNetworkPolicyIngressDryRun) error {
+	return nil
+}
+
 func validateAccountNetworkPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

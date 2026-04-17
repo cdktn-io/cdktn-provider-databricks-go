@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}.
 type AccessControlRuleSet interface {
 	cdktn.TerraformResource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -58,6 +61,8 @@ type AccessControlRuleSet interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() AccessControlRuleSetProviderConfigOutputReference
+	ProviderConfigInput() *AccessControlRuleSetProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -114,11 +119,14 @@ type AccessControlRuleSet interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGrantRules(value interface{})
+	PutProviderConfig(value *AccessControlRuleSetProviderConfig)
+	ResetApi()
 	ResetGrantRules()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -144,6 +152,26 @@ type AccessControlRuleSet interface {
 // The jsii proxy struct for AccessControlRuleSet
 type jsiiProxy_AccessControlRuleSet struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_AccessControlRuleSet) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessControlRuleSet) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessControlRuleSet) CdktfStack() cdktn.TerraformStack {
@@ -326,6 +354,26 @@ func (j *jsiiProxy_AccessControlRuleSet) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_AccessControlRuleSet) ProviderConfig() AccessControlRuleSetProviderConfigOutputReference {
+	var returns AccessControlRuleSetProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessControlRuleSet) ProviderConfigInput() *AccessControlRuleSetProviderConfig {
+	var returns *AccessControlRuleSetProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessControlRuleSet) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -377,7 +425,7 @@ func (j *jsiiProxy_AccessControlRuleSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
 func NewAccessControlRuleSet(scope constructs.Construct, id *string, config *AccessControlRuleSetConfig) AccessControlRuleSet {
 	_init_.Initialize()
 
@@ -395,7 +443,7 @@ func NewAccessControlRuleSet(scope constructs.Construct, id *string, config *Acc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
 func NewAccessControlRuleSet_Override(a AccessControlRuleSet, scope constructs.Construct, id *string, config *AccessControlRuleSetConfig) {
 	_init_.Initialize()
 
@@ -403,6 +451,17 @@ func NewAccessControlRuleSet_Override(a AccessControlRuleSet, scope constructs.C
 		"@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AccessControlRuleSet)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -860,6 +919,25 @@ func (a *jsiiProxy_AccessControlRuleSet) PutGrantRules(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AccessControlRuleSet) PutProviderConfig(value *AccessControlRuleSetProviderConfig) {
+	if err := a.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessControlRuleSet) ResetApi() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetApi",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessControlRuleSet) ResetGrantRules() {
 	_jsii_.InvokeVoid(
 		a,
@@ -880,6 +958,14 @@ func (a *jsiiProxy_AccessControlRuleSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessControlRuleSet) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

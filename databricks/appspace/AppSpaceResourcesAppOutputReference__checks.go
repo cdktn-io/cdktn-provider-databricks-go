@@ -190,6 +190,22 @@ func (j *jsiiProxy_AppSpaceResourcesAppOutputReference) validateSetInternalValue
 	return nil
 }
 
+func (j *jsiiProxy_AppSpaceResourcesAppOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AppSpaceResourcesAppOutputReference) validateSetPermissionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppSpaceResourcesAppOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

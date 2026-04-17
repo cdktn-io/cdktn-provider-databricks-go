@@ -23,6 +23,8 @@ type PipelineIngestionDefinitionObjectsTableOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectorOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference
+	ConnectorOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptions
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -84,7 +86,9 @@ type PipelineIngestionDefinitionObjectsTableOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutConnectorOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptions)
 	PutTableConfiguration(value *PipelineIngestionDefinitionObjectsTableTableConfiguration)
+	ResetConnectorOptions()
 	ResetDestinationTable()
 	ResetSourceCatalog()
 	ResetSourceSchema()
@@ -119,6 +123,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) Compl
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) ConnectorOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"connectorOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) ConnectorOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptions
+	_jsii_.Get(
+		j,
+		"connectorOptionsInput",
 		&returns,
 	)
 	return returns
@@ -649,6 +673,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) Inter
 	return returns
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) PutConnectorOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptions) {
+	if err := p.validatePutConnectorOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putConnectorOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) PutTableConfiguration(value *PipelineIngestionDefinitionObjectsTableTableConfiguration) {
 	if err := p.validatePutTableConfigurationParameters(value); err != nil {
 		panic(err)
@@ -657,6 +692,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) PutTa
 		p,
 		"putTableConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) ResetConnectorOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetConnectorOptions",
+		nil, // no parameters
 	)
 }
 

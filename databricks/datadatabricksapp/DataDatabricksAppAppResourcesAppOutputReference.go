@@ -32,6 +32,12 @@ type DataDatabricksAppAppResourcesAppOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Permission() *string
+	SetPermission(val *string)
+	PermissionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +70,8 @@ type DataDatabricksAppAppResourcesAppOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetName()
+	ResetPermission()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -124,6 +132,46 @@ func (j *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference) Permission() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"permission",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference) PermissionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"permissionInput",
 		&returns,
 	)
 	return returns
@@ -206,6 +254,28 @@ func (j *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference)SetPermission(val *string) {
+	if err := j.validateSetPermissionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"permission",
 		val,
 	)
 }
@@ -416,6 +486,22 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference) ResetPermission() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPermission",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksAppAppResourcesAppOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

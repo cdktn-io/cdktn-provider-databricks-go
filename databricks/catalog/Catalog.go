@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog databricks_catalog}.
 type Catalog interface {
 	cdktn.TerraformResource
 	BrowseOnly() interface{}
@@ -70,6 +70,8 @@ type Catalog interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	ManagedEncryptionSettings() CatalogManagedEncryptionSettingsOutputReference
+	ManagedEncryptionSettingsInput() *CatalogManagedEncryptionSettings
 	MetastoreId() *string
 	SetMetastoreId(val *string)
 	MetastoreIdInput() *string
@@ -164,6 +166,7 @@ type Catalog interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEffectivePredictiveOptimizationFlag(value *CatalogEffectivePredictiveOptimizationFlag)
+	PutManagedEncryptionSettings(value *CatalogManagedEncryptionSettings)
 	PutProviderConfig(value *CatalogProviderConfig)
 	PutProvisioningInfo(value *CatalogProvisioningInfo)
 	ResetBrowseOnly()
@@ -174,6 +177,7 @@ type Catalog interface {
 	ResetForceDestroy()
 	ResetId()
 	ResetIsolationMode()
+	ResetManagedEncryptionSettings()
 	ResetMetastoreId()
 	ResetName()
 	ResetOptions()
@@ -504,6 +508,26 @@ func (j *jsiiProxy_Catalog) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Catalog) ManagedEncryptionSettings() CatalogManagedEncryptionSettingsOutputReference {
+	var returns CatalogManagedEncryptionSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"managedEncryptionSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) ManagedEncryptionSettingsInput() *CatalogManagedEncryptionSettings {
+	var returns *CatalogManagedEncryptionSettings
+	_jsii_.Get(
+		j,
+		"managedEncryptionSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Catalog) MetastoreId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -815,7 +839,7 @@ func (j *jsiiProxy_Catalog) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
 	_init_.Initialize()
 
@@ -833,7 +857,7 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
 	_init_.Initialize()
 
@@ -1441,6 +1465,17 @@ func (c *jsiiProxy_Catalog) PutEffectivePredictiveOptimizationFlag(value *Catalo
 	)
 }
 
+func (c *jsiiProxy_Catalog) PutManagedEncryptionSettings(value *CatalogManagedEncryptionSettings) {
+	if err := c.validatePutManagedEncryptionSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putManagedEncryptionSettings",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Catalog) PutProviderConfig(value *CatalogProviderConfig) {
 	if err := c.validatePutProviderConfigParameters(value); err != nil {
 		panic(err)
@@ -1523,6 +1558,14 @@ func (c *jsiiProxy_Catalog) ResetIsolationMode() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIsolationMode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetManagedEncryptionSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetManagedEncryptionSettings",
 		nil, // no parameters
 	)
 }

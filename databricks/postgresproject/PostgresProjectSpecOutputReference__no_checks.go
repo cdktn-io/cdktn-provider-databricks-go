@@ -71,6 +71,10 @@ func (j *jsiiProxy_PostgresProjectSpecOutputReference) validateSetComplexObjectI
 	return nil
 }
 
+func (j *jsiiProxy_PostgresProjectSpecOutputReference) validateSetDefaultBranchParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresProjectSpecOutputReference) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

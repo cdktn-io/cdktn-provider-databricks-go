@@ -123,6 +123,10 @@ func (j *jsiiProxy_VectorSearchIndex) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchIndex) validateSetIndexSubtypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchIndex) validateSetIndexTypeParameters(val *string) error {
 	return nil
 }

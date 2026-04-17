@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/users databricks_users}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/users databricks_users}.
 type DataDatabricksUsers interface {
 	cdktn.TerraformDataSource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -51,6 +54,8 @@ type DataDatabricksUsers interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() DataDatabricksUsersProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -86,12 +91,15 @@ type DataDatabricksUsers interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksUsersProviderConfig)
 	PutUsers(value interface{})
+	ResetApi()
 	ResetExtraAttributes()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -119,6 +127,26 @@ type DataDatabricksUsers interface {
 // The jsii proxy struct for DataDatabricksUsers
 type jsiiProxy_DataDatabricksUsers struct {
 	internal.Type__cdktnTerraformDataSource
+}
+
+func (j *jsiiProxy_DataDatabricksUsers) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksUsers) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksUsers) CdktfStack() cdktn.TerraformStack {
@@ -261,6 +289,26 @@ func (j *jsiiProxy_DataDatabricksUsers) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksUsers) ProviderConfig() DataDatabricksUsersProviderConfigOutputReference {
+	var returns DataDatabricksUsersProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksUsers) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksUsers) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -322,7 +370,7 @@ func (j *jsiiProxy_DataDatabricksUsers) UsersInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/users databricks_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/users databricks_users} Data Source.
 func NewDataDatabricksUsers(scope constructs.Construct, id *string, config *DataDatabricksUsersConfig) DataDatabricksUsers {
 	_init_.Initialize()
 
@@ -340,7 +388,7 @@ func NewDataDatabricksUsers(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/users databricks_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/users databricks_users} Data Source.
 func NewDataDatabricksUsers_Override(d DataDatabricksUsers, scope constructs.Construct, id *string, config *DataDatabricksUsersConfig) {
 	_init_.Initialize()
 
@@ -348,6 +396,17 @@ func NewDataDatabricksUsers_Override(d DataDatabricksUsers, scope constructs.Con
 		"@cdktn/provider-databricks.dataDatabricksUsers.DataDatabricksUsers",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksUsers)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -704,6 +763,17 @@ func (d *jsiiProxy_DataDatabricksUsers) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksUsers) PutProviderConfig(value *DataDatabricksUsersProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksUsers) PutUsers(value interface{}) {
 	if err := d.validatePutUsersParameters(value); err != nil {
 		panic(err)
@@ -712,6 +782,14 @@ func (d *jsiiProxy_DataDatabricksUsers) PutUsers(value interface{}) {
 		d,
 		"putUsers",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksUsers) ResetApi() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApi",
+		nil, // no parameters
 	)
 }
 
@@ -735,6 +813,14 @@ func (d *jsiiProxy_DataDatabricksUsers) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksUsers) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

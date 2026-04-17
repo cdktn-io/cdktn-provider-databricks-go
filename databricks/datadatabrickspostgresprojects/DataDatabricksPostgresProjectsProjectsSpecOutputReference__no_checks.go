@@ -71,6 +71,10 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) validateSetDefaultBranchParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

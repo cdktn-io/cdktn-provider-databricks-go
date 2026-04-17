@@ -116,6 +116,96 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettings",
+		reflect.TypeOf((*DataDatabricksCatalogCatalogInfoManagedEncryptionSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings",
+		reflect.TypeOf((*DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsOutputReference",
+		reflect.TypeOf((*DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "azureCmkAccessConnectorId", GoGetter: "AzureCmkAccessConnectorId"},
+			_jsii_.MemberProperty{JsiiProperty: "azureCmkAccessConnectorIdInput", GoGetter: "AzureCmkAccessConnectorIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "azureCmkManagedIdentityId", GoGetter: "AzureCmkManagedIdentityId"},
+			_jsii_.MemberProperty{JsiiProperty: "azureCmkManagedIdentityIdInput", GoGetter: "AzureCmkManagedIdentityIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "azureTenantId", GoGetter: "AzureTenantId"},
+			_jsii_.MemberProperty{JsiiProperty: "azureTenantIdInput", GoGetter: "AzureTenantIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureCmkAccessConnectorId", GoMethod: "ResetAzureCmkAccessConnectorId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureCmkManagedIdentityId", GoMethod: "ResetAzureCmkManagedIdentityId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsOutputReference",
+		reflect.TypeOf((*DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "azureEncryptionSettings", GoGetter: "AzureEncryptionSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "azureEncryptionSettingsInput", GoGetter: "AzureEncryptionSettingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "azureKeyVaultKeyId", GoGetter: "AzureKeyVaultKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "azureKeyVaultKeyIdInput", GoGetter: "AzureKeyVaultKeyIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "customerManagedKeyId", GoGetter: "CustomerManagedKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "customerManagedKeyIdInput", GoGetter: "CustomerManagedKeyIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putAzureEncryptionSettings", GoMethod: "PutAzureEncryptionSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureEncryptionSettings", GoMethod: "ResetAzureEncryptionSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureKeyVaultKeyId", GoMethod: "ResetAzureKeyVaultKeyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomerManagedKeyId", GoMethod: "ResetCustomerManagedKeyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoOutputReference",
 		reflect.TypeOf((*DataDatabricksCatalogCatalogInfoOutputReference)(nil)).Elem(),
@@ -157,6 +247,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isolationMode", GoGetter: "IsolationMode"},
 			_jsii_.MemberProperty{JsiiProperty: "isolationModeInput", GoGetter: "IsolationModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "managedEncryptionSettings", GoGetter: "ManagedEncryptionSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "managedEncryptionSettingsInput", GoGetter: "ManagedEncryptionSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metastoreId", GoGetter: "MetastoreId"},
 			_jsii_.MemberProperty{JsiiProperty: "metastoreIdInput", GoGetter: "MetastoreIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
@@ -172,6 +264,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioningInfo", GoGetter: "ProvisioningInfo"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioningInfoInput", GoGetter: "ProvisioningInfoInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putEffectivePredictiveOptimizationFlag", GoMethod: "PutEffectivePredictiveOptimizationFlag"},
+			_jsii_.MemberMethod{JsiiMethod: "putManagedEncryptionSettings", GoMethod: "PutManagedEncryptionSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putProvisioningInfo", GoMethod: "PutProvisioningInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBrowseOnly", GoMethod: "ResetBrowseOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCatalogType", GoMethod: "ResetCatalogType"},
@@ -183,6 +276,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEnablePredictiveOptimization", GoMethod: "ResetEnablePredictiveOptimization"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFullName", GoMethod: "ResetFullName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsolationMode", GoMethod: "ResetIsolationMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetManagedEncryptionSettings", GoMethod: "ResetManagedEncryptionSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetastoreId", GoMethod: "ResetMetastoreId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOptions", GoMethod: "ResetOptions"},

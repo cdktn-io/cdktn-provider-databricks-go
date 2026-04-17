@@ -63,6 +63,14 @@ func (j *jsiiProxy_DataDatabricksAppSpacesSpacesResourcesAppOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppSpacesSpacesResourcesAppOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAppSpacesSpacesResourcesAppOutputReference) validateSetPermissionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppSpacesSpacesResourcesAppOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -75,6 +75,10 @@ func (g *jsiiProxy_GroupRole) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (g *jsiiProxy_GroupRole) validatePutProviderConfigParameters(value *GroupRoleProviderConfig) error {
+	return nil
+}
+
 func validateGroupRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func validateGroupRole_IsTerraformElementParameters(x interface{}) error {
 }
 
 func validateGroupRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GroupRole) validateSetApiParameters(val *string) error {
 	return nil
 }
 

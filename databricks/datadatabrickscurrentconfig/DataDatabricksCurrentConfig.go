@@ -12,17 +12,23 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/current_config databricks_current_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/current_config databricks_current_config}.
 type DataDatabricksCurrentConfig interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	AuthType() *string
 	SetAuthType(val *string)
 	AuthTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	Cloud() *string
+	SetCloud(val *string)
+	CloudInput() *string
 	CloudType() *string
 	SetCloudType(val *string)
 	CloudTypeInput() *string
@@ -100,7 +106,9 @@ type DataDatabricksCurrentConfig interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutProviderConfig(value *DataDatabricksCurrentConfigProviderConfig)
 	ResetAccountId()
+	ResetApi()
 	ResetAuthType()
+	ResetCloud()
 	ResetCloudType()
 	ResetHost()
 	ResetId()
@@ -157,6 +165,26 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) AccountIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksCurrentConfig) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCurrentConfig) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksCurrentConfig) AuthType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -182,6 +210,26 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) CdktfStack() cdktn.TerraformStac
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCurrentConfig) Cloud() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloud",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCurrentConfig) CloudInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudInput",
 		&returns,
 	)
 	return returns
@@ -418,7 +466,7 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/current_config databricks_current_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/current_config databricks_current_config} Data Source.
 func NewDataDatabricksCurrentConfig(scope constructs.Construct, id *string, config *DataDatabricksCurrentConfigConfig) DataDatabricksCurrentConfig {
 	_init_.Initialize()
 
@@ -436,7 +484,7 @@ func NewDataDatabricksCurrentConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/current_config databricks_current_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/current_config databricks_current_config} Data Source.
 func NewDataDatabricksCurrentConfig_Override(d DataDatabricksCurrentConfig, scope constructs.Construct, id *string, config *DataDatabricksCurrentConfigConfig) {
 	_init_.Initialize()
 
@@ -458,6 +506,17 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig)SetAccountId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksCurrentConfig)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksCurrentConfig)SetAuthType(val *string) {
 	if err := j.validateSetAuthTypeParameters(val); err != nil {
 		panic(err)
@@ -465,6 +524,17 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig)SetAuthType(val *string) {
 	_jsii_.Set(
 		j,
 		"authType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksCurrentConfig)SetCloud(val *string) {
+	if err := j.validateSetCloudParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloud",
 		val,
 	)
 }
@@ -863,10 +933,26 @@ func (d *jsiiProxy_DataDatabricksCurrentConfig) ResetAccountId() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksCurrentConfig) ResetApi() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApi",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksCurrentConfig) ResetAuthType() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAuthType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCurrentConfig) ResetCloud() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloud",
 		nil, // no parameters
 	)
 }

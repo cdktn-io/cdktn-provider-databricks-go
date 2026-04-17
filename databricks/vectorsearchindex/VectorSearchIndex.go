@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index databricks_vector_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index databricks_vector_search_index}.
 type VectorSearchIndex interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -50,6 +50,9 @@ type VectorSearchIndex interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IndexSubtype() *string
+	SetIndexSubtype(val *string)
+	IndexSubtypeInput() *string
 	IndexType() *string
 	SetIndexType(val *string)
 	IndexTypeInput() *string
@@ -136,6 +139,7 @@ type VectorSearchIndex interface {
 	ResetDeltaSyncIndexSpec()
 	ResetDirectAccessIndexSpec()
 	ResetId()
+	ResetIndexSubtype()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -338,6 +342,26 @@ func (j *jsiiProxy_VectorSearchIndex) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VectorSearchIndex) IndexSubtype() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"indexSubtype",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndex) IndexSubtypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"indexSubtypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VectorSearchIndex) IndexType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -529,7 +553,7 @@ func (j *jsiiProxy_VectorSearchIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
 func NewVectorSearchIndex(scope constructs.Construct, id *string, config *VectorSearchIndexConfig) VectorSearchIndex {
 	_init_.Initialize()
 
@@ -547,7 +571,7 @@ func NewVectorSearchIndex(scope constructs.Construct, id *string, config *Vector
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
 func NewVectorSearchIndex_Override(v VectorSearchIndex, scope constructs.Construct, id *string, config *VectorSearchIndexConfig) {
 	_init_.Initialize()
 
@@ -614,6 +638,17 @@ func (j *jsiiProxy_VectorSearchIndex)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchIndex)SetIndexSubtype(val *string) {
+	if err := j.validateSetIndexSubtypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"indexSubtype",
 		val,
 	)
 }
@@ -1098,6 +1133,14 @@ func (v *jsiiProxy_VectorSearchIndex) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VectorSearchIndex) ResetIndexSubtype() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIndexSubtype",
 		nil, // no parameters
 	)
 }

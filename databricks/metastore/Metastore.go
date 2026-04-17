@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore databricks_metastore}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore databricks_metastore}.
 type Metastore interface {
 	cdktn.TerraformResource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	Cloud() *string
@@ -84,6 +87,8 @@ type Metastore interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() MetastoreProviderConfigOutputReference
+	ProviderConfigInput() *MetastoreProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -153,6 +158,8 @@ type Metastore interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *MetastoreProviderConfig)
+	ResetApi()
 	ResetDefaultDataAccessConfigId()
 	ResetDeltaSharingOrganizationName()
 	ResetDeltaSharingRecipientTokenLifetimeInSeconds()
@@ -166,6 +173,7 @@ type Metastore interface {
 	ResetOverrideLogicalId()
 	ResetOwner()
 	ResetPrivilegeModelVersion()
+	ResetProviderConfig()
 	ResetRegion()
 	ResetStorageRoot()
 	ResetStorageRootCredentialId()
@@ -195,6 +203,26 @@ type Metastore interface {
 // The jsii proxy struct for Metastore
 type jsiiProxy_Metastore struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_Metastore) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metastore) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Metastore) CdktfStack() cdktn.TerraformStack {
@@ -557,6 +585,26 @@ func (j *jsiiProxy_Metastore) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_Metastore) ProviderConfig() MetastoreProviderConfigOutputReference {
+	var returns MetastoreProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metastore) ProviderConfigInput() *MetastoreProviderConfig {
+	var returns *MetastoreProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Metastore) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -708,7 +756,7 @@ func (j *jsiiProxy_Metastore) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore databricks_metastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore databricks_metastore} Resource.
 func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfig) Metastore {
 	_init_.Initialize()
 
@@ -726,7 +774,7 @@ func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore databricks_metastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore databricks_metastore} Resource.
 func NewMetastore_Override(m Metastore, scope constructs.Construct, id *string, config *MetastoreConfig) {
 	_init_.Initialize()
 
@@ -734,6 +782,17 @@ func NewMetastore_Override(m Metastore, scope constructs.Construct, id *string, 
 		"@cdktn/provider-databricks.metastore.Metastore",
 		[]interface{}{scope, id, config},
 		m,
+	)
+}
+
+func (j *jsiiProxy_Metastore)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -1312,6 +1371,25 @@ func (m *jsiiProxy_Metastore) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_Metastore) PutProviderConfig(value *MetastoreProviderConfig) {
+	if err := m.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_Metastore) ResetApi() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetApi",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_Metastore) ResetDefaultDataAccessConfigId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1396,6 +1474,14 @@ func (m *jsiiProxy_Metastore) ResetPrivilegeModelVersion() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPrivilegeModelVersion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Metastore) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

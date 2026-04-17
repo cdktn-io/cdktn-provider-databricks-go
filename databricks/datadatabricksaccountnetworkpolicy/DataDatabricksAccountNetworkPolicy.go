@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/account_network_policy databricks_account_network_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/account_network_policy databricks_account_network_policy}.
 type DataDatabricksAccountNetworkPolicy interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -37,6 +37,8 @@ type DataDatabricksAccountNetworkPolicy interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Ingress() DataDatabricksAccountNetworkPolicyIngressOutputReference
+	IngressDryRun() DataDatabricksAccountNetworkPolicyIngressDryRunOutputReference
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -204,6 +206,26 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) FriendlyUniqueId() *strin
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) Ingress() DataDatabricksAccountNetworkPolicyIngressOutputReference {
+	var returns DataDatabricksAccountNetworkPolicyIngressOutputReference
+	_jsii_.Get(
+		j,
+		"ingress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) IngressDryRun() DataDatabricksAccountNetworkPolicyIngressDryRunOutputReference {
+	var returns DataDatabricksAccountNetworkPolicyIngressDryRunOutputReference
+	_jsii_.Get(
+		j,
+		"ingressDryRun",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -295,7 +317,7 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
 func NewDataDatabricksAccountNetworkPolicy(scope constructs.Construct, id *string, config *DataDatabricksAccountNetworkPolicyConfig) DataDatabricksAccountNetworkPolicy {
 	_init_.Initialize()
 
@@ -313,7 +335,7 @@ func NewDataDatabricksAccountNetworkPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
 func NewDataDatabricksAccountNetworkPolicy_Override(d DataDatabricksAccountNetworkPolicy, scope constructs.Construct, id *string, config *DataDatabricksAccountNetworkPolicyConfig) {
 	_init_.Initialize()
 

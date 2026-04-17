@@ -15,6 +15,8 @@ type DataDatabricksFeatureEngineeringFeatureFunctionOutputReference interface {
 	cdktn.ComplexObject
 	AggregationFunction() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference
 	AggregationFunctionInput() interface{}
+	ColumnSelection() DataDatabricksFeatureEngineeringFeatureFunctionColumnSelectionOutputReference
+	ColumnSelectionInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -72,8 +74,10 @@ type DataDatabricksFeatureEngineeringFeatureFunctionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAggregationFunction(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunction)
+	PutColumnSelection(value *DataDatabricksFeatureEngineeringFeatureFunctionColumnSelection)
 	PutExtraParameters(value interface{})
 	ResetAggregationFunction()
+	ResetColumnSelection()
 	ResetExtraParameters()
 	ResetFunctionType()
 	// Produce the Token's value at resolution time.
@@ -106,6 +110,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	_jsii_.Get(
 		j,
 		"aggregationFunctionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) ColumnSelection() DataDatabricksFeatureEngineeringFeatureFunctionColumnSelectionOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeatureFunctionColumnSelectionOutputReference
+	_jsii_.Get(
+		j,
+		"columnSelection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) ColumnSelectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"columnSelectionInput",
 		&returns,
 	)
 	return returns
@@ -512,6 +536,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) PutColumnSelection(value *DataDatabricksFeatureEngineeringFeatureFunctionColumnSelection) {
+	if err := d.validatePutColumnSelectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putColumnSelection",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) PutExtraParameters(value interface{}) {
 	if err := d.validatePutExtraParametersParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetAggregationFunction",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) ResetColumnSelection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetColumnSelection",
 		nil, // no parameters
 	)
 }

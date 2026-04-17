@@ -95,6 +95,10 @@ func validateServicePrincipalSecret_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) validateSetApiParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

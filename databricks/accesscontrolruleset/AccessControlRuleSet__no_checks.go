@@ -79,6 +79,10 @@ func (a *jsiiProxy_AccessControlRuleSet) validatePutGrantRulesParameters(value i
 	return nil
 }
 
+func (a *jsiiProxy_AccessControlRuleSet) validatePutProviderConfigParameters(value *AccessControlRuleSetProviderConfig) error {
+	return nil
+}
+
 func validateAccessControlRuleSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func validateAccessControlRuleSet_IsTerraformElementParameters(x interface{}) er
 }
 
 func validateAccessControlRuleSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessControlRuleSet) validateSetApiParameters(val *string) error {
 	return nil
 }
 

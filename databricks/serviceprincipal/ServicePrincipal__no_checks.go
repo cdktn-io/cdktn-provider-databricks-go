@@ -75,6 +75,10 @@ func (s *jsiiProxy_ServicePrincipal) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipal) validatePutProviderConfigParameters(value *ServicePrincipalProviderConfig) error {
+	return nil
+}
+
 func validateServicePrincipal_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (j *jsiiProxy_ServicePrincipal) validateSetAllowClusterCreateParameters(val
 }
 
 func (j *jsiiProxy_ServicePrincipal) validateSetAllowInstancePoolCreateParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServicePrincipal) validateSetApiParameters(val *string) error {
 	return nil
 }
 

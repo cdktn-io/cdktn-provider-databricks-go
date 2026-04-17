@@ -75,6 +75,10 @@ func (g *jsiiProxy_GroupMember) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (g *jsiiProxy_GroupMember) validatePutProviderConfigParameters(value *GroupMemberProviderConfig) error {
+	return nil
+}
+
 func validateGroupMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func validateGroupMember_IsTerraformElementParameters(x interface{}) error {
 }
 
 func validateGroupMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GroupMember) validateSetApiParameters(val *string) error {
 	return nil
 }
 

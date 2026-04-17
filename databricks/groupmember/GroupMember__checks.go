@@ -207,6 +207,17 @@ func (g *jsiiProxy_GroupMember) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (g *jsiiProxy_GroupMember) validatePutProviderConfigParameters(value *GroupMemberProviderConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateGroupMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -242,6 +253,14 @@ func validateGroupMember_IsTerraformElementParameters(x interface{}) error {
 func validateGroupMember_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GroupMember) validateSetApiParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

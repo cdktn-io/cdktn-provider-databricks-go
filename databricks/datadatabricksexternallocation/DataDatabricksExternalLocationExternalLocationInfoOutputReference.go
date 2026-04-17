@@ -49,6 +49,8 @@ type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface
 	EffectiveEnableFileEvents() interface{}
 	SetEffectiveEnableFileEvents(val interface{})
 	EffectiveEnableFileEventsInput() interface{}
+	EffectiveFileEventQueue() DataDatabricksExternalLocationExternalLocationInfoEffectiveFileEventQueueOutputReference
+	EffectiveFileEventQueueInput() *DataDatabricksExternalLocationExternalLocationInfoEffectiveFileEventQueue
 	EnableFileEvents() interface{}
 	SetEnableFileEvents(val interface{})
 	EnableFileEventsInput() interface{}
@@ -119,6 +121,7 @@ type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutEffectiveFileEventQueue(value *DataDatabricksExternalLocationExternalLocationInfoEffectiveFileEventQueue)
 	PutEncryptionDetails(value *DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails)
 	PutFileEventQueue(value *DataDatabricksExternalLocationExternalLocationInfoFileEventQueue)
 	ResetBrowseOnly()
@@ -128,6 +131,7 @@ type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface
 	ResetCredentialId()
 	ResetCredentialName()
 	ResetEffectiveEnableFileEvents()
+	ResetEffectiveFileEventQueue()
 	ResetEnableFileEvents()
 	ResetEncryptionDetails()
 	ResetFallback()
@@ -320,6 +324,26 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.Get(
 		j,
 		"effectiveEnableFileEventsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) EffectiveFileEventQueue() DataDatabricksExternalLocationExternalLocationInfoEffectiveFileEventQueueOutputReference {
+	var returns DataDatabricksExternalLocationExternalLocationInfoEffectiveFileEventQueueOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveFileEventQueue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) EffectiveFileEventQueueInput() *DataDatabricksExternalLocationExternalLocationInfoEffectiveFileEventQueue {
+	var returns *DataDatabricksExternalLocationExternalLocationInfoEffectiveFileEventQueue
+	_jsii_.Get(
+		j,
+		"effectiveFileEventQueueInput",
 		&returns,
 	)
 	return returns
@@ -1061,6 +1085,17 @@ func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) PutEffectiveFileEventQueue(value *DataDatabricksExternalLocationExternalLocationInfoEffectiveFileEventQueue) {
+	if err := d.validatePutEffectiveFileEventQueueParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putEffectiveFileEventQueue",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) PutEncryptionDetails(value *DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails) {
 	if err := d.validatePutEncryptionDetailsParameters(value); err != nil {
 		panic(err)
@@ -1135,6 +1170,14 @@ func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.InvokeVoid(
 		d,
 		"resetEffectiveEnableFileEvents",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) ResetEffectiveFileEventQueue() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEffectiveFileEventQueue",
 		nil, // no parameters
 	)
 }

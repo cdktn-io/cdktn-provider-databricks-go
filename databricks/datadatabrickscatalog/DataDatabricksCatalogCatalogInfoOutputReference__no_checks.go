@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validatePutE
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validatePutManagedEncryptionSettingsParameters(value *DataDatabricksCatalogCatalogInfoManagedEncryptionSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validatePutProvisioningInfoParameters(value *DataDatabricksCatalogCatalogInfoProvisioningInfo) error {
 	return nil
 }

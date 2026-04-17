@@ -28,6 +28,9 @@ type AccountSettingV2RestrictWorkspaceAdminsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableGovTagCreation() interface{}
+	SetDisableGovTagCreation(val interface{})
+	DisableGovTagCreationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,6 +70,7 @@ type AccountSettingV2RestrictWorkspaceAdminsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDisableGovTagCreation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -107,6 +111,26 @@ func (j *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference) DisableGovTagCreation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableGovTagCreation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference) DisableGovTagCreationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableGovTagCreationInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +242,17 @@ func (j *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference)SetCom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference)SetDisableGovTagCreation(val interface{}) {
+	if err := j.validateSetDisableGovTagCreationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableGovTagCreation",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (a *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference) ResetDisableGovTagCreation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableGovTagCreation",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential databricks_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential databricks_credential}.
 type Credential interface {
 	cdktn.TerraformResource
 	AwsIamRole() CredentialAwsIamRoleOutputReference
@@ -91,6 +91,8 @@ type Credential interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() CredentialProviderConfigOutputReference
+	ProviderConfigInput() *CredentialProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -168,6 +170,7 @@ type Credential interface {
 	PutAzureManagedIdentity(value *CredentialAzureManagedIdentity)
 	PutAzureServicePrincipal(value *CredentialAzureServicePrincipal)
 	PutDatabricksGcpServiceAccount(value *CredentialDatabricksGcpServiceAccount)
+	PutProviderConfig(value *CredentialProviderConfig)
 	ResetAwsIamRole()
 	ResetAzureManagedIdentity()
 	ResetAzureServicePrincipal()
@@ -185,6 +188,7 @@ type Credential interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetProviderConfig()
 	ResetReadOnly()
 	ResetSkipValidation()
 	ResetUpdatedAt()
@@ -637,6 +641,26 @@ func (j *jsiiProxy_Credential) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_Credential) ProviderConfig() CredentialProviderConfigOutputReference {
+	var returns CredentialProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Credential) ProviderConfigInput() *CredentialProviderConfig {
+	var returns *CredentialProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Credential) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -808,7 +832,7 @@ func (j *jsiiProxy_Credential) UsedForManagedStorageInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential databricks_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential databricks_credential} Resource.
 func NewCredential(scope constructs.Construct, id *string, config *CredentialConfig) Credential {
 	_init_.Initialize()
 
@@ -826,7 +850,7 @@ func NewCredential(scope constructs.Construct, id *string, config *CredentialCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential databricks_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential databricks_credential} Resource.
 func NewCredential_Override(c Credential, scope constructs.Construct, id *string, config *CredentialConfig) {
 	_init_.Initialize()
 
@@ -1489,6 +1513,17 @@ func (c *jsiiProxy_Credential) PutDatabricksGcpServiceAccount(value *CredentialD
 	)
 }
 
+func (c *jsiiProxy_Credential) PutProviderConfig(value *CredentialProviderConfig) {
+	if err := c.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Credential) ResetAwsIamRole() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1605,6 +1640,14 @@ func (c *jsiiProxy_Credential) ResetOwner() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Credential) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

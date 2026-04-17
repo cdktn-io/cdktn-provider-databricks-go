@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor}.
 type DataDatabricksDataQualityMonitor interface {
 	cdktn.TerraformDataSource
 	AnomalyDetectionConfig() DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitor) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
 func NewDataDatabricksDataQualityMonitor(scope constructs.Construct, id *string, config *DataDatabricksDataQualityMonitorConfig) DataDatabricksDataQualityMonitor {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewDataDatabricksDataQualityMonitor(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
 func NewDataDatabricksDataQualityMonitor_Override(d DataDatabricksDataQualityMonitor, scope constructs.Construct, id *string, config *DataDatabricksDataQualityMonitorConfig) {
 	_init_.Initialize()
 

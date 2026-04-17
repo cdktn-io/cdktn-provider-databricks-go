@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy databricks_account_network_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy databricks_account_network_policy}.
 type AccountNetworkPolicy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -44,6 +44,10 @@ type AccountNetworkPolicy interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Ingress() AccountNetworkPolicyIngressOutputReference
+	IngressDryRun() AccountNetworkPolicyIngressDryRunOutputReference
+	IngressDryRunInput() interface{}
+	IngressInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -113,8 +117,12 @@ type AccountNetworkPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEgress(value *AccountNetworkPolicyEgress)
+	PutIngress(value *AccountNetworkPolicyIngress)
+	PutIngressDryRun(value *AccountNetworkPolicyIngressDryRun)
 	ResetAccountId()
 	ResetEgress()
+	ResetIngress()
+	ResetIngressDryRun()
 	ResetNetworkPolicyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -266,6 +274,46 @@ func (j *jsiiProxy_AccountNetworkPolicy) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccountNetworkPolicy) Ingress() AccountNetworkPolicyIngressOutputReference {
+	var returns AccountNetworkPolicyIngressOutputReference
+	_jsii_.Get(
+		j,
+		"ingress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicy) IngressDryRun() AccountNetworkPolicyIngressDryRunOutputReference {
+	var returns AccountNetworkPolicyIngressDryRunOutputReference
+	_jsii_.Get(
+		j,
+		"ingressDryRun",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicy) IngressDryRunInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ingressDryRunInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicy) IngressInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ingressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountNetworkPolicy) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -367,7 +415,7 @@ func (j *jsiiProxy_AccountNetworkPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
 func NewAccountNetworkPolicy(scope constructs.Construct, id *string, config *AccountNetworkPolicyConfig) AccountNetworkPolicy {
 	_init_.Initialize()
 
@@ -385,7 +433,7 @@ func NewAccountNetworkPolicy(scope constructs.Construct, id *string, config *Acc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
 func NewAccountNetworkPolicy_Override(a AccountNetworkPolicy, scope constructs.Construct, id *string, config *AccountNetworkPolicyConfig) {
 	_init_.Initialize()
 
@@ -850,6 +898,28 @@ func (a *jsiiProxy_AccountNetworkPolicy) PutEgress(value *AccountNetworkPolicyEg
 	)
 }
 
+func (a *jsiiProxy_AccountNetworkPolicy) PutIngress(value *AccountNetworkPolicyIngress) {
+	if err := a.validatePutIngressParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putIngress",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicy) PutIngressDryRun(value *AccountNetworkPolicyIngressDryRun) {
+	if err := a.validatePutIngressDryRunParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putIngressDryRun",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccountNetworkPolicy) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -862,6 +932,22 @@ func (a *jsiiProxy_AccountNetworkPolicy) ResetEgress() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEgress",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicy) ResetIngress() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIngress",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicy) ResetIngressDryRun() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIngressDryRun",
 		nil, // no parameters
 	)
 }

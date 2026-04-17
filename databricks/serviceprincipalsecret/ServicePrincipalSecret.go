@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
 type ServicePrincipalSecret interface {
 	cdktn.TerraformResource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -137,6 +140,7 @@ type ServicePrincipalSecret interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutProviderConfig(value *ServicePrincipalSecretProviderConfig)
+	ResetApi()
 	ResetCreateTime()
 	ResetExpireTime()
 	ResetId()
@@ -175,6 +179,26 @@ type ServicePrincipalSecret interface {
 // The jsii proxy struct for ServicePrincipalSecret
 type jsiiProxy_ServicePrincipalSecret struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ServicePrincipalSecret) CdktfStack() cdktn.TerraformStack {
@@ -558,7 +582,7 @@ func (j *jsiiProxy_ServicePrincipalSecret) UpdateTimeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
 func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *ServicePrincipalSecretConfig) ServicePrincipalSecret {
 	_init_.Initialize()
 
@@ -576,7 +600,7 @@ func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
 func NewServicePrincipalSecret_Override(s ServicePrincipalSecret, scope constructs.Construct, id *string, config *ServicePrincipalSecretConfig) {
 	_init_.Initialize()
 
@@ -584,6 +608,17 @@ func NewServicePrincipalSecret_Override(s ServicePrincipalSecret, scope construc
 		"@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -1126,6 +1161,14 @@ func (s *jsiiProxy_ServicePrincipalSecret) PutProviderConfig(value *ServicePrinc
 		s,
 		"putProviderConfig",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipalSecret) ResetApi() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApi",
+		nil, // no parameters
 	)
 }
 

@@ -5,7 +5,7 @@ package modelservingprovisionedthroughput
 
 
 type ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/model_serving_provisioned_throughput#behavior ModelServingProvisionedThroughput#behavior}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/model_serving_provisioned_throughput#behavior ModelServingProvisionedThroughput#behavior}.
 	Behavior *string `field:"optional" json:"behavior" yaml:"behavior"`
 }
 

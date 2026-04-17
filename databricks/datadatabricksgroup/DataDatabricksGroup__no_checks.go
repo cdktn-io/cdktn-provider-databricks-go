@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksGroup) validateSetAllowInstancePoolCreateParame
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksGroup) validateSetApiParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksGroup) validateSetChildGroupsParameters(val *[]*string) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference) validatePutRequestSourceParameters(value *DataDatabricksFeatureEngineeringFeatureSourceRequestSource) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

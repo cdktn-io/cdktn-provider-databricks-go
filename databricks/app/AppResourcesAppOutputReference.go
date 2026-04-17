@@ -32,6 +32,12 @@ type AppResourcesAppOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Permission() *string
+	SetPermission(val *string)
+	PermissionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +70,8 @@ type AppResourcesAppOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetName()
+	ResetPermission()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -124,6 +132,46 @@ func (j *jsiiProxy_AppResourcesAppOutputReference) InternalValue() interface{} {
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesAppOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesAppOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesAppOutputReference) Permission() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"permission",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesAppOutputReference) PermissionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"permissionInput",
 		&returns,
 	)
 	return returns
@@ -206,6 +254,28 @@ func (j *jsiiProxy_AppResourcesAppOutputReference)SetInternalValue(val interface
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppResourcesAppOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppResourcesAppOutputReference)SetPermission(val *string) {
+	if err := j.validateSetPermissionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"permission",
 		val,
 	)
 }
@@ -416,6 +486,22 @@ func (a *jsiiProxy_AppResourcesAppOutputReference) InterpolationForAttribute(ter
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppResourcesAppOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppResourcesAppOutputReference) ResetPermission() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPermission",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppResourcesAppOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

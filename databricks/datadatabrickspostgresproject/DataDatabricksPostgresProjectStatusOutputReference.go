@@ -31,6 +31,7 @@ type DataDatabricksPostgresProjectStatusOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomTags() DataDatabricksPostgresProjectStatusCustomTagsList
+	DefaultBranch() *string
 	DefaultEndpointSettings() DataDatabricksPostgresProjectStatusDefaultEndpointSettingsOutputReference
 	DisplayName() *string
 	EnablePgNativeLogin() cdktn.IResolvable
@@ -144,6 +145,16 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectStatusOutputReference) CustomTag
 	_jsii_.Get(
 		j,
 		"customTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectStatusOutputReference) DefaultBranch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranch",
 		&returns,
 	)
 	return returns

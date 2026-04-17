@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksUsers) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksUsers) validatePutProviderConfigParameters(value *DataDatabricksUsersProviderConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksUsers) validatePutUsersParameters(value interface{}) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func validateDataDatabricksUsers_IsTerraformDataSourceParameters(x interface{}) 
 }
 
 func validateDataDatabricksUsers_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksUsers) validateSetApiParameters(val *string) error {
 	return nil
 }
 

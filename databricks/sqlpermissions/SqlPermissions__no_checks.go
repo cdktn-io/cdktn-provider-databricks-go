@@ -79,6 +79,10 @@ func (s *jsiiProxy_SqlPermissions) validatePutPrivilegeAssignmentsParameters(val
 	return nil
 }
 
+func (s *jsiiProxy_SqlPermissions) validatePutProviderConfigParameters(value *SqlPermissionsProviderConfig) error {
+	return nil
+}
+
 func validateSqlPermissions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

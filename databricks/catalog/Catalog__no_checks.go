@@ -79,6 +79,10 @@ func (c *jsiiProxy_Catalog) validatePutEffectivePredictiveOptimizationFlagParame
 	return nil
 }
 
+func (c *jsiiProxy_Catalog) validatePutManagedEncryptionSettingsParameters(value *CatalogManagedEncryptionSettings) error {
+	return nil
+}
+
 func (c *jsiiProxy_Catalog) validatePutProviderConfigParameters(value *CatalogProviderConfig) error {
 	return nil
 }

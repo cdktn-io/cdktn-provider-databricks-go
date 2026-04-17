@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) valid
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) validatePutConnectorOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) validatePutTableConfigurationParameters(value *PipelineIngestionDefinitionObjectsTableTableConfiguration) error {
 	return nil
 }

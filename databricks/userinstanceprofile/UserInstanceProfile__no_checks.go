@@ -75,6 +75,10 @@ func (u *jsiiProxy_UserInstanceProfile) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (u *jsiiProxy_UserInstanceProfile) validatePutProviderConfigParameters(value *UserInstanceProfileProviderConfig) error {
+	return nil
+}
+
 func validateUserInstanceProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func validateUserInstanceProfile_IsTerraformElementParameters(x interface{}) err
 }
 
 func validateUserInstanceProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_UserInstanceProfile) validateSetApiParameters(val *string) error {
 	return nil
 }
 

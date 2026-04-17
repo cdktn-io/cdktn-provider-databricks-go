@@ -216,6 +216,14 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) validateSetDefaultBranchParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) validateSetDisplayNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

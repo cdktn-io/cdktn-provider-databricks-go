@@ -207,6 +207,17 @@ func (m *jsiiProxy_Metastore) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (m *jsiiProxy_Metastore) validatePutProviderConfigParameters(value *MetastoreProviderConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateMetastore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -242,6 +253,14 @@ func validateMetastore_IsTerraformElementParameters(x interface{}) error {
 func validateMetastore_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Metastore) validateSetApiParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -33,6 +33,9 @@ type PostgresProjectSpecOutputReference interface {
 	CreationStack() *[]*string
 	CustomTags() PostgresProjectSpecCustomTagsList
 	CustomTagsInput() interface{}
+	DefaultBranch() *string
+	SetDefaultBranch(val *string)
+	DefaultBranchInput() *string
 	DefaultEndpointSettings() PostgresProjectSpecDefaultEndpointSettingsOutputReference
 	DefaultEndpointSettingsInput() interface{}
 	DisplayName() *string
@@ -87,6 +90,7 @@ type PostgresProjectSpecOutputReference interface {
 	PutDefaultEndpointSettings(value *PostgresProjectSpecDefaultEndpointSettings)
 	ResetBudgetPolicyId()
 	ResetCustomTags()
+	ResetDefaultBranch()
 	ResetDefaultEndpointSettings()
 	ResetDisplayName()
 	ResetEnablePgNativeLogin()
@@ -172,6 +176,26 @@ func (j *jsiiProxy_PostgresProjectSpecOutputReference) CustomTagsInput() interfa
 	_jsii_.Get(
 		j,
 		"customTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectSpecOutputReference) DefaultBranch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectSpecOutputReference) DefaultBranchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranchInput",
 		&returns,
 	)
 	return returns
@@ -374,6 +398,17 @@ func (j *jsiiProxy_PostgresProjectSpecOutputReference)SetComplexObjectIsFromSet(
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresProjectSpecOutputReference)SetDefaultBranch(val *string) {
+	if err := j.validateSetDefaultBranchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultBranch",
 		val,
 	)
 }
@@ -675,6 +710,14 @@ func (p *jsiiProxy_PostgresProjectSpecOutputReference) ResetCustomTags() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCustomTags",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresProjectSpecOutputReference) ResetDefaultBranch() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDefaultBranch",
 		nil, // no parameters
 	)
 }

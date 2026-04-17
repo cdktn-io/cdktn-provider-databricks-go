@@ -75,6 +75,10 @@ func validateDataDatabricksUser_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksUser) validateSetApiParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksUser) validateSetCountParameters(val interface{}) error {
 	return nil
 }

@@ -213,6 +213,14 @@ func (j *jsiiProxy_DataDatabricksGroup) validateSetAllowInstancePoolCreateParame
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksGroup) validateSetApiParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksGroup) validateSetChildGroupsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

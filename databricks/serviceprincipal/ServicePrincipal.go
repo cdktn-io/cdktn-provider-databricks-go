@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal databricks_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal databricks_service_principal}.
 type ServicePrincipal interface {
 	cdktn.TerraformResource
 	AclPrincipalId() *string
@@ -27,6 +27,9 @@ type ServicePrincipal interface {
 	AllowInstancePoolCreate() interface{}
 	SetAllowInstancePoolCreate(val interface{})
 	AllowInstancePoolCreateInput() interface{}
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	ApplicationId() *string
 	SetApplicationId(val *string)
 	ApplicationIdInput() *string
@@ -91,6 +94,8 @@ type ServicePrincipal interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() ServicePrincipalProviderConfigOutputReference
+	ProviderConfigInput() *ServicePrincipalProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -155,10 +160,12 @@ type ServicePrincipal interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *ServicePrincipalProviderConfig)
 	ResetAclPrincipalId()
 	ResetActive()
 	ResetAllowClusterCreate()
 	ResetAllowInstancePoolCreate()
+	ResetApi()
 	ResetApplicationId()
 	ResetDatabricksSqlAccess()
 	ResetDisableAsUserDeletion()
@@ -172,6 +179,7 @@ type ServicePrincipal interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetRepos()
 	ResetWorkspaceAccess()
 	ResetWorkspaceConsume()
@@ -277,6 +285,26 @@ func (j *jsiiProxy_ServicePrincipal) AllowInstancePoolCreateInput() interface{} 
 	_jsii_.Get(
 		j,
 		"allowInstancePoolCreateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipal) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipal) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
 		&returns,
 	)
 	return returns
@@ -592,6 +620,26 @@ func (j *jsiiProxy_ServicePrincipal) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_ServicePrincipal) ProviderConfig() ServicePrincipalProviderConfigOutputReference {
+	var returns ServicePrincipalProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipal) ProviderConfigInput() *ServicePrincipalProviderConfig {
+	var returns *ServicePrincipalProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicePrincipal) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -703,7 +751,7 @@ func (j *jsiiProxy_ServicePrincipal) WorkspaceConsumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal databricks_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal databricks_service_principal} Resource.
 func NewServicePrincipal(scope constructs.Construct, id *string, config *ServicePrincipalConfig) ServicePrincipal {
 	_init_.Initialize()
 
@@ -721,7 +769,7 @@ func NewServicePrincipal(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal databricks_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal databricks_service_principal} Resource.
 func NewServicePrincipal_Override(s ServicePrincipal, scope constructs.Construct, id *string, config *ServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -772,6 +820,17 @@ func (j *jsiiProxy_ServicePrincipal)SetAllowInstancePoolCreate(val interface{}) 
 	_jsii_.Set(
 		j,
 		"allowInstancePoolCreate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipal)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
 		val,
 	)
 }
@@ -1340,6 +1399,17 @@ func (s *jsiiProxy_ServicePrincipal) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_ServicePrincipal) PutProviderConfig(value *ServicePrincipalProviderConfig) {
+	if err := s.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_ServicePrincipal) ResetAclPrincipalId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1368,6 +1438,14 @@ func (s *jsiiProxy_ServicePrincipal) ResetAllowInstancePoolCreate() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAllowInstancePoolCreate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipal) ResetApi() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApi",
 		nil, // no parameters
 	)
 }
@@ -1456,6 +1534,14 @@ func (s *jsiiProxy_ServicePrincipal) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipal) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

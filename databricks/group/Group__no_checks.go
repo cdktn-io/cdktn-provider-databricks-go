@@ -75,6 +75,10 @@ func (g *jsiiProxy_Group) validateOverrideLogicalIdParameters(newLogicalId *stri
 	return nil
 }
 
+func (g *jsiiProxy_Group) validatePutProviderConfigParameters(value *GroupProviderConfig) error {
+	return nil
+}
+
 func validateGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_Group) validateSetAllowClusterCreateParameters(val interface{
 }
 
 func (j *jsiiProxy_Group) validateSetAllowInstancePoolCreateParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetApiParameters(val *string) error {
 	return nil
 }
 

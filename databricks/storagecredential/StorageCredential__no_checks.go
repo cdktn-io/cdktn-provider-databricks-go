@@ -99,6 +99,10 @@ func (s *jsiiProxy_StorageCredential) validatePutGcpServiceAccountKeyParameters(
 	return nil
 }
 
+func (s *jsiiProxy_StorageCredential) validatePutProviderConfigParameters(value *StorageCredentialProviderConfig) error {
+	return nil
+}
+
 func validateStorageCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func validateStorageCredential_IsTerraformElementParameters(x interface{}) error
 }
 
 func validateStorageCredential_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageCredential) validateSetApiParameters(val *string) error {
 	return nil
 }
 

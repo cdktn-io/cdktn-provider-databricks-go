@@ -33,6 +33,9 @@ type DataDatabricksPostgresProjectsProjectsSpecOutputReference interface {
 	CreationStack() *[]*string
 	CustomTags() DataDatabricksPostgresProjectsProjectsSpecCustomTagsList
 	CustomTagsInput() interface{}
+	DefaultBranch() *string
+	SetDefaultBranch(val *string)
+	DefaultBranchInput() *string
 	DefaultEndpointSettings() DataDatabricksPostgresProjectsProjectsSpecDefaultEndpointSettingsOutputReference
 	DefaultEndpointSettingsInput() interface{}
 	DisplayName() *string
@@ -87,6 +90,7 @@ type DataDatabricksPostgresProjectsProjectsSpecOutputReference interface {
 	PutDefaultEndpointSettings(value *DataDatabricksPostgresProjectsProjectsSpecDefaultEndpointSettings)
 	ResetBudgetPolicyId()
 	ResetCustomTags()
+	ResetDefaultBranch()
 	ResetDefaultEndpointSettings()
 	ResetDisplayName()
 	ResetEnablePgNativeLogin()
@@ -172,6 +176,26 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) Cu
 	_jsii_.Get(
 		j,
 		"customTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) DefaultBranch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) DefaultBranchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranchInput",
 		&returns,
 	)
 	return returns
@@ -374,6 +398,17 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference)Set
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference)SetDefaultBranch(val *string) {
+	if err := j.validateSetDefaultBranchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultBranch",
 		val,
 	)
 }
@@ -675,6 +710,14 @@ func (d *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) Re
 	_jsii_.InvokeVoid(
 		d,
 		"resetCustomTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresProjectsProjectsSpecOutputReference) ResetDefaultBranch() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultBranch",
 		nil, // no parameters
 	)
 }

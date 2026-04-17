@@ -28,6 +28,9 @@ type DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdminsOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableGovTagCreation() interface{}
+	SetDisableGovTagCreation(val interface{})
+	DisableGovTagCreationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdmins
@@ -67,6 +70,7 @@ type DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdminsOutputReference inte
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDisableGovTagCreation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -107,6 +111,26 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdminsOutput
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdminsOutputReference) DisableGovTagCreation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableGovTagCreation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdminsOutputReference) DisableGovTagCreationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableGovTagCreationInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +242,17 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdminsOutput
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdminsOutputReference)SetDisableGovTagCreation(val interface{}) {
+	if err := j.validateSetDisableGovTagCreationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableGovTagCreation",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdminsOutput
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdminsOutputReference) ResetDisableGovTagCreation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDisableGovTagCreation",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdminsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role databricks_service_principal_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role databricks_service_principal_role}.
 type ServicePrincipalRole interface {
 	cdktn.TerraformResource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -52,6 +55,8 @@ type ServicePrincipalRole interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() ServicePrincipalRoleProviderConfigOutputReference
+	ProviderConfigInput() *ServicePrincipalRoleProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -113,10 +118,13 @@ type ServicePrincipalRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *ServicePrincipalRoleProviderConfig)
+	ResetApi()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -142,6 +150,26 @@ type ServicePrincipalRole interface {
 // The jsii proxy struct for ServicePrincipalRole
 type jsiiProxy_ServicePrincipalRole struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_ServicePrincipalRole) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalRole) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ServicePrincipalRole) CdktfStack() cdktn.TerraformStack {
@@ -274,6 +302,26 @@ func (j *jsiiProxy_ServicePrincipalRole) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_ServicePrincipalRole) ProviderConfig() ServicePrincipalRoleProviderConfigOutputReference {
+	var returns ServicePrincipalRoleProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalRole) ProviderConfigInput() *ServicePrincipalRoleProviderConfig {
+	var returns *ServicePrincipalRoleProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicePrincipalRole) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -365,7 +413,7 @@ func (j *jsiiProxy_ServicePrincipalRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
 func NewServicePrincipalRole(scope constructs.Construct, id *string, config *ServicePrincipalRoleConfig) ServicePrincipalRole {
 	_init_.Initialize()
 
@@ -383,7 +431,7 @@ func NewServicePrincipalRole(scope constructs.Construct, id *string, config *Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
 func NewServicePrincipalRole_Override(s ServicePrincipalRole, scope constructs.Construct, id *string, config *ServicePrincipalRoleConfig) {
 	_init_.Initialize()
 
@@ -391,6 +439,17 @@ func NewServicePrincipalRole_Override(s ServicePrincipalRole, scope constructs.C
 		"@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipalRole)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -848,6 +907,25 @@ func (s *jsiiProxy_ServicePrincipalRole) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (s *jsiiProxy_ServicePrincipalRole) PutProviderConfig(value *ServicePrincipalRoleProviderConfig) {
+	if err := s.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipalRole) ResetApi() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApi",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_ServicePrincipalRole) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -860,6 +938,14 @@ func (s *jsiiProxy_ServicePrincipalRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipalRole) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

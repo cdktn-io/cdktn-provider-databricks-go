@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputReference) validateSetDisableGovTagCreationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputReference) validateSetInternalValueParameters(val *DataDatabricksAccountSettingV2RestrictWorkspaceAdmins) error {
 	return nil
 }

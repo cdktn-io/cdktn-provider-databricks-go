@@ -91,6 +91,10 @@ func (c *jsiiProxy_Credential) validatePutDatabricksGcpServiceAccountParameters(
 	return nil
 }
 
+func (c *jsiiProxy_Credential) validatePutProviderConfigParameters(value *CredentialProviderConfig) error {
+	return nil
+}
+
 func validateCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

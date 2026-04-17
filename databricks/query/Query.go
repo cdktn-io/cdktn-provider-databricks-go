@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/query databricks_query}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/query databricks_query}.
 type Query interface {
 	cdktn.TerraformResource
 	ApplyAutoLimit() interface{}
@@ -659,7 +659,7 @@ func (j *jsiiProxy_Query) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/query databricks_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/query databricks_query} Resource.
 func NewQuery(scope constructs.Construct, id *string, config *QueryConfig) Query {
 	_init_.Initialize()
 
@@ -677,7 +677,7 @@ func NewQuery(scope constructs.Construct, id *string, config *QueryConfig) Query
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/query databricks_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/query databricks_query} Resource.
 func NewQuery_Override(q Query, scope constructs.Construct, id *string, config *QueryConfig) {
 	_init_.Initialize()
 

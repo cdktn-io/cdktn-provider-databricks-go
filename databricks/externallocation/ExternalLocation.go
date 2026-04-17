@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location databricks_external_location}.
 type ExternalLocation interface {
 	cdktn.TerraformResource
 	BrowseOnly() cdktn.IResolvable
@@ -42,6 +42,8 @@ type ExternalLocation interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveEnableFileEvents() cdktn.IResolvable
+	EffectiveFileEventQueue() ExternalLocationEffectiveFileEventQueueOutputReference
+	EffectiveFileEventQueueInput() *ExternalLocationEffectiveFileEventQueue
 	EnableFileEvents() interface{}
 	SetEnableFileEvents(val interface{})
 	EnableFileEventsInput() interface{}
@@ -159,10 +161,12 @@ type ExternalLocation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEffectiveFileEventQueue(value *ExternalLocationEffectiveFileEventQueue)
 	PutEncryptionDetails(value *ExternalLocationEncryptionDetails)
 	PutFileEventQueue(value *ExternalLocationFileEventQueue)
 	PutProviderConfig(value *ExternalLocationProviderConfig)
 	ResetComment()
+	ResetEffectiveFileEventQueue()
 	ResetEnableFileEvents()
 	ResetEncryptionDetails()
 	ResetFallback()
@@ -341,6 +345,26 @@ func (j *jsiiProxy_ExternalLocation) EffectiveEnableFileEvents() cdktn.IResolvab
 	_jsii_.Get(
 		j,
 		"effectiveEnableFileEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) EffectiveFileEventQueue() ExternalLocationEffectiveFileEventQueueOutputReference {
+	var returns ExternalLocationEffectiveFileEventQueueOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveFileEventQueue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) EffectiveFileEventQueueInput() *ExternalLocationEffectiveFileEventQueue {
+	var returns *ExternalLocationEffectiveFileEventQueue
+	_jsii_.Get(
+		j,
+		"effectiveFileEventQueueInput",
 		&returns,
 	)
 	return returns
@@ -777,7 +801,7 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
@@ -795,7 +819,7 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct, id *string, config *ExternalLocationConfig) {
 	_init_.Initialize()
 
@@ -1381,6 +1405,17 @@ func (e *jsiiProxy_ExternalLocation) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_ExternalLocation) PutEffectiveFileEventQueue(value *ExternalLocationEffectiveFileEventQueue) {
+	if err := e.validatePutEffectiveFileEventQueueParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putEffectiveFileEventQueue",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ExternalLocation) PutEncryptionDetails(value *ExternalLocationEncryptionDetails) {
 	if err := e.validatePutEncryptionDetailsParameters(value); err != nil {
 		panic(err)
@@ -1418,6 +1453,14 @@ func (e *jsiiProxy_ExternalLocation) ResetComment() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalLocation) ResetEffectiveFileEventQueue() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEffectiveFileEventQueue",
 		nil, // no parameters
 	)
 }

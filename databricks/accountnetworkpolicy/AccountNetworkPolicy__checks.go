@@ -218,6 +218,28 @@ func (a *jsiiProxy_AccountNetworkPolicy) validatePutEgressParameters(value *Acco
 	return nil
 }
 
+func (a *jsiiProxy_AccountNetworkPolicy) validatePutIngressParameters(value *AccountNetworkPolicyIngress) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicy) validatePutIngressDryRunParameters(value *AccountNetworkPolicyIngressDryRun) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateAccountNetworkPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

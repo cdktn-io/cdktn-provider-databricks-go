@@ -33,6 +33,9 @@ type DataDatabricksPostgresProjectSpecOutputReference interface {
 	CreationStack() *[]*string
 	CustomTags() DataDatabricksPostgresProjectSpecCustomTagsList
 	CustomTagsInput() interface{}
+	DefaultBranch() *string
+	SetDefaultBranch(val *string)
+	DefaultBranchInput() *string
 	DefaultEndpointSettings() DataDatabricksPostgresProjectSpecDefaultEndpointSettingsOutputReference
 	DefaultEndpointSettingsInput() interface{}
 	DisplayName() *string
@@ -87,6 +90,7 @@ type DataDatabricksPostgresProjectSpecOutputReference interface {
 	PutDefaultEndpointSettings(value *DataDatabricksPostgresProjectSpecDefaultEndpointSettings)
 	ResetBudgetPolicyId()
 	ResetCustomTags()
+	ResetDefaultBranch()
 	ResetDefaultEndpointSettings()
 	ResetDisplayName()
 	ResetEnablePgNativeLogin()
@@ -172,6 +176,26 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference) CustomTagsI
 	_jsii_.Get(
 		j,
 		"customTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference) DefaultBranch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference) DefaultBranchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranchInput",
 		&returns,
 	)
 	return returns
@@ -374,6 +398,17 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference)SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference)SetDefaultBranch(val *string) {
+	if err := j.validateSetDefaultBranchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultBranch",
 		val,
 	)
 }
@@ -675,6 +710,14 @@ func (d *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference) ResetCustom
 	_jsii_.InvokeVoid(
 		d,
 		"resetCustomTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresProjectSpecOutputReference) ResetDefaultBranch() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultBranch",
 		nil, // no parameters
 	)
 }

@@ -59,6 +59,10 @@ func (j *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference) validateSetDisableGovTagCreationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountSettingV2RestrictWorkspaceAdminsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

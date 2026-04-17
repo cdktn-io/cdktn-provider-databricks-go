@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment databricks_metastore_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment databricks_metastore_assignment}.
 type MetastoreAssignment interface {
 	cdktn.TerraformResource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -58,6 +61,8 @@ type MetastoreAssignment interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProviderConfig() MetastoreAssignmentProviderConfigOutputReference
+	ProviderConfigInput() *MetastoreAssignmentProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -116,11 +121,14 @@ type MetastoreAssignment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *MetastoreAssignmentProviderConfig)
+	ResetApi()
 	ResetDefaultCatalogName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -146,6 +154,26 @@ type MetastoreAssignment interface {
 // The jsii proxy struct for MetastoreAssignment
 type jsiiProxy_MetastoreAssignment struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_MetastoreAssignment) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreAssignment) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MetastoreAssignment) CdktfStack() cdktn.TerraformStack {
@@ -318,6 +346,26 @@ func (j *jsiiProxy_MetastoreAssignment) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_MetastoreAssignment) ProviderConfig() MetastoreAssignmentProviderConfigOutputReference {
+	var returns MetastoreAssignmentProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreAssignment) ProviderConfigInput() *MetastoreAssignmentProviderConfig {
+	var returns *MetastoreAssignmentProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MetastoreAssignment) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -389,7 +437,7 @@ func (j *jsiiProxy_MetastoreAssignment) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
 func NewMetastoreAssignment(scope constructs.Construct, id *string, config *MetastoreAssignmentConfig) MetastoreAssignment {
 	_init_.Initialize()
 
@@ -407,7 +455,7 @@ func NewMetastoreAssignment(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
 func NewMetastoreAssignment_Override(m MetastoreAssignment, scope constructs.Construct, id *string, config *MetastoreAssignmentConfig) {
 	_init_.Initialize()
 
@@ -415,6 +463,17 @@ func NewMetastoreAssignment_Override(m MetastoreAssignment, scope constructs.Con
 		"@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment",
 		[]interface{}{scope, id, config},
 		m,
+	)
+}
+
+func (j *jsiiProxy_MetastoreAssignment)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -883,6 +942,25 @@ func (m *jsiiProxy_MetastoreAssignment) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (m *jsiiProxy_MetastoreAssignment) PutProviderConfig(value *MetastoreAssignmentProviderConfig) {
+	if err := m.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MetastoreAssignment) ResetApi() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetApi",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MetastoreAssignment) ResetDefaultCatalogName() {
 	_jsii_.InvokeVoid(
 		m,
@@ -903,6 +981,14 @@ func (m *jsiiProxy_MetastoreAssignment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreAssignment) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

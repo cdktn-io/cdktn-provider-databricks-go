@@ -99,6 +99,10 @@ func (m *jsiiProxy_MetastoreDataAccess) validatePutGcpServiceAccountKeyParameter
 	return nil
 }
 
+func (m *jsiiProxy_MetastoreDataAccess) validatePutProviderConfigParameters(value *MetastoreDataAccessProviderConfig) error {
+	return nil
+}
+
 func validateMetastoreDataAccess_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func validateMetastoreDataAccess_IsTerraformElementParameters(x interface{}) err
 }
 
 func validateMetastoreDataAccess_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) validateSetApiParameters(val *string) error {
 	return nil
 }
 

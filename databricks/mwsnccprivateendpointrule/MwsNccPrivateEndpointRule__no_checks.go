@@ -75,6 +75,10 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRule) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (m *jsiiProxy_MwsNccPrivateEndpointRule) validatePutGcpEndpointParameters(value *MwsNccPrivateEndpointRuleGcpEndpoint) error {
+	return nil
+}
+
 func validateMwsNccPrivateEndpointRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

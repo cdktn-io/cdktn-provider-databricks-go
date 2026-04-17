@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutpu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) validatePutColumnSelectionParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionColumnSelection) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) validatePutExtraParametersParameters(value interface{}) error {
 	return nil
 }

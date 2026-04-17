@@ -205,6 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "isOnline", GoGetter: "IsOnline"},
 			_jsii_.MemberProperty{JsiiProperty: "lastMaterializationTime", GoGetter: "LastMaterializationTime"},
 			_jsii_.MemberProperty{JsiiProperty: "materializedFeatureId", GoGetter: "MaterializedFeatureId"},
 			_jsii_.MemberProperty{JsiiProperty: "materializedFeatureIdInput", GoGetter: "MaterializedFeatureIdInput"},

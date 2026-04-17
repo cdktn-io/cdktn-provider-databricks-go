@@ -61,6 +61,8 @@ type DataDatabricksCatalogCatalogInfoOutputReference interface {
 	IsolationMode() *string
 	SetIsolationMode(val *string)
 	IsolationModeInput() *string
+	ManagedEncryptionSettings() DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsOutputReference
+	ManagedEncryptionSettingsInput() *DataDatabricksCatalogCatalogInfoManagedEncryptionSettings
 	MetastoreId() *string
 	SetMetastoreId(val *string)
 	MetastoreIdInput() *string
@@ -132,6 +134,7 @@ type DataDatabricksCatalogCatalogInfoOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEffectivePredictiveOptimizationFlag(value *DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag)
+	PutManagedEncryptionSettings(value *DataDatabricksCatalogCatalogInfoManagedEncryptionSettings)
 	PutProvisioningInfo(value *DataDatabricksCatalogCatalogInfoProvisioningInfo)
 	ResetBrowseOnly()
 	ResetCatalogType()
@@ -143,6 +146,7 @@ type DataDatabricksCatalogCatalogInfoOutputReference interface {
 	ResetEnablePredictiveOptimization()
 	ResetFullName()
 	ResetIsolationMode()
+	ResetManagedEncryptionSettings()
 	ResetMetastoreId()
 	ResetName()
 	ResetOptions()
@@ -416,6 +420,26 @@ func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) IsolationMod
 	_jsii_.Get(
 		j,
 		"isolationModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) ManagedEncryptionSettings() DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsOutputReference {
+	var returns DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"managedEncryptionSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) ManagedEncryptionSettingsInput() *DataDatabricksCatalogCatalogInfoManagedEncryptionSettings {
+	var returns *DataDatabricksCatalogCatalogInfoManagedEncryptionSettings
+	_jsii_.Get(
+		j,
+		"managedEncryptionSettingsInput",
 		&returns,
 	)
 	return returns
@@ -1212,6 +1236,17 @@ func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) PutEffective
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) PutManagedEncryptionSettings(value *DataDatabricksCatalogCatalogInfoManagedEncryptionSettings) {
+	if err := d.validatePutManagedEncryptionSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putManagedEncryptionSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) PutProvisioningInfo(value *DataDatabricksCatalogCatalogInfoProvisioningInfo) {
 	if err := d.validatePutProvisioningInfoParameters(value); err != nil {
 		panic(err)
@@ -1299,6 +1334,14 @@ func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) ResetIsolati
 	_jsii_.InvokeVoid(
 		d,
 		"resetIsolationMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) ResetManagedEncryptionSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetManagedEncryptionSettings",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package vectorsearchendpoint
 
 
 type VectorSearchEndpointScalingInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_endpoint#requested_min_qps VectorSearchEndpoint#requested_min_qps}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_endpoint#requested_min_qps VectorSearchEndpoint#requested_min_qps}.
 	RequestedMinQps *float64 `field:"optional" json:"requestedMinQps" yaml:"requestedMinQps"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}.
 	State *string `field:"optional" json:"state" yaml:"state"`
 }
 
