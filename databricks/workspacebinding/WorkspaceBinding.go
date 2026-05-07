@@ -5,14 +5,14 @@ package workspacebinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacebinding/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacebinding/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/workspace_binding databricks_workspace_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_binding databricks_workspace_binding}.
 type WorkspaceBinding interface {
 	cdktn.TerraformResource
 	BindingType() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_WorkspaceBinding) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/workspace_binding databricks_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_binding databricks_workspace_binding} Resource.
 func NewWorkspaceBinding(scope constructs.Construct, id *string, config *WorkspaceBindingConfig) WorkspaceBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewWorkspaceBinding(scope constructs.Construct, id *string, config *Workspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/workspace_binding databricks_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_binding databricks_workspace_binding} Resource.
 func NewWorkspaceBinding_Override(w WorkspaceBinding, scope constructs.Construct, id *string, config *WorkspaceBindingConfig) {
 	_init_.Initialize()
 

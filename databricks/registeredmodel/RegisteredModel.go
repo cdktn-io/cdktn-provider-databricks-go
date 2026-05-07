@@ -5,14 +5,14 @@ package registeredmodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/registeredmodel/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/registeredmodel/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/registered_model databricks_registered_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/registered_model databricks_registered_model}.
 type RegisteredModel interface {
 	cdktn.TerraformResource
 	Aliases() RegisteredModelAliasesList
@@ -679,7 +679,7 @@ func (j *jsiiProxy_RegisteredModel) UpdatedByInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/registered_model databricks_registered_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/registered_model databricks_registered_model} Resource.
 func NewRegisteredModel(scope constructs.Construct, id *string, config *RegisteredModelConfig) RegisteredModel {
 	_init_.Initialize()
 
@@ -697,7 +697,7 @@ func NewRegisteredModel(scope constructs.Construct, id *string, config *Register
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/registered_model databricks_registered_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/registered_model databricks_registered_model} Resource.
 func NewRegisteredModel_Override(r RegisteredModel, scope constructs.Construct, id *string, config *RegisteredModelConfig) {
 	_init_.Initialize()
 

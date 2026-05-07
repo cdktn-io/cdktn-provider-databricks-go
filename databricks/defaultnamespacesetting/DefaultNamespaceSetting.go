@@ -5,14 +5,14 @@ package defaultnamespacesetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/defaultnamespacesetting/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/defaultnamespacesetting/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/default_namespace_setting databricks_default_namespace_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/default_namespace_setting databricks_default_namespace_setting}.
 type DefaultNamespaceSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_DefaultNamespaceSetting) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
 func NewDefaultNamespaceSetting(scope constructs.Construct, id *string, config *DefaultNamespaceSettingConfig) DefaultNamespaceSetting {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewDefaultNamespaceSetting(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
 func NewDefaultNamespaceSetting_Override(d DefaultNamespaceSetting, scope constructs.Construct, id *string, config *DefaultNamespaceSettingConfig) {
 	_init_.Initialize()
 

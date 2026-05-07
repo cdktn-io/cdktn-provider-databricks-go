@@ -5,14 +5,14 @@ package mwspermissionassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwspermissionassignment/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwspermissionassignment/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_permission_assignment databricks_mws_permission_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_permission_assignment databricks_mws_permission_assignment}.
 type MwsPermissionAssignment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_MwsPermissionAssignment) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_permission_assignment databricks_mws_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_permission_assignment databricks_mws_permission_assignment} Resource.
 func NewMwsPermissionAssignment(scope constructs.Construct, id *string, config *MwsPermissionAssignmentConfig) MwsPermissionAssignment {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewMwsPermissionAssignment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_permission_assignment databricks_mws_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_permission_assignment databricks_mws_permission_assignment} Resource.
 func NewMwsPermissionAssignment_Override(m MwsPermissionAssignment, scope constructs.Construct, id *string, config *MwsPermissionAssignmentConfig) {
 	_init_.Initialize()
 

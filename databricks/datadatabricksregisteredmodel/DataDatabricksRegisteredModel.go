@@ -5,14 +5,14 @@ package datadatabricksregisteredmodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodel/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/registered_model databricks_registered_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model databricks_registered_model}.
 type DataDatabricksRegisteredModel interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataDatabricksRegisteredModel) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/registered_model databricks_registered_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model databricks_registered_model} Data Source.
 func NewDataDatabricksRegisteredModel(scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelConfig) DataDatabricksRegisteredModel {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewDataDatabricksRegisteredModel(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/registered_model databricks_registered_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model databricks_registered_model} Data Source.
 func NewDataDatabricksRegisteredModel_Override(d DataDatabricksRegisteredModel, scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelConfig) {
 	_init_.Initialize()
 

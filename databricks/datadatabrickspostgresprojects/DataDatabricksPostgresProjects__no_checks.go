@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksPostgresProjects) validateSetPageSizeParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresProjects) validateSetShowDeletedParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataDatabricksPostgresProjectsParameters(scope constructs.Construct, id *string, config *DataDatabricksPostgresProjectsConfig) error {
 	return nil
 }

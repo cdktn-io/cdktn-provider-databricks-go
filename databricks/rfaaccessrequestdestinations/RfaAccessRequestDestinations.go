@@ -5,14 +5,14 @@ package rfaaccessrequestdestinations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/rfaaccessrequestdestinations/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/rfaaccessrequestdestinations/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
 type RfaAccessRequestDestinations interface {
 	cdktn.TerraformResource
 	AreAnyDestinationsHidden() cdktn.IResolvable
@@ -410,7 +410,7 @@ func (j *jsiiProxy_RfaAccessRequestDestinations) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
 func NewRfaAccessRequestDestinations(scope constructs.Construct, id *string, config *RfaAccessRequestDestinationsConfig) RfaAccessRequestDestinations {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewRfaAccessRequestDestinations(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
 func NewRfaAccessRequestDestinations_Override(r RfaAccessRequestDestinations, scope constructs.Construct, id *string, config *RfaAccessRequestDestinationsConfig) {
 	_init_.Initialize()
 

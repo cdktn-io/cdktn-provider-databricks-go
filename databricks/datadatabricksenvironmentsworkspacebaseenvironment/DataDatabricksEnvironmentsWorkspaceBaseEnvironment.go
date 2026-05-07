@@ -5,14 +5,14 @@ package datadatabricksenvironmentsworkspacebaseenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksenvironmentsworkspacebaseenvironment/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironment/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/environments_workspace_base_environment databricks_environments_workspace_base_environment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/environments_workspace_base_environment databricks_environments_workspace_base_environment}.
 type DataDatabricksEnvironmentsWorkspaceBaseEnvironment interface {
 	cdktn.TerraformDataSource
 	BaseEnvironmentType() *string
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DataDatabricksEnvironmentsWorkspaceBaseEnvironment) UpdateTim
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Data Source.
 func NewDataDatabricksEnvironmentsWorkspaceBaseEnvironment(scope constructs.Construct, id *string, config *DataDatabricksEnvironmentsWorkspaceBaseEnvironmentConfig) DataDatabricksEnvironmentsWorkspaceBaseEnvironment {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewDataDatabricksEnvironmentsWorkspaceBaseEnvironment(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Data Source.
 func NewDataDatabricksEnvironmentsWorkspaceBaseEnvironment_Override(d DataDatabricksEnvironmentsWorkspaceBaseEnvironment, scope constructs.Construct, id *string, config *DataDatabricksEnvironmentsWorkspaceBaseEnvironmentConfig) {
 	_init_.Initialize()
 

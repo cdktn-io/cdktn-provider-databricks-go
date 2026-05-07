@@ -5,14 +5,14 @@ package datadatabricksnotebookpaths
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotebookpaths/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotebookpaths/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/notebook_paths databricks_notebook_paths}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths databricks_notebook_paths}.
 type DataDatabricksNotebookPaths interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source.
 func NewDataDatabricksNotebookPaths(scope constructs.Construct, id *string, config *DataDatabricksNotebookPathsConfig) DataDatabricksNotebookPaths {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataDatabricksNotebookPaths(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source.
 func NewDataDatabricksNotebookPaths_Override(d DataDatabricksNotebookPaths, scope constructs.Construct, id *string, config *DataDatabricksNotebookPathsConfig) {
 	_init_.Initialize()
 

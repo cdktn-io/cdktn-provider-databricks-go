@@ -5,14 +5,14 @@ package mwscredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwscredentials/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwscredentials/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_credentials databricks_mws_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_credentials databricks_mws_credentials}.
 type MwsCredentials interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_MwsCredentials) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_credentials databricks_mws_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_credentials databricks_mws_credentials} Resource.
 func NewMwsCredentials(scope constructs.Construct, id *string, config *MwsCredentialsConfig) MwsCredentials {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewMwsCredentials(scope constructs.Construct, id *string, config *MwsCreden
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_credentials databricks_mws_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_credentials databricks_mws_credentials} Resource.
 func NewMwsCredentials_Override(m MwsCredentials, scope constructs.Construct, id *string, config *MwsCredentialsConfig) {
 	_init_.Initialize()
 

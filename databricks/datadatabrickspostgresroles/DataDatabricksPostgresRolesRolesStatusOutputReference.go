@@ -5,9 +5,9 @@ package datadatabrickspostgresroles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresroles/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresroles/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -46,6 +46,7 @@ type DataDatabricksPostgresRolesRolesStatusOutputReference interface {
 	PostgresRole() *string
 	SetPostgresRole(val *string)
 	PostgresRoleInput() *string
+	RoleId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -244,6 +245,16 @@ func (j *jsiiProxy_DataDatabricksPostgresRolesRolesStatusOutputReference) Postgr
 	_jsii_.Get(
 		j,
 		"postgresRoleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresRolesRolesStatusOutputReference) RoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleId",
 		&returns,
 	)
 	return returns

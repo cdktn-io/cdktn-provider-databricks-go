@@ -5,14 +5,14 @@ package modelservingprovisionedthroughput
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/modelservingprovisionedthroughput/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/modelservingprovisionedthroughput/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput}.
 type ModelServingProvisionedThroughput interface {
 	cdktn.TerraformResource
 	AiGateway() ModelServingProvisionedThroughputAiGatewayOutputReference
@@ -520,7 +520,7 @@ func (j *jsiiProxy_ModelServingProvisionedThroughput) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
 func NewModelServingProvisionedThroughput(scope constructs.Construct, id *string, config *ModelServingProvisionedThroughputConfig) ModelServingProvisionedThroughput {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewModelServingProvisionedThroughput(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
 func NewModelServingProvisionedThroughput_Override(m ModelServingProvisionedThroughput, scope constructs.Construct, id *string, config *ModelServingProvisionedThroughputConfig) {
 	_init_.Initialize()
 

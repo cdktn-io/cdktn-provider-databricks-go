@@ -5,14 +5,14 @@ package datadatabrickspostgresrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_role databricks_postgres_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_role databricks_postgres_role}.
 type DataDatabricksPostgresRole interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataDatabricksPostgresRole) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_role databricks_postgres_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_role databricks_postgres_role} Data Source.
 func NewDataDatabricksPostgresRole(scope constructs.Construct, id *string, config *DataDatabricksPostgresRoleConfig) DataDatabricksPostgresRole {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataDatabricksPostgresRole(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_role databricks_postgres_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_role databricks_postgres_role} Data Source.
 func NewDataDatabricksPostgresRole_Override(d DataDatabricksPostgresRole, scope constructs.Construct, id *string, config *DataDatabricksPostgresRoleConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datadatabrickspipelines
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspipelines/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspipelines/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/pipelines databricks_pipelines}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/pipelines databricks_pipelines}.
 type DataDatabricksPipelines interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataDatabricksPipelines) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/pipelines databricks_pipelines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/pipelines databricks_pipelines} Data Source.
 func NewDataDatabricksPipelines(scope constructs.Construct, id *string, config *DataDatabricksPipelinesConfig) DataDatabricksPipelines {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataDatabricksPipelines(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/pipelines databricks_pipelines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/pipelines databricks_pipelines} Data Source.
 func NewDataDatabricksPipelines_Override(d DataDatabricksPipelines, scope constructs.Construct, id *string, config *DataDatabricksPipelinesConfig) {
 	_init_.Initialize()
 

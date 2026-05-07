@@ -5,25 +5,25 @@ package datadatabricksapp
 
 
 type DataDatabricksAppApp struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app#name DataDatabricksApp#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app#name DataDatabricksApp#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app#budget_policy_id DataDatabricksApp#budget_policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app#budget_policy_id DataDatabricksApp#budget_policy_id}.
 	BudgetPolicyId *string `field:"optional" json:"budgetPolicyId" yaml:"budgetPolicyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app#compute_size DataDatabricksApp#compute_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app#compute_size DataDatabricksApp#compute_size}.
 	ComputeSize *string `field:"optional" json:"computeSize" yaml:"computeSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app#description DataDatabricksApp#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app#description DataDatabricksApp#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app#git_repository DataDatabricksApp#git_repository}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app#git_repository DataDatabricksApp#git_repository}.
 	GitRepository *DataDatabricksAppAppGitRepository `field:"optional" json:"gitRepository" yaml:"gitRepository"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app#resources DataDatabricksApp#resources}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app#resources DataDatabricksApp#resources}.
 	Resources interface{} `field:"optional" json:"resources" yaml:"resources"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app#space DataDatabricksApp#space}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app#space DataDatabricksApp#space}.
 	Space *string `field:"optional" json:"space" yaml:"space"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app#telemetry_export_destinations DataDatabricksApp#telemetry_export_destinations}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app#telemetry_export_destinations DataDatabricksApp#telemetry_export_destinations}.
 	TelemetryExportDestinations interface{} `field:"optional" json:"telemetryExportDestinations" yaml:"telemetryExportDestinations"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app#usage_policy_id DataDatabricksApp#usage_policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app#usage_policy_id DataDatabricksApp#usage_policy_id}.
 	UsagePolicyId *string `field:"optional" json:"usagePolicyId" yaml:"usagePolicyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app#user_api_scopes DataDatabricksApp#user_api_scopes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app#user_api_scopes DataDatabricksApp#user_api_scopes}.
 	UserApiScopes *[]*string `field:"optional" json:"userApiScopes" yaml:"userApiScopes"`
 }
 

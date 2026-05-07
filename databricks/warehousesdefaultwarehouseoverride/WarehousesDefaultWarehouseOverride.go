@@ -5,14 +5,14 @@ package warehousesdefaultwarehouseoverride
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/warehousesdefaultwarehouseoverride/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/warehousesdefaultwarehouseoverride/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override}.
 type WarehousesDefaultWarehouseOverride interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_WarehousesDefaultWarehouseOverride) WarehouseIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Resource.
 func NewWarehousesDefaultWarehouseOverride(scope constructs.Construct, id *string, config *WarehousesDefaultWarehouseOverrideConfig) WarehousesDefaultWarehouseOverride {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewWarehousesDefaultWarehouseOverride(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Resource.
 func NewWarehousesDefaultWarehouseOverride_Override(w WarehousesDefaultWarehouseOverride, scope constructs.Construct, id *string, config *WarehousesDefaultWarehouseOverrideConfig) {
 	_init_.Initialize()
 

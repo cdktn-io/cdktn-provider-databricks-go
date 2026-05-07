@@ -5,14 +5,14 @@ package mwsnccprivateendpointrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccprivateendpointrule/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccprivateendpointrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}.
 type MwsNccPrivateEndpointRule interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -750,7 +750,7 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) VpcEndpointIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
 func NewMwsNccPrivateEndpointRule(scope constructs.Construct, id *string, config *MwsNccPrivateEndpointRuleConfig) MwsNccPrivateEndpointRule {
 	_init_.Initialize()
 
@@ -768,7 +768,7 @@ func NewMwsNccPrivateEndpointRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
 func NewMwsNccPrivateEndpointRule_Override(m MwsNccPrivateEndpointRule, scope constructs.Construct, id *string, config *MwsNccPrivateEndpointRuleConfig) {
 	_init_.Initialize()
 

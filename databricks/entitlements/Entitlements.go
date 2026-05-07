@@ -5,14 +5,14 @@ package entitlements
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlements/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/entitlements/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/entitlements databricks_entitlements}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/entitlements databricks_entitlements}.
 type Entitlements interface {
 	cdktn.TerraformResource
 	AllowClusterCreate() interface{}
@@ -535,7 +535,7 @@ func (j *jsiiProxy_Entitlements) WorkspaceConsumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/entitlements databricks_entitlements} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/entitlements databricks_entitlements} Resource.
 func NewEntitlements(scope constructs.Construct, id *string, config *EntitlementsConfig) Entitlements {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewEntitlements(scope constructs.Construct, id *string, config *Entitlement
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/entitlements databricks_entitlements} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/entitlements databricks_entitlements} Resource.
 func NewEntitlements_Override(e Entitlements, scope constructs.Construct, id *string, config *EntitlementsConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datadatabrickspolicyinfo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspolicyinfo/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspolicyinfo/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/policy_info databricks_policy_info}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/policy_info databricks_policy_info}.
 type DataDatabricksPolicyInfo interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfo) WhenCondition() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/policy_info databricks_policy_info} Data Source.
 func NewDataDatabricksPolicyInfo(scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) DataDatabricksPolicyInfo {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewDataDatabricksPolicyInfo(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/policy_info databricks_policy_info} Data Source.
 func NewDataDatabricksPolicyInfo_Override(d DataDatabricksPolicyInfo, scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) {
 	_init_.Initialize()
 

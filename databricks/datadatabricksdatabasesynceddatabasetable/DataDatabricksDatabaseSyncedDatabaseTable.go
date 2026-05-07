@@ -5,14 +5,14 @@ package datadatabricksdatabasesynceddatabasetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksdatabasesynceddatabasetable/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_synced_database_table databricks_database_synced_database_table}.
 type DataDatabricksDatabaseSyncedDatabaseTable interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -374,7 +374,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) UnityCatalogProvis
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTable(scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTableConfig) DataDatabricksDatabaseSyncedDatabaseTable {
 	_init_.Initialize()
 
@@ -392,7 +392,7 @@ func NewDataDatabricksDatabaseSyncedDatabaseTable(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTable_Override(d DataDatabricksDatabaseSyncedDatabaseTable, scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTableConfig) {
 	_init_.Initialize()
 

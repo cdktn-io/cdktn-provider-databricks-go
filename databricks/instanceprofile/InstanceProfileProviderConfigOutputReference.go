@@ -5,9 +5,9 @@ package instanceprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/instanceprofile/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/instanceprofile/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 

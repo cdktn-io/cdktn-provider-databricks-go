@@ -5,14 +5,14 @@ package budgetpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/budgetpolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/budgetpolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/budget_policy databricks_budget_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/budget_policy databricks_budget_policy}.
 type BudgetPolicy interface {
 	cdktn.TerraformResource
 	BindingWorkspaceIds() *[]*float64
@@ -391,7 +391,7 @@ func (j *jsiiProxy_BudgetPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/budget_policy databricks_budget_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/budget_policy databricks_budget_policy} Resource.
 func NewBudgetPolicy(scope constructs.Construct, id *string, config *BudgetPolicyConfig) BudgetPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewBudgetPolicy(scope constructs.Construct, id *string, config *BudgetPolic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/budget_policy databricks_budget_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/budget_policy databricks_budget_policy} Resource.
 func NewBudgetPolicy_Override(b BudgetPolicy, scope constructs.Construct, id *string, config *BudgetPolicyConfig) {
 	_init_.Initialize()
 

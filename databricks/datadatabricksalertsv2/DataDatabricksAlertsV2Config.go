@@ -22,9 +22,9 @@ type DataDatabricksAlertsV2Config struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/alerts_v2#page_size DataDatabricksAlertsV2#page_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/alerts_v2#page_size DataDatabricksAlertsV2#page_size}.
 	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/alerts_v2#provider_config DataDatabricksAlertsV2#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/alerts_v2#provider_config DataDatabricksAlertsV2#provider_config}.
 	ProviderConfig *DataDatabricksAlertsV2ProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

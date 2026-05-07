@@ -5,15 +5,16 @@ package postgrescatalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgrescatalog/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PostgresCatalogStatusOutputReference interface {
 	cdktn.ComplexObject
 	Branch() *string
+	CatalogId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -87,6 +88,16 @@ func (j *jsiiProxy_PostgresCatalogStatusOutputReference) Branch() *string {
 	_jsii_.Get(
 		j,
 		"branch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresCatalogStatusOutputReference) CatalogId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogId",
 		&returns,
 	)
 	return returns

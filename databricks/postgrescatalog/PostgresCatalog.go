@@ -5,14 +5,14 @@ package postgrescatalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgrescatalog/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_catalog databricks_postgres_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_catalog databricks_postgres_catalog}.
 type PostgresCatalog interface {
 	cdktn.TerraformResource
 	CatalogId() *string
@@ -421,7 +421,7 @@ func (j *jsiiProxy_PostgresCatalog) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_catalog databricks_postgres_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_catalog databricks_postgres_catalog} Resource.
 func NewPostgresCatalog(scope constructs.Construct, id *string, config *PostgresCatalogConfig) PostgresCatalog {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewPostgresCatalog(scope constructs.Construct, id *string, config *Postgres
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_catalog databricks_postgres_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_catalog databricks_postgres_catalog} Resource.
 func NewPostgresCatalog_Override(p PostgresCatalog, scope constructs.Construct, id *string, config *PostgresCatalogConfig) {
 	_init_.Initialize()
 

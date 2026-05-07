@@ -5,14 +5,14 @@ package datadatabricksvolumes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksvolumes/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolumes/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/volumes databricks_volumes}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/volumes databricks_volumes}.
 type DataDatabricksVolumes interface {
 	cdktn.TerraformDataSource
 	CatalogName() *string
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataDatabricksVolumes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/volumes databricks_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/volumes databricks_volumes} Data Source.
 func NewDataDatabricksVolumes(scope constructs.Construct, id *string, config *DataDatabricksVolumesConfig) DataDatabricksVolumes {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataDatabricksVolumes(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/volumes databricks_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/volumes databricks_volumes} Data Source.
 func NewDataDatabricksVolumes_Override(d DataDatabricksVolumes, scope constructs.Construct, id *string, config *DataDatabricksVolumesConfig) {
 	_init_.Initialize()
 

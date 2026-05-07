@@ -5,14 +5,14 @@ package workspacefile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacefile/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacefile/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/workspace_file databricks_workspace_file}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_file databricks_workspace_file}.
 type WorkspaceFile interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_WorkspaceFile) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/workspace_file databricks_workspace_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_file databricks_workspace_file} Resource.
 func NewWorkspaceFile(scope constructs.Construct, id *string, config *WorkspaceFileConfig) WorkspaceFile {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewWorkspaceFile(scope constructs.Construct, id *string, config *WorkspaceF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/workspace_file databricks_workspace_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_file databricks_workspace_file} Resource.
 func NewWorkspaceFile_Override(w WorkspaceFile, scope constructs.Construct, id *string, config *WorkspaceFileConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datadatabrickspostgresproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresproject/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresproject/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_project databricks_postgres_project}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_project databricks_postgres_project}.
 type DataDatabricksPostgresProject interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataDatabricksPostgresProject interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeleteTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,6 +53,7 @@ type DataDatabricksPostgresProject interface {
 	SetProvider(val cdktn.TerraformProvider)
 	ProviderConfig() DataDatabricksPostgresProjectProviderConfigOutputReference
 	ProviderConfigInput() interface{}
+	PurgeTime() *string
 	// Experimental.
 	RawOverrides() interface{}
 	Spec() DataDatabricksPostgresProjectSpecOutputReference
@@ -157,6 +159,16 @@ func (j *jsiiProxy_DataDatabricksPostgresProject) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProject) DeleteTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteTime",
 		&returns,
 	)
 	return returns
@@ -282,6 +294,16 @@ func (j *jsiiProxy_DataDatabricksPostgresProject) ProviderConfigInput() interfac
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresProject) PurgeTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"purgeTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresProject) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -363,7 +385,7 @@ func (j *jsiiProxy_DataDatabricksPostgresProject) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_project databricks_postgres_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_project databricks_postgres_project} Data Source.
 func NewDataDatabricksPostgresProject(scope constructs.Construct, id *string, config *DataDatabricksPostgresProjectConfig) DataDatabricksPostgresProject {
 	_init_.Initialize()
 
@@ -381,7 +403,7 @@ func NewDataDatabricksPostgresProject(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_project databricks_postgres_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_project databricks_postgres_project} Data Source.
 func NewDataDatabricksPostgresProject_Override(d DataDatabricksPostgresProject, scope constructs.Construct, id *string, config *DataDatabricksPostgresProjectConfig) {
 	_init_.Initialize()
 

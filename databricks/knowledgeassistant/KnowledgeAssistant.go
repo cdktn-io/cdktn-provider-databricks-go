@@ -5,14 +5,14 @@ package knowledgeassistant
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/knowledgeassistant/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistant/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/knowledge_assistant databricks_knowledge_assistant}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/knowledge_assistant databricks_knowledge_assistant}.
 type KnowledgeAssistant interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -477,7 +477,7 @@ func (j *jsiiProxy_KnowledgeAssistant) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/knowledge_assistant databricks_knowledge_assistant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/knowledge_assistant databricks_knowledge_assistant} Resource.
 func NewKnowledgeAssistant(scope constructs.Construct, id *string, config *KnowledgeAssistantConfig) KnowledgeAssistant {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewKnowledgeAssistant(scope constructs.Construct, id *string, config *Knowl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/knowledge_assistant databricks_knowledge_assistant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/knowledge_assistant databricks_knowledge_assistant} Resource.
 func NewKnowledgeAssistant_Override(k KnowledgeAssistant, scope constructs.Construct, id *string, config *KnowledgeAssistantConfig) {
 	_init_.Initialize()
 

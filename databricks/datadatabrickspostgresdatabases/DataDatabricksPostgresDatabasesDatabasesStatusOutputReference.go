@@ -5,9 +5,9 @@ package datadatabrickspostgresdatabases
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresdatabases/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresdatabases/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,6 +28,7 @@ type DataDatabricksPostgresDatabasesDatabasesStatusOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DatabaseId() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksPostgresDatabasesDatabasesStatus
@@ -112,6 +113,16 @@ func (j *jsiiProxy_DataDatabricksPostgresDatabasesDatabasesStatusOutputReference
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresDatabasesDatabasesStatusOutputReference) DatabaseId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseId",
 		&returns,
 	)
 	return returns

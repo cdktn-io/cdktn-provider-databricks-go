@@ -5,14 +5,14 @@ package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/job databricks_job}.
 type DataDatabricksJob interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataDatabricksJob) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/job databricks_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/job databricks_job} Data Source.
 func NewDataDatabricksJob(scope constructs.Construct, id *string, config *DataDatabricksJobConfig) DataDatabricksJob {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataDatabricksJob(scope constructs.Construct, id *string, config *DataDa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/job databricks_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/job databricks_job} Data Source.
 func NewDataDatabricksJob_Override(d DataDatabricksJob, scope constructs.Construct, id *string, config *DataDatabricksJobConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datadatabrickspostgresprojects
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresprojects/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresprojects/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_projects databricks_postgres_projects}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_projects databricks_postgres_projects}.
 type DataDatabricksPostgresProjects interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,9 @@ type DataDatabricksPostgresProjects interface {
 	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	ShowDeleted() interface{}
+	SetShowDeleted(val interface{})
+	ShowDeletedInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,6 +93,7 @@ type DataDatabricksPostgresProjects interface {
 	ResetOverrideLogicalId()
 	ResetPageSize()
 	ResetProviderConfig()
+	ResetShowDeleted()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -278,6 +282,26 @@ func (j *jsiiProxy_DataDatabricksPostgresProjects) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresProjects) ShowDeleted() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"showDeleted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjects) ShowDeletedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"showDeletedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresProjects) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -309,7 +333,7 @@ func (j *jsiiProxy_DataDatabricksPostgresProjects) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
 func NewDataDatabricksPostgresProjects(scope constructs.Construct, id *string, config *DataDatabricksPostgresProjectsConfig) DataDatabricksPostgresProjects {
 	_init_.Initialize()
 
@@ -327,7 +351,7 @@ func NewDataDatabricksPostgresProjects(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
 func NewDataDatabricksPostgresProjects_Override(d DataDatabricksPostgresProjects, scope constructs.Construct, id *string, config *DataDatabricksPostgresProjectsConfig) {
 	_init_.Initialize()
 
@@ -391,6 +415,17 @@ func (j *jsiiProxy_DataDatabricksPostgresProjects)SetProvider(val cdktn.Terrafor
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjects)SetShowDeleted(val interface{}) {
+	if err := j.validateSetShowDeletedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"showDeleted",
 		val,
 	)
 }
@@ -711,6 +746,14 @@ func (d *jsiiProxy_DataDatabricksPostgresProjects) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresProjects) ResetShowDeleted() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetShowDeleted",
 		nil, // no parameters
 	)
 }

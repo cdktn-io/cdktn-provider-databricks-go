@@ -5,14 +5,14 @@ package postgresproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresproject/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_project databricks_postgres_project}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_project databricks_postgres_project}.
 type PostgresProject interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -28,6 +28,7 @@ type PostgresProject interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeleteTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,6 +63,10 @@ type PostgresProject interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PurgeOnDelete() interface{}
+	SetPurgeOnDelete(val interface{})
+	PurgeOnDeleteInput() interface{}
+	PurgeTime() *string
 	// Experimental.
 	RawOverrides() interface{}
 	Spec() PostgresProjectSpecOutputReference
@@ -126,6 +131,7 @@ type PostgresProject interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetPurgeOnDelete()
 	ResetSpec()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -199,6 +205,16 @@ func (j *jsiiProxy_PostgresProject) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProject) DeleteTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteTime",
 		&returns,
 	)
 	return returns
@@ -354,6 +370,36 @@ func (j *jsiiProxy_PostgresProject) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresProject) PurgeOnDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"purgeOnDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProject) PurgeOnDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"purgeOnDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProject) PurgeTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"purgeTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresProject) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -445,7 +491,7 @@ func (j *jsiiProxy_PostgresProject) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_project databricks_postgres_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_project databricks_postgres_project} Resource.
 func NewPostgresProject(scope constructs.Construct, id *string, config *PostgresProjectConfig) PostgresProject {
 	_init_.Initialize()
 
@@ -463,7 +509,7 @@ func NewPostgresProject(scope constructs.Construct, id *string, config *Postgres
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_project databricks_postgres_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_project databricks_postgres_project} Resource.
 func NewPostgresProject_Override(p PostgresProject, scope constructs.Construct, id *string, config *PostgresProjectConfig) {
 	_init_.Initialize()
 
@@ -549,6 +595,17 @@ func (j *jsiiProxy_PostgresProject)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresProject)SetPurgeOnDelete(val interface{}) {
+	if err := j.validateSetPurgeOnDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"purgeOnDelete",
 		val,
 	)
 }
@@ -959,6 +1016,14 @@ func (p *jsiiProxy_PostgresProject) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresProject) ResetPurgeOnDelete() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPurgeOnDelete",
 		nil, // no parameters
 	)
 }

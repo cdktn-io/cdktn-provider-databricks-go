@@ -5,14 +5,14 @@ package datadatabricksworkspaceentitytagassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksworkspaceentitytagassignment/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksworkspaceentitytagassignment/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment}.
 type DataDatabricksWorkspaceEntityTagAssignment interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignment) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Data Source.
 func NewDataDatabricksWorkspaceEntityTagAssignment(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceEntityTagAssignmentConfig) DataDatabricksWorkspaceEntityTagAssignment {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataDatabricksWorkspaceEntityTagAssignment(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Data Source.
 func NewDataDatabricksWorkspaceEntityTagAssignment_Override(d DataDatabricksWorkspaceEntityTagAssignment, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceEntityTagAssignmentConfig) {
 	_init_.Initialize()
 

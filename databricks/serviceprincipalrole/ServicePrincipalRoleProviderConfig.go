@@ -5,7 +5,7 @@ package serviceprincipalrole
 
 
 type ServicePrincipalRoleProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#workspace_id ServicePrincipalRole#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/service_principal_role#workspace_id ServicePrincipalRole#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

@@ -5,14 +5,14 @@ package datadatabricksentitytagassignments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksentitytagassignments/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments}.
 type DataDatabricksEntityTagAssignments interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataDatabricksEntityTagAssignments) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments} Data Source.
 func NewDataDatabricksEntityTagAssignments(scope constructs.Construct, id *string, config *DataDatabricksEntityTagAssignmentsConfig) DataDatabricksEntityTagAssignments {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataDatabricksEntityTagAssignments(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments} Data Source.
 func NewDataDatabricksEntityTagAssignments_Override(d DataDatabricksEntityTagAssignments, scope constructs.Construct, id *string, config *DataDatabricksEntityTagAssignmentsConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datadatabricksaccountsettingv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksaccountsettingv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettingv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
 type DataDatabricksAccountSettingV2 interface {
 	cdktn.TerraformDataSource
 	AibiDashboardEmbeddingAccessPolicy() DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) DataDatabricksAccountSettingV2 {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2_Override(d DataDatabricksAccountSettingV2, scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) {
 	_init_.Initialize()
 

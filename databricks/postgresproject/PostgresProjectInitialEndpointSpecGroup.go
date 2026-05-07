@@ -5,11 +5,11 @@ package postgresproject
 
 
 type PostgresProjectInitialEndpointSpecGroup struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_project#max PostgresProject#max}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_project#max PostgresProject#max}.
 	Max *float64 `field:"required" json:"max" yaml:"max"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_project#min PostgresProject#min}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_project#min PostgresProject#min}.
 	Min *float64 `field:"required" json:"min" yaml:"min"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_project#enable_readable_secondaries PostgresProject#enable_readable_secondaries}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_project#enable_readable_secondaries PostgresProject#enable_readable_secondaries}.
 	EnableReadableSecondaries interface{} `field:"optional" json:"enableReadableSecondaries" yaml:"enableReadableSecondaries"`
 }
 

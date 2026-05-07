@@ -5,14 +5,14 @@ package appssettingscustomtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/appssettingscustomtemplate/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appssettingscustomtemplate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template}.
 type AppsSettingsCustomTemplate interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -469,7 +469,7 @@ func (j *jsiiProxy_AppsSettingsCustomTemplate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template} Resource.
 func NewAppsSettingsCustomTemplate(scope constructs.Construct, id *string, config *AppsSettingsCustomTemplateConfig) AppsSettingsCustomTemplate {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewAppsSettingsCustomTemplate(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template} Resource.
 func NewAppsSettingsCustomTemplate_Override(a AppsSettingsCustomTemplate, scope constructs.Construct, id *string, config *AppsSettingsCustomTemplateConfig) {
 	_init_.Initialize()
 

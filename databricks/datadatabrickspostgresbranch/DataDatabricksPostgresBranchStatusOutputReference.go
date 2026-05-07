@@ -5,14 +5,15 @@ package datadatabrickspostgresbranch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresbranch/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresbranch/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksPostgresBranchStatusOutputReference interface {
 	cdktn.ComplexObject
+	BranchId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -87,6 +88,16 @@ type DataDatabricksPostgresBranchStatusOutputReference interface {
 // The jsii proxy struct for DataDatabricksPostgresBranchStatusOutputReference
 type jsiiProxy_DataDatabricksPostgresBranchStatusOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresBranchStatusOutputReference) BranchId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branchId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksPostgresBranchStatusOutputReference) ComplexObjectIndex() interface{} {

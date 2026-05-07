@@ -5,14 +5,14 @@ package datadatabricksfeatureengineeringkafkaconfigs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfeatureengineeringkafkaconfigs/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfeatureengineeringkafkaconfigs/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/feature_engineering_kafka_configs databricks_feature_engineering_kafka_configs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_kafka_configs databricks_feature_engineering_kafka_configs}.
 type DataDatabricksFeatureEngineeringKafkaConfigs interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigs) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/feature_engineering_kafka_configs databricks_feature_engineering_kafka_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_kafka_configs databricks_feature_engineering_kafka_configs} Data Source.
 func NewDataDatabricksFeatureEngineeringKafkaConfigs(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringKafkaConfigsConfig) DataDatabricksFeatureEngineeringKafkaConfigs {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataDatabricksFeatureEngineeringKafkaConfigs(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/feature_engineering_kafka_configs databricks_feature_engineering_kafka_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_kafka_configs databricks_feature_engineering_kafka_configs} Data Source.
 func NewDataDatabricksFeatureEngineeringKafkaConfigs_Override(d DataDatabricksFeatureEngineeringKafkaConfigs, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringKafkaConfigsConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package vectorsearchindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchindex/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchindex/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index databricks_vector_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/vector_search_index databricks_vector_search_index}.
 type VectorSearchIndex interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -553,7 +553,7 @@ func (j *jsiiProxy_VectorSearchIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/vector_search_index databricks_vector_search_index} Resource.
 func NewVectorSearchIndex(scope constructs.Construct, id *string, config *VectorSearchIndexConfig) VectorSearchIndex {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewVectorSearchIndex(scope constructs.Construct, id *string, config *Vector
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/vector_search_index databricks_vector_search_index} Resource.
 func NewVectorSearchIndex_Override(v VectorSearchIndex, scope constructs.Construct, id *string, config *VectorSearchIndexConfig) {
 	_init_.Initialize()
 

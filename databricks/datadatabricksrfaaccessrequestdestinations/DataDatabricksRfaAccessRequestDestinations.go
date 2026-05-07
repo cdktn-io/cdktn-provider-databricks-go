@@ -5,14 +5,14 @@ package datadatabricksrfaaccessrequestdestinations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksrfaaccessrequestdestinations/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksrfaaccessrequestdestinations/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
 type DataDatabricksRfaAccessRequestDestinations interface {
 	cdktn.TerraformDataSource
 	AreAnyDestinationsHidden() cdktn.IResolvable
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
 func NewDataDatabricksRfaAccessRequestDestinations(scope constructs.Construct, id *string, config *DataDatabricksRfaAccessRequestDestinationsConfig) DataDatabricksRfaAccessRequestDestinations {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataDatabricksRfaAccessRequestDestinations(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
 func NewDataDatabricksRfaAccessRequestDestinations_Override(d DataDatabricksRfaAccessRequestDestinations, scope constructs.Construct, id *string, config *DataDatabricksRfaAccessRequestDestinationsConfig) {
 	_init_.Initialize()
 

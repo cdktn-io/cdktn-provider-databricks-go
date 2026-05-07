@@ -366,6 +366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "message", GoGetter: "Message"},
 			_jsii_.MemberProperty{JsiiProperty: "ongoingSyncProgress", GoGetter: "OngoingSyncProgress"},
 			_jsii_.MemberProperty{JsiiProperty: "pipelineId", GoGetter: "PipelineId"},
+			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioningPhase", GoGetter: "ProvisioningPhase"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

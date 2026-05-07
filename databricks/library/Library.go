@@ -5,14 +5,14 @@ package library
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/library/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/library databricks_library}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/library databricks_library}.
 type Library interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -534,7 +534,7 @@ func (j *jsiiProxy_Library) WhlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/library databricks_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/library databricks_library} Resource.
 func NewLibrary(scope constructs.Construct, id *string, config *LibraryConfig) Library {
 	_init_.Initialize()
 
@@ -552,7 +552,7 @@ func NewLibrary(scope constructs.Construct, id *string, config *LibraryConfig) L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/library databricks_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/library databricks_library} Resource.
 func NewLibrary_Override(l Library, scope constructs.Construct, id *string, config *LibraryConfig) {
 	_init_.Initialize()
 

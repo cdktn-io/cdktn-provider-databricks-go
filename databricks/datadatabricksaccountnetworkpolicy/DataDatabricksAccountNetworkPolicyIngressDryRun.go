@@ -5,7 +5,7 @@ package datadatabricksaccountnetworkpolicy
 
 
 type DataDatabricksAccountNetworkPolicyIngressDryRun struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/account_network_policy#public_access DataDatabricksAccountNetworkPolicy#public_access}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/account_network_policy#public_access DataDatabricksAccountNetworkPolicy#public_access}.
 	PublicAccess *DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess `field:"optional" json:"publicAccess" yaml:"publicAccess"`
 }
 

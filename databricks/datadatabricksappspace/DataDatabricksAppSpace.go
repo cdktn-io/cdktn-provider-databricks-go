@@ -5,14 +5,14 @@ package datadatabricksappspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksappspace/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappspace/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app_space databricks_app_space}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space databricks_app_space}.
 type DataDatabricksAppSpace interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DataDatabricksAppSpace) UserApiScopes() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app_space databricks_app_space} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space databricks_app_space} Data Source.
 func NewDataDatabricksAppSpace(scope constructs.Construct, id *string, config *DataDatabricksAppSpaceConfig) DataDatabricksAppSpace {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDataDatabricksAppSpace(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/app_space databricks_app_space} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space databricks_app_space} Data Source.
 func NewDataDatabricksAppSpace_Override(d DataDatabricksAppSpace, scope constructs.Construct, id *string, config *DataDatabricksAppSpaceConfig) {
 	_init_.Initialize()
 

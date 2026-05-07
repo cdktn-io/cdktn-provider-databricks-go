@@ -5,14 +5,14 @@ package compliancesecurityprofileworkspacesetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting}.
 type ComplianceSecurityProfileWorkspaceSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting} Resource.
 func NewComplianceSecurityProfileWorkspaceSetting(scope constructs.Construct, id *string, config *ComplianceSecurityProfileWorkspaceSettingConfig) ComplianceSecurityProfileWorkspaceSetting {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewComplianceSecurityProfileWorkspaceSetting(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting} Resource.
 func NewComplianceSecurityProfileWorkspaceSetting_Override(c ComplianceSecurityProfileWorkspaceSetting, scope constructs.Construct, id *string, config *ComplianceSecurityProfileWorkspaceSettingConfig) {
 	_init_.Initialize()
 

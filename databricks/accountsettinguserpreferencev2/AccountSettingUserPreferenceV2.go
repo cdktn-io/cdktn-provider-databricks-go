@@ -5,14 +5,14 @@ package accountsettinguserpreferencev2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountsettinguserpreferencev2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountsettinguserpreferencev2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2}.
 type AccountSettingUserPreferenceV2 interface {
 	cdktn.TerraformResource
 	BooleanVal() AccountSettingUserPreferenceV2BooleanValOutputReference
@@ -413,7 +413,7 @@ func (j *jsiiProxy_AccountSettingUserPreferenceV2) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2} Resource.
 func NewAccountSettingUserPreferenceV2(scope constructs.Construct, id *string, config *AccountSettingUserPreferenceV2Config) AccountSettingUserPreferenceV2 {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewAccountSettingUserPreferenceV2(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2} Resource.
 func NewAccountSettingUserPreferenceV2_Override(a AccountSettingUserPreferenceV2, scope constructs.Construct, id *string, config *AccountSettingUserPreferenceV2Config) {
 	_init_.Initialize()
 

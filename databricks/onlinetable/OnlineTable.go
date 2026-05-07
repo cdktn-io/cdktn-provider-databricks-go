@@ -5,14 +5,14 @@ package onlinetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/onlinetable/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/onlinetable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/online_table databricks_online_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_table databricks_online_table}.
 type OnlineTable interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_OnlineTable) UnityCatalogProvisioningState() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/online_table databricks_online_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_table databricks_online_table} Resource.
 func NewOnlineTable(scope constructs.Construct, id *string, config *OnlineTableConfig) OnlineTable {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewOnlineTable(scope constructs.Construct, id *string, config *OnlineTableC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/online_table databricks_online_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_table databricks_online_table} Resource.
 func NewOnlineTable_Override(o OnlineTable, scope constructs.Construct, id *string, config *OnlineTableConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datadatabricksfeatureengineeringmaterializedfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfeatureengineeringmaterializedfeature/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfeatureengineeringmaterializedfeature/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
 type DataDatabricksFeatureEngineeringMaterializedFeature interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) Terrafor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringMaterializedFeatureConfig) DataDatabricksFeatureEngineeringMaterializedFeature {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataDatabricksFeatureEngineeringMaterializedFeature(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringMaterializedFeature_Override(d DataDatabricksFeatureEngineeringMaterializedFeature, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringMaterializedFeatureConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datadatabricksmaterializedfeaturesfeaturetags
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmaterializedfeaturesfeaturetags/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmaterializedfeaturesfeaturetags/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags}.
 type DataDatabricksMaterializedFeaturesFeatureTags interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTags(scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagsConfig) DataDatabricksMaterializedFeaturesFeatureTags {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataDatabricksMaterializedFeaturesFeatureTags(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTags_Override(d DataDatabricksMaterializedFeaturesFeatureTags, scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagsConfig) {
 	_init_.Initialize()
 

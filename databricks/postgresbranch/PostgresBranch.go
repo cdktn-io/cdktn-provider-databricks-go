@@ -5,14 +5,14 @@ package postgresbranch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresbranch/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresbranch/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_branch databricks_postgres_branch}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_branch databricks_postgres_branch}.
 type PostgresBranch interface {
 	cdktn.TerraformResource
 	BranchId() *string
@@ -65,6 +65,9 @@ type PostgresBranch interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplaceExisting() interface{}
+	SetReplaceExisting(val interface{})
+	ReplaceExistingInput() interface{}
 	Spec() PostgresBranchSpecOutputReference
 	SpecInput() interface{}
 	Status() PostgresBranchStatusOutputReference
@@ -125,6 +128,7 @@ type PostgresBranch interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetReplaceExisting()
 	ResetSpec()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -363,6 +367,26 @@ func (j *jsiiProxy_PostgresBranch) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresBranch) ReplaceExisting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replaceExisting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresBranch) ReplaceExistingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replaceExistingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresBranch) Spec() PostgresBranchSpecOutputReference {
 	var returns PostgresBranchSpecOutputReference
 	_jsii_.Get(
@@ -444,7 +468,7 @@ func (j *jsiiProxy_PostgresBranch) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_branch databricks_postgres_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_branch databricks_postgres_branch} Resource.
 func NewPostgresBranch(scope constructs.Construct, id *string, config *PostgresBranchConfig) PostgresBranch {
 	_init_.Initialize()
 
@@ -462,7 +486,7 @@ func NewPostgresBranch(scope constructs.Construct, id *string, config *PostgresB
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_branch databricks_postgres_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_branch databricks_postgres_branch} Resource.
 func NewPostgresBranch_Override(p PostgresBranch, scope constructs.Construct, id *string, config *PostgresBranchConfig) {
 	_init_.Initialize()
 
@@ -559,6 +583,17 @@ func (j *jsiiProxy_PostgresBranch)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresBranch)SetReplaceExisting(val interface{}) {
+	if err := j.validateSetReplaceExistingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replaceExisting",
 		val,
 	)
 }
@@ -950,6 +985,14 @@ func (p *jsiiProxy_PostgresBranch) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresBranch) ResetReplaceExisting() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetReplaceExisting",
 		nil, // no parameters
 	)
 }

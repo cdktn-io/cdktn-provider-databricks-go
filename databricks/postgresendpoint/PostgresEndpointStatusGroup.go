@@ -5,9 +5,9 @@ package postgresendpoint
 
 
 type PostgresEndpointStatusGroup struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_endpoint#max PostgresEndpoint#max}.
 	Max *float64 `field:"required" json:"max" yaml:"max"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_endpoint#min PostgresEndpoint#min}.
 	Min *float64 `field:"required" json:"min" yaml:"min"`
 }
 

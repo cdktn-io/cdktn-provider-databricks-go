@@ -5,14 +5,14 @@ package sqldashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/sqldashboard/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqldashboard/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/sql_dashboard databricks_sql_dashboard}.
 type SqlDashboard interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -510,7 +510,7 @@ func (j *jsiiProxy_SqlDashboard) UpdatedAtInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
 func NewSqlDashboard(scope constructs.Construct, id *string, config *SqlDashboardConfig) SqlDashboard {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewSqlDashboard(scope constructs.Construct, id *string, config *SqlDashboar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
 func NewSqlDashboard_Override(s SqlDashboard, scope constructs.Construct, id *string, config *SqlDashboardConfig) {
 	_init_.Initialize()
 

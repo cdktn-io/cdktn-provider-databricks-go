@@ -5,7 +5,7 @@ package aibidashboardembeddingapproveddomainssetting
 
 
 type AibiDashboardEmbeddingApprovedDomainsSettingProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting#workspace_id AibiDashboardEmbeddingApprovedDomainsSetting#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/aibi_dashboard_embedding_approved_domains_setting#workspace_id AibiDashboardEmbeddingApprovedDomainsSetting#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

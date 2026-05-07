@@ -5,7 +5,7 @@ package metastoredataaccess
 
 
 type MetastoreDataAccessProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#workspace_id MetastoreDataAccess#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/metastore_data_access#workspace_id MetastoreDataAccess#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

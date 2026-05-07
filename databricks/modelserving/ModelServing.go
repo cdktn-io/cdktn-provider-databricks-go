@@ -5,14 +5,14 @@ package modelserving
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/modelserving/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/modelserving/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/model_serving databricks_model_serving}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/model_serving databricks_model_serving}.
 type ModelServing interface {
 	cdktn.TerraformResource
 	AiGateway() ModelServingAiGatewayOutputReference
@@ -604,7 +604,7 @@ func (j *jsiiProxy_ModelServing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing(scope constructs.Construct, id *string, config *ModelServingConfig) ModelServing {
 	_init_.Initialize()
 
@@ -622,7 +622,7 @@ func NewModelServing(scope constructs.Construct, id *string, config *ModelServin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing_Override(m ModelServing, scope constructs.Construct, id *string, config *ModelServingConfig) {
 	_init_.Initialize()
 

@@ -5,9 +5,9 @@ package postgressyncedtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -39,6 +39,7 @@ type PostgresSyncedTableStatusOutputReference interface {
 	Message() *string
 	OngoingSyncProgress() PostgresSyncedTableStatusOngoingSyncProgressOutputReference
 	PipelineId() *string
+	Project() *string
 	ProvisioningPhase() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -203,6 +204,16 @@ func (j *jsiiProxy_PostgresSyncedTableStatusOutputReference) PipelineId() *strin
 	_jsii_.Get(
 		j,
 		"pipelineId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresSyncedTableStatusOutputReference) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
 		&returns,
 	)
 	return returns

@@ -5,14 +5,14 @@ package datadatabricksserviceprincipalfederationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksserviceprincipalfederationpolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipalfederationpolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy}.
 type DataDatabricksServicePrincipalFederationPolicy interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -362,7 +362,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) UpdateTime() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
 func NewDataDatabricksServicePrincipalFederationPolicy(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalFederationPolicyConfig) DataDatabricksServicePrincipalFederationPolicy {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewDataDatabricksServicePrincipalFederationPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
 func NewDataDatabricksServicePrincipalFederationPolicy_Override(d DataDatabricksServicePrincipalFederationPolicy, scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalFederationPolicyConfig) {
 	_init_.Initialize()
 

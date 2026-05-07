@@ -5,9 +5,9 @@ package datadatabrickspostgresproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresproject/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresproject/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -42,6 +42,7 @@ type DataDatabricksPostgresProjectStatusOutputReference interface {
 	SetInternalValue(val *DataDatabricksPostgresProjectStatus)
 	Owner() *string
 	PgVersion() *float64
+	ProjectId() *string
 	SyntheticStorageSizeBytes() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -235,6 +236,16 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectStatusOutputReference) PgVersion
 	_jsii_.Get(
 		j,
 		"pgVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectStatusOutputReference) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
 		&returns,
 	)
 	return returns

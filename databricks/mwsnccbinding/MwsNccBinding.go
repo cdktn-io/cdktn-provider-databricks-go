@@ -5,14 +5,14 @@ package mwsnccbinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccbinding/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccbinding/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_ncc_binding databricks_mws_ncc_binding}.
 type MwsNccBinding interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_MwsNccBinding) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
 func NewMwsNccBinding(scope constructs.Construct, id *string, config *MwsNccBindingConfig) MwsNccBinding {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewMwsNccBinding(scope constructs.Construct, id *string, config *MwsNccBind
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
 func NewMwsNccBinding_Override(m MwsNccBinding, scope constructs.Construct, id *string, config *MwsNccBindingConfig) {
 	_init_.Initialize()
 

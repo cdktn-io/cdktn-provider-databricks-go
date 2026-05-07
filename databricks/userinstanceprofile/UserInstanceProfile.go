@@ -5,14 +5,14 @@ package userinstanceprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/userinstanceprofile/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/userinstanceprofile/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user_instance_profile databricks_user_instance_profile}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile databricks_user_instance_profile}.
 type UserInstanceProfile interface {
 	cdktn.TerraformResource
 	Api() *string
@@ -413,7 +413,7 @@ func (j *jsiiProxy_UserInstanceProfile) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
 func NewUserInstanceProfile(scope constructs.Construct, id *string, config *UserInstanceProfileConfig) UserInstanceProfile {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewUserInstanceProfile(scope constructs.Construct, id *string, config *User
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
 func NewUserInstanceProfile_Override(u UserInstanceProfile, scope constructs.Construct, id *string, config *UserInstanceProfileConfig) {
 	_init_.Initialize()
 

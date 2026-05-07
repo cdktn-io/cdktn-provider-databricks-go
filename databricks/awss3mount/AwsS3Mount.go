@@ -5,14 +5,14 @@ package awss3mount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/awss3mount/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/awss3mount/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/aws_s3_mount databricks_aws_s3_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/aws_s3_mount databricks_aws_s3_mount}.
 type AwsS3Mount interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_AwsS3Mount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource.
 func NewAwsS3Mount(scope constructs.Construct, id *string, config *AwsS3MountConfig) AwsS3Mount {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewAwsS3Mount(scope constructs.Construct, id *string, config *AwsS3MountCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource.
 func NewAwsS3Mount_Override(a AwsS3Mount, scope constructs.Construct, id *string, config *AwsS3MountConfig) {
 	_init_.Initialize()
 

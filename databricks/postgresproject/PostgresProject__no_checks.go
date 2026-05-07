@@ -123,6 +123,10 @@ func (j *jsiiProxy_PostgresProject) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_PostgresProject) validateSetPurgeOnDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewPostgresProjectParameters(scope constructs.Construct, id *string, config *PostgresProjectConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package vectorsearchendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}.
 type VectorSearchEndpoint interface {
 	cdktn.TerraformResource
 	BudgetPolicyId() *string
@@ -549,7 +549,7 @@ func (j *jsiiProxy_VectorSearchEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
 func NewVectorSearchEndpoint(scope constructs.Construct, id *string, config *VectorSearchEndpointConfig) VectorSearchEndpoint {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewVectorSearchEndpoint(scope constructs.Construct, id *string, config *Vec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
 func NewVectorSearchEndpoint_Override(v VectorSearchEndpoint, scope constructs.Construct, id *string, config *VectorSearchEndpointConfig) {
 	_init_.Initialize()
 

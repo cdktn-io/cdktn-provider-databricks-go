@@ -5,14 +5,14 @@ package postgresendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresendpoint/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresendpoint/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_endpoint databricks_postgres_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_endpoint databricks_postgres_endpoint}.
 type PostgresEndpoint interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type PostgresEndpoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplaceExisting() interface{}
+	SetReplaceExisting(val interface{})
+	ReplaceExistingInput() interface{}
 	Spec() PostgresEndpointSpecOutputReference
 	SpecInput() interface{}
 	Status() PostgresEndpointStatusOutputReference
@@ -125,6 +128,7 @@ type PostgresEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetReplaceExisting()
 	ResetSpec()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -363,6 +367,26 @@ func (j *jsiiProxy_PostgresEndpoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresEndpoint) ReplaceExisting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replaceExisting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresEndpoint) ReplaceExistingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replaceExistingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresEndpoint) Spec() PostgresEndpointSpecOutputReference {
 	var returns PostgresEndpointSpecOutputReference
 	_jsii_.Get(
@@ -444,7 +468,7 @@ func (j *jsiiProxy_PostgresEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_endpoint databricks_postgres_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_endpoint databricks_postgres_endpoint} Resource.
 func NewPostgresEndpoint(scope constructs.Construct, id *string, config *PostgresEndpointConfig) PostgresEndpoint {
 	_init_.Initialize()
 
@@ -462,7 +486,7 @@ func NewPostgresEndpoint(scope constructs.Construct, id *string, config *Postgre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_endpoint databricks_postgres_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_endpoint databricks_postgres_endpoint} Resource.
 func NewPostgresEndpoint_Override(p PostgresEndpoint, scope constructs.Construct, id *string, config *PostgresEndpointConfig) {
 	_init_.Initialize()
 
@@ -559,6 +583,17 @@ func (j *jsiiProxy_PostgresEndpoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresEndpoint)SetReplaceExisting(val interface{}) {
+	if err := j.validateSetReplaceExistingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replaceExisting",
 		val,
 	)
 }
@@ -950,6 +985,14 @@ func (p *jsiiProxy_PostgresEndpoint) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresEndpoint) ResetReplaceExisting() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetReplaceExisting",
 		nil, // no parameters
 	)
 }

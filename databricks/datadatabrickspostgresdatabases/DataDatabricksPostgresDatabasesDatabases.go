@@ -5,9 +5,9 @@ package datadatabrickspostgresdatabases
 
 
 type DataDatabricksPostgresDatabasesDatabases struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_databases#name DataDatabricksPostgresDatabases#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_databases#name DataDatabricksPostgresDatabases#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/postgres_databases#provider_config DataDatabricksPostgresDatabases#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_databases#provider_config DataDatabricksPostgresDatabases#provider_config}.
 	ProviderConfig *DataDatabricksPostgresDatabasesDatabasesProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

@@ -5,14 +5,14 @@ package postgresrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresrole/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_role databricks_postgres_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_role databricks_postgres_role}.
 type PostgresRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_PostgresRole) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_role databricks_postgres_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_role databricks_postgres_role} Resource.
 func NewPostgresRole(scope constructs.Construct, id *string, config *PostgresRoleConfig) PostgresRole {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewPostgresRole(scope constructs.Construct, id *string, config *PostgresRol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_role databricks_postgres_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_role databricks_postgres_role} Resource.
 func NewPostgresRole_Override(p PostgresRole, scope constructs.Construct, id *string, config *PostgresRoleConfig) {
 	_init_.Initialize()
 

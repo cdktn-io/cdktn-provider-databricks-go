@@ -5,14 +5,14 @@ package datadatabricksregisteredmodelversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/registered_model_versions databricks_registered_model_versions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model_versions databricks_registered_model_versions}.
 type DataDatabricksRegisteredModelVersions interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
 func NewDataDatabricksRegisteredModelVersions(scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelVersionsConfig) DataDatabricksRegisteredModelVersions {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDatabricksRegisteredModelVersions(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
 func NewDataDatabricksRegisteredModelVersions_Override(d DataDatabricksRegisteredModelVersions, scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelVersionsConfig) {
 	_init_.Initialize()
 

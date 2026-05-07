@@ -5,9 +5,9 @@ package datadatabrickspostgresprojects
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresprojects/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresprojects/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -29,6 +29,7 @@ type DataDatabricksPostgresProjectsProjectsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeleteTime() *string
 	// Experimental.
 	Fqn() *string
 	InitialEndpointSpec() DataDatabricksPostgresProjectsProjectsInitialEndpointSpecOutputReference
@@ -39,6 +40,7 @@ type DataDatabricksPostgresProjectsProjectsOutputReference interface {
 	NameInput() *string
 	ProviderConfig() DataDatabricksPostgresProjectsProjectsProviderConfigOutputReference
 	ProviderConfigInput() interface{}
+	PurgeTime() *string
 	Spec() DataDatabricksPostgresProjectsProjectsSpecOutputReference
 	Status() DataDatabricksPostgresProjectsProjectsStatusOutputReference
 	// Experimental.
@@ -132,6 +134,16 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsOutputReference) Creati
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsOutputReference) DeleteTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -197,6 +209,16 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsOutputReference) Provid
 	_jsii_.Get(
 		j,
 		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsOutputReference) PurgeTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"purgeTime",
 		&returns,
 	)
 	return returns

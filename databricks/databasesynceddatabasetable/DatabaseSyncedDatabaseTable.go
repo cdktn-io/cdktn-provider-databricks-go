@@ -5,14 +5,14 @@ package databasesynceddatabasetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/databasesynceddatabasetable/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/databasesynceddatabasetable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_synced_database_table databricks_database_synced_database_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_synced_database_table databricks_database_synced_database_table}.
 type DatabaseSyncedDatabaseTable interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -458,7 +458,7 @@ func (j *jsiiProxy_DatabaseSyncedDatabaseTable) UnityCatalogProvisioningState() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_synced_database_table databricks_database_synced_database_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_synced_database_table databricks_database_synced_database_table} Resource.
 func NewDatabaseSyncedDatabaseTable(scope constructs.Construct, id *string, config *DatabaseSyncedDatabaseTableConfig) DatabaseSyncedDatabaseTable {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewDatabaseSyncedDatabaseTable(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_synced_database_table databricks_database_synced_database_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_synced_database_table databricks_database_synced_database_table} Resource.
 func NewDatabaseSyncedDatabaseTable_Override(d DatabaseSyncedDatabaseTable, scope constructs.Construct, id *string, config *DatabaseSyncedDatabaseTableConfig) {
 	_init_.Initialize()
 

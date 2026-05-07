@@ -398,6 +398,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMembershipRoles", GoMethod: "ResetMembershipRoles"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPostgresRole", GoMethod: "ResetPostgresRole"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "roleId", GoGetter: "RoleId"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

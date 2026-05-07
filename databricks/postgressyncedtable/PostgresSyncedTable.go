@@ -5,14 +5,14 @@ package postgressyncedtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_synced_table databricks_postgres_synced_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_synced_table databricks_postgres_synced_table}.
 type PostgresSyncedTable interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -410,7 +410,7 @@ func (j *jsiiProxy_PostgresSyncedTable) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_synced_table databricks_postgres_synced_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_synced_table databricks_postgres_synced_table} Resource.
 func NewPostgresSyncedTable(scope constructs.Construct, id *string, config *PostgresSyncedTableConfig) PostgresSyncedTable {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewPostgresSyncedTable(scope constructs.Construct, id *string, config *Post
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/postgres_synced_table databricks_postgres_synced_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_synced_table databricks_postgres_synced_table} Resource.
 func NewPostgresSyncedTable_Override(p PostgresSyncedTable, scope constructs.Construct, id *string, config *PostgresSyncedTableConfig) {
 	_init_.Initialize()
 

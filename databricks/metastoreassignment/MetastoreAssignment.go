@@ -5,14 +5,14 @@ package metastoreassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/metastoreassignment/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/metastoreassignment/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment databricks_metastore_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/metastore_assignment databricks_metastore_assignment}.
 type MetastoreAssignment interface {
 	cdktn.TerraformResource
 	Api() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_MetastoreAssignment) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
 func NewMetastoreAssignment(scope constructs.Construct, id *string, config *MetastoreAssignmentConfig) MetastoreAssignment {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewMetastoreAssignment(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
 func NewMetastoreAssignment_Override(m MetastoreAssignment, scope constructs.Construct, id *string, config *MetastoreAssignmentConfig) {
 	_init_.Initialize()
 
