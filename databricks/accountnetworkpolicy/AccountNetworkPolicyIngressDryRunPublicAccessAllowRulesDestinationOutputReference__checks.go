@@ -93,6 +93,61 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestin
 	return nil
 }
 
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutAccountApiParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutAccountDatabricksOneParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutAccountUiParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutAppsRuntimeParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutLakebaseRuntimeParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutWorkspaceApiParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

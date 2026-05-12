@@ -43,10 +43,6 @@ func (j *jsiiProxy_DatabricksProvider) validateSetDisableOauthRefreshTokenParame
 	return nil
 }
 
-func (j *jsiiProxy_DatabricksProvider) validateSetExperimentalIsUnifiedHostParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DatabricksProvider) validateSetSkipVerifyParameters(val interface{}) error {
 	return nil
 }

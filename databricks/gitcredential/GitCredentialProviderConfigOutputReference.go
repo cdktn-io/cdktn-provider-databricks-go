@@ -67,6 +67,7 @@ type GitCredentialProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (g *jsiiProxy_GitCredentialProviderConfigOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GitCredentialProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GitCredentialProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

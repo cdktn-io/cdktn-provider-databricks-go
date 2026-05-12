@@ -67,6 +67,10 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttribu
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference) validateSetConfidentialComputeTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference) validateSetFirstOnDemandParameters(val *float64) error {
 	return nil
 }

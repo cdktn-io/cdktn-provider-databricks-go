@@ -23,6 +23,8 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfluenceOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptionsOutputReference
+	ConfluenceOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -36,8 +38,16 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	GoogleAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions
 	InternalValue() *PipelineIngestionDefinitionObjectsTableConnectorOptions
 	SetInternalValue(val *PipelineIngestionDefinitionObjectsTableConnectorOptions)
+	JiraOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptionsOutputReference
+	JiraOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions
+	MetaAdsOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference
+	MetaAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions
+	OutlookOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference
+	OutlookOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions
 	SharepointOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference
 	SharepointOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions
+	SmartsheetOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptionsOutputReference
+	SmartsheetOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,6 +58,8 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TiktokAdsOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference
 	TiktokAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions
+	ZendeskSupportOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptionsOutputReference
+	ZendeskSupportOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,14 +84,26 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutConfluenceOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions)
 	PutGdriveOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions)
 	PutGoogleAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions)
+	PutJiraOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions)
+	PutMetaAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions)
+	PutOutlookOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions)
 	PutSharepointOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions)
+	PutSmartsheetOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions)
 	PutTiktokAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions)
+	PutZendeskSupportOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions)
+	ResetConfluenceOptions()
 	ResetGdriveOptions()
 	ResetGoogleAdsOptions()
+	ResetJiraOptions()
+	ResetMetaAdsOptions()
+	ResetOutlookOptions()
 	ResetSharepointOptions()
+	ResetSmartsheetOptions()
 	ResetTiktokAdsOptions()
+	ResetZendeskSupportOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -110,6 +134,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ConfluenceOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"confluenceOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ConfluenceOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions
+	_jsii_.Get(
+		j,
+		"confluenceOptionsInput",
 		&returns,
 	)
 	return returns
@@ -185,6 +229,66 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) JiraOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"jiraOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) JiraOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions
+	_jsii_.Get(
+		j,
+		"jiraOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) MetaAdsOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"metaAdsOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) MetaAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions
+	_jsii_.Get(
+		j,
+		"metaAdsOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) OutlookOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"outlookOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) OutlookOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions
+	_jsii_.Get(
+		j,
+		"outlookOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) SharepointOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference {
 	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference
 	_jsii_.Get(
@@ -200,6 +304,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.Get(
 		j,
 		"sharepointOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) SmartsheetOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"smartsheetOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) SmartsheetOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions
+	_jsii_.Get(
+		j,
+		"smartsheetOptionsInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +364,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.Get(
 		j,
 		"tiktokAdsOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ZendeskSupportOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"zendeskSupportOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ZendeskSupportOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions
+	_jsii_.Get(
+		j,
+		"zendeskSupportOptionsInput",
 		&returns,
 	)
 	return returns
@@ -514,6 +658,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	return returns
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutConfluenceOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions) {
+	if err := p.validatePutConfluenceOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putConfluenceOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutGdriveOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions) {
 	if err := p.validatePutGdriveOptionsParameters(value); err != nil {
 		panic(err)
@@ -536,6 +691,39 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutJiraOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions) {
+	if err := p.validatePutJiraOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putJiraOptions",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutMetaAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions) {
+	if err := p.validatePutMetaAdsOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putMetaAdsOptions",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutOutlookOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions) {
+	if err := p.validatePutOutlookOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putOutlookOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutSharepointOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions) {
 	if err := p.validatePutSharepointOptionsParameters(value); err != nil {
 		panic(err)
@@ -543,6 +731,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.InvokeVoid(
 		p,
 		"putSharepointOptions",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutSmartsheetOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions) {
+	if err := p.validatePutSmartsheetOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSmartsheetOptions",
 		[]interface{}{value},
 	)
 }
@@ -555,6 +754,25 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 		p,
 		"putTiktokAdsOptions",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutZendeskSupportOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions) {
+	if err := p.validatePutZendeskSupportOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putZendeskSupportOptions",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetConfluenceOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetConfluenceOptions",
+		nil, // no parameters
 	)
 }
 
@@ -574,6 +792,30 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetJiraOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetJiraOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetMetaAdsOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMetaAdsOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetOutlookOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOutlookOptions",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetSharepointOptions() {
 	_jsii_.InvokeVoid(
 		p,
@@ -582,10 +824,26 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetSmartsheetOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSmartsheetOptions",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetTiktokAdsOptions() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetTiktokAdsOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetZendeskSupportOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetZendeskSupportOptions",
 		nil, // no parameters
 	)
 }

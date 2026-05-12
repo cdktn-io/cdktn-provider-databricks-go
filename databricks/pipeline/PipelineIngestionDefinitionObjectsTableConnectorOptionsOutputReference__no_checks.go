@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutConfluenceOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutGdriveOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions) error {
 	return nil
 }
@@ -55,11 +59,31 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutJiraOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutMetaAdsOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutOutlookOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutSharepointOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions) error {
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutSmartsheetOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutTiktokAdsOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutZendeskSupportOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions) error {
 	return nil
 }
 

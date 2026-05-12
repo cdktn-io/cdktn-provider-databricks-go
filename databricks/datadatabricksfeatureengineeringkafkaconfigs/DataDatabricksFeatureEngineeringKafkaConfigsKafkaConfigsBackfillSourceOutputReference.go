@@ -28,6 +28,9 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceOutpu
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeltaTableName() *string
+	SetDeltaTableName(val *string)
+	DeltaTableNameInput() *string
 	DeltaTableSource() DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSourceOutputReference
 	DeltaTableSourceInput() interface{}
 	// Experimental.
@@ -67,6 +70,7 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceOutpu
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDeltaTableSource(value *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSource)
+	ResetDeltaTableName()
 	ResetDeltaTableSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackf
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceOutputReference) DeltaTableName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deltaTableName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceOutputReference) DeltaTableNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deltaTableNameInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackf
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceOutputReference)SetDeltaTableName(val *string) {
+	if err := j.validateSetDeltaTableNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deltaTableName",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackf
 		d,
 		"putDeltaTableSource",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceOutputReference) ResetDeltaTableName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDeltaTableName",
+		nil, // no parameters
 	)
 }
 

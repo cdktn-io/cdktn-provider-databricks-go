@@ -63,6 +63,10 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigBackfillSourceOutp
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigBackfillSourceOutputReference) validateSetDeltaTableNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigBackfillSourceOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringKafkaConfigBackfillSource) error {
 	return nil
 }

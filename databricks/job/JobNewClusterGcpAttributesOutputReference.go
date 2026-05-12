@@ -29,6 +29,9 @@ type JobNewClusterGcpAttributesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialComputeType() *string
+	SetConfidentialComputeType(val *string)
+	ConfidentialComputeTypeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -87,6 +90,7 @@ type JobNewClusterGcpAttributesOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAvailability()
 	ResetBootDiskSize()
+	ResetConfidentialComputeType()
 	ResetFirstOnDemand()
 	ResetGoogleServiceAccount()
 	ResetLocalSsdCount()
@@ -162,6 +166,26 @@ func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference) ComplexObjectIsFro
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference) ConfidentialComputeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialComputeType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference) ConfidentialComputeTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialComputeTypeInput",
 		&returns,
 	)
 	return returns
@@ -385,6 +409,17 @@ func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference)SetComplexObjectIsF
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference)SetConfidentialComputeType(val *string) {
+	if err := j.validateSetConfidentialComputeTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"confidentialComputeType",
 		val,
 	)
 }
@@ -675,6 +710,14 @@ func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference) ResetBootDiskSize(
 	_jsii_.InvokeVoid(
 		j,
 		"resetBootDiskSize",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference) ResetConfidentialComputeType() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetConfidentialComputeType",
 		nil, // no parameters
 	)
 }

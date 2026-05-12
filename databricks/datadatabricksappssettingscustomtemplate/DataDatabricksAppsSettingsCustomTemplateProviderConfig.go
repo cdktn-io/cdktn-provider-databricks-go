@@ -5,7 +5,7 @@ package datadatabricksappssettingscustomtemplate
 
 
 type DataDatabricksAppsSettingsCustomTemplateProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/apps_settings_custom_template#workspace_id DataDatabricksAppsSettingsCustomTemplate#workspace_id}.
-	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/apps_settings_custom_template#workspace_id DataDatabricksAppsSettingsCustomTemplate#workspace_id}.
+	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

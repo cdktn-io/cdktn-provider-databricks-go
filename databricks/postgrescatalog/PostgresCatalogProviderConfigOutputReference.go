@@ -67,6 +67,7 @@ type PostgresCatalogProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (p *jsiiProxy_PostgresCatalogProviderConfigOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PostgresCatalogProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PostgresCatalogProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

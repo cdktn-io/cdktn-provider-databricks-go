@@ -22,7 +22,7 @@ type DataDatabricksEndpointConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/endpoint#name DataDatabricksEndpoint#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/endpoint#name DataDatabricksEndpoint#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

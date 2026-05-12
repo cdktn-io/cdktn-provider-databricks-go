@@ -63,6 +63,10 @@ func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestin
 	return nil
 }
 
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference) validateSetScopeQualifierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference) validateSetScopesParameters(val *[]*string) error {
 	return nil
 }

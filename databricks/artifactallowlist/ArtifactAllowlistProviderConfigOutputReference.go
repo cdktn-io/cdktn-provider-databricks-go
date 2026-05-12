@@ -67,6 +67,7 @@ type ArtifactAllowlistProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (a *jsiiProxy_ArtifactAllowlistProviderConfigOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_ArtifactAllowlistProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_ArtifactAllowlistProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

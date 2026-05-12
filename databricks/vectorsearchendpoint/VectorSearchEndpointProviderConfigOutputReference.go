@@ -67,6 +67,7 @@ type VectorSearchEndpointProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (v *jsiiProxy_VectorSearchEndpointProviderConfigOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VectorSearchEndpointProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (v *jsiiProxy_VectorSearchEndpointProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

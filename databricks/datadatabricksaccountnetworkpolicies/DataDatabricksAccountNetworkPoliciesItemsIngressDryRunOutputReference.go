@@ -32,6 +32,8 @@ type DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference inter
 	Fqn() *string
 	InternalValue() *DataDatabricksAccountNetworkPoliciesItemsIngressDryRun
 	SetInternalValue(val *DataDatabricksAccountNetworkPoliciesItemsIngressDryRun)
+	PrivateAccess() DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccessOutputReference
+	PrivateAccessInput() interface{}
 	PublicAccess() DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPublicAccessOutputReference
 	PublicAccessInput() interface{}
 	// Experimental.
@@ -66,7 +68,9 @@ type DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference inter
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutPrivateAccess(value *DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccess)
 	PutPublicAccess(value *DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPublicAccess)
+	ResetPrivateAccess()
 	ResetPublicAccess()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputR
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference) PrivateAccess() DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccessOutputReference {
+	var returns DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccessOutputReference
+	_jsii_.Get(
+		j,
+		"privateAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference) PrivateAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateAccessInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +466,17 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputR
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference) PutPrivateAccess(value *DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccess) {
+	if err := d.validatePutPrivateAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPrivateAccess",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference) PutPublicAccess(value *DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPublicAccess) {
 	if err := d.validatePutPublicAccessParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputR
 		d,
 		"putPublicAccess",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference) ResetPrivateAccess() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateAccess",
+		nil, // no parameters
 	)
 }
 

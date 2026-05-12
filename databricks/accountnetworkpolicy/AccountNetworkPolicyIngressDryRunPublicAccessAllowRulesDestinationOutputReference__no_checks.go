@@ -47,6 +47,26 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestin
 	return nil
 }
 
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutAccountApiParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutAccountDatabricksOneParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutAccountUiParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutAppsRuntimeParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutLakebaseRuntimeParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference) validatePutWorkspaceApiParameters(value *AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi) error {
 	return nil
 }

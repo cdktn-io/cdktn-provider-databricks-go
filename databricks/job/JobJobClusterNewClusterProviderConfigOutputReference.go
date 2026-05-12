@@ -67,6 +67,7 @@ type JobJobClusterNewClusterProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (j *jsiiProxy_JobJobClusterNewClusterProviderConfigOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

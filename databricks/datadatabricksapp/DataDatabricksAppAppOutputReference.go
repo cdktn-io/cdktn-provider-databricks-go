@@ -77,6 +77,7 @@ type DataDatabricksAppAppOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	ThumbnailUrl() *string
 	Updater() *string
 	UpdateTime() *string
 	Url() *string
@@ -522,6 +523,16 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) TerraformResource() cdkt
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ThumbnailUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"thumbnailUrl",
 		&returns,
 	)
 	return returns

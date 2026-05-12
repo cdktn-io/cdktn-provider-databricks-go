@@ -67,6 +67,7 @@ type RestrictWorkspaceAdminsSettingProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (r *jsiiProxy_RestrictWorkspaceAdminsSettingProviderConfigOutputReference) 
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RestrictWorkspaceAdminsSettingProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RestrictWorkspaceAdminsSettingProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

@@ -51,6 +51,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) validatePutGoogleAdsConfigParameters(value *PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

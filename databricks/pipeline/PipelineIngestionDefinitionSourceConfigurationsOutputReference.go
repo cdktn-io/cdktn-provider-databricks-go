@@ -32,6 +32,8 @@ type PipelineIngestionDefinitionSourceConfigurationsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GoogleAdsConfig() PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfigOutputReference
+	GoogleAdsConfigInput() *PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -67,7 +69,9 @@ type PipelineIngestionDefinitionSourceConfigurationsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCatalog(value *PipelineIngestionDefinitionSourceConfigurationsCatalog)
+	PutGoogleAdsConfig(value *PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig)
 	ResetCatalog()
+	ResetGoogleAdsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -138,6 +142,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) GoogleAdsConfig() PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfigOutputReference {
+	var returns PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"googleAdsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) GoogleAdsConfigInput() *PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig {
+	var returns *PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig
+	_jsii_.Get(
+		j,
+		"googleAdsConfigInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) PutGoogleAdsConfig(value *PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig) {
+	if err := p.validatePutGoogleAdsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putGoogleAdsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) ResetCatalog() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCatalog",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) ResetGoogleAdsConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGoogleAdsConfig",
 		nil, // no parameters
 	)
 }

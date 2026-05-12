@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}.
 type FeatureEngineeringKafkaConfig interface {
 	cdktn.TerraformResource
 	AuthConfig() FeatureEngineeringKafkaConfigAuthConfigOutputReference
@@ -495,7 +495,7 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) ValueSchemaInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
 func NewFeatureEngineeringKafkaConfig(scope constructs.Construct, id *string, config *FeatureEngineeringKafkaConfigConfig) FeatureEngineeringKafkaConfig {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewFeatureEngineeringKafkaConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
 func NewFeatureEngineeringKafkaConfig_Override(f FeatureEngineeringKafkaConfig, scope constructs.Construct, id *string, config *FeatureEngineeringKafkaConfigConfig) {
 	_init_.Initialize()
 

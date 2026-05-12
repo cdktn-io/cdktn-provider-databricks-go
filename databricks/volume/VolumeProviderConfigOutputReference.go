@@ -67,6 +67,7 @@ type VolumeProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (v *jsiiProxy_VolumeProviderConfigOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VolumeProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (v *jsiiProxy_VolumeProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

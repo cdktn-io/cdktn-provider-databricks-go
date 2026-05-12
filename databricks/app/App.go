@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/app databricks_app}.
 type App interface {
 	cdktn.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
@@ -103,6 +103,7 @@ type App interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ThumbnailUrl() *string
 	Updater() *string
 	UpdateTime() *string
 	Url() *string
@@ -720,6 +721,16 @@ func (j *jsiiProxy_App) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) ThumbnailUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"thumbnailUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) Updater() *string {
 	var returns *string
 	_jsii_.Get(
@@ -791,7 +802,7 @@ func (j *jsiiProxy_App) UserApiScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -809,7 +820,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 

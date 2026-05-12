@@ -67,6 +67,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference) validateSetConfidentialComputeTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference) validateSetFirstOnDemandParameters(val *float64) error {
 	return nil
 }

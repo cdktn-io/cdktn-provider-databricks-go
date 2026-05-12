@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputR
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference) validatePutPrivateAccessParameters(value *DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccess) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReference) validatePutPublicAccessParameters(value *DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPublicAccess) error {
 	return nil
 }

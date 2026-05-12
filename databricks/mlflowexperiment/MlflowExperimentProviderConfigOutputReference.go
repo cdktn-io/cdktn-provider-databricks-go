@@ -67,6 +67,7 @@ type MlflowExperimentProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (m *jsiiProxy_MlflowExperimentProviderConfigOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MlflowExperimentProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MlflowExperimentProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

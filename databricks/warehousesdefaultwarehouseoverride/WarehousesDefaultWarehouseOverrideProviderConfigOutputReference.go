@@ -67,6 +67,7 @@ type WarehousesDefaultWarehouseOverrideProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (w *jsiiProxy_WarehousesDefaultWarehouseOverrideProviderConfigOutputReferen
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WarehousesDefaultWarehouseOverrideProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WarehousesDefaultWarehouseOverrideProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

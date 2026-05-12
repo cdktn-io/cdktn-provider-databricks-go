@@ -5,15 +5,15 @@ package postgresrole
 
 
 type PostgresRoleSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_role#attributes PostgresRole#attributes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/postgres_role#attributes PostgresRole#attributes}.
 	Attributes *PostgresRoleSpecAttributes `field:"optional" json:"attributes" yaml:"attributes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_role#auth_method PostgresRole#auth_method}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/postgres_role#auth_method PostgresRole#auth_method}.
 	AuthMethod *string `field:"optional" json:"authMethod" yaml:"authMethod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_role#identity_type PostgresRole#identity_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/postgres_role#identity_type PostgresRole#identity_type}.
 	IdentityType *string `field:"optional" json:"identityType" yaml:"identityType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_role#membership_roles PostgresRole#membership_roles}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/postgres_role#membership_roles PostgresRole#membership_roles}.
 	MembershipRoles *[]*string `field:"optional" json:"membershipRoles" yaml:"membershipRoles"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/postgres_role#postgres_role PostgresRole#postgres_role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/postgres_role#postgres_role PostgresRole#postgres_role}.
 	PostgresRole *string `field:"optional" json:"postgresRole" yaml:"postgresRole"`
 }
 

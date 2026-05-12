@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/service_principals databricks_service_principals}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/service_principals databricks_service_principals}.
 type DataDatabricksServicePrincipals interface {
 	cdktn.TerraformDataSource
+	Api() *string
+	SetApi(val *string)
+	ApiInput() *string
 	ApplicationIds() *[]*string
 	SetApplicationIds(val *[]*string)
 	ApplicationIdsInput() *[]*string
@@ -93,6 +96,7 @@ type DataDatabricksServicePrincipals interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutProviderConfig(value *DataDatabricksServicePrincipalsProviderConfig)
 	PutServicePrincipals(value interface{})
+	ResetApi()
 	ResetApplicationIds()
 	ResetDisplayNameContains()
 	ResetId()
@@ -127,6 +131,26 @@ type DataDatabricksServicePrincipals interface {
 // The jsii proxy struct for DataDatabricksServicePrincipals
 type jsiiProxy_DataDatabricksServicePrincipals struct {
 	internal.Type__cdktnTerraformDataSource
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipals) Api() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipals) ApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksServicePrincipals) ApplicationIds() *[]*string {
@@ -370,7 +394,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipals) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/service_principals databricks_service_principals} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/service_principals databricks_service_principals} Data Source.
 func NewDataDatabricksServicePrincipals(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalsConfig) DataDatabricksServicePrincipals {
 	_init_.Initialize()
 
@@ -388,7 +412,7 @@ func NewDataDatabricksServicePrincipals(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/service_principals databricks_service_principals} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/service_principals databricks_service_principals} Data Source.
 func NewDataDatabricksServicePrincipals_Override(d DataDatabricksServicePrincipals, scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalsConfig) {
 	_init_.Initialize()
 
@@ -396,6 +420,17 @@ func NewDataDatabricksServicePrincipals_Override(d DataDatabricksServicePrincipa
 		"@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipals",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipals)SetApi(val *string) {
+	if err := j.validateSetApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"api",
+		val,
 	)
 }
 
@@ -782,6 +817,14 @@ func (d *jsiiProxy_DataDatabricksServicePrincipals) PutServicePrincipals(value i
 		d,
 		"putServicePrincipals",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServicePrincipals) ResetApi() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApi",
+		nil, // no parameters
 	)
 }
 

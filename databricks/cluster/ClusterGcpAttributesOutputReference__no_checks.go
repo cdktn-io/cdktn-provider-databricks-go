@@ -67,6 +67,10 @@ func (j *jsiiProxy_ClusterGcpAttributesOutputReference) validateSetComplexObject
 	return nil
 }
 
+func (j *jsiiProxy_ClusterGcpAttributesOutputReference) validateSetConfidentialComputeTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterGcpAttributesOutputReference) validateSetFirstOnDemandParameters(val *float64) error {
 	return nil
 }

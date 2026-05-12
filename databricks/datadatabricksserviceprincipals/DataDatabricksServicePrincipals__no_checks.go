@@ -79,6 +79,10 @@ func validateDataDatabricksServicePrincipals_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServicePrincipals) validateSetApiParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServicePrincipals) validateSetApplicationIdsParameters(val *[]*string) error {
 	return nil
 }

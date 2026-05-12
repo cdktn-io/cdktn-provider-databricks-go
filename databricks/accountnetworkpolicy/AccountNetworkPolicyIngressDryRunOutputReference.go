@@ -32,6 +32,8 @@ type AccountNetworkPolicyIngressDryRunOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PrivateAccess() AccountNetworkPolicyIngressDryRunPrivateAccessOutputReference
+	PrivateAccessInput() interface{}
 	PublicAccess() AccountNetworkPolicyIngressDryRunPublicAccessOutputReference
 	PublicAccessInput() interface{}
 	// Experimental.
@@ -66,7 +68,9 @@ type AccountNetworkPolicyIngressDryRunOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutPrivateAccess(value *AccountNetworkPolicyIngressDryRunPrivateAccess)
 	PutPublicAccess(value *AccountNetworkPolicyIngressDryRunPublicAccess)
+	ResetPrivateAccess()
 	ResetPublicAccess()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) PrivateAccess() AccountNetworkPolicyIngressDryRunPrivateAccessOutputReference {
+	var returns AccountNetworkPolicyIngressDryRunPrivateAccessOutputReference
+	_jsii_.Get(
+		j,
+		"privateAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) PrivateAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateAccessInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +466,17 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) Interpolati
 	return returns
 }
 
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) PutPrivateAccess(value *AccountNetworkPolicyIngressDryRunPrivateAccess) {
+	if err := a.validatePutPrivateAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPrivateAccess",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) PutPublicAccess(value *AccountNetworkPolicyIngressDryRunPublicAccess) {
 	if err := a.validatePutPublicAccessParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) PutPublicAc
 		a,
 		"putPublicAccess",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) ResetPrivateAccess() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPrivateAccess",
+		nil, // no parameters
 	)
 }
 

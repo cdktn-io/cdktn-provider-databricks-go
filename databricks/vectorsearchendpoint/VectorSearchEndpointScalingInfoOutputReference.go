@@ -32,9 +32,9 @@ type VectorSearchEndpointScalingInfoOutputReference interface {
 	Fqn() *string
 	InternalValue() *VectorSearchEndpointScalingInfo
 	SetInternalValue(val *VectorSearchEndpointScalingInfo)
-	RequestedMinQps() *float64
-	SetRequestedMinQps(val *float64)
-	RequestedMinQpsInput() *float64
+	RequestedTargetQps() *float64
+	SetRequestedTargetQps(val *float64)
+	RequestedTargetQpsInput() *float64
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -70,7 +70,7 @@ type VectorSearchEndpointScalingInfoOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	ResetRequestedMinQps()
+	ResetRequestedTargetQps()
 	ResetState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -137,21 +137,21 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) InternalValue
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) RequestedMinQps() *float64 {
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) RequestedTargetQps() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"requestedMinQps",
+		"requestedTargetQps",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) RequestedMinQpsInput() *float64 {
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) RequestedTargetQpsInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"requestedMinQpsInput",
+		"requestedTargetQpsInput",
 		&returns,
 	)
 	return returns
@@ -258,13 +258,13 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetRequestedMinQps(val *float64) {
-	if err := j.validateSetRequestedMinQpsParameters(val); err != nil {
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetRequestedTargetQps(val *float64) {
+	if err := j.validateSetRequestedTargetQpsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"requestedMinQps",
+		"requestedTargetQps",
 		val,
 	)
 }
@@ -488,10 +488,10 @@ func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) Interpolation
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) ResetRequestedMinQps() {
+func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) ResetRequestedTargetQps() {
 	_jsii_.InvokeVoid(
 		v,
-		"resetRequestedMinQps",
+		"resetRequestedTargetQps",
 		nil, // no parameters
 	)
 }

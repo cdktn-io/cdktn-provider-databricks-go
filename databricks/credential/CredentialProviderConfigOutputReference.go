@@ -67,6 +67,7 @@ type CredentialProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (c *jsiiProxy_CredentialProviderConfigOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CredentialProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CredentialProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

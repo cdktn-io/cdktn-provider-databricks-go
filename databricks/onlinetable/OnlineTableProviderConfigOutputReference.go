@@ -67,6 +67,7 @@ type OnlineTableProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (o *jsiiProxy_OnlineTableProviderConfigOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OnlineTableProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OnlineTableProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

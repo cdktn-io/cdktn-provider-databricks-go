@@ -67,6 +67,7 @@ type TagPolicyProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (t *jsiiProxy_TagPolicyProviderConfigOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (t *jsiiProxy_TagPolicyProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (t *jsiiProxy_TagPolicyProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

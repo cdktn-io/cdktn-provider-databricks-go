@@ -67,6 +67,7 @@ type InstancePoolProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (i *jsiiProxy_InstancePoolProviderConfigOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_InstancePoolProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_InstancePoolProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

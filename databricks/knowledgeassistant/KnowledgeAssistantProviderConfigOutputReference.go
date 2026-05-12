@@ -67,6 +67,7 @@ type KnowledgeAssistantProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (k *jsiiProxy_KnowledgeAssistantProviderConfigOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KnowledgeAssistantProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (k *jsiiProxy_KnowledgeAssistantProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

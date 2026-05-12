@@ -63,6 +63,10 @@ func (j *jsiiProxy_AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWo
 	return nil
 }
 
+func (j *jsiiProxy_AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference) validateSetScopeQualifierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference) validateSetScopesParameters(val *[]*string) error {
 	return nil
 }

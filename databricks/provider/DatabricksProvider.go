@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktn.TerraformProvider
 	AccountId() *string
@@ -91,9 +91,6 @@ type DatabricksProvider interface {
 	DiscoveryUrl() *string
 	SetDiscoveryUrl(val *string)
 	DiscoveryUrlInput() *string
-	ExperimentalIsUnifiedHost() interface{}
-	SetExperimentalIsUnifiedHost(val interface{})
-	ExperimentalIsUnifiedHostInput() interface{}
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -193,7 +190,6 @@ type DatabricksProvider interface {
 	ResetDebugTruncateBytes()
 	ResetDisableOauthRefreshToken()
 	ResetDiscoveryUrl()
-	ResetExperimentalIsUnifiedHost()
 	ResetGoogleCredentials()
 	ResetGoogleServiceAccount()
 	ResetHost()
@@ -742,26 +738,6 @@ func (j *jsiiProxy_DatabricksProvider) DiscoveryUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatabricksProvider) ExperimentalIsUnifiedHost() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"experimentalIsUnifiedHost",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DatabricksProvider) ExperimentalIsUnifiedHostInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"experimentalIsUnifiedHostInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DatabricksProvider) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1203,7 +1179,7 @@ func (j *jsiiProxy_DatabricksProvider) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -1221,7 +1197,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -1429,17 +1405,6 @@ func (j *jsiiProxy_DatabricksProvider)SetDiscoveryUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"discoveryUrl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DatabricksProvider)SetExperimentalIsUnifiedHost(val interface{}) {
-	if err := j.validateSetExperimentalIsUnifiedHostParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"experimentalIsUnifiedHost",
 		val,
 	)
 }
@@ -1904,14 +1869,6 @@ func (d *jsiiProxy_DatabricksProvider) ResetDiscoveryUrl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDiscoveryUrl",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DatabricksProvider) ResetExperimentalIsUnifiedHost() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetExperimentalIsUnifiedHost",
 		nil, // no parameters
 	)
 }

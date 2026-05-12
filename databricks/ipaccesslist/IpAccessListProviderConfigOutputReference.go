@@ -67,6 +67,7 @@ type IpAccessListProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (i *jsiiProxy_IpAccessListProviderConfigOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IpAccessListProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IpAccessListProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

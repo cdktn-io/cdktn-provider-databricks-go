@@ -17,6 +17,8 @@ type DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference interf
 	AllowedInternetDestinationsInput() interface{}
 	AllowedStorageDestinations() DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList
 	AllowedStorageDestinationsInput() interface{}
+	BlockedInternetDestinations() DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinationsList
+	BlockedInternetDestinationsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -75,9 +77,11 @@ type DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference interf
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAllowedInternetDestinations(value interface{})
 	PutAllowedStorageDestinations(value interface{})
+	PutBlockedInternetDestinations(value interface{})
 	PutPolicyEnforcement(value *DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement)
 	ResetAllowedInternetDestinations()
 	ResetAllowedStorageDestinations()
+	ResetBlockedInternetDestinations()
 	ResetPolicyEnforcement()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -129,6 +133,26 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputRe
 	_jsii_.Get(
 		j,
 		"allowedStorageDestinationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference) BlockedInternetDestinations() DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinationsList {
+	var returns DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinationsList
+	_jsii_.Get(
+		j,
+		"blockedInternetDestinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference) BlockedInternetDestinationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"blockedInternetDestinationsInput",
 		&returns,
 	)
 	return returns
@@ -546,6 +570,17 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputRe
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference) PutBlockedInternetDestinations(value interface{}) {
+	if err := d.validatePutBlockedInternetDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putBlockedInternetDestinations",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference) PutPolicyEnforcement(value *DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement) {
 	if err := d.validatePutPolicyEnforcementParameters(value); err != nil {
 		panic(err)
@@ -569,6 +604,14 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputRe
 	_jsii_.InvokeVoid(
 		d,
 		"resetAllowedStorageDestinations",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference) ResetBlockedInternetDestinations() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBlockedInternetDestinations",
 		nil, // no parameters
 	)
 }

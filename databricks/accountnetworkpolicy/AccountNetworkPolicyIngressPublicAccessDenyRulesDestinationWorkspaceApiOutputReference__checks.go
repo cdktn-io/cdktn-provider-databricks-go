@@ -190,6 +190,14 @@ func (j *jsiiProxy_AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWo
 	return nil
 }
 
+func (j *jsiiProxy_AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference) validateSetScopeQualifierParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference) validateSetScopesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

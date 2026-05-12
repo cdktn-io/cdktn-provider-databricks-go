@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
 type DataDatabricksSqlWarehouse interface {
 	cdktn.TerraformDataSource
 	AutoStopMins() *float64
@@ -778,7 +778,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) WarehouseTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) DataDatabricksSqlWarehouse {
 	_init_.Initialize()
 
@@ -796,7 +796,7 @@ func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse_Override(d DataDatabricksSqlWarehouse, scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) {
 	_init_.Initialize()
 

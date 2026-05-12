@@ -163,6 +163,22 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateR
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateSetColumnsToIndexParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateSetColumnsToSyncParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

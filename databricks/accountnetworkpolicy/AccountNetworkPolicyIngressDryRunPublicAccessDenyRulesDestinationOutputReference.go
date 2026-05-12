@@ -13,9 +13,17 @@ import (
 
 type AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference interface {
 	cdktn.ComplexObject
+	AccountApi() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApiOutputReference
+	AccountApiInput() interface{}
+	AccountDatabricksOne() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOneOutputReference
+	AccountDatabricksOneInput() interface{}
+	AccountUi() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUiOutputReference
+	AccountUiInput() interface{}
 	AllDestinations() interface{}
 	SetAllDestinations(val interface{})
 	AllDestinationsInput() interface{}
+	AppsRuntime() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntimeOutputReference
+	AppsRuntimeInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +43,8 @@ type AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputRefe
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LakebaseRuntime() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntimeOutputReference
+	LakebaseRuntimeInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,9 +81,19 @@ type AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputRefe
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAccountApi(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi)
+	PutAccountDatabricksOne(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne)
+	PutAccountUi(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi)
+	PutAppsRuntime(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime)
+	PutLakebaseRuntime(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime)
 	PutWorkspaceApi(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi)
 	PutWorkspaceUi(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi)
+	ResetAccountApi()
+	ResetAccountDatabricksOne()
+	ResetAccountUi()
 	ResetAllDestinations()
+	ResetAppsRuntime()
+	ResetLakebaseRuntime()
 	ResetWorkspaceApi()
 	ResetWorkspaceUi()
 	// Produce the Token's value at resolution time.
@@ -91,6 +111,66 @@ type jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination
 	internal.Type__cdktnComplexObject
 }
 
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) AccountApi() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApiOutputReference {
+	var returns AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApiOutputReference
+	_jsii_.Get(
+		j,
+		"accountApi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) AccountApiInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accountApiInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) AccountDatabricksOne() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOneOutputReference {
+	var returns AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOneOutputReference
+	_jsii_.Get(
+		j,
+		"accountDatabricksOne",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) AccountDatabricksOneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accountDatabricksOneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) AccountUi() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUiOutputReference {
+	var returns AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUiOutputReference
+	_jsii_.Get(
+		j,
+		"accountUi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) AccountUiInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accountUiInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) AllDestinations() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -106,6 +186,26 @@ func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestina
 	_jsii_.Get(
 		j,
 		"allDestinationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) AppsRuntime() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntimeOutputReference {
+	var returns AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntimeOutputReference
+	_jsii_.Get(
+		j,
+		"appsRuntime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) AppsRuntimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appsRuntimeInput",
 		&returns,
 	)
 	return returns
@@ -156,6 +256,26 @@ func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestina
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) LakebaseRuntime() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntimeOutputReference {
+	var returns AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntimeOutputReference
+	_jsii_.Get(
+		j,
+		"lakebaseRuntime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) LakebaseRuntimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lakebaseRuntimeInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +621,61 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestina
 	return returns
 }
 
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) PutAccountApi(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi) {
+	if err := a.validatePutAccountApiParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAccountApi",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) PutAccountDatabricksOne(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne) {
+	if err := a.validatePutAccountDatabricksOneParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAccountDatabricksOne",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) PutAccountUi(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi) {
+	if err := a.validatePutAccountUiParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAccountUi",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) PutAppsRuntime(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime) {
+	if err := a.validatePutAppsRuntimeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAppsRuntime",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) PutLakebaseRuntime(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime) {
+	if err := a.validatePutLakebaseRuntimeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putLakebaseRuntime",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) PutWorkspaceApi(value *AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi) {
 	if err := a.validatePutWorkspaceApiParameters(value); err != nil {
 		panic(err)
@@ -523,10 +698,50 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestina
 	)
 }
 
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) ResetAccountApi() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountApi",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) ResetAccountDatabricksOne() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountDatabricksOne",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) ResetAccountUi() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountUi",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) ResetAllDestinations() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAllDestinations",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) ResetAppsRuntime() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAppsRuntime",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference) ResetLakebaseRuntime() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLakebaseRuntime",
 		nil, // no parameters
 	)
 }

@@ -67,6 +67,7 @@ type UserRoleProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (u *jsiiProxy_UserRoleProviderConfigOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (u *jsiiProxy_UserRoleProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (u *jsiiProxy_UserRoleProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

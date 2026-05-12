@@ -32,6 +32,9 @@ type AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceA
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ScopeQualifier() *string
+	SetScopeQualifier(val *string)
+	ScopeQualifierInput() *string
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -67,6 +70,7 @@ type AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceA
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetScopeQualifier()
 	ResetScopes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestina
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference) ScopeQualifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scopeQualifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference) ScopeQualifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scopeQualifierInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestina
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference)SetScopeQualifier(val *string) {
+	if err := j.validateSetScopeQualifierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scopeQualifier",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestina
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference) ResetScopeQualifier() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetScopeQualifier",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference) ResetScopes() {

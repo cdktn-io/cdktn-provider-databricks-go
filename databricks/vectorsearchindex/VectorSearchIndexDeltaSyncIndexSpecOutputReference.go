@@ -13,6 +13,12 @@ import (
 
 type VectorSearchIndexDeltaSyncIndexSpecOutputReference interface {
 	cdktn.ComplexObject
+	ColumnsToIndex() *[]*string
+	SetColumnsToIndex(val *[]*string)
+	ColumnsToIndexInput() *[]*string
+	ColumnsToSync() *[]*string
+	SetColumnsToSync(val *[]*string)
+	ColumnsToSyncInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,6 +86,8 @@ type VectorSearchIndexDeltaSyncIndexSpecOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEmbeddingSourceColumns(value interface{})
 	PutEmbeddingVectorColumns(value interface{})
+	ResetColumnsToIndex()
+	ResetColumnsToSync()
 	ResetEmbeddingSourceColumns()
 	ResetEmbeddingVectorColumns()
 	ResetEmbeddingWritebackTable()
@@ -98,6 +106,46 @@ type VectorSearchIndexDeltaSyncIndexSpecOutputReference interface {
 // The jsii proxy struct for VectorSearchIndexDeltaSyncIndexSpecOutputReference
 type jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ColumnsToIndex() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"columnsToIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ColumnsToIndexInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"columnsToIndexInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ColumnsToSync() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"columnsToSync",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ColumnsToSyncInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"columnsToSyncInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -305,6 +353,28 @@ func NewVectorSearchIndexDeltaSyncIndexSpecOutputReference_Override(v VectorSear
 		"@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference)SetColumnsToIndex(val *[]*string) {
+	if err := j.validateSetColumnsToIndexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"columnsToIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference)SetColumnsToSync(val *[]*string) {
+	if err := j.validateSetColumnsToSyncParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"columnsToSync",
+		val,
 	)
 }
 
@@ -601,6 +671,22 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) PutEmbedd
 		v,
 		"putEmbeddingVectorColumns",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ResetColumnsToIndex() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetColumnsToIndex",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ResetColumnsToSync() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetColumnsToSync",
+		nil, // no parameters
 	)
 }
 

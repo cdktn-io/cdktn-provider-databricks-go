@@ -59,6 +59,14 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateR
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateSetColumnsToIndexParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateSetColumnsToSyncParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

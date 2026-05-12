@@ -63,7 +63,7 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetRequestedMinQpsParameters(val *float64) error {
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetRequestedTargetQpsParameters(val *float64) error {
 	return nil
 }
 

@@ -67,6 +67,7 @@ type ExternalMetadataProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (e *jsiiProxy_ExternalMetadataProviderConfigOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_ExternalMetadataProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_ExternalMetadataProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

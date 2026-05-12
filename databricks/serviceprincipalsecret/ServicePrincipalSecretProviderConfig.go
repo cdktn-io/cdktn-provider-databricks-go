@@ -5,7 +5,7 @@ package serviceprincipalsecret
 
 
 type ServicePrincipalSecretProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/service_principal_secret#workspace_id ServicePrincipalSecret#workspace_id}.
-	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/service_principal_secret#workspace_id ServicePrincipalSecret#workspace_id}.
+	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

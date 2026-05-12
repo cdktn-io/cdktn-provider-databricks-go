@@ -174,7 +174,7 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetRequestedMinQpsParameters(val *float64) error {
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetRequestedTargetQpsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

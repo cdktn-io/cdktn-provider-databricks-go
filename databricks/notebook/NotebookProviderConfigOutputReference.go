@@ -67,6 +67,7 @@ type NotebookProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (n *jsiiProxy_NotebookProviderConfigOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NotebookProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NotebookProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

@@ -5,7 +5,7 @@ package datadatabricksfunctions
 
 
 type DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/functions#connection_name DataDatabricksFunctions#connection_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/functions#connection_name DataDatabricksFunctions#connection_name}.
 	ConnectionName *string `field:"optional" json:"connectionName" yaml:"connectionName"`
 }
 

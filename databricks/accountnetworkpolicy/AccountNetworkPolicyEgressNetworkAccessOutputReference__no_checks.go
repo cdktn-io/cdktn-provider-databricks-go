@@ -55,6 +55,10 @@ func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessOutputReference) valid
 	return nil
 }
 
+func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessOutputReference) validatePutBlockedInternetDestinationsParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessOutputReference) validatePutPolicyEnforcementParameters(value *AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement) error {
 	return nil
 }

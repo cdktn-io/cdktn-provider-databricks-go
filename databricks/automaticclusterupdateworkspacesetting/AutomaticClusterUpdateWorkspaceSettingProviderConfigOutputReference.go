@@ -67,6 +67,7 @@ type AutomaticClusterUpdateWorkspaceSettingProviderConfigOutputReference interfa
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingProviderConfigOutputRef
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

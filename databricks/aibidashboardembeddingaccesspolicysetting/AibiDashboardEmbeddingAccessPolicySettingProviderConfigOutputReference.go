@@ -67,6 +67,7 @@ type AibiDashboardEmbeddingAccessPolicySettingProviderConfigOutputReference inte
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySettingProviderConfigOutput
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySettingProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySettingProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

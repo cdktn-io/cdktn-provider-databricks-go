@@ -67,6 +67,7 @@ type QueryProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (q *jsiiProxy_QueryProviderConfigOutputReference) InterpolationForAttribute
 	)
 
 	return returns
+}
+
+func (q *jsiiProxy_QueryProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (q *jsiiProxy_QueryProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

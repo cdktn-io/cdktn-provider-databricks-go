@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetActiveParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetApiParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

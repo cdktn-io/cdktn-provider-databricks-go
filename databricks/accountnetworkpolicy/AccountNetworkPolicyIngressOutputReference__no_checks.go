@@ -47,6 +47,10 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressOutputReference) validateInterpola
 	return nil
 }
 
+func (a *jsiiProxy_AccountNetworkPolicyIngressOutputReference) validatePutPrivateAccessParameters(value *AccountNetworkPolicyIngressPrivateAccess) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountNetworkPolicyIngressOutputReference) validatePutPublicAccessParameters(value *AccountNetworkPolicyIngressPublicAccess) error {
 	return nil
 }

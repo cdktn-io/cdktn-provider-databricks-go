@@ -67,6 +67,7 @@ type FileProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (f *jsiiProxy_FileProviderConfigOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FileProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FileProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

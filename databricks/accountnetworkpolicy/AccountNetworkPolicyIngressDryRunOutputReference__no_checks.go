@@ -47,6 +47,10 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) validateInt
 	return nil
 }
 
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) validatePutPrivateAccessParameters(value *AccountNetworkPolicyIngressDryRunPrivateAccess) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) validatePutPublicAccessParameters(value *AccountNetworkPolicyIngressDryRunPublicAccess) error {
 	return nil
 }

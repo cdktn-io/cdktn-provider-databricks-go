@@ -67,6 +67,7 @@ type DataDatabricksPostgresEndpointProviderConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWorkspaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (d *jsiiProxy_DataDatabricksPostgresEndpointProviderConfigOutputReference) 
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresEndpointProviderConfigOutputReference) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksPostgresEndpointProviderConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
