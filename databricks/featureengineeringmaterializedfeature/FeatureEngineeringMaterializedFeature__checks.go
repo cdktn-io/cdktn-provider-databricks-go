@@ -207,6 +207,17 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validateOverrideLogica
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutCronScheduleTriggerParameters(value *FeatureEngineeringMaterializedFeatureCronScheduleTrigger) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutOfflineStoreConfigParameters(value *FeatureEngineeringMaterializedFeatureOfflineStoreConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -230,6 +241,28 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutOnlineStore
 }
 
 func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutProviderConfigParameters(value *FeatureEngineeringMaterializedFeatureProviderConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutStreamingModeParameters(value *FeatureEngineeringMaterializedFeatureStreamingMode) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutTableTriggerParameters(value *FeatureEngineeringMaterializedFeatureTableTrigger) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -389,14 +422,6 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetFeatureName
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetMaterializedFeatureIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

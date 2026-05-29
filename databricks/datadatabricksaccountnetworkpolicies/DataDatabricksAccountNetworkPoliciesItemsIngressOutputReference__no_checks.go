@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressOutputReferen
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressOutputReference) validatePutCrossWorkspaceAccessParameters(value *DataDatabricksAccountNetworkPoliciesItemsIngressCrossWorkspaceAccess) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsIngressOutputReference) validatePutPrivateAccessParameters(value *DataDatabricksAccountNetworkPoliciesItemsIngressPrivateAccess) error {
 	return nil
 }

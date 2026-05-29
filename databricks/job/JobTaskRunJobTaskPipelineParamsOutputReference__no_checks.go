@@ -63,7 +63,23 @@ func (j *jsiiProxy_JobTaskRunJobTaskPipelineParamsOutputReference) validateSetFu
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskRunJobTaskPipelineParamsOutputReference) validateSetFullRefreshSelectionParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskRunJobTaskPipelineParamsOutputReference) validateSetInternalValueParameters(val *JobTaskRunJobTaskPipelineParams) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskPipelineParamsOutputReference) validateSetRefreshFlowSelectionParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskPipelineParamsOutputReference) validateSetRefreshSelectionParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskPipelineParamsOutputReference) validateSetResetCheckpointSelectionParameters(val *[]*string) error {
 	return nil
 }
 

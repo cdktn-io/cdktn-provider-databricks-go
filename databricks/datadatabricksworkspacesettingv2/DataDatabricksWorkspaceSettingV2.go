@@ -12,11 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2}.
 type DataDatabricksWorkspaceSettingV2 interface {
 	cdktn.TerraformDataSource
 	AibiDashboardEmbeddingAccessPolicy() DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
 	AibiDashboardEmbeddingApprovedDomains() DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference
+	AllowedAppsUserApiScopes() DataDatabricksWorkspaceSettingV2AllowedAppsUserApiScopesOutputReference
 	AutomaticClusterUpdateWorkspace() DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference
 	BooleanVal() DataDatabricksWorkspaceSettingV2BooleanValOutputReference
 	// Experimental.
@@ -33,9 +34,11 @@ type DataDatabricksWorkspaceSettingV2 interface {
 	SetDependsOn(val *[]*string)
 	EffectiveAibiDashboardEmbeddingAccessPolicy() DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference
 	EffectiveAibiDashboardEmbeddingApprovedDomains() DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference
+	EffectiveAllowedAppsUserApiScopes() DataDatabricksWorkspaceSettingV2EffectiveAllowedAppsUserApiScopesOutputReference
 	EffectiveAutomaticClusterUpdateWorkspace() DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	EffectiveBooleanVal() DataDatabricksWorkspaceSettingV2EffectiveBooleanValOutputReference
 	EffectiveIntegerVal() DataDatabricksWorkspaceSettingV2EffectiveIntegerValOutputReference
+	EffectiveOperationalEmailCustomRecipient() DataDatabricksWorkspaceSettingV2EffectiveOperationalEmailCustomRecipientOutputReference
 	EffectivePersonalCompute() DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference
 	EffectiveRestrictWorkspaceAdmins() DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference
 	EffectiveStringVal() DataDatabricksWorkspaceSettingV2EffectiveStringValOutputReference
@@ -57,6 +60,7 @@ type DataDatabricksWorkspaceSettingV2 interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OperationalEmailCustomRecipient() DataDatabricksWorkspaceSettingV2OperationalEmailCustomRecipientOutputReference
 	PersonalCompute() DataDatabricksWorkspaceSettingV2PersonalComputeOutputReference
 	// Experimental.
 	Provider() cdktn.TerraformProvider
@@ -152,6 +156,16 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) AibiDashboardEmbeddingAppro
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) AllowedAppsUserApiScopes() DataDatabricksWorkspaceSettingV2AllowedAppsUserApiScopesOutputReference {
+	var returns DataDatabricksWorkspaceSettingV2AllowedAppsUserApiScopesOutputReference
+	_jsii_.Get(
+		j,
+		"allowedAppsUserApiScopes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) AutomaticClusterUpdateWorkspace() DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference {
 	var returns DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference
 	_jsii_.Get(
@@ -232,6 +246,16 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) EffectiveAibiDashboardEmbed
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) EffectiveAllowedAppsUserApiScopes() DataDatabricksWorkspaceSettingV2EffectiveAllowedAppsUserApiScopesOutputReference {
+	var returns DataDatabricksWorkspaceSettingV2EffectiveAllowedAppsUserApiScopesOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveAllowedAppsUserApiScopes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) EffectiveAutomaticClusterUpdateWorkspace() DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference {
 	var returns DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	_jsii_.Get(
@@ -257,6 +281,16 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) EffectiveIntegerVal() DataD
 	_jsii_.Get(
 		j,
 		"effectiveIntegerVal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) EffectiveOperationalEmailCustomRecipient() DataDatabricksWorkspaceSettingV2EffectiveOperationalEmailCustomRecipientOutputReference {
+	var returns DataDatabricksWorkspaceSettingV2EffectiveOperationalEmailCustomRecipientOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveOperationalEmailCustomRecipient",
 		&returns,
 	)
 	return returns
@@ -372,6 +406,16 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) OperationalEmailCustomRecipient() DataDatabricksWorkspaceSettingV2OperationalEmailCustomRecipientOutputReference {
+	var returns DataDatabricksWorkspaceSettingV2OperationalEmailCustomRecipientOutputReference
+	_jsii_.Get(
+		j,
+		"operationalEmailCustomRecipient",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) PersonalCompute() DataDatabricksWorkspaceSettingV2PersonalComputeOutputReference {
 	var returns DataDatabricksWorkspaceSettingV2PersonalComputeOutputReference
 	_jsii_.Get(
@@ -473,7 +517,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
 func NewDataDatabricksWorkspaceSettingV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceSettingV2Config) DataDatabricksWorkspaceSettingV2 {
 	_init_.Initialize()
 
@@ -491,7 +535,7 @@ func NewDataDatabricksWorkspaceSettingV2(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
 func NewDataDatabricksWorkspaceSettingV2_Override(d DataDatabricksWorkspaceSettingV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceSettingV2Config) {
 	_init_.Initialize()
 

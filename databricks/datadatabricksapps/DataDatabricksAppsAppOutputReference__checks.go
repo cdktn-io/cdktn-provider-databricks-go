@@ -247,6 +247,22 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetComplexObjec
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetComputeMaxInstancesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetComputeMinInstancesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetComputeSizeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

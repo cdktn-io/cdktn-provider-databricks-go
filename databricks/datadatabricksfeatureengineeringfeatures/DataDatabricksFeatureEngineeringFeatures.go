@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features}.
 type DataDatabricksFeatureEngineeringFeatures interface {
 	cdktn.TerraformDataSource
+	CatalogName() *string
+	SetCatalogName(val *string)
+	CatalogNameInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -53,6 +56,9 @@ type DataDatabricksFeatureEngineeringFeatures interface {
 	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	SchemaName() *string
+	SetSchemaName(val *string)
+	SchemaNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -116,6 +122,26 @@ type DataDatabricksFeatureEngineeringFeatures interface {
 // The jsii proxy struct for DataDatabricksFeatureEngineeringFeatures
 type jsiiProxy_DataDatabricksFeatureEngineeringFeatures struct {
 	internal.Type__cdktnTerraformDataSource
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) CatalogName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) CatalogNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogNameInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) CdktfStack() cdktn.TerraformStack {
@@ -278,6 +304,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) RawOverrides() inte
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) SchemaName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) SchemaNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -309,7 +355,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source.
 func NewDataDatabricksFeatureEngineeringFeatures(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeaturesConfig) DataDatabricksFeatureEngineeringFeatures {
 	_init_.Initialize()
 
@@ -327,7 +373,7 @@ func NewDataDatabricksFeatureEngineeringFeatures(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source.
 func NewDataDatabricksFeatureEngineeringFeatures_Override(d DataDatabricksFeatureEngineeringFeatures, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeaturesConfig) {
 	_init_.Initialize()
 
@@ -335,6 +381,17 @@ func NewDataDatabricksFeatureEngineeringFeatures_Override(d DataDatabricksFeatur
 		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeatures.DataDatabricksFeatureEngineeringFeatures",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures)SetCatalogName(val *string) {
+	if err := j.validateSetCatalogNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"catalogName",
+		val,
 	)
 }
 
@@ -391,6 +448,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures)SetProvider(val cdkt
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures)SetSchemaName(val *string) {
+	if err := j.validateSetSchemaNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schemaName",
 		val,
 	)
 }

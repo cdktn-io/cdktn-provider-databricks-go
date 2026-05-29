@@ -63,6 +63,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutpu
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) validatePutKafkaOptionsParameters(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) validatePutMetaAdsOptionsParameters(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions) error {
 	return nil
 }

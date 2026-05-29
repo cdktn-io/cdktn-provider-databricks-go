@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistant_knowledge_sources databricks_knowledge_assistant_knowledge_sources}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/knowledge_assistant_knowledge_sources databricks_knowledge_assistant_knowledge_sources}.
 type DataDatabricksKnowledgeAssistantKnowledgeSources interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataDatabricksKnowledgeAssistantKnowledgeSources) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistant_knowledge_sources databricks_knowledge_assistant_knowledge_sources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/knowledge_assistant_knowledge_sources databricks_knowledge_assistant_knowledge_sources} Data Source.
 func NewDataDatabricksKnowledgeAssistantKnowledgeSources(scope constructs.Construct, id *string, config *DataDatabricksKnowledgeAssistantKnowledgeSourcesConfig) DataDatabricksKnowledgeAssistantKnowledgeSources {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewDataDatabricksKnowledgeAssistantKnowledgeSources(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistant_knowledge_sources databricks_knowledge_assistant_knowledge_sources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/knowledge_assistant_knowledge_sources databricks_knowledge_assistant_knowledge_sources} Data Source.
 func NewDataDatabricksKnowledgeAssistantKnowledgeSources_Override(d DataDatabricksKnowledgeAssistantKnowledgeSources, scope constructs.Construct, id *string, config *DataDatabricksKnowledgeAssistantKnowledgeSourcesConfig) {
 	_init_.Initialize()
 

@@ -28,6 +28,8 @@ type AccountNetworkPolicyIngressOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CrossWorkspaceAccess() AccountNetworkPolicyIngressCrossWorkspaceAccessOutputReference
+	CrossWorkspaceAccessInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -68,8 +70,10 @@ type AccountNetworkPolicyIngressOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutCrossWorkspaceAccess(value *AccountNetworkPolicyIngressCrossWorkspaceAccess)
 	PutPrivateAccess(value *AccountNetworkPolicyIngressPrivateAccess)
 	PutPublicAccess(value *AccountNetworkPolicyIngressPublicAccess)
+	ResetCrossWorkspaceAccess()
 	ResetPrivateAccess()
 	ResetPublicAccess()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_AccountNetworkPolicyIngressOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressOutputReference) CrossWorkspaceAccess() AccountNetworkPolicyIngressCrossWorkspaceAccessOutputReference {
+	var returns AccountNetworkPolicyIngressCrossWorkspaceAccessOutputReference
+	_jsii_.Get(
+		j,
+		"crossWorkspaceAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressOutputReference) CrossWorkspaceAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"crossWorkspaceAccessInput",
 		&returns,
 	)
 	return returns
@@ -466,6 +490,17 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressOutputReference) InterpolationForA
 	return returns
 }
 
+func (a *jsiiProxy_AccountNetworkPolicyIngressOutputReference) PutCrossWorkspaceAccess(value *AccountNetworkPolicyIngressCrossWorkspaceAccess) {
+	if err := a.validatePutCrossWorkspaceAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCrossWorkspaceAccess",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccountNetworkPolicyIngressOutputReference) PutPrivateAccess(value *AccountNetworkPolicyIngressPrivateAccess) {
 	if err := a.validatePutPrivateAccessParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressOutputReference) PutPublicAccess(v
 		a,
 		"putPublicAccess",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressOutputReference) ResetCrossWorkspaceAccess() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCrossWorkspaceAccess",
+		nil, // no parameters
 	)
 }
 

@@ -5,7 +5,7 @@ package datadatabricksdataclassificationcatalogconfig
 
 
 type DataDatabricksDataClassificationCatalogConfigIncludedSchemas struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#names DataDatabricksDataClassificationCatalogConfig#names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/data_classification_catalog_config#names DataDatabricksDataClassificationCatalogConfig#names}.
 	Names *[]*string `field:"required" json:"names" yaml:"names"`
 }
 

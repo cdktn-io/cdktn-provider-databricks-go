@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datadatabricksaccountnetworkpolicy
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateSetPrincipalIdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateSetPrincipalTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

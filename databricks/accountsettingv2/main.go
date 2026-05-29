@@ -20,6 +20,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "aibiDashboardEmbeddingAccessPolicyInput", GoGetter: "AibiDashboardEmbeddingAccessPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "aibiDashboardEmbeddingApprovedDomains", GoGetter: "AibiDashboardEmbeddingApprovedDomains"},
 			_jsii_.MemberProperty{JsiiProperty: "aibiDashboardEmbeddingApprovedDomainsInput", GoGetter: "AibiDashboardEmbeddingApprovedDomainsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedAppsUserApiScopes", GoGetter: "AllowedAppsUserApiScopes"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedAppsUserApiScopesInput", GoGetter: "AllowedAppsUserApiScopesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticClusterUpdateWorkspace", GoGetter: "AutomaticClusterUpdateWorkspace"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticClusterUpdateWorkspaceInput", GoGetter: "AutomaticClusterUpdateWorkspaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "booleanVal", GoGetter: "BooleanVal"},
@@ -33,10 +35,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "effectiveAibiDashboardEmbeddingAccessPolicyInput", GoGetter: "EffectiveAibiDashboardEmbeddingAccessPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveAibiDashboardEmbeddingApprovedDomains", GoGetter: "EffectiveAibiDashboardEmbeddingApprovedDomains"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveAibiDashboardEmbeddingApprovedDomainsInput", GoGetter: "EffectiveAibiDashboardEmbeddingApprovedDomainsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveAllowedAppsUserApiScopes", GoGetter: "EffectiveAllowedAppsUserApiScopes"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveAutomaticClusterUpdateWorkspace", GoGetter: "EffectiveAutomaticClusterUpdateWorkspace"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveAutomaticClusterUpdateWorkspaceInput", GoGetter: "EffectiveAutomaticClusterUpdateWorkspaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveBooleanVal", GoGetter: "EffectiveBooleanVal"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveIntegerVal", GoGetter: "EffectiveIntegerVal"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveOperationalEmailCustomRecipient", GoGetter: "EffectiveOperationalEmailCustomRecipient"},
 			_jsii_.MemberProperty{JsiiProperty: "effectivePersonalCompute", GoGetter: "EffectivePersonalCompute"},
 			_jsii_.MemberProperty{JsiiProperty: "effectivePersonalComputeInput", GoGetter: "EffectivePersonalComputeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveRestrictWorkspaceAdmins", GoGetter: "EffectiveRestrictWorkspaceAdmins"},
@@ -66,6 +70,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "operationalEmailCustomRecipient", GoGetter: "OperationalEmailCustomRecipient"},
+			_jsii_.MemberProperty{JsiiProperty: "operationalEmailCustomRecipientInput", GoGetter: "OperationalEmailCustomRecipientInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "personalCompute", GoGetter: "PersonalCompute"},
 			_jsii_.MemberProperty{JsiiProperty: "personalComputeInput", GoGetter: "PersonalComputeInput"},
@@ -73,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAibiDashboardEmbeddingAccessPolicy", GoMethod: "PutAibiDashboardEmbeddingAccessPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putAibiDashboardEmbeddingApprovedDomains", GoMethod: "PutAibiDashboardEmbeddingApprovedDomains"},
+			_jsii_.MemberMethod{JsiiMethod: "putAllowedAppsUserApiScopes", GoMethod: "PutAllowedAppsUserApiScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutomaticClusterUpdateWorkspace", GoMethod: "PutAutomaticClusterUpdateWorkspace"},
 			_jsii_.MemberMethod{JsiiMethod: "putBooleanVal", GoMethod: "PutBooleanVal"},
 			_jsii_.MemberMethod{JsiiMethod: "putEffectiveAibiDashboardEmbeddingAccessPolicy", GoMethod: "PutEffectiveAibiDashboardEmbeddingAccessPolicy"},
@@ -81,12 +88,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEffectivePersonalCompute", GoMethod: "PutEffectivePersonalCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "putEffectiveRestrictWorkspaceAdmins", GoMethod: "PutEffectiveRestrictWorkspaceAdmins"},
 			_jsii_.MemberMethod{JsiiMethod: "putIntegerVal", GoMethod: "PutIntegerVal"},
+			_jsii_.MemberMethod{JsiiMethod: "putOperationalEmailCustomRecipient", GoMethod: "PutOperationalEmailCustomRecipient"},
 			_jsii_.MemberMethod{JsiiMethod: "putPersonalCompute", GoMethod: "PutPersonalCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestrictWorkspaceAdmins", GoMethod: "PutRestrictWorkspaceAdmins"},
 			_jsii_.MemberMethod{JsiiMethod: "putStringVal", GoMethod: "PutStringVal"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAibiDashboardEmbeddingAccessPolicy", GoMethod: "ResetAibiDashboardEmbeddingAccessPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAibiDashboardEmbeddingApprovedDomains", GoMethod: "ResetAibiDashboardEmbeddingApprovedDomains"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedAppsUserApiScopes", GoMethod: "ResetAllowedAppsUserApiScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticClusterUpdateWorkspace", GoMethod: "ResetAutomaticClusterUpdateWorkspace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBooleanVal", GoMethod: "ResetBooleanVal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveAibiDashboardEmbeddingAccessPolicy", GoMethod: "ResetEffectiveAibiDashboardEmbeddingAccessPolicy"},
@@ -96,6 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveRestrictWorkspaceAdmins", GoMethod: "ResetEffectiveRestrictWorkspaceAdmins"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegerVal", GoMethod: "ResetIntegerVal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperationalEmailCustomRecipient", GoMethod: "ResetOperationalEmailCustomRecipient"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPersonalCompute", GoMethod: "ResetPersonalCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestrictWorkspaceAdmins", GoMethod: "ResetRestrictWorkspaceAdmins"},
@@ -194,6 +204,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes",
+		reflect.TypeOf((*AccountSettingV2AllowedAppsUserApiScopes)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopesOutputReference",
+		reflect.TypeOf((*AccountSettingV2AllowedAppsUserApiScopesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowedScopes", GoGetter: "AllowedScopes"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedScopesInput", GoGetter: "AllowedScopesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedScopes", GoMethod: "ResetAllowedScopes"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccountSettingV2AllowedAppsUserApiScopesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -545,6 +594,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAllowedAppsUserApiScopes",
+		reflect.TypeOf((*AccountSettingV2EffectiveAllowedAppsUserApiScopes)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAllowedAppsUserApiScopesOutputReference",
+		reflect.TypeOf((*AccountSettingV2EffectiveAllowedAppsUserApiScopesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowedScopes", GoGetter: "AllowedScopes"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedScopesInput", GoGetter: "AllowedScopesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedScopes", GoMethod: "ResetAllowedScopes"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccountSettingV2EffectiveAllowedAppsUserApiScopesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace",
 		reflect.TypeOf((*AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace)(nil)).Elem(),
 	)
@@ -849,6 +937,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveOperationalEmailCustomRecipient",
+		reflect.TypeOf((*AccountSettingV2EffectiveOperationalEmailCustomRecipient)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveOperationalEmailCustomRecipientOutputReference",
+		reflect.TypeOf((*AccountSettingV2EffectiveOperationalEmailCustomRecipientOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "email", GoGetter: "Email"},
+			_jsii_.MemberProperty{JsiiProperty: "emailInput", GoGetter: "EmailInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmail", GoMethod: "ResetEmail"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccountSettingV2EffectiveOperationalEmailCustomRecipientOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute",
 		reflect.TypeOf((*AccountSettingV2EffectivePersonalCompute)(nil)).Elem(),
 	)
@@ -1002,6 +1129,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountSettingV2IntegerValOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient",
+		reflect.TypeOf((*AccountSettingV2OperationalEmailCustomRecipient)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipientOutputReference",
+		reflect.TypeOf((*AccountSettingV2OperationalEmailCustomRecipientOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "email", GoGetter: "Email"},
+			_jsii_.MemberProperty{JsiiProperty: "emailInput", GoGetter: "EmailInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmail", GoMethod: "ResetEmail"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccountSettingV2OperationalEmailCustomRecipientOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

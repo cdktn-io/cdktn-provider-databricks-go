@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) validatePutRollingParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRolling) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) validatePutSlidingParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSliding) error {
 	return nil
 }

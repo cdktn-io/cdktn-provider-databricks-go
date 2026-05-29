@@ -29,6 +29,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOut
 	// Experimental.
 	CreationStack() *[]*string
 	CronSchedule() *string
+	CronScheduleTrigger() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference
 	FeatureName() *string
 	// Experimental.
 	Fqn() *string
@@ -44,7 +45,9 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOut
 	PipelineScheduleState() *string
 	ProviderConfig() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfigOutputReference
 	ProviderConfigInput() interface{}
+	StreamingMode() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeOutputReference
 	TableName() *string
+	TableTrigger() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesTableTriggerOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -129,6 +132,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Get(
 		j,
 		"cronSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) CronScheduleTrigger() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference {
+	var returns DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference
+	_jsii_.Get(
+		j,
+		"cronScheduleTrigger",
 		&returns,
 	)
 	return returns
@@ -254,11 +267,31 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) StreamingMode() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeOutputReference {
+	var returns DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeOutputReference
+	_jsii_.Get(
+		j,
+		"streamingMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) TableName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"tableName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) TableTrigger() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesTableTriggerOutputReference {
+	var returns DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesTableTriggerOutputReference
+	_jsii_.Get(
+		j,
+		"tableTrigger",
 		&returns,
 	)
 	return returns

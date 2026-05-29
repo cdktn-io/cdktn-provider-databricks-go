@@ -34,6 +34,8 @@ type FeatureEngineeringFeatureTimeWindowOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Rolling() FeatureEngineeringFeatureTimeWindowRollingOutputReference
+	RollingInput() interface{}
 	Sliding() FeatureEngineeringFeatureTimeWindowSlidingOutputReference
 	SlidingInput() interface{}
 	// Experimental.
@@ -71,9 +73,11 @@ type FeatureEngineeringFeatureTimeWindowOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutContinuous(value *FeatureEngineeringFeatureTimeWindowContinuous)
+	PutRolling(value *FeatureEngineeringFeatureTimeWindowRolling)
 	PutSliding(value *FeatureEngineeringFeatureTimeWindowSliding)
 	PutTumbling(value *FeatureEngineeringFeatureTimeWindowTumbling)
 	ResetContinuous()
+	ResetRolling()
 	ResetSliding()
 	ResetTumbling()
 	// Produce the Token's value at resolution time.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Rolling() FeatureEngineeringFeatureTimeWindowRollingOutputReference {
+	var returns FeatureEngineeringFeatureTimeWindowRollingOutputReference
+	_jsii_.Get(
+		j,
+		"rolling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) RollingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rollingInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutContin
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutRolling(value *FeatureEngineeringFeatureTimeWindowRolling) {
+	if err := f.validatePutRollingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putRolling",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutSliding(value *FeatureEngineeringFeatureTimeWindowSliding) {
 	if err := f.validatePutSlidingParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetCont
 	_jsii_.InvokeVoid(
 		f,
 		"resetContinuous",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetRolling() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRolling",
 		nil, // no parameters
 	)
 }

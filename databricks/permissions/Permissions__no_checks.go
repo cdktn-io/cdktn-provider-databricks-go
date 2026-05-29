@@ -163,6 +163,10 @@ func (j *jsiiProxy_Permissions) validateSetJobIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Permissions) validateSetKnowledgeAssistantIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Permissions) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -216,6 +220,10 @@ func (j *jsiiProxy_Permissions) validateSetSqlEndpointIdParameters(val *string) 
 }
 
 func (j *jsiiProxy_Permissions) validateSetSqlQueryIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Permissions) validateSetSupervisorAgentIdParameters(val *string) error {
 	return nil
 }
 

@@ -28,6 +28,8 @@ type DataDatabricksAccountNetworkPolicyIngressOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CrossWorkspaceAccess() DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessOutputReference
+	CrossWorkspaceAccessInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksAccountNetworkPolicyIngress
@@ -68,8 +70,10 @@ type DataDatabricksAccountNetworkPolicyIngressOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutCrossWorkspaceAccess(value *DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess)
 	PutPrivateAccess(value *DataDatabricksAccountNetworkPolicyIngressPrivateAccess)
 	PutPublicAccess(value *DataDatabricksAccountNetworkPolicyIngressPublicAccess)
+	ResetCrossWorkspaceAccess()
 	ResetPrivateAccess()
 	ResetPublicAccess()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressOutputReference) Cre
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressOutputReference) CrossWorkspaceAccess() DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessOutputReference {
+	var returns DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessOutputReference
+	_jsii_.Get(
+		j,
+		"crossWorkspaceAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressOutputReference) CrossWorkspaceAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"crossWorkspaceAccessInput",
 		&returns,
 	)
 	return returns
@@ -466,6 +490,17 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressOutputReference) Int
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressOutputReference) PutCrossWorkspaceAccess(value *DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess) {
+	if err := d.validatePutCrossWorkspaceAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCrossWorkspaceAccess",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressOutputReference) PutPrivateAccess(value *DataDatabricksAccountNetworkPolicyIngressPrivateAccess) {
 	if err := d.validatePutPrivateAccessParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressOutputReference) Put
 		d,
 		"putPublicAccess",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressOutputReference) ResetCrossWorkspaceAccess() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCrossWorkspaceAccess",
+		nil, // no parameters
 	)
 }
 

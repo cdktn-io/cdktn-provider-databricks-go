@@ -1,0 +1,109 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package accountnetworkpolicy
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validatePutAccountApiParameters(value *AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validatePutAccountDatabricksOneParameters(value *AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validatePutAccountUiParameters(value *AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validatePutAppsRuntimeParameters(value *AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validatePutLakebaseRuntimeParameters(value *AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validatePutWorkspaceApiParameters(value *AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validatePutWorkspaceUiParameters(value *AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateSetAllDestinationsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

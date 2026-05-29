@@ -5,7 +5,7 @@ package datadatabricksservingendpoints
 
 
 type DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

@@ -40,6 +40,8 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference int
 	SetInternalValue(val *PipelineIngestionDefinitionObjectsSchemaConnectorOptions)
 	JiraOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptionsOutputReference
 	JiraOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions
+	KafkaOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsOutputReference
+	KafkaOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions
 	MetaAdsOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsOutputReference
 	MetaAdsOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions
 	OutlookOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsOutputReference
@@ -88,6 +90,7 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference int
 	PutGdriveOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions)
 	PutGoogleAdsOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions)
 	PutJiraOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions)
+	PutKafkaOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions)
 	PutMetaAdsOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions)
 	PutOutlookOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions)
 	PutSharepointOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions)
@@ -98,6 +101,7 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference int
 	ResetGdriveOptions()
 	ResetGoogleAdsOptions()
 	ResetJiraOptions()
+	ResetKafkaOptions()
 	ResetMetaAdsOptions()
 	ResetOutlookOptions()
 	ResetSharepointOptions()
@@ -244,6 +248,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutpu
 	_jsii_.Get(
 		j,
 		"jiraOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) KafkaOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"kafkaOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) KafkaOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions {
+	var returns *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions
+	_jsii_.Get(
+		j,
+		"kafkaOptionsInput",
 		&returns,
 	)
 	return returns
@@ -702,6 +726,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutpu
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) PutKafkaOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions) {
+	if err := p.validatePutKafkaOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putKafkaOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) PutMetaAdsOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions) {
 	if err := p.validatePutMetaAdsOptionsParameters(value); err != nil {
 		panic(err)
@@ -796,6 +831,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutpu
 	_jsii_.InvokeVoid(
 		p,
 		"resetJiraOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) ResetKafkaOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKafkaOptions",
 		nil, // no parameters
 	)
 }

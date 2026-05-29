@@ -92,6 +92,8 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	PipelineTaskInput() *JobTaskForEachTaskTaskPipelineTask
 	PowerBiTask() JobTaskForEachTaskTaskPowerBiTaskOutputReference
 	PowerBiTaskInput() *JobTaskForEachTaskTaskPowerBiTask
+	PythonOperatorTask() JobTaskForEachTaskTaskPythonOperatorTaskOutputReference
+	PythonOperatorTaskInput() *JobTaskForEachTaskTaskPythonOperatorTask
 	PythonWheelTask() JobTaskForEachTaskTaskPythonWheelTaskOutputReference
 	PythonWheelTaskInput() *JobTaskForEachTaskTaskPythonWheelTask
 	RetryOnTimeout() interface{}
@@ -168,6 +170,7 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	PutNotificationSettings(value *JobTaskForEachTaskTaskNotificationSettings)
 	PutPipelineTask(value *JobTaskForEachTaskTaskPipelineTask)
 	PutPowerBiTask(value *JobTaskForEachTaskTaskPowerBiTask)
+	PutPythonOperatorTask(value *JobTaskForEachTaskTaskPythonOperatorTask)
 	PutPythonWheelTask(value *JobTaskForEachTaskTaskPythonWheelTask)
 	PutRunJobTask(value *JobTaskForEachTaskTaskRunJobTask)
 	PutSparkJarTask(value *JobTaskForEachTaskTaskSparkJarTask)
@@ -201,6 +204,7 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	ResetNotificationSettings()
 	ResetPipelineTask()
 	ResetPowerBiTask()
+	ResetPythonOperatorTask()
 	ResetPythonWheelTask()
 	ResetRetryOnTimeout()
 	ResetRunIf()
@@ -791,6 +795,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PowerBiTaskInput() *Jo
 	_jsii_.Get(
 		j,
 		"powerBiTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PythonOperatorTask() JobTaskForEachTaskTaskPythonOperatorTaskOutputReference {
+	var returns JobTaskForEachTaskTaskPythonOperatorTaskOutputReference
+	_jsii_.Get(
+		j,
+		"pythonOperatorTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PythonOperatorTaskInput() *JobTaskForEachTaskTaskPythonOperatorTask {
+	var returns *JobTaskForEachTaskTaskPythonOperatorTask
+	_jsii_.Get(
+		j,
+		"pythonOperatorTaskInput",
 		&returns,
 	)
 	return returns
@@ -1635,6 +1659,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutPowerBiTask(value *
 	)
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutPythonOperatorTask(value *JobTaskForEachTaskTaskPythonOperatorTask) {
+	if err := j.validatePutPythonOperatorTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putPythonOperatorTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutPythonWheelTask(value *JobTaskForEachTaskTaskPythonWheelTask) {
 	if err := j.validatePutPythonWheelTaskParameters(value); err != nil {
 		panic(err)
@@ -1916,6 +1951,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetPowerBiTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPowerBiTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetPythonOperatorTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetPythonOperatorTask",
 		nil, // no parameters
 	)
 }

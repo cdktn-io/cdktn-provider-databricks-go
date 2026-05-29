@@ -5,7 +5,7 @@ package datadatabricksregisteredmodelversions
 
 
 type DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTable struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model_versions#table_full_name DataDatabricksRegisteredModelVersions#table_full_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/registered_model_versions#table_full_name DataDatabricksRegisteredModelVersions#table_full_name}.
 	TableFullName *string `field:"required" json:"tableFullName" yaml:"tableFullName"`
 }
 

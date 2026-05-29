@@ -51,6 +51,10 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) validatePutRollingParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) validatePutSlidingParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding) error {
 	return nil
 }

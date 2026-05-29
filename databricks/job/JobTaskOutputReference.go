@@ -94,6 +94,8 @@ type JobTaskOutputReference interface {
 	PipelineTaskInput() *JobTaskPipelineTask
 	PowerBiTask() JobTaskPowerBiTaskOutputReference
 	PowerBiTaskInput() *JobTaskPowerBiTask
+	PythonOperatorTask() JobTaskPythonOperatorTaskOutputReference
+	PythonOperatorTaskInput() *JobTaskPythonOperatorTask
 	PythonWheelTask() JobTaskPythonWheelTaskOutputReference
 	PythonWheelTaskInput() *JobTaskPythonWheelTask
 	RetryOnTimeout() interface{}
@@ -171,6 +173,7 @@ type JobTaskOutputReference interface {
 	PutNotificationSettings(value *JobTaskNotificationSettings)
 	PutPipelineTask(value *JobTaskPipelineTask)
 	PutPowerBiTask(value *JobTaskPowerBiTask)
+	PutPythonOperatorTask(value *JobTaskPythonOperatorTask)
 	PutPythonWheelTask(value *JobTaskPythonWheelTask)
 	PutRunJobTask(value *JobTaskRunJobTask)
 	PutSparkJarTask(value *JobTaskSparkJarTask)
@@ -205,6 +208,7 @@ type JobTaskOutputReference interface {
 	ResetNotificationSettings()
 	ResetPipelineTask()
 	ResetPowerBiTask()
+	ResetPythonOperatorTask()
 	ResetPythonWheelTask()
 	ResetRetryOnTimeout()
 	ResetRunIf()
@@ -815,6 +819,26 @@ func (j *jsiiProxy_JobTaskOutputReference) PowerBiTaskInput() *JobTaskPowerBiTas
 	_jsii_.Get(
 		j,
 		"powerBiTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) PythonOperatorTask() JobTaskPythonOperatorTaskOutputReference {
+	var returns JobTaskPythonOperatorTaskOutputReference
+	_jsii_.Get(
+		j,
+		"pythonOperatorTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) PythonOperatorTaskInput() *JobTaskPythonOperatorTask {
+	var returns *JobTaskPythonOperatorTask
+	_jsii_.Get(
+		j,
+		"pythonOperatorTaskInput",
 		&returns,
 	)
 	return returns
@@ -1670,6 +1694,17 @@ func (j *jsiiProxy_JobTaskOutputReference) PutPowerBiTask(value *JobTaskPowerBiT
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutPythonOperatorTask(value *JobTaskPythonOperatorTask) {
+	if err := j.validatePutPythonOperatorTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putPythonOperatorTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) PutPythonWheelTask(value *JobTaskPythonWheelTask) {
 	if err := j.validatePutPythonWheelTaskParameters(value); err != nil {
 		panic(err)
@@ -1959,6 +1994,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetPowerBiTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPowerBiTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetPythonOperatorTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetPythonOperatorTask",
 		nil, // no parameters
 	)
 }

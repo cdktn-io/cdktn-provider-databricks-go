@@ -186,6 +186,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskPipelineTaskOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskPipelineTaskOutputReference) validateSetFullRefreshSelectionParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskPipelineTaskOutputReference) validateSetInternalValueParameters(val *JobTaskForEachTaskTaskPipelineTask) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -194,7 +202,39 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskPipelineTaskOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskPipelineTaskOutputReference) validateSetParametersParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskPipelineTaskOutputReference) validateSetPipelineIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskPipelineTaskOutputReference) validateSetRefreshFlowSelectionParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskPipelineTaskOutputReference) validateSetRefreshSelectionParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskPipelineTaskOutputReference) validateSetResetCheckpointSelectionParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/metastore databricks_metastore}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/metastore databricks_metastore}.
 type DataDatabricksMetastore interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataDatabricksMetastore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/metastore databricks_metastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/metastore databricks_metastore} Data Source.
 func NewDataDatabricksMetastore(scope constructs.Construct, id *string, config *DataDatabricksMetastoreConfig) DataDatabricksMetastore {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataDatabricksMetastore(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/metastore databricks_metastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/metastore databricks_metastore} Data Source.
 func NewDataDatabricksMetastore_Override(d DataDatabricksMetastore, scope constructs.Construct, id *string, config *DataDatabricksMetastoreConfig) {
 	_init_.Initialize()
 

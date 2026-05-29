@@ -12,13 +12,15 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
 type AccountSettingV2 interface {
 	cdktn.TerraformResource
 	AibiDashboardEmbeddingAccessPolicy() AccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
 	AibiDashboardEmbeddingAccessPolicyInput() interface{}
 	AibiDashboardEmbeddingApprovedDomains() AccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference
 	AibiDashboardEmbeddingApprovedDomainsInput() interface{}
+	AllowedAppsUserApiScopes() AccountSettingV2AllowedAppsUserApiScopesOutputReference
+	AllowedAppsUserApiScopesInput() interface{}
 	AutomaticClusterUpdateWorkspace() AccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference
 	AutomaticClusterUpdateWorkspaceInput() interface{}
 	BooleanVal() AccountSettingV2BooleanValOutputReference
@@ -43,10 +45,12 @@ type AccountSettingV2 interface {
 	EffectiveAibiDashboardEmbeddingAccessPolicyInput() interface{}
 	EffectiveAibiDashboardEmbeddingApprovedDomains() AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference
 	EffectiveAibiDashboardEmbeddingApprovedDomainsInput() interface{}
+	EffectiveAllowedAppsUserApiScopes() AccountSettingV2EffectiveAllowedAppsUserApiScopesOutputReference
 	EffectiveAutomaticClusterUpdateWorkspace() AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	EffectiveAutomaticClusterUpdateWorkspaceInput() interface{}
 	EffectiveBooleanVal() AccountSettingV2EffectiveBooleanValOutputReference
 	EffectiveIntegerVal() AccountSettingV2EffectiveIntegerValOutputReference
+	EffectiveOperationalEmailCustomRecipient() AccountSettingV2EffectiveOperationalEmailCustomRecipientOutputReference
 	EffectivePersonalCompute() AccountSettingV2EffectivePersonalComputeOutputReference
 	EffectivePersonalComputeInput() interface{}
 	EffectiveRestrictWorkspaceAdmins() AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference
@@ -71,6 +75,8 @@ type AccountSettingV2 interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OperationalEmailCustomRecipient() AccountSettingV2OperationalEmailCustomRecipientOutputReference
+	OperationalEmailCustomRecipientInput() interface{}
 	PersonalCompute() AccountSettingV2PersonalComputeOutputReference
 	PersonalComputeInput() interface{}
 	// Experimental.
@@ -138,6 +144,7 @@ type AccountSettingV2 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAibiDashboardEmbeddingAccessPolicy(value *AccountSettingV2AibiDashboardEmbeddingAccessPolicy)
 	PutAibiDashboardEmbeddingApprovedDomains(value *AccountSettingV2AibiDashboardEmbeddingApprovedDomains)
+	PutAllowedAppsUserApiScopes(value *AccountSettingV2AllowedAppsUserApiScopes)
 	PutAutomaticClusterUpdateWorkspace(value *AccountSettingV2AutomaticClusterUpdateWorkspace)
 	PutBooleanVal(value *AccountSettingV2BooleanVal)
 	PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy)
@@ -146,11 +153,13 @@ type AccountSettingV2 interface {
 	PutEffectivePersonalCompute(value *AccountSettingV2EffectivePersonalCompute)
 	PutEffectiveRestrictWorkspaceAdmins(value *AccountSettingV2EffectiveRestrictWorkspaceAdmins)
 	PutIntegerVal(value *AccountSettingV2IntegerVal)
+	PutOperationalEmailCustomRecipient(value *AccountSettingV2OperationalEmailCustomRecipient)
 	PutPersonalCompute(value *AccountSettingV2PersonalCompute)
 	PutRestrictWorkspaceAdmins(value *AccountSettingV2RestrictWorkspaceAdmins)
 	PutStringVal(value *AccountSettingV2StringVal)
 	ResetAibiDashboardEmbeddingAccessPolicy()
 	ResetAibiDashboardEmbeddingApprovedDomains()
+	ResetAllowedAppsUserApiScopes()
 	ResetAutomaticClusterUpdateWorkspace()
 	ResetBooleanVal()
 	ResetEffectiveAibiDashboardEmbeddingAccessPolicy()
@@ -160,6 +169,7 @@ type AccountSettingV2 interface {
 	ResetEffectiveRestrictWorkspaceAdmins()
 	ResetIntegerVal()
 	ResetName()
+	ResetOperationalEmailCustomRecipient()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -228,6 +238,26 @@ func (j *jsiiProxy_AccountSettingV2) AibiDashboardEmbeddingApprovedDomainsInput(
 	_jsii_.Get(
 		j,
 		"aibiDashboardEmbeddingApprovedDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSettingV2) AllowedAppsUserApiScopes() AccountSettingV2AllowedAppsUserApiScopesOutputReference {
+	var returns AccountSettingV2AllowedAppsUserApiScopesOutputReference
+	_jsii_.Get(
+		j,
+		"allowedAppsUserApiScopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSettingV2) AllowedAppsUserApiScopesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedAppsUserApiScopesInput",
 		&returns,
 	)
 	return returns
@@ -363,6 +393,16 @@ func (j *jsiiProxy_AccountSettingV2) EffectiveAibiDashboardEmbeddingApprovedDoma
 	return returns
 }
 
+func (j *jsiiProxy_AccountSettingV2) EffectiveAllowedAppsUserApiScopes() AccountSettingV2EffectiveAllowedAppsUserApiScopesOutputReference {
+	var returns AccountSettingV2EffectiveAllowedAppsUserApiScopesOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveAllowedAppsUserApiScopes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountSettingV2) EffectiveAutomaticClusterUpdateWorkspace() AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference {
 	var returns AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	_jsii_.Get(
@@ -398,6 +438,16 @@ func (j *jsiiProxy_AccountSettingV2) EffectiveIntegerVal() AccountSettingV2Effec
 	_jsii_.Get(
 		j,
 		"effectiveIntegerVal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSettingV2) EffectiveOperationalEmailCustomRecipient() AccountSettingV2EffectiveOperationalEmailCustomRecipientOutputReference {
+	var returns AccountSettingV2EffectiveOperationalEmailCustomRecipientOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveOperationalEmailCustomRecipient",
 		&returns,
 	)
 	return returns
@@ -543,6 +593,26 @@ func (j *jsiiProxy_AccountSettingV2) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AccountSettingV2) OperationalEmailCustomRecipient() AccountSettingV2OperationalEmailCustomRecipientOutputReference {
+	var returns AccountSettingV2OperationalEmailCustomRecipientOutputReference
+	_jsii_.Get(
+		j,
+		"operationalEmailCustomRecipient",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSettingV2) OperationalEmailCustomRecipientInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"operationalEmailCustomRecipientInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountSettingV2) PersonalCompute() AccountSettingV2PersonalComputeOutputReference {
 	var returns AccountSettingV2PersonalComputeOutputReference
 	_jsii_.Get(
@@ -664,7 +734,7 @@ func (j *jsiiProxy_AccountSettingV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
 func NewAccountSettingV2(scope constructs.Construct, id *string, config *AccountSettingV2Config) AccountSettingV2 {
 	_init_.Initialize()
 
@@ -682,7 +752,7 @@ func NewAccountSettingV2(scope constructs.Construct, id *string, config *Account
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
 func NewAccountSettingV2_Override(a AccountSettingV2, scope constructs.Construct, id *string, config *AccountSettingV2Config) {
 	_init_.Initialize()
 
@@ -1147,6 +1217,17 @@ func (a *jsiiProxy_AccountSettingV2) PutAibiDashboardEmbeddingApprovedDomains(va
 	)
 }
 
+func (a *jsiiProxy_AccountSettingV2) PutAllowedAppsUserApiScopes(value *AccountSettingV2AllowedAppsUserApiScopes) {
+	if err := a.validatePutAllowedAppsUserApiScopesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAllowedAppsUserApiScopes",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccountSettingV2) PutAutomaticClusterUpdateWorkspace(value *AccountSettingV2AutomaticClusterUpdateWorkspace) {
 	if err := a.validatePutAutomaticClusterUpdateWorkspaceParameters(value); err != nil {
 		panic(err)
@@ -1235,6 +1316,17 @@ func (a *jsiiProxy_AccountSettingV2) PutIntegerVal(value *AccountSettingV2Intege
 	)
 }
 
+func (a *jsiiProxy_AccountSettingV2) PutOperationalEmailCustomRecipient(value *AccountSettingV2OperationalEmailCustomRecipient) {
+	if err := a.validatePutOperationalEmailCustomRecipientParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putOperationalEmailCustomRecipient",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccountSettingV2) PutPersonalCompute(value *AccountSettingV2PersonalCompute) {
 	if err := a.validatePutPersonalComputeParameters(value); err != nil {
 		panic(err)
@@ -1280,6 +1372,14 @@ func (a *jsiiProxy_AccountSettingV2) ResetAibiDashboardEmbeddingApprovedDomains(
 	_jsii_.InvokeVoid(
 		a,
 		"resetAibiDashboardEmbeddingApprovedDomains",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountSettingV2) ResetAllowedAppsUserApiScopes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowedAppsUserApiScopes",
 		nil, // no parameters
 	)
 }
@@ -1352,6 +1452,14 @@ func (a *jsiiProxy_AccountSettingV2) ResetName() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountSettingV2) ResetOperationalEmailCustomRecipient() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOperationalEmailCustomRecipient",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validateOverrideLogica
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutCronScheduleTriggerParameters(value *FeatureEngineeringMaterializedFeatureCronScheduleTrigger) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutOfflineStoreConfigParameters(value *FeatureEngineeringMaterializedFeatureOfflineStoreConfig) error {
 	return nil
 }
@@ -84,6 +88,14 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutOnlineStore
 }
 
 func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutProviderConfigParameters(value *FeatureEngineeringMaterializedFeatureProviderConfig) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutStreamingModeParameters(value *FeatureEngineeringMaterializedFeatureStreamingMode) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) validatePutTableTriggerParameters(value *FeatureEngineeringMaterializedFeatureTableTrigger) error {
 	return nil
 }
 
@@ -120,10 +132,6 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetFeatureName
 }
 
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetMaterializedFeatureIdParameters(val *string) error {
 	return nil
 }
 

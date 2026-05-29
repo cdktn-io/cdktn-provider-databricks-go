@@ -491,6 +491,14 @@ func (j *jsiiProxy_Permissions) validateSetJobIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Permissions) validateSetKnowledgeAssistantIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Permissions) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -634,6 +642,14 @@ func (j *jsiiProxy_Permissions) validateSetSqlEndpointIdParameters(val *string) 
 }
 
 func (j *jsiiProxy_Permissions) validateSetSqlQueryIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Permissions) validateSetSupervisorAgentIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

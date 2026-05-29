@@ -1,0 +1,11 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package datadatabricksaccountsettingv2
+
+
+type DataDatabricksAccountSettingV2AllowedAppsUserApiScopes struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_setting_v2#allowed_scopes DataDatabricksAccountSettingV2#allowed_scopes}.
+	AllowedScopes *[]*string `field:"optional" json:"allowedScopes" yaml:"allowedScopes"`
+}
+

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
 type FeatureEngineeringMaterializedFeature interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -30,6 +30,8 @@ type FeatureEngineeringMaterializedFeature interface {
 	CronSchedule() *string
 	SetCronSchedule(val *string)
 	CronScheduleInput() *string
+	CronScheduleTrigger() FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference
+	CronScheduleTriggerInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,8 +54,6 @@ type FeatureEngineeringMaterializedFeature interface {
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaterializedFeatureId() *string
-	SetMaterializedFeatureId(val *string)
-	MaterializedFeatureIdInput() *string
 	// The tree node.
 	Node() constructs.Node
 	OfflineStoreConfig() FeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference
@@ -75,7 +75,11 @@ type FeatureEngineeringMaterializedFeature interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	StreamingMode() FeatureEngineeringMaterializedFeatureStreamingModeOutputReference
+	StreamingModeInput() interface{}
 	TableName() *string
+	TableTrigger() FeatureEngineeringMaterializedFeatureTableTriggerOutputReference
+	TableTriggerInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,11 +129,14 @@ type FeatureEngineeringMaterializedFeature interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCronScheduleTrigger(value *FeatureEngineeringMaterializedFeatureCronScheduleTrigger)
 	PutOfflineStoreConfig(value *FeatureEngineeringMaterializedFeatureOfflineStoreConfig)
 	PutOnlineStoreConfig(value *FeatureEngineeringMaterializedFeatureOnlineStoreConfig)
 	PutProviderConfig(value *FeatureEngineeringMaterializedFeatureProviderConfig)
+	PutStreamingMode(value *FeatureEngineeringMaterializedFeatureStreamingMode)
+	PutTableTrigger(value *FeatureEngineeringMaterializedFeatureTableTrigger)
 	ResetCronSchedule()
-	ResetMaterializedFeatureId()
+	ResetCronScheduleTrigger()
 	ResetOfflineStoreConfig()
 	ResetOnlineStoreConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -137,6 +144,8 @@ type FeatureEngineeringMaterializedFeature interface {
 	ResetOverrideLogicalId()
 	ResetPipelineScheduleState()
 	ResetProviderConfig()
+	ResetStreamingMode()
+	ResetTableTrigger()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -219,6 +228,26 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) CronScheduleInput() *s
 	_jsii_.Get(
 		j,
 		"cronScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) CronScheduleTrigger() FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference {
+	var returns FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference
+	_jsii_.Get(
+		j,
+		"cronScheduleTrigger",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) CronScheduleTriggerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cronScheduleTriggerInput",
 		&returns,
 	)
 	return returns
@@ -319,16 +348,6 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) MaterializedFeatureId(
 	_jsii_.Get(
 		j,
 		"materializedFeatureId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) MaterializedFeatureIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"materializedFeatureIdInput",
 		&returns,
 	)
 	return returns
@@ -454,11 +473,51 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) RawOverrides() interfa
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) StreamingMode() FeatureEngineeringMaterializedFeatureStreamingModeOutputReference {
+	var returns FeatureEngineeringMaterializedFeatureStreamingModeOutputReference
+	_jsii_.Get(
+		j,
+		"streamingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) StreamingModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"streamingModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TableName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"tableName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TableTrigger() FeatureEngineeringMaterializedFeatureTableTriggerOutputReference {
+	var returns FeatureEngineeringMaterializedFeatureTableTriggerOutputReference
+	_jsii_.Get(
+		j,
+		"tableTrigger",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TableTriggerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tableTriggerInput",
 		&returns,
 	)
 	return returns
@@ -495,7 +554,7 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
 func NewFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *string, config *FeatureEngineeringMaterializedFeatureConfig) FeatureEngineeringMaterializedFeature {
 	_init_.Initialize()
 
@@ -513,7 +572,7 @@ func NewFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
 func NewFeatureEngineeringMaterializedFeature_Override(f FeatureEngineeringMaterializedFeature, scope constructs.Construct, id *string, config *FeatureEngineeringMaterializedFeatureConfig) {
 	_init_.Initialize()
 
@@ -591,17 +650,6 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetLifecycle(val *cdktn
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetMaterializedFeatureId(val *string) {
-	if err := j.validateSetMaterializedFeatureIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"materializedFeatureId",
 		val,
 	)
 }
@@ -989,6 +1037,17 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) OverrideLogicalId(newL
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) PutCronScheduleTrigger(value *FeatureEngineeringMaterializedFeatureCronScheduleTrigger) {
+	if err := f.validatePutCronScheduleTriggerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putCronScheduleTrigger",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) PutOfflineStoreConfig(value *FeatureEngineeringMaterializedFeatureOfflineStoreConfig) {
 	if err := f.validatePutOfflineStoreConfigParameters(value); err != nil {
 		panic(err)
@@ -1022,6 +1081,28 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) PutProviderConfig(valu
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) PutStreamingMode(value *FeatureEngineeringMaterializedFeatureStreamingMode) {
+	if err := f.validatePutStreamingModeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putStreamingMode",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) PutTableTrigger(value *FeatureEngineeringMaterializedFeatureTableTrigger) {
+	if err := f.validatePutTableTriggerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putTableTrigger",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetCronSchedule() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1030,10 +1111,10 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetCronSchedule() {
 	)
 }
 
-func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetMaterializedFeatureId() {
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetCronScheduleTrigger() {
 	_jsii_.InvokeVoid(
 		f,
-		"resetMaterializedFeatureId",
+		"resetCronScheduleTrigger",
 		nil, // no parameters
 	)
 }
@@ -1074,6 +1155,22 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetProviderConfig() 
 	_jsii_.InvokeVoid(
 		f,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetStreamingMode() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetStreamingMode",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetTableTrigger() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTableTrigger",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,14 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetComplexObjec
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetComputeMaxInstancesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetComputeMinInstancesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetComputeSizeParameters(val *string) error {
 	return nil
 }

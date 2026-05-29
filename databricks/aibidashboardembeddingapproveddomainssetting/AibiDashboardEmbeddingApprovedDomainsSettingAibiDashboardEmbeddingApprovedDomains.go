@@ -5,7 +5,7 @@ package aibidashboardembeddingapproveddomainssetting
 
 
 type AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomains struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting#approved_domains AibiDashboardEmbeddingApprovedDomainsSetting#approved_domains}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting#approved_domains AibiDashboardEmbeddingApprovedDomainsSetting#approved_domains}.
 	ApprovedDomains *[]*string `field:"required" json:"approvedDomains" yaml:"approvedDomains"`
 }
 

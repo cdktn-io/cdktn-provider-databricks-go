@@ -22,24 +22,24 @@ type GroupInstanceProfileConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_instance_profile#group_id GroupInstanceProfile#group_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/group_instance_profile#group_id GroupInstanceProfile#group_id}.
 	GroupId *string `field:"required" json:"groupId" yaml:"groupId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_instance_profile#instance_profile_id GroupInstanceProfile#instance_profile_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/group_instance_profile#instance_profile_id GroupInstanceProfile#instance_profile_id}.
 	InstanceProfileId *string `field:"required" json:"instanceProfileId" yaml:"instanceProfileId"`
 	// Specifies whether to use account-level or workspace-level API.
 	//
 	// Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_instance_profile#api GroupInstanceProfile#api}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/group_instance_profile#api GroupInstanceProfile#api}
 	Api *string `field:"optional" json:"api" yaml:"api"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_instance_profile#id GroupInstanceProfile#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/group_instance_profile#id GroupInstanceProfile#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// provider_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_instance_profile#provider_config GroupInstanceProfile#provider_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/group_instance_profile#provider_config GroupInstanceProfile#provider_config}
 	ProviderConfig *GroupInstanceProfileProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

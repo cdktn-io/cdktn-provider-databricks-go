@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount}.
 type AzureAdlsGen2Mount interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -586,7 +586,7 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
 func NewAzureAdlsGen2Mount(scope constructs.Construct, id *string, config *AzureAdlsGen2MountConfig) AzureAdlsGen2Mount {
 	_init_.Initialize()
 
@@ -604,7 +604,7 @@ func NewAzureAdlsGen2Mount(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
 func NewAzureAdlsGen2Mount_Override(a AzureAdlsGen2Mount, scope constructs.Construct, id *string, config *AzureAdlsGen2MountConfig) {
 	_init_.Initialize()
 

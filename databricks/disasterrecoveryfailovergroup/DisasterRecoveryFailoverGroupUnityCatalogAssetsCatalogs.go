@@ -5,7 +5,7 @@ package disasterrecoveryfailovergroup
 
 
 type DisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disaster_recovery_failover_group#name DisasterRecoveryFailoverGroup#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/disaster_recovery_failover_group#name DisasterRecoveryFailoverGroup#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

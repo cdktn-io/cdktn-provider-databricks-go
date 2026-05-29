@@ -32,6 +32,8 @@ type FeatureEngineeringKafkaConfigAuthConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MtlsConfig() FeatureEngineeringKafkaConfigAuthConfigMtlsConfigOutputReference
+	MtlsConfigInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +69,8 @@ type FeatureEngineeringKafkaConfigAuthConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutMtlsConfig(value *FeatureEngineeringKafkaConfigAuthConfigMtlsConfig)
+	ResetMtlsConfig()
 	ResetUcServiceCredentialName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigAuthConfigOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigAuthConfigOutputReference) MtlsConfig() FeatureEngineeringKafkaConfigAuthConfigMtlsConfigOutputReference {
+	var returns FeatureEngineeringKafkaConfigAuthConfigMtlsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mtlsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigAuthConfigOutputReference) MtlsConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mtlsConfigInput",
 		&returns,
 	)
 	return returns
@@ -451,6 +475,25 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfigAuthConfigOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigAuthConfigOutputReference) PutMtlsConfig(value *FeatureEngineeringKafkaConfigAuthConfigMtlsConfig) {
+	if err := f.validatePutMtlsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putMtlsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigAuthConfigOutputReference) ResetMtlsConfig() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetMtlsConfig",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FeatureEngineeringKafkaConfigAuthConfigOutputReference) ResetUcServiceCredentialName() {

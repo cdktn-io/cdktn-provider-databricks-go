@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
 type DataDatabricksDisasterRecoveryStableUrl interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataDatabricksDisasterRecoveryStableUrl interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FailoverGroupName() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrl) DependsOn() *[]*stri
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrl) FailoverGroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"failoverGroupName",
 		&returns,
 	)
 	return returns
@@ -295,7 +306,7 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrl) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Data Source.
 func NewDataDatabricksDisasterRecoveryStableUrl(scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryStableUrlConfig) DataDatabricksDisasterRecoveryStableUrl {
 	_init_.Initialize()
 
@@ -313,7 +324,7 @@ func NewDataDatabricksDisasterRecoveryStableUrl(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Data Source.
 func NewDataDatabricksDisasterRecoveryStableUrl_Override(d DataDatabricksDisasterRecoveryStableUrl, scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryStableUrlConfig) {
 	_init_.Initialize()
 

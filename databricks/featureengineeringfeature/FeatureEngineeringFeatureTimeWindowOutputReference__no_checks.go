@@ -51,6 +51,10 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validateP
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validatePutRollingParameters(value *FeatureEngineeringFeatureTimeWindowRolling) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validatePutSlidingParameters(value *FeatureEngineeringFeatureTimeWindowSliding) error {
 	return nil
 }

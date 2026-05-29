@@ -5,7 +5,7 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureSourceRequestSourceFlatSchema struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_feature#fields FeatureEngineeringFeature#fields}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_feature#fields FeatureEngineeringFeature#fields}.
 	Fields interface{} `field:"required" json:"fields" yaml:"fields"`
 }
 

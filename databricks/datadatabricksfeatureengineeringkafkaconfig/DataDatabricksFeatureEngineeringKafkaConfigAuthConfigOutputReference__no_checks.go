@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigAuthConfigOutputRe
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigAuthConfigOutputReference) validatePutMtlsConfigParameters(value *DataDatabricksFeatureEngineeringKafkaConfigAuthConfigMtlsConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigAuthConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

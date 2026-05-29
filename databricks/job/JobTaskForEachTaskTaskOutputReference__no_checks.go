@@ -119,6 +119,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutPowerBiTask
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutPythonOperatorTaskParameters(value *JobTaskForEachTaskTaskPythonOperatorTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutPythonWheelTaskParameters(value *JobTaskForEachTaskTaskPythonWheelTask) error {
 	return nil
 }

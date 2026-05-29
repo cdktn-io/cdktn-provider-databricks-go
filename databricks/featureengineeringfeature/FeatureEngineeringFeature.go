@@ -12,9 +12,10 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
 type FeatureEngineeringFeature interface {
 	cdktn.TerraformResource
+	CatalogName() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -27,6 +28,8 @@ type FeatureEngineeringFeature interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
+	CreatedBy() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -61,6 +64,7 @@ type FeatureEngineeringFeature interface {
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LineageContext() FeatureEngineeringFeatureLineageContextOutputReference
 	LineageContextInput() interface{}
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -75,6 +79,7 @@ type FeatureEngineeringFeature interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SchemaName() *string
 	Source() FeatureEngineeringFeatureSourceOutputReference
 	SourceInput() interface{}
 	// Experimental.
@@ -175,6 +180,16 @@ type jsiiProxy_FeatureEngineeringFeature struct {
 	internal.Type__cdktnTerraformResource
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeature) CatalogName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeature) CdktfStack() cdktn.TerraformStack {
 	var returns cdktn.TerraformStack
 	_jsii_.Get(
@@ -210,6 +225,26 @@ func (j *jsiiProxy_FeatureEngineeringFeature) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) CreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdBy",
 		&returns,
 	)
 	return returns
@@ -405,6 +440,16 @@ func (j *jsiiProxy_FeatureEngineeringFeature) LineageContextInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeature) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeature) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -460,6 +505,16 @@ func (j *jsiiProxy_FeatureEngineeringFeature) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) SchemaName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaName",
 		&returns,
 	)
 	return returns
@@ -556,7 +611,7 @@ func (j *jsiiProxy_FeatureEngineeringFeature) TimeWindowInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) FeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -574,7 +629,7 @@ func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature_Override(f FeatureEngineeringFeature, scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 

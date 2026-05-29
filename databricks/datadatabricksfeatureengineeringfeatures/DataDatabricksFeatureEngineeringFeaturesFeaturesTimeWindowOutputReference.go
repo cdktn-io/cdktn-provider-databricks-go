@@ -34,6 +34,8 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference i
 	Fqn() *string
 	InternalValue() *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow)
+	Rolling() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRollingOutputReference
+	RollingInput() interface{}
 	Sliding() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSlidingOutputReference
 	SlidingInput() interface{}
 	// Experimental.
@@ -71,9 +73,11 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference i
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutContinuous(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowContinuous)
+	PutRolling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRolling)
 	PutSliding(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSliding)
 	PutTumbling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowTumbling)
 	ResetContinuous()
+	ResetRolling()
 	ResetSliding()
 	ResetTumbling()
 	// Produce the Token's value at resolution time.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) Rolling() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRollingOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRollingOutputReference
+	_jsii_.Get(
+		j,
+		"rolling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) RollingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rollingInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) PutRolling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRolling) {
+	if err := d.validatePutRollingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRolling",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) PutSliding(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSliding) {
 	if err := d.validatePutSlidingParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	_jsii_.InvokeVoid(
 		d,
 		"resetContinuous",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) ResetRolling() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRolling",
 		nil, // no parameters
 	)
 }

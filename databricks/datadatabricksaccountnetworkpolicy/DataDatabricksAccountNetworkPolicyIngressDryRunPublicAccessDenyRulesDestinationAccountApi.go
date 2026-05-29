@@ -5,9 +5,9 @@ package datadatabricksaccountnetworkpolicy
 
 
 type DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 	ScopeQualifier *string `field:"optional" json:"scopeQualifier" yaml:"scopeQualifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 	Scopes *[]*string `field:"optional" json:"scopes" yaml:"scopes"`
 }
 

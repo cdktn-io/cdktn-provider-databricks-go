@@ -33,11 +33,26 @@ type JobTaskPipelineTaskOutputReference interface {
 	FullRefresh() interface{}
 	SetFullRefresh(val interface{})
 	FullRefreshInput() interface{}
+	FullRefreshSelection() *[]*string
+	SetFullRefreshSelection(val *[]*string)
+	FullRefreshSelectionInput() *[]*string
 	InternalValue() *JobTaskPipelineTask
 	SetInternalValue(val *JobTaskPipelineTask)
+	Parameters() *map[string]*string
+	SetParameters(val *map[string]*string)
+	ParametersInput() *map[string]*string
 	PipelineId() *string
 	SetPipelineId(val *string)
 	PipelineIdInput() *string
+	RefreshFlowSelection() *[]*string
+	SetRefreshFlowSelection(val *[]*string)
+	RefreshFlowSelectionInput() *[]*string
+	RefreshSelection() *[]*string
+	SetRefreshSelection(val *[]*string)
+	RefreshSelectionInput() *[]*string
+	ResetCheckpointSelection() *[]*string
+	SetResetCheckpointSelection(val *[]*string)
+	ResetCheckpointSelectionInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +86,11 @@ type JobTaskPipelineTaskOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFullRefresh()
+	ResetFullRefreshSelection()
+	ResetParameters()
+	ResetRefreshFlowSelection()
+	ResetRefreshSelection()
+	ResetResetCheckpointSelection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -146,11 +166,51 @@ func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) FullRefreshInput() interf
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) FullRefreshSelection() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"fullRefreshSelection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) FullRefreshSelectionInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"fullRefreshSelectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) InternalValue() *JobTaskPipelineTask {
 	var returns *JobTaskPipelineTask
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) Parameters() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) ParametersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parametersInput",
 		&returns,
 	)
 	return returns
@@ -171,6 +231,66 @@ func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) PipelineIdInput() *string
 	_jsii_.Get(
 		j,
 		"pipelineIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) RefreshFlowSelection() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"refreshFlowSelection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) RefreshFlowSelectionInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"refreshFlowSelectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) RefreshSelection() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"refreshSelection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) RefreshSelectionInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"refreshSelectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) ResetCheckpointSelection() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resetCheckpointSelection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) ResetCheckpointSelectionInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resetCheckpointSelectionInput",
 		&returns,
 	)
 	return returns
@@ -257,6 +377,17 @@ func (j *jsiiProxy_JobTaskPipelineTaskOutputReference)SetFullRefresh(val interfa
 	)
 }
 
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference)SetFullRefreshSelection(val *[]*string) {
+	if err := j.validateSetFullRefreshSelectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fullRefreshSelection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskPipelineTaskOutputReference)SetInternalValue(val *JobTaskPipelineTask) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -268,6 +399,17 @@ func (j *jsiiProxy_JobTaskPipelineTaskOutputReference)SetInternalValue(val *JobT
 	)
 }
 
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference)SetParameters(val *map[string]*string) {
+	if err := j.validateSetParametersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parameters",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskPipelineTaskOutputReference)SetPipelineId(val *string) {
 	if err := j.validateSetPipelineIdParameters(val); err != nil {
 		panic(err)
@@ -275,6 +417,39 @@ func (j *jsiiProxy_JobTaskPipelineTaskOutputReference)SetPipelineId(val *string)
 	_jsii_.Set(
 		j,
 		"pipelineId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference)SetRefreshFlowSelection(val *[]*string) {
+	if err := j.validateSetRefreshFlowSelectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"refreshFlowSelection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference)SetRefreshSelection(val *[]*string) {
+	if err := j.validateSetRefreshSelectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"refreshSelection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference)SetResetCheckpointSelection(val *[]*string) {
+	if err := j.validateSetResetCheckpointSelectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resetCheckpointSelection",
 		val,
 	)
 }
@@ -491,6 +666,46 @@ func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) ResetFullRefresh() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetFullRefresh",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) ResetFullRefreshSelection() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetFullRefreshSelection",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) ResetParameters() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) ResetRefreshFlowSelection() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRefreshFlowSelection",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) ResetRefreshSelection() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRefreshSelection",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) ResetResetCheckpointSelection() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetResetCheckpointSelection",
 		nil, // no parameters
 	)
 }

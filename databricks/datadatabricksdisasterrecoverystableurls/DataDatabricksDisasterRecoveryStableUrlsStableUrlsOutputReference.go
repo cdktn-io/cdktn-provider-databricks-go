@@ -28,6 +28,7 @@ type DataDatabricksDisasterRecoveryStableUrlsStableUrlsOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FailoverGroupName() *string
 	// Experimental.
 	Fqn() *string
 	InitialWorkspaceId() *string
@@ -109,6 +110,16 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrlsStableUrlsOutputRefer
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrlsStableUrlsOutputReference) FailoverGroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"failoverGroupName",
 		&returns,
 	)
 	return returns

@@ -229,6 +229,17 @@ func (a *jsiiProxy_AccountSettingV2) validatePutAibiDashboardEmbeddingApprovedDo
 	return nil
 }
 
+func (a *jsiiProxy_AccountSettingV2) validatePutAllowedAppsUserApiScopesParameters(value *AccountSettingV2AllowedAppsUserApiScopes) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AccountSettingV2) validatePutAutomaticClusterUpdateWorkspaceParameters(value *AccountSettingV2AutomaticClusterUpdateWorkspace) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -307,6 +318,17 @@ func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveRestrictWorkspaceAdmins
 }
 
 func (a *jsiiProxy_AccountSettingV2) validatePutIntegerValParameters(value *AccountSettingV2IntegerVal) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AccountSettingV2) validatePutOperationalEmailCustomRecipientParameters(value *AccountSettingV2OperationalEmailCustomRecipient) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

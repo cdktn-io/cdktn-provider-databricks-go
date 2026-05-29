@@ -22,13 +22,13 @@ type SupervisorAgentConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/supervisor_agent#display_name SupervisorAgent#display_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#display_name SupervisorAgent#display_name}.
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/supervisor_agent#description SupervisorAgent#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#description SupervisorAgent#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/supervisor_agent#instructions SupervisorAgent#instructions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#instructions SupervisorAgent#instructions}.
 	Instructions *string `field:"optional" json:"instructions" yaml:"instructions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/supervisor_agent#provider_config SupervisorAgent#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#provider_config SupervisorAgent#provider_config}.
 	ProviderConfig *SupervisorAgentProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

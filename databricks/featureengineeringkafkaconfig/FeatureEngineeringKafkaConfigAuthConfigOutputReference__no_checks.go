@@ -47,6 +47,10 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfigAuthConfigOutputReference) valid
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigAuthConfigOutputReference) validatePutMtlsConfigParameters(value *FeatureEngineeringKafkaConfigAuthConfigMtlsConfig) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringKafkaConfigAuthConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

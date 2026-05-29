@@ -5,9 +5,9 @@ package budget
 
 
 type BudgetFilterTagsValue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/budget#operator Budget#operator}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/budget#operator Budget#operator}.
 	Operator *string `field:"optional" json:"operator" yaml:"operator"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/budget#values Budget#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/budget#values Budget#values}.
 	Values *[]*string `field:"optional" json:"values" yaml:"values"`
 }
 

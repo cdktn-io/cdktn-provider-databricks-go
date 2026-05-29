@@ -123,6 +123,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validatePutPowerBiTaskParameters(valu
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validatePutPythonOperatorTaskParameters(value *JobTaskPythonOperatorTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validatePutPythonWheelTaskParameters(value *JobTaskPythonWheelTask) error {
 	return nil
 }

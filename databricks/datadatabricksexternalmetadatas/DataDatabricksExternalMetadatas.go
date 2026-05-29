@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadatas databricks_external_metadatas}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/external_metadatas databricks_external_metadatas}.
 type DataDatabricksExternalMetadatas interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatas) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
 func NewDataDatabricksExternalMetadatas(scope constructs.Construct, id *string, config *DataDatabricksExternalMetadatasConfig) DataDatabricksExternalMetadatas {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataDatabricksExternalMetadatas(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
 func NewDataDatabricksExternalMetadatas_Override(d DataDatabricksExternalMetadatas, scope constructs.Construct, id *string, config *DataDatabricksExternalMetadatasConfig) {
 	_init_.Initialize()
 

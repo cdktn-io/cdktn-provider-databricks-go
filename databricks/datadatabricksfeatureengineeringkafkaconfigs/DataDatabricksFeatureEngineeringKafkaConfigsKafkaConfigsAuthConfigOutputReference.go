@@ -32,6 +32,8 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigOutputRef
 	Fqn() *string
 	InternalValue() *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfig
 	SetInternalValue(val *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfig)
+	MtlsConfig() DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigMtlsConfigOutputReference
+	MtlsConfigInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +69,8 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigOutputRef
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutMtlsConfig(value *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigMtlsConfig)
+	ResetMtlsConfig()
 	ResetUcServiceCredentialName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthC
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigOutputReference) MtlsConfig() DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigMtlsConfigOutputReference {
+	var returns DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigMtlsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mtlsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigOutputReference) MtlsConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mtlsConfigInput",
 		&returns,
 	)
 	return returns
@@ -451,6 +475,25 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthC
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigOutputReference) PutMtlsConfig(value *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigMtlsConfig) {
+	if err := d.validatePutMtlsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMtlsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigOutputReference) ResetMtlsConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMtlsConfig",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigOutputReference) ResetUcServiceCredentialName() {

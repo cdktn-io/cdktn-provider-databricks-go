@@ -75,6 +75,10 @@ func validateDataDatabricksFeatureEngineeringFeatures_IsTerraformElementParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) validateSetCatalogNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) validateSetLifecycl
 }
 
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) validateSetSchemaNameParameters(val *string) error {
 	return nil
 }
 

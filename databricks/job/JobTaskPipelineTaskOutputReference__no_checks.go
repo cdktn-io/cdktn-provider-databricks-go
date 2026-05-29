@@ -63,11 +63,31 @@ func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) validateSetFullRefreshPar
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) validateSetFullRefreshSelectionParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) validateSetInternalValueParameters(val *JobTaskPipelineTask) error {
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) validateSetParametersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) validateSetPipelineIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) validateSetRefreshFlowSelectionParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) validateSetRefreshSelectionParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskPipelineTaskOutputReference) validateSetResetCheckpointSelectionParameters(val *[]*string) error {
 	return nil
 }
 

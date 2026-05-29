@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret_scope databricks_secret_scope}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_scope databricks_secret_scope}.
 type SecretScope interface {
 	cdktn.TerraformResource
 	BackendType() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_SecretScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret_scope databricks_secret_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_scope databricks_secret_scope} Resource.
 func NewSecretScope(scope constructs.Construct, id *string, config *SecretScopeConfig) SecretScope {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewSecretScope(scope constructs.Construct, id *string, config *SecretScopeC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret_scope databricks_secret_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_scope databricks_secret_scope} Resource.
 func NewSecretScope_Override(s SecretScope, scope constructs.Construct, id *string, config *SecretScopeConfig) {
 	_init_.Initialize()
 

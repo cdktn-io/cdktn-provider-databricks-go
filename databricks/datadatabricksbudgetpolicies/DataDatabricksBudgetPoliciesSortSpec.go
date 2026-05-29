@@ -5,9 +5,9 @@ package datadatabricksbudgetpolicies
 
 
 type DataDatabricksBudgetPoliciesSortSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/budget_policies#descending DataDatabricksBudgetPolicies#descending}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/budget_policies#descending DataDatabricksBudgetPolicies#descending}.
 	Descending interface{} `field:"optional" json:"descending" yaml:"descending"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/budget_policies#field DataDatabricksBudgetPolicies#field}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/budget_policies#field DataDatabricksBudgetPolicies#field}.
 	Field *string `field:"optional" json:"field" yaml:"field"`
 }
 

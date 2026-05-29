@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_branches databricks_postgres_branches}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_branches databricks_postgres_branches}.
 type DataDatabricksPostgresBranches interface {
 	cdktn.TerraformDataSource
 	Branches() DataDatabricksPostgresBranchesBranchesList
@@ -56,6 +56,9 @@ type DataDatabricksPostgresBranches interface {
 	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	ShowDeleted() interface{}
+	SetShowDeleted(val interface{})
+	ShowDeletedInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -93,6 +96,7 @@ type DataDatabricksPostgresBranches interface {
 	ResetOverrideLogicalId()
 	ResetPageSize()
 	ResetProviderConfig()
+	ResetShowDeleted()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -301,6 +305,26 @@ func (j *jsiiProxy_DataDatabricksPostgresBranches) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresBranches) ShowDeleted() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"showDeleted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresBranches) ShowDeletedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"showDeletedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresBranches) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -332,7 +356,7 @@ func (j *jsiiProxy_DataDatabricksPostgresBranches) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_branches databricks_postgres_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_branches databricks_postgres_branches} Data Source.
 func NewDataDatabricksPostgresBranches(scope constructs.Construct, id *string, config *DataDatabricksPostgresBranchesConfig) DataDatabricksPostgresBranches {
 	_init_.Initialize()
 
@@ -350,7 +374,7 @@ func NewDataDatabricksPostgresBranches(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_branches databricks_postgres_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_branches databricks_postgres_branches} Data Source.
 func NewDataDatabricksPostgresBranches_Override(d DataDatabricksPostgresBranches, scope constructs.Construct, id *string, config *DataDatabricksPostgresBranchesConfig) {
 	_init_.Initialize()
 
@@ -425,6 +449,17 @@ func (j *jsiiProxy_DataDatabricksPostgresBranches)SetProvider(val cdktn.Terrafor
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresBranches)SetShowDeleted(val interface{}) {
+	if err := j.validateSetShowDeletedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"showDeleted",
 		val,
 	)
 }
@@ -745,6 +780,14 @@ func (d *jsiiProxy_DataDatabricksPostgresBranches) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresBranches) ResetShowDeleted() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetShowDeleted",
 		nil, // no parameters
 	)
 }

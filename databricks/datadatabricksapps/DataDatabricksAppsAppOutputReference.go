@@ -28,6 +28,12 @@ type DataDatabricksAppsAppOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ComputeMaxInstances() *float64
+	SetComputeMaxInstances(val *float64)
+	ComputeMaxInstancesInput() *float64
+	ComputeMinInstances() *float64
+	SetComputeMinInstances(val *float64)
+	ComputeMinInstancesInput() *float64
 	ComputeSize() *string
 	SetComputeSize(val *string)
 	ComputeSizeInput() *string
@@ -115,6 +121,8 @@ type DataDatabricksAppsAppOutputReference interface {
 	PutResources(value interface{})
 	PutTelemetryExportDestinations(value interface{})
 	ResetBudgetPolicyId()
+	ResetComputeMaxInstances()
+	ResetComputeMinInstances()
 	ResetComputeSize()
 	ResetDescription()
 	ResetGitRepository()
@@ -193,6 +201,46 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) ComplexObjectIsFromSet(
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) ComputeMaxInstances() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"computeMaxInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) ComputeMaxInstancesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"computeMaxInstancesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) ComputeMinInstances() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"computeMinInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) ComputeMinInstancesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"computeMinInstancesInput",
 		&returns,
 	)
 	return returns
@@ -669,6 +717,28 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference)SetComputeMaxInstances(val *float64) {
+	if err := j.validateSetComputeMaxInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"computeMaxInstances",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference)SetComputeMinInstances(val *float64) {
+	if err := j.validateSetComputeMinInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"computeMinInstances",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference)SetComputeSize(val *string) {
 	if err := j.validateSetComputeSizeParameters(val); err != nil {
 		panic(err)
@@ -991,6 +1061,22 @@ func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetBudgetPolicyId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetComputeMaxInstances() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetComputeMaxInstances",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetComputeMinInstances() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetComputeMinInstances",
 		nil, // no parameters
 	)
 }

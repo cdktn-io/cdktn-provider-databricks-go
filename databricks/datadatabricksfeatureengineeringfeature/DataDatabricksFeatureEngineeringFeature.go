@@ -12,9 +12,10 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}.
 type DataDatabricksFeatureEngineeringFeature interface {
 	cdktn.TerraformDataSource
+	CatalogName() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -23,6 +24,8 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
+	CreatedBy() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,6 +51,7 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LineageContext() DataDatabricksFeatureEngineeringFeatureLineageContextOutputReference
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -58,6 +62,7 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	SchemaName() *string
 	Source() DataDatabricksFeatureEngineeringFeatureSourceOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -125,6 +130,16 @@ type jsiiProxy_DataDatabricksFeatureEngineeringFeature struct {
 	internal.Type__cdktnTerraformDataSource
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) CatalogName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) CdktfStack() cdktn.TerraformStack {
 	var returns cdktn.TerraformStack
 	_jsii_.Get(
@@ -150,6 +165,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Count() interface{} 
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) CreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdBy",
 		&returns,
 	)
 	return returns
@@ -285,6 +320,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) LineageContext() Dat
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -330,6 +375,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) RawOverrides() inter
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) SchemaName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaName",
 		&returns,
 	)
 	return returns
@@ -396,7 +451,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TimeWindow() DataDat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringFeature(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeatureConfig) DataDatabricksFeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -414,7 +469,7 @@ func NewDataDatabricksFeatureEngineeringFeature(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringFeature_Override(d DataDatabricksFeatureEngineeringFeature, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 

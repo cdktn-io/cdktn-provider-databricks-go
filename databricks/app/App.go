@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/app databricks_app}.
 type App interface {
 	cdktn.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
@@ -22,6 +22,12 @@ type App interface {
 	BudgetPolicyIdInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	ComputeMaxInstances() *float64
+	SetComputeMaxInstances(val *float64)
+	ComputeMaxInstancesInput() *float64
+	ComputeMinInstances() *float64
+	SetComputeMinInstances(val *float64)
+	ComputeMinInstancesInput() *float64
 	ComputeSize() *string
 	SetComputeSize(val *string)
 	ComputeSizeInput() *string
@@ -161,6 +167,8 @@ type App interface {
 	PutResources(value interface{})
 	PutTelemetryExportDestinations(value interface{})
 	ResetBudgetPolicyId()
+	ResetComputeMaxInstances()
+	ResetComputeMinInstances()
 	ResetComputeSize()
 	ResetDescription()
 	ResetGitRepository()
@@ -246,6 +254,46 @@ func (j *jsiiProxy_App) CdktfStack() cdktn.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) ComputeMaxInstances() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"computeMaxInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) ComputeMaxInstancesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"computeMaxInstancesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) ComputeMinInstances() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"computeMinInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) ComputeMinInstancesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"computeMinInstancesInput",
 		&returns,
 	)
 	return returns
@@ -802,7 +850,7 @@ func (j *jsiiProxy_App) UserApiScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -820,7 +868,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
@@ -838,6 +886,28 @@ func (j *jsiiProxy_App)SetBudgetPolicyId(val *string) {
 	_jsii_.Set(
 		j,
 		"budgetPolicyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_App)SetComputeMaxInstances(val *float64) {
+	if err := j.validateSetComputeMaxInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"computeMaxInstances",
+		val,
+	)
+}
+
+func (j *jsiiProxy_App)SetComputeMinInstances(val *float64) {
+	if err := j.validateSetComputeMinInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"computeMinInstances",
 		val,
 	)
 }
@@ -1388,6 +1458,22 @@ func (a *jsiiProxy_App) ResetBudgetPolicyId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetComputeMaxInstances() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetComputeMaxInstances",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetComputeMinInstances() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetComputeMinInstances",
 		nil, // no parameters
 	)
 }

@@ -5,7 +5,7 @@ package datadatabrickspostgresrole
 
 
 type DataDatabricksPostgresRoleProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_role#workspace_id DataDatabricksPostgresRole#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#workspace_id DataDatabricksPostgresRole#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

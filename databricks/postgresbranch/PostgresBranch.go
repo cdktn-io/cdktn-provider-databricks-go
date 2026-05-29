@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/postgres_branch databricks_postgres_branch}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/postgres_branch databricks_postgres_branch}.
 type PostgresBranch interface {
 	cdktn.TerraformResource
 	BranchId() *string
@@ -63,6 +63,9 @@ type PostgresBranch interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PurgeOnDelete() interface{}
+	SetPurgeOnDelete(val interface{})
+	PurgeOnDeleteInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ReplaceExisting() interface{}
@@ -128,6 +131,7 @@ type PostgresBranch interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetPurgeOnDelete()
 	ResetReplaceExisting()
 	ResetSpec()
 	SynthesizeAttributes() *map[string]interface{}
@@ -357,6 +361,26 @@ func (j *jsiiProxy_PostgresBranch) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresBranch) PurgeOnDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"purgeOnDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresBranch) PurgeOnDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"purgeOnDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresBranch) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -468,7 +492,7 @@ func (j *jsiiProxy_PostgresBranch) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/postgres_branch databricks_postgres_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/postgres_branch databricks_postgres_branch} Resource.
 func NewPostgresBranch(scope constructs.Construct, id *string, config *PostgresBranchConfig) PostgresBranch {
 	_init_.Initialize()
 
@@ -486,7 +510,7 @@ func NewPostgresBranch(scope constructs.Construct, id *string, config *PostgresB
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/postgres_branch databricks_postgres_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/postgres_branch databricks_postgres_branch} Resource.
 func NewPostgresBranch_Override(p PostgresBranch, scope constructs.Construct, id *string, config *PostgresBranchConfig) {
 	_init_.Initialize()
 
@@ -583,6 +607,17 @@ func (j *jsiiProxy_PostgresBranch)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresBranch)SetPurgeOnDelete(val interface{}) {
+	if err := j.validateSetPurgeOnDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"purgeOnDelete",
 		val,
 	)
 }
@@ -985,6 +1020,14 @@ func (p *jsiiProxy_PostgresBranch) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresBranch) ResetPurgeOnDelete() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPurgeOnDelete",
 		nil, // no parameters
 	)
 }

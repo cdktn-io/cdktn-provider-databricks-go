@@ -123,6 +123,10 @@ func (j *jsiiProxy_PostgresBranch) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_PostgresBranch) validateSetPurgeOnDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresBranch) validateSetReplaceExistingParameters(val interface{}) error {
 	return nil
 }

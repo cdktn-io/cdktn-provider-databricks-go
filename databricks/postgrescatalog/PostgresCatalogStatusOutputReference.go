@@ -14,7 +14,6 @@ import (
 type PostgresCatalogStatusOutputReference interface {
 	cdktn.ComplexObject
 	Branch() *string
-	CatalogId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -88,16 +87,6 @@ func (j *jsiiProxy_PostgresCatalogStatusOutputReference) Branch() *string {
 	_jsii_.Get(
 		j,
 		"branch",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PostgresCatalogStatusOutputReference) CatalogId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"catalogId",
 		&returns,
 	)
 	return returns

@@ -1,0 +1,535 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package job
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/job/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
+)
+
+type JobTaskPythonOperatorTaskParametersOutputReference interface {
+	cdktn.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Value() *string
+	SetValue(val *string)
+	ValueInput() *string
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktn.IResolvable
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetName()
+	ResetValue()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(context cdktn.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for JobTaskPythonOperatorTaskParametersOutputReference
+type jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference struct {
+	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"value",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) ValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewJobTaskPythonOperatorTaskParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobTaskPythonOperatorTaskParametersOutputReference {
+	_init_.Initialize()
+
+	if err := validateNewJobTaskPythonOperatorTaskParametersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference{}
+
+	_jsii_.Create(
+		"@cdktn/provider-databricks.job.JobTaskPythonOperatorTaskParametersOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewJobTaskPythonOperatorTaskParametersOutputReference_Override(j JobTaskPythonOperatorTaskParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktn/provider-databricks.job.JobTaskPythonOperatorTaskParametersOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		j,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"value",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		j,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		j,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktn.IResolvable
+
+	_jsii_.Invoke(
+		j,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := j.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		j,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := j.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		j,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := j.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		j,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := j.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		j,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := j.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		j,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := j.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		j,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := j.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		j,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+
+	_jsii_.Invoke(
+		j,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktn.IResolvable
+
+	_jsii_.Invoke(
+		j,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetValue",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
+		panic(err)
+	}
+	var returns interface{}
+
+	_jsii_.Invoke(
+		j,
+		"resolve",
+		[]interface{}{context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskPythonOperatorTaskParametersOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		j,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

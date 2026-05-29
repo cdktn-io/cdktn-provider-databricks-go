@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/alerts_v2 databricks_alerts_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/alerts_v2 databricks_alerts_v2}.
 type DataDatabricksAlertsV2 interface {
 	cdktn.TerraformDataSource
 	Alerts() DataDatabricksAlertsV2AlertsList
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
 func NewDataDatabricksAlertsV2(scope constructs.Construct, id *string, config *DataDatabricksAlertsV2Config) DataDatabricksAlertsV2 {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataDatabricksAlertsV2(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
 func NewDataDatabricksAlertsV2_Override(d DataDatabricksAlertsV2, scope constructs.Construct, id *string, config *DataDatabricksAlertsV2Config) {
 	_init_.Initialize()
 

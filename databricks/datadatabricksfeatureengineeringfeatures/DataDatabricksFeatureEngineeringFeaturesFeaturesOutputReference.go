@@ -13,6 +13,7 @@ import (
 
 type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	cdktn.ComplexObject
+	CatalogName() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -23,6 +24,8 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CreatedAt() *string
+	CreatedBy() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -41,8 +44,10 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	InternalValue() *DataDatabricksFeatureEngineeringFeaturesFeatures
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeatures)
 	LineageContext() DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContextOutputReference
+	Name() *string
 	ProviderConfig() DataDatabricksFeatureEngineeringFeaturesFeaturesProviderConfigOutputReference
 	ProviderConfigInput() interface{}
+	SchemaName() *string
 	Source() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference
 	// Experimental.
 	TerraformAttribute() *string
@@ -95,6 +100,16 @@ type jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference s
 	internal.Type__cdktnComplexObject
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) CatalogName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -110,6 +125,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) CreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdBy",
 		&returns,
 	)
 	return returns
@@ -225,6 +260,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) ProviderConfig() DataDatabricksFeatureEngineeringFeaturesFeaturesProviderConfigOutputReference {
 	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesProviderConfigOutputReference
 	_jsii_.Get(
@@ -240,6 +285,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) SchemaName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaName",
 		&returns,
 	)
 	return returns

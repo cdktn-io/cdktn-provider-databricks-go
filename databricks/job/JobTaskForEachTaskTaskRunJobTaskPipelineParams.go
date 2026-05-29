@@ -5,7 +5,15 @@ package job
 
 
 type JobTaskForEachTaskTaskRunJobTaskPipelineParams struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/job#full_refresh Job#full_refresh}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/job#full_refresh Job#full_refresh}.
 	FullRefresh interface{} `field:"optional" json:"fullRefresh" yaml:"fullRefresh"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/job#full_refresh_selection Job#full_refresh_selection}.
+	FullRefreshSelection *[]*string `field:"optional" json:"fullRefreshSelection" yaml:"fullRefreshSelection"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/job#refresh_flow_selection Job#refresh_flow_selection}.
+	RefreshFlowSelection *[]*string `field:"optional" json:"refreshFlowSelection" yaml:"refreshFlowSelection"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/job#refresh_selection Job#refresh_selection}.
+	RefreshSelection *[]*string `field:"optional" json:"refreshSelection" yaml:"refreshSelection"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/job#reset_checkpoint_selection Job#reset_checkpoint_selection}.
+	ResetCheckpointSelection *[]*string `field:"optional" json:"resetCheckpointSelection" yaml:"resetCheckpointSelection"`
 }
 

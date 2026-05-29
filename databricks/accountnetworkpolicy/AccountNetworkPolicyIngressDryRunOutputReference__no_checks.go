@@ -47,6 +47,10 @@ func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) validateInt
 	return nil
 }
 
+func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) validatePutCrossWorkspaceAccessParameters(value *AccountNetworkPolicyIngressDryRunCrossWorkspaceAccess) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountNetworkPolicyIngressDryRunOutputReference) validatePutPrivateAccessParameters(value *AccountNetworkPolicyIngressDryRunPrivateAccess) error {
 	return nil
 }

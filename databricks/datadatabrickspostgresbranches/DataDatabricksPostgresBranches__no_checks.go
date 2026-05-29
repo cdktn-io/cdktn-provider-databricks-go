@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataDatabricksPostgresBranches) validateSetParentParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresBranches) validateSetShowDeletedParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataDatabricksPostgresBranchesParameters(scope constructs.Construct, id *string, config *DataDatabricksPostgresBranchesConfig) error {
 	return nil
 }

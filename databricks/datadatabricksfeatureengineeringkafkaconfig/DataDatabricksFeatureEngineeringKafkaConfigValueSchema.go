@@ -5,7 +5,7 @@ package datadatabricksfeatureengineeringkafkaconfig
 
 
 type DataDatabricksFeatureEngineeringKafkaConfigValueSchema struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_kafka_config#json_schema DataDatabricksFeatureEngineeringKafkaConfig#json_schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/feature_engineering_kafka_config#json_schema DataDatabricksFeatureEngineeringKafkaConfig#json_schema}.
 	JsonSchema *string `field:"optional" json:"jsonSchema" yaml:"jsonSchema"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/permissions databricks_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/permissions databricks_permissions}.
 type Permissions interface {
 	cdktn.TerraformResource
 	AccessControl() PermissionsAccessControlList
@@ -83,6 +83,9 @@ type Permissions interface {
 	JobId() *string
 	SetJobId(val *string)
 	JobIdInput() *string
+	KnowledgeAssistantId() *string
+	SetKnowledgeAssistantId(val *string)
+	KnowledgeAssistantIdInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -137,6 +140,9 @@ type Permissions interface {
 	SqlQueryId() *string
 	SetSqlQueryId(val *string)
 	SqlQueryIdInput() *string
+	SupervisorAgentId() *string
+	SetSupervisorAgentId(val *string)
+	SupervisorAgentIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -211,6 +217,7 @@ type Permissions interface {
 	ResetId()
 	ResetInstancePoolId()
 	ResetJobId()
+	ResetKnowledgeAssistantId()
 	ResetNotebookId()
 	ResetNotebookPath()
 	ResetObjectType()
@@ -227,6 +234,7 @@ type Permissions interface {
 	ResetSqlDashboardId()
 	ResetSqlEndpointId()
 	ResetSqlQueryId()
+	ResetSupervisorAgentId()
 	ResetVectorSearchEndpointId()
 	ResetWorkspaceFileId()
 	ResetWorkspaceFilePath()
@@ -637,6 +645,26 @@ func (j *jsiiProxy_Permissions) JobIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Permissions) KnowledgeAssistantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"knowledgeAssistantId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) KnowledgeAssistantIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"knowledgeAssistantIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Permissions) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -947,6 +975,26 @@ func (j *jsiiProxy_Permissions) SqlQueryIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Permissions) SupervisorAgentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"supervisorAgentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) SupervisorAgentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"supervisorAgentIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Permissions) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1038,7 +1086,7 @@ func (j *jsiiProxy_Permissions) WorkspaceFilePathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions(scope constructs.Construct, id *string, config *PermissionsConfig) Permissions {
 	_init_.Initialize()
 
@@ -1056,7 +1104,7 @@ func NewPermissions(scope constructs.Construct, id *string, config *PermissionsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions_Override(p Permissions, scope constructs.Construct, id *string, config *PermissionsConfig) {
 	_init_.Initialize()
 
@@ -1259,6 +1307,17 @@ func (j *jsiiProxy_Permissions)SetJobId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Permissions)SetKnowledgeAssistantId(val *string) {
+	if err := j.validateSetKnowledgeAssistantIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"knowledgeAssistantId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Permissions)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1417,6 +1476,17 @@ func (j *jsiiProxy_Permissions)SetSqlQueryId(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlQueryId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Permissions)SetSupervisorAgentId(val *string) {
+	if err := j.validateSetSupervisorAgentIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supervisorAgentId",
 		val,
 	)
 }
@@ -1941,6 +2011,14 @@ func (p *jsiiProxy_Permissions) ResetJobId() {
 	)
 }
 
+func (p *jsiiProxy_Permissions) ResetKnowledgeAssistantId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKnowledgeAssistantId",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Permissions) ResetNotebookId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -2049,6 +2127,14 @@ func (p *jsiiProxy_Permissions) ResetSqlQueryId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSqlQueryId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Permissions) ResetSupervisorAgentId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSupervisorAgentId",
 		nil, // no parameters
 	)
 }

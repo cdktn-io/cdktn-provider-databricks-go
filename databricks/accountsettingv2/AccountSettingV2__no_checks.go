@@ -83,6 +83,10 @@ func (a *jsiiProxy_AccountSettingV2) validatePutAibiDashboardEmbeddingApprovedDo
 	return nil
 }
 
+func (a *jsiiProxy_AccountSettingV2) validatePutAllowedAppsUserApiScopesParameters(value *AccountSettingV2AllowedAppsUserApiScopes) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountSettingV2) validatePutAutomaticClusterUpdateWorkspaceParameters(value *AccountSettingV2AutomaticClusterUpdateWorkspace) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveRestrictWorkspaceAdmins
 }
 
 func (a *jsiiProxy_AccountSettingV2) validatePutIntegerValParameters(value *AccountSettingV2IntegerVal) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountSettingV2) validatePutOperationalEmailCustomRecipientParameters(value *AccountSettingV2OperationalEmailCustomRecipient) error {
 	return nil
 }
 

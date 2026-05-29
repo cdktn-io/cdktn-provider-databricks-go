@@ -31,6 +31,7 @@ type PostgresBranchStatusOutputReference interface {
 	CreationStack() *[]*string
 	CurrentState() *string
 	Default() cdktn.IResolvable
+	DeleteTime() *string
 	ExpireTime() *string
 	// Experimental.
 	Fqn() *string
@@ -39,6 +40,7 @@ type PostgresBranchStatusOutputReference interface {
 	IsProtected() cdktn.IResolvable
 	LogicalSizeBytes() *float64
 	PendingState() *string
+	PurgeTime() *string
 	SourceBranch() *string
 	SourceBranchLsn() *string
 	SourceBranchTime() *string
@@ -150,6 +152,16 @@ func (j *jsiiProxy_PostgresBranchStatusOutputReference) Default() cdktn.IResolva
 	return returns
 }
 
+func (j *jsiiProxy_PostgresBranchStatusOutputReference) DeleteTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresBranchStatusOutputReference) ExpireTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -205,6 +217,16 @@ func (j *jsiiProxy_PostgresBranchStatusOutputReference) PendingState() *string {
 	_jsii_.Get(
 		j,
 		"pendingState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresBranchStatusOutputReference) PurgeTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"purgeTime",
 		&returns,
 	)
 	return returns

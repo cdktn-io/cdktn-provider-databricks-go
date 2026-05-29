@@ -12,11 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
 type DataDatabricksAccountSettingV2 interface {
 	cdktn.TerraformDataSource
 	AibiDashboardEmbeddingAccessPolicy() DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
 	AibiDashboardEmbeddingApprovedDomains() DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference
+	AllowedAppsUserApiScopes() DataDatabricksAccountSettingV2AllowedAppsUserApiScopesOutputReference
 	AutomaticClusterUpdateWorkspace() DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference
 	BooleanVal() DataDatabricksAccountSettingV2BooleanValOutputReference
 	// Experimental.
@@ -33,9 +34,11 @@ type DataDatabricksAccountSettingV2 interface {
 	SetDependsOn(val *[]*string)
 	EffectiveAibiDashboardEmbeddingAccessPolicy() DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference
 	EffectiveAibiDashboardEmbeddingApprovedDomains() DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference
+	EffectiveAllowedAppsUserApiScopes() DataDatabricksAccountSettingV2EffectiveAllowedAppsUserApiScopesOutputReference
 	EffectiveAutomaticClusterUpdateWorkspace() DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	EffectiveBooleanVal() DataDatabricksAccountSettingV2EffectiveBooleanValOutputReference
 	EffectiveIntegerVal() DataDatabricksAccountSettingV2EffectiveIntegerValOutputReference
+	EffectiveOperationalEmailCustomRecipient() DataDatabricksAccountSettingV2EffectiveOperationalEmailCustomRecipientOutputReference
 	EffectivePersonalCompute() DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference
 	EffectiveRestrictWorkspaceAdmins() DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference
 	EffectiveStringVal() DataDatabricksAccountSettingV2EffectiveStringValOutputReference
@@ -57,6 +60,7 @@ type DataDatabricksAccountSettingV2 interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OperationalEmailCustomRecipient() DataDatabricksAccountSettingV2OperationalEmailCustomRecipientOutputReference
 	PersonalCompute() DataDatabricksAccountSettingV2PersonalComputeOutputReference
 	// Experimental.
 	Provider() cdktn.TerraformProvider
@@ -148,6 +152,16 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) AibiDashboardEmbeddingApprove
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) AllowedAppsUserApiScopes() DataDatabricksAccountSettingV2AllowedAppsUserApiScopesOutputReference {
+	var returns DataDatabricksAccountSettingV2AllowedAppsUserApiScopesOutputReference
+	_jsii_.Get(
+		j,
+		"allowedAppsUserApiScopes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) AutomaticClusterUpdateWorkspace() DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference {
 	var returns DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference
 	_jsii_.Get(
@@ -228,6 +242,16 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveAibiDashboardEmbeddi
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveAllowedAppsUserApiScopes() DataDatabricksAccountSettingV2EffectiveAllowedAppsUserApiScopesOutputReference {
+	var returns DataDatabricksAccountSettingV2EffectiveAllowedAppsUserApiScopesOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveAllowedAppsUserApiScopes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveAutomaticClusterUpdateWorkspace() DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference {
 	var returns DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	_jsii_.Get(
@@ -253,6 +277,16 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveIntegerVal() DataDat
 	_jsii_.Get(
 		j,
 		"effectiveIntegerVal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveOperationalEmailCustomRecipient() DataDatabricksAccountSettingV2EffectiveOperationalEmailCustomRecipientOutputReference {
+	var returns DataDatabricksAccountSettingV2EffectiveOperationalEmailCustomRecipientOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveOperationalEmailCustomRecipient",
 		&returns,
 	)
 	return returns
@@ -368,6 +402,16 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) OperationalEmailCustomRecipient() DataDatabricksAccountSettingV2OperationalEmailCustomRecipientOutputReference {
+	var returns DataDatabricksAccountSettingV2OperationalEmailCustomRecipientOutputReference
+	_jsii_.Get(
+		j,
+		"operationalEmailCustomRecipient",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) PersonalCompute() DataDatabricksAccountSettingV2PersonalComputeOutputReference {
 	var returns DataDatabricksAccountSettingV2PersonalComputeOutputReference
 	_jsii_.Get(
@@ -449,7 +493,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) DataDatabricksAccountSettingV2 {
 	_init_.Initialize()
 
@@ -467,7 +511,7 @@ func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2_Override(d DataDatabricksAccountSettingV2, scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) {
 	_init_.Initialize()
 
