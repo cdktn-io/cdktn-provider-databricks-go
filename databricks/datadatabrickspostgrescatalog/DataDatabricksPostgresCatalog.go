@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_catalog databricks_postgres_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_catalog databricks_postgres_catalog}.
 type DataDatabricksPostgresCatalog interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataDatabricksPostgresCatalog) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_catalog databricks_postgres_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_catalog databricks_postgres_catalog} Data Source.
 func NewDataDatabricksPostgresCatalog(scope constructs.Construct, id *string, config *DataDatabricksPostgresCatalogConfig) DataDatabricksPostgresCatalog {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataDatabricksPostgresCatalog(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_catalog databricks_postgres_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_catalog databricks_postgres_catalog} Data Source.
 func NewDataDatabricksPostgresCatalog_Override(d DataDatabricksPostgresCatalog, scope constructs.Construct, id *string, config *DataDatabricksPostgresCatalogConfig) {
 	_init_.Initialize()
 

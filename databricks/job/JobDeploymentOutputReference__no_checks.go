@@ -59,6 +59,10 @@ func (j *jsiiProxy_JobDeploymentOutputReference) validateSetComplexObjectIsFromS
 	return nil
 }
 
+func (j *jsiiProxy_JobDeploymentOutputReference) validateSetDeploymentIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobDeploymentOutputReference) validateSetInternalValueParameters(val *JobDeployment) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_JobDeploymentOutputReference) validateSetTerraformAttributePa
 }
 
 func (j *jsiiProxy_JobDeploymentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobDeploymentOutputReference) validateSetVersionIdParameters(val *string) error {
 	return nil
 }
 

@@ -5,7 +5,7 @@ package job
 
 
 type JobJobClusterNewClusterDriverNodeTypeFlexibility struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}.
 	AlternateNodeTypeIds *[]*string `field:"optional" json:"alternateNodeTypeIds" yaml:"alternateNodeTypeIds"`
 }
 

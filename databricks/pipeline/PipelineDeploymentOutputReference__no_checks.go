@@ -59,6 +59,10 @@ func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
+func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetDeploymentIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetInternalValueParameters(val *PipelineDeployment) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetTerraformAttrib
 }
 
 func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetVersionIdParameters(val *string) error {
 	return nil
 }
 

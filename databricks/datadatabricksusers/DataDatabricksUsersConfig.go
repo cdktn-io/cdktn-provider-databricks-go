@@ -22,15 +22,15 @@ type DataDatabricksUsersConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/users#api DataDatabricksUsers#api}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/users#api DataDatabricksUsers#api}.
 	Api *string `field:"optional" json:"api" yaml:"api"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/users#extra_attributes DataDatabricksUsers#extra_attributes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/users#extra_attributes DataDatabricksUsers#extra_attributes}.
 	ExtraAttributes *string `field:"optional" json:"extraAttributes" yaml:"extraAttributes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/users#filter DataDatabricksUsers#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/users#filter DataDatabricksUsers#filter}.
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/users#provider_config DataDatabricksUsers#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/users#provider_config DataDatabricksUsers#provider_config}.
 	ProviderConfig *DataDatabricksUsersProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/users#users DataDatabricksUsers#users}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/users#users DataDatabricksUsers#users}.
 	Users interface{} `field:"optional" json:"users" yaml:"users"`
 }
 

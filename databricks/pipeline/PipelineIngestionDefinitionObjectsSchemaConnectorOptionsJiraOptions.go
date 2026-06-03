@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}.
 	IncludeJiraSpaces *[]*string `field:"optional" json:"includeJiraSpaces" yaml:"includeJiraSpaces"`
 }
 

@@ -28,6 +28,9 @@ type JobDeploymentOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeploymentId() *string
+	SetDeploymentId(val *string)
+	DeploymentIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *JobDeployment
@@ -46,6 +49,9 @@ type JobDeploymentOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	VersionId() *string
+	SetVersionId(val *string)
+	VersionIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,7 +76,9 @@ type JobDeploymentOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDeploymentId()
 	ResetMetadataFilePath()
+	ResetVersionId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -111,6 +119,26 @@ func (j *jsiiProxy_JobDeploymentOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobDeploymentOutputReference) DeploymentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobDeploymentOutputReference) DeploymentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentIdInput",
 		&returns,
 	)
 	return returns
@@ -196,6 +224,26 @@ func (j *jsiiProxy_JobDeploymentOutputReference) TerraformResource() cdktn.IInte
 	return returns
 }
 
+func (j *jsiiProxy_JobDeploymentOutputReference) VersionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobDeploymentOutputReference) VersionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewJobDeploymentOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobDeploymentOutputReference {
 	_init_.Initialize()
@@ -242,6 +290,17 @@ func (j *jsiiProxy_JobDeploymentOutputReference)SetComplexObjectIsFromSet(val *b
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobDeploymentOutputReference)SetDeploymentId(val *string) {
+	if err := j.validateSetDeploymentIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploymentId",
 		val,
 	)
 }
@@ -297,6 +356,17 @@ func (j *jsiiProxy_JobDeploymentOutputReference)SetTerraformResource(val cdktn.I
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobDeploymentOutputReference)SetVersionId(val *string) {
+	if err := j.validateSetVersionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"versionId",
 		val,
 	)
 }
@@ -487,10 +557,26 @@ func (j *jsiiProxy_JobDeploymentOutputReference) InterpolationForAttribute(terra
 	return returns
 }
 
+func (j *jsiiProxy_JobDeploymentOutputReference) ResetDeploymentId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDeploymentId",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_JobDeploymentOutputReference) ResetMetadataFilePath() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetMetadataFilePath",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobDeploymentOutputReference) ResetVersionId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetVersionId",
 		nil, // no parameters
 	)
 }

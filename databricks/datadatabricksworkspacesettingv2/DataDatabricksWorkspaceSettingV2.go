@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2}.
 type DataDatabricksWorkspaceSettingV2 interface {
 	cdktn.TerraformDataSource
 	AibiDashboardEmbeddingAccessPolicy() DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -22,6 +22,7 @@ type DataDatabricksWorkspaceSettingV2 interface {
 	BooleanVal() DataDatabricksWorkspaceSettingV2BooleanValOutputReference
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CollaborationPlatformConnectivity() DataDatabricksWorkspaceSettingV2CollaborationPlatformConnectivityOutputReference
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -37,6 +38,7 @@ type DataDatabricksWorkspaceSettingV2 interface {
 	EffectiveAllowedAppsUserApiScopes() DataDatabricksWorkspaceSettingV2EffectiveAllowedAppsUserApiScopesOutputReference
 	EffectiveAutomaticClusterUpdateWorkspace() DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	EffectiveBooleanVal() DataDatabricksWorkspaceSettingV2EffectiveBooleanValOutputReference
+	EffectiveCollaborationPlatformConnectivity() DataDatabricksWorkspaceSettingV2EffectiveCollaborationPlatformConnectivityOutputReference
 	EffectiveIntegerVal() DataDatabricksWorkspaceSettingV2EffectiveIntegerValOutputReference
 	EffectiveOperationalEmailCustomRecipient() DataDatabricksWorkspaceSettingV2EffectiveOperationalEmailCustomRecipientOutputReference
 	EffectivePersonalCompute() DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference
@@ -196,6 +198,16 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) CdktfStack() cdktn.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) CollaborationPlatformConnectivity() DataDatabricksWorkspaceSettingV2CollaborationPlatformConnectivityOutputReference {
+	var returns DataDatabricksWorkspaceSettingV2CollaborationPlatformConnectivityOutputReference
+	_jsii_.Get(
+		j,
+		"collaborationPlatformConnectivity",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -271,6 +283,16 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) EffectiveBooleanVal() DataD
 	_jsii_.Get(
 		j,
 		"effectiveBooleanVal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) EffectiveCollaborationPlatformConnectivity() DataDatabricksWorkspaceSettingV2EffectiveCollaborationPlatformConnectivityOutputReference {
+	var returns DataDatabricksWorkspaceSettingV2EffectiveCollaborationPlatformConnectivityOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveCollaborationPlatformConnectivity",
 		&returns,
 	)
 	return returns
@@ -517,7 +539,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
 func NewDataDatabricksWorkspaceSettingV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceSettingV2Config) DataDatabricksWorkspaceSettingV2 {
 	_init_.Initialize()
 
@@ -535,7 +557,7 @@ func NewDataDatabricksWorkspaceSettingV2(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
 func NewDataDatabricksWorkspaceSettingV2_Override(d DataDatabricksWorkspaceSettingV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceSettingV2Config) {
 	_init_.Initialize()
 

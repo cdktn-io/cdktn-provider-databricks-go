@@ -22,9 +22,9 @@ type DataDatabricksPostgresProjectConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_project#name DataDatabricksPostgresProject#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_project#name DataDatabricksPostgresProject#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_project#provider_config DataDatabricksPostgresProject#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_project#provider_config DataDatabricksPostgresProject#provider_config}.
 	ProviderConfig *DataDatabricksPostgresProjectProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsDeploymentOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsDeploymentOutputReference) validateSetDeploymentIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsDeploymentOutputReference) validateSetInternalValueParameters(val *DataDatabricksJobJobSettingsSettingsDeployment) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsDeploymentOutputReference
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsDeploymentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsDeploymentOutputReference) validateSetVersionIdParameters(val *string) error {
 	return nil
 }
 

@@ -166,6 +166,14 @@ func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
+func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetDeploymentIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetInternalValueParameters(val *PipelineDeployment) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -199,6 +207,14 @@ func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetTerraformAttrib
 }
 
 func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PipelineDeploymentOutputReference) validateSetVersionIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

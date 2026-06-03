@@ -5,11 +5,11 @@ package qualitymonitorv2
 
 
 type QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}.
 	ColumnNames *[]*string `field:"optional" json:"columnNames" yaml:"columnNames"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/quality_monitor_v2#lower_bound QualityMonitorV2#lower_bound}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/quality_monitor_v2#lower_bound QualityMonitorV2#lower_bound}.
 	LowerBound *float64 `field:"optional" json:"lowerBound" yaml:"lowerBound"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}.
 	UpperBound *float64 `field:"optional" json:"upperBound" yaml:"upperBound"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/global_init_script databricks_global_init_script}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/global_init_script databricks_global_init_script}.
 type GlobalInitScript interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_GlobalInitScript) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/global_init_script databricks_global_init_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/global_init_script databricks_global_init_script} Resource.
 func NewGlobalInitScript(scope constructs.Construct, id *string, config *GlobalInitScriptConfig) GlobalInitScript {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewGlobalInitScript(scope constructs.Construct, id *string, config *GlobalI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/global_init_script databricks_global_init_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/global_init_script databricks_global_init_script} Resource.
 func NewGlobalInitScript_Override(g GlobalInitScript, scope constructs.Construct, id *string, config *GlobalInitScriptConfig) {
 	_init_.Initialize()
 

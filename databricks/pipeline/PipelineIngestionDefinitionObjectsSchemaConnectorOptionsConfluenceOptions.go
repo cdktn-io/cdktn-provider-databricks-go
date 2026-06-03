@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}.
 	IncludeConfluenceSpaces *[]*string `field:"optional" json:"includeConfluenceSpaces" yaml:"includeConfluenceSpaces"`
 }
 

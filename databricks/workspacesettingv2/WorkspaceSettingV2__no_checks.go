@@ -95,6 +95,10 @@ func (w *jsiiProxy_WorkspaceSettingV2) validatePutBooleanValParameters(value *Wo
 	return nil
 }
 
+func (w *jsiiProxy_WorkspaceSettingV2) validatePutCollaborationPlatformConnectivityParameters(value *WorkspaceSettingV2CollaborationPlatformConnectivity) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	return nil
 }

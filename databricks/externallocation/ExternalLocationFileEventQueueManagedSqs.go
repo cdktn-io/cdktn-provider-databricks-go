@@ -5,7 +5,7 @@ package externallocation
 
 
 type ExternalLocationFileEventQueueManagedSqs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 	QueueUrl *string `field:"optional" json:"queueUrl" yaml:"queueUrl"`
 }
 

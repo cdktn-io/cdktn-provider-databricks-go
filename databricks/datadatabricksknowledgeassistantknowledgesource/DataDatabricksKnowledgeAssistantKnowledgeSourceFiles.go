@@ -5,7 +5,7 @@ package datadatabricksknowledgeassistantknowledgesource
 
 
 type DataDatabricksKnowledgeAssistantKnowledgeSourceFiles struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/knowledge_assistant_knowledge_source#path DataDatabricksKnowledgeAssistantKnowledgeSource#path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/knowledge_assistant_knowledge_source#path DataDatabricksKnowledgeAssistantKnowledgeSource#path}.
 	Path *string `field:"required" json:"path" yaml:"path"`
 }
 

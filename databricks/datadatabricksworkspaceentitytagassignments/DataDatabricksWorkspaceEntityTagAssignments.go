@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments}.
 type DataDatabricksWorkspaceEntityTagAssignments interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignments) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments} Data Source.
 func NewDataDatabricksWorkspaceEntityTagAssignments(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceEntityTagAssignmentsConfig) DataDatabricksWorkspaceEntityTagAssignments {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataDatabricksWorkspaceEntityTagAssignments(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments} Data Source.
 func NewDataDatabricksWorkspaceEntityTagAssignments_Override(d DataDatabricksWorkspaceEntityTagAssignments, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceEntityTagAssignmentsConfig) {
 	_init_.Initialize()
 

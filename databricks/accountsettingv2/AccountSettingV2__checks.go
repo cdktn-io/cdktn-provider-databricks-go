@@ -262,6 +262,17 @@ func (a *jsiiProxy_AccountSettingV2) validatePutBooleanValParameters(value *Acco
 	return nil
 }
 
+func (a *jsiiProxy_AccountSettingV2) validatePutCollaborationPlatformConnectivityParameters(value *AccountSettingV2CollaborationPlatformConnectivity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

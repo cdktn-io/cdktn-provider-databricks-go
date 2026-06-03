@@ -95,6 +95,10 @@ func (a *jsiiProxy_AccountSettingV2) validatePutBooleanValParameters(value *Acco
 	return nil
 }
 
+func (a *jsiiProxy_AccountSettingV2) validatePutCollaborationPlatformConnectivityParameters(value *AccountSettingV2CollaborationPlatformConnectivity) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	return nil
 }

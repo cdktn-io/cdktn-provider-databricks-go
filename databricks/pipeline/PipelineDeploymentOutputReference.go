@@ -28,6 +28,9 @@ type PipelineDeploymentOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeploymentId() *string
+	SetDeploymentId(val *string)
+	DeploymentIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PipelineDeployment
@@ -46,6 +49,9 @@ type PipelineDeploymentOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	VersionId() *string
+	SetVersionId(val *string)
+	VersionIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,7 +76,9 @@ type PipelineDeploymentOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDeploymentId()
 	ResetMetadataFilePath()
+	ResetVersionId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -111,6 +119,26 @@ func (j *jsiiProxy_PipelineDeploymentOutputReference) CreationStack() *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineDeploymentOutputReference) DeploymentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineDeploymentOutputReference) DeploymentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentIdInput",
 		&returns,
 	)
 	return returns
@@ -196,6 +224,26 @@ func (j *jsiiProxy_PipelineDeploymentOutputReference) TerraformResource() cdktn.
 	return returns
 }
 
+func (j *jsiiProxy_PipelineDeploymentOutputReference) VersionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineDeploymentOutputReference) VersionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewPipelineDeploymentOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PipelineDeploymentOutputReference {
 	_init_.Initialize()
@@ -242,6 +290,17 @@ func (j *jsiiProxy_PipelineDeploymentOutputReference)SetComplexObjectIsFromSet(v
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineDeploymentOutputReference)SetDeploymentId(val *string) {
+	if err := j.validateSetDeploymentIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploymentId",
 		val,
 	)
 }
@@ -297,6 +356,17 @@ func (j *jsiiProxy_PipelineDeploymentOutputReference)SetTerraformResource(val cd
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineDeploymentOutputReference)SetVersionId(val *string) {
+	if err := j.validateSetVersionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"versionId",
 		val,
 	)
 }
@@ -487,10 +557,26 @@ func (p *jsiiProxy_PipelineDeploymentOutputReference) InterpolationForAttribute(
 	return returns
 }
 
+func (p *jsiiProxy_PipelineDeploymentOutputReference) ResetDeploymentId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDeploymentId",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipelineDeploymentOutputReference) ResetMetadataFilePath() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetMetadataFilePath",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineDeploymentOutputReference) ResetVersionId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetVersionId",
 		nil, // no parameters
 	)
 }

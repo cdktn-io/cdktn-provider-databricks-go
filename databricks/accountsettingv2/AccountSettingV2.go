@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
 type AccountSettingV2 interface {
 	cdktn.TerraformResource
 	AibiDashboardEmbeddingAccessPolicy() AccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -27,6 +27,8 @@ type AccountSettingV2 interface {
 	BooleanValInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CollaborationPlatformConnectivity() AccountSettingV2CollaborationPlatformConnectivityOutputReference
+	CollaborationPlatformConnectivityInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -49,6 +51,7 @@ type AccountSettingV2 interface {
 	EffectiveAutomaticClusterUpdateWorkspace() AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	EffectiveAutomaticClusterUpdateWorkspaceInput() interface{}
 	EffectiveBooleanVal() AccountSettingV2EffectiveBooleanValOutputReference
+	EffectiveCollaborationPlatformConnectivity() AccountSettingV2EffectiveCollaborationPlatformConnectivityOutputReference
 	EffectiveIntegerVal() AccountSettingV2EffectiveIntegerValOutputReference
 	EffectiveOperationalEmailCustomRecipient() AccountSettingV2EffectiveOperationalEmailCustomRecipientOutputReference
 	EffectivePersonalCompute() AccountSettingV2EffectivePersonalComputeOutputReference
@@ -147,6 +150,7 @@ type AccountSettingV2 interface {
 	PutAllowedAppsUserApiScopes(value *AccountSettingV2AllowedAppsUserApiScopes)
 	PutAutomaticClusterUpdateWorkspace(value *AccountSettingV2AutomaticClusterUpdateWorkspace)
 	PutBooleanVal(value *AccountSettingV2BooleanVal)
+	PutCollaborationPlatformConnectivity(value *AccountSettingV2CollaborationPlatformConnectivity)
 	PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy)
 	PutEffectiveAibiDashboardEmbeddingApprovedDomains(value *AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains)
 	PutEffectiveAutomaticClusterUpdateWorkspace(value *AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace)
@@ -162,6 +166,7 @@ type AccountSettingV2 interface {
 	ResetAllowedAppsUserApiScopes()
 	ResetAutomaticClusterUpdateWorkspace()
 	ResetBooleanVal()
+	ResetCollaborationPlatformConnectivity()
 	ResetEffectiveAibiDashboardEmbeddingAccessPolicy()
 	ResetEffectiveAibiDashboardEmbeddingApprovedDomains()
 	ResetEffectiveAutomaticClusterUpdateWorkspace()
@@ -313,6 +318,26 @@ func (j *jsiiProxy_AccountSettingV2) CdktfStack() cdktn.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_AccountSettingV2) CollaborationPlatformConnectivity() AccountSettingV2CollaborationPlatformConnectivityOutputReference {
+	var returns AccountSettingV2CollaborationPlatformConnectivityOutputReference
+	_jsii_.Get(
+		j,
+		"collaborationPlatformConnectivity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSettingV2) CollaborationPlatformConnectivityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"collaborationPlatformConnectivityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountSettingV2) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -428,6 +453,16 @@ func (j *jsiiProxy_AccountSettingV2) EffectiveBooleanVal() AccountSettingV2Effec
 	_jsii_.Get(
 		j,
 		"effectiveBooleanVal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSettingV2) EffectiveCollaborationPlatformConnectivity() AccountSettingV2EffectiveCollaborationPlatformConnectivityOutputReference {
+	var returns AccountSettingV2EffectiveCollaborationPlatformConnectivityOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveCollaborationPlatformConnectivity",
 		&returns,
 	)
 	return returns
@@ -734,7 +769,7 @@ func (j *jsiiProxy_AccountSettingV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
 func NewAccountSettingV2(scope constructs.Construct, id *string, config *AccountSettingV2Config) AccountSettingV2 {
 	_init_.Initialize()
 
@@ -752,7 +787,7 @@ func NewAccountSettingV2(scope constructs.Construct, id *string, config *Account
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
 func NewAccountSettingV2_Override(a AccountSettingV2, scope constructs.Construct, id *string, config *AccountSettingV2Config) {
 	_init_.Initialize()
 
@@ -1250,6 +1285,17 @@ func (a *jsiiProxy_AccountSettingV2) PutBooleanVal(value *AccountSettingV2Boolea
 	)
 }
 
+func (a *jsiiProxy_AccountSettingV2) PutCollaborationPlatformConnectivity(value *AccountSettingV2CollaborationPlatformConnectivity) {
+	if err := a.validatePutCollaborationPlatformConnectivityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCollaborationPlatformConnectivity",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccountSettingV2) PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) {
 	if err := a.validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value); err != nil {
 		panic(err)
@@ -1396,6 +1442,14 @@ func (a *jsiiProxy_AccountSettingV2) ResetBooleanVal() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBooleanVal",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountSettingV2) ResetCollaborationPlatformConnectivity() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCollaborationPlatformConnectivity",
 		nil, // no parameters
 	)
 }

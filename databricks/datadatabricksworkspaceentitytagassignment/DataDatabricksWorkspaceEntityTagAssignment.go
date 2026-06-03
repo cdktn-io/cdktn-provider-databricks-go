@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment}.
 type DataDatabricksWorkspaceEntityTagAssignment interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceEntityTagAssignment) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Data Source.
 func NewDataDatabricksWorkspaceEntityTagAssignment(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceEntityTagAssignmentConfig) DataDatabricksWorkspaceEntityTagAssignment {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataDatabricksWorkspaceEntityTagAssignment(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Data Source.
 func NewDataDatabricksWorkspaceEntityTagAssignment_Override(d DataDatabricksWorkspaceEntityTagAssignment, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceEntityTagAssignmentConfig) {
 	_init_.Initialize()
 

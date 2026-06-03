@@ -22,27 +22,27 @@ type SupervisorAgentToolConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#parent SupervisorAgentTool#parent}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#parent SupervisorAgentTool#parent}.
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#tool_id SupervisorAgentTool#tool_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#tool_id SupervisorAgentTool#tool_id}.
 	ToolId *string `field:"required" json:"toolId" yaml:"toolId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#tool_type SupervisorAgentTool#tool_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#tool_type SupervisorAgentTool#tool_type}.
 	ToolType *string `field:"required" json:"toolType" yaml:"toolType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#app SupervisorAgentTool#app}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#app SupervisorAgentTool#app}.
 	App *SupervisorAgentToolApp `field:"optional" json:"app" yaml:"app"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#description SupervisorAgentTool#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#description SupervisorAgentTool#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#genie_space SupervisorAgentTool#genie_space}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#genie_space SupervisorAgentTool#genie_space}.
 	GenieSpace *SupervisorAgentToolGenieSpace `field:"optional" json:"genieSpace" yaml:"genieSpace"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#knowledge_assistant SupervisorAgentTool#knowledge_assistant}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#knowledge_assistant SupervisorAgentTool#knowledge_assistant}.
 	KnowledgeAssistant *SupervisorAgentToolKnowledgeAssistant `field:"optional" json:"knowledgeAssistant" yaml:"knowledgeAssistant"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#provider_config SupervisorAgentTool#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#provider_config SupervisorAgentTool#provider_config}.
 	ProviderConfig *SupervisorAgentToolProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#uc_connection SupervisorAgentTool#uc_connection}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#uc_connection SupervisorAgentTool#uc_connection}.
 	UcConnection *SupervisorAgentToolUcConnection `field:"optional" json:"ucConnection" yaml:"ucConnection"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#uc_function SupervisorAgentTool#uc_function}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#uc_function SupervisorAgentTool#uc_function}.
 	UcFunction *SupervisorAgentToolUcFunction `field:"optional" json:"ucFunction" yaml:"ucFunction"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent_tool#volume SupervisorAgentTool#volume}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent_tool#volume SupervisorAgentTool#volume}.
 	Volume *SupervisorAgentToolVolume `field:"optional" json:"volume" yaml:"volume"`
 }
 

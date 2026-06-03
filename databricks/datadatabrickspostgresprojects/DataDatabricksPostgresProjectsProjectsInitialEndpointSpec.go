@@ -5,7 +5,7 @@ package datadatabrickspostgresprojects
 
 
 type DataDatabricksPostgresProjectsProjectsInitialEndpointSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_projects#group DataDatabricksPostgresProjects#group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_projects#group DataDatabricksPostgresProjects#group}.
 	Group *DataDatabricksPostgresProjectsProjectsInitialEndpointSpecGroup `field:"optional" json:"group" yaml:"group"`
 }
 
