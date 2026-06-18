@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/endpoint databricks_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/endpoint databricks_endpoint}.
 type DataDatabricksEndpoint interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataDatabricksEndpoint) UseCase() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/endpoint databricks_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/endpoint databricks_endpoint} Data Source.
 func NewDataDatabricksEndpoint(scope constructs.Construct, id *string, config *DataDatabricksEndpointConfig) DataDatabricksEndpoint {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataDatabricksEndpoint(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/endpoint databricks_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/endpoint databricks_endpoint} Data Source.
 func NewDataDatabricksEndpoint_Override(d DataDatabricksEndpoint, scope constructs.Construct, id *string, config *DataDatabricksEndpointConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_index databricks_vector_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_index databricks_vector_search_index}.
 type VectorSearchIndex interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -36,6 +36,9 @@ type VectorSearchIndex interface {
 	SetDependsOn(val *[]*string)
 	DirectAccessIndexSpec() VectorSearchIndexDirectAccessIndexSpecOutputReference
 	DirectAccessIndexSpecInput() *VectorSearchIndexDirectAccessIndexSpec
+	EndpointId() *string
+	SetEndpointId(val *string)
+	EndpointIdInput() *string
 	EndpointName() *string
 	SetEndpointName(val *string)
 	EndpointNameInput() *string
@@ -138,6 +141,7 @@ type VectorSearchIndex interface {
 	PutTimeouts(value *VectorSearchIndexTimeouts)
 	ResetDeltaSyncIndexSpec()
 	ResetDirectAccessIndexSpec()
+	ResetEndpointId()
 	ResetId()
 	ResetIndexSubtype()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -267,6 +271,26 @@ func (j *jsiiProxy_VectorSearchIndex) DirectAccessIndexSpecInput() *VectorSearch
 	_jsii_.Get(
 		j,
 		"directAccessIndexSpecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndex) EndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndex) EndpointIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointIdInput",
 		&returns,
 	)
 	return returns
@@ -553,7 +577,7 @@ func (j *jsiiProxy_VectorSearchIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
 func NewVectorSearchIndex(scope constructs.Construct, id *string, config *VectorSearchIndexConfig) VectorSearchIndex {
 	_init_.Initialize()
 
@@ -571,7 +595,7 @@ func NewVectorSearchIndex(scope constructs.Construct, id *string, config *Vector
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_index databricks_vector_search_index} Resource.
 func NewVectorSearchIndex_Override(v VectorSearchIndex, scope constructs.Construct, id *string, config *VectorSearchIndexConfig) {
 	_init_.Initialize()
 
@@ -608,6 +632,17 @@ func (j *jsiiProxy_VectorSearchIndex)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchIndex)SetEndpointId(val *string) {
+	if err := j.validateSetEndpointIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointId",
 		val,
 	)
 }
@@ -1125,6 +1160,14 @@ func (v *jsiiProxy_VectorSearchIndex) ResetDirectAccessIndexSpec() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetDirectAccessIndexSpec",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VectorSearchIndex) ResetEndpointId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetEndpointId",
 		nil, // no parameters
 	)
 }

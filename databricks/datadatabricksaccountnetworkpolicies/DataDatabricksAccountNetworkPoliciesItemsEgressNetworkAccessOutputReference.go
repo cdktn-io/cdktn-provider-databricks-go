@@ -13,6 +13,8 @@ import (
 
 type DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference interface {
 	cdktn.ComplexObject
+	AllowedDatabricksDestinations() DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinationsList
+	AllowedDatabricksDestinationsInput() interface{}
 	AllowedInternetDestinations() DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsList
 	AllowedInternetDestinationsInput() interface{}
 	AllowedStorageDestinations() DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsList
@@ -75,10 +77,12 @@ type DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAllowedDatabricksDestinations(value interface{})
 	PutAllowedInternetDestinations(value interface{})
 	PutAllowedStorageDestinations(value interface{})
 	PutBlockedInternetDestinations(value interface{})
 	PutPolicyEnforcement(value *DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement)
+	ResetAllowedDatabricksDestinations()
 	ResetAllowedInternetDestinations()
 	ResetAllowedStorageDestinations()
 	ResetBlockedInternetDestinations()
@@ -96,6 +100,26 @@ type DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference
 // The jsii proxy struct for DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference
 type jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference) AllowedDatabricksDestinations() DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinationsList {
+	var returns DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinationsList
+	_jsii_.Get(
+		j,
+		"allowedDatabricksDestinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference) AllowedDatabricksDestinationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedDatabricksDestinationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference) AllowedInternetDestinations() DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsList {
@@ -548,6 +572,17 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessO
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference) PutAllowedDatabricksDestinations(value interface{}) {
+	if err := d.validatePutAllowedDatabricksDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAllowedDatabricksDestinations",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference) PutAllowedInternetDestinations(value interface{}) {
 	if err := d.validatePutAllowedInternetDestinationsParameters(value); err != nil {
 		panic(err)
@@ -589,6 +624,14 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessO
 		d,
 		"putPolicyEnforcement",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference) ResetAllowedDatabricksDestinations() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAllowedDatabricksDestinations",
+		nil, // no parameters
 	)
 }
 

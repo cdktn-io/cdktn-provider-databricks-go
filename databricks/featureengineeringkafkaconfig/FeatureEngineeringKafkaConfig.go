@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}.
 type FeatureEngineeringKafkaConfig interface {
 	cdktn.TerraformResource
 	AuthConfig() FeatureEngineeringKafkaConfigAuthConfigOutputReference
@@ -49,6 +49,8 @@ type FeatureEngineeringKafkaConfig interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	IngestionConfig() FeatureEngineeringKafkaConfigIngestionConfigOutputReference
+	IngestionConfigInput() interface{}
 	KeySchema() FeatureEngineeringKafkaConfigKeySchemaOutputReference
 	KeySchemaInput() interface{}
 	// Experimental.
@@ -125,12 +127,14 @@ type FeatureEngineeringKafkaConfig interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthConfig(value *FeatureEngineeringKafkaConfigAuthConfig)
 	PutBackfillSource(value *FeatureEngineeringKafkaConfigBackfillSource)
+	PutIngestionConfig(value *FeatureEngineeringKafkaConfigIngestionConfig)
 	PutKeySchema(value *FeatureEngineeringKafkaConfigKeySchema)
 	PutProviderConfig(value *FeatureEngineeringKafkaConfigProviderConfig)
 	PutSubscriptionMode(value *FeatureEngineeringKafkaConfigSubscriptionMode)
 	PutValueSchema(value *FeatureEngineeringKafkaConfigValueSchema)
 	ResetBackfillSource()
 	ResetExtraOptions()
+	ResetIngestionConfig()
 	ResetKeySchema()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -324,6 +328,26 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) IngestionConfig() FeatureEngineeringKafkaConfigIngestionConfigOutputReference {
+	var returns FeatureEngineeringKafkaConfigIngestionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"ingestionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfig) IngestionConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ingestionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringKafkaConfig) KeySchema() FeatureEngineeringKafkaConfigKeySchemaOutputReference {
 	var returns FeatureEngineeringKafkaConfigKeySchemaOutputReference
 	_jsii_.Get(
@@ -495,7 +519,7 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfig) ValueSchemaInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
 func NewFeatureEngineeringKafkaConfig(scope constructs.Construct, id *string, config *FeatureEngineeringKafkaConfigConfig) FeatureEngineeringKafkaConfig {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewFeatureEngineeringKafkaConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource.
 func NewFeatureEngineeringKafkaConfig_Override(f FeatureEngineeringKafkaConfig, scope constructs.Construct, id *string, config *FeatureEngineeringKafkaConfigConfig) {
 	_init_.Initialize()
 
@@ -989,6 +1013,17 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) PutBackfillSource(value *Featu
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) PutIngestionConfig(value *FeatureEngineeringKafkaConfigIngestionConfig) {
+	if err := f.validatePutIngestionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putIngestionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringKafkaConfig) PutKeySchema(value *FeatureEngineeringKafkaConfigKeySchema) {
 	if err := f.validatePutKeySchemaParameters(value); err != nil {
 		panic(err)
@@ -1045,6 +1080,14 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) ResetExtraOptions() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetExtraOptions",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) ResetIngestionConfig() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetIngestionConfig",
 		nil, // no parameters
 	)
 }

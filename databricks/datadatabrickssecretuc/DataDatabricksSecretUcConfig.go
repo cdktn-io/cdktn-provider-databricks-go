@@ -22,9 +22,9 @@ type DataDatabricksSecretUcConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_uc#full_name DataDatabricksSecretUc#full_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_uc#full_name DataDatabricksSecretUc#full_name}.
 	FullName *string `field:"required" json:"fullName" yaml:"fullName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_uc#provider_config DataDatabricksSecretUc#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_uc#provider_config DataDatabricksSecretUc#provider_config}.
 	ProviderConfig *DataDatabricksSecretUcProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

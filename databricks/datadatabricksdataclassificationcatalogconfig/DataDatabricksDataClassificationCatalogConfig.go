@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/data_classification_catalog_config databricks_data_classification_catalog_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/data_classification_catalog_config databricks_data_classification_catalog_config}.
 type DataDatabricksDataClassificationCatalogConfig interface {
 	cdktn.TerraformDataSource
 	AutoTagConfigs() DataDatabricksDataClassificationCatalogConfigAutoTagConfigsList
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataDatabricksDataClassificationCatalogConfig) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/data_classification_catalog_config databricks_data_classification_catalog_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/data_classification_catalog_config databricks_data_classification_catalog_config} Data Source.
 func NewDataDatabricksDataClassificationCatalogConfig(scope constructs.Construct, id *string, config *DataDatabricksDataClassificationCatalogConfigConfig) DataDatabricksDataClassificationCatalogConfig {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataDatabricksDataClassificationCatalogConfig(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/data_classification_catalog_config databricks_data_classification_catalog_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/data_classification_catalog_config databricks_data_classification_catalog_config} Data Source.
 func NewDataDatabricksDataClassificationCatalogConfig_Override(d DataDatabricksDataClassificationCatalogConfig, scope constructs.Construct, id *string, config *DataDatabricksDataClassificationCatalogConfigConfig) {
 	_init_.Initialize()
 

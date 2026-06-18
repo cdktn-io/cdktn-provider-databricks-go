@@ -12,9 +12,10 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_branch databricks_postgres_branch}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_branch databricks_postgres_branch}.
 type DataDatabricksPostgresBranch interface {
 	cdktn.TerraformDataSource
+	BranchId() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -120,6 +121,16 @@ type DataDatabricksPostgresBranch interface {
 // The jsii proxy struct for DataDatabricksPostgresBranch
 type jsiiProxy_DataDatabricksPostgresBranch struct {
 	internal.Type__cdktnTerraformDataSource
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresBranch) BranchId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branchId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksPostgresBranch) CdktfStack() cdktn.TerraformStack {
@@ -363,7 +374,7 @@ func (j *jsiiProxy_DataDatabricksPostgresBranch) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_branch databricks_postgres_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_branch databricks_postgres_branch} Data Source.
 func NewDataDatabricksPostgresBranch(scope constructs.Construct, id *string, config *DataDatabricksPostgresBranchConfig) DataDatabricksPostgresBranch {
 	_init_.Initialize()
 
@@ -381,7 +392,7 @@ func NewDataDatabricksPostgresBranch(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_branch databricks_postgres_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_branch databricks_postgres_branch} Data Source.
 func NewDataDatabricksPostgresBranch_Override(d DataDatabricksPostgresBranch, scope constructs.Construct, id *string, config *DataDatabricksPostgresBranchConfig) {
 	_init_.Initialize()
 

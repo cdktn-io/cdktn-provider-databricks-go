@@ -51,7 +51,15 @@ func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) validat
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) validatePutTypeOverridesParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) validateSetAcceleratedSyncParameters(val interface{}) error {
 	return nil
 }
 

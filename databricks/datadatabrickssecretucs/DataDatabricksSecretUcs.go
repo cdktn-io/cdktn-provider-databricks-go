@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs databricks_secret_ucs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs databricks_secret_ucs}.
 type DataDatabricksSecretUcs interface {
 	cdktn.TerraformDataSource
 	CatalogName() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataDatabricksSecretUcs) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source.
 func NewDataDatabricksSecretUcs(scope constructs.Construct, id *string, config *DataDatabricksSecretUcsConfig) DataDatabricksSecretUcs {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataDatabricksSecretUcs(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source.
 func NewDataDatabricksSecretUcs_Override(d DataDatabricksSecretUcs, scope constructs.Construct, id *string, config *DataDatabricksSecretUcsConfig) {
 	_init_.Initialize()
 

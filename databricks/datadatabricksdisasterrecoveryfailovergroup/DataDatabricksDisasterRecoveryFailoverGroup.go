@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group}.
 type DataDatabricksDisasterRecoveryFailoverGroup interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroup) WorkspaceSets() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Data Source.
 func NewDataDatabricksDisasterRecoveryFailoverGroup(scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryFailoverGroupConfig) DataDatabricksDisasterRecoveryFailoverGroup {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataDatabricksDisasterRecoveryFailoverGroup(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Data Source.
 func NewDataDatabricksDisasterRecoveryFailoverGroup_Override(d DataDatabricksDisasterRecoveryFailoverGroup, scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryFailoverGroupConfig) {
 	_init_.Initialize()
 

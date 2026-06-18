@@ -22,17 +22,17 @@ type PostgresBranchConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/postgres_branch#branch_id PostgresBranch#branch_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/postgres_branch#branch_id PostgresBranch#branch_id}.
 	BranchId *string `field:"required" json:"branchId" yaml:"branchId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/postgres_branch#parent PostgresBranch#parent}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/postgres_branch#parent PostgresBranch#parent}.
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/postgres_branch#provider_config PostgresBranch#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/postgres_branch#provider_config PostgresBranch#provider_config}.
 	ProviderConfig *PostgresBranchProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/postgres_branch#purge_on_delete PostgresBranch#purge_on_delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/postgres_branch#purge_on_delete PostgresBranch#purge_on_delete}.
 	PurgeOnDelete interface{} `field:"optional" json:"purgeOnDelete" yaml:"purgeOnDelete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/postgres_branch#replace_existing PostgresBranch#replace_existing}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/postgres_branch#replace_existing PostgresBranch#replace_existing}.
 	ReplaceExisting interface{} `field:"optional" json:"replaceExisting" yaml:"replaceExisting"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/postgres_branch#spec PostgresBranch#spec}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/postgres_branch#spec PostgresBranch#spec}.
 	Spec *PostgresBranchSpec `field:"optional" json:"spec" yaml:"spec"`
 }
 

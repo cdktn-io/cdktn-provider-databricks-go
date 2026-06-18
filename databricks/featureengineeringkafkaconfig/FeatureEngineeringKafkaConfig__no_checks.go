@@ -83,6 +83,10 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) validatePutBackfillSourceParam
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) validatePutIngestionConfigParameters(value *FeatureEngineeringKafkaConfigIngestionConfig) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringKafkaConfig) validatePutKeySchemaParameters(value *FeatureEngineeringKafkaConfigKeySchema) error {
 	return nil
 }

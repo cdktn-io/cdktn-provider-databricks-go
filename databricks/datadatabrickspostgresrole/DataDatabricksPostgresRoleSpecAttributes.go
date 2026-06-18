@@ -5,11 +5,11 @@ package datadatabrickspostgresrole
 
 
 type DataDatabricksPostgresRoleSpecAttributes struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#bypassrls DataDatabricksPostgresRole#bypassrls}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_role#bypassrls DataDatabricksPostgresRole#bypassrls}.
 	Bypassrls interface{} `field:"optional" json:"bypassrls" yaml:"bypassrls"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#createdb DataDatabricksPostgresRole#createdb}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_role#createdb DataDatabricksPostgresRole#createdb}.
 	Createdb interface{} `field:"optional" json:"createdb" yaml:"createdb"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#createrole DataDatabricksPostgresRole#createrole}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_role#createrole DataDatabricksPostgresRole#createrole}.
 	Createrole interface{} `field:"optional" json:"createrole" yaml:"createrole"`
 }
 

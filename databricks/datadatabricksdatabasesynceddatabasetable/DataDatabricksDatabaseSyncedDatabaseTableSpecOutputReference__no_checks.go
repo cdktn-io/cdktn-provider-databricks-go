@@ -51,7 +51,15 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) validatePutTypeOverridesParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) validateSetAcceleratedSyncParameters(val interface{}) error {
 	return nil
 }
 

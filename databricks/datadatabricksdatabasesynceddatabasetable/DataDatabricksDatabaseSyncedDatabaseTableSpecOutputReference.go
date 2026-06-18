@@ -13,6 +13,9 @@ import (
 
 type DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference interface {
 	cdktn.ComplexObject
+	AcceleratedSync() interface{}
+	SetAcceleratedSync(val interface{})
+	AcceleratedSyncInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -60,6 +63,8 @@ type DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference interface {
 	TimeseriesKey() *string
 	SetTimeseriesKey(val *string)
 	TimeseriesKeyInput() *string
+	TypeOverrides() DataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverridesList
+	TypeOverridesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -85,6 +90,8 @@ type DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutNewPipelineSpec(value *DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpec)
+	PutTypeOverrides(value interface{})
+	ResetAcceleratedSync()
 	ResetCreateDatabaseObjectsIfMissing()
 	ResetExistingPipelineId()
 	ResetNewPipelineSpec()
@@ -92,6 +99,7 @@ type DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference interface {
 	ResetSchedulingPolicy()
 	ResetSourceTableFullName()
 	ResetTimeseriesKey()
+	ResetTypeOverrides()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -105,6 +113,26 @@ type DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference interface {
 // The jsii proxy struct for DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference
 type jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) AcceleratedSync() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratedSync",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) AcceleratedSyncInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratedSyncInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -317,6 +345,26 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) TypeOverrides() DataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverridesList {
+	var returns DataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverridesList
+	_jsii_.Get(
+		j,
+		"typeOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) TypeOverridesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"typeOverridesInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference {
 	_init_.Initialize()
@@ -342,6 +390,17 @@ func NewDataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference_Override(d 
 		"@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference)SetAcceleratedSync(val interface{}) {
+	if err := j.validateSetAcceleratedSyncParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceleratedSync",
+		val,
 	)
 }
 
@@ -663,6 +722,25 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference)
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) PutTypeOverrides(value interface{}) {
+	if err := d.validatePutTypeOverridesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTypeOverrides",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) ResetAcceleratedSync() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAcceleratedSync",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) ResetCreateDatabaseObjectsIfMissing() {
 	_jsii_.InvokeVoid(
 		d,
@@ -715,6 +793,14 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference)
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeseriesKey",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) ResetTypeOverrides() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTypeOverrides",
 		nil, // no parameters
 	)
 }

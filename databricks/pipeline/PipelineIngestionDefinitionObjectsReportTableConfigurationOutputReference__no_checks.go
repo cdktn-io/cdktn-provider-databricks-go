@@ -63,11 +63,19 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return nil
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateSetClusteringColumnsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateSetEnableAutoClusteringParameters(val interface{}) error {
 	return nil
 }
 
@@ -100,6 +108,10 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateSetSequenceByParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) validateSetTablePropertiesParameters(val *map[string]*string) error {
 	return nil
 }
 

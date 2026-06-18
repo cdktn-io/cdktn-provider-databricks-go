@@ -39,6 +39,7 @@ type DataDatabricksPostgresRolesRolesOutputReference interface {
 	Parent() *string
 	ProviderConfig() DataDatabricksPostgresRolesRolesProviderConfigOutputReference
 	ProviderConfigInput() interface{}
+	RoleId() *string
 	Spec() DataDatabricksPostgresRolesRolesSpecOutputReference
 	Status() DataDatabricksPostgresRolesRolesStatusOutputReference
 	// Experimental.
@@ -196,6 +197,16 @@ func (j *jsiiProxy_DataDatabricksPostgresRolesRolesOutputReference) ProviderConf
 	_jsii_.Get(
 		j,
 		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresRolesRolesOutputReference) RoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleId",
 		&returns,
 	)
 	return returns

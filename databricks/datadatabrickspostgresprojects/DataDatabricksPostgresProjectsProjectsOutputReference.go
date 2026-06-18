@@ -38,6 +38,7 @@ type DataDatabricksPostgresProjectsProjectsOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	ProjectId() *string
 	ProviderConfig() DataDatabricksPostgresProjectsProjectsProviderConfigOutputReference
 	ProviderConfigInput() interface{}
 	PurgeTime() *string
@@ -189,6 +190,16 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsOutputReference) NameIn
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsOutputReference) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
 		&returns,
 	)
 	return returns

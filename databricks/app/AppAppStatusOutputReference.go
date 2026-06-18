@@ -33,6 +33,7 @@ type AppAppStatusOutputReference interface {
 	InternalValue() *AppAppStatus
 	SetInternalValue(val *AppAppStatus)
 	Message() *string
+	RunningInstances() *float64
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -136,6 +137,16 @@ func (j *jsiiProxy_AppAppStatusOutputReference) Message() *string {
 	_jsii_.Get(
 		j,
 		"message",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppAppStatusOutputReference) RunningInstances() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"runningInstances",
 		&returns,
 	)
 	return returns

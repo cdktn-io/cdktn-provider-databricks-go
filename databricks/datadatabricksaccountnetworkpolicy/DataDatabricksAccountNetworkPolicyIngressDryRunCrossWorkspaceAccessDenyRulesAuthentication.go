@@ -5,9 +5,9 @@ package datadatabricksaccountnetworkpolicy
 
 
 type DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 	Identities interface{} `field:"optional" json:"identities" yaml:"identities"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 	IdentityType *string `field:"optional" json:"identityType" yaml:"identityType"`
 }
 

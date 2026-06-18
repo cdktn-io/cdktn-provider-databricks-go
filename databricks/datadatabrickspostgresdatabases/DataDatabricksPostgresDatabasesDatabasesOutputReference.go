@@ -29,6 +29,7 @@ type DataDatabricksPostgresDatabasesDatabasesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DatabaseId() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksPostgresDatabasesDatabases
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataDatabricksPostgresDatabasesDatabasesOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresDatabasesDatabasesOutputReference) DatabaseId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseId",
 		&returns,
 	)
 	return returns

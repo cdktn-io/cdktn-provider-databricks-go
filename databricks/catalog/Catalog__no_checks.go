@@ -127,6 +127,10 @@ func (j *jsiiProxy_Catalog) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Catalog) validateSetCustomMaxRetentionHoursParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Catalog) validateSetEnablePredictiveOptimizationParameters(val *string) error {
 	return nil
 }

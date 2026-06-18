@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) validateSetCre
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) validateSetCustomMaxRetentionHoursParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) validateSetEnablePredictiveOptimizationParameters(val *string) error {
 	return nil
 }

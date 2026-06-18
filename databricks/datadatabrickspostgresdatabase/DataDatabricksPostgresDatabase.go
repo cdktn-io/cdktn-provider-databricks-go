@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_database databricks_postgres_database}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_database databricks_postgres_database}.
 type DataDatabricksPostgresDatabase interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataDatabricksPostgresDatabase interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DatabaseId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -156,6 +157,16 @@ func (j *jsiiProxy_DataDatabricksPostgresDatabase) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresDatabase) DatabaseId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseId",
 		&returns,
 	)
 	return returns
@@ -352,7 +363,7 @@ func (j *jsiiProxy_DataDatabricksPostgresDatabase) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_database databricks_postgres_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_database databricks_postgres_database} Data Source.
 func NewDataDatabricksPostgresDatabase(scope constructs.Construct, id *string, config *DataDatabricksPostgresDatabaseConfig) DataDatabricksPostgresDatabase {
 	_init_.Initialize()
 
@@ -370,7 +381,7 @@ func NewDataDatabricksPostgresDatabase(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_database databricks_postgres_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_database databricks_postgres_database} Data Source.
 func NewDataDatabricksPostgresDatabase_Override(d DataDatabricksPostgresDatabase, scope constructs.Construct, id *string, config *DataDatabricksPostgresDatabaseConfig) {
 	_init_.Initialize()
 

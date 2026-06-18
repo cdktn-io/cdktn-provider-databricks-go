@@ -29,6 +29,7 @@ type DataDatabricksPostgresEndpointsEndpointsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EndpointId() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksPostgresEndpointsEndpoints
@@ -127,6 +128,16 @@ func (j *jsiiProxy_DataDatabricksPostgresEndpointsEndpointsOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresEndpointsEndpointsOutputReference) EndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointId",
 		&returns,
 	)
 	return returns

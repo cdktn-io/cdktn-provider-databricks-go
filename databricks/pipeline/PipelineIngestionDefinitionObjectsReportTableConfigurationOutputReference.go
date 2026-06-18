@@ -15,6 +15,9 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	cdktn.ComplexObject
 	AutoFullRefreshPolicy() PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyOutputReference
 	AutoFullRefreshPolicyInput() *PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy
+	ClusteringColumns() *[]*string
+	SetClusteringColumns(val *[]*string)
+	ClusteringColumnsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +33,9 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableAutoClustering() interface{}
+	SetEnableAutoClustering(val interface{})
+	EnableAutoClusteringInput() interface{}
 	ExcludeColumns() *[]*string
 	SetExcludeColumns(val *[]*string)
 	ExcludeColumnsInput() *[]*string
@@ -57,6 +63,9 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	SequenceBy() *[]*string
 	SetSequenceBy(val *[]*string)
 	SequenceByInput() *[]*string
+	TableProperties() *map[string]*string
+	SetTableProperties(val *map[string]*string)
+	TablePropertiesInput() *map[string]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -95,6 +104,8 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	PutQueryBasedConnectorConfig(value *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig)
 	PutWorkdayReportParameters(value *PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters)
 	ResetAutoFullRefreshPolicy()
+	ResetClusteringColumns()
+	ResetEnableAutoClustering()
 	ResetExcludeColumns()
 	ResetIncludeColumns()
 	ResetPrimaryKeys()
@@ -103,6 +114,7 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	ResetSalesforceIncludeFormulaFields()
 	ResetScdType()
 	ResetSequenceBy()
+	ResetTableProperties()
 	ResetWorkdayReportParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -139,6 +151,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ClusteringColumns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"clusteringColumns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ClusteringColumnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"clusteringColumnsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -164,6 +196,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) EnableAutoClustering() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAutoClustering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) EnableAutoClusteringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAutoClusteringInput",
 		&returns,
 	)
 	return returns
@@ -349,6 +401,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) TableProperties() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tableProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) TablePropertiesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tablePropertiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -417,6 +489,17 @@ func NewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference)SetClusteringColumns(val *[]*string) {
+	if err := j.validateSetClusteringColumnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusteringColumns",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -435,6 +518,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference)SetEnableAutoClustering(val interface{}) {
+	if err := j.validateSetEnableAutoClusteringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAutoClustering",
 		val,
 	)
 }
@@ -523,6 +617,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	_jsii_.Set(
 		j,
 		"sequenceBy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference)SetTableProperties(val *map[string]*string) {
+	if err := j.validateSetTablePropertiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tableProperties",
 		val,
 	)
 }
@@ -776,6 +881,22 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetClusteringColumns() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetClusteringColumns",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetEnableAutoClustering() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnableAutoClustering",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetExcludeColumns() {
 	_jsii_.InvokeVoid(
 		p,
@@ -836,6 +957,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	_jsii_.InvokeVoid(
 		p,
 		"resetSequenceBy",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetTableProperties() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTableProperties",
 		nil, // no parameters
 	)
 }

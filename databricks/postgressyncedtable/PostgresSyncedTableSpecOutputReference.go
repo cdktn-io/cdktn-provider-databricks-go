@@ -13,6 +13,9 @@ import (
 
 type PostgresSyncedTableSpecOutputReference interface {
 	cdktn.ComplexObject
+	AcceleratedSync() interface{}
+	SetAcceleratedSync(val interface{})
+	AcceleratedSyncInput() interface{}
 	Branch() *string
 	SetBranch(val *string)
 	BranchInput() *string
@@ -66,6 +69,8 @@ type PostgresSyncedTableSpecOutputReference interface {
 	TimeseriesKey() *string
 	SetTimeseriesKey(val *string)
 	TimeseriesKeyInput() *string
+	TypeOverrides() PostgresSyncedTableSpecTypeOverridesList
+	TypeOverridesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -91,6 +96,8 @@ type PostgresSyncedTableSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutNewPipelineSpec(value *PostgresSyncedTableSpecNewPipelineSpec)
+	PutTypeOverrides(value interface{})
+	ResetAcceleratedSync()
 	ResetBranch()
 	ResetCreateDatabaseObjectsIfMissing()
 	ResetExistingPipelineId()
@@ -100,6 +107,7 @@ type PostgresSyncedTableSpecOutputReference interface {
 	ResetSchedulingPolicy()
 	ResetSourceTableFullName()
 	ResetTimeseriesKey()
+	ResetTypeOverrides()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -113,6 +121,26 @@ type PostgresSyncedTableSpecOutputReference interface {
 // The jsii proxy struct for PostgresSyncedTableSpecOutputReference
 type jsiiProxy_PostgresSyncedTableSpecOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference) AcceleratedSync() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratedSync",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference) AcceleratedSyncInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratedSyncInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference) Branch() *string {
@@ -365,6 +393,26 @@ func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference) TimeseriesKeyInput() 
 	return returns
 }
 
+func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference) TypeOverrides() PostgresSyncedTableSpecTypeOverridesList {
+	var returns PostgresSyncedTableSpecTypeOverridesList
+	_jsii_.Get(
+		j,
+		"typeOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference) TypeOverridesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"typeOverridesInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewPostgresSyncedTableSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PostgresSyncedTableSpecOutputReference {
 	_init_.Initialize()
@@ -390,6 +438,17 @@ func NewPostgresSyncedTableSpecOutputReference_Override(p PostgresSyncedTableSpe
 		"@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
+	)
+}
+
+func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference)SetAcceleratedSync(val interface{}) {
+	if err := j.validateSetAcceleratedSyncParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceleratedSync",
+		val,
 	)
 }
 
@@ -733,6 +792,25 @@ func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) PutNewPipelineSpec(va
 	)
 }
 
+func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) PutTypeOverrides(value interface{}) {
+	if err := p.validatePutTypeOverridesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putTypeOverrides",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) ResetAcceleratedSync() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAcceleratedSync",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) ResetBranch() {
 	_jsii_.InvokeVoid(
 		p,
@@ -801,6 +879,14 @@ func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) ResetTimeseriesKey() 
 	_jsii_.InvokeVoid(
 		p,
 		"resetTimeseriesKey",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) ResetTypeOverrides() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTypeOverrides",
 		nil, // no parameters
 	)
 }

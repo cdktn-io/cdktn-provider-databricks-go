@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateSetCustomMaxRetentionHoursParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateSetEnablePredictiveOptimizationParameters(val *string) error {
 	return nil
 }

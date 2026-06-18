@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table databricks_postgres_synced_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table databricks_postgres_synced_table}.
 type DataDatabricksPostgresSyncedTable interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -55,6 +55,7 @@ type DataDatabricksPostgresSyncedTable interface {
 	RawOverrides() interface{}
 	Spec() DataDatabricksPostgresSyncedTableSpecOutputReference
 	Status() DataDatabricksPostgresSyncedTableStatusOutputReference
+	SyncedTableId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -300,6 +301,16 @@ func (j *jsiiProxy_DataDatabricksPostgresSyncedTable) Status() DataDatabricksPos
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresSyncedTable) SyncedTableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"syncedTableId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresSyncedTable) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -341,7 +352,7 @@ func (j *jsiiProxy_DataDatabricksPostgresSyncedTable) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table databricks_postgres_synced_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table databricks_postgres_synced_table} Data Source.
 func NewDataDatabricksPostgresSyncedTable(scope constructs.Construct, id *string, config *DataDatabricksPostgresSyncedTableConfig) DataDatabricksPostgresSyncedTable {
 	_init_.Initialize()
 
@@ -359,7 +370,7 @@ func NewDataDatabricksPostgresSyncedTable(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table databricks_postgres_synced_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table databricks_postgres_synced_table} Data Source.
 func NewDataDatabricksPostgresSyncedTable_Override(d DataDatabricksPostgresSyncedTable, scope constructs.Construct, id *string, config *DataDatabricksPostgresSyncedTableConfig) {
 	_init_.Initialize()
 

@@ -22,9 +22,9 @@ type DataDatabricksSupervisorAgentConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}.
 	ProviderConfig *DataDatabricksSupervisorAgentProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

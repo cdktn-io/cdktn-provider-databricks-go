@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}.
 	ManagerAccountId *string `field:"optional" json:"managerAccountId" yaml:"managerAccountId"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2}.
 type DataDatabricksAccountSettingUserPreferenceV2 interface {
 	cdktn.TerraformDataSource
 	BooleanVal() DataDatabricksAccountSettingUserPreferenceV2BooleanValOutputReference
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingUserPreferenceV2) UserIdInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2} Data Source.
 func NewDataDatabricksAccountSettingUserPreferenceV2(scope constructs.Construct, id *string, config *DataDatabricksAccountSettingUserPreferenceV2Config) DataDatabricksAccountSettingUserPreferenceV2 {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataDatabricksAccountSettingUserPreferenceV2(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2} Data Source.
 func NewDataDatabricksAccountSettingUserPreferenceV2_Override(d DataDatabricksAccountSettingUserPreferenceV2, scope constructs.Construct, id *string, config *DataDatabricksAccountSettingUserPreferenceV2Config) {
 	_init_.Initialize()
 

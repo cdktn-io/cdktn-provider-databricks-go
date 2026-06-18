@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths}.
 type DataDatabricksDbfsFilePaths interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePaths) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths} Data Source.
 func NewDataDatabricksDbfsFilePaths(scope constructs.Construct, id *string, config *DataDatabricksDbfsFilePathsConfig) DataDatabricksDbfsFilePaths {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataDatabricksDbfsFilePaths(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths} Data Source.
 func NewDataDatabricksDbfsFilePaths_Override(d DataDatabricksDbfsFilePaths, scope constructs.Construct, id *string, config *DataDatabricksDbfsFilePathsConfig) {
 	_init_.Initialize()
 

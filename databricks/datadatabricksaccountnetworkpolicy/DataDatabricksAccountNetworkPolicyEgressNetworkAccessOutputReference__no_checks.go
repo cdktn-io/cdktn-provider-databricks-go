@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputRe
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference) validatePutAllowedDatabricksDestinationsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference) validatePutAllowedInternetDestinationsParameters(value interface{}) error {
 	return nil
 }

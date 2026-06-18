@@ -5,7 +5,7 @@ package sqldashboard
 
 
 type SqlDashboardProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/sql_dashboard#workspace_id SqlDashboard#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/sql_dashboard#workspace_id SqlDashboard#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

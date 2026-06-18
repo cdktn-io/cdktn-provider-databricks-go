@@ -34,6 +34,7 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputReference int
 	ExtraOptions() cdktn.StringMap
 	// Experimental.
 	Fqn() *string
+	IngestionConfig() DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference
 	InternalValue() *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigs
 	SetInternalValue(val *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigs)
 	KeySchema() DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaOutputReference
@@ -168,6 +169,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutpu
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputReference) IngestionConfig() DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference {
+	var returns DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"ingestionConfig",
 		&returns,
 	)
 	return returns

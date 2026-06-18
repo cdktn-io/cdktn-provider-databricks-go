@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role databricks_postgres_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_role databricks_postgres_role}.
 type DataDatabricksPostgresRole interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,7 @@ type DataDatabricksPostgresRole interface {
 	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	RoleId() *string
 	Spec() DataDatabricksPostgresRoleSpecOutputReference
 	Status() DataDatabricksPostgresRoleStatusOutputReference
 	// Experimental.
@@ -291,6 +292,16 @@ func (j *jsiiProxy_DataDatabricksPostgresRole) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresRole) RoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresRole) Spec() DataDatabricksPostgresRoleSpecOutputReference {
 	var returns DataDatabricksPostgresRoleSpecOutputReference
 	_jsii_.Get(
@@ -352,7 +363,7 @@ func (j *jsiiProxy_DataDatabricksPostgresRole) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role databricks_postgres_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_role databricks_postgres_role} Data Source.
 func NewDataDatabricksPostgresRole(scope constructs.Construct, id *string, config *DataDatabricksPostgresRoleConfig) DataDatabricksPostgresRole {
 	_init_.Initialize()
 
@@ -370,7 +381,7 @@ func NewDataDatabricksPostgresRole(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role databricks_postgres_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_role databricks_postgres_role} Data Source.
 func NewDataDatabricksPostgresRole_Override(d DataDatabricksPostgresRole, scope constructs.Construct, id *string, config *DataDatabricksPostgresRoleConfig) {
 	_init_.Initialize()
 

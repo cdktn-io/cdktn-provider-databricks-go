@@ -115,6 +115,10 @@ func (j *jsiiProxy_VectorSearchIndex) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchIndex) validateSetEndpointIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchIndex) validateSetEndpointNameParameters(val *string) error {
 	return nil
 }

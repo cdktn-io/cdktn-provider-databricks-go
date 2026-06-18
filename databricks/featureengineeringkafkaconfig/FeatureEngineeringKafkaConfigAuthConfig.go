@@ -5,9 +5,9 @@ package featureengineeringkafkaconfig
 
 
 type FeatureEngineeringKafkaConfigAuthConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/feature_engineering_kafka_config#mtls_config FeatureEngineeringKafkaConfig#mtls_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/feature_engineering_kafka_config#mtls_config FeatureEngineeringKafkaConfig#mtls_config}.
 	MtlsConfig *FeatureEngineeringKafkaConfigAuthConfigMtlsConfig `field:"optional" json:"mtlsConfig" yaml:"mtlsConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/feature_engineering_kafka_config#uc_service_credential_name FeatureEngineeringKafkaConfig#uc_service_credential_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/feature_engineering_kafka_config#uc_service_credential_name FeatureEngineeringKafkaConfig#uc_service_credential_name}.
 	UcServiceCredentialName *string `field:"optional" json:"ucServiceCredentialName" yaml:"ucServiceCredentialName"`
 }
 

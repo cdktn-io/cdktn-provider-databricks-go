@@ -51,7 +51,15 @@ func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) validatePutNewPipelin
 	return nil
 }
 
+func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) validatePutTypeOverridesParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference) validateSetAcceleratedSyncParameters(val interface{}) error {
 	return nil
 }
 

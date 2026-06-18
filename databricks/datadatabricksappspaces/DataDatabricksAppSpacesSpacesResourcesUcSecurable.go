@@ -5,11 +5,11 @@ package datadatabricksappspaces
 
 
 type DataDatabricksAppSpacesSpacesResourcesUcSecurable struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/app_spaces#permission DataDatabricksAppSpaces#permission}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/app_spaces#permission DataDatabricksAppSpaces#permission}.
 	Permission *string `field:"required" json:"permission" yaml:"permission"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/app_spaces#securable_full_name DataDatabricksAppSpaces#securable_full_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/app_spaces#securable_full_name DataDatabricksAppSpaces#securable_full_name}.
 	SecurableFullName *string `field:"required" json:"securableFullName" yaml:"securableFullName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/app_spaces#securable_type DataDatabricksAppSpaces#securable_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/app_spaces#securable_type DataDatabricksAppSpaces#securable_type}.
 	SecurableType *string `field:"required" json:"securableType" yaml:"securableType"`
 }
 

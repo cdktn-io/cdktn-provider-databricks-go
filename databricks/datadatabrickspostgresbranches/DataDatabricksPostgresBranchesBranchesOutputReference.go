@@ -13,6 +13,7 @@ import (
 
 type DataDatabricksPostgresBranchesBranchesOutputReference interface {
 	cdktn.ComplexObject
+	BranchId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -90,6 +91,16 @@ type DataDatabricksPostgresBranchesBranchesOutputReference interface {
 // The jsii proxy struct for DataDatabricksPostgresBranchesBranchesOutputReference
 type jsiiProxy_DataDatabricksPostgresBranchesBranchesOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesOutputReference) BranchId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branchId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesOutputReference) ComplexObjectIndex() interface{} {

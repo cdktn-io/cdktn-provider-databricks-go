@@ -5,7 +5,7 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureFunctionColumnSelection struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}.
 	Column *string `field:"required" json:"column" yaml:"column"`
 }
 

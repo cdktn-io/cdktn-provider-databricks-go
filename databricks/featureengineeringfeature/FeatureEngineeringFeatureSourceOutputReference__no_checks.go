@@ -59,6 +59,10 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutRe
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutStreamSourceParameters(value *FeatureEngineeringFeatureSourceStreamSource) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

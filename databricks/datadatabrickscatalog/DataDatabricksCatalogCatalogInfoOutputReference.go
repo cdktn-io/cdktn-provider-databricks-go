@@ -46,6 +46,9 @@ type DataDatabricksCatalogCatalogInfoOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomMaxRetentionHours() *float64
+	SetCustomMaxRetentionHours(val *float64)
+	CustomMaxRetentionHoursInput() *float64
 	EffectivePredictiveOptimizationFlag() DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlagOutputReference
 	EffectivePredictiveOptimizationFlagInput() *DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag
 	EnablePredictiveOptimization() *string
@@ -142,6 +145,7 @@ type DataDatabricksCatalogCatalogInfoOutputReference interface {
 	ResetConnectionName()
 	ResetCreatedAt()
 	ResetCreatedBy()
+	ResetCustomMaxRetentionHours()
 	ResetEffectivePredictiveOptimizationFlag()
 	ResetEnablePredictiveOptimization()
 	ResetFullName()
@@ -320,6 +324,26 @@ func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) CustomMaxRetentionHours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customMaxRetentionHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) CustomMaxRetentionHoursInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customMaxRetentionHoursInput",
 		&returns,
 	)
 	return returns
@@ -841,6 +865,17 @@ func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference)SetCreatedBy(
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference)SetCustomMaxRetentionHours(val *float64) {
+	if err := j.validateSetCustomMaxRetentionHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customMaxRetentionHours",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference)SetEnablePredictiveOptimization(val *string) {
 	if err := j.validateSetEnablePredictiveOptimizationParameters(val); err != nil {
 		panic(err)
@@ -1302,6 +1337,14 @@ func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) ResetCreated
 	_jsii_.InvokeVoid(
 		d,
 		"resetCreatedBy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) ResetCustomMaxRetentionHours() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomMaxRetentionHours",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint databricks_postgres_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint databricks_postgres_endpoint}.
 type DataDatabricksPostgresEndpoint interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -28,6 +28,7 @@ type DataDatabricksPostgresEndpoint interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EndpointId() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -167,6 +168,16 @@ func (j *jsiiProxy_DataDatabricksPostgresEndpoint) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresEndpoint) EndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointId",
 		&returns,
 	)
 	return returns
@@ -363,7 +374,7 @@ func (j *jsiiProxy_DataDatabricksPostgresEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint databricks_postgres_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint databricks_postgres_endpoint} Data Source.
 func NewDataDatabricksPostgresEndpoint(scope constructs.Construct, id *string, config *DataDatabricksPostgresEndpointConfig) DataDatabricksPostgresEndpoint {
 	_init_.Initialize()
 
@@ -381,7 +392,7 @@ func NewDataDatabricksPostgresEndpoint(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint databricks_postgres_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint databricks_postgres_endpoint} Data Source.
 func NewDataDatabricksPostgresEndpoint_Override(d DataDatabricksPostgresEndpoint, scope constructs.Construct, id *string, config *DataDatabricksPostgresEndpointConfig) {
 	_init_.Initialize()
 

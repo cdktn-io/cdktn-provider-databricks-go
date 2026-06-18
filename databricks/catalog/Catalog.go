@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog databricks_catalog}.
 type Catalog interface {
 	cdktn.TerraformResource
 	BrowseOnly() interface{}
@@ -39,6 +39,9 @@ type Catalog interface {
 	SetCount(val interface{})
 	CreatedAt() *float64
 	CreatedBy() *string
+	CustomMaxRetentionHours() *float64
+	SetCustomMaxRetentionHours(val *float64)
+	CustomMaxRetentionHoursInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,6 +175,7 @@ type Catalog interface {
 	ResetBrowseOnly()
 	ResetComment()
 	ResetConnectionName()
+	ResetCustomMaxRetentionHours()
 	ResetEffectivePredictiveOptimizationFlag()
 	ResetEnablePredictiveOptimization()
 	ResetForceDestroy()
@@ -343,6 +347,26 @@ func (j *jsiiProxy_Catalog) CreatedBy() *string {
 	_jsii_.Get(
 		j,
 		"createdBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) CustomMaxRetentionHours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customMaxRetentionHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) CustomMaxRetentionHoursInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customMaxRetentionHoursInput",
 		&returns,
 	)
 	return returns
@@ -839,7 +863,7 @@ func (j *jsiiProxy_Catalog) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
 	_init_.Initialize()
 
@@ -857,7 +881,7 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
 	_init_.Initialize()
 
@@ -919,6 +943,17 @@ func (j *jsiiProxy_Catalog)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Catalog)SetCustomMaxRetentionHours(val *float64) {
+	if err := j.validateSetCustomMaxRetentionHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customMaxRetentionHours",
 		val,
 	)
 }
@@ -1518,6 +1553,14 @@ func (c *jsiiProxy_Catalog) ResetConnectionName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetConnectionName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetCustomMaxRetentionHours() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomMaxRetentionHours",
 		nil, // no parameters
 	)
 }

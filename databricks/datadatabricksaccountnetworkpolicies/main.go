@@ -73,6 +73,67 @@ func init() {
 		reflect.TypeOf((*DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicies.DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinations",
+		reflect.TypeOf((*DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinations)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicies.DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinationsList",
+		reflect.TypeOf((*DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinationsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinationsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicies.DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinationsOutputReference",
+		reflect.TypeOf((*DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinationsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceIds", GoMethod: "ResetWorkspaceIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIds", GoGetter: "WorkspaceIds"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdsInput", GoGetter: "WorkspaceIdsInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedDatabricksDestinationsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicies.DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations",
 		reflect.TypeOf((*DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations)(nil)).Elem(),
 	)
@@ -277,6 +338,8 @@ func init() {
 		"@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicies.DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference",
 		reflect.TypeOf((*DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowedDatabricksDestinations", GoGetter: "AllowedDatabricksDestinations"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedDatabricksDestinationsInput", GoGetter: "AllowedDatabricksDestinationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedInternetDestinations", GoGetter: "AllowedInternetDestinations"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedInternetDestinationsInput", GoGetter: "AllowedInternetDestinationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedStorageDestinations", GoGetter: "AllowedStorageDestinations"},
@@ -302,10 +365,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "policyEnforcement", GoGetter: "PolicyEnforcement"},
 			_jsii_.MemberProperty{JsiiProperty: "policyEnforcementInput", GoGetter: "PolicyEnforcementInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAllowedDatabricksDestinations", GoMethod: "PutAllowedDatabricksDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "putAllowedInternetDestinations", GoMethod: "PutAllowedInternetDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "putAllowedStorageDestinations", GoMethod: "PutAllowedStorageDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "putBlockedInternetDestinations", GoMethod: "PutBlockedInternetDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "putPolicyEnforcement", GoMethod: "PutPolicyEnforcement"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedDatabricksDestinations", GoMethod: "ResetAllowedDatabricksDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedInternetDestinations", GoMethod: "ResetAllowedInternetDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedStorageDestinations", GoMethod: "ResetAllowedStorageDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockedInternetDestinations", GoMethod: "ResetBlockedInternetDestinations"},

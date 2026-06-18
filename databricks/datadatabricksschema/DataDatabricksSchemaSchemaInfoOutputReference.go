@@ -46,6 +46,9 @@ type DataDatabricksSchemaSchemaInfoOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomMaxRetentionHours() *float64
+	SetCustomMaxRetentionHours(val *float64)
+	CustomMaxRetentionHoursInput() *float64
 	EffectivePredictiveOptimizationFlag() DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlagOutputReference
 	EffectivePredictiveOptimizationFlagInput() *DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag
 	EnablePredictiveOptimization() *string
@@ -124,6 +127,7 @@ type DataDatabricksSchemaSchemaInfoOutputReference interface {
 	ResetComment()
 	ResetCreatedAt()
 	ResetCreatedBy()
+	ResetCustomMaxRetentionHours()
 	ResetEffectivePredictiveOptimizationFlag()
 	ResetEnablePredictiveOptimization()
 	ResetFullName()
@@ -296,6 +300,26 @@ func (j *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) CustomMaxRetentionHours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customMaxRetentionHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) CustomMaxRetentionHoursInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"customMaxRetentionHoursInput",
 		&returns,
 	)
 	return returns
@@ -697,6 +721,17 @@ func (j *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference)SetCreatedBy(va
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference)SetCustomMaxRetentionHours(val *float64) {
+	if err := j.validateSetCustomMaxRetentionHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customMaxRetentionHours",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference)SetEnablePredictiveOptimization(val *string) {
 	if err := j.validateSetEnablePredictiveOptimizationParameters(val); err != nil {
 		panic(err)
@@ -1092,6 +1127,14 @@ func (d *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) ResetCreatedBy
 	_jsii_.InvokeVoid(
 		d,
 		"resetCreatedBy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) ResetCustomMaxRetentionHours() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomMaxRetentionHours",
 		nil, // no parameters
 	)
 }

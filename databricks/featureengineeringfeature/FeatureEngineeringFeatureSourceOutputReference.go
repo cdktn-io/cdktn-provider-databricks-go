@@ -38,6 +38,8 @@ type FeatureEngineeringFeatureSourceOutputReference interface {
 	KafkaSourceInput() interface{}
 	RequestSource() FeatureEngineeringFeatureSourceRequestSourceOutputReference
 	RequestSourceInput() interface{}
+	StreamSource() FeatureEngineeringFeatureSourceStreamSourceOutputReference
+	StreamSourceInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,9 +75,11 @@ type FeatureEngineeringFeatureSourceOutputReference interface {
 	PutDeltaTableSource(value *FeatureEngineeringFeatureSourceDeltaTableSource)
 	PutKafkaSource(value *FeatureEngineeringFeatureSourceKafkaSource)
 	PutRequestSource(value *FeatureEngineeringFeatureSourceRequestSource)
+	PutStreamSource(value *FeatureEngineeringFeatureSourceStreamSource)
 	ResetDeltaTableSource()
 	ResetKafkaSource()
 	ResetRequestSource()
+	ResetStreamSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -196,6 +200,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) RequestSource
 	_jsii_.Get(
 		j,
 		"requestSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) StreamSource() FeatureEngineeringFeatureSourceStreamSourceOutputReference {
+	var returns FeatureEngineeringFeatureSourceStreamSourceOutputReference
+	_jsii_.Get(
+		j,
+		"streamSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) StreamSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"streamSourceInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) PutRequestSou
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) PutStreamSource(value *FeatureEngineeringFeatureSourceStreamSource) {
+	if err := f.validatePutStreamSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putStreamSource",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) ResetDeltaTableSource() {
 	_jsii_.InvokeVoid(
 		f,
@@ -543,6 +578,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) ResetRequestS
 	_jsii_.InvokeVoid(
 		f,
 		"resetRequestSource",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) ResetStreamSource() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetStreamSource",
 		nil, // no parameters
 	)
 }
