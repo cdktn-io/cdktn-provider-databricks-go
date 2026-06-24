@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table databricks_online_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/online_table databricks_online_table}.
 type OnlineTable interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_OnlineTable) UnityCatalogProvisioningState() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table databricks_online_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/online_table databricks_online_table} Resource.
 func NewOnlineTable(scope constructs.Construct, id *string, config *OnlineTableConfig) OnlineTable {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewOnlineTable(scope constructs.Construct, id *string, config *OnlineTableC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table databricks_online_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/online_table databricks_online_table} Resource.
 func NewOnlineTable_Override(o OnlineTable, scope constructs.Construct, id *string, config *OnlineTableConfig) {
 	_init_.Initialize()
 

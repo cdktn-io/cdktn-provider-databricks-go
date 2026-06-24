@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}.
 type DataDatabricksMlflowExperiment interface {
 	cdktn.TerraformDataSource
 	ArtifactLocation() *string
@@ -466,7 +466,7 @@ func (j *jsiiProxy_DataDatabricksMlflowExperiment) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
 func NewDataDatabricksMlflowExperiment(scope constructs.Construct, id *string, config *DataDatabricksMlflowExperimentConfig) DataDatabricksMlflowExperiment {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewDataDatabricksMlflowExperiment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
 func NewDataDatabricksMlflowExperiment_Override(d DataDatabricksMlflowExperiment, scope constructs.Construct, id *string, config *DataDatabricksMlflowExperimentConfig) {
 	_init_.Initialize()
 

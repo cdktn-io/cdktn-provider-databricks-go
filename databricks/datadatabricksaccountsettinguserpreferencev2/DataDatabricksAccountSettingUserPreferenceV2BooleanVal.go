@@ -5,7 +5,7 @@ package datadatabricksaccountsettinguserpreferencev2
 
 
 type DataDatabricksAccountSettingUserPreferenceV2BooleanVal struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/account_setting_user_preference_v2#value DataDatabricksAccountSettingUserPreferenceV2#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/account_setting_user_preference_v2#value DataDatabricksAccountSettingUserPreferenceV2#value}.
 	Value interface{} `field:"optional" json:"value" yaml:"value"`
 }
 

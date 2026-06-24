@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/workspace_file databricks_workspace_file}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/workspace_file databricks_workspace_file}.
 type WorkspaceFile interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_WorkspaceFile) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/workspace_file databricks_workspace_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/workspace_file databricks_workspace_file} Resource.
 func NewWorkspaceFile(scope constructs.Construct, id *string, config *WorkspaceFileConfig) WorkspaceFile {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewWorkspaceFile(scope constructs.Construct, id *string, config *WorkspaceF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/workspace_file databricks_workspace_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/workspace_file databricks_workspace_file} Resource.
 func NewWorkspaceFile_Override(w WorkspaceFile, scope constructs.Construct, id *string, config *WorkspaceFileConfig) {
 	_init_.Initialize()
 

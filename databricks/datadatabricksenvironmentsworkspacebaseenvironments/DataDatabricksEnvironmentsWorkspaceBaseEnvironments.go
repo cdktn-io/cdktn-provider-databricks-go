@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments}.
 type DataDatabricksEnvironmentsWorkspaceBaseEnvironments interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataDatabricksEnvironmentsWorkspaceBaseEnvironments) Workspac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments} Data Source.
 func NewDataDatabricksEnvironmentsWorkspaceBaseEnvironments(scope constructs.Construct, id *string, config *DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsConfig) DataDatabricksEnvironmentsWorkspaceBaseEnvironments {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataDatabricksEnvironmentsWorkspaceBaseEnvironments(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments} Data Source.
 func NewDataDatabricksEnvironmentsWorkspaceBaseEnvironments_Override(d DataDatabricksEnvironmentsWorkspaceBaseEnvironments, scope constructs.Construct, id *string, config *DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsConfig) {
 	_init_.Initialize()
 

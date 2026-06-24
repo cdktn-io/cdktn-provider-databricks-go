@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source}.
 type KnowledgeAssistantKnowledgeSource interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -538,7 +538,7 @@ func (j *jsiiProxy_KnowledgeAssistantKnowledgeSource) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source} Resource.
 func NewKnowledgeAssistantKnowledgeSource(scope constructs.Construct, id *string, config *KnowledgeAssistantKnowledgeSourceConfig) KnowledgeAssistantKnowledgeSource {
 	_init_.Initialize()
 
@@ -556,7 +556,7 @@ func NewKnowledgeAssistantKnowledgeSource(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source} Resource.
 func NewKnowledgeAssistantKnowledgeSource_Override(k KnowledgeAssistantKnowledgeSource, scope constructs.Construct, id *string, config *KnowledgeAssistantKnowledgeSourceConfig) {
 	_init_.Initialize()
 

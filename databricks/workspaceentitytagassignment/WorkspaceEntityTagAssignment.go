@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment}.
 type WorkspaceEntityTagAssignment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_WorkspaceEntityTagAssignment) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Resource.
 func NewWorkspaceEntityTagAssignment(scope constructs.Construct, id *string, config *WorkspaceEntityTagAssignmentConfig) WorkspaceEntityTagAssignment {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewWorkspaceEntityTagAssignment(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/workspace_entity_tag_assignment databricks_workspace_entity_tag_assignment} Resource.
 func NewWorkspaceEntityTagAssignment_Override(w WorkspaceEntityTagAssignment, scope constructs.Construct, id *string, config *WorkspaceEntityTagAssignmentConfig) {
 	_init_.Initialize()
 

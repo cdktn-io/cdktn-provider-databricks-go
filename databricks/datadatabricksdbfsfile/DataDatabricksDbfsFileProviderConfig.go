@@ -5,7 +5,7 @@ package datadatabricksdbfsfile
 
 
 type DataDatabricksDbfsFileProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/dbfs_file#workspace_id DataDatabricksDbfsFile#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/dbfs_file#workspace_id DataDatabricksDbfsFile#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

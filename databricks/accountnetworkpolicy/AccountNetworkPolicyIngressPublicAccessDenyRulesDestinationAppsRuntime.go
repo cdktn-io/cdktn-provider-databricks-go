@@ -5,7 +5,7 @@ package accountnetworkpolicy
 
 
 type AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}.
 	AllDestinations interface{} `field:"optional" json:"allDestinations" yaml:"allDestinations"`
 }
 

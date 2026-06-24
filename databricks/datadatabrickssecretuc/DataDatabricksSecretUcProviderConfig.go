@@ -5,7 +5,7 @@ package datadatabrickssecretuc
 
 
 type DataDatabricksSecretUcProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_uc#workspace_id DataDatabricksSecretUc#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_uc#workspace_id DataDatabricksSecretUc#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

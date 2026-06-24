@@ -5,9 +5,9 @@ package datadatabricksexternalmetadatas
 
 
 type DataDatabricksExternalMetadatasExternalMetadata struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/external_metadatas#name DataDatabricksExternalMetadatas#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/external_metadatas#name DataDatabricksExternalMetadatas#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/external_metadatas#provider_config DataDatabricksExternalMetadatas#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/external_metadatas#provider_config DataDatabricksExternalMetadatas#provider_config}.
 	ProviderConfig *DataDatabricksExternalMetadatasExternalMetadataProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

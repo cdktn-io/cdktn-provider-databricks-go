@@ -5,7 +5,7 @@ package datadatabricksaccountnetworkpolicies
 
 
 type DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccessDenyRulesOriginEndpoints struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/account_network_policies#endpoint_ids DataDatabricksAccountNetworkPolicies#endpoint_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/account_network_policies#endpoint_ids DataDatabricksAccountNetworkPolicies#endpoint_ids}.
 	EndpointIds *[]*string `field:"optional" json:"endpointIds" yaml:"endpointIds"`
 }
 

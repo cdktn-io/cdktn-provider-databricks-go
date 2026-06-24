@@ -5,7 +5,7 @@ package datadatabrickssupervisoragenttools
 
 
 type DataDatabricksSupervisorAgentToolsToolsApp struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -5,7 +5,7 @@ package postgresendpoint
 
 
 type PostgresEndpointProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/postgres_endpoint#workspace_id PostgresEndpoint#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/postgres_endpoint#workspace_id PostgresEndpoint#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 
