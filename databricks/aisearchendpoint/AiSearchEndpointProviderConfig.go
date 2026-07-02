@@ -5,7 +5,7 @@ package aisearchendpoint
 
 
 type AiSearchEndpointProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/ai_search_endpoint#workspace_id AiSearchEndpoint#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_endpoint#workspace_id AiSearchEndpoint#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

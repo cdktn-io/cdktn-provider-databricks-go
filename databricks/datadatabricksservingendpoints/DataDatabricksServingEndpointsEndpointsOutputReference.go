@@ -64,6 +64,8 @@ type DataDatabricksServingEndpointsEndpointsOutputReference interface {
 	Task() *string
 	SetTask(val *string)
 	TaskInput() *string
+	TelemetryConfig() DataDatabricksServingEndpointsEndpointsTelemetryConfigList
+	TelemetryConfigInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -103,6 +105,7 @@ type DataDatabricksServingEndpointsEndpointsOutputReference interface {
 	PutConfig(value interface{})
 	PutState(value interface{})
 	PutTags(value interface{})
+	PutTelemetryConfig(value interface{})
 	ResetAiGateway()
 	ResetBudgetPolicyId()
 	ResetConfig()
@@ -115,6 +118,7 @@ type DataDatabricksServingEndpointsEndpointsOutputReference interface {
 	ResetState()
 	ResetTags()
 	ResetTask()
+	ResetTelemetryConfig()
 	ResetUsagePolicyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -416,6 +420,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) TaskI
 	_jsii_.Get(
 		j,
 		"taskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) TelemetryConfig() DataDatabricksServingEndpointsEndpointsTelemetryConfigList {
+	var returns DataDatabricksServingEndpointsEndpointsTelemetryConfigList
+	_jsii_.Get(
+		j,
+		"telemetryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) TelemetryConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"telemetryConfigInput",
 		&returns,
 	)
 	return returns
@@ -873,6 +897,17 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) PutTa
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) PutTelemetryConfig(value interface{}) {
+	if err := d.validatePutTelemetryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTelemetryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) ResetAiGateway() {
 	_jsii_.InvokeVoid(
 		d,
@@ -965,6 +1000,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		d,
 		"resetTask",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) ResetTelemetryConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTelemetryConfig",
 		nil, // no parameters
 	)
 }

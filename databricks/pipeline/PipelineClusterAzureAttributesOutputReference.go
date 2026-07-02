@@ -16,6 +16,9 @@ type PipelineClusterAzureAttributesOutputReference interface {
 	Availability() *string
 	SetAvailability(val *string)
 	AvailabilityInput() *string
+	CapacityReservationGroup() *string
+	SetCapacityReservationGroup(val *string)
+	CapacityReservationGroupInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -77,6 +80,7 @@ type PipelineClusterAzureAttributesOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLogAnalyticsInfo(value *PipelineClusterAzureAttributesLogAnalyticsInfo)
 	ResetAvailability()
+	ResetCapacityReservationGroup()
 	ResetFirstOnDemand()
 	ResetLogAnalyticsInfo()
 	ResetSpotBidMaxPrice()
@@ -110,6 +114,26 @@ func (j *jsiiProxy_PipelineClusterAzureAttributesOutputReference) AvailabilityIn
 	_jsii_.Get(
 		j,
 		"availabilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAzureAttributesOutputReference) CapacityReservationGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityReservationGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAzureAttributesOutputReference) CapacityReservationGroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityReservationGroupInput",
 		&returns,
 	)
 	return returns
@@ -280,6 +304,17 @@ func (j *jsiiProxy_PipelineClusterAzureAttributesOutputReference)SetAvailability
 	_jsii_.Set(
 		j,
 		"availability",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterAzureAttributesOutputReference)SetCapacityReservationGroup(val *string) {
+	if err := j.validateSetCapacityReservationGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"capacityReservationGroup",
 		val,
 	)
 }
@@ -562,6 +597,14 @@ func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) ResetAvailabil
 	_jsii_.InvokeVoid(
 		p,
 		"resetAvailability",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) ResetCapacityReservationGroup() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCapacityReservationGroup",
 		nil, // no parameters
 	)
 }

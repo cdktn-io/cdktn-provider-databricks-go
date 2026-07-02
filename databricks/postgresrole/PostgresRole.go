@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/postgres_role databricks_postgres_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_role databricks_postgres_role}.
 type PostgresRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -62,6 +62,9 @@ type PostgresRole interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplaceExisting() interface{}
+	SetReplaceExisting(val interface{})
+	ReplaceExistingInput() interface{}
 	RoleId() *string
 	SetRoleId(val *string)
 	RoleIdInput() *string
@@ -124,6 +127,7 @@ type PostgresRole interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetReplaceExisting()
 	ResetRoleId()
 	ResetSpec()
 	SynthesizeAttributes() *map[string]interface{}
@@ -343,6 +347,26 @@ func (j *jsiiProxy_PostgresRole) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresRole) ReplaceExisting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replaceExisting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresRole) ReplaceExistingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replaceExistingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresRole) RoleId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -434,7 +458,7 @@ func (j *jsiiProxy_PostgresRole) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/postgres_role databricks_postgres_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_role databricks_postgres_role} Resource.
 func NewPostgresRole(scope constructs.Construct, id *string, config *PostgresRoleConfig) PostgresRole {
 	_init_.Initialize()
 
@@ -452,7 +476,7 @@ func NewPostgresRole(scope constructs.Construct, id *string, config *PostgresRol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/postgres_role databricks_postgres_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_role databricks_postgres_role} Resource.
 func NewPostgresRole_Override(p PostgresRole, scope constructs.Construct, id *string, config *PostgresRoleConfig) {
 	_init_.Initialize()
 
@@ -538,6 +562,17 @@ func (j *jsiiProxy_PostgresRole)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresRole)SetReplaceExisting(val interface{}) {
+	if err := j.validateSetReplaceExistingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replaceExisting",
 		val,
 	)
 }
@@ -940,6 +975,14 @@ func (p *jsiiProxy_PostgresRole) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresRole) ResetReplaceExisting() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetReplaceExisting",
 		nil, // no parameters
 	)
 }

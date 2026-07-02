@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/model_serving databricks_model_serving}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/model_serving databricks_model_serving}.
 type ModelServing interface {
 	cdktn.TerraformResource
 	AiGateway() ModelServingAiGatewayOutputReference
@@ -84,6 +84,8 @@ type ModelServing interface {
 	ServingEndpointId() *string
 	Tags() ModelServingTagsList
 	TagsInput() interface{}
+	TelemetryConfig() ModelServingTelemetryConfigOutputReference
+	TelemetryConfigInput() *ModelServingTelemetryConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -141,6 +143,7 @@ type ModelServing interface {
 	PutProviderConfig(value *ModelServingProviderConfig)
 	PutRateLimits(value interface{})
 	PutTags(value interface{})
+	PutTelemetryConfig(value *ModelServingTelemetryConfig)
 	PutTimeouts(value *ModelServingTimeouts)
 	ResetAiGateway()
 	ResetBudgetPolicyId()
@@ -155,6 +158,7 @@ type ModelServing interface {
 	ResetRateLimits()
 	ResetRouteOptimized()
 	ResetTags()
+	ResetTelemetryConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -553,6 +557,26 @@ func (j *jsiiProxy_ModelServing) TagsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ModelServing) TelemetryConfig() ModelServingTelemetryConfigOutputReference {
+	var returns ModelServingTelemetryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"telemetryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) TelemetryConfigInput() *ModelServingTelemetryConfig {
+	var returns *ModelServingTelemetryConfig
+	_jsii_.Get(
+		j,
+		"telemetryConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ModelServing) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -604,7 +628,7 @@ func (j *jsiiProxy_ModelServing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing(scope constructs.Construct, id *string, config *ModelServingConfig) ModelServing {
 	_init_.Initialize()
 
@@ -622,7 +646,7 @@ func NewModelServing(scope constructs.Construct, id *string, config *ModelServin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing_Override(m ModelServing, scope constructs.Construct, id *string, config *ModelServingConfig) {
 	_init_.Initialize()
 
@@ -1175,6 +1199,17 @@ func (m *jsiiProxy_ModelServing) PutTags(value interface{}) {
 	)
 }
 
+func (m *jsiiProxy_ModelServing) PutTelemetryConfig(value *ModelServingTelemetryConfig) {
+	if err := m.validatePutTelemetryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTelemetryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ModelServing) PutTimeouts(value *ModelServingTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1270,6 +1305,14 @@ func (m *jsiiProxy_ModelServing) ResetTags() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServing) ResetTelemetryConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTelemetryConfig",
 		nil, // no parameters
 	)
 }

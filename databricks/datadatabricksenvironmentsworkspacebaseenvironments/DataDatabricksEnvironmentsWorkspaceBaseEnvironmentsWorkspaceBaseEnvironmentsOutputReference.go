@@ -46,6 +46,7 @@ type DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironment
 	NameInput() *string
 	ProviderConfig() DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsProviderConfigOutputReference
 	ProviderConfigInput() interface{}
+	Spec() DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsSpecOutputReference
 	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -272,6 +273,16 @@ func (j *jsiiProxy_DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceB
 	_jsii_.Get(
 		j,
 		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsOutputReference) Spec() DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsSpecOutputReference {
+	var returns DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsSpecOutputReference
+	_jsii_.Get(
+		j,
+		"spec",
 		&returns,
 	)
 	return returns

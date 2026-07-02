@@ -13,6 +13,12 @@ import (
 
 type PostgresProjectInitialEndpointSpecOutputReference interface {
 	cdktn.ComplexObject
+	AutoscalingLimitMaxCu() *float64
+	SetAutoscalingLimitMaxCu(val *float64)
+	AutoscalingLimitMaxCuInput() *float64
+	AutoscalingLimitMinCu() *float64
+	SetAutoscalingLimitMinCu(val *float64)
+	AutoscalingLimitMinCuInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,6 +40,12 @@ type PostgresProjectInitialEndpointSpecOutputReference interface {
 	GroupInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	NoSuspension() interface{}
+	SetNoSuspension(val interface{})
+	NoSuspensionInput() interface{}
+	SuspendTimeoutDuration() *string
+	SetSuspendTimeoutDuration(val *string)
+	SuspendTimeoutDurationInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +79,11 @@ type PostgresProjectInitialEndpointSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutGroup(value *PostgresProjectInitialEndpointSpecGroup)
+	ResetAutoscalingLimitMaxCu()
+	ResetAutoscalingLimitMinCu()
 	ResetGroup()
+	ResetNoSuspension()
+	ResetSuspendTimeoutDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -81,6 +97,46 @@ type PostgresProjectInitialEndpointSpecOutputReference interface {
 // The jsii proxy struct for PostgresProjectInitialEndpointSpecOutputReference
 type jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) AutoscalingLimitMaxCu() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoscalingLimitMaxCu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) AutoscalingLimitMaxCuInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoscalingLimitMaxCuInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) AutoscalingLimitMinCu() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoscalingLimitMinCu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) AutoscalingLimitMinCuInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoscalingLimitMinCuInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -153,6 +209,46 @@ func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) InternalVa
 	return returns
 }
 
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) NoSuspension() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noSuspension",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) NoSuspensionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noSuspensionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) SuspendTimeoutDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suspendTimeoutDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) SuspendTimeoutDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suspendTimeoutDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -201,6 +297,28 @@ func NewPostgresProjectInitialEndpointSpecOutputReference_Override(p PostgresPro
 	)
 }
 
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference)SetAutoscalingLimitMaxCu(val *float64) {
+	if err := j.validateSetAutoscalingLimitMaxCuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoscalingLimitMaxCu",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference)SetAutoscalingLimitMinCu(val *float64) {
+	if err := j.validateSetAutoscalingLimitMinCuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoscalingLimitMinCu",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -230,6 +348,28 @@ func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference)SetInternal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference)SetNoSuspension(val interface{}) {
+	if err := j.validateSetNoSuspensionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noSuspension",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference)SetSuspendTimeoutDuration(val *string) {
+	if err := j.validateSetSuspendTimeoutDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"suspendTimeoutDuration",
 		val,
 	)
 }
@@ -453,10 +593,42 @@ func (p *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) PutGroup(v
 	)
 }
 
+func (p *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) ResetAutoscalingLimitMaxCu() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAutoscalingLimitMaxCu",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) ResetAutoscalingLimitMinCu() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAutoscalingLimitMinCu",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) ResetGroup() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetGroup",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) ResetNoSuspension() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNoSuspension",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresProjectInitialEndpointSpecOutputReference) ResetSuspendTimeoutDuration() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSuspendTimeoutDuration",
 		nil, // no parameters
 	)
 }

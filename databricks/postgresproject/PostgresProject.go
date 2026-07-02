@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/postgres_project databricks_postgres_project}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_project databricks_postgres_project}.
 type PostgresProject interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -41,6 +41,8 @@ type PostgresProject interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	InitialBranchSpec() PostgresProjectInitialBranchSpecOutputReference
+	InitialBranchSpecInput() interface{}
 	InitialEndpointSpec() PostgresProjectInitialEndpointSpecOutputReference
 	InitialEndpointSpecInput() interface{}
 	// Experimental.
@@ -123,9 +125,11 @@ type PostgresProject interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutInitialBranchSpec(value *PostgresProjectInitialBranchSpec)
 	PutInitialEndpointSpec(value *PostgresProjectInitialEndpointSpec)
 	PutProviderConfig(value *PostgresProjectProviderConfig)
 	PutSpec(value *PostgresProjectSpec)
+	ResetInitialBranchSpec()
 	ResetInitialEndpointSpec()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -255,6 +259,26 @@ func (j *jsiiProxy_PostgresProject) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProject) InitialBranchSpec() PostgresProjectInitialBranchSpecOutputReference {
+	var returns PostgresProjectInitialBranchSpecOutputReference
+	_jsii_.Get(
+		j,
+		"initialBranchSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresProject) InitialBranchSpecInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"initialBranchSpecInput",
 		&returns,
 	)
 	return returns
@@ -491,7 +515,7 @@ func (j *jsiiProxy_PostgresProject) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/postgres_project databricks_postgres_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_project databricks_postgres_project} Resource.
 func NewPostgresProject(scope constructs.Construct, id *string, config *PostgresProjectConfig) PostgresProject {
 	_init_.Initialize()
 
@@ -509,7 +533,7 @@ func NewPostgresProject(scope constructs.Construct, id *string, config *Postgres
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/postgres_project databricks_postgres_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_project databricks_postgres_project} Resource.
 func NewPostgresProject_Override(p PostgresProject, scope constructs.Construct, id *string, config *PostgresProjectConfig) {
 	_init_.Initialize()
 
@@ -963,6 +987,17 @@ func (p *jsiiProxy_PostgresProject) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_PostgresProject) PutInitialBranchSpec(value *PostgresProjectInitialBranchSpec) {
+	if err := p.validatePutInitialBranchSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putInitialBranchSpec",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PostgresProject) PutInitialEndpointSpec(value *PostgresProjectInitialEndpointSpec) {
 	if err := p.validatePutInitialEndpointSpecParameters(value); err != nil {
 		panic(err)
@@ -993,6 +1028,14 @@ func (p *jsiiProxy_PostgresProject) PutSpec(value *PostgresProjectSpec) {
 		p,
 		"putSpec",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PostgresProject) ResetInitialBranchSpec() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetInitialBranchSpec",
+		nil, // no parameters
 	)
 }
 

@@ -123,6 +123,10 @@ func (j *jsiiProxy_PostgresDatabase) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_PostgresDatabase) validateSetReplaceExistingParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewPostgresDatabaseParameters(scope constructs.Construct, id *string, config *PostgresDatabaseConfig) error {
 	return nil
 }

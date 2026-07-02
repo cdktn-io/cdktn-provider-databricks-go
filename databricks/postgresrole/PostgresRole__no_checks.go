@@ -119,6 +119,10 @@ func (j *jsiiProxy_PostgresRole) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_PostgresRole) validateSetReplaceExistingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresRole) validateSetRoleIdParameters(val *string) error {
 	return nil
 }

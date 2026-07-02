@@ -99,6 +99,10 @@ func (m *jsiiProxy_ModelServing) validatePutTagsParameters(value interface{}) er
 	return nil
 }
 
+func (m *jsiiProxy_ModelServing) validatePutTelemetryConfigParameters(value *ModelServingTelemetryConfig) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServing) validatePutTimeoutsParameters(value *ModelServingTimeouts) error {
 	return nil
 }

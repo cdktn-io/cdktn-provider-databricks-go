@@ -313,6 +313,17 @@ func (m *jsiiProxy_ModelServing) validatePutTagsParameters(value interface{}) er
 	return nil
 }
 
+func (m *jsiiProxy_ModelServing) validatePutTelemetryConfigParameters(value *ModelServingTelemetryConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_ModelServing) validatePutTimeoutsParameters(value *ModelServingTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

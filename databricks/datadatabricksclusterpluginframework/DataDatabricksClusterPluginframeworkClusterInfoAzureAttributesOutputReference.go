@@ -16,6 +16,9 @@ type DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReferen
 	Availability() *string
 	SetAvailability(val *string)
 	AvailabilityInput() *string
+	CapacityReservationGroup() *string
+	SetCapacityReservationGroup(val *string)
+	CapacityReservationGroupInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -77,6 +80,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReferen
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLogAnalyticsInfo(value interface{})
 	ResetAvailability()
+	ResetCapacityReservationGroup()
 	ResetFirstOnDemand()
 	ResetLogAnalyticsInfo()
 	ResetSpotBidMaxPrice()
@@ -110,6 +114,26 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttribute
 	_jsii_.Get(
 		j,
 		"availabilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference) CapacityReservationGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityReservationGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference) CapacityReservationGroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityReservationGroupInput",
 		&returns,
 	)
 	return returns
@@ -280,6 +304,17 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttribute
 	_jsii_.Set(
 		j,
 		"availability",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference)SetCapacityReservationGroup(val *string) {
+	if err := j.validateSetCapacityReservationGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"capacityReservationGroup",
 		val,
 	)
 }
@@ -562,6 +597,14 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttribute
 	_jsii_.InvokeVoid(
 		d,
 		"resetAvailability",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference) ResetCapacityReservationGroup() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCapacityReservationGroup",
 		nil, // no parameters
 	)
 }

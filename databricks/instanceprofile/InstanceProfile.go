@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/instance_profile databricks_instance_profile}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/instance_profile databricks_instance_profile}.
 type InstanceProfile interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_InstanceProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/instance_profile databricks_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/instance_profile databricks_instance_profile} Resource.
 func NewInstanceProfile(scope constructs.Construct, id *string, config *InstanceProfileConfig) InstanceProfile {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewInstanceProfile(scope constructs.Construct, id *string, config *Instance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/instance_profile databricks_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/instance_profile databricks_instance_profile} Resource.
 func NewInstanceProfile_Override(i InstanceProfile, scope constructs.Construct, id *string, config *InstanceProfileConfig) {
 	_init_.Initialize()
 

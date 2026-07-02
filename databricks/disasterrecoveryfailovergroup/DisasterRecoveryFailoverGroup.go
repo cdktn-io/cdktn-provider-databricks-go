@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group}.
 type DisasterRecoveryFailoverGroup interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -34,8 +34,6 @@ type DisasterRecoveryFailoverGroup interface {
 	SetDependsOn(val *[]*string)
 	EffectivePrimaryRegion() *string
 	Etag() *string
-	SetEtag(val *string)
-	EtagInput() *string
 	FailoverGroupId() *string
 	SetFailoverGroupId(val *string)
 	FailoverGroupIdInput() *string
@@ -131,7 +129,6 @@ type DisasterRecoveryFailoverGroup interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutUnityCatalogAssets(value *DisasterRecoveryFailoverGroupUnityCatalogAssets)
 	PutWorkspaceSets(value interface{})
-	ResetEtag()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -238,16 +235,6 @@ func (j *jsiiProxy_DisasterRecoveryFailoverGroup) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DisasterRecoveryFailoverGroup) EtagInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"etagInput",
 		&returns,
 	)
 	return returns
@@ -524,7 +511,7 @@ func (j *jsiiProxy_DisasterRecoveryFailoverGroup) WorkspaceSetsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Resource.
 func NewDisasterRecoveryFailoverGroup(scope constructs.Construct, id *string, config *DisasterRecoveryFailoverGroupConfig) DisasterRecoveryFailoverGroup {
 	_init_.Initialize()
 
@@ -542,7 +529,7 @@ func NewDisasterRecoveryFailoverGroup(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Resource.
 func NewDisasterRecoveryFailoverGroup_Override(d DisasterRecoveryFailoverGroup, scope constructs.Construct, id *string, config *DisasterRecoveryFailoverGroupConfig) {
 	_init_.Initialize()
 
@@ -579,17 +566,6 @@ func (j *jsiiProxy_DisasterRecoveryFailoverGroup)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DisasterRecoveryFailoverGroup)SetEtag(val *string) {
-	if err := j.validateSetEtagParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"etag",
 		val,
 	)
 }
@@ -1048,14 +1024,6 @@ func (d *jsiiProxy_DisasterRecoveryFailoverGroup) PutWorkspaceSets(value interfa
 		d,
 		"putWorkspaceSets",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DisasterRecoveryFailoverGroup) ResetEtag() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEtag",
-		nil, // no parameters
 	)
 }
 

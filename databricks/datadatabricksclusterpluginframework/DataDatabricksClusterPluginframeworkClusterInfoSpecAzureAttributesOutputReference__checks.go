@@ -140,6 +140,14 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttri
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference) validateSetCapacityReservationGroupParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

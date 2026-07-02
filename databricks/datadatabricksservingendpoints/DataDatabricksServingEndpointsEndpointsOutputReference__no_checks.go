@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) valid
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) validatePutTelemetryConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

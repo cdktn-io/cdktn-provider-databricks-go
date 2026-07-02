@@ -236,6 +236,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityInput", GoGetter: "AvailabilityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "capacityReservationGroup", GoGetter: "CapacityReservationGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "capacityReservationGroupInput", GoGetter: "CapacityReservationGroupInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -259,6 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logAnalyticsInfoInput", GoGetter: "LogAnalyticsInfoInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogAnalyticsInfo", GoMethod: "PutLogAnalyticsInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvailability", GoMethod: "ResetAvailability"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCapacityReservationGroup", GoMethod: "ResetCapacityReservationGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFirstOnDemand", GoMethod: "ResetFirstOnDemand"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogAnalyticsInfo", GoMethod: "ResetLogAnalyticsInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSpotBidMaxPrice", GoMethod: "ResetSpotBidMaxPrice"},
@@ -1634,6 +1637,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityInput", GoGetter: "AvailabilityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "capacityReservationGroup", GoGetter: "CapacityReservationGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "capacityReservationGroupInput", GoGetter: "CapacityReservationGroupInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1657,6 +1662,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logAnalyticsInfoInput", GoGetter: "LogAnalyticsInfoInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogAnalyticsInfo", GoMethod: "PutLogAnalyticsInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvailability", GoMethod: "ResetAvailability"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCapacityReservationGroup", GoMethod: "ResetCapacityReservationGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFirstOnDemand", GoMethod: "ResetFirstOnDemand"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogAnalyticsInfo", GoMethod: "ResetLogAnalyticsInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSpotBidMaxPrice", GoMethod: "ResetSpotBidMaxPrice"},

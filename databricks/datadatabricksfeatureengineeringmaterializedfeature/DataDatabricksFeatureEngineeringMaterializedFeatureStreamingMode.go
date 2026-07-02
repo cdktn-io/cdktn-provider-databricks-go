@@ -5,7 +5,7 @@ package datadatabricksfeatureengineeringmaterializedfeature
 
 
 type DataDatabricksFeatureEngineeringMaterializedFeatureStreamingMode struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/feature_engineering_materialized_feature#mode DataDatabricksFeatureEngineeringMaterializedFeature#mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/feature_engineering_materialized_feature#mode DataDatabricksFeatureEngineeringMaterializedFeature#mode}.
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 }
 

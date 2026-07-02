@@ -251,6 +251,10 @@ func (j *jsiiProxy_Pipeline) validateSetServerlessParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetServerlessComputeIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetStateParameters(val *string) error {
 	return nil
 }

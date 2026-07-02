@@ -75,6 +75,10 @@ func (p *jsiiProxy_PostgresProject) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (p *jsiiProxy_PostgresProject) validatePutInitialBranchSpecParameters(value *PostgresProjectInitialBranchSpec) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresProject) validatePutInitialEndpointSpecParameters(value *PostgresProjectInitialEndpointSpec) error {
 	return nil
 }

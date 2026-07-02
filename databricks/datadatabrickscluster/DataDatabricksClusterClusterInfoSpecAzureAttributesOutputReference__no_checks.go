@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecAzureAttributesOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecAzureAttributesOutputReference) validateSetCapacityReservationGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecAzureAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/postgres_database databricks_postgres_database}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_database databricks_postgres_database}.
 type PostgresDatabase interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type PostgresDatabase interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplaceExisting() interface{}
+	SetReplaceExisting(val interface{})
+	ReplaceExistingInput() interface{}
 	Spec() PostgresDatabaseSpecOutputReference
 	SpecInput() interface{}
 	Status() PostgresDatabaseStatusOutputReference
@@ -125,6 +128,7 @@ type PostgresDatabase interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetReplaceExisting()
 	ResetSpec()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -363,6 +367,26 @@ func (j *jsiiProxy_PostgresDatabase) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresDatabase) ReplaceExisting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replaceExisting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresDatabase) ReplaceExistingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replaceExistingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresDatabase) Spec() PostgresDatabaseSpecOutputReference {
 	var returns PostgresDatabaseSpecOutputReference
 	_jsii_.Get(
@@ -434,7 +458,7 @@ func (j *jsiiProxy_PostgresDatabase) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/postgres_database databricks_postgres_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_database databricks_postgres_database} Resource.
 func NewPostgresDatabase(scope constructs.Construct, id *string, config *PostgresDatabaseConfig) PostgresDatabase {
 	_init_.Initialize()
 
@@ -452,7 +476,7 @@ func NewPostgresDatabase(scope constructs.Construct, id *string, config *Postgre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/postgres_database databricks_postgres_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_database databricks_postgres_database} Resource.
 func NewPostgresDatabase_Override(p PostgresDatabase, scope constructs.Construct, id *string, config *PostgresDatabaseConfig) {
 	_init_.Initialize()
 
@@ -549,6 +573,17 @@ func (j *jsiiProxy_PostgresDatabase)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresDatabase)SetReplaceExisting(val interface{}) {
+	if err := j.validateSetReplaceExistingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replaceExisting",
 		val,
 	)
 }
@@ -948,6 +983,14 @@ func (p *jsiiProxy_PostgresDatabase) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresDatabase) ResetReplaceExisting() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetReplaceExisting",
 		nil, // no parameters
 	)
 }

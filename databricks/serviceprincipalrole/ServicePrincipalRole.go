@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/service_principal_role databricks_service_principal_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/service_principal_role databricks_service_principal_role}.
 type ServicePrincipalRole interface {
 	cdktn.TerraformResource
 	Api() *string
@@ -413,7 +413,7 @@ func (j *jsiiProxy_ServicePrincipalRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
 func NewServicePrincipalRole(scope constructs.Construct, id *string, config *ServicePrincipalRoleConfig) ServicePrincipalRole {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewServicePrincipalRole(scope constructs.Construct, id *string, config *Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
 func NewServicePrincipalRole_Override(s ServicePrincipalRole, scope constructs.Construct, id *string, config *ServicePrincipalRoleConfig) {
 	_init_.Initialize()
 

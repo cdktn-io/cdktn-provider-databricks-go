@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}.
 type DataDatabricksFeatureEngineeringKafkaConfig interface {
 	cdktn.TerraformDataSource
 	AuthConfig() DataDatabricksFeatureEngineeringKafkaConfigAuthConfigOutputReference
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfig) ValueSchema() Da
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Data Source.
 func NewDataDatabricksFeatureEngineeringKafkaConfig(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringKafkaConfigConfig) DataDatabricksFeatureEngineeringKafkaConfig {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataDatabricksFeatureEngineeringKafkaConfig(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Data Source.
 func NewDataDatabricksFeatureEngineeringKafkaConfig_Override(d DataDatabricksFeatureEngineeringKafkaConfig, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringKafkaConfigConfig) {
 	_init_.Initialize()
 

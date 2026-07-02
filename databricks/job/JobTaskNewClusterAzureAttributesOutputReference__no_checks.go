@@ -59,6 +59,10 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) validateSetA
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) validateSetCapacityReservationGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

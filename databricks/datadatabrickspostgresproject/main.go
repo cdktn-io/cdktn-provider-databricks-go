@@ -33,6 +33,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "initialBranchSpec", GoGetter: "InitialBranchSpec"},
 			_jsii_.MemberProperty{JsiiProperty: "initialEndpointSpec", GoGetter: "InitialEndpointSpec"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
@@ -73,6 +74,45 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.dataDatabricksPostgresProject.DataDatabricksPostgresProjectConfig",
 		reflect.TypeOf((*DataDatabricksPostgresProjectConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksPostgresProject.DataDatabricksPostgresProjectInitialBranchSpec",
+		reflect.TypeOf((*DataDatabricksPostgresProjectInitialBranchSpec)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksPostgresProject.DataDatabricksPostgresProjectInitialBranchSpecOutputReference",
+		reflect.TypeOf((*DataDatabricksPostgresProjectInitialBranchSpecOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "isProtected", GoGetter: "IsProtected"},
+			_jsii_.MemberProperty{JsiiProperty: "isProtectedInput", GoGetter: "IsProtectedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIsProtected", GoMethod: "ResetIsProtected"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksPostgresProjectInitialBranchSpecOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.dataDatabricksPostgresProject.DataDatabricksPostgresProjectInitialEndpointSpec",
@@ -125,6 +165,10 @@ func init() {
 		"@cdktn/provider-databricks.dataDatabricksPostgresProject.DataDatabricksPostgresProjectInitialEndpointSpecOutputReference",
 		reflect.TypeOf((*DataDatabricksPostgresProjectInitialEndpointSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "autoscalingLimitMaxCu", GoGetter: "AutoscalingLimitMaxCu"},
+			_jsii_.MemberProperty{JsiiProperty: "autoscalingLimitMaxCuInput", GoGetter: "AutoscalingLimitMaxCuInput"},
+			_jsii_.MemberProperty{JsiiProperty: "autoscalingLimitMinCu", GoGetter: "AutoscalingLimitMinCu"},
+			_jsii_.MemberProperty{JsiiProperty: "autoscalingLimitMinCuInput", GoGetter: "AutoscalingLimitMinCuInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,9 +188,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "noSuspension", GoGetter: "NoSuspension"},
+			_jsii_.MemberProperty{JsiiProperty: "noSuspensionInput", GoGetter: "NoSuspensionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putGroup", GoMethod: "PutGroup"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoscalingLimitMaxCu", GoMethod: "ResetAutoscalingLimitMaxCu"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoscalingLimitMinCu", GoMethod: "ResetAutoscalingLimitMinCu"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroup", GoMethod: "ResetGroup"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNoSuspension", GoMethod: "ResetNoSuspension"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSuspendTimeoutDuration", GoMethod: "ResetSuspendTimeoutDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "suspendTimeoutDuration", GoGetter: "SuspendTimeoutDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "suspendTimeoutDurationInput", GoGetter: "SuspendTimeoutDurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -501,6 +553,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "computeLastActiveTime", GoGetter: "ComputeLastActiveTime"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "customTags", GoGetter: "CustomTags"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultBranch", GoGetter: "DefaultBranch"},

@@ -5,7 +5,7 @@ package aibidashboardembeddingaccesspolicysetting
 
 
 type AibiDashboardEmbeddingAccessPolicySettingProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#workspace_id AibiDashboardEmbeddingAccessPolicySetting#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#workspace_id AibiDashboardEmbeddingAccessPolicySetting#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

@@ -107,10 +107,6 @@ func (j *jsiiProxy_DisasterRecoveryFailoverGroup) validateSetCountParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DisasterRecoveryFailoverGroup) validateSetEtagParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DisasterRecoveryFailoverGroup) validateSetFailoverGroupIdParameters(val *string) error {
 	return nil
 }

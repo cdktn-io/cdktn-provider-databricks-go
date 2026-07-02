@@ -5,11 +5,11 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/pipeline#format Pipeline#format}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/pipeline#format Pipeline#format}.
 	Format *string `field:"optional" json:"format" yaml:"format"`
 	// json_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/pipeline#json_options Pipeline#json_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/pipeline#json_options Pipeline#json_options}
 	JsonOptions *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions `field:"optional" json:"jsonOptions" yaml:"jsonOptions"`
 }
 

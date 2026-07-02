@@ -32,6 +32,7 @@ type DataDatabricksPostgresProjectsProjectsOutputReference interface {
 	DeleteTime() *string
 	// Experimental.
 	Fqn() *string
+	InitialBranchSpec() DataDatabricksPostgresProjectsProjectsInitialBranchSpecOutputReference
 	InitialEndpointSpec() DataDatabricksPostgresProjectsProjectsInitialEndpointSpecOutputReference
 	InternalValue() *DataDatabricksPostgresProjectsProjects
 	SetInternalValue(val *DataDatabricksPostgresProjectsProjects)
@@ -150,6 +151,16 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsOutputReference) Fqn() 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsOutputReference) InitialBranchSpec() DataDatabricksPostgresProjectsProjectsInitialBranchSpecOutputReference {
+	var returns DataDatabricksPostgresProjectsProjectsInitialBranchSpecOutputReference
+	_jsii_.Get(
+		j,
+		"initialBranchSpec",
 		&returns,
 	)
 	return returns

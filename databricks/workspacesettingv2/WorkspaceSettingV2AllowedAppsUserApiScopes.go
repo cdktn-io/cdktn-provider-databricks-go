@@ -5,7 +5,7 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2AllowedAppsUserApiScopes struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}.
 	AllowedScopes *[]*string `field:"optional" json:"allowedScopes" yaml:"allowedScopes"`
 }
 

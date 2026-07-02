@@ -76,6 +76,7 @@ type DisasterRecoveryFailoverGroupWorkspaceSetsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetReplicateWorkspaceAssets()
 	ResetStableUrlNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -553,6 +554,14 @@ func (d *jsiiProxy_DisasterRecoveryFailoverGroupWorkspaceSetsOutputReference) In
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DisasterRecoveryFailoverGroupWorkspaceSetsOutputReference) ResetReplicateWorkspaceAssets() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetReplicateWorkspaceAssets",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DisasterRecoveryFailoverGroupWorkspaceSetsOutputReference) ResetStableUrlNames() {

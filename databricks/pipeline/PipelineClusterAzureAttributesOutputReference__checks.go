@@ -120,6 +120,14 @@ func (j *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validateSetAva
 	return nil
 }
 
+func (j *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validateSetCapacityReservationGroupParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

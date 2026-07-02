@@ -47,6 +47,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateInterpolationF
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutAiRuntimeTaskParameters(value *JobTaskForEachTaskTaskAiRuntimeTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutAlertTaskParameters(value *JobTaskForEachTaskTaskAlertTask) error {
 	return nil
 }

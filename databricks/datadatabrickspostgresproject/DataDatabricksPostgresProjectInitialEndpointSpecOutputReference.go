@@ -13,6 +13,12 @@ import (
 
 type DataDatabricksPostgresProjectInitialEndpointSpecOutputReference interface {
 	cdktn.ComplexObject
+	AutoscalingLimitMaxCu() *float64
+	SetAutoscalingLimitMaxCu(val *float64)
+	AutoscalingLimitMaxCuInput() *float64
+	AutoscalingLimitMinCu() *float64
+	SetAutoscalingLimitMinCu(val *float64)
+	AutoscalingLimitMinCuInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,6 +40,12 @@ type DataDatabricksPostgresProjectInitialEndpointSpecOutputReference interface {
 	GroupInput() interface{}
 	InternalValue() *DataDatabricksPostgresProjectInitialEndpointSpec
 	SetInternalValue(val *DataDatabricksPostgresProjectInitialEndpointSpec)
+	NoSuspension() interface{}
+	SetNoSuspension(val interface{})
+	NoSuspensionInput() interface{}
+	SuspendTimeoutDuration() *string
+	SetSuspendTimeoutDuration(val *string)
+	SuspendTimeoutDurationInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +79,11 @@ type DataDatabricksPostgresProjectInitialEndpointSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutGroup(value *DataDatabricksPostgresProjectInitialEndpointSpecGroup)
+	ResetAutoscalingLimitMaxCu()
+	ResetAutoscalingLimitMinCu()
 	ResetGroup()
+	ResetNoSuspension()
+	ResetSuspendTimeoutDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -81,6 +97,46 @@ type DataDatabricksPostgresProjectInitialEndpointSpecOutputReference interface {
 // The jsii proxy struct for DataDatabricksPostgresProjectInitialEndpointSpecOutputReference
 type jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) AutoscalingLimitMaxCu() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoscalingLimitMaxCu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) AutoscalingLimitMaxCuInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoscalingLimitMaxCuInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) AutoscalingLimitMinCu() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoscalingLimitMinCu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) AutoscalingLimitMinCuInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoscalingLimitMinCuInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -153,6 +209,46 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) NoSuspension() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noSuspension",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) NoSuspensionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noSuspensionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) SuspendTimeoutDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suspendTimeoutDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) SuspendTimeoutDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suspendTimeoutDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -201,6 +297,28 @@ func NewDataDatabricksPostgresProjectInitialEndpointSpecOutputReference_Override
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference)SetAutoscalingLimitMaxCu(val *float64) {
+	if err := j.validateSetAutoscalingLimitMaxCuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoscalingLimitMaxCu",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference)SetAutoscalingLimitMinCu(val *float64) {
+	if err := j.validateSetAutoscalingLimitMinCuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoscalingLimitMinCu",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -230,6 +348,28 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReferen
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference)SetNoSuspension(val interface{}) {
+	if err := j.validateSetNoSuspensionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noSuspension",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference)SetSuspendTimeoutDuration(val *string) {
+	if err := j.validateSetSuspendTimeoutDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"suspendTimeoutDuration",
 		val,
 	)
 }
@@ -453,10 +593,42 @@ func (d *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReferen
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) ResetAutoscalingLimitMaxCu() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAutoscalingLimitMaxCu",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) ResetAutoscalingLimitMinCu() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAutoscalingLimitMinCu",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) ResetGroup() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetGroup",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) ResetNoSuspension() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNoSuspension",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresProjectInitialEndpointSpecOutputReference) ResetSuspendTimeoutDuration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSuspendTimeoutDuration",
 		nil, // no parameters
 	)
 }

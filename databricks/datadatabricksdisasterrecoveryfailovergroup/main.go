@@ -352,6 +352,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "replicateWorkspaceAssets", GoGetter: "ReplicateWorkspaceAssets"},
 			_jsii_.MemberProperty{JsiiProperty: "replicateWorkspaceAssetsInput", GoGetter: "ReplicateWorkspaceAssetsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicateWorkspaceAssets", GoMethod: "ResetReplicateWorkspaceAssets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStableUrlNames", GoMethod: "ResetStableUrlNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "stableUrlNames", GoGetter: "StableUrlNames"},

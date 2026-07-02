@@ -55,6 +55,14 @@ func (d *jsiiProxy_DataDatabricksPostgresProjectsProjectsInitialEndpointSpecOutp
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsInitialEndpointSpecOutputReference) validateSetAutoscalingLimitMaxCuParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsInitialEndpointSpecOutputReference) validateSetAutoscalingLimitMinCuParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsInitialEndpointSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -64,6 +72,14 @@ func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsInitialEndpointSpecOutp
 }
 
 func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsInitialEndpointSpecOutputReference) validateSetInternalValueParameters(val *DataDatabricksPostgresProjectsProjectsInitialEndpointSpec) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsInitialEndpointSpecOutputReference) validateSetNoSuspensionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresProjectsProjectsInitialEndpointSpecOutputReference) validateSetSuspendTimeoutDurationParameters(val *string) error {
 	return nil
 }
 
