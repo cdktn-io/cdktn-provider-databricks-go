@@ -5,7 +5,7 @@ package datadatabricksfeatureengineeringfeature
 
 
 type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionSum struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}.
 	Input *string `field:"required" json:"input" yaml:"input"`
 }
 

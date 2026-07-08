@@ -34,6 +34,8 @@ type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LongRolling() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRollingOutputReference
+	LongRollingInput() interface{}
 	Rolling() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRollingOutputReference
 	RollingInput() interface{}
 	Sliding() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference
@@ -73,10 +75,12 @@ type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutContinuous(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous)
+	PutLongRolling(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRolling)
 	PutRolling(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling)
 	PutSliding(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding)
 	PutTumbling(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling)
 	ResetContinuous()
+	ResetLongRolling()
 	ResetRolling()
 	ResetSliding()
 	ResetTumbling()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) LongRolling() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRollingOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRollingOutputReference
+	_jsii_.Get(
+		j,
+		"longRolling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) LongRollingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"longRollingInput",
 		&returns,
 	)
 	return returns
@@ -525,6 +549,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) PutLongRolling(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRolling) {
+	if err := d.validatePutLongRollingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLongRolling",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) PutRolling(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling) {
 	if err := d.validatePutRollingParameters(value); err != nil {
 		panic(err)
@@ -562,6 +597,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	_jsii_.InvokeVoid(
 		d,
 		"resetContinuous",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) ResetLongRolling() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLongRolling",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/group databricks_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/group databricks_group}.
 type DataDatabricksGroup interface {
 	cdktn.TerraformDataSource
 	AclPrincipalId() *string
@@ -88,6 +88,9 @@ type DataDatabricksGroup interface {
 	Recursive() interface{}
 	SetRecursive(val interface{})
 	RecursiveInput() interface{}
+	Roles() *[]*string
+	SetRoles(val *[]*string)
+	RolesInput() *[]*string
 	ServicePrincipals() *[]*string
 	SetServicePrincipals(val *[]*string)
 	ServicePrincipalsInput() *[]*string
@@ -148,6 +151,7 @@ type DataDatabricksGroup interface {
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
 	ResetRecursive()
+	ResetRoles()
 	ResetServicePrincipals()
 	ResetUsers()
 	ResetWorkspaceAccess()
@@ -570,6 +574,26 @@ func (j *jsiiProxy_DataDatabricksGroup) RecursiveInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksGroup) Roles() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"roles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksGroup) RolesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"rolesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksGroup) ServicePrincipals() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -681,7 +705,7 @@ func (j *jsiiProxy_DataDatabricksGroup) WorkspaceConsumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/group databricks_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/group databricks_group} Data Source.
 func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) DataDatabricksGroup {
 	_init_.Initialize()
 
@@ -699,7 +723,7 @@ func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/group databricks_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/group databricks_group} Data Source.
 func NewDataDatabricksGroup_Override(d DataDatabricksGroup, scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) {
 	_init_.Initialize()
 
@@ -895,6 +919,17 @@ func (j *jsiiProxy_DataDatabricksGroup)SetRecursive(val interface{}) {
 	_jsii_.Set(
 		j,
 		"recursive",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksGroup)SetRoles(val *[]*string) {
+	if err := j.validateSetRolesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roles",
 		val,
 	)
 }
@@ -1347,6 +1382,14 @@ func (d *jsiiProxy_DataDatabricksGroup) ResetRecursive() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRecursive",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksGroup) ResetRoles() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRoles",
 		nil, // no parameters
 	)
 }

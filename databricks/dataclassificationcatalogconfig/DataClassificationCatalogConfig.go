@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config}.
 type DataClassificationCatalogConfig interface {
 	cdktn.TerraformResource
 	AutoTagConfigs() DataClassificationCatalogConfigAutoTagConfigsList
@@ -33,6 +33,8 @@ type DataClassificationCatalogConfig interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExcludedSchemas() DataClassificationCatalogConfigExcludedSchemasOutputReference
+	ExcludedSchemasInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -115,9 +117,11 @@ type DataClassificationCatalogConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoTagConfigs(value interface{})
+	PutExcludedSchemas(value *DataClassificationCatalogConfigExcludedSchemas)
 	PutIncludedSchemas(value *DataClassificationCatalogConfigIncludedSchemas)
 	PutProviderConfig(value *DataClassificationCatalogConfigProviderConfig)
 	ResetAutoTagConfigs()
+	ResetExcludedSchemas()
 	ResetIncludedSchemas()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -215,6 +219,26 @@ func (j *jsiiProxy_DataClassificationCatalogConfig) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataClassificationCatalogConfig) ExcludedSchemas() DataClassificationCatalogConfigExcludedSchemasOutputReference {
+	var returns DataClassificationCatalogConfigExcludedSchemasOutputReference
+	_jsii_.Get(
+		j,
+		"excludedSchemas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataClassificationCatalogConfig) ExcludedSchemasInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludedSchemasInput",
 		&returns,
 	)
 	return returns
@@ -401,7 +425,7 @@ func (j *jsiiProxy_DataClassificationCatalogConfig) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource.
 func NewDataClassificationCatalogConfig(scope constructs.Construct, id *string, config *DataClassificationCatalogConfigConfig) DataClassificationCatalogConfig {
 	_init_.Initialize()
 
@@ -419,7 +443,7 @@ func NewDataClassificationCatalogConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource.
 func NewDataClassificationCatalogConfig_Override(d DataClassificationCatalogConfig, scope constructs.Construct, id *string, config *DataClassificationCatalogConfigConfig) {
 	_init_.Initialize()
 
@@ -873,6 +897,17 @@ func (d *jsiiProxy_DataClassificationCatalogConfig) PutAutoTagConfigs(value inte
 	)
 }
 
+func (d *jsiiProxy_DataClassificationCatalogConfig) PutExcludedSchemas(value *DataClassificationCatalogConfigExcludedSchemas) {
+	if err := d.validatePutExcludedSchemasParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putExcludedSchemas",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataClassificationCatalogConfig) PutIncludedSchemas(value *DataClassificationCatalogConfigIncludedSchemas) {
 	if err := d.validatePutIncludedSchemasParameters(value); err != nil {
 		panic(err)
@@ -899,6 +934,14 @@ func (d *jsiiProxy_DataClassificationCatalogConfig) ResetAutoTagConfigs() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAutoTagConfigs",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataClassificationCatalogConfig) ResetExcludedSchemas() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludedSchemas",
 		nil, // no parameters
 	)
 }

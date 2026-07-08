@@ -5,9 +5,9 @@ package datadatabrickstable
 
 
 type DataDatabricksTableTableInfoRowFilterInputArguments struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/table#column DataDatabricksTable#column}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/table#column DataDatabricksTable#column}.
 	Column *string `field:"optional" json:"column" yaml:"column"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/table#constant DataDatabricksTable#constant}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/table#constant DataDatabricksTable#constant}.
 	Constant *string `field:"optional" json:"constant" yaml:"constant"`
 }
 

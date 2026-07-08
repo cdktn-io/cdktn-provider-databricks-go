@@ -13,7 +13,6 @@ import (
 
 type DataDatabricksSecretUcsSecretsOutputReference interface {
 	cdktn.ComplexObject
-	BrowseOnly() cdktn.IResolvable
 	CatalogName() *string
 	Comment() *string
 	// the index of the complex object in a list.
@@ -36,7 +35,6 @@ type DataDatabricksSecretUcsSecretsOutputReference interface {
 	EffectiveOwner() *string
 	EffectiveValue() *string
 	ExpireTime() *string
-	ExternalSecretId() *string
 	// Experimental.
 	Fqn() *string
 	FullName() *string
@@ -100,16 +98,6 @@ type DataDatabricksSecretUcsSecretsOutputReference interface {
 // The jsii proxy struct for DataDatabricksSecretUcsSecretsOutputReference
 type jsiiProxy_DataDatabricksSecretUcsSecretsOutputReference struct {
 	internal.Type__cdktnComplexObject
-}
-
-func (j *jsiiProxy_DataDatabricksSecretUcsSecretsOutputReference) BrowseOnly() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"browseOnly",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksSecretUcsSecretsOutputReference) CatalogName() *string {
@@ -207,16 +195,6 @@ func (j *jsiiProxy_DataDatabricksSecretUcsSecretsOutputReference) ExpireTime() *
 	_jsii_.Get(
 		j,
 		"expireTime",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksSecretUcsSecretsOutputReference) ExternalSecretId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"externalSecretId",
 		&returns,
 	)
 	return returns

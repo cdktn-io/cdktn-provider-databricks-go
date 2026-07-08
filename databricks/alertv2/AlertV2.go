@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/alert_v2 databricks_alert_v2}.
 type AlertV2 interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -644,7 +644,7 @@ func (j *jsiiProxy_AlertV2) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) AlertV2 {
 	_init_.Initialize()
 
@@ -662,7 +662,7 @@ func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2_Override(a AlertV2, scope constructs.Construct, id *string, config *AlertV2Config) {
 	_init_.Initialize()
 

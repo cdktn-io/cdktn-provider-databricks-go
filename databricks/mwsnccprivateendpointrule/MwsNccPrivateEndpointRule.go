@@ -12,12 +12,10 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}.
 type MwsNccPrivateEndpointRule interface {
 	cdktn.TerraformResource
 	AccountId() *string
-	SetAccountId(val *string)
-	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -25,8 +23,6 @@ type MwsNccPrivateEndpointRule interface {
 	// Experimental.
 	SetConnection(val interface{})
 	ConnectionState() *string
-	SetConnectionState(val *string)
-	ConnectionStateInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -34,14 +30,8 @@ type MwsNccPrivateEndpointRule interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTime() *float64
-	SetCreationTime(val *float64)
-	CreationTimeInput() *float64
-	Deactivated() interface{}
-	SetDeactivated(val interface{})
+	Deactivated() cdktn.IResolvable
 	DeactivatedAt() *float64
-	SetDeactivatedAt(val *float64)
-	DeactivatedAtInput() *float64
-	DeactivatedInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,14 +43,10 @@ type MwsNccPrivateEndpointRule interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	EndpointName() *string
-	SetEndpointName(val *string)
-	EndpointNameInput() *string
 	EndpointService() *string
 	SetEndpointService(val *string)
 	EndpointServiceInput() *string
 	ErrorMessage() *string
-	SetErrorMessage(val *string)
-	ErrorMessageInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -103,8 +89,6 @@ type MwsNccPrivateEndpointRule interface {
 	SetResourceNames(val *[]*string)
 	ResourceNamesInput() *[]*string
 	RuleId() *string
-	SetRuleId(val *string)
-	RuleIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -112,11 +96,7 @@ type MwsNccPrivateEndpointRule interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedTime() *float64
-	SetUpdatedTime(val *float64)
-	UpdatedTimeInput() *float64
 	VpcEndpointId() *string
-	SetVpcEndpointId(val *string)
-	VpcEndpointIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -161,16 +141,9 @@ type MwsNccPrivateEndpointRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGcpEndpoint(value *MwsNccPrivateEndpointRuleGcpEndpoint)
-	ResetAccountId()
-	ResetConnectionState()
-	ResetCreationTime()
-	ResetDeactivated()
-	ResetDeactivatedAt()
 	ResetDomainNames()
 	ResetEnabled()
-	ResetEndpointName()
 	ResetEndpointService()
-	ResetErrorMessage()
 	ResetGcpEndpoint()
 	ResetGroupId()
 	ResetId()
@@ -179,9 +152,6 @@ type MwsNccPrivateEndpointRule interface {
 	ResetOverrideLogicalId()
 	ResetResourceId()
 	ResetResourceNames()
-	ResetRuleId()
-	ResetUpdatedTime()
-	ResetVpcEndpointId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -219,16 +189,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) AccountId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) AccountIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) CdktfStack() cdktn.TerraformStack {
 	var returns cdktn.TerraformStack
 	_jsii_.Get(
@@ -254,16 +214,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) ConnectionState() *string {
 	_jsii_.Get(
 		j,
 		"connectionState",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) ConnectionStateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"connectionStateInput",
 		&returns,
 	)
 	return returns
@@ -299,18 +249,8 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) CreationTime() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) CreationTimeInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"creationTimeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) Deactivated() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) Deactivated() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"deactivated",
@@ -324,26 +264,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) DeactivatedAt() *float64 {
 	_jsii_.Get(
 		j,
 		"deactivatedAt",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) DeactivatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"deactivatedAtInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) DeactivatedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"deactivatedInput",
 		&returns,
 	)
 	return returns
@@ -409,16 +329,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) EndpointName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) EndpointNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"endpointNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) EndpointService() *string {
 	var returns *string
 	_jsii_.Get(
@@ -444,16 +354,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) ErrorMessage() *string {
 	_jsii_.Get(
 		j,
 		"errorMessage",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) ErrorMessageInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"errorMessageInput",
 		&returns,
 	)
 	return returns
@@ -669,16 +569,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) RuleId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) RuleIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ruleIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -719,16 +609,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) UpdatedTime() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) UpdatedTimeInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"updatedTimeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) VpcEndpointId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -739,18 +619,8 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) VpcEndpointId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) VpcEndpointIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vpcEndpointIdInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
 func NewMwsNccPrivateEndpointRule(scope constructs.Construct, id *string, config *MwsNccPrivateEndpointRuleConfig) MwsNccPrivateEndpointRule {
 	_init_.Initialize()
 
@@ -768,7 +638,7 @@ func NewMwsNccPrivateEndpointRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
 func NewMwsNccPrivateEndpointRule_Override(m MwsNccPrivateEndpointRule, scope constructs.Construct, id *string, config *MwsNccPrivateEndpointRuleConfig) {
 	_init_.Initialize()
 
@@ -776,17 +646,6 @@ func NewMwsNccPrivateEndpointRule_Override(m MwsNccPrivateEndpointRule, scope co
 		"@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRule",
 		[]interface{}{scope, id, config},
 		m,
-	)
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetAccountId(val *string) {
-	if err := j.validateSetAccountIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accountId",
-		val,
 	)
 }
 
@@ -801,17 +660,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetConnectionState(val *string) {
-	if err := j.validateSetConnectionStateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"connectionState",
-		val,
-	)
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
@@ -819,39 +667,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetCreationTime(val *float64) {
-	if err := j.validateSetCreationTimeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"creationTime",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetDeactivated(val interface{}) {
-	if err := j.validateSetDeactivatedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"deactivated",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetDeactivatedAt(val *float64) {
-	if err := j.validateSetDeactivatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"deactivatedAt",
 		val,
 	)
 }
@@ -886,17 +701,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetEndpointName(val *string) {
-	if err := j.validateSetEndpointNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"endpointName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetEndpointService(val *string) {
 	if err := j.validateSetEndpointServiceParameters(val); err != nil {
 		panic(err)
@@ -904,17 +708,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetEndpointService(val *string) {
 	_jsii_.Set(
 		j,
 		"endpointService",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetErrorMessage(val *string) {
-	if err := j.validateSetErrorMessageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"errorMessage",
 		val,
 	)
 }
@@ -1008,39 +801,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetResourceNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"resourceNames",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetRuleId(val *string) {
-	if err := j.validateSetRuleIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ruleId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetUpdatedTime(val *float64) {
-	if err := j.validateSetUpdatedTimeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updatedTime",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetVpcEndpointId(val *string) {
-	if err := j.validateSetVpcEndpointIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"vpcEndpointId",
 		val,
 	)
 }
@@ -1409,46 +1169,6 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRule) PutGcpEndpoint(value *MwsNccPrivat
 	)
 }
 
-func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetConnectionState() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetConnectionState",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetCreationTime() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetCreationTime",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetDeactivated() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetDeactivated",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetDeactivatedAt() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetDeactivatedAt",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetDomainNames() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1465,26 +1185,10 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetEnabled() {
 	)
 }
 
-func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetEndpointName() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetEndpointName",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetEndpointService() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetEndpointService",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetErrorMessage() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetErrorMessage",
 		nil, // no parameters
 	)
 }
@@ -1533,30 +1237,6 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetResourceNames() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetResourceNames",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetRuleId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetRuleId",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetUpdatedTime() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetUpdatedTime",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetVpcEndpointId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetVpcEndpointId",
 		nil, // no parameters
 	)
 }

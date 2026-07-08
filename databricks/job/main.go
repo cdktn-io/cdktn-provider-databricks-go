@@ -4800,10 +4800,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "pauseStatus", GoGetter: "PauseStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "pauseStatusInput", GoGetter: "PauseStatusInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSqlCondition", GoMethod: "PutSqlCondition"},
 			_jsii_.MemberProperty{JsiiProperty: "quartzCronExpression", GoGetter: "QuartzCronExpression"},
 			_jsii_.MemberProperty{JsiiProperty: "quartzCronExpressionInput", GoGetter: "QuartzCronExpressionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPauseStatus", GoMethod: "ResetPauseStatus"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSqlCondition", GoMethod: "ResetSqlCondition"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlCondition", GoGetter: "SqlCondition"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlConditionInput", GoGetter: "SqlConditionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "timezoneId", GoGetter: "TimezoneId"},
@@ -4812,6 +4816,49 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobScheduleOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobScheduleSqlCondition",
+		reflect.TypeOf((*JobScheduleSqlCondition)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobScheduleSqlConditionOutputReference",
+		reflect.TypeOf((*JobScheduleSqlConditionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTriggerMode", GoMethod: "ResetTriggerMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlQueryId", GoGetter: "SqlQueryId"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlQueryIdInput", GoGetter: "SqlQueryIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "triggerMode", GoGetter: "TriggerMode"},
+			_jsii_.MemberProperty{JsiiProperty: "triggerModeInput", GoGetter: "TriggerModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "warehouseId", GoGetter: "WarehouseId"},
+			_jsii_.MemberProperty{JsiiProperty: "warehouseIdInput", GoGetter: "WarehouseIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobScheduleSqlConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -14189,13 +14236,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFileArrival", GoMethod: "PutFileArrival"},
 			_jsii_.MemberMethod{JsiiMethod: "putModel", GoMethod: "PutModel"},
 			_jsii_.MemberMethod{JsiiMethod: "putPeriodic", GoMethod: "PutPeriodic"},
+			_jsii_.MemberMethod{JsiiMethod: "putSqlCondition", GoMethod: "PutSqlCondition"},
 			_jsii_.MemberMethod{JsiiMethod: "putTableUpdate", GoMethod: "PutTableUpdate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFileArrival", GoMethod: "ResetFileArrival"},
 			_jsii_.MemberMethod{JsiiMethod: "resetModel", GoMethod: "ResetModel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPauseStatus", GoMethod: "ResetPauseStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPeriodic", GoMethod: "ResetPeriodic"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSqlCondition", GoMethod: "ResetSqlCondition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTableUpdate", GoMethod: "ResetTableUpdate"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlCondition", GoGetter: "SqlCondition"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlConditionInput", GoGetter: "SqlConditionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tableUpdate", GoGetter: "TableUpdate"},
 			_jsii_.MemberProperty{JsiiProperty: "tableUpdateInput", GoGetter: "TableUpdateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -14244,6 +14295,49 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobTriggerPeriodicOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTriggerSqlCondition",
+		reflect.TypeOf((*JobTriggerSqlCondition)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTriggerSqlConditionOutputReference",
+		reflect.TypeOf((*JobTriggerSqlConditionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTriggerMode", GoMethod: "ResetTriggerMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlQueryId", GoGetter: "SqlQueryId"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlQueryIdInput", GoGetter: "SqlQueryIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "triggerMode", GoGetter: "TriggerMode"},
+			_jsii_.MemberProperty{JsiiProperty: "triggerModeInput", GoGetter: "TriggerModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "warehouseId", GoGetter: "WarehouseId"},
+			_jsii_.MemberProperty{JsiiProperty: "warehouseIdInput", GoGetter: "WarehouseIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTriggerSqlConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

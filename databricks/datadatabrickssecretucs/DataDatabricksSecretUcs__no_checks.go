@@ -83,10 +83,6 @@ func (j *jsiiProxy_DataDatabricksSecretUcs) validateSetCountParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksSecretUcs) validateSetIncludeBrowseParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksSecretUcs) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

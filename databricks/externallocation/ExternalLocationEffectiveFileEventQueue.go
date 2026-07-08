@@ -7,27 +7,27 @@ package externallocation
 type ExternalLocationEffectiveFileEventQueue struct {
 	// managed_aqs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
 	ManagedAqs *ExternalLocationEffectiveFileEventQueueManagedAqs `field:"optional" json:"managedAqs" yaml:"managedAqs"`
 	// managed_pubsub block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
 	ManagedPubsub *ExternalLocationEffectiveFileEventQueueManagedPubsub `field:"optional" json:"managedPubsub" yaml:"managedPubsub"`
 	// managed_sqs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
 	ManagedSqs *ExternalLocationEffectiveFileEventQueueManagedSqs `field:"optional" json:"managedSqs" yaml:"managedSqs"`
 	// provided_aqs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
 	ProvidedAqs *ExternalLocationEffectiveFileEventQueueProvidedAqs `field:"optional" json:"providedAqs" yaml:"providedAqs"`
 	// provided_pubsub block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
 	ProvidedPubsub *ExternalLocationEffectiveFileEventQueueProvidedPubsub `field:"optional" json:"providedPubsub" yaml:"providedPubsub"`
 	// provided_sqs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
 	ProvidedSqs *ExternalLocationEffectiveFileEventQueueProvidedSqs `field:"optional" json:"providedSqs" yaml:"providedSqs"`
 }
 

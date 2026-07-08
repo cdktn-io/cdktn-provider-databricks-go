@@ -30,6 +30,9 @@ type FeatureEngineeringMaterializedFeatureStreamingModeOutputReference interface
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	FreshnessTarget() *string
+	SetFreshnessTarget(val *string)
+	FreshnessTargetInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Mode() *string
@@ -67,6 +70,7 @@ type FeatureEngineeringMaterializedFeatureStreamingModeOutputReference interface
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetFreshnessTarget()
 	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -118,6 +122,26 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputRefer
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputReference) FreshnessTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"freshnessTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputReference) FreshnessTargetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"freshnessTargetInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputRefer
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputReference)SetFreshnessTarget(val *string) {
+	if err := j.validateSetFreshnessTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"freshnessTarget",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputRefer
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputReference) ResetFreshnessTarget() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFreshnessTarget",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputReference) ResetMode() {

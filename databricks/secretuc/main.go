@@ -16,7 +16,6 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "browseOnly", GoGetter: "BrowseOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogName", GoGetter: "CatalogName"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogNameInput", GoGetter: "CatalogNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -32,7 +31,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "effectiveValue", GoGetter: "EffectiveValue"},
 			_jsii_.MemberProperty{JsiiProperty: "expireTime", GoGetter: "ExpireTime"},
 			_jsii_.MemberProperty{JsiiProperty: "expireTimeInput", GoGetter: "ExpireTimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "externalSecretId", GoGetter: "ExternalSecretId"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

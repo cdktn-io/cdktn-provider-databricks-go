@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/notification_destination databricks_notification_destination}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/notification_destination databricks_notification_destination}.
 type NotificationDestination interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_NotificationDestination) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/notification_destination databricks_notification_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/notification_destination databricks_notification_destination} Resource.
 func NewNotificationDestination(scope constructs.Construct, id *string, config *NotificationDestinationConfig) NotificationDestination {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewNotificationDestination(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/notification_destination databricks_notification_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/notification_destination databricks_notification_destination} Resource.
 func NewNotificationDestination_Override(n NotificationDestination, scope constructs.Construct, id *string, config *NotificationDestinationConfig) {
 	_init_.Initialize()
 

@@ -22,15 +22,13 @@ type DataDatabricksSecretUcsConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}.
 	CatalogName *string `field:"optional" json:"catalogName" yaml:"catalogName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}.
-	IncludeBrowse interface{} `field:"optional" json:"includeBrowse" yaml:"includeBrowse"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}.
 	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}.
 	ProviderConfig *DataDatabricksSecretUcsProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}.
 	SchemaName *string `field:"optional" json:"schemaName" yaml:"schemaName"`
 }
 

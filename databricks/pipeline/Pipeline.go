@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktn.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -1327,7 +1327,7 @@ func (j *jsiiProxy_Pipeline) UsagePolicyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1345,7 +1345,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 

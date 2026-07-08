@@ -63,10 +63,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validateSetPscEndpointUriParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validateSetServiceAttachmentParameters(val *string) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package environmentsworkspacebaseenvironment
 
 
 type EnvironmentsWorkspaceBaseEnvironmentSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#dependencies EnvironmentsWorkspaceBaseEnvironment#dependencies}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_workspace_base_environment#dependencies EnvironmentsWorkspaceBaseEnvironment#dependencies}.
 	Dependencies *[]*string `field:"optional" json:"dependencies" yaml:"dependencies"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#environment_version EnvironmentsWorkspaceBaseEnvironment#environment_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_workspace_base_environment#environment_version EnvironmentsWorkspaceBaseEnvironment#environment_version}.
 	EnvironmentVersion *string `field:"optional" json:"environmentVersion" yaml:"environmentVersion"`
 }
 

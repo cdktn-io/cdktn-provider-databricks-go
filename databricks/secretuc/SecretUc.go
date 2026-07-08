@@ -12,10 +12,9 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc databricks_secret_uc}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc databricks_secret_uc}.
 type SecretUc interface {
 	cdktn.TerraformResource
-	BrowseOnly() cdktn.IResolvable
 	CatalogName() *string
 	SetCatalogName(val *string)
 	CatalogNameInput() *string
@@ -45,7 +44,6 @@ type SecretUc interface {
 	ExpireTime() *string
 	SetExpireTime(val *string)
 	ExpireTimeInput() *string
-	ExternalSecretId() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -170,16 +168,6 @@ type SecretUc interface {
 // The jsii proxy struct for SecretUc
 type jsiiProxy_SecretUc struct {
 	internal.Type__cdktnTerraformResource
-}
-
-func (j *jsiiProxy_SecretUc) BrowseOnly() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"browseOnly",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_SecretUc) CatalogName() *string {
@@ -327,16 +315,6 @@ func (j *jsiiProxy_SecretUc) ExpireTimeInput() *string {
 	_jsii_.Get(
 		j,
 		"expireTimeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecretUc) ExternalSecretId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"externalSecretId",
 		&returns,
 	)
 	return returns
@@ -593,7 +571,7 @@ func (j *jsiiProxy_SecretUc) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc databricks_secret_uc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc databricks_secret_uc} Resource.
 func NewSecretUc(scope constructs.Construct, id *string, config *SecretUcConfig) SecretUc {
 	_init_.Initialize()
 
@@ -611,7 +589,7 @@ func NewSecretUc(scope constructs.Construct, id *string, config *SecretUcConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc databricks_secret_uc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc databricks_secret_uc} Resource.
 func NewSecretUc_Override(s SecretUc, scope constructs.Construct, id *string, config *SecretUcConfig) {
 	_init_.Initialize()
 

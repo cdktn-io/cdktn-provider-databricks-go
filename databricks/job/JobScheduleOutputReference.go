@@ -38,6 +38,8 @@ type JobScheduleOutputReference interface {
 	QuartzCronExpression() *string
 	SetQuartzCronExpression(val *string)
 	QuartzCronExpressionInput() *string
+	SqlCondition() JobScheduleSqlConditionOutputReference
+	SqlConditionInput() *JobScheduleSqlCondition
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,7 +75,9 @@ type JobScheduleOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutSqlCondition(value *JobScheduleSqlCondition)
 	ResetPauseStatus()
+	ResetSqlCondition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_JobScheduleOutputReference) QuartzCronExpressionInput() *stri
 	_jsii_.Get(
 		j,
 		"quartzCronExpressionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobScheduleOutputReference) SqlCondition() JobScheduleSqlConditionOutputReference {
+	var returns JobScheduleSqlConditionOutputReference
+	_jsii_.Get(
+		j,
+		"sqlCondition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobScheduleOutputReference) SqlConditionInput() *JobScheduleSqlCondition {
+	var returns *JobScheduleSqlCondition
+	_jsii_.Get(
+		j,
+		"sqlConditionInput",
 		&returns,
 	)
 	return returns
@@ -521,10 +545,29 @@ func (j *jsiiProxy_JobScheduleOutputReference) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (j *jsiiProxy_JobScheduleOutputReference) PutSqlCondition(value *JobScheduleSqlCondition) {
+	if err := j.validatePutSqlConditionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putSqlCondition",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobScheduleOutputReference) ResetPauseStatus() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPauseStatus",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobScheduleOutputReference) ResetSqlCondition() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSqlCondition",
 		nil, // no parameters
 	)
 }

@@ -40,6 +40,7 @@ type PostgresEndpointStatusOutputReference interface {
 	Hosts() PostgresEndpointStatusHostsOutputReference
 	InternalValue() *PostgresEndpointStatus
 	SetInternalValue(val *PostgresEndpointStatus)
+	LastActiveTime() *string
 	PendingState() *string
 	Settings() PostgresEndpointStatusSettingsOutputReference
 	SuspendTimeoutDuration() *string
@@ -215,6 +216,16 @@ func (j *jsiiProxy_PostgresEndpointStatusOutputReference) InternalValue() *Postg
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresEndpointStatusOutputReference) LastActiveTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastActiveTime",
 		&returns,
 	)
 	return returns

@@ -37,13 +37,21 @@ type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputRef
 	// Experimental.
 	CreationStack() *[]*string
 	First() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference
+	FirstDistinct() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinctOutputReference
+	FirstDistinctInput() interface{}
 	FirstInput() interface{}
+	FirstN() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstNOutputReference
+	FirstNInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Last() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference
+	LastDistinct() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastDistinctOutputReference
+	LastDistinctInput() interface{}
 	LastInput() interface{}
+	LastN() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastNOutputReference
+	LastNInput() interface{}
 	Max() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference
 	MaxInput() interface{}
 	Min() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference
@@ -97,7 +105,11 @@ type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputRef
 	PutAvg(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionAvg)
 	PutCountFunction(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionCountFunction)
 	PutFirst(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirst)
+	PutFirstDistinct(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct)
+	PutFirstN(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstN)
 	PutLast(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLast)
+	PutLastDistinct(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct)
+	PutLastN(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastN)
 	PutMax(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMax)
 	PutMin(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMin)
 	PutStddevPop(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevPop)
@@ -111,7 +123,11 @@ type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputRef
 	ResetAvg()
 	ResetCountFunction()
 	ResetFirst()
+	ResetFirstDistinct()
+	ResetFirstN()
 	ResetLast()
+	ResetLastDistinct()
+	ResetLastN()
 	ResetMax()
 	ResetMin()
 	ResetStddevPop()
@@ -255,11 +271,51 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) FirstDistinct() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinctOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinctOutputReference
+	_jsii_.Get(
+		j,
+		"firstDistinct",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) FirstDistinctInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"firstDistinctInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) FirstInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"firstInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) FirstN() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstNOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstNOutputReference
+	_jsii_.Get(
+		j,
+		"firstN",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) FirstNInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"firstNInput",
 		&returns,
 	)
 	return returns
@@ -295,11 +351,51 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) LastDistinct() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastDistinctOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastDistinctOutputReference
+	_jsii_.Get(
+		j,
+		"lastDistinct",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) LastDistinctInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lastDistinctInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) LastInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"lastInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) LastN() DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastNOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastNOutputReference
+	_jsii_.Get(
+		j,
+		"lastN",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) LastNInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lastNInput",
 		&returns,
 	)
 	return returns
@@ -809,6 +905,28 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) PutFirstDistinct(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct) {
+	if err := d.validatePutFirstDistinctParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFirstDistinct",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) PutFirstN(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstN) {
+	if err := d.validatePutFirstNParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFirstN",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) PutLast(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLast) {
 	if err := d.validatePutLastParameters(value); err != nil {
 		panic(err)
@@ -816,6 +934,28 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	_jsii_.InvokeVoid(
 		d,
 		"putLast",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) PutLastDistinct(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct) {
+	if err := d.validatePutLastDistinctParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLastDistinct",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) PutLastN(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastN) {
+	if err := d.validatePutLastNParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLastN",
 		[]interface{}{value},
 	)
 }
@@ -948,10 +1088,42 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) ResetFirstDistinct() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFirstDistinct",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) ResetFirstN() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFirstN",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) ResetLast() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetLast",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) ResetLastDistinct() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLastDistinct",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) ResetLastN() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLastN",
 		nil, // no parameters
 	)
 }

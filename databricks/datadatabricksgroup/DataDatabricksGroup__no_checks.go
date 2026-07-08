@@ -135,6 +135,10 @@ func (j *jsiiProxy_DataDatabricksGroup) validateSetRecursiveParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksGroup) validateSetRolesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksGroup) validateSetServicePrincipalsParameters(val *[]*string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/system_schema databricks_system_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/system_schema databricks_system_schema}.
 type SystemSchema interface {
 	cdktn.TerraformResource
 	AutoEnabled() cdktn.IResolvable
@@ -410,7 +410,7 @@ func (j *jsiiProxy_SystemSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchemaConfig) SystemSchema {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema_Override(s SystemSchema, scope constructs.Construct, id *string, config *SystemSchemaConfig) {
 	_init_.Initialize()
 

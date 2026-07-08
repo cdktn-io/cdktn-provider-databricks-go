@@ -95,31 +95,11 @@ func validateMwsNccPrivateEndpointRule_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetAccountIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetConnectionStateParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetCreationTimeParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetDeactivatedParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetDeactivatedAtParameters(val *float64) error {
 	return nil
 }
 
@@ -131,15 +111,7 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetEnabledParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetEndpointNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetEndpointServiceParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetErrorMessageParameters(val *string) error {
 	return nil
 }
 
@@ -168,18 +140,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetResourceIdParameters(va
 }
 
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetResourceNamesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetRuleIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetUpdatedTimeParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetVpcEndpointIdParameters(val *string) error {
 	return nil
 }
 

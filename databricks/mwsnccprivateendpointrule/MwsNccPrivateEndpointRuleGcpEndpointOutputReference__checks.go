@@ -174,14 +174,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validateSetPscEndpointUriParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validateSetServiceAttachmentParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

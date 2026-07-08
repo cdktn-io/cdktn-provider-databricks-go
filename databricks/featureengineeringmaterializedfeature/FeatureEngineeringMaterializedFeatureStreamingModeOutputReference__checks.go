@@ -166,6 +166,14 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputReference) validateSetFreshnessTargetParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktn.IResolvable:

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/cluster databricks_cluster}.
 type Cluster interface {
 	cdktn.TerraformResource
 	ApplyPolicyDefaultValues() interface{}
@@ -29,6 +29,9 @@ type Cluster interface {
 	AzureAttributesInput() *ClusterAzureAttributes
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	ClearCloudAttributesOnRemove() interface{}
+	SetClearCloudAttributesOnRemove(val interface{})
+	ClearCloudAttributesOnRemoveInput() interface{}
 	ClusterId() *string
 	ClusterLogConf() ClusterClusterLogConfOutputReference
 	ClusterLogConfInput() *ClusterClusterLogConf
@@ -239,6 +242,7 @@ type Cluster interface {
 	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
 	ResetAzureAttributes()
+	ResetClearCloudAttributesOnRemove()
 	ResetClusterLogConf()
 	ResetClusterMountInfo()
 	ResetClusterName()
@@ -410,6 +414,26 @@ func (j *jsiiProxy_Cluster) CdktfStack() cdktn.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) ClearCloudAttributesOnRemove() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clearCloudAttributesOnRemove",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) ClearCloudAttributesOnRemoveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clearCloudAttributesOnRemoveInput",
 		&returns,
 	)
 	return returns
@@ -1346,7 +1370,7 @@ func (j *jsiiProxy_Cluster) WorkloadTypeInput() *ClusterWorkloadType {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1364,7 +1388,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 
@@ -1393,6 +1417,17 @@ func (j *jsiiProxy_Cluster)SetAutoterminationMinutes(val *float64) {
 	_jsii_.Set(
 		j,
 		"autoterminationMinutes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cluster)SetClearCloudAttributesOnRemove(val interface{}) {
+	if err := j.validateSetClearCloudAttributesOnRemoveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clearCloudAttributesOnRemove",
 		val,
 	)
 }
@@ -2294,6 +2329,14 @@ func (c *jsiiProxy_Cluster) ResetAzureAttributes() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAzureAttributes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetClearCloudAttributesOnRemove() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetClearCloudAttributesOnRemove",
 		nil, // no parameters
 	)
 }

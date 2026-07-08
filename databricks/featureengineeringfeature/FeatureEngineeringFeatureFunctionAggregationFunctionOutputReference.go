@@ -37,13 +37,21 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference interfa
 	// Experimental.
 	CreationStack() *[]*string
 	First() FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference
+	FirstDistinct() FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinctOutputReference
+	FirstDistinctInput() interface{}
 	FirstInput() interface{}
+	FirstN() FeatureEngineeringFeatureFunctionAggregationFunctionFirstNOutputReference
+	FirstNInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Last() FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference
+	LastDistinct() FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinctOutputReference
+	LastDistinctInput() interface{}
 	LastInput() interface{}
+	LastN() FeatureEngineeringFeatureFunctionAggregationFunctionLastNOutputReference
+	LastNInput() interface{}
 	Max() FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference
 	MaxInput() interface{}
 	Min() FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference
@@ -97,7 +105,11 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference interfa
 	PutAvg(value *FeatureEngineeringFeatureFunctionAggregationFunctionAvg)
 	PutCountFunction(value *FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction)
 	PutFirst(value *FeatureEngineeringFeatureFunctionAggregationFunctionFirst)
+	PutFirstDistinct(value *FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct)
+	PutFirstN(value *FeatureEngineeringFeatureFunctionAggregationFunctionFirstN)
 	PutLast(value *FeatureEngineeringFeatureFunctionAggregationFunctionLast)
+	PutLastDistinct(value *FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct)
+	PutLastN(value *FeatureEngineeringFeatureFunctionAggregationFunctionLastN)
 	PutMax(value *FeatureEngineeringFeatureFunctionAggregationFunctionMax)
 	PutMin(value *FeatureEngineeringFeatureFunctionAggregationFunctionMin)
 	PutStddevPop(value *FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop)
@@ -111,7 +123,11 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference interfa
 	ResetAvg()
 	ResetCountFunction()
 	ResetFirst()
+	ResetFirstDistinct()
+	ResetFirstN()
 	ResetLast()
+	ResetLastDistinct()
+	ResetLastN()
 	ResetMax()
 	ResetMin()
 	ResetStddevPop()
@@ -255,11 +271,51 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputRef
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) FirstDistinct() FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinctOutputReference {
+	var returns FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinctOutputReference
+	_jsii_.Get(
+		j,
+		"firstDistinct",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) FirstDistinctInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"firstDistinctInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) FirstInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"firstInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) FirstN() FeatureEngineeringFeatureFunctionAggregationFunctionFirstNOutputReference {
+	var returns FeatureEngineeringFeatureFunctionAggregationFunctionFirstNOutputReference
+	_jsii_.Get(
+		j,
+		"firstN",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) FirstNInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"firstNInput",
 		&returns,
 	)
 	return returns
@@ -295,11 +351,51 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputRef
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) LastDistinct() FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinctOutputReference {
+	var returns FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinctOutputReference
+	_jsii_.Get(
+		j,
+		"lastDistinct",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) LastDistinctInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lastDistinctInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) LastInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"lastInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) LastN() FeatureEngineeringFeatureFunctionAggregationFunctionLastNOutputReference {
+	var returns FeatureEngineeringFeatureFunctionAggregationFunctionLastNOutputReference
+	_jsii_.Get(
+		j,
+		"lastN",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) LastNInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lastNInput",
 		&returns,
 	)
 	return returns
@@ -809,6 +905,28 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputRef
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) PutFirstDistinct(value *FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct) {
+	if err := f.validatePutFirstDistinctParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putFirstDistinct",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) PutFirstN(value *FeatureEngineeringFeatureFunctionAggregationFunctionFirstN) {
+	if err := f.validatePutFirstNParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putFirstN",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) PutLast(value *FeatureEngineeringFeatureFunctionAggregationFunctionLast) {
 	if err := f.validatePutLastParameters(value); err != nil {
 		panic(err)
@@ -816,6 +934,28 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputRef
 	_jsii_.InvokeVoid(
 		f,
 		"putLast",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) PutLastDistinct(value *FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct) {
+	if err := f.validatePutLastDistinctParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putLastDistinct",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) PutLastN(value *FeatureEngineeringFeatureFunctionAggregationFunctionLastN) {
+	if err := f.validatePutLastNParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putLastN",
 		[]interface{}{value},
 	)
 }
@@ -948,10 +1088,42 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputRef
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) ResetFirstDistinct() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFirstDistinct",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) ResetFirstN() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFirstN",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) ResetLast() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetLast",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) ResetLastDistinct() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLastDistinct",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) ResetLastN() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLastN",
 		nil, // no parameters
 	)
 }

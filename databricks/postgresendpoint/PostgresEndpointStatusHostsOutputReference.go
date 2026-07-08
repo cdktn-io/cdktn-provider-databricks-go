@@ -34,6 +34,8 @@ type PostgresEndpointStatusHostsOutputReference interface {
 	InternalValue() *PostgresEndpointStatusHosts
 	SetInternalValue(val *PostgresEndpointStatusHosts)
 	ReadOnlyHost() *string
+	ReadOnlyPooledHost() *string
+	ReadWritePooledHost() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +148,26 @@ func (j *jsiiProxy_PostgresEndpointStatusHostsOutputReference) ReadOnlyHost() *s
 	_jsii_.Get(
 		j,
 		"readOnlyHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresEndpointStatusHostsOutputReference) ReadOnlyPooledHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readOnlyPooledHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresEndpointStatusHostsOutputReference) ReadWritePooledHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readWritePooledHost",
 		&returns,
 	)
 	return returns

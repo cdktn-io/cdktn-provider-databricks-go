@@ -34,6 +34,8 @@ type DataDatabricksPostgresEndpointsEndpointsStatusHostsOutputReference interfac
 	InternalValue() *DataDatabricksPostgresEndpointsEndpointsStatusHosts
 	SetInternalValue(val *DataDatabricksPostgresEndpointsEndpointsStatusHosts)
 	ReadOnlyHost() *string
+	ReadOnlyPooledHost() *string
+	ReadWritePooledHost() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +148,26 @@ func (j *jsiiProxy_DataDatabricksPostgresEndpointsEndpointsStatusHostsOutputRefe
 	_jsii_.Get(
 		j,
 		"readOnlyHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresEndpointsEndpointsStatusHostsOutputReference) ReadOnlyPooledHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readOnlyPooledHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresEndpointsEndpointsStatusHostsOutputReference) ReadWritePooledHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readWritePooledHost",
 		&returns,
 	)
 	return returns

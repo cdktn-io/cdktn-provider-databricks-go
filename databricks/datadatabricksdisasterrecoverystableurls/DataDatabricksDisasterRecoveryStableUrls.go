@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/disaster_recovery_stable_urls databricks_disaster_recovery_stable_urls}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/disaster_recovery_stable_urls databricks_disaster_recovery_stable_urls}.
 type DataDatabricksDisasterRecoveryStableUrls interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrls) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/disaster_recovery_stable_urls databricks_disaster_recovery_stable_urls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/disaster_recovery_stable_urls databricks_disaster_recovery_stable_urls} Data Source.
 func NewDataDatabricksDisasterRecoveryStableUrls(scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryStableUrlsConfig) DataDatabricksDisasterRecoveryStableUrls {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataDatabricksDisasterRecoveryStableUrls(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/disaster_recovery_stable_urls databricks_disaster_recovery_stable_urls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/disaster_recovery_stable_urls databricks_disaster_recovery_stable_urls} Data Source.
 func NewDataDatabricksDisasterRecoveryStableUrls_Override(d DataDatabricksDisasterRecoveryStableUrls, scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryStableUrlsConfig) {
 	_init_.Initialize()
 

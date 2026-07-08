@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureStreamingM
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureStreamingModeOutputReference) validateSetFreshnessTargetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureStreamingModeOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringMaterializedFeatureStreamingMode) error {
 	return nil
 }

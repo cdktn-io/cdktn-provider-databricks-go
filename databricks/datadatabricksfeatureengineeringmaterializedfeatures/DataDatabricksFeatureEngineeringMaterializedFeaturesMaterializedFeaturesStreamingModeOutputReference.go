@@ -30,6 +30,9 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStr
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	FreshnessTarget() *string
+	SetFreshnessTarget(val *string)
+	FreshnessTargetInput() *string
 	InternalValue() *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingMode
 	SetInternalValue(val *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingMode)
 	Mode() *string
@@ -67,6 +70,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStr
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetFreshnessTarget()
 	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -118,6 +122,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeOutputReference) FreshnessTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"freshnessTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeOutputReference) FreshnessTargetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"freshnessTargetInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeOutputReference)SetFreshnessTarget(val *string) {
+	if err := j.validateSetFreshnessTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"freshnessTarget",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeOutputReference) ResetFreshnessTarget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFreshnessTarget",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeOutputReference) ResetMode() {

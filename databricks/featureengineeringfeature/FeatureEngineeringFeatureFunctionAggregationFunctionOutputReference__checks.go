@@ -148,7 +148,51 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputRef
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) validatePutFirstDistinctParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) validatePutFirstNParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionFirstN) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) validatePutLastParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionLast) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) validatePutLastDistinctParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) validatePutLastNParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionLastN) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

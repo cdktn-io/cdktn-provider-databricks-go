@@ -5,7 +5,7 @@ package datadatabricksaccountnetworkpolicies
 
 
 type DataDatabricksAccountNetworkPoliciesItemsIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/account_network_policies#workspace_ids DataDatabricksAccountNetworkPolicies#workspace_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/account_network_policies#workspace_ids DataDatabricksAccountNetworkPolicies#workspace_ids}.
 	WorkspaceIds *[]*float64 `field:"optional" json:"workspaceIds" yaml:"workspaceIds"`
 }
 

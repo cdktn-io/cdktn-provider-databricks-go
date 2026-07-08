@@ -22,15 +22,15 @@ type PostgresRoleConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_role#parent PostgresRole#parent}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_role#parent PostgresRole#parent}.
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_role#provider_config PostgresRole#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_role#provider_config PostgresRole#provider_config}.
 	ProviderConfig *PostgresRoleProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_role#replace_existing PostgresRole#replace_existing}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_role#replace_existing PostgresRole#replace_existing}.
 	ReplaceExisting interface{} `field:"optional" json:"replaceExisting" yaml:"replaceExisting"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_role#role_id PostgresRole#role_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_role#role_id PostgresRole#role_id}.
 	RoleId *string `field:"optional" json:"roleId" yaml:"roleId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_role#spec PostgresRole#spec}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_role#spec PostgresRole#spec}.
 	Spec *PostgresRoleSpec `field:"optional" json:"spec" yaml:"spec"`
 }
 

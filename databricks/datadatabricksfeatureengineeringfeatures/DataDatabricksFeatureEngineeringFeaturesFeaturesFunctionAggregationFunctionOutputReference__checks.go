@@ -148,7 +148,51 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggre
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference) validatePutFirstDistinctParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirstDistinct) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference) validatePutFirstNParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirstN) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference) validatePutLastParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLast) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference) validatePutLastDistinctParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastDistinct) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference) validatePutLastNParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastN) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

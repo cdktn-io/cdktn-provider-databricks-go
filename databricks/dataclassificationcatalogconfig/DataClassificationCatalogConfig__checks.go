@@ -238,6 +238,17 @@ func (d *jsiiProxy_DataClassificationCatalogConfig) validatePutAutoTagConfigsPar
 	return nil
 }
 
+func (d *jsiiProxy_DataClassificationCatalogConfig) validatePutExcludedSchemasParameters(value *DataClassificationCatalogConfigExcludedSchemas) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataClassificationCatalogConfig) validatePutIncludedSchemasParameters(value *DataClassificationCatalogConfigIncludedSchemas) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

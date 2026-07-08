@@ -67,7 +67,23 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputRef
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) validatePutFirstDistinctParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) validatePutFirstNParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionFirstN) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) validatePutLastParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionLast) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) validatePutLastDistinctParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference) validatePutLastNParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionLastN) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputReference) validateSetFreshnessTargetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureStreamingModeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

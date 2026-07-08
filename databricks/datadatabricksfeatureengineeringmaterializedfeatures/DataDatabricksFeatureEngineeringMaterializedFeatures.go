@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features}.
 type DataDatabricksFeatureEngineeringMaterializedFeatures interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatures) Terrafo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source.
 func NewDataDatabricksFeatureEngineeringMaterializedFeatures(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringMaterializedFeaturesConfig) DataDatabricksFeatureEngineeringMaterializedFeatures {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataDatabricksFeatureEngineeringMaterializedFeatures(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source.
 func NewDataDatabricksFeatureEngineeringMaterializedFeatures_Override(d DataDatabricksFeatureEngineeringMaterializedFeatures, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringMaterializedFeaturesConfig) {
 	_init_.Initialize()
 

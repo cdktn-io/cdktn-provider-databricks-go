@@ -67,7 +67,23 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggre
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference) validatePutFirstDistinctParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirstDistinct) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference) validatePutFirstNParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirstN) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference) validatePutLastParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLast) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference) validatePutLastDistinctParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastDistinct) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference) validatePutLastNParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastN) error {
 	return nil
 }
 

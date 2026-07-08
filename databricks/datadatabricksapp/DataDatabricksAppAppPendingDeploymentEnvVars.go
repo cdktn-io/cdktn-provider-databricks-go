@@ -5,11 +5,11 @@ package datadatabricksapp
 
 
 type DataDatabricksAppAppPendingDeploymentEnvVars struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/app#name DataDatabricksApp#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/app#name DataDatabricksApp#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/app#value DataDatabricksApp#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/app#value DataDatabricksApp#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/app#value_from DataDatabricksApp#value_from}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/app#value_from DataDatabricksApp#value_from}.
 	ValueFrom *string `field:"optional" json:"valueFrom" yaml:"valueFrom"`
 }
 

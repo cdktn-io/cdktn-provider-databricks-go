@@ -5,7 +5,7 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2EffectiveOperationalEmailCustomRecipient struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}.
 	Email *string `field:"optional" json:"email" yaml:"email"`
 }
 

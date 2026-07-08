@@ -47,7 +47,15 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) vali
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) validatePutProtoSchemaParameters(value *FeatureEngineeringKafkaConfigValueSchemaProtoSchema) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigValueSchemaOutputReference) validateSetAvroSchemaParameters(val *string) error {
 	return nil
 }
 

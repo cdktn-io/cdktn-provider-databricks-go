@@ -5,9 +5,7 @@ package mwsnccprivateendpointrule
 
 
 type MwsNccPrivateEndpointRuleGcpEndpoint struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/mws_ncc_private_endpoint_rule#psc_endpoint_uri MwsNccPrivateEndpointRule#psc_endpoint_uri}.
-	PscEndpointUri *string `field:"optional" json:"pscEndpointUri" yaml:"pscEndpointUri"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/mws_ncc_private_endpoint_rule#service_attachment MwsNccPrivateEndpointRule#service_attachment}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/mws_ncc_private_endpoint_rule#service_attachment MwsNccPrivateEndpointRule#service_attachment}.
 	ServiceAttachment *string `field:"optional" json:"serviceAttachment" yaml:"serviceAttachment"`
 }
 

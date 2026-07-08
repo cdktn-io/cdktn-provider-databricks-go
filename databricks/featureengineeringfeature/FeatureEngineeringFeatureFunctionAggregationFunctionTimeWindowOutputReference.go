@@ -34,6 +34,8 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReferen
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LongRolling() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRollingOutputReference
+	LongRollingInput() interface{}
 	Rolling() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRollingOutputReference
 	RollingInput() interface{}
 	Sliding() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference
@@ -73,10 +75,12 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReferen
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutContinuous(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous)
+	PutLongRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRolling)
 	PutRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling)
 	PutSliding(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding)
 	PutTumbling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling)
 	ResetContinuous()
+	ResetLongRolling()
 	ResetRolling()
 	ResetSliding()
 	ResetTumbling()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) LongRolling() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRollingOutputReference {
+	var returns FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRollingOutputReference
+	_jsii_.Get(
+		j,
+		"longRolling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) LongRollingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"longRollingInput",
 		&returns,
 	)
 	return returns
@@ -525,6 +549,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) PutLongRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRolling) {
+	if err := f.validatePutLongRollingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putLongRolling",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) PutRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling) {
 	if err := f.validatePutRollingParameters(value); err != nil {
 		panic(err)
@@ -562,6 +597,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.InvokeVoid(
 		f,
 		"resetContinuous",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) ResetLongRolling() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLongRolling",
 		nil, // no parameters
 	)
 }

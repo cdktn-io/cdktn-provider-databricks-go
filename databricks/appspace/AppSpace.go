@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/app_space databricks_app_space}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/app_space databricks_app_space}.
 type AppSpace interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -559,7 +559,7 @@ func (j *jsiiProxy_AppSpace) UserApiScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/app_space databricks_app_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/app_space databricks_app_space} Resource.
 func NewAppSpace(scope constructs.Construct, id *string, config *AppSpaceConfig) AppSpace {
 	_init_.Initialize()
 
@@ -577,7 +577,7 @@ func NewAppSpace(scope constructs.Construct, id *string, config *AppSpaceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/app_space databricks_app_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/app_space databricks_app_space} Resource.
 func NewAppSpace_Override(a AppSpace, scope constructs.Construct, id *string, config *AppSpaceConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}.
 	EnforceSchema interface{} `field:"optional" json:"enforceSchema" yaml:"enforceSchema"`
 }
 

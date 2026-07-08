@@ -40,6 +40,7 @@ type DataDatabricksPostgresEndpointStatusOutputReference interface {
 	Hosts() DataDatabricksPostgresEndpointStatusHostsOutputReference
 	InternalValue() *DataDatabricksPostgresEndpointStatus
 	SetInternalValue(val *DataDatabricksPostgresEndpointStatus)
+	LastActiveTime() *string
 	PendingState() *string
 	Settings() DataDatabricksPostgresEndpointStatusSettingsOutputReference
 	SuspendTimeoutDuration() *string
@@ -215,6 +216,16 @@ func (j *jsiiProxy_DataDatabricksPostgresEndpointStatusOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresEndpointStatusOutputReference) LastActiveTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastActiveTime",
 		&returns,
 	)
 	return returns

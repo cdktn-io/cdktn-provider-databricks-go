@@ -155,6 +155,10 @@ func (j *jsiiProxy_Cluster) validateSetAutoterminationMinutesParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_Cluster) validateSetClearCloudAttributesOnRemoveParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cluster) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

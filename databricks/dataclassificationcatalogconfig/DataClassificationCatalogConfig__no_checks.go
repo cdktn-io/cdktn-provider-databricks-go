@@ -79,6 +79,10 @@ func (d *jsiiProxy_DataClassificationCatalogConfig) validatePutAutoTagConfigsPar
 	return nil
 }
 
+func (d *jsiiProxy_DataClassificationCatalogConfig) validatePutExcludedSchemasParameters(value *DataClassificationCatalogConfigExcludedSchemas) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataClassificationCatalogConfig) validatePutIncludedSchemasParameters(value *DataClassificationCatalogConfigIncludedSchemas) error {
 	return nil
 }

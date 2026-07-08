@@ -5,9 +5,9 @@ package datadatabrickspostgresprojects
 
 
 type DataDatabricksPostgresProjectsProjects struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/postgres_projects#name DataDatabricksPostgresProjects#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/postgres_projects#name DataDatabricksPostgresProjects#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/postgres_projects#provider_config DataDatabricksPostgresProjects#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/postgres_projects#provider_config DataDatabricksPostgresProjects#provider_config}.
 	ProviderConfig *DataDatabricksPostgresProjectsProjectsProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

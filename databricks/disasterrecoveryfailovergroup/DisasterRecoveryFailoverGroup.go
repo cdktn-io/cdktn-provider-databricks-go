@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group}.
 type DisasterRecoveryFailoverGroup interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_DisasterRecoveryFailoverGroup) WorkspaceSetsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Resource.
 func NewDisasterRecoveryFailoverGroup(scope constructs.Construct, id *string, config *DisasterRecoveryFailoverGroupConfig) DisasterRecoveryFailoverGroup {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewDisasterRecoveryFailoverGroup(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Resource.
 func NewDisasterRecoveryFailoverGroup_Override(d DisasterRecoveryFailoverGroup, scope constructs.Construct, id *string, config *DisasterRecoveryFailoverGroupConfig) {
 	_init_.Initialize()
 

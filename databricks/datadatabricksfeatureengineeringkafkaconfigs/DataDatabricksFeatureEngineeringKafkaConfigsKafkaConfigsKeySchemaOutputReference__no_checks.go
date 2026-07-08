@@ -47,7 +47,15 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySc
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaOutputReference) validatePutProtoSchemaParameters(value *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaProtoSchema) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaOutputReference) validateSetAvroSchemaParameters(val *string) error {
 	return nil
 }
 

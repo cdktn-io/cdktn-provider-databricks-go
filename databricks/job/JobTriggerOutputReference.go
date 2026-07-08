@@ -41,6 +41,8 @@ type JobTriggerOutputReference interface {
 	PauseStatusInput() *string
 	Periodic() JobTriggerPeriodicOutputReference
 	PeriodicInput() *JobTriggerPeriodic
+	SqlCondition() JobTriggerSqlConditionOutputReference
+	SqlConditionInput() *JobTriggerSqlCondition
 	TableUpdate() JobTriggerTableUpdateOutputReference
 	TableUpdateInput() *JobTriggerTableUpdate
 	// Experimental.
@@ -78,11 +80,13 @@ type JobTriggerOutputReference interface {
 	PutFileArrival(value *JobTriggerFileArrival)
 	PutModel(value *JobTriggerModel)
 	PutPeriodic(value *JobTriggerPeriodic)
+	PutSqlCondition(value *JobTriggerSqlCondition)
 	PutTableUpdate(value *JobTriggerTableUpdate)
 	ResetFileArrival()
 	ResetModel()
 	ResetPauseStatus()
 	ResetPeriodic()
+	ResetSqlCondition()
 	ResetTableUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -224,6 +228,26 @@ func (j *jsiiProxy_JobTriggerOutputReference) PeriodicInput() *JobTriggerPeriodi
 	_jsii_.Get(
 		j,
 		"periodicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) SqlCondition() JobTriggerSqlConditionOutputReference {
+	var returns JobTriggerSqlConditionOutputReference
+	_jsii_.Get(
+		j,
+		"sqlCondition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) SqlConditionInput() *JobTriggerSqlCondition {
+	var returns *JobTriggerSqlCondition
+	_jsii_.Get(
+		j,
+		"sqlConditionInput",
 		&returns,
 	)
 	return returns
@@ -582,6 +606,17 @@ func (j *jsiiProxy_JobTriggerOutputReference) PutPeriodic(value *JobTriggerPerio
 	)
 }
 
+func (j *jsiiProxy_JobTriggerOutputReference) PutSqlCondition(value *JobTriggerSqlCondition) {
+	if err := j.validatePutSqlConditionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putSqlCondition",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTriggerOutputReference) PutTableUpdate(value *JobTriggerTableUpdate) {
 	if err := j.validatePutTableUpdateParameters(value); err != nil {
 		panic(err)
@@ -621,6 +656,14 @@ func (j *jsiiProxy_JobTriggerOutputReference) ResetPeriodic() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPeriodic",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) ResetSqlCondition() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSqlCondition",
 		nil, // no parameters
 	)
 }

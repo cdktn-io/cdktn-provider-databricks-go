@@ -12,10 +12,9 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_uc databricks_secret_uc}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_uc databricks_secret_uc}.
 type DataDatabricksSecretUc interface {
 	cdktn.TerraformDataSource
-	BrowseOnly() cdktn.IResolvable
 	CatalogName() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
@@ -35,7 +34,6 @@ type DataDatabricksSecretUc interface {
 	EffectiveOwner() *string
 	EffectiveValue() *string
 	ExpireTime() *string
-	ExternalSecretId() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -130,16 +128,6 @@ type DataDatabricksSecretUc interface {
 // The jsii proxy struct for DataDatabricksSecretUc
 type jsiiProxy_DataDatabricksSecretUc struct {
 	internal.Type__cdktnTerraformDataSource
-}
-
-func (j *jsiiProxy_DataDatabricksSecretUc) BrowseOnly() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"browseOnly",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksSecretUc) CatalogName() *string {
@@ -247,16 +235,6 @@ func (j *jsiiProxy_DataDatabricksSecretUc) ExpireTime() *string {
 	_jsii_.Get(
 		j,
 		"expireTime",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksSecretUc) ExternalSecretId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"externalSecretId",
 		&returns,
 	)
 	return returns
@@ -473,7 +451,7 @@ func (j *jsiiProxy_DataDatabricksSecretUc) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_uc databricks_secret_uc} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_uc databricks_secret_uc} Data Source.
 func NewDataDatabricksSecretUc(scope constructs.Construct, id *string, config *DataDatabricksSecretUcConfig) DataDatabricksSecretUc {
 	_init_.Initialize()
 
@@ -491,7 +469,7 @@ func NewDataDatabricksSecretUc(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_uc databricks_secret_uc} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_uc databricks_secret_uc} Data Source.
 func NewDataDatabricksSecretUc_Override(d DataDatabricksSecretUc, scope constructs.Construct, id *string, config *DataDatabricksSecretUcConfig) {
 	_init_.Initialize()
 

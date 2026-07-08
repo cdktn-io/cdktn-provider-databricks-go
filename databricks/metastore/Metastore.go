@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/metastore databricks_metastore}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/metastore databricks_metastore}.
 type Metastore interface {
 	cdktn.TerraformResource
 	Api() *string
@@ -756,7 +756,7 @@ func (j *jsiiProxy_Metastore) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/metastore databricks_metastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/metastore databricks_metastore} Resource.
 func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfig) Metastore {
 	_init_.Initialize()
 
@@ -774,7 +774,7 @@ func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/metastore databricks_metastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/metastore databricks_metastore} Resource.
 func NewMetastore_Override(m Metastore, scope constructs.Construct, id *string, config *MetastoreConfig) {
 	_init_.Initialize()
 

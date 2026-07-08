@@ -5,11 +5,11 @@ package datadatabricksapps
 
 
 type DataDatabricksAppsAppTelemetryExportDestinationsUnityCatalog struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/apps#logs_table DataDatabricksApps#logs_table}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/apps#logs_table DataDatabricksApps#logs_table}.
 	LogsTable *string `field:"required" json:"logsTable" yaml:"logsTable"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/apps#metrics_table DataDatabricksApps#metrics_table}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/apps#metrics_table DataDatabricksApps#metrics_table}.
 	MetricsTable *string `field:"required" json:"metricsTable" yaml:"metricsTable"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/apps#traces_table DataDatabricksApps#traces_table}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/apps#traces_table DataDatabricksApps#traces_table}.
 	TracesTable *string `field:"required" json:"tracesTable" yaml:"tracesTable"`
 }
 

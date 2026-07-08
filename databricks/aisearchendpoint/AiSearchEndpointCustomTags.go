@@ -5,9 +5,9 @@ package aisearchendpoint
 
 
 type AiSearchEndpointCustomTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_endpoint#key AiSearchEndpoint#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_endpoint#key AiSearchEndpoint#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_endpoint#value AiSearchEndpoint#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_endpoint#value AiSearchEndpoint#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

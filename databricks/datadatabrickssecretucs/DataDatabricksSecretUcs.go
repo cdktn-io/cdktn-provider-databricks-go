@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs databricks_secret_ucs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs databricks_secret_ucs}.
 type DataDatabricksSecretUcs interface {
 	cdktn.TerraformDataSource
 	CatalogName() *string
@@ -38,9 +38,6 @@ type DataDatabricksSecretUcs interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	IncludeBrowse() interface{}
-	SetIncludeBrowse(val interface{})
-	IncludeBrowseInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -95,7 +92,6 @@ type DataDatabricksSecretUcs interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutProviderConfig(value *DataDatabricksSecretUcsProviderConfig)
 	ResetCatalogName()
-	ResetIncludeBrowse()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -215,26 +211,6 @@ func (j *jsiiProxy_DataDatabricksSecretUcs) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksSecretUcs) IncludeBrowse() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"includeBrowse",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksSecretUcs) IncludeBrowseInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"includeBrowseInput",
 		&returns,
 	)
 	return returns
@@ -381,7 +357,7 @@ func (j *jsiiProxy_DataDatabricksSecretUcs) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source.
 func NewDataDatabricksSecretUcs(scope constructs.Construct, id *string, config *DataDatabricksSecretUcsConfig) DataDatabricksSecretUcs {
 	_init_.Initialize()
 
@@ -399,7 +375,7 @@ func NewDataDatabricksSecretUcs(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source.
 func NewDataDatabricksSecretUcs_Override(d DataDatabricksSecretUcs, scope constructs.Construct, id *string, config *DataDatabricksSecretUcsConfig) {
 	_init_.Initialize()
 
@@ -444,17 +420,6 @@ func (j *jsiiProxy_DataDatabricksSecretUcs)SetForEach(val cdktn.ITerraformIterat
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSecretUcs)SetIncludeBrowse(val interface{}) {
-	if err := j.validateSetIncludeBrowseParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"includeBrowse",
 		val,
 	)
 }
@@ -800,14 +765,6 @@ func (d *jsiiProxy_DataDatabricksSecretUcs) ResetCatalogName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCatalogName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSecretUcs) ResetIncludeBrowse() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIncludeBrowse",
 		nil, // no parameters
 	)
 }

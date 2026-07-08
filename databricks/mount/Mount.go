@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/mount databricks_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/mount databricks_mount}.
 type Mount interface {
 	cdktn.TerraformResource
 	Abfs() MountAbfsOutputReference
@@ -642,7 +642,7 @@ func (j *jsiiProxy_Mount) WasbInput() *MountWasb {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/mount databricks_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/mount databricks_mount} Resource.
 func NewMount(scope constructs.Construct, id *string, config *MountConfig) Mount {
 	_init_.Initialize()
 
@@ -660,7 +660,7 @@ func NewMount(scope constructs.Construct, id *string, config *MountConfig) Mount
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/mount databricks_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/mount databricks_mount} Resource.
 func NewMount_Override(m Mount, scope constructs.Construct, id *string, config *MountConfig) {
 	_init_.Initialize()
 

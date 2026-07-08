@@ -166,6 +166,14 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureStreamingM
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureStreamingModeOutputReference) validateSetFreshnessTargetParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureStreamingModeOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringMaterializedFeatureStreamingMode) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

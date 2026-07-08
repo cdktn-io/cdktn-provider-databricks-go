@@ -5,7 +5,7 @@ package postgresdataapi
 
 
 type PostgresDataApiProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#workspace_id PostgresDataApi#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#workspace_id PostgresDataApi#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

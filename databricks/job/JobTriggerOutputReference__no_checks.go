@@ -59,6 +59,10 @@ func (j *jsiiProxy_JobTriggerOutputReference) validatePutPeriodicParameters(valu
 	return nil
 }
 
+func (j *jsiiProxy_JobTriggerOutputReference) validatePutSqlConditionParameters(value *JobTriggerSqlCondition) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTriggerOutputReference) validatePutTableUpdateParameters(value *JobTriggerTableUpdate) error {
 	return nil
 }

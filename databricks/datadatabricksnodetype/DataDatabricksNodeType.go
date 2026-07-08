@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/node_type databricks_node_type}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/node_type databricks_node_type}.
 type DataDatabricksNodeType interface {
 	cdktn.TerraformDataSource
 	Arm() interface{}
@@ -634,7 +634,7 @@ func (j *jsiiProxy_DataDatabricksNodeType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/node_type databricks_node_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/node_type databricks_node_type} Data Source.
 func NewDataDatabricksNodeType(scope constructs.Construct, id *string, config *DataDatabricksNodeTypeConfig) DataDatabricksNodeType {
 	_init_.Initialize()
 
@@ -652,7 +652,7 @@ func NewDataDatabricksNodeType(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/node_type databricks_node_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/node_type databricks_node_type} Data Source.
 func NewDataDatabricksNodeType_Override(d DataDatabricksNodeType, scope constructs.Construct, id *string, config *DataDatabricksNodeTypeConfig) {
 	_init_.Initialize()
 

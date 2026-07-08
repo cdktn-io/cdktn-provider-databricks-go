@@ -574,6 +574,8 @@ func init() {
 		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringKafkaConfigs.DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaOutputReference",
 		reflect.TypeOf((*DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "avroSchema", GoGetter: "AvroSchema"},
+			_jsii_.MemberProperty{JsiiProperty: "avroSchemaInput", GoGetter: "AvroSchemaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -593,7 +595,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "jsonSchema", GoGetter: "JsonSchema"},
 			_jsii_.MemberProperty{JsiiProperty: "jsonSchemaInput", GoGetter: "JsonSchemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protoSchema", GoGetter: "ProtoSchema"},
+			_jsii_.MemberProperty{JsiiProperty: "protoSchemaInput", GoGetter: "ProtoSchemaInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putProtoSchema", GoMethod: "PutProtoSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvroSchema", GoMethod: "ResetAvroSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJsonSchema", GoMethod: "ResetJsonSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtoSchema", GoMethod: "ResetProtoSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -601,6 +608,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringKafkaConfigs.DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaProtoSchema",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaProtoSchema)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringKafkaConfigs.DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaProtoSchemaOutputReference",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaProtoSchemaOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "messageName", GoGetter: "MessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "messageNameInput", GoGetter: "MessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaText", GoGetter: "SchemaText"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaTextInput", GoGetter: "SchemaTextInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaProtoSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -765,6 +812,8 @@ func init() {
 		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringKafkaConfigs.DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaOutputReference",
 		reflect.TypeOf((*DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "avroSchema", GoGetter: "AvroSchema"},
+			_jsii_.MemberProperty{JsiiProperty: "avroSchemaInput", GoGetter: "AvroSchemaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -784,7 +833,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "jsonSchema", GoGetter: "JsonSchema"},
 			_jsii_.MemberProperty{JsiiProperty: "jsonSchemaInput", GoGetter: "JsonSchemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protoSchema", GoGetter: "ProtoSchema"},
+			_jsii_.MemberProperty{JsiiProperty: "protoSchemaInput", GoGetter: "ProtoSchemaInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putProtoSchema", GoMethod: "PutProtoSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvroSchema", GoMethod: "ResetAvroSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJsonSchema", GoMethod: "ResetJsonSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtoSchema", GoMethod: "ResetProtoSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -792,6 +846,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringKafkaConfigs.DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaProtoSchema",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaProtoSchema)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringKafkaConfigs.DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaProtoSchemaOutputReference",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaProtoSchemaOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "messageName", GoGetter: "MessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "messageNameInput", GoGetter: "MessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaText", GoGetter: "SchemaText"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaTextInput", GoGetter: "SchemaTextInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaProtoSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

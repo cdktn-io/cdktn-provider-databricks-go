@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/default_namespace_setting databricks_default_namespace_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/default_namespace_setting databricks_default_namespace_setting}.
 type DefaultNamespaceSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_DefaultNamespaceSetting) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
 func NewDefaultNamespaceSetting(scope constructs.Construct, id *string, config *DefaultNamespaceSettingConfig) DefaultNamespaceSetting {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewDefaultNamespaceSetting(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource.
 func NewDefaultNamespaceSetting_Override(d DefaultNamespaceSetting, scope constructs.Construct, id *string, config *DefaultNamespaceSettingConfig) {
 	_init_.Initialize()
 

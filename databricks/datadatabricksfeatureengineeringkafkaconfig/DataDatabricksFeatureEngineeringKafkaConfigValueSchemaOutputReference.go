@@ -13,6 +13,9 @@ import (
 
 type DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference interface {
 	cdktn.ComplexObject
+	AvroSchema() *string
+	SetAvroSchema(val *string)
+	AvroSchemaInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +38,8 @@ type DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference inter
 	JsonSchema() *string
 	SetJsonSchema(val *string)
 	JsonSchemaInput() *string
+	ProtoSchema() DataDatabricksFeatureEngineeringKafkaConfigValueSchemaProtoSchemaOutputReference
+	ProtoSchemaInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +72,10 @@ type DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference inter
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutProtoSchema(value *DataDatabricksFeatureEngineeringKafkaConfigValueSchemaProtoSchema)
+	ResetAvroSchema()
 	ResetJsonSchema()
+	ResetProtoSchema()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -81,6 +89,26 @@ type DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference inter
 // The jsii proxy struct for DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference
 type jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference) AvroSchema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avroSchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference) AvroSchemaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avroSchemaInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference) ComplexObjectIndex() interface{} {
@@ -153,6 +181,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputR
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference) ProtoSchema() DataDatabricksFeatureEngineeringKafkaConfigValueSchemaProtoSchemaOutputReference {
+	var returns DataDatabricksFeatureEngineeringKafkaConfigValueSchemaProtoSchemaOutputReference
+	_jsii_.Get(
+		j,
+		"protoSchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference) ProtoSchemaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"protoSchemaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -198,6 +246,17 @@ func NewDataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference_Ov
 		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringKafkaConfig.DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference)SetAvroSchema(val *string) {
+	if err := j.validateSetAvroSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"avroSchema",
+		val,
 	)
 }
 
@@ -453,10 +512,37 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputR
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference) PutProtoSchema(value *DataDatabricksFeatureEngineeringKafkaConfigValueSchemaProtoSchema) {
+	if err := d.validatePutProtoSchemaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProtoSchema",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference) ResetAvroSchema() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAvroSchema",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference) ResetJsonSchema() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetJsonSchema",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigValueSchemaOutputReference) ResetProtoSchema() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProtoSchema",
 		nil, // no parameters
 	)
 }

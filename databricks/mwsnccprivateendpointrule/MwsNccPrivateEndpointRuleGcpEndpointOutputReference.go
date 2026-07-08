@@ -33,8 +33,6 @@ type MwsNccPrivateEndpointRuleGcpEndpointOutputReference interface {
 	InternalValue() *MwsNccPrivateEndpointRuleGcpEndpoint
 	SetInternalValue(val *MwsNccPrivateEndpointRuleGcpEndpoint)
 	PscEndpointUri() *string
-	SetPscEndpointUri(val *string)
-	PscEndpointUriInput() *string
 	ServiceAttachment() *string
 	SetServiceAttachment(val *string)
 	ServiceAttachmentInput() *string
@@ -70,7 +68,6 @@ type MwsNccPrivateEndpointRuleGcpEndpointOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	ResetPscEndpointUri()
 	ResetServiceAttachment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -142,16 +139,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) PscEndpo
 	_jsii_.Get(
 		j,
 		"pscEndpointUri",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) PscEndpointUriInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pscEndpointUriInput",
 		&returns,
 	)
 	return returns
@@ -254,17 +241,6 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference)SetPscEndpointUri(val *string) {
-	if err := j.validateSetPscEndpointUriParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pscEndpointUri",
 		val,
 	)
 }
@@ -486,14 +462,6 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) Interpol
 	)
 
 	return returns
-}
-
-func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) ResetPscEndpointUri() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetPscEndpointUri",
-		nil, // no parameters
-	)
 }
 
 func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) ResetServiceAttachment() {

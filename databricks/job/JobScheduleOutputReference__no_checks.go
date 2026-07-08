@@ -47,6 +47,10 @@ func (j *jsiiProxy_JobScheduleOutputReference) validateInterpolationForAttribute
 	return nil
 }
 
+func (j *jsiiProxy_JobScheduleOutputReference) validatePutSqlConditionParameters(value *JobScheduleSqlCondition) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobScheduleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
