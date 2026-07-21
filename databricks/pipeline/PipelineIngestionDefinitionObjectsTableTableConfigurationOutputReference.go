@@ -63,6 +63,9 @@ type PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference in
 	SequenceBy() *[]*string
 	SetSequenceBy(val *[]*string)
 	SequenceByInput() *[]*string
+	SourceMetadataColumn() *string
+	SetSourceMetadataColumn(val *string)
+	SourceMetadataColumnInput() *string
 	TableProperties() *map[string]*string
 	SetTableProperties(val *map[string]*string)
 	TablePropertiesInput() *map[string]*string
@@ -114,6 +117,7 @@ type PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference in
 	ResetSalesforceIncludeFormulaFields()
 	ResetScdType()
 	ResetSequenceBy()
+	ResetSourceMetadataColumn()
 	ResetTableProperties()
 	ResetWorkdayReportParameters()
 	// Produce the Token's value at resolution time.
@@ -401,6 +405,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutp
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference) SourceMetadataColumn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceMetadataColumn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference) SourceMetadataColumnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceMetadataColumnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference) TableProperties() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -617,6 +641,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutp
 	_jsii_.Set(
 		j,
 		"sequenceBy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference)SetSourceMetadataColumn(val *string) {
+	if err := j.validateSetSourceMetadataColumnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceMetadataColumn",
 		val,
 	)
 }
@@ -957,6 +992,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutp
 	_jsii_.InvokeVoid(
 		p,
 		"resetSequenceBy",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference) ResetSourceMetadataColumn() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSourceMetadataColumn",
 		nil, // no parameters
 	)
 }

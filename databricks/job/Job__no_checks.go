@@ -259,6 +259,10 @@ func (j *jsiiProxy_Job) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Job) validateSetParentPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validateSetPerformanceTargetParameters(val *string) error {
 	return nil
 }

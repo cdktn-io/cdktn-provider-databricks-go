@@ -5,7 +5,7 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureFunctionAggregationFunctionMin struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 	Input *string `field:"required" json:"input" yaml:"input"`
 }
 

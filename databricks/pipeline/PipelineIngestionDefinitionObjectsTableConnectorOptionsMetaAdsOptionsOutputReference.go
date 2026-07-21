@@ -43,6 +43,8 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutput
 	CustomInsightsLookbackWindow() *float64
 	SetCustomInsightsLookbackWindow(val *float64)
 	CustomInsightsLookbackWindowInput() *float64
+	CustomReportOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptionsOutputReference
+	CustomReportOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions
@@ -88,11 +90,13 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutput
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutCustomReportOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions)
 	ResetActionAttributionWindows()
 	ResetActionBreakdowns()
 	ResetActionReportTime()
 	ResetBreakdowns()
 	ResetCustomInsightsLookbackWindow()
+	ResetCustomReportOptions()
 	ResetLevel()
 	ResetStartDate()
 	ResetTimeIncrement()
@@ -236,6 +240,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAd
 	_jsii_.Get(
 		j,
 		"customInsightsLookbackWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference) CustomReportOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"customReportOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference) CustomReportOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions
+	_jsii_.Get(
+		j,
+		"customReportOptionsInput",
 		&returns,
 	)
 	return returns
@@ -698,6 +722,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAd
 	return returns
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference) PutCustomReportOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions) {
+	if err := p.validatePutCustomReportOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCustomReportOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference) ResetActionAttributionWindows() {
 	_jsii_.InvokeVoid(
 		p,
@@ -734,6 +769,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAd
 	_jsii_.InvokeVoid(
 		p,
 		"resetCustomInsightsLookbackWindow",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference) ResetCustomReportOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCustomReportOptions",
 		nil, // no parameters
 	)
 }

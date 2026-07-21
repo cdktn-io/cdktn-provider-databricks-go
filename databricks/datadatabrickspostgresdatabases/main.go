@@ -206,7 +206,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "postgresDatabase", GoGetter: "PostgresDatabase"},
 			_jsii_.MemberProperty{JsiiProperty: "postgresDatabaseInput", GoGetter: "PostgresDatabaseInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPostgresDatabase", GoMethod: "ResetPostgresDatabase"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRole", GoMethod: "ResetRole"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "role", GoGetter: "Role"},
 			_jsii_.MemberProperty{JsiiProperty: "roleInput", GoGetter: "RoleInput"},

@@ -22,11 +22,11 @@ type PostgresCatalogConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_catalog#catalog_id PostgresCatalog#catalog_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_catalog#catalog_id PostgresCatalog#catalog_id}.
 	CatalogId *string `field:"required" json:"catalogId" yaml:"catalogId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_catalog#provider_config PostgresCatalog#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_catalog#provider_config PostgresCatalog#provider_config}.
 	ProviderConfig *PostgresCatalogProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_catalog#spec PostgresCatalog#spec}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_catalog#spec PostgresCatalog#spec}.
 	Spec *PostgresCatalogSpec `field:"optional" json:"spec" yaml:"spec"`
 }
 

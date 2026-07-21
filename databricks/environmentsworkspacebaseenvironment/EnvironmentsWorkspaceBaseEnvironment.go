@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment}.
 type EnvironmentsWorkspaceBaseEnvironment interface {
 	cdktn.TerraformResource
 	BaseEnvironmentType() *string
@@ -524,7 +524,7 @@ func (j *jsiiProxy_EnvironmentsWorkspaceBaseEnvironment) WorkspaceBaseEnvironmen
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Resource.
 func NewEnvironmentsWorkspaceBaseEnvironment(scope constructs.Construct, id *string, config *EnvironmentsWorkspaceBaseEnvironmentConfig) EnvironmentsWorkspaceBaseEnvironment {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewEnvironmentsWorkspaceBaseEnvironment(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Resource.
 func NewEnvironmentsWorkspaceBaseEnvironment_Override(e EnvironmentsWorkspaceBaseEnvironment, scope constructs.Construct, id *string, config *EnvironmentsWorkspaceBaseEnvironmentConfig) {
 	_init_.Initialize()
 

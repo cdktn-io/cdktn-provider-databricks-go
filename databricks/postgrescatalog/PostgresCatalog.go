@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_catalog databricks_postgres_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_catalog databricks_postgres_catalog}.
 type PostgresCatalog interface {
 	cdktn.TerraformResource
 	CatalogId() *string
@@ -421,7 +421,7 @@ func (j *jsiiProxy_PostgresCatalog) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_catalog databricks_postgres_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_catalog databricks_postgres_catalog} Resource.
 func NewPostgresCatalog(scope constructs.Construct, id *string, config *PostgresCatalogConfig) PostgresCatalog {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewPostgresCatalog(scope constructs.Construct, id *string, config *Postgres
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_catalog databricks_postgres_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_catalog databricks_postgres_catalog} Resource.
 func NewPostgresCatalog_Override(p PostgresCatalog, scope constructs.Construct, id *string, config *PostgresCatalogConfig) {
 	_init_.Initialize()
 

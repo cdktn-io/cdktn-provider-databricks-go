@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktn.TerraformResource
 	AlwaysRunning() interface{}
@@ -107,6 +107,9 @@ type Job interface {
 	NotificationSettingsInput() *JobNotificationSettings
 	Parameter() JobParameterList
 	ParameterInput() interface{}
+	ParentPath() *string
+	SetParentPath(val *string)
+	ParentPathInput() *string
 	PerformanceTarget() *string
 	SetPerformanceTarget(val *string)
 	PerformanceTargetInput() *string
@@ -265,6 +268,7 @@ type Job interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameter()
+	ResetParentPath()
 	ResetPerformanceTarget()
 	ResetPipelineTask()
 	ResetProviderConfig()
@@ -911,6 +915,26 @@ func (j *jsiiProxy_Job) ParameterInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Job) ParentPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) ParentPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentPathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Job) PerformanceTarget() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1362,7 +1386,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1380,7 +1404,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -1568,6 +1592,17 @@ func (j *jsiiProxy_Job)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Job)SetParentPath(val *string) {
+	if err := j.validateSetParentPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parentPath",
 		val,
 	)
 }
@@ -2500,6 +2535,14 @@ func (j *jsiiProxy_Job) ResetParameter() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetParameter",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetParentPath() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetParentPath",
 		nil, // no parameters
 	)
 }

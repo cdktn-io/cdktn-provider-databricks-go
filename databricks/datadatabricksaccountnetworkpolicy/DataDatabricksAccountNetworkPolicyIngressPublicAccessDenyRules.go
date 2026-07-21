@@ -5,13 +5,13 @@ package datadatabricksaccountnetworkpolicy
 
 
 type DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 	Authentication *DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication `field:"optional" json:"authentication" yaml:"authentication"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 	Destination *DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination `field:"optional" json:"destination" yaml:"destination"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 	Label *string `field:"optional" json:"label" yaml:"label"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 	Origin *DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin `field:"optional" json:"origin" yaml:"origin"`
 }
 

@@ -22,9 +22,9 @@ type DataDatabricksDataQualityMonitorsConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/data_quality_monitors#page_size DataDatabricksDataQualityMonitors#page_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/data_quality_monitors#page_size DataDatabricksDataQualityMonitors#page_size}.
 	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/data_quality_monitors#provider_config DataDatabricksDataQualityMonitors#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/data_quality_monitors#provider_config DataDatabricksDataQualityMonitors#provider_config}.
 	ProviderConfig *DataDatabricksDataQualityMonitorsProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

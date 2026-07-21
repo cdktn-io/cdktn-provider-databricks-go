@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogl
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference) validatePutCustomReportOptionsParameters(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

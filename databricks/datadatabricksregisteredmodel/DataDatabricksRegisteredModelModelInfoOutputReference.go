@@ -15,9 +15,7 @@ type DataDatabricksRegisteredModelModelInfoOutputReference interface {
 	cdktn.ComplexObject
 	Aliases() DataDatabricksRegisteredModelModelInfoAliasesList
 	AliasesInput() interface{}
-	BrowseOnly() interface{}
-	SetBrowseOnly(val interface{})
-	BrowseOnlyInput() interface{}
+	BrowseOnly() cdktn.IResolvable
 	CatalogName() *string
 	SetCatalogName(val *string)
 	CatalogNameInput() *string
@@ -107,7 +105,6 @@ type DataDatabricksRegisteredModelModelInfoOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAliases(value interface{})
 	ResetAliases()
-	ResetBrowseOnly()
 	ResetCatalogName()
 	ResetComment()
 	ResetCreatedAt()
@@ -155,21 +152,11 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoOutputReference) Aliase
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoOutputReference) BrowseOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoOutputReference) BrowseOnly() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"browseOnly",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoOutputReference) BrowseOnlyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"browseOnlyInput",
 		&returns,
 	)
 	return returns
@@ -510,17 +497,6 @@ func NewDataDatabricksRegisteredModelModelInfoOutputReference_Override(d DataDat
 		"@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoOutputReference)SetBrowseOnly(val interface{}) {
-	if err := j.validateSetBrowseOnlyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"browseOnly",
-		val,
 	)
 }
 
@@ -912,14 +888,6 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelModelInfoOutputReference) ResetA
 	_jsii_.InvokeVoid(
 		d,
 		"resetAliases",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksRegisteredModelModelInfoOutputReference) ResetBrowseOnly() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetBrowseOnly",
 		nil, // no parameters
 	)
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) validateSetSourceMetadataColumnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) validateSetTablePropertiesParameters(val *map[string]*string) error {
 	return nil
 }

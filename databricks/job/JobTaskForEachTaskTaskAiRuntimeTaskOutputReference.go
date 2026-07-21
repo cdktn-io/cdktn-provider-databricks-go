@@ -13,9 +13,6 @@ import (
 
 type JobTaskForEachTaskTaskAiRuntimeTaskOutputReference interface {
 	cdktn.ComplexObject
-	CodeSourcePath() *string
-	SetCodeSourcePath(val *string)
-	CodeSourcePathInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,7 +76,6 @@ type JobTaskForEachTaskTaskAiRuntimeTaskOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDeployments(value interface{})
-	ResetCodeSourcePath()
 	ResetMlflowExperimentDirectory()
 	ResetMlflowRun()
 	// Produce the Token's value at resolution time.
@@ -95,26 +91,6 @@ type JobTaskForEachTaskTaskAiRuntimeTaskOutputReference interface {
 // The jsii proxy struct for JobTaskForEachTaskTaskAiRuntimeTaskOutputReference
 type jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference struct {
 	internal.Type__cdktnComplexObject
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) CodeSourcePath() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"codeSourcePath",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) CodeSourcePathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"codeSourcePathInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) ComplexObjectIndex() interface{} {
@@ -292,17 +268,6 @@ func NewJobTaskForEachTaskTaskAiRuntimeTaskOutputReference_Override(j JobTaskFor
 		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskAiRuntimeTaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
-	)
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference)SetCodeSourcePath(val *string) {
-	if err := j.validateSetCodeSourcePathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"codeSourcePath",
-		val,
 	)
 }
 
@@ -588,14 +553,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) PutDeploy
 		j,
 		"putDeployments",
 		[]interface{}{value},
-	)
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) ResetCodeSourcePath() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetCodeSourcePath",
-		nil, // no parameters
 	)
 }
 

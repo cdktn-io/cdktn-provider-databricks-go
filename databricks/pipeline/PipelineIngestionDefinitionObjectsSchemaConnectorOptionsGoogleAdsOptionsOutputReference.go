@@ -28,6 +28,8 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOut
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomReportOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptionsOutputReference
+	CustomReportOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions
@@ -73,6 +75,8 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOut
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutCustomReportOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions)
+	ResetCustomReportOptions()
 	ResetLookbackWindowDays()
 	ResetSyncStartDate()
 	// Produce the Token's value at resolution time.
@@ -115,6 +119,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogl
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference) CustomReportOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"customReportOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference) CustomReportOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions {
+	var returns *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions
+	_jsii_.Get(
+		j,
+		"customReportOptionsInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,25 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogl
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference) PutCustomReportOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions) {
+	if err := p.validatePutCustomReportOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCustomReportOptions",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference) ResetCustomReportOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCustomReportOptions",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference) ResetLookbackWindowDays() {

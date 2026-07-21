@@ -7,7 +7,7 @@ package modelserving
 type ModelServingTelemetryConfig struct {
 	// inference_table_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
 	InferenceTableConfig *ModelServingTelemetryConfigInferenceTableConfig `field:"optional" json:"inferenceTableConfig" yaml:"inferenceTableConfig"`
 }
 

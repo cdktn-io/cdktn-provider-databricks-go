@@ -5,7 +5,7 @@ package datadatabricksservingendpoints
 
 
 type DataDatabricksServingEndpointsEndpointsTelemetryConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/serving_endpoints#inference_table_config DataDatabricksServingEndpoints#inference_table_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/serving_endpoints#inference_table_config DataDatabricksServingEndpoints#inference_table_config}.
 	InferenceTableConfig interface{} `field:"optional" json:"inferenceTableConfig" yaml:"inferenceTableConfig"`
 }
 

@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktok
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference) validatePutCustomReportOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

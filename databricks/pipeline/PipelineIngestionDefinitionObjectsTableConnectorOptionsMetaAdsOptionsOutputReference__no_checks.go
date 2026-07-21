@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAd
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference) validatePutCustomReportOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

@@ -883,6 +883,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeature.DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetime",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetime)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeature.DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetimeOutputReference",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetimeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSlideDuration", GoMethod: "ResetSlideDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "slideDuration", GoGetter: "SlideDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "slideDurationInput", GoGetter: "SlideDurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetimeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeature.DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRolling",
 		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRolling)(nil)).Elem(),
 	)
@@ -946,14 +985,18 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lifetime", GoGetter: "Lifetime"},
+			_jsii_.MemberProperty{JsiiProperty: "lifetimeInput", GoGetter: "LifetimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "longRolling", GoGetter: "LongRolling"},
 			_jsii_.MemberProperty{JsiiProperty: "longRollingInput", GoGetter: "LongRollingInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putContinuous", GoMethod: "PutContinuous"},
+			_jsii_.MemberMethod{JsiiMethod: "putLifetime", GoMethod: "PutLifetime"},
 			_jsii_.MemberMethod{JsiiMethod: "putLongRolling", GoMethod: "PutLongRolling"},
 			_jsii_.MemberMethod{JsiiMethod: "putRolling", GoMethod: "PutRolling"},
 			_jsii_.MemberMethod{JsiiMethod: "putSliding", GoMethod: "PutSliding"},
 			_jsii_.MemberMethod{JsiiMethod: "putTumbling", GoMethod: "PutTumbling"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContinuous", GoMethod: "ResetContinuous"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLifetime", GoMethod: "ResetLifetime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLongRolling", GoMethod: "ResetLongRolling"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRolling", GoMethod: "ResetRolling"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSliding", GoMethod: "ResetSliding"},
@@ -1921,6 +1964,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeature.DataDatabricksFeatureEngineeringFeatureTimeWindowLifetime",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeatureTimeWindowLifetime)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeature.DataDatabricksFeatureEngineeringFeatureTimeWindowLifetimeOutputReference",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeatureTimeWindowLifetimeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSlideDuration", GoMethod: "ResetSlideDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "slideDuration", GoGetter: "SlideDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "slideDurationInput", GoGetter: "SlideDurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowLifetimeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeature.DataDatabricksFeatureEngineeringFeatureTimeWindowLongRolling",
 		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeatureTimeWindowLongRolling)(nil)).Elem(),
 	)
@@ -1984,14 +2066,18 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lifetime", GoGetter: "Lifetime"},
+			_jsii_.MemberProperty{JsiiProperty: "lifetimeInput", GoGetter: "LifetimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "longRolling", GoGetter: "LongRolling"},
 			_jsii_.MemberProperty{JsiiProperty: "longRollingInput", GoGetter: "LongRollingInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putContinuous", GoMethod: "PutContinuous"},
+			_jsii_.MemberMethod{JsiiMethod: "putLifetime", GoMethod: "PutLifetime"},
 			_jsii_.MemberMethod{JsiiMethod: "putLongRolling", GoMethod: "PutLongRolling"},
 			_jsii_.MemberMethod{JsiiMethod: "putRolling", GoMethod: "PutRolling"},
 			_jsii_.MemberMethod{JsiiMethod: "putSliding", GoMethod: "PutSliding"},
 			_jsii_.MemberMethod{JsiiMethod: "putTumbling", GoMethod: "PutTumbling"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContinuous", GoMethod: "ResetContinuous"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLifetime", GoMethod: "ResetLifetime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLongRolling", GoMethod: "ResetLongRolling"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRolling", GoMethod: "ResetRolling"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSliding", GoMethod: "ResetSliding"},

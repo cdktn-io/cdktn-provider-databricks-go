@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override}.
 type DataDatabricksWarehousesDefaultWarehouseOverride interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataDatabricksWarehousesDefaultWarehouseOverride) WarehouseId
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Data Source.
 func NewDataDatabricksWarehousesDefaultWarehouseOverride(scope constructs.Construct, id *string, config *DataDatabricksWarehousesDefaultWarehouseOverrideConfig) DataDatabricksWarehousesDefaultWarehouseOverride {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataDatabricksWarehousesDefaultWarehouseOverride(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Data Source.
 func NewDataDatabricksWarehousesDefaultWarehouseOverride_Override(d DataDatabricksWarehousesDefaultWarehouseOverride, scope constructs.Construct, id *string, config *DataDatabricksWarehousesDefaultWarehouseOverrideConfig) {
 	_init_.Initialize()
 

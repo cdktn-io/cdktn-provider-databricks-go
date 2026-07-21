@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
 type MlflowExperiment interface {
 	cdktn.TerraformResource
 	ArtifactLocation() *string
@@ -91,6 +91,8 @@ type MlflowExperiment interface {
 	TerraformResourceType() *string
 	Timeouts() MlflowExperimentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TraceLocation() MlflowExperimentTraceLocationOutputReference
+	TraceLocationInput() *MlflowExperimentTraceLocation
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -137,6 +139,7 @@ type MlflowExperiment interface {
 	PutProviderConfig(value *MlflowExperimentProviderConfig)
 	PutTags(value interface{})
 	PutTimeouts(value *MlflowExperimentTimeouts)
+	PutTraceLocation(value *MlflowExperimentTraceLocation)
 	ResetArtifactLocation()
 	ResetCreationTime()
 	ResetDescription()
@@ -149,6 +152,7 @@ type MlflowExperiment interface {
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
 	ResetTags()
+	ResetTraceLocation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -556,8 +560,28 @@ func (j *jsiiProxy_MlflowExperiment) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MlflowExperiment) TraceLocation() MlflowExperimentTraceLocationOutputReference {
+	var returns MlflowExperimentTraceLocationOutputReference
+	_jsii_.Get(
+		j,
+		"traceLocation",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
+func (j *jsiiProxy_MlflowExperiment) TraceLocationInput() *MlflowExperimentTraceLocation {
+	var returns *MlflowExperimentTraceLocation
+	_jsii_.Get(
+		j,
+		"traceLocationInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
 func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowExperimentConfig) MlflowExperiment {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
 func NewMlflowExperiment_Override(m MlflowExperiment, scope constructs.Construct, id *string, config *MlflowExperimentConfig) {
 	_init_.Initialize()
 
@@ -1128,6 +1152,17 @@ func (m *jsiiProxy_MlflowExperiment) PutTimeouts(value *MlflowExperimentTimeouts
 	)
 }
 
+func (m *jsiiProxy_MlflowExperiment) PutTraceLocation(value *MlflowExperimentTraceLocation) {
+	if err := m.validatePutTraceLocationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTraceLocation",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MlflowExperiment) ResetArtifactLocation() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1204,6 +1239,14 @@ func (m *jsiiProxy_MlflowExperiment) ResetTags() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MlflowExperiment) ResetTraceLocation() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTraceLocation",
 		nil, // no parameters
 	)
 }

@@ -87,6 +87,10 @@ func (m *jsiiProxy_MlflowExperiment) validatePutTimeoutsParameters(value *Mlflow
 	return nil
 }
 
+func (m *jsiiProxy_MlflowExperiment) validatePutTraceLocationParameters(value *MlflowExperimentTraceLocation) error {
+	return nil
+}
+
 func validateMlflowExperiment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

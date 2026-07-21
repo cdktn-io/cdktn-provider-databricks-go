@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags}.
 type DataDatabricksMaterializedFeaturesFeatureTags interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTags(scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagsConfig) DataDatabricksMaterializedFeaturesFeatureTags {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataDatabricksMaterializedFeaturesFeatureTags(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTags_Override(d DataDatabricksMaterializedFeaturesFeatureTags, scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagsConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package datadatabricksknowledgeassistantknowledgesources
 
 
 type DataDatabricksKnowledgeAssistantKnowledgeSourcesKnowledgeSourcesProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/knowledge_assistant_knowledge_sources#workspace_id DataDatabricksKnowledgeAssistantKnowledgeSources#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/knowledge_assistant_knowledge_sources#workspace_id DataDatabricksKnowledgeAssistantKnowledgeSources#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

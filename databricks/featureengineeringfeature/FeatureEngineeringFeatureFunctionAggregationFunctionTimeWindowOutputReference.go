@@ -34,6 +34,8 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReferen
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Lifetime() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetimeOutputReference
+	LifetimeInput() interface{}
 	LongRolling() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRollingOutputReference
 	LongRollingInput() interface{}
 	Rolling() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRollingOutputReference
@@ -75,11 +77,13 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReferen
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutContinuous(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous)
+	PutLifetime(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetime)
 	PutLongRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRolling)
 	PutRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling)
 	PutSliding(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding)
 	PutTumbling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling)
 	ResetContinuous()
+	ResetLifetime()
 	ResetLongRolling()
 	ResetRolling()
 	ResetSliding()
@@ -164,6 +168,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) Lifetime() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetimeOutputReference {
+	var returns FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetimeOutputReference
+	_jsii_.Get(
+		j,
+		"lifetime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) LifetimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lifetimeInput",
 		&returns,
 	)
 	return returns
@@ -549,6 +573,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) PutLifetime(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetime) {
+	if err := f.validatePutLifetimeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putLifetime",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) PutLongRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRolling) {
 	if err := f.validatePutLongRollingParameters(value); err != nil {
 		panic(err)
@@ -597,6 +632,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.InvokeVoid(
 		f,
 		"resetContinuous",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) ResetLifetime() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLifetime",
 		nil, // no parameters
 	)
 }

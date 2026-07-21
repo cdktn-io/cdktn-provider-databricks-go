@@ -5,13 +5,13 @@ package accountnetworkpolicy
 
 
 type AccountNetworkPolicyIngressDryRunPrivateAccessDenyRules struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}.
 	Authentication *AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication `field:"optional" json:"authentication" yaml:"authentication"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}.
 	Destination *AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination `field:"optional" json:"destination" yaml:"destination"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}.
 	Label *string `field:"optional" json:"label" yaml:"label"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}.
 	Origin *AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin `field:"optional" json:"origin" yaml:"origin"`
 }
 

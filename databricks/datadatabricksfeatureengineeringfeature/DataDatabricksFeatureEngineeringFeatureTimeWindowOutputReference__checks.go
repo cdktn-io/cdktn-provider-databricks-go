@@ -104,6 +104,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validatePutLifetimeParameters(value *DataDatabricksFeatureEngineeringFeatureTimeWindowLifetime) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validatePutLongRollingParameters(value *DataDatabricksFeatureEngineeringFeatureTimeWindowLongRolling) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

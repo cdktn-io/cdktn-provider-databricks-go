@@ -28,6 +28,8 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOut
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomReportOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptionsOutputReference
+	CustomReportOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions
 	DataLevel() *string
 	SetDataLevel(val *string)
 	DataLevelInput() *string
@@ -85,6 +87,8 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOut
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutCustomReportOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions)
+	ResetCustomReportOptions()
 	ResetDataLevel()
 	ResetDimensions()
 	ResetLookbackWindowDays()
@@ -132,6 +136,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTikto
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference) CustomReportOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"customReportOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference) CustomReportOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions {
+	var returns *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions
+	_jsii_.Get(
+		j,
+		"customReportOptionsInput",
 		&returns,
 	)
 	return returns
@@ -661,6 +685,25 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTikto
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference) PutCustomReportOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions) {
+	if err := p.validatePutCustomReportOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCustomReportOptions",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference) ResetCustomReportOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCustomReportOptions",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference) ResetDataLevel() {

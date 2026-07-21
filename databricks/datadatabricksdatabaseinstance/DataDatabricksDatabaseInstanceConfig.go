@@ -22,9 +22,9 @@ type DataDatabricksDatabaseInstanceConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/database_instance#provider_config DataDatabricksDatabaseInstance#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/database_instance#provider_config DataDatabricksDatabaseInstance#provider_config}.
 	ProviderConfig *DataDatabricksDatabaseInstanceProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

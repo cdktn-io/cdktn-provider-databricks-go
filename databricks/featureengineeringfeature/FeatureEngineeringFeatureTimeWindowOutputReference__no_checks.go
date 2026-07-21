@@ -51,6 +51,10 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validateP
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validatePutLifetimeParameters(value *FeatureEngineeringFeatureTimeWindowLifetime) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validatePutLongRollingParameters(value *FeatureEngineeringFeatureTimeWindowLongRolling) error {
 	return nil
 }

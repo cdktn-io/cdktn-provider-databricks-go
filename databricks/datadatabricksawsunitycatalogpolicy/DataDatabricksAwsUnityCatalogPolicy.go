@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy}.
 type DataDatabricksAwsUnityCatalogPolicy interface {
 	cdktn.TerraformDataSource
 	AwsAccountId() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy} Data Source.
 func NewDataDatabricksAwsUnityCatalogPolicy(scope constructs.Construct, id *string, config *DataDatabricksAwsUnityCatalogPolicyConfig) DataDatabricksAwsUnityCatalogPolicy {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDataDatabricksAwsUnityCatalogPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy} Data Source.
 func NewDataDatabricksAwsUnityCatalogPolicy_Override(d DataDatabricksAwsUnityCatalogPolicy, scope constructs.Construct, id *string, config *DataDatabricksAwsUnityCatalogPolicyConfig) {
 	_init_.Initialize()
 

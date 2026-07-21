@@ -22,26 +22,26 @@ type MetastoreAssignmentConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/metastore_assignment#metastore_id MetastoreAssignment#metastore_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/metastore_assignment#metastore_id MetastoreAssignment#metastore_id}.
 	MetastoreId *string `field:"required" json:"metastoreId" yaml:"metastoreId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}.
 	WorkspaceId *float64 `field:"required" json:"workspaceId" yaml:"workspaceId"`
 	// Specifies whether to use account-level or workspace-level API.
 	//
 	// Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/metastore_assignment#api MetastoreAssignment#api}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/metastore_assignment#api MetastoreAssignment#api}
 	Api *string `field:"optional" json:"api" yaml:"api"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/metastore_assignment#default_catalog_name MetastoreAssignment#default_catalog_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/metastore_assignment#default_catalog_name MetastoreAssignment#default_catalog_name}.
 	DefaultCatalogName *string `field:"optional" json:"defaultCatalogName" yaml:"defaultCatalogName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/metastore_assignment#id MetastoreAssignment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/metastore_assignment#id MetastoreAssignment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// provider_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/metastore_assignment#provider_config MetastoreAssignment#provider_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/metastore_assignment#provider_config MetastoreAssignment#provider_config}
 	ProviderConfig *MetastoreAssignmentProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

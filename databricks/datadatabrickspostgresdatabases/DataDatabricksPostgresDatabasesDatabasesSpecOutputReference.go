@@ -71,7 +71,6 @@ type DataDatabricksPostgresDatabasesDatabasesSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPostgresDatabase()
-	ResetRole()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -492,14 +491,6 @@ func (d *jsiiProxy_DataDatabricksPostgresDatabasesDatabasesSpecOutputReference) 
 	_jsii_.InvokeVoid(
 		d,
 		"resetPostgresDatabase",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPostgresDatabasesDatabasesSpecOutputReference) ResetRole() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRole",
 		nil, // no parameters
 	)
 }

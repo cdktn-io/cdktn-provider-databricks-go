@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataDatabricksMlflowExperiment) validatePutTagsParameters(val
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksMlflowExperiment) validatePutTraceLocationParameters(value *DataDatabricksMlflowExperimentTraceLocation) error {
+	return nil
+}
+
 func validateDataDatabricksMlflowExperiment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

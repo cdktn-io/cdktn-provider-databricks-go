@@ -28,6 +28,7 @@ type DataDatabricksDisasterRecoveryStableUrlsStableUrlsOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EffectiveWorkspaceId() *string
 	FailoverGroupName() *string
 	// Experimental.
 	Fqn() *string
@@ -37,6 +38,7 @@ type DataDatabricksDisasterRecoveryStableUrlsStableUrlsOutputReference interface
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	StableWorkspaceId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -115,6 +117,16 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrlsStableUrlsOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrlsStableUrlsOutputReference) EffectiveWorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveWorkspaceId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrlsStableUrlsOutputReference) FailoverGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -170,6 +182,16 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrlsStableUrlsOutputRefer
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrlsStableUrlsOutputReference) StableWorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stableWorkspaceId",
 		&returns,
 	)
 	return returns

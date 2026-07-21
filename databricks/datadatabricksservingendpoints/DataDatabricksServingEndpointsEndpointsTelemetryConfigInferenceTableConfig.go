@@ -5,7 +5,7 @@ package datadatabricksservingendpoints
 
 
 type DataDatabricksServingEndpointsEndpointsTelemetryConfigInferenceTableConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/serving_endpoints#sampling_fraction DataDatabricksServingEndpoints#sampling_fraction}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/serving_endpoints#sampling_fraction DataDatabricksServingEndpoints#sampling_fraction}.
 	SamplingFraction *float64 `field:"optional" json:"samplingFraction" yaml:"samplingFraction"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
 type DataDatabricksDisasterRecoveryStableUrl interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataDatabricksDisasterRecoveryStableUrl interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveWorkspaceId() *string
 	FailoverGroupName() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
@@ -52,6 +53,7 @@ type DataDatabricksDisasterRecoveryStableUrl interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	StableWorkspaceId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -150,6 +152,16 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrl) DependsOn() *[]*stri
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrl) EffectiveWorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveWorkspaceId",
 		&returns,
 	)
 	return returns
@@ -265,6 +277,16 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrl) RawOverrides() inter
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrl) StableWorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stableWorkspaceId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrl) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -306,7 +328,7 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryStableUrl) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Data Source.
 func NewDataDatabricksDisasterRecoveryStableUrl(scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryStableUrlConfig) DataDatabricksDisasterRecoveryStableUrl {
 	_init_.Initialize()
 
@@ -324,7 +346,7 @@ func NewDataDatabricksDisasterRecoveryStableUrl(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Data Source.
 func NewDataDatabricksDisasterRecoveryStableUrl_Override(d DataDatabricksDisasterRecoveryStableUrl, scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryStableUrlConfig) {
 	_init_.Initialize()
 

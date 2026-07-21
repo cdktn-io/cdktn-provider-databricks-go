@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/group databricks_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/group databricks_group}.
 type DataDatabricksGroup interface {
 	cdktn.TerraformDataSource
 	AclPrincipalId() *string
@@ -705,7 +705,7 @@ func (j *jsiiProxy_DataDatabricksGroup) WorkspaceConsumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/group databricks_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/group databricks_group} Data Source.
 func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) DataDatabricksGroup {
 	_init_.Initialize()
 
@@ -723,7 +723,7 @@ func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/group databricks_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/group databricks_group} Data Source.
 func NewDataDatabricksGroup_Override(d DataDatabricksGroup, scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) {
 	_init_.Initialize()
 

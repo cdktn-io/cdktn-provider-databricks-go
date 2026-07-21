@@ -5,7 +5,7 @@ package datadatabricksclusterpluginframework
 
 
 type DataDatabricksClusterPluginframeworkClusterInfoSpecDriverNodeTypeFlexibility struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/cluster_pluginframework#alternate_node_type_ids DataDatabricksClusterPluginframework#alternate_node_type_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/cluster_pluginframework#alternate_node_type_ids DataDatabricksClusterPluginframework#alternate_node_type_ids}.
 	AlternateNodeTypeIds *[]*string `field:"optional" json:"alternateNodeTypeIds" yaml:"alternateNodeTypeIds"`
 }
 

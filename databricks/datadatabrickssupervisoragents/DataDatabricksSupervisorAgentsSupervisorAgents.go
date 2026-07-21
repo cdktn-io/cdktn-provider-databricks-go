@@ -5,9 +5,9 @@ package datadatabrickssupervisoragents
 
 
 type DataDatabricksSupervisorAgentsSupervisorAgents struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/supervisor_agents#name DataDatabricksSupervisorAgents#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/supervisor_agents#name DataDatabricksSupervisorAgents#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/supervisor_agents#provider_config DataDatabricksSupervisorAgents#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/supervisor_agents#provider_config DataDatabricksSupervisorAgents#provider_config}.
 	ProviderConfig *DataDatabricksSupervisorAgentsSupervisorAgentsProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

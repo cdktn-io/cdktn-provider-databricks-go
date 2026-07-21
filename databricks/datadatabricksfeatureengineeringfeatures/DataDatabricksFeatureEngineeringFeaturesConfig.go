@@ -22,13 +22,13 @@ type DataDatabricksFeatureEngineeringFeaturesConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/feature_engineering_features#catalog_name DataDatabricksFeatureEngineeringFeatures#catalog_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/feature_engineering_features#catalog_name DataDatabricksFeatureEngineeringFeatures#catalog_name}.
 	CatalogName *string `field:"required" json:"catalogName" yaml:"catalogName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/feature_engineering_features#schema_name DataDatabricksFeatureEngineeringFeatures#schema_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/feature_engineering_features#schema_name DataDatabricksFeatureEngineeringFeatures#schema_name}.
 	SchemaName *string `field:"required" json:"schemaName" yaml:"schemaName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/feature_engineering_features#page_size DataDatabricksFeatureEngineeringFeatures#page_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/feature_engineering_features#page_size DataDatabricksFeatureEngineeringFeatures#page_size}.
 	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/feature_engineering_features#provider_config DataDatabricksFeatureEngineeringFeatures#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/feature_engineering_features#provider_config DataDatabricksFeatureEngineeringFeatures#provider_config}.
 	ProviderConfig *DataDatabricksFeatureEngineeringFeaturesProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

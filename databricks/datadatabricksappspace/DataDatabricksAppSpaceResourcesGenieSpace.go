@@ -5,11 +5,11 @@ package datadatabricksappspace
 
 
 type DataDatabricksAppSpaceResourcesGenieSpace struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/app_space#name DataDatabricksAppSpace#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/app_space#name DataDatabricksAppSpace#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}.
 	Permission *string `field:"required" json:"permission" yaml:"permission"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/app_space#space_id DataDatabricksAppSpace#space_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/app_space#space_id DataDatabricksAppSpace#space_id}.
 	SpaceId *string `field:"required" json:"spaceId" yaml:"spaceId"`
 }
 

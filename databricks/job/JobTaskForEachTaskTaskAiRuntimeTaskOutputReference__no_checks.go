@@ -55,10 +55,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) validateSetCodeSourcePathParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package featureengineeringkafkaconfig
 
 
 type FeatureEngineeringKafkaConfigAuthConfigMtlsConfigKeyPasswordRef struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/feature_engineering_kafka_config#key FeatureEngineeringKafkaConfig#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/feature_engineering_kafka_config#key FeatureEngineeringKafkaConfig#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/feature_engineering_kafka_config#scope FeatureEngineeringKafkaConfig#scope}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/feature_engineering_kafka_config#scope FeatureEngineeringKafkaConfig#scope}.
 	Scope *string `field:"required" json:"scope" yaml:"scope"`
 }
 
