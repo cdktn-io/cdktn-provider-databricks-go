@@ -59,6 +59,10 @@ func (m *jsiiProxy_MaterializedFeaturesFeatureTag) validateInterpolationForAttri
 	return nil
 }
 
+func (m *jsiiProxy_MaterializedFeaturesFeatureTag) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaterializedFeaturesFeatureTag) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_MaterializedFeaturesFeatureTag) validateOverrideLogicalIdPara
 }
 
 func (m *jsiiProxy_MaterializedFeaturesFeatureTag) validatePutProviderConfigParameters(value *MaterializedFeaturesFeatureTagProviderConfig) error {
+	return nil
+}
+
+func (m *jsiiProxy_MaterializedFeaturesFeatureTag) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (s *jsiiProxy_SqlQuery) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (s *jsiiProxy_SqlQuery) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlQuery) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (s *jsiiProxy_SqlQuery) validatePutProviderConfigParameters(value *SqlQuery
 }
 
 func (s *jsiiProxy_SqlQuery) validatePutScheduleParameters(value *SqlQuerySchedule) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlQuery) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

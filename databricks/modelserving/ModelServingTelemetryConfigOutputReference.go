@@ -5,9 +5,9 @@ package modelserving
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/modelserving/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/modelserving/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -34,6 +34,11 @@ type ModelServingTelemetryConfigOutputReference interface {
 	InferenceTableConfigInput() *ModelServingTelemetryConfigInferenceTableConfig
 	InternalValue() *ModelServingTelemetryConfig
 	SetInternalValue(val *ModelServingTelemetryConfig)
+	TableNames() ModelServingTelemetryConfigTableNamesOutputReference
+	TableNamesInput() *ModelServingTelemetryConfigTableNames
+	TelemetryProfileId() *string
+	SetTelemetryProfileId(val *string)
+	TelemetryProfileIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +72,10 @@ type ModelServingTelemetryConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutInferenceTableConfig(value *ModelServingTelemetryConfigInferenceTableConfig)
+	PutTableNames(value *ModelServingTelemetryConfigTableNames)
 	ResetInferenceTableConfig()
+	ResetTableNames()
+	ResetTelemetryProfileId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -153,6 +161,46 @@ func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) InternalValue() *
 	return returns
 }
 
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) TableNames() ModelServingTelemetryConfigTableNamesOutputReference {
+	var returns ModelServingTelemetryConfigTableNamesOutputReference
+	_jsii_.Get(
+		j,
+		"tableNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) TableNamesInput() *ModelServingTelemetryConfigTableNames {
+	var returns *ModelServingTelemetryConfigTableNames
+	_jsii_.Get(
+		j,
+		"tableNamesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) TelemetryProfileId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"telemetryProfileId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) TelemetryProfileIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"telemetryProfileIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -230,6 +278,17 @@ func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference)SetTelemetryProfileId(val *string) {
+	if err := j.validateSetTelemetryProfileIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"telemetryProfileId",
 		val,
 	)
 }
@@ -453,10 +512,37 @@ func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) PutInferenceTable
 	)
 }
 
+func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) PutTableNames(value *ModelServingTelemetryConfigTableNames) {
+	if err := m.validatePutTableNamesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTableNames",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) ResetInferenceTableConfig() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetInferenceTableConfig",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) ResetTableNames() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTableNames",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) ResetTelemetryProfileId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTelemetryProfileId",
 		nil, // no parameters
 	)
 }

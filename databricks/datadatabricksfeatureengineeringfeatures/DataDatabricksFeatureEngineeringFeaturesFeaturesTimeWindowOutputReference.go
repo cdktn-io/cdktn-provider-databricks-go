@@ -5,9 +5,9 @@ package datadatabricksfeatureengineeringfeatures
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfeatureengineeringfeatures/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksfeatureengineeringfeatures/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -34,12 +34,10 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference i
 	Fqn() *string
 	InternalValue() *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow)
-	Lifetime() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLifetimeOutputReference
-	LifetimeInput() interface{}
-	LongRolling() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLongRollingOutputReference
-	LongRollingInput() interface{}
 	Rolling() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRollingOutputReference
 	RollingInput() interface{}
+	Sawtooth() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSawtoothOutputReference
+	SawtoothInput() interface{}
 	Sliding() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSlidingOutputReference
 	SlidingInput() interface{}
 	// Experimental.
@@ -77,15 +75,13 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference i
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutContinuous(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowContinuous)
-	PutLifetime(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLifetime)
-	PutLongRolling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLongRolling)
 	PutRolling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRolling)
+	PutSawtooth(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSawtooth)
 	PutSliding(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSliding)
 	PutTumbling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowTumbling)
 	ResetContinuous()
-	ResetLifetime()
-	ResetLongRolling()
 	ResetRolling()
+	ResetSawtooth()
 	ResetSliding()
 	ResetTumbling()
 	// Produce the Token's value at resolution time.
@@ -173,46 +169,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) Lifetime() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLifetimeOutputReference {
-	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLifetimeOutputReference
-	_jsii_.Get(
-		j,
-		"lifetime",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) LifetimeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"lifetimeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) LongRolling() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLongRollingOutputReference {
-	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLongRollingOutputReference
-	_jsii_.Get(
-		j,
-		"longRolling",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) LongRollingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"longRollingInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) Rolling() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRollingOutputReference {
 	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRollingOutputReference
 	_jsii_.Get(
@@ -228,6 +184,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	_jsii_.Get(
 		j,
 		"rollingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) Sawtooth() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSawtoothOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSawtoothOutputReference
+	_jsii_.Get(
+		j,
+		"sawtooth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) SawtoothInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sawtoothInput",
 		&returns,
 	)
 	return returns
@@ -573,28 +549,6 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) PutLifetime(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLifetime) {
-	if err := d.validatePutLifetimeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putLifetime",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) PutLongRolling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLongRolling) {
-	if err := d.validatePutLongRollingParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putLongRolling",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) PutRolling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRolling) {
 	if err := d.validatePutRollingParameters(value); err != nil {
 		panic(err)
@@ -602,6 +556,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	_jsii_.InvokeVoid(
 		d,
 		"putRolling",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) PutSawtooth(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSawtooth) {
+	if err := d.validatePutSawtoothParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSawtooth",
 		[]interface{}{value},
 	)
 }
@@ -636,26 +601,18 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) ResetLifetime() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLifetime",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) ResetLongRolling() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLongRolling",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) ResetRolling() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRolling",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) ResetSawtooth() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSawtooth",
 		nil, // no parameters
 	)
 }

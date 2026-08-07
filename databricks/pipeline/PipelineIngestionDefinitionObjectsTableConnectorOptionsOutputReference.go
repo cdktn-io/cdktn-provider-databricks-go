@@ -5,9 +5,9 @@ package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/pipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -46,6 +46,8 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	MetaAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions
 	OutlookOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference
 	OutlookOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions
+	RedditAdsOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference
+	RedditAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions
 	SharepointOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference
 	SharepointOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions
 	SmartsheetOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptionsOutputReference
@@ -93,6 +95,7 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	PutKafkaOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions)
 	PutMetaAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions)
 	PutOutlookOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions)
+	PutRedditAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions)
 	PutSharepointOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions)
 	PutSmartsheetOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions)
 	PutTiktokAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions)
@@ -104,6 +107,7 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	ResetKafkaOptions()
 	ResetMetaAdsOptions()
 	ResetOutlookOptions()
+	ResetRedditAdsOptions()
 	ResetSharepointOptions()
 	ResetSmartsheetOptions()
 	ResetTiktokAdsOptions()
@@ -308,6 +312,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.Get(
 		j,
 		"outlookOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) RedditAdsOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"redditAdsOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) RedditAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions
+	_jsii_.Get(
+		j,
+		"redditAdsOptionsInput",
 		&returns,
 	)
 	return returns
@@ -759,6 +783,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutRedditAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions) {
+	if err := p.validatePutRedditAdsOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRedditAdsOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutSharepointOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions) {
 	if err := p.validatePutSharepointOptionsParameters(value); err != nil {
 		panic(err)
@@ -855,6 +890,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.InvokeVoid(
 		p,
 		"resetOutlookOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetRedditAdsOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRedditAdsOptions",
 		nil, // no parameters
 	)
 }

@@ -59,6 +59,10 @@ func (f *jsiiProxy_FeatureEngineeringFeature) validateInterpolationForAttributeP
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeature) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeature) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (f *jsiiProxy_FeatureEngineeringFeature) validatePutTimeseriesColumnParamet
 }
 
 func (f *jsiiProxy_FeatureEngineeringFeature) validatePutTimeWindowParameters(value *FeatureEngineeringFeatureTimeWindow) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeature) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

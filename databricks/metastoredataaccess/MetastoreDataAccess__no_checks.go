@@ -59,6 +59,10 @@ func (m *jsiiProxy_MetastoreDataAccess) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MetastoreDataAccess) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetastoreDataAccess) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (m *jsiiProxy_MetastoreDataAccess) validatePutGcpServiceAccountKeyParameter
 }
 
 func (m *jsiiProxy_MetastoreDataAccess) validatePutProviderConfigParameters(value *MetastoreDataAccessProviderConfig) error {
+	return nil
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

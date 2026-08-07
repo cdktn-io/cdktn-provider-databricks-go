@@ -104,6 +104,17 @@ func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) validatePutInfere
 	return nil
 }
 
+func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) validatePutTableNamesParameters(value *ModelServingTelemetryConfigTableNames) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
@@ -180,6 +191,14 @@ func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateSetComple
 func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateSetInternalValueParameters(val *ModelServingTelemetryConfig) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateSetTelemetryProfileIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

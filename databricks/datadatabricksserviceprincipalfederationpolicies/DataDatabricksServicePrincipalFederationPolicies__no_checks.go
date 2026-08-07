@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) validateOve
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksServicePrincipalFederationPolicies_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validatePutProvid
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksRfaAccessRequestDestinations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

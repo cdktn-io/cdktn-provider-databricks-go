@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksKnowledgeAssistantKnowledgeSources) validatePut
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksKnowledgeAssistantKnowledgeSources) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksKnowledgeAssistantKnowledgeSources_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

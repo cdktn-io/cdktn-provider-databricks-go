@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataClassificationCatalogConfig) validateInterpolationForAttr
 	return nil
 }
 
+func (d *jsiiProxy_DataClassificationCatalogConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataClassificationCatalogConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (d *jsiiProxy_DataClassificationCatalogConfig) validatePutIncludedSchemasPa
 }
 
 func (d *jsiiProxy_DataClassificationCatalogConfig) validatePutProviderConfigParameters(value *DataClassificationCatalogConfigProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataClassificationCatalogConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

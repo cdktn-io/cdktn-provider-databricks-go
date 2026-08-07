@@ -59,6 +59,10 @@ func (k *jsiiProxy_KnowledgeAssistant) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (k *jsiiProxy_KnowledgeAssistant) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KnowledgeAssistant) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (k *jsiiProxy_KnowledgeAssistant) validateOverrideLogicalIdParameters(newLo
 }
 
 func (k *jsiiProxy_KnowledgeAssistant) validatePutProviderConfigParameters(value *KnowledgeAssistantProviderConfig) error {
+	return nil
+}
+
+func (k *jsiiProxy_KnowledgeAssistant) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

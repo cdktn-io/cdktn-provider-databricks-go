@@ -59,6 +59,10 @@ func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) validateInterpolationForAttri
 	return nil
 }
 
+func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) validatePutProviderConfigPara
 }
 
 func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) validatePutRestrictWorkspaceAdminsParameters(value *RestrictWorkspaceAdminsSettingRestrictWorkspaceAdmins) error {
+	return nil
+}
+
+func (r *jsiiProxy_RestrictWorkspaceAdminsSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -5,17 +5,15 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureTimeWindow struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
 	Continuous *FeatureEngineeringFeatureTimeWindowContinuous `field:"optional" json:"continuous" yaml:"continuous"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/feature_engineering_feature#lifetime FeatureEngineeringFeature#lifetime}.
-	Lifetime *FeatureEngineeringFeatureTimeWindowLifetime `field:"optional" json:"lifetime" yaml:"lifetime"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/feature_engineering_feature#long_rolling FeatureEngineeringFeature#long_rolling}.
-	LongRolling *FeatureEngineeringFeatureTimeWindowLongRolling `field:"optional" json:"longRolling" yaml:"longRolling"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}.
 	Rolling *FeatureEngineeringFeatureTimeWindowRolling `field:"optional" json:"rolling" yaml:"rolling"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}.
+	Sawtooth *FeatureEngineeringFeatureTimeWindowSawtooth `field:"optional" json:"sawtooth" yaml:"sawtooth"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
 	Sliding *FeatureEngineeringFeatureTimeWindowSliding `field:"optional" json:"sliding" yaml:"sliding"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
 	Tumbling *FeatureEngineeringFeatureTimeWindowTumbling `field:"optional" json:"tumbling" yaml:"tumbling"`
 }
 

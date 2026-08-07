@@ -85,6 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "library", GoGetter: "Library"},
 			_jsii_.MemberProperty{JsiiProperty: "libraryInput", GoGetter: "LibraryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -116,6 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putTrigger", GoMethod: "PutTrigger"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowDuplicateNames", GoMethod: "ResetAllowDuplicateNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBudgetPolicyId", GoMethod: "ResetBudgetPolicyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCatalog", GoMethod: "ResetCatalog"},
@@ -2729,10 +2731,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putKafkaOptions", GoMethod: "PutKafkaOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putMetaAdsOptions", GoMethod: "PutMetaAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putOutlookOptions", GoMethod: "PutOutlookOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putRedditAdsOptions", GoMethod: "PutRedditAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSharepointOptions", GoMethod: "PutSharepointOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSmartsheetOptions", GoMethod: "PutSmartsheetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putTiktokAdsOptions", GoMethod: "PutTiktokAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putZendeskSupportOptions", GoMethod: "PutZendeskSupportOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "redditAdsOptions", GoGetter: "RedditAdsOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "redditAdsOptionsInput", GoGetter: "RedditAdsOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfluenceOptions", GoMethod: "ResetConfluenceOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGdriveOptions", GoMethod: "ResetGdriveOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGoogleAdsOptions", GoMethod: "ResetGoogleAdsOptions"},
@@ -2740,6 +2745,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetKafkaOptions", GoMethod: "ResetKafkaOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetaAdsOptions", GoMethod: "ResetMetaAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutlookOptions", GoMethod: "ResetOutlookOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRedditAdsOptions", GoMethod: "ResetRedditAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSharepointOptions", GoMethod: "ResetSharepointOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSmartsheetOptions", GoMethod: "ResetSmartsheetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTiktokAdsOptions", GoMethod: "ResetTiktokAdsOptions"},
@@ -2759,6 +2765,94 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "breakdowns", GoGetter: "Breakdowns"},
+			_jsii_.MemberProperty{JsiiProperty: "breakdownsInput", GoGetter: "BreakdownsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fields", GoGetter: "Fields"},
+			_jsii_.MemberProperty{JsiiProperty: "fieldsInput", GoGetter: "FieldsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBreakdowns", GoMethod: "ResetBreakdowns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFields", GoMethod: "ResetFields"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "customReportOptions", GoGetter: "CustomReportOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "customReportOptionsInput", GoGetter: "CustomReportOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lookbackWindowDays", GoGetter: "LookbackWindowDays"},
+			_jsii_.MemberProperty{JsiiProperty: "lookbackWindowDaysInput", GoGetter: "LookbackWindowDaysInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomReportOptions", GoMethod: "PutCustomReportOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomReportOptions", GoMethod: "ResetCustomReportOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLookbackWindowDays", GoMethod: "ResetLookbackWindowDays"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSyncStartDate", GoMethod: "ResetSyncStartDate"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "syncStartDate", GoGetter: "SyncStartDate"},
+			_jsii_.MemberProperty{JsiiProperty: "syncStartDateInput", GoGetter: "SyncStartDateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -3136,6 +3230,165 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fanoutBy", GoGetter: "FanoutBy"},
+			_jsii_.MemberProperty{JsiiProperty: "fanoutByInput", GoGetter: "FanoutByInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putTransforms", GoMethod: "PutTransforms"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFanoutBy", GoMethod: "ResetFanoutBy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTransforms", GoMethod: "ResetTransforms"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "transforms", GoGetter: "Transforms"},
+			_jsii_.MemberProperty{JsiiProperty: "transformsInput", GoGetter: "TransformsInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "asVariant", GoGetter: "AsVariant"},
+			_jsii_.MemberProperty{JsiiProperty: "asVariantInput", GoGetter: "AsVariantInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAsVariant", GoMethod: "ResetAsVariant"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaEvolutionMode", GoMethod: "ResetSchemaEvolutionMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaFilePath", GoMethod: "ResetSchemaFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaHints", GoMethod: "ResetSchemaHints"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaEvolutionMode", GoGetter: "SchemaEvolutionMode"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaEvolutionModeInput", GoGetter: "SchemaEvolutionModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePath", GoGetter: "SchemaFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePathInput", GoGetter: "SchemaFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaHints", GoGetter: "SchemaHints"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaHintsInput", GoGetter: "SchemaHintsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "format", GoGetter: "Format"},
+			_jsii_.MemberProperty{JsiiProperty: "formatInput", GoGetter: "FormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "jsonOptions", GoGetter: "JsonOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "jsonOptionsInput", GoGetter: "JsonOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putJsonOptions", GoMethod: "PutJsonOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFormat", GoMethod: "ResetFormat"},
+			_jsii_.MemberMethod{JsiiMethod: "resetJsonOptions", GoMethod: "ResetJsonOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaOutputReference)(nil)).Elem(),
@@ -3150,6 +3403,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "destinationCatalogInput", GoGetter: "DestinationCatalogInput"},
 			_jsii_.MemberProperty{JsiiProperty: "destinationSchema", GoGetter: "DestinationSchema"},
 			_jsii_.MemberProperty{JsiiProperty: "destinationSchemaInput", GoGetter: "DestinationSchemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fanoutOptions", GoGetter: "FanoutOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "fanoutOptionsInput", GoGetter: "FanoutOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -3164,8 +3419,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putConnectorOptions", GoMethod: "PutConnectorOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putFanoutOptions", GoMethod: "PutFanoutOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putTableConfiguration", GoMethod: "PutTableConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectorOptions", GoMethod: "ResetConnectorOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFanoutOptions", GoMethod: "ResetFanoutOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceCatalog", GoMethod: "ResetSourceCatalog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTableConfiguration", GoMethod: "ResetTableConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -4299,10 +4556,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putKafkaOptions", GoMethod: "PutKafkaOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putMetaAdsOptions", GoMethod: "PutMetaAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putOutlookOptions", GoMethod: "PutOutlookOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putRedditAdsOptions", GoMethod: "PutRedditAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSharepointOptions", GoMethod: "PutSharepointOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSmartsheetOptions", GoMethod: "PutSmartsheetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putTiktokAdsOptions", GoMethod: "PutTiktokAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putZendeskSupportOptions", GoMethod: "PutZendeskSupportOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "redditAdsOptions", GoGetter: "RedditAdsOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "redditAdsOptionsInput", GoGetter: "RedditAdsOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfluenceOptions", GoMethod: "ResetConfluenceOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGdriveOptions", GoMethod: "ResetGdriveOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGoogleAdsOptions", GoMethod: "ResetGoogleAdsOptions"},
@@ -4310,6 +4570,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetKafkaOptions", GoMethod: "ResetKafkaOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetaAdsOptions", GoMethod: "ResetMetaAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutlookOptions", GoMethod: "ResetOutlookOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRedditAdsOptions", GoMethod: "ResetRedditAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSharepointOptions", GoMethod: "ResetSharepointOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSmartsheetOptions", GoMethod: "ResetSmartsheetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTiktokAdsOptions", GoMethod: "ResetTiktokAdsOptions"},
@@ -4329,6 +4590,94 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "breakdowns", GoGetter: "Breakdowns"},
+			_jsii_.MemberProperty{JsiiProperty: "breakdownsInput", GoGetter: "BreakdownsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fields", GoGetter: "Fields"},
+			_jsii_.MemberProperty{JsiiProperty: "fieldsInput", GoGetter: "FieldsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBreakdowns", GoMethod: "ResetBreakdowns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFields", GoMethod: "ResetFields"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "customReportOptions", GoGetter: "CustomReportOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "customReportOptionsInput", GoGetter: "CustomReportOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lookbackWindowDays", GoGetter: "LookbackWindowDays"},
+			_jsii_.MemberProperty{JsiiProperty: "lookbackWindowDaysInput", GoGetter: "LookbackWindowDaysInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomReportOptions", GoMethod: "PutCustomReportOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomReportOptions", GoMethod: "ResetCustomReportOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLookbackWindowDays", GoMethod: "ResetLookbackWindowDays"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSyncStartDate", GoMethod: "ResetSyncStartDate"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "syncStartDate", GoGetter: "SyncStartDate"},
+			_jsii_.MemberProperty{JsiiProperty: "syncStartDateInput", GoGetter: "SyncStartDateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

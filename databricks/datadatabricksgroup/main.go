@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "recursive", GoGetter: "Recursive"},
 			_jsii_.MemberProperty{JsiiProperty: "recursiveInput", GoGetter: "RecursiveInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAclPrincipalId", GoMethod: "ResetAclPrincipalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowClusterCreate", GoMethod: "ResetAllowClusterCreate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowInstancePoolCreate", GoMethod: "ResetAllowInstancePoolCreate"},

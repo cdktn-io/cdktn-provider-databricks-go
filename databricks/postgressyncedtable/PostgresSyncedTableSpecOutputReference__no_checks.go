@@ -47,6 +47,10 @@ func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) validateInterpolation
 	return nil
 }
 
+func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) validatePutExtraColumnsParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) validatePutNewPipelineSpecParameters(value *PostgresSyncedTableSpecNewPipelineSpec) error {
 	return nil
 }

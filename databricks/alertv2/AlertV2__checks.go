@@ -122,6 +122,14 @@ func (a *jsiiProxy_AlertV2) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (a *jsiiProxy_AlertV2) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AlertV2) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -218,6 +226,37 @@ func (a *jsiiProxy_AlertV2) validatePutEvaluationParameters(value *AlertV2Evalua
 	return nil
 }
 
+func (a *jsiiProxy_AlertV2) validatePutParametersParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*AlertV2Parameters:
+		value := value.(*[]*AlertV2Parameters)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AlertV2Parameters:
+		value_ := value.([]*AlertV2Parameters)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AlertV2Parameters; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AlertV2) validatePutProviderConfigParameters(value *AlertV2ProviderConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -246,6 +285,14 @@ func (a *jsiiProxy_AlertV2) validatePutScheduleParameters(value *AlertV2Schedule
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AlertV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

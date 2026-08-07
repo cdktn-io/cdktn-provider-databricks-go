@@ -5,14 +5,14 @@ package datadatabricksclusters
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksclusters/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/clusters databricks_clusters}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/clusters databricks_clusters}.
 type DataDatabricksClusters interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -93,6 +93,19 @@ type DataDatabricksClusters interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFilterBy(value *DataDatabricksClustersFilterBy)
 	PutProviderConfig(value *DataDatabricksClustersProviderConfig)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetClusterNameContains()
 	ResetFilterBy()
 	ResetId()
@@ -370,7 +383,7 @@ func (j *jsiiProxy_DataDatabricksClusters) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/clusters databricks_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/clusters databricks_clusters} Data Source.
 func NewDataDatabricksClusters(scope constructs.Construct, id *string, config *DataDatabricksClustersConfig) DataDatabricksClusters {
 	_init_.Initialize()
 
@@ -388,7 +401,7 @@ func NewDataDatabricksClusters(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/clusters databricks_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/clusters databricks_clusters} Data Source.
 func NewDataDatabricksClusters_Override(d DataDatabricksClusters, scope constructs.Construct, id *string, config *DataDatabricksClustersConfig) {
 	_init_.Initialize()
 
@@ -782,6 +795,17 @@ func (d *jsiiProxy_DataDatabricksClusters) PutProviderConfig(value *DataDatabric
 		d,
 		"putProviderConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusters) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

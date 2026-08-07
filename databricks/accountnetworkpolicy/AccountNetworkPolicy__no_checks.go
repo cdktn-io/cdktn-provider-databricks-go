@@ -59,6 +59,10 @@ func (a *jsiiProxy_AccountNetworkPolicy) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AccountNetworkPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountNetworkPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (a *jsiiProxy_AccountNetworkPolicy) validatePutIngressParameters(value *Acc
 }
 
 func (a *jsiiProxy_AccountNetworkPolicy) validatePutIngressDryRunParameters(value *AccountNetworkPolicyIngressDryRun) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountNetworkPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -5,7 +5,7 @@ package externalmetadata
 
 
 type ExternalMetadataProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/external_metadata#workspace_id ExternalMetadata#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/external_metadata#workspace_id ExternalMetadata#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

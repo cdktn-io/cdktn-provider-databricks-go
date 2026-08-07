@@ -5,7 +5,7 @@ package datadatabricksbudgetpolicies
 
 
 type DataDatabricksBudgetPoliciesPolicies struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}.
 	PolicyId *string `field:"required" json:"policyId" yaml:"policyId"`
 }
 

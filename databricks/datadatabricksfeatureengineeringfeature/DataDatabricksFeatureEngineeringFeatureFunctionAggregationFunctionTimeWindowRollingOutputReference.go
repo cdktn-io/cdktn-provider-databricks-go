@@ -5,9 +5,9 @@ package datadatabricksfeatureengineeringfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfeatureengineeringfeature/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksfeatureengineeringfeature/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -71,6 +71,7 @@ type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDelay()
+	ResetWindowDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -491,6 +492,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	_jsii_.InvokeVoid(
 		d,
 		"resetDelay",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRollingOutputReference) ResetWindowDuration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWindowDuration",
 		nil, // no parameters
 	)
 }

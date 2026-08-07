@@ -59,6 +59,10 @@ func (m *jsiiProxy_MwsVpcEndpoint) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_MwsVpcEndpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsVpcEndpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_MwsVpcEndpoint) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (m *jsiiProxy_MwsVpcEndpoint) validatePutGcpVpcEndpointInfoParameters(value *MwsVpcEndpointGcpVpcEndpointInfo) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsVpcEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

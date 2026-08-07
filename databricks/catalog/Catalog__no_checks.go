@@ -59,6 +59,10 @@ func (c *jsiiProxy_Catalog) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_Catalog) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Catalog) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (c *jsiiProxy_Catalog) validatePutProviderConfigParameters(value *CatalogPr
 }
 
 func (c *jsiiProxy_Catalog) validatePutProvisioningInfoParameters(value *CatalogProvisioningInfo) error {
+	return nil
+}
+
+func (c *jsiiProxy_Catalog) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

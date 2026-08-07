@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputR
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) validatePutTableNamesParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputR
 }
 
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) validateSetTelemetryProfileIdParameters(val *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) validateInterpolationForAttributePa
 	return nil
 }
 
+func (m *jsiiProxy_MwsPrivateAccessSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsPrivateAccessSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) validateMoveToIdParameters(id *stri
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsPrivateAccessSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

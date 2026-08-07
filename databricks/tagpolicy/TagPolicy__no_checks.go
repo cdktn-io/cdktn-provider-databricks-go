@@ -59,6 +59,10 @@ func (t *jsiiProxy_TagPolicy) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (t *jsiiProxy_TagPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (t *jsiiProxy_TagPolicy) validatePutProviderConfigParameters(value *TagPoli
 }
 
 func (t *jsiiProxy_TagPolicy) validatePutValuesParameters(value interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

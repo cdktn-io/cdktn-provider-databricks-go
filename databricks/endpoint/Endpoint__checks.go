@@ -122,6 +122,14 @@ func (e *jsiiProxy_Endpoint) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (e *jsiiProxy_Endpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_Endpoint) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -207,12 +215,42 @@ func (e *jsiiProxy_Endpoint) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (e *jsiiProxy_Endpoint) validatePutAwsVpcEndpointInfoParameters(value *EndpointAwsVpcEndpointInfo) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_Endpoint) validatePutAzurePrivateEndpointInfoParameters(value *EndpointAzurePrivateEndpointInfo) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_Endpoint) validatePutGcpPscEndpointInfoParameters(value *EndpointGcpPscEndpointInfo) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_Endpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

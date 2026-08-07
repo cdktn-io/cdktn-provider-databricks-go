@@ -59,6 +59,10 @@ func (a *jsiiProxy_AibiDashboardEmbeddingApprovedDomainsSetting) validateInterpo
 	return nil
 }
 
+func (a *jsiiProxy_AibiDashboardEmbeddingApprovedDomainsSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AibiDashboardEmbeddingApprovedDomainsSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_AibiDashboardEmbeddingApprovedDomainsSetting) validatePutAibi
 }
 
 func (a *jsiiProxy_AibiDashboardEmbeddingApprovedDomainsSetting) validatePutProviderConfigParameters(value *AibiDashboardEmbeddingApprovedDomainsSettingProviderConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AibiDashboardEmbeddingApprovedDomainsSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

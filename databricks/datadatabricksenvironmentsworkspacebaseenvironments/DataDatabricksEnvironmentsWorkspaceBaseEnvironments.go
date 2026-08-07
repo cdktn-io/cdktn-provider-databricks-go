@@ -5,14 +5,14 @@ package datadatabricksenvironmentsworkspacebaseenvironments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments}.
 type DataDatabricksEnvironmentsWorkspaceBaseEnvironments interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -85,6 +85,19 @@ type DataDatabricksEnvironmentsWorkspaceBaseEnvironments interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutProviderConfig(value *DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsProviderConfig)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -309,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksEnvironmentsWorkspaceBaseEnvironments) Workspac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments} Data Source.
 func NewDataDatabricksEnvironmentsWorkspaceBaseEnvironments(scope constructs.Construct, id *string, config *DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsConfig) DataDatabricksEnvironmentsWorkspaceBaseEnvironments {
 	_init_.Initialize()
 
@@ -327,7 +340,7 @@ func NewDataDatabricksEnvironmentsWorkspaceBaseEnvironments(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/environments_workspace_base_environments databricks_environments_workspace_base_environments} Data Source.
 func NewDataDatabricksEnvironmentsWorkspaceBaseEnvironments_Override(d DataDatabricksEnvironmentsWorkspaceBaseEnvironments, scope constructs.Construct, id *string, config *DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsConfig) {
 	_init_.Initialize()
 
@@ -688,6 +701,17 @@ func (d *jsiiProxy_DataDatabricksEnvironmentsWorkspaceBaseEnvironments) PutProvi
 		d,
 		"putProviderConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksEnvironmentsWorkspaceBaseEnvironments) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

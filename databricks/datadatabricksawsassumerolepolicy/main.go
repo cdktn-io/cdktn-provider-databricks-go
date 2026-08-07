@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsPartition", GoMethod: "ResetAwsPartition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksAccountId", GoMethod: "ResetDatabricksAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForLogDelivery", GoMethod: "ResetForLogDelivery"},

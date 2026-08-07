@@ -59,6 +59,10 @@ func (s *jsiiProxy_SqlAlert) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (s *jsiiProxy_SqlAlert) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlAlert) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (s *jsiiProxy_SqlAlert) validatePutOptionsParameters(value *SqlAlertOptions
 }
 
 func (s *jsiiProxy_SqlAlert) validatePutProviderConfigParameters(value *SqlAlertProviderConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlAlert) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

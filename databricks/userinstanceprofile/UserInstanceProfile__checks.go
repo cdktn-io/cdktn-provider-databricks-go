@@ -122,6 +122,14 @@ func (u *jsiiProxy_UserInstanceProfile) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (u *jsiiProxy_UserInstanceProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (u *jsiiProxy_UserInstanceProfile) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -213,6 +221,14 @@ func (u *jsiiProxy_UserInstanceProfile) validatePutProviderConfigParameters(valu
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (u *jsiiProxy_UserInstanceProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

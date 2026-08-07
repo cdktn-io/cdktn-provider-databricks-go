@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putModelInfo", GoMethod: "PutModelInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludeAliases", GoMethod: "ResetIncludeAliases"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludeBrowse", GoMethod: "ResetIncludeBrowse"},
 			_jsii_.MemberMethod{JsiiMethod: "resetModelInfo", GoMethod: "ResetModelInfo"},

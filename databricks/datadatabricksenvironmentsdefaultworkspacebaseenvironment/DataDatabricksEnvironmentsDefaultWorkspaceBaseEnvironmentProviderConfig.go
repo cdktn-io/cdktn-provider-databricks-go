@@ -5,7 +5,7 @@ package datadatabricksenvironmentsdefaultworkspacebaseenvironment
 
 
 type DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/environments_default_workspace_base_environment#workspace_id DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/environments_default_workspace_base_environment#workspace_id DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

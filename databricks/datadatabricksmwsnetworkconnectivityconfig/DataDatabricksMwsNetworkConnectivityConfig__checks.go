@@ -125,6 +125,14 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) validatePutEgress
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateDataDatabricksMwsNetworkConnectivityConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

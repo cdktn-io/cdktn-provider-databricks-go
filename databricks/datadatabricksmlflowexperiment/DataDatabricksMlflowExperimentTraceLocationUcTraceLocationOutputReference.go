@@ -5,9 +5,9 @@ package datadatabricksmlflowexperiment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowexperiment/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowexperiment/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -31,6 +31,9 @@ type DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference i
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EffectiveTablePrefix() *string
+	SetEffectiveTablePrefix(val *string)
+	EffectiveTablePrefixInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksMlflowExperimentTraceLocationUcTraceLocation
@@ -73,6 +76,7 @@ type DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference i
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetEffectiveTablePrefix()
 	ResetTablePrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -134,6 +138,26 @@ func (j *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOut
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference) EffectiveTablePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveTablePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference) EffectiveTablePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveTablePrefixInput",
 		&returns,
 	)
 	return returns
@@ -276,6 +300,17 @@ func (j *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOut
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference)SetEffectiveTablePrefix(val *string) {
+	if err := j.validateSetEffectiveTablePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"effectiveTablePrefix",
 		val,
 	)
 }
@@ -519,6 +554,14 @@ func (d *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOut
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference) ResetEffectiveTablePrefix() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEffectiveTablePrefix",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference) ResetTablePrefix() {

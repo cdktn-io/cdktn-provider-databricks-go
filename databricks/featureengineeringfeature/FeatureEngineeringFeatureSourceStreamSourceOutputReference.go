@@ -5,9 +5,9 @@ package featureengineeringfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,6 +28,9 @@ type FeatureEngineeringFeatureSourceStreamSourceOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataframeSchema() *string
+	SetDataframeSchema(val *string)
+	DataframeSchemaInput() *string
 	FilterCondition() *string
 	SetFilterCondition(val *string)
 	FilterConditionInput() *string
@@ -46,6 +49,9 @@ type FeatureEngineeringFeatureSourceStreamSourceOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TransformationSql() *string
+	SetTransformationSql(val *string)
+	TransformationSqlInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,7 +76,9 @@ type FeatureEngineeringFeatureSourceStreamSourceOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDataframeSchema()
 	ResetFilterCondition()
+	ResetTransformationSql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -111,6 +119,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) C
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) DataframeSchema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataframeSchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) DataframeSchemaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataframeSchemaInput",
 		&returns,
 	)
 	return returns
@@ -196,6 +224,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) T
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) TransformationSql() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformationSql",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) TransformationSqlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformationSqlInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewFeatureEngineeringFeatureSourceStreamSourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceStreamSourceOutputReference {
 	_init_.Initialize()
@@ -242,6 +290,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference)Se
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference)SetDataframeSchema(val *string) {
+	if err := j.validateSetDataframeSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataframeSchema",
 		val,
 	)
 }
@@ -297,6 +356,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference)Se
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference)SetTransformationSql(val *string) {
+	if err := j.validateSetTransformationSqlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transformationSql",
 		val,
 	)
 }
@@ -487,10 +557,26 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) I
 	return returns
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) ResetDataframeSchema() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDataframeSchema",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) ResetFilterCondition() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) ResetTransformationSql() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTransformationSql",
 		nil, // no parameters
 	)
 }

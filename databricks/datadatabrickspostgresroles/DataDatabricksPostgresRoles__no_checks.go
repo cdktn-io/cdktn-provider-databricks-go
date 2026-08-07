@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksPostgresRoles) validatePutProviderConfigParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksPostgresRoles) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksPostgresRoles_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

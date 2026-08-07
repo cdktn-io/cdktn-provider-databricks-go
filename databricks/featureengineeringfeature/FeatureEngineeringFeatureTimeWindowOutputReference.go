@@ -5,9 +5,9 @@ package featureengineeringfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -34,12 +34,10 @@ type FeatureEngineeringFeatureTimeWindowOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Lifetime() FeatureEngineeringFeatureTimeWindowLifetimeOutputReference
-	LifetimeInput() interface{}
-	LongRolling() FeatureEngineeringFeatureTimeWindowLongRollingOutputReference
-	LongRollingInput() interface{}
 	Rolling() FeatureEngineeringFeatureTimeWindowRollingOutputReference
 	RollingInput() interface{}
+	Sawtooth() FeatureEngineeringFeatureTimeWindowSawtoothOutputReference
+	SawtoothInput() interface{}
 	Sliding() FeatureEngineeringFeatureTimeWindowSlidingOutputReference
 	SlidingInput() interface{}
 	// Experimental.
@@ -77,15 +75,13 @@ type FeatureEngineeringFeatureTimeWindowOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutContinuous(value *FeatureEngineeringFeatureTimeWindowContinuous)
-	PutLifetime(value *FeatureEngineeringFeatureTimeWindowLifetime)
-	PutLongRolling(value *FeatureEngineeringFeatureTimeWindowLongRolling)
 	PutRolling(value *FeatureEngineeringFeatureTimeWindowRolling)
+	PutSawtooth(value *FeatureEngineeringFeatureTimeWindowSawtooth)
 	PutSliding(value *FeatureEngineeringFeatureTimeWindowSliding)
 	PutTumbling(value *FeatureEngineeringFeatureTimeWindowTumbling)
 	ResetContinuous()
-	ResetLifetime()
-	ResetLongRolling()
 	ResetRolling()
+	ResetSawtooth()
 	ResetSliding()
 	ResetTumbling()
 	// Produce the Token's value at resolution time.
@@ -173,46 +169,6 @@ func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) InternalV
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Lifetime() FeatureEngineeringFeatureTimeWindowLifetimeOutputReference {
-	var returns FeatureEngineeringFeatureTimeWindowLifetimeOutputReference
-	_jsii_.Get(
-		j,
-		"lifetime",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) LifetimeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"lifetimeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) LongRolling() FeatureEngineeringFeatureTimeWindowLongRollingOutputReference {
-	var returns FeatureEngineeringFeatureTimeWindowLongRollingOutputReference
-	_jsii_.Get(
-		j,
-		"longRolling",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) LongRollingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"longRollingInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Rolling() FeatureEngineeringFeatureTimeWindowRollingOutputReference {
 	var returns FeatureEngineeringFeatureTimeWindowRollingOutputReference
 	_jsii_.Get(
@@ -228,6 +184,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) RollingIn
 	_jsii_.Get(
 		j,
 		"rollingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Sawtooth() FeatureEngineeringFeatureTimeWindowSawtoothOutputReference {
+	var returns FeatureEngineeringFeatureTimeWindowSawtoothOutputReference
+	_jsii_.Get(
+		j,
+		"sawtooth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) SawtoothInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sawtoothInput",
 		&returns,
 	)
 	return returns
@@ -573,28 +549,6 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutContin
 	)
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutLifetime(value *FeatureEngineeringFeatureTimeWindowLifetime) {
-	if err := f.validatePutLifetimeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		f,
-		"putLifetime",
-		[]interface{}{value},
-	)
-}
-
-func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutLongRolling(value *FeatureEngineeringFeatureTimeWindowLongRolling) {
-	if err := f.validatePutLongRollingParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		f,
-		"putLongRolling",
-		[]interface{}{value},
-	)
-}
-
 func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutRolling(value *FeatureEngineeringFeatureTimeWindowRolling) {
 	if err := f.validatePutRollingParameters(value); err != nil {
 		panic(err)
@@ -602,6 +556,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutRollin
 	_jsii_.InvokeVoid(
 		f,
 		"putRolling",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutSawtooth(value *FeatureEngineeringFeatureTimeWindowSawtooth) {
+	if err := f.validatePutSawtoothParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putSawtooth",
 		[]interface{}{value},
 	)
 }
@@ -636,26 +601,18 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetCont
 	)
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetLifetime() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetLifetime",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetLongRolling() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetLongRolling",
-		nil, // no parameters
-	)
-}
-
 func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetRolling() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetRolling",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetSawtooth() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSawtooth",
 		nil, // no parameters
 	)
 }

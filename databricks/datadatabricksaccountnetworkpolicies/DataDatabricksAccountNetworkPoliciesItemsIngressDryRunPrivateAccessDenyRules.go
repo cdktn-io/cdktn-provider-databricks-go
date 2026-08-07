@@ -5,13 +5,13 @@ package datadatabricksaccountnetworkpolicies
 
 
 type DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccessDenyRules struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_network_policies#authentication DataDatabricksAccountNetworkPolicies#authentication}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_network_policies#authentication DataDatabricksAccountNetworkPolicies#authentication}.
 	Authentication *DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccessDenyRulesAuthentication `field:"optional" json:"authentication" yaml:"authentication"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_network_policies#destination DataDatabricksAccountNetworkPolicies#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_network_policies#destination DataDatabricksAccountNetworkPolicies#destination}.
 	Destination *DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccessDenyRulesDestination `field:"optional" json:"destination" yaml:"destination"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_network_policies#label DataDatabricksAccountNetworkPolicies#label}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_network_policies#label DataDatabricksAccountNetworkPolicies#label}.
 	Label *string `field:"optional" json:"label" yaml:"label"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_network_policies#origin DataDatabricksAccountNetworkPolicies#origin}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_network_policies#origin DataDatabricksAccountNetworkPolicies#origin}.
 	Origin *DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccessDenyRulesOrigin `field:"optional" json:"origin" yaml:"origin"`
 }
 

@@ -59,6 +59,10 @@ func (m *jsiiProxy_Metastore) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (m *jsiiProxy_Metastore) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_Metastore) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_Metastore) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (m *jsiiProxy_Metastore) validatePutProviderConfigParameters(value *MetastoreProviderConfig) error {
+	return nil
+}
+
+func (m *jsiiProxy_Metastore) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

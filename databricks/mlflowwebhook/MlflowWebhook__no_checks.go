@@ -59,6 +59,10 @@ func (m *jsiiProxy_MlflowWebhook) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (m *jsiiProxy_MlflowWebhook) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MlflowWebhook) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (m *jsiiProxy_MlflowWebhook) validatePutJobSpecParameters(value *MlflowWebh
 }
 
 func (m *jsiiProxy_MlflowWebhook) validatePutProviderConfigParameters(value *MlflowWebhookProviderConfig) error {
+	return nil
+}
+
+func (m *jsiiProxy_MlflowWebhook) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -711,6 +711,14 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetDependencyModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetDriverInstancePoolIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -59,6 +59,10 @@ func (c *jsiiProxy_ClusterPolicy) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_ClusterPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (c *jsiiProxy_ClusterPolicy) validatePutLibrariesParameters(value interface
 }
 
 func (c *jsiiProxy_ClusterPolicy) validatePutProviderConfigParameters(value *ClusterPolicyProviderConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClusterPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

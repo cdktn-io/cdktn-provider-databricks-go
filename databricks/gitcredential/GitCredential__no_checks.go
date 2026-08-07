@@ -59,6 +59,10 @@ func (g *jsiiProxy_GitCredential) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (g *jsiiProxy_GitCredential) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GitCredential) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (g *jsiiProxy_GitCredential) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (g *jsiiProxy_GitCredential) validatePutProviderConfigParameters(value *GitCredentialProviderConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GitCredential) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -122,6 +122,14 @@ func (c *jsiiProxy_Cluster) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_Cluster) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -421,6 +429,14 @@ func (c *jsiiProxy_Cluster) validatePutWorkloadTypeParameters(value *ClusterWork
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -616,6 +632,14 @@ func (j *jsiiProxy_Cluster) validateSetCustomTagsParameters(val *map[string]*str
 }
 
 func (j *jsiiProxy_Cluster) validateSetDataSecurityModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Cluster) validateSetDependencyModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

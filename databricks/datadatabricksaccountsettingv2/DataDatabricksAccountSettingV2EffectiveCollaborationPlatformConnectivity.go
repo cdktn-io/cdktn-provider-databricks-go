@@ -5,7 +5,7 @@ package datadatabricksaccountsettingv2
 
 
 type DataDatabricksAccountSettingV2EffectiveCollaborationPlatformConnectivity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_setting_v2#connectivity DataDatabricksAccountSettingV2#connectivity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_setting_v2#connectivity DataDatabricksAccountSettingV2#connectivity}.
 	Connectivity *string `field:"required" json:"connectivity" yaml:"connectivity"`
 }
 

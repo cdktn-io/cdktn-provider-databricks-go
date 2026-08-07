@@ -5,9 +5,9 @@ package datadatabricksfeatureengineeringfeatures
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfeatureengineeringfeatures/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksfeatureengineeringfeatures/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -70,6 +70,7 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSlidingOutputRefe
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetWindowDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -484,6 +485,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSli
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSlidingOutputReference) ResetWindowDuration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWindowDuration",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSlidingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

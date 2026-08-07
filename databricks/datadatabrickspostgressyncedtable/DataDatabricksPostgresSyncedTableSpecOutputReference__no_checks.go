@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) validat
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) validatePutExtraColumnsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) validatePutNewPipelineSpecParameters(value *DataDatabricksPostgresSyncedTableSpecNewPipelineSpec) error {
 	return nil
 }

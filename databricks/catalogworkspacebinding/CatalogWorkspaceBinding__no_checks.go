@@ -59,6 +59,10 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CatalogWorkspaceBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CatalogWorkspaceBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) validateOverrideLogicalIdParameters(
 }
 
 func (c *jsiiProxy_CatalogWorkspaceBinding) validatePutProviderConfigParameters(value *CatalogWorkspaceBindingProviderConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_CatalogWorkspaceBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

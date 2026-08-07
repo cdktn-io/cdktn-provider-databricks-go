@@ -59,6 +59,10 @@ func (r *jsiiProxy_Repo) validateInterpolationForAttributeParameters(terraformAt
 	return nil
 }
 
+func (r *jsiiProxy_Repo) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_Repo) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (r *jsiiProxy_Repo) validatePutProviderConfigParameters(value *RepoProvider
 }
 
 func (r *jsiiProxy_Repo) validatePutSparseCheckoutParameters(value *RepoSparseCheckout) error {
+	return nil
+}
+
+func (r *jsiiProxy_Repo) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

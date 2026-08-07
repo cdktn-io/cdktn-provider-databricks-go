@@ -5,9 +5,9 @@ package datadatabricksservingendpoints
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksservingendpoints/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksservingendpoints/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -34,6 +34,11 @@ type DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference inter
 	InferenceTableConfigInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	TableNames() DataDatabricksServingEndpointsEndpointsTelemetryConfigTableNamesList
+	TableNamesInput() interface{}
+	TelemetryProfileId() *string
+	SetTelemetryProfileId(val *string)
+	TelemetryProfileIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +72,10 @@ type DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutInferenceTableConfig(value interface{})
+	PutTableNames(value interface{})
 	ResetInferenceTableConfig()
+	ResetTableNames()
+	ResetTelemetryProfileId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -153,6 +161,46 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputR
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) TableNames() DataDatabricksServingEndpointsEndpointsTelemetryConfigTableNamesList {
+	var returns DataDatabricksServingEndpointsEndpointsTelemetryConfigTableNamesList
+	_jsii_.Get(
+		j,
+		"tableNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) TableNamesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tableNamesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) TelemetryProfileId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"telemetryProfileId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) TelemetryProfileIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"telemetryProfileIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -230,6 +278,17 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputR
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference)SetTelemetryProfileId(val *string) {
+	if err := j.validateSetTelemetryProfileIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"telemetryProfileId",
 		val,
 	)
 }
@@ -453,10 +512,37 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputR
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) PutTableNames(value interface{}) {
+	if err := d.validatePutTableNamesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTableNames",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) ResetInferenceTableConfig() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetInferenceTableConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) ResetTableNames() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTableNames",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) ResetTelemetryProfileId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTelemetryProfileId",
 		nil, // no parameters
 	)
 }

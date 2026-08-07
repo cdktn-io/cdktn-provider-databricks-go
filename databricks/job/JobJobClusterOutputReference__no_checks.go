@@ -71,6 +71,10 @@ func (j *jsiiProxy_JobJobClusterOutputReference) validateSetJobClusterKeyParamet
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterOutputReference) validateSetServerlessComputeIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

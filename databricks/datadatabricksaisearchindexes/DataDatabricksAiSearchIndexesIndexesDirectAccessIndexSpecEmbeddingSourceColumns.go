@@ -5,11 +5,11 @@ package datadatabricksaisearchindexes
 
 
 type DataDatabricksAiSearchIndexesIndexesDirectAccessIndexSpecEmbeddingSourceColumns struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/ai_search_indexes#embedding_model_endpoint DataDatabricksAiSearchIndexes#embedding_model_endpoint}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_search_indexes#embedding_model_endpoint DataDatabricksAiSearchIndexes#embedding_model_endpoint}.
 	EmbeddingModelEndpoint *string `field:"optional" json:"embeddingModelEndpoint" yaml:"embeddingModelEndpoint"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/ai_search_indexes#model_endpoint_name_for_query DataDatabricksAiSearchIndexes#model_endpoint_name_for_query}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_search_indexes#model_endpoint_name_for_query DataDatabricksAiSearchIndexes#model_endpoint_name_for_query}.
 	ModelEndpointNameForQuery *string `field:"optional" json:"modelEndpointNameForQuery" yaml:"modelEndpointNameForQuery"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/ai_search_indexes#name DataDatabricksAiSearchIndexes#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_search_indexes#name DataDatabricksAiSearchIndexes#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

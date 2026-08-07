@@ -5,9 +5,9 @@ package datadatabricksclusterpluginframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusterpluginframework/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksclusterpluginframework/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -51,6 +51,9 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference interfac
 	DataSecurityMode() *string
 	SetDataSecurityMode(val *string)
 	DataSecurityModeInput() *string
+	DependencyMode() *string
+	SetDependencyMode(val *string)
+	DependencyModeInput() *string
 	DockerImage() DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageList
 	DockerImageInput() interface{}
 	DriverInstancePoolId() *string
@@ -175,6 +178,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference interfac
 	ResetClusterName()
 	ResetCustomTags()
 	ResetDataSecurityMode()
+	ResetDependencyMode()
 	ResetDockerImage()
 	ResetDriverInstancePoolId()
 	ResetDriverNodeTypeFlexibility()
@@ -420,6 +424,26 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	_jsii_.Get(
 		j,
 		"dataSecurityModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) DependencyMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dependencyMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) DependencyModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dependencyModeInput",
 		&returns,
 	)
 	return returns
@@ -1070,6 +1094,17 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference)SetDependencyMode(val *string) {
+	if err := j.validateSetDependencyModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dependencyMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference)SetDriverInstancePoolId(val *string) {
 	if err := j.validateSetDriverInstancePoolIdParameters(val); err != nil {
 		panic(err)
@@ -1676,6 +1711,14 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"resetDataSecurityMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) ResetDependencyMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDependencyMode",
 		nil, // no parameters
 	)
 }

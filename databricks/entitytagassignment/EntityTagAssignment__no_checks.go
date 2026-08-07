@@ -59,6 +59,10 @@ func (e *jsiiProxy_EntityTagAssignment) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (e *jsiiProxy_EntityTagAssignment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EntityTagAssignment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (e *jsiiProxy_EntityTagAssignment) validateOverrideLogicalIdParameters(newL
 }
 
 func (e *jsiiProxy_EntityTagAssignment) validatePutProviderConfigParameters(value *EntityTagAssignmentProviderConfig) error {
+	return nil
+}
+
+func (e *jsiiProxy_EntityTagAssignment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

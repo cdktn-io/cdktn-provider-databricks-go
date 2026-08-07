@@ -59,6 +59,10 @@ func (m *jsiiProxy_MwsStorageConfigurations) validateInterpolationForAttributePa
 	return nil
 }
 
+func (m *jsiiProxy_MwsStorageConfigurations) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsStorageConfigurations) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (m *jsiiProxy_MwsStorageConfigurations) validateMoveToIdParameters(id *stri
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsStorageConfigurations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

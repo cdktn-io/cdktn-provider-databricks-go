@@ -59,6 +59,10 @@ func (m *jsiiProxy_MwsNetworks) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MwsNetworks) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsNetworks) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (m *jsiiProxy_MwsNetworks) validatePutGcpNetworkInfoParameters(value *MwsNe
 }
 
 func (m *jsiiProxy_MwsNetworks) validatePutVpcEndpointsParameters(value *MwsNetworksVpcEndpoints) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsNetworks) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

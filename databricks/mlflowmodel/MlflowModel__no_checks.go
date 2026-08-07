@@ -59,6 +59,10 @@ func (m *jsiiProxy_MlflowModel) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MlflowModel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MlflowModel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (m *jsiiProxy_MlflowModel) validatePutProviderConfigParameters(value *Mlflo
 }
 
 func (m *jsiiProxy_MlflowModel) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MlflowModel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

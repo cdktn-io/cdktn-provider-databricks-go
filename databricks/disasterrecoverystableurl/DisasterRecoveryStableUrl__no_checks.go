@@ -59,6 +59,10 @@ func (d *jsiiProxy_DisasterRecoveryStableUrl) validateInterpolationForAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DisasterRecoveryStableUrl) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DisasterRecoveryStableUrl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (d *jsiiProxy_DisasterRecoveryStableUrl) validateMoveToIdParameters(id *str
 }
 
 func (d *jsiiProxy_DisasterRecoveryStableUrl) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DisasterRecoveryStableUrl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

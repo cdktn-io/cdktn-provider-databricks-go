@@ -59,6 +59,10 @@ func (c *jsiiProxy_Connection) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_Connection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Connection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (c *jsiiProxy_Connection) validatePutEnvironmentSettingsParameters(value *C
 }
 
 func (c *jsiiProxy_Connection) validatePutProviderConfigParameters(value *ConnectionProviderConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_Connection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (e *jsiiProxy_Endpoint) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (e *jsiiProxy_Endpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Endpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -75,7 +79,19 @@ func (e *jsiiProxy_Endpoint) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (e *jsiiProxy_Endpoint) validatePutAwsVpcEndpointInfoParameters(value *EndpointAwsVpcEndpointInfo) error {
+	return nil
+}
+
 func (e *jsiiProxy_Endpoint) validatePutAzurePrivateEndpointInfoParameters(value *EndpointAzurePrivateEndpointInfo) error {
+	return nil
+}
+
+func (e *jsiiProxy_Endpoint) validatePutGcpPscEndpointInfoParameters(value *EndpointGcpPscEndpointInfo) error {
+	return nil
+}
+
+func (e *jsiiProxy_Endpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

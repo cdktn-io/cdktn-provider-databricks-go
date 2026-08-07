@@ -59,6 +59,10 @@ func (w *jsiiProxy_WarehousesDefaultWarehouseOverride) validateInterpolationForA
 	return nil
 }
 
+func (w *jsiiProxy_WarehousesDefaultWarehouseOverride) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WarehousesDefaultWarehouseOverride) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (w *jsiiProxy_WarehousesDefaultWarehouseOverride) validateOverrideLogicalId
 }
 
 func (w *jsiiProxy_WarehousesDefaultWarehouseOverride) validatePutProviderConfigParameters(value *WarehousesDefaultWarehouseOverrideProviderConfig) error {
+	return nil
+}
+
+func (w *jsiiProxy_WarehousesDefaultWarehouseOverride) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

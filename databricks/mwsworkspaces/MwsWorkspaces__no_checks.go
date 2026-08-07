@@ -59,6 +59,10 @@ func (m *jsiiProxy_MwsWorkspaces) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (m *jsiiProxy_MwsWorkspaces) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsWorkspaces) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (m *jsiiProxy_MwsWorkspaces) validatePutTimeoutsParameters(value *MwsWorksp
 }
 
 func (m *jsiiProxy_MwsWorkspaces) validatePutTokenParameters(value *MwsWorkspacesToken) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsWorkspaces) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

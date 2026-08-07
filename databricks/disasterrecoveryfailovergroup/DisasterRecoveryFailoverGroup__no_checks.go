@@ -59,6 +59,10 @@ func (d *jsiiProxy_DisasterRecoveryFailoverGroup) validateInterpolationForAttrib
 	return nil
 }
 
+func (d *jsiiProxy_DisasterRecoveryFailoverGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DisasterRecoveryFailoverGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (d *jsiiProxy_DisasterRecoveryFailoverGroup) validatePutUnityCatalogAssetsP
 }
 
 func (d *jsiiProxy_DisasterRecoveryFailoverGroup) validatePutWorkspaceSetsParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DisasterRecoveryFailoverGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

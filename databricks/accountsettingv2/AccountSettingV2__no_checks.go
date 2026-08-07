@@ -59,6 +59,10 @@ func (a *jsiiProxy_AccountSettingV2) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_AccountSettingV2) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountSettingV2) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -136,6 +140,10 @@ func (a *jsiiProxy_AccountSettingV2) validatePutRestrictWorkspaceAdminsParameter
 }
 
 func (a *jsiiProxy_AccountSettingV2) validatePutStringValParameters(value *AccountSettingV2StringVal) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountSettingV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

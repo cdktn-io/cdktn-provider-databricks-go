@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksSupervisorAgentTool) validatePutProviderConfigP
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksSupervisorAgentTool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksSupervisorAgentTool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

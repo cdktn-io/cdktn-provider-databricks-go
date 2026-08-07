@@ -59,6 +59,10 @@ func (d *jsiiProxy_DatabaseInstance) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (d *jsiiProxy_DatabaseInstance) validatePutParentInstanceRefParameters(valu
 }
 
 func (d *jsiiProxy_DatabaseInstance) validatePutProviderConfigParameters(value *DatabaseInstanceProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

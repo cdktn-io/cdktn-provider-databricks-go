@@ -59,6 +59,10 @@ func (p *jsiiProxy_PolicyInfo) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (p *jsiiProxy_PolicyInfo) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyInfo) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (p *jsiiProxy_PolicyInfo) validatePutProviderConfigParameters(value *Policy
 }
 
 func (p *jsiiProxy_PolicyInfo) validatePutRowFilterParameters(value *PolicyInfoRowFilter) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyInfo) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

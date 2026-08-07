@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksAccountNetworkPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

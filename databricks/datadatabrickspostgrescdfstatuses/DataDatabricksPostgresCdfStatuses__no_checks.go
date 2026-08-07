@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksPostgresCdfStatuses) validatePutProviderConfigP
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksPostgresCdfStatuses) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksPostgresCdfStatuses_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

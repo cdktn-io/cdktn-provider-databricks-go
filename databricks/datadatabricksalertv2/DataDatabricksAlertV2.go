@@ -5,14 +5,14 @@ package datadatabricksalertv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/alert_v2 databricks_alert_v2}.
 type DataDatabricksAlertV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -52,6 +52,7 @@ type DataDatabricksAlertV2 interface {
 	// The tree node.
 	Node() constructs.Node
 	OwnerUserName() *string
+	Parameters() DataDatabricksAlertV2ParametersList
 	ParentPath() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
@@ -99,6 +100,19 @@ type DataDatabricksAlertV2 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutProviderConfig(value *DataDatabricksAlertV2ProviderConfig)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -321,6 +335,16 @@ func (j *jsiiProxy_DataDatabricksAlertV2) OwnerUserName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAlertV2) Parameters() DataDatabricksAlertV2ParametersList {
+	var returns DataDatabricksAlertV2ParametersList
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAlertV2) ParentPath() *string {
 	var returns *string
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2) WarehouseId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) DataDatabricksAlertV2 {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2_Override(d DataDatabricksAlertV2, scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) {
 	_init_.Initialize()
 
@@ -841,6 +865,17 @@ func (d *jsiiProxy_DataDatabricksAlertV2) PutProviderConfig(value *DataDatabrick
 		d,
 		"putProviderConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAlertV2) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

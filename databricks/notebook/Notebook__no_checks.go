@@ -59,6 +59,10 @@ func (n *jsiiProxy_Notebook) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (n *jsiiProxy_Notebook) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_Notebook) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (n *jsiiProxy_Notebook) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (n *jsiiProxy_Notebook) validatePutProviderConfigParameters(value *NotebookProviderConfig) error {
+	return nil
+}
+
+func (n *jsiiProxy_Notebook) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

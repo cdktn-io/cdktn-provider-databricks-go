@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataDatabricksVolume) validatePutVolumeInfoParameters(value *
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksVolume) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksVolume_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

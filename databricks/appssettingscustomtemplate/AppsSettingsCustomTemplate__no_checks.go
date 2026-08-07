@@ -59,6 +59,10 @@ func (a *jsiiProxy_AppsSettingsCustomTemplate) validateInterpolationForAttribute
 	return nil
 }
 
+func (a *jsiiProxy_AppsSettingsCustomTemplate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsSettingsCustomTemplate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_AppsSettingsCustomTemplate) validatePutManifestParameters(val
 }
 
 func (a *jsiiProxy_AppsSettingsCustomTemplate) validatePutProviderConfigParameters(value *AppsSettingsCustomTemplateProviderConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppsSettingsCustomTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

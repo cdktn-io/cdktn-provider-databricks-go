@@ -5,14 +5,14 @@ package datadatabricksaisearchendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoint/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoint/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint}.
 type DataDatabricksAiSearchEndpoint interface {
 	cdktn.TerraformDataSource
 	BudgetPolicyId() *string
@@ -100,6 +100,19 @@ type DataDatabricksAiSearchEndpoint interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutProviderConfig(value *DataDatabricksAiSearchEndpointProviderConfig)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -473,7 +486,7 @@ func (j *jsiiProxy_DataDatabricksAiSearchEndpoint) UsagePolicyId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint} Data Source.
 func NewDataDatabricksAiSearchEndpoint(scope constructs.Construct, id *string, config *DataDatabricksAiSearchEndpointConfig) DataDatabricksAiSearchEndpoint {
 	_init_.Initialize()
 
@@ -491,7 +504,7 @@ func NewDataDatabricksAiSearchEndpoint(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint} Data Source.
 func NewDataDatabricksAiSearchEndpoint_Override(d DataDatabricksAiSearchEndpoint, scope constructs.Construct, id *string, config *DataDatabricksAiSearchEndpointConfig) {
 	_init_.Initialize()
 
@@ -852,6 +865,17 @@ func (d *jsiiProxy_DataDatabricksAiSearchEndpoint) PutProviderConfig(value *Data
 		d,
 		"putProviderConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAiSearchEndpoint) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

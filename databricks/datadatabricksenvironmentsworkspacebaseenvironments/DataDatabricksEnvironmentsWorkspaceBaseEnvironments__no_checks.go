@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksEnvironmentsWorkspaceBaseEnvironments) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksEnvironmentsWorkspaceBaseEnvironments) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksEnvironmentsWorkspaceBaseEnvironments_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

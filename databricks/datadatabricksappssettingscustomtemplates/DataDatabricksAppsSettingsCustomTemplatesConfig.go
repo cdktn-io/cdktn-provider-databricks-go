@@ -22,9 +22,9 @@ type DataDatabricksAppsSettingsCustomTemplatesConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/apps_settings_custom_templates#page_size DataDatabricksAppsSettingsCustomTemplates#page_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/apps_settings_custom_templates#page_size DataDatabricksAppsSettingsCustomTemplates#page_size}.
 	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/apps_settings_custom_templates#provider_config DataDatabricksAppsSettingsCustomTemplates#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/apps_settings_custom_templates#provider_config DataDatabricksAppsSettingsCustomTemplates#provider_config}.
 	ProviderConfig *DataDatabricksAppsSettingsCustomTemplatesProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

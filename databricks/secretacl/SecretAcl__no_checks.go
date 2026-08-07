@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecretAcl) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (s *jsiiProxy_SecretAcl) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretAcl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SecretAcl) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (s *jsiiProxy_SecretAcl) validatePutProviderConfigParameters(value *SecretAclProviderConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretAcl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

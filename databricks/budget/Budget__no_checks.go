@@ -59,6 +59,10 @@ func (b *jsiiProxy_Budget) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (b *jsiiProxy_Budget) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_Budget) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (b *jsiiProxy_Budget) validatePutAlertConfigurationsParameters(value interf
 }
 
 func (b *jsiiProxy_Budget) validatePutFilterParameters(value *BudgetFilter) error {
+	return nil
+}
+
+func (b *jsiiProxy_Budget) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

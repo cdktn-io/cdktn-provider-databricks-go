@@ -59,6 +59,10 @@ func (a *jsiiProxy_AzureAdlsGen1Mount) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (a *jsiiProxy_AzureAdlsGen1Mount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureAdlsGen1Mount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_AzureAdlsGen1Mount) validateMoveToIdParameters(id *string) er
 }
 
 func (a *jsiiProxy_AzureAdlsGen1Mount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AzureAdlsGen1Mount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (a *jsiiProxy_AccessControlRuleSet) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AccessControlRuleSet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessControlRuleSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_AccessControlRuleSet) validatePutGrantRulesParameters(value i
 }
 
 func (a *jsiiProxy_AccessControlRuleSet) validatePutProviderConfigParameters(value *AccessControlRuleSetProviderConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessControlRuleSet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

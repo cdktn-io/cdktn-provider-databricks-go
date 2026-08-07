@@ -5,9 +5,9 @@ package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/job/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/job/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -37,6 +37,9 @@ type JobJobClusterOutputReference interface {
 	JobClusterKeyInput() *string
 	NewCluster() JobJobClusterNewClusterOutputReference
 	NewClusterInput() *JobJobClusterNewCluster
+	ServerlessComputeId() *string
+	SetServerlessComputeId(val *string)
+	ServerlessComputeIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type JobJobClusterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutNewCluster(value *JobJobClusterNewCluster)
+	ResetServerlessComputeId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -175,6 +179,26 @@ func (j *jsiiProxy_JobJobClusterOutputReference) NewClusterInput() *JobJobCluste
 	return returns
 }
 
+func (j *jsiiProxy_JobJobClusterOutputReference) ServerlessComputeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverlessComputeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterOutputReference) ServerlessComputeIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverlessComputeIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobJobClusterOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -263,6 +287,17 @@ func (j *jsiiProxy_JobJobClusterOutputReference)SetJobClusterKey(val *string) {
 	_jsii_.Set(
 		j,
 		"jobClusterKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterOutputReference)SetServerlessComputeId(val *string) {
+	if err := j.validateSetServerlessComputeIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverlessComputeId",
 		val,
 	)
 }
@@ -483,6 +518,14 @@ func (j *jsiiProxy_JobJobClusterOutputReference) PutNewCluster(value *JobJobClus
 		j,
 		"putNewCluster",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterOutputReference) ResetServerlessComputeId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetServerlessComputeId",
+		nil, // no parameters
 	)
 }
 

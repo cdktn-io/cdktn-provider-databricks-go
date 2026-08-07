@@ -59,6 +59,10 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRule) validateInterpolationForAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MwsNccPrivateEndpointRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsNccPrivateEndpointRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRule) validateOverrideLogicalIdParameter
 }
 
 func (m *jsiiProxy_MwsNccPrivateEndpointRule) validatePutGcpEndpointParameters(value *MwsNccPrivateEndpointRuleGcpEndpoint) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsNccPrivateEndpointRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

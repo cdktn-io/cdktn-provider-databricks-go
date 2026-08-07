@@ -51,15 +51,11 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) validatePutLifetimeParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLifetime) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) validatePutLongRollingParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowLongRolling) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) validatePutRollingParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowRolling) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) validatePutSawtoothParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSawtooth) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (a *jsiiProxy_AppSpace) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (a *jsiiProxy_AppSpace) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpace) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_AppSpace) validatePutProviderConfigParameters(value *AppSpace
 }
 
 func (a *jsiiProxy_AppSpace) validatePutResourcesParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSpace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

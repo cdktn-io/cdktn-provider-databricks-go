@@ -5,14 +5,14 @@ package datadatabricksrfaaccessrequestdestinations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksrfaaccessrequestdestinations/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksrfaaccessrequestdestinations/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
 type DataDatabricksRfaAccessRequestDestinations interface {
 	cdktn.TerraformDataSource
 	AreAnyDestinationsHidden() cdktn.IResolvable
@@ -91,6 +91,19 @@ type DataDatabricksRfaAccessRequestDestinations interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutProviderConfig(value *DataDatabricksRfaAccessRequestDestinationsProviderConfig)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -364,7 +377,7 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
 func NewDataDatabricksRfaAccessRequestDestinations(scope constructs.Construct, id *string, config *DataDatabricksRfaAccessRequestDestinationsConfig) DataDatabricksRfaAccessRequestDestinations {
 	_init_.Initialize()
 
@@ -382,7 +395,7 @@ func NewDataDatabricksRfaAccessRequestDestinations(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
 func NewDataDatabricksRfaAccessRequestDestinations_Override(d DataDatabricksRfaAccessRequestDestinations, scope constructs.Construct, id *string, config *DataDatabricksRfaAccessRequestDestinationsConfig) {
 	_init_.Initialize()
 
@@ -754,6 +767,17 @@ func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) PutProviderConfig
 		d,
 		"putProviderConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

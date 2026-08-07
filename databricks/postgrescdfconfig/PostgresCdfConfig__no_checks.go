@@ -59,6 +59,10 @@ func (p *jsiiProxy_PostgresCdfConfig) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (p *jsiiProxy_PostgresCdfConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresCdfConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (p *jsiiProxy_PostgresCdfConfig) validateOverrideLogicalIdParameters(newLog
 }
 
 func (p *jsiiProxy_PostgresCdfConfig) validatePutProviderConfigParameters(value *PostgresCdfConfigProviderConfig) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresCdfConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

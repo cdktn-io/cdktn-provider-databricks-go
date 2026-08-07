@@ -59,6 +59,10 @@ func (s *jsiiProxy_SqlWidget) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (s *jsiiProxy_SqlWidget) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlWidget) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (s *jsiiProxy_SqlWidget) validatePutPositionParameters(value *SqlWidgetPosi
 }
 
 func (s *jsiiProxy_SqlWidget) validatePutProviderConfigParameters(value *SqlWidgetProviderConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlWidget) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

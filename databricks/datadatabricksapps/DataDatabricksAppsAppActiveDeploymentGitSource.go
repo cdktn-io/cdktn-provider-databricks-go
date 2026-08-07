@@ -5,13 +5,13 @@ package datadatabricksapps
 
 
 type DataDatabricksAppsAppActiveDeploymentGitSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/apps#branch DataDatabricksApps#branch}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/apps#branch DataDatabricksApps#branch}.
 	Branch *string `field:"optional" json:"branch" yaml:"branch"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/apps#commit DataDatabricksApps#commit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/apps#commit DataDatabricksApps#commit}.
 	Commit *string `field:"optional" json:"commit" yaml:"commit"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}.
 	SourceCodePath *string `field:"optional" json:"sourceCodePath" yaml:"sourceCodePath"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/apps#tag DataDatabricksApps#tag}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/apps#tag DataDatabricksApps#tag}.
 	Tag *string `field:"optional" json:"tag" yaml:"tag"`
 }
 

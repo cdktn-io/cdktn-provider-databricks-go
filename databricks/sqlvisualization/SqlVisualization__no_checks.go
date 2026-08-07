@@ -59,6 +59,10 @@ func (s *jsiiProxy_SqlVisualization) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SqlVisualization) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlVisualization) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SqlVisualization) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (s *jsiiProxy_SqlVisualization) validatePutProviderConfigParameters(value *SqlVisualizationProviderConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlVisualization) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -5,9 +5,9 @@ package datadatabricksfeatureengineeringfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfeatureengineeringfeature/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksfeatureengineeringfeature/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,6 +28,9 @@ type DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference in
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataframeSchema() *string
+	SetDataframeSchema(val *string)
+	DataframeSchemaInput() *string
 	FilterCondition() *string
 	SetFilterCondition(val *string)
 	FilterConditionInput() *string
@@ -46,6 +49,9 @@ type DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference in
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TransformationSql() *string
+	SetTransformationSql(val *string)
+	TransformationSqlInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,7 +76,9 @@ type DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference in
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDataframeSchema()
 	ResetFilterCondition()
+	ResetTransformationSql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -111,6 +119,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutp
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference) DataframeSchema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataframeSchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference) DataframeSchemaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataframeSchemaInput",
 		&returns,
 	)
 	return returns
@@ -196,6 +224,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutp
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference) TransformationSql() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformationSql",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference) TransformationSqlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformationSqlInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference {
 	_init_.Initialize()
@@ -242,6 +290,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference)SetDataframeSchema(val *string) {
+	if err := j.validateSetDataframeSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataframeSchema",
 		val,
 	)
 }
@@ -297,6 +356,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutp
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference)SetTransformationSql(val *string) {
+	if err := j.validateSetTransformationSqlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transformationSql",
 		val,
 	)
 }
@@ -487,10 +557,26 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutp
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference) ResetDataframeSchema() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDataframeSchema",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference) ResetFilterCondition() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference) ResetTransformationSql() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTransformationSql",
 		nil, // no parameters
 	)
 }

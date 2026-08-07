@@ -59,6 +59,10 @@ func (s *jsiiProxy_SqlDashboard) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_SqlDashboard) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDashboard) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SqlDashboard) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (s *jsiiProxy_SqlDashboard) validatePutProviderConfigParameters(value *SqlDashboardProviderConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlDashboard) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

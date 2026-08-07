@@ -59,6 +59,10 @@ func (j *jsiiProxy_Job) validateInterpolationForAttributeParameters(terraformAtt
 	return nil
 }
 
+func (j *jsiiProxy_Job) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -180,6 +184,10 @@ func (j *jsiiProxy_Job) validatePutTriggerParameters(value *JobTrigger) error {
 }
 
 func (j *jsiiProxy_Job) validatePutWebhookNotificationsParameters(value *JobWebhookNotifications) error {
+	return nil
+}
+
+func (j *jsiiProxy_Job) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

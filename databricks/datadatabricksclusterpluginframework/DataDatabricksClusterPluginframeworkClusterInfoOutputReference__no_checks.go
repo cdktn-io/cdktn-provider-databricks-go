@@ -159,6 +159,10 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetDependencyModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetDriverInstancePoolIdParameters(val *string) error {
 	return nil
 }

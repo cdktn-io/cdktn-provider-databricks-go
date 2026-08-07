@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecretScope) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_SecretScope) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretScope) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (s *jsiiProxy_SecretScope) validatePutKeyvaultMetadataParameters(value *Sec
 }
 
 func (s *jsiiProxy_SecretScope) validatePutProviderConfigParameters(value *SecretScopeProviderConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretScope) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

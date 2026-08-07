@@ -5,14 +5,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/provider/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/provider/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktn.TerraformProvider
 	AccountId() *string
@@ -166,6 +166,19 @@ type DatabricksProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
 	ResetActionsIdTokenRequestToken()
 	ResetActionsIdTokenRequestUrl()
@@ -1179,7 +1192,7 @@ func (j *jsiiProxy_DatabricksProvider) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -1197,7 +1210,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -1678,6 +1691,17 @@ func (d *jsiiProxy_DatabricksProvider) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

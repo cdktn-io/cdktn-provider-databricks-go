@@ -59,6 +59,10 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) validateInterpolation
 	return nil
 }
 
+func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) validatePutAutomaticC
 }
 
 func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) validatePutProviderConfigParameters(value *AutomaticClusterUpdateWorkspaceSettingProviderConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

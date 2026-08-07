@@ -131,6 +131,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validateSetD
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validateSetDependencyModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validateSetDriverInstancePoolIdParameters(val *string) error {
 	return nil
 }

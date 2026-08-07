@@ -59,6 +59,10 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) validateInterpolationForAttrib
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringKafkaConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfig) validatePutSubscriptionModePar
 }
 
 func (f *jsiiProxy_FeatureEngineeringKafkaConfig) validatePutValueSchemaParameters(value *FeatureEngineeringKafkaConfigValueSchema) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

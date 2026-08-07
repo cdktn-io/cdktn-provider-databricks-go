@@ -5,7 +5,7 @@ package datadatabricksapps
 
 
 type DataDatabricksAppsAppTelemetryExportDestinations struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/apps#unity_catalog DataDatabricksApps#unity_catalog}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/apps#unity_catalog DataDatabricksApps#unity_catalog}.
 	UnityCatalog *DataDatabricksAppsAppTelemetryExportDestinationsUnityCatalog `field:"optional" json:"unityCatalog" yaml:"unityCatalog"`
 }
 

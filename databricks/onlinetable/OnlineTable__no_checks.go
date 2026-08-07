@@ -59,6 +59,10 @@ func (o *jsiiProxy_OnlineTable) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (o *jsiiProxy_OnlineTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OnlineTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (o *jsiiProxy_OnlineTable) validatePutSpecParameters(value *OnlineTableSpec
 }
 
 func (o *jsiiProxy_OnlineTable) validatePutTimeoutsParameters(value *OnlineTableTimeouts) error {
+	return nil
+}
+
+func (o *jsiiProxy_OnlineTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

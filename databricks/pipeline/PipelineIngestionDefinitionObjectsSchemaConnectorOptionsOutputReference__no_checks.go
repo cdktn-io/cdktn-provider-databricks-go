@@ -75,6 +75,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutpu
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) validatePutRedditAdsOptionsParameters(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) validatePutSharepointOptionsParameters(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions) error {
 	return nil
 }

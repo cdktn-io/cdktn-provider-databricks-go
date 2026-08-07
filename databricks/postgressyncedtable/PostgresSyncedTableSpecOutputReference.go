@@ -5,9 +5,9 @@ package postgressyncedtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgressyncedtable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -40,6 +40,8 @@ type PostgresSyncedTableSpecOutputReference interface {
 	ExistingPipelineId() *string
 	SetExistingPipelineId(val *string)
 	ExistingPipelineIdInput() *string
+	ExtraColumns() PostgresSyncedTableSpecExtraColumnsList
+	ExtraColumnsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -95,12 +97,14 @@ type PostgresSyncedTableSpecOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutExtraColumns(value interface{})
 	PutNewPipelineSpec(value *PostgresSyncedTableSpecNewPipelineSpec)
 	PutTypeOverrides(value interface{})
 	ResetAcceleratedSync()
 	ResetBranch()
 	ResetCreateDatabaseObjectsIfMissing()
 	ResetExistingPipelineId()
+	ResetExtraColumns()
 	ResetNewPipelineSpec()
 	ResetPostgresDatabase()
 	ResetPrimaryKeyColumns()
@@ -228,6 +232,26 @@ func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference) ExistingPipelineIdInp
 	_jsii_.Get(
 		j,
 		"existingPipelineIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference) ExtraColumns() PostgresSyncedTableSpecExtraColumnsList {
+	var returns PostgresSyncedTableSpecExtraColumnsList
+	_jsii_.Get(
+		j,
+		"extraColumns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresSyncedTableSpecOutputReference) ExtraColumnsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extraColumnsInput",
 		&returns,
 	)
 	return returns
@@ -781,6 +805,17 @@ func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) InterpolationForAttri
 	return returns
 }
 
+func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) PutExtraColumns(value interface{}) {
+	if err := p.validatePutExtraColumnsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putExtraColumns",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) PutNewPipelineSpec(value *PostgresSyncedTableSpecNewPipelineSpec) {
 	if err := p.validatePutNewPipelineSpecParameters(value); err != nil {
 		panic(err)
@@ -831,6 +866,14 @@ func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) ResetExistingPipeline
 	_jsii_.InvokeVoid(
 		p,
 		"resetExistingPipelineId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresSyncedTableSpecOutputReference) ResetExtraColumns() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetExtraColumns",
 		nil, // no parameters
 	)
 }

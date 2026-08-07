@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksMetastores) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksMetastores) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksMetastores_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

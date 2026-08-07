@@ -59,6 +59,10 @@ func (p *jsiiProxy_PostgresRole) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (p *jsiiProxy_PostgresRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (p *jsiiProxy_PostgresRole) validatePutProviderConfigParameters(value *Post
 }
 
 func (p *jsiiProxy_PostgresRole) validatePutSpecParameters(value *PostgresRoleSpec) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

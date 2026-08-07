@@ -59,6 +59,10 @@ func (p *jsiiProxy_PostgresSyncedTable) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (p *jsiiProxy_PostgresSyncedTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresSyncedTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (p *jsiiProxy_PostgresSyncedTable) validatePutProviderConfigParameters(valu
 }
 
 func (p *jsiiProxy_PostgresSyncedTable) validatePutSpecParameters(value *PostgresSyncedTableSpec) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresSyncedTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

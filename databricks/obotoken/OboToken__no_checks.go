@@ -59,6 +59,10 @@ func (o *jsiiProxy_OboToken) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (o *jsiiProxy_OboToken) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OboToken) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (o *jsiiProxy_OboToken) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (o *jsiiProxy_OboToken) validatePutProviderConfigParameters(value *OboTokenProviderConfig) error {
+	return nil
+}
+
+func (o *jsiiProxy_OboToken) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

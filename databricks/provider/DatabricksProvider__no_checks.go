@@ -15,6 +15,10 @@ func (d *jsiiProxy_DatabricksProvider) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (d *jsiiProxy_DatabricksProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDatabricksProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

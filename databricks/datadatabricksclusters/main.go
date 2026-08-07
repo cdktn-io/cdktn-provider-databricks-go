@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilterBy", GoMethod: "PutFilterBy"},
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterNameContains", GoMethod: "ResetClusterNameContains"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilterBy", GoMethod: "ResetFilterBy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

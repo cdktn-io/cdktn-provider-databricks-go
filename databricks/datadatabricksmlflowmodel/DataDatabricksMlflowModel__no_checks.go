@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataDatabricksMlflowModel) validatePutTagsParameters(value in
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksMlflowModel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksMlflowModel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

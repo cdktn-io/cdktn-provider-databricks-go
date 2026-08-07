@@ -59,6 +59,10 @@ func (i *jsiiProxy_IpAccessList) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (i *jsiiProxy_IpAccessList) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpAccessList) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (i *jsiiProxy_IpAccessList) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (i *jsiiProxy_IpAccessList) validatePutProviderConfigParameters(value *IpAccessListProviderConfig) error {
+	return nil
+}
+
+func (i *jsiiProxy_IpAccessList) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (g *jsiiProxy_GlobalInitScript) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GlobalInitScript) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalInitScript) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (g *jsiiProxy_GlobalInitScript) validatePutProviderConfigParameters(value *
 }
 
 func (g *jsiiProxy_GlobalInitScript) validatePutTimeoutsParameters(value *GlobalInitScriptTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalInitScript) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

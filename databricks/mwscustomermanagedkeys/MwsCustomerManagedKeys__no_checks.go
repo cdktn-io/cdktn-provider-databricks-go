@@ -59,6 +59,10 @@ func (m *jsiiProxy_MwsCustomerManagedKeys) validateInterpolationForAttributePara
 	return nil
 }
 
+func (m *jsiiProxy_MwsCustomerManagedKeys) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsCustomerManagedKeys) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (m *jsiiProxy_MwsCustomerManagedKeys) validatePutAwsKeyInfoParameters(value
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeys) validatePutGcpKeyInfoParameters(value *MwsCustomerManagedKeysGcpKeyInfo) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsCustomerManagedKeys) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

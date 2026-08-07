@@ -59,6 +59,10 @@ func (d *jsiiProxy_DisableLegacyAccessSetting) validateInterpolationForAttribute
 	return nil
 }
 
+func (d *jsiiProxy_DisableLegacyAccessSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DisableLegacyAccessSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (d *jsiiProxy_DisableLegacyAccessSetting) validatePutDisableLegacyAccessPar
 }
 
 func (d *jsiiProxy_DisableLegacyAccessSetting) validatePutProviderConfigParameters(value *DisableLegacyAccessSettingProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DisableLegacyAccessSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

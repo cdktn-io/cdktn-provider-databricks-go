@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataQualityRefresh) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataQualityRefresh) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataQualityRefresh) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (d *jsiiProxy_DataQualityRefresh) validateOverrideLogicalIdParameters(newLo
 }
 
 func (d *jsiiProxy_DataQualityRefresh) validatePutProviderConfigParameters(value *DataQualityRefreshProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityRefresh) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

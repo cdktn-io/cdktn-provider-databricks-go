@@ -59,6 +59,10 @@ func (d *jsiiProxy_DisableLegacyDbfsSetting) validateInterpolationForAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DisableLegacyDbfsSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DisableLegacyDbfsSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (d *jsiiProxy_DisableLegacyDbfsSetting) validatePutDisableLegacyDbfsParamet
 }
 
 func (d *jsiiProxy_DisableLegacyDbfsSetting) validatePutProviderConfigParameters(value *DisableLegacyDbfsSettingProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DisableLegacyDbfsSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

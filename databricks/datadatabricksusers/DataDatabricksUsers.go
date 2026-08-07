@@ -5,14 +5,14 @@ package datadatabricksusers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksusers/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksusers/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/users databricks_users}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/users databricks_users}.
 type DataDatabricksUsers interface {
 	cdktn.TerraformDataSource
 	Api() *string
@@ -93,6 +93,19 @@ type DataDatabricksUsers interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutProviderConfig(value *DataDatabricksUsersProviderConfig)
 	PutUsers(value interface{})
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetApi()
 	ResetExtraAttributes()
 	ResetFilter()
@@ -370,7 +383,7 @@ func (j *jsiiProxy_DataDatabricksUsers) UsersInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/users databricks_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/users databricks_users} Data Source.
 func NewDataDatabricksUsers(scope constructs.Construct, id *string, config *DataDatabricksUsersConfig) DataDatabricksUsers {
 	_init_.Initialize()
 
@@ -388,7 +401,7 @@ func NewDataDatabricksUsers(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/users databricks_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/users databricks_users} Data Source.
 func NewDataDatabricksUsers_Override(d DataDatabricksUsers, scope constructs.Construct, id *string, config *DataDatabricksUsersConfig) {
 	_init_.Initialize()
 
@@ -782,6 +795,17 @@ func (d *jsiiProxy_DataDatabricksUsers) PutUsers(value interface{}) {
 		d,
 		"putUsers",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksUsers) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

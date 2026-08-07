@@ -59,6 +59,10 @@ func (m *jsiiProxy_Mount) validateInterpolationForAttributeParameters(terraformA
 	return nil
 }
 
+func (m *jsiiProxy_Mount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_Mount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (m *jsiiProxy_Mount) validatePutTimeoutsParameters(value *MountTimeouts) er
 }
 
 func (m *jsiiProxy_Mount) validatePutWasbParameters(value *MountWasb) error {
+	return nil
+}
+
+func (m *jsiiProxy_Mount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

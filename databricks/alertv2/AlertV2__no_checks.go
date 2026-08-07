@@ -59,6 +59,10 @@ func (a *jsiiProxy_AlertV2) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (a *jsiiProxy_AlertV2) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertV2) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -79,6 +83,10 @@ func (a *jsiiProxy_AlertV2) validatePutEvaluationParameters(value *AlertV2Evalua
 	return nil
 }
 
+func (a *jsiiProxy_AlertV2) validatePutParametersParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertV2) validatePutProviderConfigParameters(value *AlertV2ProviderConfig) error {
 	return nil
 }
@@ -88,6 +96,10 @@ func (a *jsiiProxy_AlertV2) validatePutRunAsParameters(value *AlertV2RunAs) erro
 }
 
 func (a *jsiiProxy_AlertV2) validatePutScheduleParameters(value *AlertV2Schedule) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

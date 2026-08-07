@@ -59,6 +59,10 @@ func (a *jsiiProxy_AccountSettingUserPreferenceV2) validateInterpolationForAttri
 	return nil
 }
 
+func (a *jsiiProxy_AccountSettingUserPreferenceV2) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountSettingUserPreferenceV2) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_AccountSettingUserPreferenceV2) validatePutBooleanValParamete
 }
 
 func (a *jsiiProxy_AccountSettingUserPreferenceV2) validatePutStringValParameters(value *AccountSettingUserPreferenceV2StringVal) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountSettingUserPreferenceV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

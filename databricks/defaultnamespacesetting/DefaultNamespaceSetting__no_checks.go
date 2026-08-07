@@ -59,6 +59,10 @@ func (d *jsiiProxy_DefaultNamespaceSetting) validateInterpolationForAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DefaultNamespaceSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DefaultNamespaceSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (d *jsiiProxy_DefaultNamespaceSetting) validatePutNamespaceParameters(value
 }
 
 func (d *jsiiProxy_DefaultNamespaceSetting) validatePutProviderConfigParameters(value *DefaultNamespaceSettingProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DefaultNamespaceSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (w *jsiiProxy_WorkspaceEntityTagAssignment) validateInterpolationForAttribu
 	return nil
 }
 
+func (w *jsiiProxy_WorkspaceEntityTagAssignment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspaceEntityTagAssignment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (w *jsiiProxy_WorkspaceEntityTagAssignment) validateOverrideLogicalIdParame
 }
 
 func (w *jsiiProxy_WorkspaceEntityTagAssignment) validatePutProviderConfigParameters(value *WorkspaceEntityTagAssignmentProviderConfig) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkspaceEntityTagAssignment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

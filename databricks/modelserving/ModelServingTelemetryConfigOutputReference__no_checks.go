@@ -51,6 +51,10 @@ func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) validatePutInfere
 	return nil
 }
 
+func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) validatePutTableNamesParameters(value *ModelServingTelemetryConfigTableNames) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateSetComple
 }
 
 func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateSetInternalValueParameters(val *ModelServingTelemetryConfig) error {
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateSetTelemetryProfileIdParameters(val *string) error {
 	return nil
 }
 

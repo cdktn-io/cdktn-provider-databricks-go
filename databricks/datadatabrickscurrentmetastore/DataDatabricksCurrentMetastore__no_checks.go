@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataDatabricksCurrentMetastore) validatePutProviderConfigPara
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksCurrentMetastore) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksCurrentMetastore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

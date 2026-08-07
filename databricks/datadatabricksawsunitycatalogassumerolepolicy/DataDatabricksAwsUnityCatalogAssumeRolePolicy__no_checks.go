@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) validateOverri
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksAwsUnityCatalogAssumeRolePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

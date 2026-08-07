@@ -59,6 +59,10 @@ func (g *jsiiProxy_GroupRole) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GroupRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (g *jsiiProxy_GroupRole) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (g *jsiiProxy_GroupRole) validatePutProviderConfigParameters(value *GroupRoleProviderConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GroupRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

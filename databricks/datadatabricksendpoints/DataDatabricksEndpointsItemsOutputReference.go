@@ -5,15 +5,16 @@ package datadatabricksendpoints
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoints/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoints/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksEndpointsItemsOutputReference interface {
 	cdktn.ComplexObject
 	AccountId() *string
+	AwsVpcEndpointInfo() DataDatabricksEndpointsItemsAwsVpcEndpointInfoOutputReference
 	AzurePrivateEndpointInfo() DataDatabricksEndpointsItemsAzurePrivateEndpointInfoOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
@@ -35,6 +36,7 @@ type DataDatabricksEndpointsItemsOutputReference interface {
 	EndpointId() *string
 	// Experimental.
 	Fqn() *string
+	GcpPscEndpointInfo() DataDatabricksEndpointsItemsGcpPscEndpointInfoOutputReference
 	InternalValue() *DataDatabricksEndpointsItems
 	SetInternalValue(val *DataDatabricksEndpointsItems)
 	Name() *string
@@ -95,6 +97,16 @@ func (j *jsiiProxy_DataDatabricksEndpointsItemsOutputReference) AccountId() *str
 	_jsii_.Get(
 		j,
 		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksEndpointsItemsOutputReference) AwsVpcEndpointInfo() DataDatabricksEndpointsItemsAwsVpcEndpointInfoOutputReference {
+	var returns DataDatabricksEndpointsItemsAwsVpcEndpointInfoOutputReference
+	_jsii_.Get(
+		j,
+		"awsVpcEndpointInfo",
 		&returns,
 	)
 	return returns
@@ -175,6 +187,16 @@ func (j *jsiiProxy_DataDatabricksEndpointsItemsOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksEndpointsItemsOutputReference) GcpPscEndpointInfo() DataDatabricksEndpointsItemsGcpPscEndpointInfoOutputReference {
+	var returns DataDatabricksEndpointsItemsGcpPscEndpointInfoOutputReference
+	_jsii_.Get(
+		j,
+		"gcpPscEndpointInfo",
 		&returns,
 	)
 	return returns

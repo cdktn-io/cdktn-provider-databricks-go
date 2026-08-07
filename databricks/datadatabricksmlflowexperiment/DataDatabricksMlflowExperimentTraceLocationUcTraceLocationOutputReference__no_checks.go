@@ -63,6 +63,10 @@ func (j *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOut
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference) validateSetEffectiveTablePrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference) validateSetInternalValueParameters(val *DataDatabricksMlflowExperimentTraceLocationUcTraceLocation) error {
 	return nil
 }

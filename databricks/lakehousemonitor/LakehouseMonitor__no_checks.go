@@ -59,6 +59,10 @@ func (l *jsiiProxy_LakehouseMonitor) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (l *jsiiProxy_LakehouseMonitor) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakehouseMonitor) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (l *jsiiProxy_LakehouseMonitor) validatePutTimeoutsParameters(value *Lakeho
 }
 
 func (l *jsiiProxy_LakehouseMonitor) validatePutTimeSeriesParameters(value *LakehouseMonitorTimeSeries) error {
+	return nil
+}
+
+func (l *jsiiProxy_LakehouseMonitor) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

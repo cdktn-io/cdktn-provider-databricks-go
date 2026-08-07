@@ -59,6 +59,10 @@ func (r *jsiiProxy_Recipient) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (r *jsiiProxy_Recipient) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_Recipient) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (r *jsiiProxy_Recipient) validatePutProviderConfigParameters(value *Recipie
 }
 
 func (r *jsiiProxy_Recipient) validatePutTokensParameters(value interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Recipient) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

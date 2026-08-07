@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) validatePutProviderConfigParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksNotebookPaths) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksNotebookPaths_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

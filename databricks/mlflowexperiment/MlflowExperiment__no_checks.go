@@ -59,6 +59,10 @@ func (m *jsiiProxy_MlflowExperiment) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MlflowExperiment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MlflowExperiment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (m *jsiiProxy_MlflowExperiment) validatePutTimeoutsParameters(value *Mlflow
 }
 
 func (m *jsiiProxy_MlflowExperiment) validatePutTraceLocationParameters(value *MlflowExperimentTraceLocation) error {
+	return nil
+}
+
+func (m *jsiiProxy_MlflowExperiment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -51,15 +51,11 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) validatePutLifetimeParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLifetime) error {
-	return nil
-}
-
-func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) validatePutLongRollingParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowLongRolling) error {
-	return nil
-}
-
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) validatePutRollingParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) validatePutSawtoothParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth) error {
 	return nil
 }
 

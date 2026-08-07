@@ -5,9 +5,9 @@ package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/pipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -36,6 +36,8 @@ type PipelineIngestionDefinitionObjectsSchemaOutputReference interface {
 	DestinationSchema() *string
 	SetDestinationSchema(val *string)
 	DestinationSchemaInput() *string
+	FanoutOptions() PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference
+	FanoutOptionsInput() *PipelineIngestionDefinitionObjectsSchemaFanoutOptions
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PipelineIngestionDefinitionObjectsSchema
@@ -81,8 +83,10 @@ type PipelineIngestionDefinitionObjectsSchemaOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutConnectorOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptions)
+	PutFanoutOptions(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptions)
 	PutTableConfiguration(value *PipelineIngestionDefinitionObjectsSchemaTableConfiguration)
 	ResetConnectorOptions()
+	ResetFanoutOptions()
 	ResetSourceCatalog()
 	ResetTableConfiguration()
 	// Produce the Token's value at resolution time.
@@ -185,6 +189,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) Dest
 	_jsii_.Get(
 		j,
 		"destinationSchemaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) FanoutOptions() PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"fanoutOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) FanoutOptionsInput() *PipelineIngestionDefinitionObjectsSchemaFanoutOptions {
+	var returns *PipelineIngestionDefinitionObjectsSchemaFanoutOptions
+	_jsii_.Get(
+		j,
+		"fanoutOptionsInput",
 		&returns,
 	)
 	return returns
@@ -614,6 +638,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) PutC
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) PutFanoutOptions(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptions) {
+	if err := p.validatePutFanoutOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putFanoutOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) PutTableConfiguration(value *PipelineIngestionDefinitionObjectsSchemaTableConfiguration) {
 	if err := p.validatePutTableConfigurationParameters(value); err != nil {
 		panic(err)
@@ -629,6 +664,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) Rese
 	_jsii_.InvokeVoid(
 		p,
 		"resetConnectorOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) ResetFanoutOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFanoutOptions",
 		nil, // no parameters
 	)
 }

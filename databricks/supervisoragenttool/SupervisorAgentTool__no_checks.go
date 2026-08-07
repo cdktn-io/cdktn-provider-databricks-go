@@ -59,6 +59,10 @@ func (s *jsiiProxy_SupervisorAgentTool) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SupervisorAgentTool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SupervisorAgentTool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (s *jsiiProxy_SupervisorAgentTool) validatePutUcFunctionParameters(value *S
 }
 
 func (s *jsiiProxy_SupervisorAgentTool) validatePutVolumeParameters(value *SupervisorAgentToolVolume) error {
+	return nil
+}
+
+func (s *jsiiProxy_SupervisorAgentTool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

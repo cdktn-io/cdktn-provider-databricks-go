@@ -59,6 +59,10 @@ func (e *jsiiProxy_ExternalLocation) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_ExternalLocation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExternalLocation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (e *jsiiProxy_ExternalLocation) validatePutFileEventQueueParameters(value *
 }
 
 func (e *jsiiProxy_ExternalLocation) validatePutProviderConfigParameters(value *ExternalLocationProviderConfig) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExternalLocation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

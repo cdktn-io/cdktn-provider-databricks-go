@@ -59,6 +59,10 @@ func (s *jsiiProxy_SqlEndpoint) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_SqlEndpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlEndpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (s *jsiiProxy_SqlEndpoint) validatePutTagsParameters(value *SqlEndpointTags
 }
 
 func (s *jsiiProxy_SqlEndpoint) validatePutTimeoutsParameters(value *SqlEndpointTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

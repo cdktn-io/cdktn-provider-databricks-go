@@ -59,6 +59,10 @@ func (d *jsiiProxy_DbfsFile) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (d *jsiiProxy_DbfsFile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbfsFile) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (d *jsiiProxy_DbfsFile) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (d *jsiiProxy_DbfsFile) validatePutProviderConfigParameters(value *DbfsFileProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbfsFile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

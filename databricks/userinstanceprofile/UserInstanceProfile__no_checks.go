@@ -59,6 +59,10 @@ func (u *jsiiProxy_UserInstanceProfile) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (u *jsiiProxy_UserInstanceProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserInstanceProfile) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (u *jsiiProxy_UserInstanceProfile) validateOverrideLogicalIdParameters(newL
 }
 
 func (u *jsiiProxy_UserInstanceProfile) validatePutProviderConfigParameters(value *UserInstanceProfileProviderConfig) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserInstanceProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

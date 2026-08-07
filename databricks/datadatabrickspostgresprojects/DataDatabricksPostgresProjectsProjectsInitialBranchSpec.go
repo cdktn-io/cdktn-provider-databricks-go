@@ -5,7 +5,7 @@ package datadatabrickspostgresprojects
 
 
 type DataDatabricksPostgresProjectsProjectsInitialBranchSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/postgres_projects#is_protected DataDatabricksPostgresProjects#is_protected}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/postgres_projects#is_protected DataDatabricksPostgresProjects#is_protected}.
 	IsProtected interface{} `field:"optional" json:"isProtected" yaml:"isProtected"`
 }
 

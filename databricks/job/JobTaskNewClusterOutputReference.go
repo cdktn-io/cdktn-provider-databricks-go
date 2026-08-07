@@ -5,9 +5,9 @@ package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/job/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/job/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -56,6 +56,9 @@ type JobTaskNewClusterOutputReference interface {
 	DataSecurityMode() *string
 	SetDataSecurityMode(val *string)
 	DataSecurityModeInput() *string
+	DependencyMode() *string
+	SetDependencyMode(val *string)
+	DependencyModeInput() *string
 	DockerImage() JobTaskNewClusterDockerImageOutputReference
 	DockerImageInput() *JobTaskNewClusterDockerImage
 	DriverInstancePoolId() *string
@@ -192,6 +195,7 @@ type JobTaskNewClusterOutputReference interface {
 	ResetClusterName()
 	ResetCustomTags()
 	ResetDataSecurityMode()
+	ResetDependencyMode()
 	ResetDockerImage()
 	ResetDriverInstancePoolId()
 	ResetDriverNodeTypeFlexibility()
@@ -480,6 +484,26 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) DataSecurityModeInput() *st
 	_jsii_.Get(
 		j,
 		"dataSecurityModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) DependencyMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dependencyMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) DependencyModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dependencyModeInput",
 		&returns,
 	)
 	return returns
@@ -1201,6 +1225,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetDataSecurityMode(val *str
 	)
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetDependencyMode(val *string) {
+	if err := j.validateSetDependencyModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dependencyMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetDriverInstancePoolId(val *string) {
 	if err := j.validateSetDriverInstancePoolIdParameters(val); err != nil {
 		panic(err)
@@ -1867,6 +1902,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetDataSecurityMode() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDataSecurityMode",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetDependencyMode() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDependencyMode",
 		nil, // no parameters
 	)
 }

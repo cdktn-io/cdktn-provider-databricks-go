@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksWorkspaceNetworkOption) validateOverrideLogical
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksWorkspaceNetworkOption) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksWorkspaceNetworkOption_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

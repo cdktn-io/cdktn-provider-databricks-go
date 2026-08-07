@@ -5,7 +5,7 @@ package job
 
 
 type JobGitSourceGitSnapshot struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/job#used_commit Job#used_commit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/job#used_commit Job#used_commit}.
 	UsedCommit *string `field:"optional" json:"usedCommit" yaml:"usedCommit"`
 }
 

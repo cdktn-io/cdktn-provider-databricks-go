@@ -59,6 +59,10 @@ func (q *jsiiProxy_QualityMonitor) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (q *jsiiProxy_QualityMonitor) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_QualityMonitor) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (q *jsiiProxy_QualityMonitor) validatePutSnapshotParameters(value interface
 }
 
 func (q *jsiiProxy_QualityMonitor) validatePutTimeSeriesParameters(value interface{}) error {
+	return nil
+}
+
+func (q *jsiiProxy_QualityMonitor) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

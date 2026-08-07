@@ -59,6 +59,10 @@ func (d *jsiiProxy_DatabaseDatabaseCatalog) validateInterpolationForAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseDatabaseCatalog) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseDatabaseCatalog) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (d *jsiiProxy_DatabaseDatabaseCatalog) validateOverrideLogicalIdParameters(
 }
 
 func (d *jsiiProxy_DatabaseDatabaseCatalog) validatePutProviderConfigParameters(value *DatabaseDatabaseCatalogProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseDatabaseCatalog) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

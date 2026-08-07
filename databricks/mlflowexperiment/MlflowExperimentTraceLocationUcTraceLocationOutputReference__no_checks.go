@@ -63,6 +63,10 @@ func (j *jsiiProxy_MlflowExperimentTraceLocationUcTraceLocationOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_MlflowExperimentTraceLocationUcTraceLocationOutputReference) validateSetEffectiveTablePrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MlflowExperimentTraceLocationUcTraceLocationOutputReference) validateSetInternalValueParameters(val *MlflowExperimentTraceLocationUcTraceLocation) error {
 	return nil
 }

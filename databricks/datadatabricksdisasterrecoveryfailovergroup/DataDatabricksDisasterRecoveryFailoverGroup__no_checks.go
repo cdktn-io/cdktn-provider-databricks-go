@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroup) validateOverride
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksDisasterRecoveryFailoverGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

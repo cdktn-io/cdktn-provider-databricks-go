@@ -59,6 +59,10 @@ func (v *jsiiProxy_Volume) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (v *jsiiProxy_Volume) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_Volume) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (v *jsiiProxy_Volume) validateOverrideLogicalIdParameters(newLogicalId *str
 }
 
 func (v *jsiiProxy_Volume) validatePutProviderConfigParameters(value *VolumeProviderConfig) error {
+	return nil
+}
+
+func (v *jsiiProxy_Volume) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (s *jsiiProxy_SqlGlobalConfig) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SqlGlobalConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlGlobalConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SqlGlobalConfig) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) validatePutProviderConfigParameters(value *SqlGlobalConfigProviderConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlGlobalConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

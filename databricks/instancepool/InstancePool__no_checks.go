@@ -59,6 +59,10 @@ func (i *jsiiProxy_InstancePool) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (i *jsiiProxy_InstancePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_InstancePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (i *jsiiProxy_InstancePool) validatePutPreloadedDockerImageParameters(value
 }
 
 func (i *jsiiProxy_InstancePool) validatePutProviderConfigParameters(value *InstancePoolProviderConfig) error {
+	return nil
+}
+
+func (i *jsiiProxy_InstancePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

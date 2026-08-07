@@ -59,6 +59,10 @@ func (c *jsiiProxy_Cluster) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -131,6 +135,10 @@ func (c *jsiiProxy_Cluster) validatePutWorkloadTypeParameters(value *ClusterWork
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -176,6 +184,10 @@ func (j *jsiiProxy_Cluster) validateSetCustomTagsParameters(val *map[string]*str
 }
 
 func (j *jsiiProxy_Cluster) validateSetDataSecurityModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Cluster) validateSetDependencyModeParameters(val *string) error {
 	return nil
 }
 

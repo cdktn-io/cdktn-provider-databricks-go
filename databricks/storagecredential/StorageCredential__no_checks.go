@@ -59,6 +59,10 @@ func (s *jsiiProxy_StorageCredential) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_StorageCredential) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageCredential) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (s *jsiiProxy_StorageCredential) validatePutGcpServiceAccountKeyParameters(
 }
 
 func (s *jsiiProxy_StorageCredential) validatePutProviderConfigParameters(value *StorageCredentialProviderConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageCredential) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -125,6 +125,14 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutProviderConfigPa
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateDataDatabricksWorkspaceSettingV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

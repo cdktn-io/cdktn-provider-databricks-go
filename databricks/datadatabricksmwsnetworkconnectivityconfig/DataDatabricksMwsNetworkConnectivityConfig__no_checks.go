@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) validatePutEgress
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksMwsNetworkConnectivityConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

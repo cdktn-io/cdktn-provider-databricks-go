@@ -59,6 +59,10 @@ func (a *jsiiProxy_AwsS3Mount) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AwsS3Mount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsS3Mount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_AwsS3Mount) validateMoveToIdParameters(id *string) error {
 }
 
 func (a *jsiiProxy_AwsS3Mount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AwsS3Mount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

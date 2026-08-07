@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksAccountSettingUserPreferenceV2) validateOverrid
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAccountSettingUserPreferenceV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksAccountSettingUserPreferenceV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

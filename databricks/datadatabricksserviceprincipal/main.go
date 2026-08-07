@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "providerConfigInput", GoGetter: "ProviderConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "repos", GoGetter: "Repos"},
 			_jsii_.MemberProperty{JsiiProperty: "reposInput", GoGetter: "ReposInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAclPrincipalId", GoMethod: "ResetAclPrincipalId"},

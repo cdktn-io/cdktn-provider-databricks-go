@@ -59,6 +59,10 @@ func (n *jsiiProxy_NotificationDestination) validateInterpolationForAttributePar
 	return nil
 }
 
+func (n *jsiiProxy_NotificationDestination) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationDestination) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (n *jsiiProxy_NotificationDestination) validatePutConfigParameters(value *N
 }
 
 func (n *jsiiProxy_NotificationDestination) validatePutProviderConfigParameters(value *NotificationDestinationProviderConfig) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationDestination) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

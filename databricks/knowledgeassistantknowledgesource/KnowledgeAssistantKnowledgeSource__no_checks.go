@@ -59,6 +59,10 @@ func (k *jsiiProxy_KnowledgeAssistantKnowledgeSource) validateInterpolationForAt
 	return nil
 }
 
+func (k *jsiiProxy_KnowledgeAssistantKnowledgeSource) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KnowledgeAssistantKnowledgeSource) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (k *jsiiProxy_KnowledgeAssistantKnowledgeSource) validatePutIndexParameters
 }
 
 func (k *jsiiProxy_KnowledgeAssistantKnowledgeSource) validatePutProviderConfigParameters(value *KnowledgeAssistantKnowledgeSourceProviderConfig) error {
+	return nil
+}
+
+func (k *jsiiProxy_KnowledgeAssistantKnowledgeSource) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

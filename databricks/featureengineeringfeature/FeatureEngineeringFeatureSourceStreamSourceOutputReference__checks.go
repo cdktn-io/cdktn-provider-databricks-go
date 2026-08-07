@@ -166,6 +166,14 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) validateSetDataframeSchemaParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) validateSetFilterConditionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -215,6 +223,14 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) v
 }
 
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) validateSetTransformationSqlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

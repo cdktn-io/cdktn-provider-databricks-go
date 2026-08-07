@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksJobs) validatePutProviderConfigParameters(value
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobs) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksJobs_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

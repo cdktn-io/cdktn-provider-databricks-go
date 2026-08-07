@@ -5,14 +5,14 @@ package datadatabricksinstancepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksinstancepool/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksinstancepool/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/instance_pool databricks_instance_pool}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/instance_pool databricks_instance_pool}.
 type DataDatabricksInstancePool interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -90,6 +90,19 @@ type DataDatabricksInstancePool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutPoolInfo(value *DataDatabricksInstancePoolPoolInfo)
 	PutProviderConfig(value *DataDatabricksInstancePoolProviderConfig)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -345,7 +358,7 @@ func (j *jsiiProxy_DataDatabricksInstancePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/instance_pool databricks_instance_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/instance_pool databricks_instance_pool} Data Source.
 func NewDataDatabricksInstancePool(scope constructs.Construct, id *string, config *DataDatabricksInstancePoolConfig) DataDatabricksInstancePool {
 	_init_.Initialize()
 
@@ -363,7 +376,7 @@ func NewDataDatabricksInstancePool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/instance_pool databricks_instance_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/instance_pool databricks_instance_pool} Data Source.
 func NewDataDatabricksInstancePool_Override(d DataDatabricksInstancePool, scope constructs.Construct, id *string, config *DataDatabricksInstancePoolConfig) {
 	_init_.Initialize()
 
@@ -746,6 +759,17 @@ func (d *jsiiProxy_DataDatabricksInstancePool) PutProviderConfig(value *DataData
 		d,
 		"putProviderConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksInstancePool) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

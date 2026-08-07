@@ -59,6 +59,10 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfig) validateInterpolationForAttribu
 	return nil
 }
 
+func (m *jsiiProxy_MwsNetworkConnectivityConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsNetworkConnectivityConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfig) validateOverrideLogicalIdParame
 }
 
 func (m *jsiiProxy_MwsNetworkConnectivityConfig) validatePutEgressConfigParameters(value *MwsNetworkConnectivityConfigEgressConfig) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsNetworkConnectivityConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

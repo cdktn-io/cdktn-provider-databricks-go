@@ -78,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTags", GoMethod: "PutTags"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoStopMins", GoMethod: "ResetAutoStopMins"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChannel", GoMethod: "ResetChannel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterSize", GoMethod: "ResetClusterSize"},

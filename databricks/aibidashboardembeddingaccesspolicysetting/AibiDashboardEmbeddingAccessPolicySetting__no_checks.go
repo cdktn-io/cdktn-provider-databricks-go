@@ -59,6 +59,10 @@ func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validateInterpolat
 	return nil
 }
 
+func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validatePutAibiDas
 }
 
 func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validatePutProviderConfigParameters(value *AibiDashboardEmbeddingAccessPolicySettingProviderConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

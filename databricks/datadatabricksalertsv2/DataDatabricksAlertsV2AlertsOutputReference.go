@@ -5,9 +5,9 @@ package datadatabricksalertsv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertsv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertsv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -43,6 +43,7 @@ type DataDatabricksAlertsV2AlertsOutputReference interface {
 	SetInternalValue(val *DataDatabricksAlertsV2Alerts)
 	LifecycleState() *string
 	OwnerUserName() *string
+	Parameters() DataDatabricksAlertsV2AlertsParametersList
 	ParentPath() *string
 	ProviderConfig() DataDatabricksAlertsV2AlertsProviderConfigOutputReference
 	ProviderConfigInput() interface{}
@@ -246,6 +247,16 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) OwnerUserName() 
 	_jsii_.Get(
 		j,
 		"ownerUserName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) Parameters() DataDatabricksAlertsV2AlertsParametersList {
+	var returns DataDatabricksAlertsV2AlertsParametersList
+	_jsii_.Get(
+		j,
+		"parameters",
 		&returns,
 	)
 	return returns

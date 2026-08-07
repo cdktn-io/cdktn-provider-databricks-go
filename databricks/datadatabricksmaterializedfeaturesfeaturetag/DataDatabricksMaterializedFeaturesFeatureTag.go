@@ -5,14 +5,14 @@ package datadatabricksmaterializedfeaturesfeaturetag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmaterializedfeaturesfeaturetag/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmaterializedfeaturesfeaturetag/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag}.
 type DataDatabricksMaterializedFeaturesFeatureTag interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -85,6 +85,19 @@ type DataDatabricksMaterializedFeaturesFeatureTag interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutProviderConfig(value *DataDatabricksMaterializedFeaturesFeatureTagProviderConfig)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -308,7 +321,7 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag) Value() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTag(scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagConfig) DataDatabricksMaterializedFeaturesFeatureTag {
 	_init_.Initialize()
 
@@ -326,7 +339,7 @@ func NewDataDatabricksMaterializedFeaturesFeatureTag(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTag_Override(d DataDatabricksMaterializedFeaturesFeatureTag, scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagConfig) {
 	_init_.Initialize()
 
@@ -687,6 +700,17 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag) PutProviderConf
 		d,
 		"putProviderConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

@@ -59,6 +59,10 @@ func (r *jsiiProxy_RfaAccessRequestDestinations) validateInterpolationForAttribu
 	return nil
 }
 
+func (r *jsiiProxy_RfaAccessRequestDestinations) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RfaAccessRequestDestinations) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (r *jsiiProxy_RfaAccessRequestDestinations) validatePutProviderConfigParame
 }
 
 func (r *jsiiProxy_RfaAccessRequestDestinations) validatePutSecurableParameters(value *RfaAccessRequestDestinationsSecurable) error {
+	return nil
+}
+
+func (r *jsiiProxy_RfaAccessRequestDestinations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

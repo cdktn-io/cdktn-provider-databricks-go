@@ -59,6 +59,10 @@ func (p *jsiiProxy_Permissions) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (p *jsiiProxy_Permissions) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_Permissions) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (p *jsiiProxy_Permissions) validatePutAccessControlParameters(value interfa
 }
 
 func (p *jsiiProxy_Permissions) validatePutProviderConfigParameters(value *PermissionsProviderConfig) error {
+	return nil
+}
+
+func (p *jsiiProxy_Permissions) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

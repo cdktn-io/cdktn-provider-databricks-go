@@ -59,6 +59,10 @@ func (d *jsiiProxy_Dashboard) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_Dashboard) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_Dashboard) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (d *jsiiProxy_Dashboard) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (d *jsiiProxy_Dashboard) validatePutProviderConfigParameters(value *DashboardProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_Dashboard) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

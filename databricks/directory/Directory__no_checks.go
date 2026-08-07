@@ -59,6 +59,10 @@ func (d *jsiiProxy_Directory) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_Directory) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_Directory) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (d *jsiiProxy_Directory) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (d *jsiiProxy_Directory) validatePutProviderConfigParameters(value *DirectoryProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_Directory) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

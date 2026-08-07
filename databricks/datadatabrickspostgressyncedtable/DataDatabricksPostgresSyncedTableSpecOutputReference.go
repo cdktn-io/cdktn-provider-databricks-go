@@ -5,9 +5,9 @@ package datadatabrickspostgressyncedtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgressyncedtable/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgressyncedtable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -40,6 +40,8 @@ type DataDatabricksPostgresSyncedTableSpecOutputReference interface {
 	ExistingPipelineId() *string
 	SetExistingPipelineId(val *string)
 	ExistingPipelineIdInput() *string
+	ExtraColumns() DataDatabricksPostgresSyncedTableSpecExtraColumnsList
+	ExtraColumnsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksPostgresSyncedTableSpec
@@ -95,12 +97,14 @@ type DataDatabricksPostgresSyncedTableSpecOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutExtraColumns(value interface{})
 	PutNewPipelineSpec(value *DataDatabricksPostgresSyncedTableSpecNewPipelineSpec)
 	PutTypeOverrides(value interface{})
 	ResetAcceleratedSync()
 	ResetBranch()
 	ResetCreateDatabaseObjectsIfMissing()
 	ResetExistingPipelineId()
+	ResetExtraColumns()
 	ResetNewPipelineSpec()
 	ResetPostgresDatabase()
 	ResetPrimaryKeyColumns()
@@ -228,6 +232,26 @@ func (j *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) Existin
 	_jsii_.Get(
 		j,
 		"existingPipelineIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) ExtraColumns() DataDatabricksPostgresSyncedTableSpecExtraColumnsList {
+	var returns DataDatabricksPostgresSyncedTableSpecExtraColumnsList
+	_jsii_.Get(
+		j,
+		"extraColumns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) ExtraColumnsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extraColumnsInput",
 		&returns,
 	)
 	return returns
@@ -781,6 +805,17 @@ func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) Interpo
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) PutExtraColumns(value interface{}) {
+	if err := d.validatePutExtraColumnsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putExtraColumns",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) PutNewPipelineSpec(value *DataDatabricksPostgresSyncedTableSpecNewPipelineSpec) {
 	if err := d.validatePutNewPipelineSpecParameters(value); err != nil {
 		panic(err)
@@ -831,6 +866,14 @@ func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) ResetEx
 	_jsii_.InvokeVoid(
 		d,
 		"resetExistingPipelineId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresSyncedTableSpecOutputReference) ResetExtraColumns() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExtraColumns",
 		nil, // no parameters
 	)
 }

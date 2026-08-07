@@ -122,6 +122,14 @@ func (p *jsiiProxy_PolicyInfo) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (p *jsiiProxy_PolicyInfo) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PolicyInfo) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -266,6 +274,14 @@ func (p *jsiiProxy_PolicyInfo) validatePutRowFilterParameters(value *PolicyInfoR
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PolicyInfo) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

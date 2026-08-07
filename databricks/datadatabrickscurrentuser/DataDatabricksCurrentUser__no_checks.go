@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksCurrentUser) validatePutProviderConfigParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksCurrentUser) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksCurrentUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

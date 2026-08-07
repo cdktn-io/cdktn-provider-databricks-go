@@ -59,6 +59,10 @@ func (s *jsiiProxy_Share) validateInterpolationForAttributeParameters(terraformA
 	return nil
 }
 
+func (s *jsiiProxy_Share) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Share) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (s *jsiiProxy_Share) validatePutObjectParameters(value interface{}) error {
 }
 
 func (s *jsiiProxy_Share) validatePutProviderConfigParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Share) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

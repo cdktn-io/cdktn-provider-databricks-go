@@ -59,6 +59,10 @@ func (d *jsiiProxy_DatabaseSyncedDatabaseTable) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseSyncedDatabaseTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSyncedDatabaseTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (d *jsiiProxy_DatabaseSyncedDatabaseTable) validatePutProviderConfigParamet
 }
 
 func (d *jsiiProxy_DatabaseSyncedDatabaseTable) validatePutSpecParameters(value *DatabaseSyncedDatabaseTableSpec) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSyncedDatabaseTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

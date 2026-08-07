@@ -5,9 +5,9 @@ package datadatabricksaccountnetworkpolicies
 
 
 type DataDatabricksAccountNetworkPoliciesItemsIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_network_policies#scope_qualifier DataDatabricksAccountNetworkPolicies#scope_qualifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_network_policies#scope_qualifier DataDatabricksAccountNetworkPolicies#scope_qualifier}.
 	ScopeQualifier *string `field:"optional" json:"scopeQualifier" yaml:"scopeQualifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/account_network_policies#scopes DataDatabricksAccountNetworkPolicies#scopes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_network_policies#scopes DataDatabricksAccountNetworkPolicies#scopes}.
 	Scopes *[]*string `field:"optional" json:"scopes" yaml:"scopes"`
 }
 

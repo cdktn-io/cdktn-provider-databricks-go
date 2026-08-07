@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksAwsUnityCatalogPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

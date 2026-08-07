@@ -59,6 +59,10 @@ func (m *jsiiProxy_ModelServingProvisionedThroughput) validateInterpolationForAt
 	return nil
 }
 
+func (m *jsiiProxy_ModelServingProvisionedThroughput) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingProvisionedThroughput) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (m *jsiiProxy_ModelServingProvisionedThroughput) validatePutTagsParameters(
 }
 
 func (m *jsiiProxy_ModelServingProvisionedThroughput) validatePutTimeoutsParameters(value *ModelServingProvisionedThroughputTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_ModelServingProvisionedThroughput) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

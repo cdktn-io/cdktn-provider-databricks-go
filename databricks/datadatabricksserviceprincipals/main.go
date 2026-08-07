@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putServicePrincipals", GoMethod: "PutServicePrincipals"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApi", GoMethod: "ResetApi"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplicationIds", GoMethod: "ResetApplicationIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayNameContains", GoMethod: "ResetDisplayNameContains"},

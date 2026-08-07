@@ -59,6 +59,10 @@ func (e *jsiiProxy_ExternalMetadata) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_ExternalMetadata) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExternalMetadata) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (e *jsiiProxy_ExternalMetadata) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (e *jsiiProxy_ExternalMetadata) validatePutProviderConfigParameters(value *ExternalMetadataProviderConfig) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExternalMetadata) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

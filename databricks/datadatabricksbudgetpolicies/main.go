@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilterBy", GoMethod: "PutFilterBy"},
 			_jsii_.MemberMethod{JsiiMethod: "putSortSpec", GoMethod: "PutSortSpec"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilterBy", GoMethod: "ResetFilterBy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPageSize", GoMethod: "ResetPageSize"},

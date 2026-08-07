@@ -5,7 +5,7 @@ package supervisoragenttool
 
 
 type SupervisorAgentToolProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/supervisor_agent_tool#workspace_id SupervisorAgentTool#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/supervisor_agent_tool#workspace_id SupervisorAgentTool#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

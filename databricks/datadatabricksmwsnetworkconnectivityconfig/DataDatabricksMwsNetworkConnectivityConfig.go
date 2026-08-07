@@ -5,14 +5,14 @@ package datadatabricksmwsnetworkconnectivityconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmwsnetworkconnectivityconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmwsnetworkconnectivityconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config}.
 type DataDatabricksMwsNetworkConnectivityConfig interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -102,6 +102,19 @@ type DataDatabricksMwsNetworkConnectivityConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEgressConfig(value *DataDatabricksMwsNetworkConnectivityConfigEgressConfig)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
 	ResetCreationTime()
 	ResetEgressConfig()
@@ -441,7 +454,7 @@ func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) UpdatedTimeInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Data Source.
 func NewDataDatabricksMwsNetworkConnectivityConfig(scope constructs.Construct, id *string, config *DataDatabricksMwsNetworkConnectivityConfigConfig) DataDatabricksMwsNetworkConnectivityConfig {
 	_init_.Initialize()
 
@@ -459,7 +472,7 @@ func NewDataDatabricksMwsNetworkConnectivityConfig(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Data Source.
 func NewDataDatabricksMwsNetworkConnectivityConfig_Override(d DataDatabricksMwsNetworkConnectivityConfig, scope constructs.Construct, id *string, config *DataDatabricksMwsNetworkConnectivityConfigConfig) {
 	_init_.Initialize()
 
@@ -886,6 +899,17 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) PutEgressConfig(v
 		d,
 		"putEgressConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

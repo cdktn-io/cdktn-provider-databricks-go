@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksWarehousesDefaultWarehouseOverride) validatePut
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksWarehousesDefaultWarehouseOverride) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksWarehousesDefaultWarehouseOverride_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validateInterpolat
 	return nil
 }
 
+func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validatePutComplia
 }
 
 func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validatePutProviderConfigParameters(value *ComplianceSecurityProfileWorkspaceSettingProviderConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

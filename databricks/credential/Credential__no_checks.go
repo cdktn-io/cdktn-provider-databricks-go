@@ -59,6 +59,10 @@ func (c *jsiiProxy_Credential) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_Credential) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Credential) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (c *jsiiProxy_Credential) validatePutDatabricksGcpServiceAccountParameters(
 }
 
 func (c *jsiiProxy_Credential) validatePutProviderConfigParameters(value *CredentialProviderConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_Credential) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

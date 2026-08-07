@@ -59,6 +59,10 @@ func (q *jsiiProxy_Query) validateInterpolationForAttributeParameters(terraformA
 	return nil
 }
 
+func (q *jsiiProxy_Query) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_Query) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (q *jsiiProxy_Query) validatePutParameterParameters(value interface{}) erro
 }
 
 func (q *jsiiProxy_Query) validatePutProviderConfigParameters(value *QueryProviderConfig) error {
+	return nil
+}
+
+func (q *jsiiProxy_Query) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

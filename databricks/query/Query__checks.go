@@ -122,6 +122,14 @@ func (q *jsiiProxy_Query) validateInterpolationForAttributeParameters(terraformA
 	return nil
 }
 
+func (q *jsiiProxy_Query) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (q *jsiiProxy_Query) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -244,6 +252,14 @@ func (q *jsiiProxy_Query) validatePutProviderConfigParameters(value *QueryProvid
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (q *jsiiProxy_Query) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

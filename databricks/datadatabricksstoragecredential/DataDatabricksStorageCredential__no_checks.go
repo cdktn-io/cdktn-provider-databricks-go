@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataDatabricksStorageCredential) validatePutStorageCredential
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksStorageCredential) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatabricksStorageCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

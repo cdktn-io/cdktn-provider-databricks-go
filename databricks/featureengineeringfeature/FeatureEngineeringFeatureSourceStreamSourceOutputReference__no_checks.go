@@ -59,6 +59,10 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) validateSetDataframeSchemaParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) validateSetFilterConditionParameters(val *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) v
 }
 
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceStreamSourceOutputReference) validateSetTransformationSqlParameters(val *string) error {
 	return nil
 }
 

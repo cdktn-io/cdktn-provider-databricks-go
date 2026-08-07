@@ -5,14 +5,14 @@ package datadatabricksinstanceprofiles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksinstanceprofiles/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksinstanceprofiles/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/instance_profiles databricks_instance_profiles}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/instance_profiles databricks_instance_profiles}.
 type DataDatabricksInstanceProfiles interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -87,6 +87,19 @@ type DataDatabricksInstanceProfiles interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutInstanceProfiles(value interface{})
 	PutProviderConfig(value *DataDatabricksInstanceProfilesProviderConfig)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	ResetInstanceProfiles()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -322,7 +335,7 @@ func (j *jsiiProxy_DataDatabricksInstanceProfiles) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
 func NewDataDatabricksInstanceProfiles(scope constructs.Construct, id *string, config *DataDatabricksInstanceProfilesConfig) DataDatabricksInstanceProfiles {
 	_init_.Initialize()
 
@@ -340,7 +353,7 @@ func NewDataDatabricksInstanceProfiles(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
 func NewDataDatabricksInstanceProfiles_Override(d DataDatabricksInstanceProfiles, scope constructs.Construct, id *string, config *DataDatabricksInstanceProfilesConfig) {
 	_init_.Initialize()
 
@@ -712,6 +725,17 @@ func (d *jsiiProxy_DataDatabricksInstanceProfiles) PutProviderConfig(value *Data
 		d,
 		"putProviderConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksInstanceProfiles) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
