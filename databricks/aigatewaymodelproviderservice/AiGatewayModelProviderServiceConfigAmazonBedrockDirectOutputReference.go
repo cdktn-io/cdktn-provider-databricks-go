@@ -13,11 +13,8 @@ import (
 
 type AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference interface {
 	cdktn.ComplexObject
-	AwsAccessKeyId() *string
-	SetAwsAccessKeyId(val *string)
-	AwsAccessKeyIdInput() *string
-	AwsSecretAccessKey() AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKeyOutputReference
-	AwsSecretAccessKeyInput() interface{}
+	AwsAccessKey() AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeyOutputReference
+	AwsAccessKeyInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -74,10 +71,9 @@ type AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference inter
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	PutAwsSecretAccessKey(value *AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKey)
+	PutAwsAccessKey(value *AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKey)
 	PutServiceCredential(value *AiGatewayModelProviderServiceConfigAmazonBedrockDirectServiceCredential)
-	ResetAwsAccessKeyId()
-	ResetAwsSecretAccessKey()
+	ResetAwsAccessKey()
 	ResetRegion()
 	ResetServiceCredential()
 	// Produce the Token's value at resolution time.
@@ -95,41 +91,21 @@ type jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputRefer
 	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsAccessKeyId() *string {
-	var returns *string
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsAccessKey() AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeyOutputReference {
+	var returns AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeyOutputReference
 	_jsii_.Get(
 		j,
-		"awsAccessKeyId",
+		"awsAccessKey",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsAccessKeyIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"awsAccessKeyIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsSecretAccessKey() AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKeyOutputReference {
-	var returns AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKeyOutputReference
-	_jsii_.Get(
-		j,
-		"awsSecretAccessKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsSecretAccessKeyInput() interface{} {
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsAccessKeyInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"awsSecretAccessKeyInput",
+		"awsAccessKeyInput",
 		&returns,
 	)
 	return returns
@@ -270,17 +246,6 @@ func NewAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference_Ov
 		"@cdktn/provider-databricks.aiGatewayModelProviderService.AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
-	)
-}
-
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference)SetAwsAccessKeyId(val *string) {
-	if err := j.validateSetAwsAccessKeyIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"awsAccessKeyId",
-		val,
 	)
 }
 
@@ -536,13 +501,13 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputR
 	return returns
 }
 
-func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) PutAwsSecretAccessKey(value *AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKey) {
-	if err := a.validatePutAwsSecretAccessKeyParameters(value); err != nil {
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) PutAwsAccessKey(value *AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKey) {
+	if err := a.validatePutAwsAccessKeyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
-		"putAwsSecretAccessKey",
+		"putAwsAccessKey",
 		[]interface{}{value},
 	)
 }
@@ -558,18 +523,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputR
 	)
 }
 
-func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) ResetAwsAccessKeyId() {
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) ResetAwsAccessKey() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetAwsAccessKeyId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) ResetAwsSecretAccessKey() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetAwsSecretAccessKey",
+		"resetAwsAccessKey",
 		nil, // no parameters
 	)
 }

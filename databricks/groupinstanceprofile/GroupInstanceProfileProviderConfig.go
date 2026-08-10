@@ -5,7 +5,7 @@ package groupinstanceprofile
 
 
 type GroupInstanceProfileProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/group_instance_profile#workspace_id GroupInstanceProfile#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/group_instance_profile#workspace_id GroupInstanceProfile#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

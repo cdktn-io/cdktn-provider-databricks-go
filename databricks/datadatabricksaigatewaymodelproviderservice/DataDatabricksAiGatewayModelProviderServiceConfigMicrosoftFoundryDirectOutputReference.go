@@ -18,11 +18,6 @@ type DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutp
 	BaseUrl() *string
 	SetBaseUrl(val *string)
 	BaseUrlInput() *string
-	ClientId() *string
-	SetClientId(val *string)
-	ClientIdInput() *string
-	ClientSecret() DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectClientSecretOutputReference
-	ClientSecretInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +33,14 @@ type DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutp
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EntraServicePrincipal() DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipalOutputReference
+	EntraServicePrincipalInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	ServiceCredential() DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectServiceCredentialOutputReference
 	ServiceCredentialInput() interface{}
-	TenantId() *string
-	SetTenantId(val *string)
-	TenantIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,14 +74,12 @@ type DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutp
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApiKey(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKey)
-	PutClientSecret(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectClientSecret)
+	PutEntraServicePrincipal(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipal)
 	PutServiceCredential(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectServiceCredential)
 	ResetApiKey()
 	ResetBaseUrl()
-	ResetClientId()
-	ResetClientSecret()
+	ResetEntraServicePrincipal()
 	ResetServiceCredential()
-	ResetTenantId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -143,46 +135,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) ClientId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clientId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) ClientIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clientIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) ClientSecret() DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectClientSecretOutputReference {
-	var returns DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectClientSecretOutputReference
-	_jsii_.Get(
-		j,
-		"clientSecret",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) ClientSecretInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"clientSecretInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -208,6 +160,26 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) EntraServicePrincipal() DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipalOutputReference {
+	var returns DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipalOutputReference
+	_jsii_.Get(
+		j,
+		"entraServicePrincipal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) EntraServicePrincipalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"entraServicePrincipalInput",
 		&returns,
 	)
 	return returns
@@ -248,26 +220,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	_jsii_.Get(
 		j,
 		"serviceCredentialInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) TenantId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tenantId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) TenantIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tenantIdInput",
 		&returns,
 	)
 	return returns
@@ -332,17 +284,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference)SetClientId(val *string) {
-	if err := j.validateSetClientIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clientId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -372,17 +313,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference)SetTenantId(val *string) {
-	if err := j.validateSetTenantIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tenantId",
 		val,
 	)
 }
@@ -606,13 +536,13 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) PutClientSecret(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectClientSecret) {
-	if err := d.validatePutClientSecretParameters(value); err != nil {
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) PutEntraServicePrincipal(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipal) {
+	if err := d.validatePutEntraServicePrincipalParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
-		"putClientSecret",
+		"putEntraServicePrincipal",
 		[]interface{}{value},
 	)
 }
@@ -644,18 +574,10 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) ResetClientId() {
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) ResetEntraServicePrincipal() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetClientId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) ResetClientSecret() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetClientSecret",
+		"resetEntraServicePrincipal",
 		nil, // no parameters
 	)
 }
@@ -664,14 +586,6 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	_jsii_.InvokeVoid(
 		d,
 		"resetServiceCredential",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) ResetTenantId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTenantId",
 		nil, // no parameters
 	)
 }

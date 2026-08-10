@@ -5,11 +5,11 @@ package databasesynceddatabasetable
 
 
 type DatabaseSyncedDatabaseTableSpecTypeOverrides struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/database_synced_database_table#column_name DatabaseSyncedDatabaseTable#column_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/database_synced_database_table#column_name DatabaseSyncedDatabaseTable#column_name}.
 	ColumnName *string `field:"required" json:"columnName" yaml:"columnName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/database_synced_database_table#pg_type DatabaseSyncedDatabaseTable#pg_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/database_synced_database_table#pg_type DatabaseSyncedDatabaseTable#pg_type}.
 	PgType *string `field:"required" json:"pgType" yaml:"pgType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/database_synced_database_table#size DatabaseSyncedDatabaseTable#size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/database_synced_database_table#size DatabaseSyncedDatabaseTable#size}.
 	Size *float64 `field:"optional" json:"size" yaml:"size"`
 }
 

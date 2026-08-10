@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectOutputReference) validatePutAwsSecretAccessKeyParameters(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsSecretAccessKey) error {
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectOutputReference) validatePutAwsAccessKeyParameters(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey) error {
 	return nil
 }
 
@@ -56,10 +56,6 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 }
 
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectOutputReference) validateSetAwsAccessKeyIdParameters(val *string) error {
 	return nil
 }
 

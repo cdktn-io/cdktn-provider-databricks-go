@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/pipeline#start_date Pipeline#start_date}.
 	StartDate *string `field:"optional" json:"startDate" yaml:"startDate"`
 }
 

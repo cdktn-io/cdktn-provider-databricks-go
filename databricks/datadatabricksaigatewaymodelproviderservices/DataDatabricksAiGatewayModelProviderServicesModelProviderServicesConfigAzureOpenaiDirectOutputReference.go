@@ -18,11 +18,6 @@ type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzur
 	BaseUrl() *string
 	SetBaseUrl(val *string)
 	BaseUrlInput() *string
-	ClientId() *string
-	SetClientId(val *string)
-	ClientIdInput() *string
-	ClientSecret() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectClientSecretOutputReference
-	ClientSecretInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +33,14 @@ type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzur
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EntraServicePrincipal() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalOutputReference
+	EntraServicePrincipalInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	ServiceCredential() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectServiceCredentialOutputReference
 	ServiceCredentialInput() interface{}
-	TenantId() *string
-	SetTenantId(val *string)
-	TenantIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,14 +74,12 @@ type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzur
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApiKey(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectApiKey)
-	PutClientSecret(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectClientSecret)
+	PutEntraServicePrincipal(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal)
 	PutServiceCredential(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectServiceCredential)
 	ResetApiKey()
 	ResetBaseUrl()
-	ResetClientId()
-	ResetClientSecret()
+	ResetEntraServicePrincipal()
 	ResetServiceCredential()
-	ResetTenantId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -143,46 +135,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) ClientId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clientId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) ClientIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clientIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) ClientSecret() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectClientSecretOutputReference {
-	var returns DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectClientSecretOutputReference
-	_jsii_.Get(
-		j,
-		"clientSecret",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) ClientSecretInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"clientSecretInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -208,6 +160,26 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) EntraServicePrincipal() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalOutputReference {
+	var returns DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalOutputReference
+	_jsii_.Get(
+		j,
+		"entraServicePrincipal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) EntraServicePrincipalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"entraServicePrincipalInput",
 		&returns,
 	)
 	return returns
@@ -248,26 +220,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	_jsii_.Get(
 		j,
 		"serviceCredentialInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) TenantId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tenantId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) TenantIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tenantIdInput",
 		&returns,
 	)
 	return returns
@@ -332,17 +284,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference)SetClientId(val *string) {
-	if err := j.validateSetClientIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clientId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -372,17 +313,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference)SetTenantId(val *string) {
-	if err := j.validateSetTenantIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tenantId",
 		val,
 	)
 }
@@ -606,13 +536,13 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) PutClientSecret(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectClientSecret) {
-	if err := d.validatePutClientSecretParameters(value); err != nil {
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) PutEntraServicePrincipal(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal) {
+	if err := d.validatePutEntraServicePrincipalParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
-		"putClientSecret",
+		"putEntraServicePrincipal",
 		[]interface{}{value},
 	)
 }
@@ -644,18 +574,10 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) ResetClientId() {
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) ResetEntraServicePrincipal() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetClientId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) ResetClientSecret() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetClientSecret",
+		"resetEntraServicePrincipal",
 		nil, // no parameters
 	)
 }
@@ -664,14 +586,6 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	_jsii_.InvokeVoid(
 		d,
 		"resetServiceCredential",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectOutputReference) ResetTenantId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTenantId",
 		nil, // no parameters
 	)
 }

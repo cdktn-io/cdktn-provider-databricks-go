@@ -104,7 +104,7 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutp
 	return nil
 }
 
-func (a *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validatePutClientSecretParameters(value *AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectClientSecret) error {
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validatePutEntraServicePrincipalParameters(value *AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipal) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -135,14 +135,6 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutp
 }
 
 func (j *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetBaseUrlParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetClientIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,14 +226,6 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutp
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AiGatewayModelProviderServiceConfigMicrosoftFoundryDirect; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetTenantIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

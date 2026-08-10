@@ -51,7 +51,7 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutp
 	return nil
 }
 
-func (a *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validatePutClientSecretParameters(value *AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectClientSecret) error {
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validatePutEntraServicePrincipalParameters(value *AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipal) error {
 	return nil
 }
 
@@ -67,10 +67,6 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutp
 	return nil
 }
 
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetClientIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -80,10 +76,6 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutp
 }
 
 func (j *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetTenantIdParameters(val *string) error {
 	return nil
 }
 

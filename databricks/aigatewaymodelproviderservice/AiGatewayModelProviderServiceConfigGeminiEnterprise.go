@@ -5,7 +5,7 @@ package aigatewaymodelproviderservice
 
 
 type AiGatewayModelProviderServiceConfigGeminiEnterprise struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}.
 	Direct *AiGatewayModelProviderServiceConfigGeminiEnterpriseDirect `field:"optional" json:"direct" yaml:"direct"`
 }
 

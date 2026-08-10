@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo databricks_repo}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo databricks_repo}.
 type Repo interface {
 	cdktn.TerraformResource
 	Branch() *string
@@ -45,6 +45,9 @@ type Repo interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GitCredentialId() *float64
+	SetGitCredentialId(val *float64)
+	GitCredentialIdInput() *float64
 	GitProvider() *string
 	SetGitProvider(val *string)
 	GitProviderInput() *string
@@ -183,6 +186,7 @@ type Repo interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetBranch()
 	ResetCommitHash()
+	ResetGitCredentialId()
 	ResetGitProvider()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -334,6 +338,26 @@ func (j *jsiiProxy_Repo) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repo) GitCredentialId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"gitCredentialId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repo) GitCredentialIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"gitCredentialIdInput",
 		&returns,
 	)
 	return returns
@@ -570,7 +594,7 @@ func (j *jsiiProxy_Repo) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo databricks_repo} Resource.
 func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	_init_.Initialize()
 
@@ -588,7 +612,7 @@ func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo databricks_repo} Resource.
 func NewRepo_Override(r Repo, scope constructs.Construct, id *string, config *RepoConfig) {
 	_init_.Initialize()
 
@@ -655,6 +679,17 @@ func (j *jsiiProxy_Repo)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Repo)SetGitCredentialId(val *float64) {
+	if err := j.validateSetGitCredentialIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gitCredentialId",
 		val,
 	)
 }
@@ -1158,6 +1193,14 @@ func (r *jsiiProxy_Repo) ResetCommitHash() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetCommitHash",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repo) ResetGitCredentialId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGitCredentialId",
 		nil, // no parameters
 	)
 }

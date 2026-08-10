@@ -51,7 +51,7 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validatePutClientSecretParameters(value *AiGatewayModelProviderServiceConfigAzureOpenaiDirectClientSecret) error {
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validatePutEntraServicePrincipalParameters(value *AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePrincipal) error {
 	return nil
 }
 
@@ -67,10 +67,6 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validateSetClientIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -80,10 +76,6 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputRef
 }
 
 func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validateSetTenantIdParameters(val *string) error {
 	return nil
 }
 

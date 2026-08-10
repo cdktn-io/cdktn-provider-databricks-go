@@ -5,9 +5,9 @@ package datadatabricksaigatewaymodelservice
 
 
 type DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsExternalModelConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_gateway_model_service#model_provider_service DataDatabricksAiGatewayModelService#model_provider_service}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/ai_gateway_model_service#model_provider_service DataDatabricksAiGatewayModelService#model_provider_service}.
 	ModelProviderService *string `field:"required" json:"modelProviderService" yaml:"modelProviderService"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_gateway_model_service#target DataDatabricksAiGatewayModelService#target}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/ai_gateway_model_service#target DataDatabricksAiGatewayModelService#target}.
 	Target *DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTarget `field:"required" json:"target" yaml:"target"`
 }
 

@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validatePutClientSecretParameters(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectClientSecret) error {
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validatePutEntraServicePrincipalParameters(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipal) error {
 	return nil
 }
 
@@ -67,10 +67,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetClientIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -80,10 +76,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 }
 
 func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputReference) validateSetTenantIdParameters(val *string) error {
 	return nil
 }
 

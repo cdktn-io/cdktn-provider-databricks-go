@@ -5,7 +5,7 @@ package datadatabricksaccountsettingv2
 
 
 type DataDatabricksAccountSettingV2OperationalEmailCustomRecipient struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_setting_v2#email DataDatabricksAccountSettingV2#email}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/account_setting_v2#email DataDatabricksAccountSettingV2#email}.
 	Email *string `field:"optional" json:"email" yaml:"email"`
 }
 

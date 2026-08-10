@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/postgres_cdf_configs databricks_postgres_cdf_configs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/postgres_cdf_configs databricks_postgres_cdf_configs}.
 type DataDatabricksPostgresCdfConfigs interface {
 	cdktn.TerraformDataSource
 	CdfConfigs() DataDatabricksPostgresCdfConfigsCdfConfigsList
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataDatabricksPostgresCdfConfigs) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/postgres_cdf_configs databricks_postgres_cdf_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/postgres_cdf_configs databricks_postgres_cdf_configs} Data Source.
 func NewDataDatabricksPostgresCdfConfigs(scope constructs.Construct, id *string, config *DataDatabricksPostgresCdfConfigsConfig) DataDatabricksPostgresCdfConfigs {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataDatabricksPostgresCdfConfigs(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/postgres_cdf_configs databricks_postgres_cdf_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/postgres_cdf_configs databricks_postgres_cdf_configs} Data Source.
 func NewDataDatabricksPostgresCdfConfigs_Override(d DataDatabricksPostgresCdfConfigs, scope constructs.Construct, id *string, config *DataDatabricksPostgresCdfConfigsConfig) {
 	_init_.Initialize()
 

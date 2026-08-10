@@ -104,7 +104,7 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validatePutClientSecretParameters(value *AiGatewayModelProviderServiceConfigAzureOpenaiDirectClientSecret) error {
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validatePutEntraServicePrincipalParameters(value *AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePrincipal) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -135,14 +135,6 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputRef
 }
 
 func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validateSetBaseUrlParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validateSetClientIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,14 +226,6 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputRef
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AiGatewayModelProviderServiceConfigAzureOpenaiDirect; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference) validateSetTenantIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

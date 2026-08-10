@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
 type RfaAccessRequestDestinations interface {
 	cdktn.TerraformResource
 	AreAnyDestinationsHidden() cdktn.IResolvable
@@ -459,7 +459,7 @@ func (j *jsiiProxy_RfaAccessRequestDestinations) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
 func NewRfaAccessRequestDestinations(scope constructs.Construct, id *string, config *RfaAccessRequestDestinationsConfig) RfaAccessRequestDestinations {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewRfaAccessRequestDestinations(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
 func NewRfaAccessRequestDestinations_Override(r RfaAccessRequestDestinations, scope constructs.Construct, id *string, config *RfaAccessRequestDestinationsConfig) {
 	_init_.Initialize()
 

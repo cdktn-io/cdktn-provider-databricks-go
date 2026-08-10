@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_federation_policy databricks_account_federation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/account_federation_policy databricks_account_federation_policy}.
 type DataDatabricksAccountFederationPolicy interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_federation_policy databricks_account_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/account_federation_policy databricks_account_federation_policy} Data Source.
 func NewDataDatabricksAccountFederationPolicy(scope constructs.Construct, id *string, config *DataDatabricksAccountFederationPolicyConfig) DataDatabricksAccountFederationPolicy {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataDatabricksAccountFederationPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/account_federation_policy databricks_account_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/account_federation_policy databricks_account_federation_policy} Data Source.
 func NewDataDatabricksAccountFederationPolicy_Override(d DataDatabricksAccountFederationPolicy, scope constructs.Construct, id *string, config *DataDatabricksAccountFederationPolicyConfig) {
 	_init_.Initialize()
 

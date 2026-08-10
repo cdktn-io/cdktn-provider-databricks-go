@@ -93,7 +93,7 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputR
 	return nil
 }
 
-func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) validatePutAwsSecretAccessKeyParameters(value *AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKey) error {
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) validatePutAwsAccessKeyParameters(value *AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKey) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -118,14 +118,6 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputR
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) validateSetAwsAccessKeyIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

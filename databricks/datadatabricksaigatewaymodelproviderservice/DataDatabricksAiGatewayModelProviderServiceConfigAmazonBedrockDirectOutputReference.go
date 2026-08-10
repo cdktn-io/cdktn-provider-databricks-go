@@ -13,11 +13,8 @@ import (
 
 type DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference interface {
 	cdktn.ComplexObject
-	AwsAccessKeyId() *string
-	SetAwsAccessKeyId(val *string)
-	AwsAccessKeyIdInput() *string
-	AwsSecretAccessKey() DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKeyOutputReference
-	AwsSecretAccessKeyInput() interface{}
+	AwsAccessKey() DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeyOutputReference
+	AwsAccessKeyInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -74,10 +71,9 @@ type DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputR
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	PutAwsSecretAccessKey(value *DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKey)
+	PutAwsAccessKey(value *DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKey)
 	PutServiceCredential(value *DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectServiceCredential)
-	ResetAwsAccessKeyId()
-	ResetAwsSecretAccessKey()
+	ResetAwsAccessKey()
 	ResetRegion()
 	ResetServiceCredential()
 	// Produce the Token's value at resolution time.
@@ -95,41 +91,21 @@ type jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDir
 	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsAccessKeyId() *string {
-	var returns *string
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsAccessKey() DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeyOutputReference {
+	var returns DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeyOutputReference
 	_jsii_.Get(
 		j,
-		"awsAccessKeyId",
+		"awsAccessKey",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsAccessKeyIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"awsAccessKeyIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsSecretAccessKey() DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKeyOutputReference {
-	var returns DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKeyOutputReference
-	_jsii_.Get(
-		j,
-		"awsSecretAccessKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsSecretAccessKeyInput() interface{} {
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) AwsAccessKeyInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"awsSecretAccessKeyInput",
+		"awsAccessKeyInput",
 		&returns,
 	)
 	return returns
@@ -270,17 +246,6 @@ func NewDataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutp
 		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference)SetAwsAccessKeyId(val *string) {
-	if err := j.validateSetAwsAccessKeyIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"awsAccessKeyId",
-		val,
 	)
 }
 
@@ -536,13 +501,13 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedroc
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) PutAwsSecretAccessKey(value *DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsSecretAccessKey) {
-	if err := d.validatePutAwsSecretAccessKeyParameters(value); err != nil {
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) PutAwsAccessKey(value *DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKey) {
+	if err := d.validatePutAwsAccessKeyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
-		"putAwsSecretAccessKey",
+		"putAwsAccessKey",
 		[]interface{}{value},
 	)
 }
@@ -558,18 +523,10 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedroc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) ResetAwsAccessKeyId() {
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) ResetAwsAccessKey() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetAwsAccessKeyId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReference) ResetAwsSecretAccessKey() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAwsSecretAccessKey",
+		"resetAwsAccessKey",
 		nil, // no parameters
 	)
 }

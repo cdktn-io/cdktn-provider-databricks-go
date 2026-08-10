@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service}.
 type DataDatabricksAiGatewayMcpService interface {
 	cdktn.TerraformDataSource
 	BrowseOnly() cdktn.IResolvable
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DataDatabricksAiGatewayMcpService) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Data Source.
 func NewDataDatabricksAiGatewayMcpService(scope constructs.Construct, id *string, config *DataDatabricksAiGatewayMcpServiceConfig) DataDatabricksAiGatewayMcpService {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewDataDatabricksAiGatewayMcpService(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Data Source.
 func NewDataDatabricksAiGatewayMcpService_Override(d DataDatabricksAiGatewayMcpService, scope constructs.Construct, id *string, config *DataDatabricksAiGatewayMcpServiceConfig) {
 	_init_.Initialize()
 

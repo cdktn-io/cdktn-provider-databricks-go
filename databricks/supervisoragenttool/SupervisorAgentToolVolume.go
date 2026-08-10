@@ -5,7 +5,7 @@ package supervisoragenttool
 
 
 type SupervisorAgentToolVolume struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_query databricks_sql_query}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query databricks_sql_query}.
 type SqlQuery interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -653,7 +653,7 @@ func (j *jsiiProxy_SqlQuery) UpdatedAtInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_query databricks_sql_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query databricks_sql_query} Resource.
 func NewSqlQuery(scope constructs.Construct, id *string, config *SqlQueryConfig) SqlQuery {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewSqlQuery(scope constructs.Construct, id *string, config *SqlQueryConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_query databricks_sql_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query databricks_sql_query} Resource.
 func NewSqlQuery_Override(s SqlQuery, scope constructs.Construct, id *string, config *SqlQueryConfig) {
 	_init_.Initialize()
 
