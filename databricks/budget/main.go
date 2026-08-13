@@ -71,7 +71,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceType", GoMethod: "ResetResourceType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpdateTime", GoMethod: "ResetUpdateTime"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceType", GoGetter: "ResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceTypeInput", GoGetter: "ResourceTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -209,18 +212,25 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "principalOverrides", GoGetter: "PrincipalOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "principalOverridesInput", GoGetter: "PrincipalOverridesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putActionConfigurations", GoMethod: "PutActionConfigurations"},
+			_jsii_.MemberMethod{JsiiMethod: "putPrincipalOverrides", GoMethod: "PutPrincipalOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "quantityThreshold", GoGetter: "QuantityThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "quantityThresholdInput", GoGetter: "QuantityThresholdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "quantityType", GoGetter: "QuantityType"},
 			_jsii_.MemberProperty{JsiiProperty: "quantityTypeInput", GoGetter: "QuantityTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActionConfigurations", GoMethod: "ResetActionConfigurations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlertConfigurationId", GoMethod: "ResetAlertConfigurationId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrincipalOverrides", GoMethod: "ResetPrincipalOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQuantityThreshold", GoMethod: "ResetQuantityThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQuantityType", GoMethod: "ResetQuantityType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScopeType", GoMethod: "ResetScopeType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimePeriod", GoMethod: "ResetTimePeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTriggerType", GoMethod: "ResetTriggerType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "scopeType", GoGetter: "ScopeType"},
+			_jsii_.MemberProperty{JsiiProperty: "scopeTypeInput", GoGetter: "ScopeTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "timePeriod", GoGetter: "TimePeriod"},
@@ -231,6 +241,70 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetAlertConfigurationsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides",
+		reflect.TypeOf((*BudgetAlertConfigurationsPrincipalOverrides)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList",
+		reflect.TypeOf((*BudgetAlertConfigurationsPrincipalOverridesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BudgetAlertConfigurationsPrincipalOverridesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference",
+		reflect.TypeOf((*BudgetAlertConfigurationsPrincipalOverridesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "overrideThreshold", GoGetter: "OverrideThreshold"},
+			_jsii_.MemberProperty{JsiiProperty: "overrideThresholdInput", GoGetter: "OverrideThresholdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "principalId", GoGetter: "PrincipalId"},
+			_jsii_.MemberProperty{JsiiProperty: "principalIdInput", GoGetter: "PrincipalIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOverrideThreshold", GoMethod: "ResetOverrideThreshold"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrincipalId", GoMethod: "ResetPrincipalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BudgetAlertConfigurationsPrincipalOverridesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

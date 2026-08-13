@@ -5,15 +5,15 @@ package job
 
 
 type JobEnvironmentSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/job#base_environment Job#base_environment}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/job#base_environment Job#base_environment}.
 	BaseEnvironment *string `field:"optional" json:"baseEnvironment" yaml:"baseEnvironment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/job#client Job#client}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/job#client Job#client}.
 	Client *string `field:"optional" json:"client" yaml:"client"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/job#dependencies Job#dependencies}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/job#dependencies Job#dependencies}.
 	Dependencies *[]*string `field:"optional" json:"dependencies" yaml:"dependencies"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/job#environment_version Job#environment_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/job#environment_version Job#environment_version}.
 	EnvironmentVersion *string `field:"optional" json:"environmentVersion" yaml:"environmentVersion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/job#java_dependencies Job#java_dependencies}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/job#java_dependencies Job#java_dependencies}.
 	JavaDependencies *[]*string `field:"optional" json:"javaDependencies" yaml:"javaDependencies"`
 }
 

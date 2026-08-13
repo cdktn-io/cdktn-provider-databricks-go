@@ -5,7 +5,7 @@ package datadatabricksdisasterrecoveryfailovergroups
 
 
 type DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroups struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/disaster_recovery_failover_groups#name DataDatabricksDisasterRecoveryFailoverGroups#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/disaster_recovery_failover_groups#name DataDatabricksDisasterRecoveryFailoverGroups#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

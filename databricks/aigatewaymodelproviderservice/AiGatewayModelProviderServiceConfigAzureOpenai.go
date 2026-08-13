@@ -5,7 +5,7 @@ package aigatewaymodelproviderservice
 
 
 type AiGatewayModelProviderServiceConfigAzureOpenai struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}.
 	Direct *AiGatewayModelProviderServiceConfigAzureOpenaiDirect `field:"optional" json:"direct" yaml:"direct"`
 }
 

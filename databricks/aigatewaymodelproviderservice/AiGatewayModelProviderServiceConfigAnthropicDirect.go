@@ -5,7 +5,7 @@ package aigatewaymodelproviderservice
 
 
 type AiGatewayModelProviderServiceConfigAnthropicDirect struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}.
 	ApiKey *AiGatewayModelProviderServiceConfigAnthropicDirectApiKey `field:"optional" json:"apiKey" yaml:"apiKey"`
 }
 

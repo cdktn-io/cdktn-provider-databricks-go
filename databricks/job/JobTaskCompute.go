@@ -5,7 +5,7 @@ package job
 
 
 type JobTaskCompute struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/job#hardware_accelerator Job#hardware_accelerator}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/job#hardware_accelerator Job#hardware_accelerator}.
 	HardwareAccelerator *string `field:"optional" json:"hardwareAccelerator" yaml:"hardwareAccelerator"`
 }
 

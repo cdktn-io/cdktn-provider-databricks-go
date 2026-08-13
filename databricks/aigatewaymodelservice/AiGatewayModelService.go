@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service}.
 type AiGatewayModelService interface {
 	cdktn.TerraformResource
 	BrowseOnly() cdktn.IResolvable
@@ -596,7 +596,7 @@ func (j *jsiiProxy_AiGatewayModelService) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service} Resource.
 func NewAiGatewayModelService(scope constructs.Construct, id *string, config *AiGatewayModelServiceConfig) AiGatewayModelService {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func NewAiGatewayModelService(scope constructs.Construct, id *string, config *Ai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service} Resource.
 func NewAiGatewayModelService_Override(a AiGatewayModelService, scope constructs.Construct, id *string, config *AiGatewayModelServiceConfig) {
 	_init_.Initialize()
 

@@ -22,9 +22,9 @@ type DataDatabricksRecipientsConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}.
 	ProviderConfig *DataDatabricksRecipientsProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}.
 	Recipients *[]*string `field:"optional" json:"recipients" yaml:"recipients"`
 }
 

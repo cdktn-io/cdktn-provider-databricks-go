@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/group_role databricks_group_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/group_role databricks_group_role}.
 type GroupRole interface {
 	cdktn.TerraformResource
 	Api() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GroupRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/group_role databricks_group_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/group_role databricks_group_role} Resource.
 func NewGroupRole(scope constructs.Construct, id *string, config *GroupRoleConfig) GroupRole {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGroupRole(scope constructs.Construct, id *string, config *GroupRoleConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/group_role databricks_group_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/group_role databricks_group_role} Resource.
 func NewGroupRole_Override(g GroupRole, scope constructs.Construct, id *string, config *GroupRoleConfig) {
 	_init_.Initialize()
 

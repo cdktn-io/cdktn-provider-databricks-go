@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info databricks_policy_info}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info databricks_policy_info}.
 type PolicyInfo interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -52,6 +52,8 @@ type PolicyInfo interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Grant() PolicyInfoGrantOutputReference
+	GrantInput() interface{}
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -181,6 +183,7 @@ type PolicyInfo interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutColumnMask(value *PolicyInfoColumnMask)
+	PutGrant(value *PolicyInfoGrant)
 	PutMatchColumns(value interface{})
 	PutProviderConfig(value *PolicyInfoProviderConfig)
 	PutRowFilter(value *PolicyInfoRowFilter)
@@ -200,6 +203,7 @@ type PolicyInfo interface {
 	ResetColumnMask()
 	ResetComment()
 	ResetExceptPrincipals()
+	ResetGrant()
 	ResetMatchColumns()
 	ResetName()
 	ResetOnSecurableFullname()
@@ -412,6 +416,26 @@ func (j *jsiiProxy_PolicyInfo) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyInfo) Grant() PolicyInfoGrantOutputReference {
+	var returns PolicyInfoGrantOutputReference
+	_jsii_.Get(
+		j,
+		"grant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyInfo) GrantInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"grantInput",
 		&returns,
 	)
 	return returns
@@ -708,7 +732,7 @@ func (j *jsiiProxy_PolicyInfo) WhenConditionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info databricks_policy_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info databricks_policy_info} Resource.
 func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoConfig) PolicyInfo {
 	_init_.Initialize()
 
@@ -726,7 +750,7 @@ func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info databricks_policy_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info databricks_policy_info} Resource.
 func NewPolicyInfo_Override(p PolicyInfo, scope constructs.Construct, id *string, config *PolicyInfoConfig) {
 	_init_.Initialize()
 
@@ -1284,6 +1308,17 @@ func (p *jsiiProxy_PolicyInfo) PutColumnMask(value *PolicyInfoColumnMask) {
 	)
 }
 
+func (p *jsiiProxy_PolicyInfo) PutGrant(value *PolicyInfoGrant) {
+	if err := p.validatePutGrantParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putGrant",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PolicyInfo) PutMatchColumns(value interface{}) {
 	if err := p.validatePutMatchColumnsParameters(value); err != nil {
 		panic(err)
@@ -1348,6 +1383,14 @@ func (p *jsiiProxy_PolicyInfo) ResetExceptPrincipals() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetExceptPrincipals",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyInfo) ResetGrant() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGrant",
 		nil, // no parameters
 	)
 }

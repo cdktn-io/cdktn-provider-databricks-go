@@ -5,7 +5,7 @@ package datadatabrickssqlwarehouses
 
 
 type DataDatabricksSqlWarehousesProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/sql_warehouses#workspace_id DataDatabricksSqlWarehouses#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/sql_warehouses#workspace_id DataDatabricksSqlWarehouses#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

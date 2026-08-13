@@ -143,6 +143,10 @@ func (j *jsiiProxy_Budget) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Budget) validateSetResourceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Budget) validateSetUpdateTimeParameters(val *float64) error {
 	return nil
 }

@@ -83,6 +83,10 @@ func (p *jsiiProxy_PolicyInfo) validatePutColumnMaskParameters(value *PolicyInfo
 	return nil
 }
 
+func (p *jsiiProxy_PolicyInfo) validatePutGrantParameters(value *PolicyInfoGrant) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyInfo) validatePutMatchColumnsParameters(value interface{}) error {
 	return nil
 }

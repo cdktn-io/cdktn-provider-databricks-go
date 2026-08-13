@@ -22,17 +22,17 @@ type PostgresCdfConfigConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/postgres_cdf_config#catalog PostgresCdfConfig#catalog}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/postgres_cdf_config#catalog PostgresCdfConfig#catalog}.
 	Catalog *string `field:"required" json:"catalog" yaml:"catalog"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/postgres_cdf_config#parent PostgresCdfConfig#parent}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/postgres_cdf_config#parent PostgresCdfConfig#parent}.
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/postgres_cdf_config#postgres_schema PostgresCdfConfig#postgres_schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/postgres_cdf_config#postgres_schema PostgresCdfConfig#postgres_schema}.
 	PostgresSchema *string `field:"required" json:"postgresSchema" yaml:"postgresSchema"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/postgres_cdf_config#schema PostgresCdfConfig#schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/postgres_cdf_config#schema PostgresCdfConfig#schema}.
 	Schema *string `field:"required" json:"schema" yaml:"schema"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/postgres_cdf_config#cdf_config_id PostgresCdfConfig#cdf_config_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/postgres_cdf_config#cdf_config_id PostgresCdfConfig#cdf_config_id}.
 	CdfConfigId *string `field:"optional" json:"cdfConfigId" yaml:"cdfConfigId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/postgres_cdf_config#provider_config PostgresCdfConfig#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/postgres_cdf_config#provider_config PostgresCdfConfig#provider_config}.
 	ProviderConfig *PostgresCdfConfigProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

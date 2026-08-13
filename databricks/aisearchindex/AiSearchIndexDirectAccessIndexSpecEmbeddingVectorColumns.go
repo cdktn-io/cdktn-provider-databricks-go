@@ -5,9 +5,9 @@ package aisearchindex
 
 
 type AiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/ai_search_index#embedding_dimension AiSearchIndex#embedding_dimension}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/ai_search_index#embedding_dimension AiSearchIndex#embedding_dimension}.
 	EmbeddingDimension *float64 `field:"optional" json:"embeddingDimension" yaml:"embeddingDimension"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/ai_search_index#name AiSearchIndex#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/ai_search_index#name AiSearchIndex#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

@@ -5,11 +5,11 @@ package datadatabricksappspace
 
 
 type DataDatabricksAppSpaceResourcesSecret struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/app_space#key DataDatabricksAppSpace#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/app_space#key DataDatabricksAppSpace#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}.
 	Permission *string `field:"required" json:"permission" yaml:"permission"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/app_space#scope DataDatabricksAppSpace#scope}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/app_space#scope DataDatabricksAppSpace#scope}.
 	Scope *string `field:"required" json:"scope" yaml:"scope"`
 }
 

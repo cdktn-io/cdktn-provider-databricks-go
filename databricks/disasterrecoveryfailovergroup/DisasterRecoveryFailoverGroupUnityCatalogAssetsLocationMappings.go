@@ -5,9 +5,9 @@ package disasterrecoveryfailovergroup
 
 
 type DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/disaster_recovery_failover_group#name DisasterRecoveryFailoverGroup#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disaster_recovery_failover_group#name DisasterRecoveryFailoverGroup#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/disaster_recovery_failover_group#uri_by_region DisasterRecoveryFailoverGroup#uri_by_region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disaster_recovery_failover_group#uri_by_region DisasterRecoveryFailoverGroup#uri_by_region}.
 	UriByRegion interface{} `field:"required" json:"uriByRegion" yaml:"uriByRegion"`
 }
 

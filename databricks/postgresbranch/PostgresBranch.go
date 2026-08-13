@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/postgres_branch databricks_postgres_branch}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/postgres_branch databricks_postgres_branch}.
 type PostgresBranch interface {
 	cdktn.TerraformResource
 	BranchId() *string
@@ -541,7 +541,7 @@ func (j *jsiiProxy_PostgresBranch) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/postgres_branch databricks_postgres_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/postgres_branch databricks_postgres_branch} Resource.
 func NewPostgresBranch(scope constructs.Construct, id *string, config *PostgresBranchConfig) PostgresBranch {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewPostgresBranch(scope constructs.Construct, id *string, config *PostgresB
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/postgres_branch databricks_postgres_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/postgres_branch databricks_postgres_branch} Resource.
 func NewPostgresBranch_Override(p PostgresBranch, scope constructs.Construct, id *string, config *PostgresBranchConfig) {
 	_init_.Initialize()
 

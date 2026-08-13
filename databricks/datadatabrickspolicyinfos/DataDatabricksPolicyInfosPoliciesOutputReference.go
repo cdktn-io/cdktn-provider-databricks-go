@@ -36,6 +36,7 @@ type DataDatabricksPolicyInfosPoliciesOutputReference interface {
 	ForSecurableType() *string
 	// Experimental.
 	Fqn() *string
+	Grant() DataDatabricksPolicyInfosPoliciesGrantOutputReference
 	Id() *string
 	InternalValue() *DataDatabricksPolicyInfosPolicies
 	SetInternalValue(val *DataDatabricksPolicyInfosPolicies)
@@ -201,6 +202,16 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) Grant() DataDatabricksPolicyInfosPoliciesGrantOutputReference {
+	var returns DataDatabricksPolicyInfosPoliciesGrantOutputReference
+	_jsii_.Get(
+		j,
+		"grant",
 		&returns,
 	)
 	return returns

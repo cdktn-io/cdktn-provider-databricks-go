@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/policy_info databricks_policy_info}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/policy_info databricks_policy_info}.
 type DataDatabricksPolicyInfo interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -41,6 +41,7 @@ type DataDatabricksPolicyInfo interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Grant() DataDatabricksPolicyInfoGrantOutputReference
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -279,6 +280,16 @@ func (j *jsiiProxy_DataDatabricksPolicyInfo) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksPolicyInfo) Grant() DataDatabricksPolicyInfoGrantOutputReference {
+	var returns DataDatabricksPolicyInfoGrantOutputReference
+	_jsii_.Get(
+		j,
+		"grant",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksPolicyInfo) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -510,7 +521,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfo) WhenCondition() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
 func NewDataDatabricksPolicyInfo(scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) DataDatabricksPolicyInfo {
 	_init_.Initialize()
 
@@ -528,7 +539,7 @@ func NewDataDatabricksPolicyInfo(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
 func NewDataDatabricksPolicyInfo_Override(d DataDatabricksPolicyInfo, scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) {
 	_init_.Initialize()
 

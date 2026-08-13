@@ -5,7 +5,7 @@ package qualitymonitorv2
 
 
 type QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}.
 	ColumnNames *[]*string `field:"optional" json:"columnNames" yaml:"columnNames"`
 }
 

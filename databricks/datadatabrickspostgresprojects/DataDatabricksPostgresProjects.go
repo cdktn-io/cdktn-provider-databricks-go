@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/postgres_projects databricks_postgres_projects}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/postgres_projects databricks_postgres_projects}.
 type DataDatabricksPostgresProjects interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataDatabricksPostgresProjects) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
 func NewDataDatabricksPostgresProjects(scope constructs.Construct, id *string, config *DataDatabricksPostgresProjectsConfig) DataDatabricksPostgresProjects {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataDatabricksPostgresProjects(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/postgres_projects databricks_postgres_projects} Data Source.
 func NewDataDatabricksPostgresProjects_Override(d DataDatabricksPostgresProjects, scope constructs.Construct, id *string, config *DataDatabricksPostgresProjectsConfig) {
 	_init_.Initialize()
 

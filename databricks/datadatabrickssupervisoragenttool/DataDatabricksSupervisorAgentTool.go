@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/supervisor_agent_tool databricks_supervisor_agent_tool}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tool databricks_supervisor_agent_tool}.
 type DataDatabricksSupervisorAgentTool interface {
 	cdktn.TerraformDataSource
 	App() DataDatabricksSupervisorAgentToolAppOutputReference
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataDatabricksSupervisorAgentTool) Volume() DataDatabricksSup
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/supervisor_agent_tool databricks_supervisor_agent_tool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tool databricks_supervisor_agent_tool} Data Source.
 func NewDataDatabricksSupervisorAgentTool(scope constructs.Construct, id *string, config *DataDatabricksSupervisorAgentToolConfig) DataDatabricksSupervisorAgentTool {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewDataDatabricksSupervisorAgentTool(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/supervisor_agent_tool databricks_supervisor_agent_tool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tool databricks_supervisor_agent_tool} Data Source.
 func NewDataDatabricksSupervisorAgentTool_Override(d DataDatabricksSupervisorAgentTool, scope constructs.Construct, id *string, config *DataDatabricksSupervisorAgentToolConfig) {
 	_init_.Initialize()
 

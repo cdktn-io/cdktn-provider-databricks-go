@@ -5,7 +5,7 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2CollaborationPlatformConnectivity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}.
 	Connectivity *string `field:"required" json:"connectivity" yaml:"connectivity"`
 }
 

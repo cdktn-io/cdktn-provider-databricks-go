@@ -37,12 +37,17 @@ type BudgetAlertConfigurationsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PrincipalOverrides() BudgetAlertConfigurationsPrincipalOverridesList
+	PrincipalOverridesInput() interface{}
 	QuantityThreshold() *string
 	SetQuantityThreshold(val *string)
 	QuantityThresholdInput() *string
 	QuantityType() *string
 	SetQuantityType(val *string)
 	QuantityTypeInput() *string
+	ScopeType() *string
+	SetScopeType(val *string)
+	ScopeTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,10 +87,13 @@ type BudgetAlertConfigurationsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutActionConfigurations(value interface{})
+	PutPrincipalOverrides(value interface{})
 	ResetActionConfigurations()
 	ResetAlertConfigurationId()
+	ResetPrincipalOverrides()
 	ResetQuantityThreshold()
 	ResetQuantityType()
+	ResetScopeType()
 	ResetTimePeriod()
 	ResetTriggerType()
 	// Produce the Token's value at resolution time.
@@ -193,6 +201,26 @@ func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference) InternalValue() int
 	return returns
 }
 
+func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference) PrincipalOverrides() BudgetAlertConfigurationsPrincipalOverridesList {
+	var returns BudgetAlertConfigurationsPrincipalOverridesList
+	_jsii_.Get(
+		j,
+		"principalOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference) PrincipalOverridesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"principalOverridesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference) QuantityThreshold() *string {
 	var returns *string
 	_jsii_.Get(
@@ -228,6 +256,26 @@ func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference) QuantityTypeInput()
 	_jsii_.Get(
 		j,
 		"quantityTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference) ScopeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scopeType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference) ScopeTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scopeTypeInput",
 		&returns,
 	)
 	return returns
@@ -383,6 +431,17 @@ func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference)SetQuantityType(val 
 	_jsii_.Set(
 		j,
 		"quantityType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference)SetScopeType(val *string) {
+	if err := j.validateSetScopeTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scopeType",
 		val,
 	)
 }
@@ -628,6 +687,17 @@ func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) PutActionConfigurat
 	)
 }
 
+func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) PutPrincipalOverrides(value interface{}) {
+	if err := b.validatePutPrincipalOverridesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putPrincipalOverrides",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) ResetActionConfigurations() {
 	_jsii_.InvokeVoid(
 		b,
@@ -644,6 +714,14 @@ func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) ResetAlertConfigura
 	)
 }
 
+func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) ResetPrincipalOverrides() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetPrincipalOverrides",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) ResetQuantityThreshold() {
 	_jsii_.InvokeVoid(
 		b,
@@ -656,6 +734,14 @@ func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) ResetQuantityType()
 	_jsii_.InvokeVoid(
 		b,
 		"resetQuantityType",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) ResetScopeType() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetScopeType",
 		nil, // no parameters
 	)
 }

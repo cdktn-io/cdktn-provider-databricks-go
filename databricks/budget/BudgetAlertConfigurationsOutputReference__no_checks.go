@@ -51,6 +51,10 @@ func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) validatePutActionCo
 	return nil
 }
 
+func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) validatePutPrincipalOverridesParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BudgetAlertConfigurationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference) validateSetQuantity
 }
 
 func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference) validateSetQuantityTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BudgetAlertConfigurationsOutputReference) validateSetScopeTypeParameters(val *string) error {
 	return nil
 }
 

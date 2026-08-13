@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy}.
 type DataDatabricksServicePrincipalFederationPolicy interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) UpdateTime() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
 func NewDataDatabricksServicePrincipalFederationPolicy(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalFederationPolicyConfig) DataDatabricksServicePrincipalFederationPolicy {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataDatabricksServicePrincipalFederationPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
 func NewDataDatabricksServicePrincipalFederationPolicy_Override(d DataDatabricksServicePrincipalFederationPolicy, scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalFederationPolicyConfig) {
 	_init_.Initialize()
 

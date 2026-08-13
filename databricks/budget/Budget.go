@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget databricks_budget}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget databricks_budget}.
 type Budget interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -74,6 +74,9 @@ type Budget interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceType() *string
+	SetResourceType(val *string)
+	ResourceTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -187,6 +190,7 @@ type Budget interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResourceType()
 	ResetUpdateTime()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -485,6 +489,26 @@ func (j *jsiiProxy_Budget) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Budget) ResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Budget) ResourceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Budget) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -536,7 +560,7 @@ func (j *jsiiProxy_Budget) UpdateTimeInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget databricks_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget databricks_budget} Resource.
 func NewBudget(scope constructs.Construct, id *string, config *BudgetConfig) Budget {
 	_init_.Initialize()
 
@@ -554,7 +578,7 @@ func NewBudget(scope constructs.Construct, id *string, config *BudgetConfig) Bud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget databricks_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget databricks_budget} Resource.
 func NewBudget_Override(b Budget, scope constructs.Construct, id *string, config *BudgetConfig) {
 	_init_.Initialize()
 
@@ -684,6 +708,17 @@ func (j *jsiiProxy_Budget)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Budget)SetResourceType(val *string) {
+	if err := j.validateSetResourceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceType",
 		val,
 	)
 }
@@ -1161,6 +1196,14 @@ func (b *jsiiProxy_Budget) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_Budget) ResetResourceType() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetResourceType",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/notebook databricks_notebook}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/notebook databricks_notebook}.
 type DataDatabricksNotebook interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DataDatabricksNotebook) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/notebook databricks_notebook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/notebook databricks_notebook} Data Source.
 func NewDataDatabricksNotebook(scope constructs.Construct, id *string, config *DataDatabricksNotebookConfig) DataDatabricksNotebook {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewDataDatabricksNotebook(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/notebook databricks_notebook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/notebook databricks_notebook} Data Source.
 func NewDataDatabricksNotebook_Override(d DataDatabricksNotebook, scope constructs.Construct, id *string, config *DataDatabricksNotebookConfig) {
 	_init_.Initialize()
 
