@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant databricks_grant}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant databricks_grant}.
 type Grant interface {
 	cdktn.TerraformResource
 	Catalog() *string
@@ -61,12 +61,21 @@ type Grant interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	McpService() *string
+	SetMcpService(val *string)
+	McpServiceInput() *string
 	Metastore() *string
 	SetMetastore(val *string)
 	MetastoreInput() *string
 	Model() *string
 	SetModel(val *string)
 	ModelInput() *string
+	ModelProviderService() *string
+	SetModelProviderService(val *string)
+	ModelProviderServiceInput() *string
+	ModelService() *string
+	SetModelService(val *string)
+	ModelServiceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Pipeline() *string
@@ -213,8 +222,11 @@ type Grant interface {
 	ResetForeignConnection()
 	ResetFunction()
 	ResetId()
+	ResetMcpService()
 	ResetMetastore()
 	ResetModel()
+	ResetModelProviderService()
+	ResetModelService()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -463,6 +475,26 @@ func (j *jsiiProxy_Grant) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Grant) McpService() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mcpService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grant) McpServiceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mcpServiceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Grant) Metastore() *string {
 	var returns *string
 	_jsii_.Get(
@@ -498,6 +530,46 @@ func (j *jsiiProxy_Grant) ModelInput() *string {
 	_jsii_.Get(
 		j,
 		"modelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grant) ModelProviderService() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelProviderService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grant) ModelProviderServiceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelProviderServiceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grant) ModelService() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grant) ModelServiceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelServiceInput",
 		&returns,
 	)
 	return returns
@@ -774,7 +846,7 @@ func (j *jsiiProxy_Grant) VolumeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant databricks_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant databricks_grant} Resource.
 func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant {
 	_init_.Initialize()
 
@@ -792,7 +864,7 @@ func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant databricks_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant databricks_grant} Resource.
 func NewGrant_Override(g Grant, scope constructs.Construct, id *string, config *GrantConfig) {
 	_init_.Initialize()
 
@@ -918,6 +990,17 @@ func (j *jsiiProxy_Grant)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	)
 }
 
+func (j *jsiiProxy_Grant)SetMcpService(val *string) {
+	if err := j.validateSetMcpServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mcpService",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Grant)SetMetastore(val *string) {
 	if err := j.validateSetMetastoreParameters(val); err != nil {
 		panic(err)
@@ -936,6 +1019,28 @@ func (j *jsiiProxy_Grant)SetModel(val *string) {
 	_jsii_.Set(
 		j,
 		"model",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Grant)SetModelProviderService(val *string) {
+	if err := j.validateSetModelProviderServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"modelProviderService",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Grant)SetModelService(val *string) {
+	if err := j.validateSetModelServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"modelService",
 		val,
 	)
 }
@@ -1497,6 +1602,14 @@ func (g *jsiiProxy_Grant) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_Grant) ResetMcpService() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMcpService",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_Grant) ResetMetastore() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1509,6 +1622,22 @@ func (g *jsiiProxy_Grant) ResetModel() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetModel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grant) ResetModelProviderService() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetModelProviderService",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grant) ResetModelService() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetModelService",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/repo databricks_repo}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/repo databricks_repo}.
 type Repo interface {
 	cdktn.TerraformResource
 	Branch() *string
@@ -594,7 +594,7 @@ func (j *jsiiProxy_Repo) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/repo databricks_repo} Resource.
 func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/repo databricks_repo} Resource.
 func NewRepo_Override(r Repo, scope constructs.Construct, id *string, config *RepoConfig) {
 	_init_.Initialize()
 

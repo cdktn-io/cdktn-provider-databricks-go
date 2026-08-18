@@ -5,13 +5,13 @@ package job
 
 
 type JobJobCluster struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/job#job_cluster_key Job#job_cluster_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/job#job_cluster_key Job#job_cluster_key}.
 	JobClusterKey *string `field:"required" json:"jobClusterKey" yaml:"jobClusterKey"`
 	// new_cluster block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/job#new_cluster Job#new_cluster}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/job#new_cluster Job#new_cluster}
 	NewCluster *JobJobClusterNewCluster `field:"required" json:"newCluster" yaml:"newCluster"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/job#serverless_compute_id Job#serverless_compute_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/job#serverless_compute_id Job#serverless_compute_id}.
 	ServerlessComputeId *string `field:"optional" json:"serverlessComputeId" yaml:"serverlessComputeId"`
 }
 

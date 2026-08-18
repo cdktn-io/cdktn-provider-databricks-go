@@ -5,7 +5,7 @@ package job
 
 
 type JobGitSourceSparseCheckout struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/job#patterns Job#patterns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/job#patterns Job#patterns}.
 	Patterns *[]*string `field:"optional" json:"patterns" yaml:"patterns"`
 }
 

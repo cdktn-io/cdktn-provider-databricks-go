@@ -5,7 +5,7 @@ package datadatabricksendpoint
 
 
 type DataDatabricksEndpointAwsVpcEndpointInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/endpoint#aws_vpc_endpoint_id DataDatabricksEndpoint#aws_vpc_endpoint_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/endpoint#aws_vpc_endpoint_id DataDatabricksEndpoint#aws_vpc_endpoint_id}.
 	AwsVpcEndpointId *string `field:"required" json:"awsVpcEndpointId" yaml:"awsVpcEndpointId"`
 }
 

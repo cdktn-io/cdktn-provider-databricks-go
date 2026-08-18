@@ -5,9 +5,9 @@ package budget
 
 
 type BudgetAlertConfigurationsPrincipalOverrides struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#override_threshold Budget#override_threshold}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/budget#override_threshold Budget#override_threshold}.
 	OverrideThreshold *string `field:"optional" json:"overrideThreshold" yaml:"overrideThreshold"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#principal_id Budget#principal_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/budget#principal_id Budget#principal_id}.
 	PrincipalId *float64 `field:"optional" json:"principalId" yaml:"principalId"`
 }
 

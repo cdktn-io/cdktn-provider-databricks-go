@@ -143,11 +143,23 @@ func (j *jsiiProxy_Grants) validateSetLifecycleParameters(val *cdktn.TerraformRe
 	return nil
 }
 
+func (j *jsiiProxy_Grants) validateSetMcpServiceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Grants) validateSetMetastoreParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_Grants) validateSetModelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Grants) validateSetModelProviderServiceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Grants) validateSetModelServiceParameters(val *string) error {
 	return nil
 }
 

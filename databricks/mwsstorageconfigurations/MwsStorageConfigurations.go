@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}.
 type MwsStorageConfigurations interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -483,7 +483,7 @@ func (j *jsiiProxy_MwsStorageConfigurations) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
 func NewMwsStorageConfigurations(scope constructs.Construct, id *string, config *MwsStorageConfigurationsConfig) MwsStorageConfigurations {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewMwsStorageConfigurations(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
 func NewMwsStorageConfigurations_Override(m MwsStorageConfigurations, scope constructs.Construct, id *string, config *MwsStorageConfigurationsConfig) {
 	_init_.Initialize()
 

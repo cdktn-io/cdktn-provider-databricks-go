@@ -5,7 +5,7 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureTimeseriesColumn struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

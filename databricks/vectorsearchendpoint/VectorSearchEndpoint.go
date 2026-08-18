@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}.
 type VectorSearchEndpoint interface {
 	cdktn.TerraformResource
 	BudgetPolicyId() *string
@@ -598,7 +598,7 @@ func (j *jsiiProxy_VectorSearchEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
 func NewVectorSearchEndpoint(scope constructs.Construct, id *string, config *VectorSearchEndpointConfig) VectorSearchEndpoint {
 	_init_.Initialize()
 
@@ -616,7 +616,7 @@ func NewVectorSearchEndpoint(scope constructs.Construct, id *string, config *Vec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
 func NewVectorSearchEndpoint_Override(v VectorSearchEndpoint, scope constructs.Construct, id *string, config *VectorSearchEndpointConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_alert databricks_sql_alert}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/sql_alert databricks_sql_alert}.
 type SqlAlert interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -557,7 +557,7 @@ func (j *jsiiProxy_SqlAlert) UpdatedAtInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_alert databricks_sql_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/sql_alert databricks_sql_alert} Resource.
 func NewSqlAlert(scope constructs.Construct, id *string, config *SqlAlertConfig) SqlAlert {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewSqlAlert(scope constructs.Construct, id *string, config *SqlAlertConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_alert databricks_sql_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/sql_alert databricks_sql_alert} Resource.
 func NewSqlAlert_Override(s SqlAlert, scope constructs.Construct, id *string, config *SqlAlertConfig) {
 	_init_.Initialize()
 

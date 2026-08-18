@@ -22,13 +22,13 @@ type QualityMonitorV2Config struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
 	ObjectId *string `field:"required" json:"objectId" yaml:"objectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
 	ObjectType *string `field:"required" json:"objectType" yaml:"objectType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/quality_monitor_v2#provider_config QualityMonitorV2#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/quality_monitor_v2#provider_config QualityMonitorV2#provider_config}.
 	ProviderConfig *QualityMonitorV2ProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/quality_monitor_v2#validity_check_configurations QualityMonitorV2#validity_check_configurations}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/quality_monitor_v2#validity_check_configurations QualityMonitorV2#validity_check_configurations}.
 	ValidityCheckConfigurations interface{} `field:"optional" json:"validityCheckConfigurations" yaml:"validityCheckConfigurations"`
 }
 

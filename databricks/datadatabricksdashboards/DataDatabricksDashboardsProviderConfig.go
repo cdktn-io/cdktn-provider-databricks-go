@@ -5,7 +5,7 @@ package datadatabricksdashboards
 
 
 type DataDatabricksDashboardsProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/dashboards#workspace_id DataDatabricksDashboards#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/dashboards#workspace_id DataDatabricksDashboards#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

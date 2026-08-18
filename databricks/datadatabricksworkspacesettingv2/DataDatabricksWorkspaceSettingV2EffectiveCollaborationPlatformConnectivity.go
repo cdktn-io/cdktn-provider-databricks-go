@@ -5,7 +5,7 @@ package datadatabricksworkspacesettingv2
 
 
 type DataDatabricksWorkspaceSettingV2EffectiveCollaborationPlatformConnectivity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/workspace_setting_v2#connectivity DataDatabricksWorkspaceSettingV2#connectivity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/workspace_setting_v2#connectivity DataDatabricksWorkspaceSettingV2#connectivity}.
 	Connectivity *string `field:"required" json:"connectivity" yaml:"connectivity"`
 }
 

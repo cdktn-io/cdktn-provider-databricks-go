@@ -5,17 +5,17 @@ package datadatabricksapp
 
 
 type DataDatabricksAppAppActiveDeployment struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/app#command DataDatabricksApp#command}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/app#command DataDatabricksApp#command}.
 	Command *[]*string `field:"optional" json:"command" yaml:"command"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/app#deployment_id DataDatabricksApp#deployment_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/app#deployment_id DataDatabricksApp#deployment_id}.
 	DeploymentId *string `field:"optional" json:"deploymentId" yaml:"deploymentId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/app#env_vars DataDatabricksApp#env_vars}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/app#env_vars DataDatabricksApp#env_vars}.
 	EnvVars interface{} `field:"optional" json:"envVars" yaml:"envVars"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/app#git_source DataDatabricksApp#git_source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/app#git_source DataDatabricksApp#git_source}.
 	GitSource *DataDatabricksAppAppActiveDeploymentGitSource `field:"optional" json:"gitSource" yaml:"gitSource"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/app#mode DataDatabricksApp#mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/app#mode DataDatabricksApp#mode}.
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/app#source_code_path DataDatabricksApp#source_code_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/app#source_code_path DataDatabricksApp#source_code_path}.
 	SourceCodePath *string `field:"optional" json:"sourceCodePath" yaml:"sourceCodePath"`
 }
 

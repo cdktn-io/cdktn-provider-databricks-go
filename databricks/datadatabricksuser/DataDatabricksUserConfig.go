@@ -26,20 +26,20 @@ type DataDatabricksUserConfig struct {
 	//
 	// Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/user#api DataDatabricksUser#api}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/user#api DataDatabricksUser#api}
 	Api *string `field:"optional" json:"api" yaml:"api"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/user#id DataDatabricksUser#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/user#id DataDatabricksUser#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// provider_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/user#provider_config DataDatabricksUser#provider_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/user#provider_config DataDatabricksUser#provider_config}
 	ProviderConfig *DataDatabricksUserProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/user#user_id DataDatabricksUser#user_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/user#user_id DataDatabricksUser#user_id}.
 	UserId *string `field:"optional" json:"userId" yaml:"userId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/user#user_name DataDatabricksUser#user_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/user#user_name DataDatabricksUser#user_name}.
 	UserName *string `field:"optional" json:"userName" yaml:"userName"`
 }
 

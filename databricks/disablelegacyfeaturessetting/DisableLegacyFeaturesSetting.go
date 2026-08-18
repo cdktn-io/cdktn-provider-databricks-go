@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}.
 type DisableLegacyFeaturesSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
 func NewDisableLegacyFeaturesSetting(scope constructs.Construct, id *string, config *DisableLegacyFeaturesSettingConfig) DisableLegacyFeaturesSetting {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewDisableLegacyFeaturesSetting(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
 func NewDisableLegacyFeaturesSetting_Override(d DisableLegacyFeaturesSetting, scope constructs.Construct, id *string, config *DisableLegacyFeaturesSettingConfig) {
 	_init_.Initialize()
 

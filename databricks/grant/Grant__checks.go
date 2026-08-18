@@ -420,6 +420,14 @@ func (j *jsiiProxy_Grant) validateSetLifecycleParameters(val *cdktn.TerraformRes
 	return nil
 }
 
+func (j *jsiiProxy_Grant) validateSetMcpServiceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Grant) validateSetMetastoreParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -429,6 +437,22 @@ func (j *jsiiProxy_Grant) validateSetMetastoreParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Grant) validateSetModelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Grant) validateSetModelProviderServiceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Grant) validateSetModelServiceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

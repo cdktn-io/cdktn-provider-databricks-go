@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/dbfs_file databricks_dbfs_file}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/dbfs_file databricks_dbfs_file}.
 type DbfsFile interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_DbfsFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
 func NewDbfsFile(scope constructs.Construct, id *string, config *DbfsFileConfig) DbfsFile {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewDbfsFile(scope constructs.Construct, id *string, config *DbfsFileConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
 func NewDbfsFile_Override(d DbfsFile, scope constructs.Construct, id *string, config *DbfsFileConfig) {
 	_init_.Initialize()
 

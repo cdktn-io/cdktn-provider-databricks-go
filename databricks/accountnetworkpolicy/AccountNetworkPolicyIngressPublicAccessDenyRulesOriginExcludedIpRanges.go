@@ -5,7 +5,7 @@ package accountnetworkpolicy
 
 
 type AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}.
 	IpRanges *[]*string `field:"optional" json:"ipRanges" yaml:"ipRanges"`
 }
 

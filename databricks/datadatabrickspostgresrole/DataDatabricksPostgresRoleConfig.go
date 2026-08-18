@@ -22,9 +22,9 @@ type DataDatabricksPostgresRoleConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/postgres_role#name DataDatabricksPostgresRole#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/postgres_role#name DataDatabricksPostgresRole#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/postgres_role#provider_config DataDatabricksPostgresRole#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/postgres_role#provider_config DataDatabricksPostgresRole#provider_config}.
 	ProviderConfig *DataDatabricksPostgresRoleProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 
