@@ -93,9 +93,40 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validate
 	return nil
 }
 
+func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validatePutGoogleApiEndpointsParameters(value *MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validateSetAllVpcScServicesParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

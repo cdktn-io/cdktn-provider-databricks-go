@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template}.
 type DataDatabricksAppsSettingsCustomTemplate interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
 func NewDataDatabricksAppsSettingsCustomTemplate(scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplateConfig) DataDatabricksAppsSettingsCustomTemplate {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataDatabricksAppsSettingsCustomTemplate(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
 func NewDataDatabricksAppsSettingsCustomTemplate_Override(d DataDatabricksAppsSettingsCustomTemplate, scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplateConfig) {
 	_init_.Initialize()
 

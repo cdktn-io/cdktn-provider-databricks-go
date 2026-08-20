@@ -13,6 +13,12 @@ import (
 
 type DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference interface {
 	cdktn.ComplexObject
+	AutoDeploy() interface{}
+	SetAutoDeploy(val interface{})
+	AutoDeployInput() interface{}
+	CallerCredentialId() *float64
+	SetCallerCredentialId(val *float64)
+	CallerCredentialIdInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +76,8 @@ type DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference 
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetAutoDeploy()
+	ResetCallerCredentialId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -83,6 +91,46 @@ type DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference 
 // The jsii proxy struct for DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference
 type jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference) AutoDeploy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoDeploy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference) AutoDeployInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoDeployInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference) CallerCredentialId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"callerCredentialId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference) CallerCredentialIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"callerCredentialIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference) ComplexObjectIndex() interface{} {
@@ -220,6 +268,28 @@ func NewDataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReferen
 		"@cdktn/provider-databricks.dataDatabricksApp.DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference)SetAutoDeploy(val interface{}) {
+	if err := j.validateSetAutoDeployParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoDeploy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference)SetCallerCredentialId(val *float64) {
+	if err := j.validateSetCallerCredentialIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"callerCredentialId",
+		val,
 	)
 }
 
@@ -484,6 +554,22 @@ func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOu
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference) ResetAutoDeploy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAutoDeploy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference) ResetCallerCredentialId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCallerCredentialId",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentGitSourceGitRepositoryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

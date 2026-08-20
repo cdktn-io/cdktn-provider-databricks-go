@@ -12,10 +12,9 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service}.
 type AiGatewayMcpService interface {
 	cdktn.TerraformResource
-	BrowseOnly() cdktn.IResolvable
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	Comment() *string
@@ -212,16 +211,6 @@ type AiGatewayMcpService interface {
 // The jsii proxy struct for AiGatewayMcpService
 type jsiiProxy_AiGatewayMcpService struct {
 	internal.Type__cdktnTerraformResource
-}
-
-func (j *jsiiProxy_AiGatewayMcpService) BrowseOnly() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"browseOnly",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_AiGatewayMcpService) CdktfStack() cdktn.TerraformStack {
@@ -585,7 +574,7 @@ func (j *jsiiProxy_AiGatewayMcpService) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
 func NewAiGatewayMcpService(scope constructs.Construct, id *string, config *AiGatewayMcpServiceConfig) AiGatewayMcpService {
 	_init_.Initialize()
 
@@ -603,7 +592,7 @@ func NewAiGatewayMcpService(scope constructs.Construct, id *string, config *AiGa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
 func NewAiGatewayMcpService_Override(a AiGatewayMcpService, scope constructs.Construct, id *string, config *AiGatewayMcpServiceConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_model_provider_services databricks_ai_gateway_model_provider_services}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_model_provider_services databricks_ai_gateway_model_provider_services}.
 type DataDatabricksAiGatewayModelProviderServices interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -35,9 +35,6 @@ type DataDatabricksAiGatewayModelProviderServices interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	IncludeBrowse() interface{}
-	SetIncludeBrowse(val interface{})
-	IncludeBrowseInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -107,7 +104,6 @@ type DataDatabricksAiGatewayModelProviderServices interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
-	ResetIncludeBrowse()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -208,26 +204,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServices) FriendlyUniqueI
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServices) IncludeBrowse() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"includeBrowse",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServices) IncludeBrowseInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"includeBrowseInput",
 		&returns,
 	)
 	return returns
@@ -394,7 +370,7 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServices) ViewInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_model_provider_services databricks_ai_gateway_model_provider_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_model_provider_services databricks_ai_gateway_model_provider_services} Data Source.
 func NewDataDatabricksAiGatewayModelProviderServices(scope constructs.Construct, id *string, config *DataDatabricksAiGatewayModelProviderServicesConfig) DataDatabricksAiGatewayModelProviderServices {
 	_init_.Initialize()
 
@@ -412,7 +388,7 @@ func NewDataDatabricksAiGatewayModelProviderServices(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_model_provider_services databricks_ai_gateway_model_provider_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_model_provider_services databricks_ai_gateway_model_provider_services} Data Source.
 func NewDataDatabricksAiGatewayModelProviderServices_Override(d DataDatabricksAiGatewayModelProviderServices, scope constructs.Construct, id *string, config *DataDatabricksAiGatewayModelProviderServicesConfig) {
 	_init_.Initialize()
 
@@ -446,17 +422,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServices)SetForEach(val c
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServices)SetIncludeBrowse(val interface{}) {
-	if err := j.validateSetIncludeBrowseParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"includeBrowse",
 		val,
 	)
 }
@@ -817,14 +782,6 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServices) RegisterProvide
 		d,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServices) ResetIncludeBrowse() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIncludeBrowse",
-		nil, // no parameters
 	)
 }
 

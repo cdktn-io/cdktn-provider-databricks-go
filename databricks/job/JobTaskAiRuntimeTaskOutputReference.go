@@ -33,6 +33,9 @@ type JobTaskAiRuntimeTaskOutputReference interface {
 	CreationStack() *[]*string
 	Deployments() JobTaskAiRuntimeTaskDeploymentsList
 	DeploymentsInput() interface{}
+	DockerImageUrl() *string
+	SetDockerImageUrl(val *string)
+	DockerImageUrlInput() *string
 	Experiment() *string
 	SetExperiment(val *string)
 	ExperimentInput() *string
@@ -40,6 +43,9 @@ type JobTaskAiRuntimeTaskOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTaskAiRuntimeTask
 	SetInternalValue(val *JobTaskAiRuntimeTask)
+	MlflowArtifactLocation() *string
+	SetMlflowArtifactLocation(val *string)
+	MlflowArtifactLocationInput() *string
 	MlflowExperimentDirectory() *string
 	SetMlflowExperimentDirectory(val *string)
 	MlflowExperimentDirectoryInput() *string
@@ -80,6 +86,8 @@ type JobTaskAiRuntimeTaskOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDeployments(value interface{})
 	ResetCodeSourcePath()
+	ResetDockerImageUrl()
+	ResetMlflowArtifactLocation()
 	ResetMlflowExperimentDirectory()
 	ResetMlflowRun()
 	// Produce the Token's value at resolution time.
@@ -167,6 +175,26 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) DeploymentsInput() inter
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) DockerImageUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerImageUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) DockerImageUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerImageUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) Experiment() *string {
 	var returns *string
 	_jsii_.Get(
@@ -202,6 +230,26 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) InternalValue() *JobTask
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) MlflowArtifactLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mlflowArtifactLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) MlflowArtifactLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mlflowArtifactLocationInput",
 		&returns,
 	)
 	return returns
@@ -328,6 +376,17 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference)SetDockerImageUrl(val *string) {
+	if err := j.validateSetDockerImageUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dockerImageUrl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference)SetExperiment(val *string) {
 	if err := j.validateSetExperimentParameters(val); err != nil {
 		panic(err)
@@ -346,6 +405,17 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference)SetInternalValue(val *Job
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference)SetMlflowArtifactLocation(val *string) {
+	if err := j.validateSetMlflowArtifactLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mlflowArtifactLocation",
 		val,
 	)
 }
@@ -595,6 +665,22 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) ResetCodeSourcePath() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetCodeSourcePath",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) ResetDockerImageUrl() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDockerImageUrl",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) ResetMlflowArtifactLocation() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetMlflowArtifactLocation",
 		nil, // no parameters
 	)
 }

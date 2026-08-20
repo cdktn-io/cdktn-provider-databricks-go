@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) validatePutApiSourceConnectorConfigParameters(value *PipelineIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) validatePutCatalogParameters(value *PipelineIngestionDefinitionSourceConfigurationsCatalog) error {
 	return nil
 }

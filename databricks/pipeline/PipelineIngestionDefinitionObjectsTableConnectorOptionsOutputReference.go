@@ -13,6 +13,8 @@ import (
 
 type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference interface {
 	cdktn.ComplexObject
+	ApiSourceConnectorOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptionsOutputReference
+	ApiSourceConnectorOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,6 +44,10 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	JiraOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions
 	KafkaOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsOutputReference
 	KafkaOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions
+	LinkedinAdsOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsOutputReference
+	LinkedinAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions
+	MarketoOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptionsOutputReference
+	MarketoOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions
 	MetaAdsOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference
 	MetaAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions
 	OutlookOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference
@@ -88,11 +94,14 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutApiSourceConnectorOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions)
 	PutConfluenceOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions)
 	PutGdriveOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions)
 	PutGoogleAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions)
 	PutJiraOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions)
 	PutKafkaOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions)
+	PutLinkedinAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions)
+	PutMarketoOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions)
 	PutMetaAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions)
 	PutOutlookOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions)
 	PutRedditAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions)
@@ -100,11 +109,14 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	PutSmartsheetOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions)
 	PutTiktokAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions)
 	PutZendeskSupportOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions)
+	ResetApiSourceConnectorOptions()
 	ResetConfluenceOptions()
 	ResetGdriveOptions()
 	ResetGoogleAdsOptions()
 	ResetJiraOptions()
 	ResetKafkaOptions()
+	ResetLinkedinAdsOptions()
+	ResetMarketoOptions()
 	ResetMetaAdsOptions()
 	ResetOutlookOptions()
 	ResetRedditAdsOptions()
@@ -125,6 +137,26 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 // The jsii proxy struct for PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference
 type jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ApiSourceConnectorOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"apiSourceConnectorOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ApiSourceConnectorOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions
+	_jsii_.Get(
+		j,
+		"apiSourceConnectorOptionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -272,6 +304,46 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.Get(
 		j,
 		"kafkaOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) LinkedinAdsOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"linkedinAdsOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) LinkedinAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions
+	_jsii_.Get(
+		j,
+		"linkedinAdsOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) MarketoOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"marketoOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) MarketoOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions
+	_jsii_.Get(
+		j,
+		"marketoOptionsInput",
 		&returns,
 	)
 	return returns
@@ -706,6 +778,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	return returns
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutApiSourceConnectorOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions) {
+	if err := p.validatePutApiSourceConnectorOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putApiSourceConnectorOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutConfluenceOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions) {
 	if err := p.validatePutConfluenceOptionsParameters(value); err != nil {
 		panic(err)
@@ -757,6 +840,28 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.InvokeVoid(
 		p,
 		"putKafkaOptions",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutLinkedinAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions) {
+	if err := p.validatePutLinkedinAdsOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putLinkedinAdsOptions",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutMarketoOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions) {
+	if err := p.validatePutMarketoOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putMarketoOptions",
 		[]interface{}{value},
 	)
 }
@@ -838,6 +943,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetApiSourceConnectorOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetApiSourceConnectorOptions",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetConfluenceOptions() {
 	_jsii_.InvokeVoid(
 		p,
@@ -874,6 +987,22 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.InvokeVoid(
 		p,
 		"resetKafkaOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetLinkedinAdsOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLinkedinAdsOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetMarketoOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMarketoOptions",
 		nil, // no parameters
 	)
 }

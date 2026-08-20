@@ -83,10 +83,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServices) validateSetCoun
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServices) validateSetIncludeBrowseParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServices) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

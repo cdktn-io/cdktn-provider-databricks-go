@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktn.TerraformResource
 	AlwaysRunning() interface{}
@@ -164,6 +164,8 @@ type Job interface {
 	TimeoutsInput() interface{}
 	Trigger() JobTriggerOutputReference
 	TriggerInput() *JobTrigger
+	Triggers() JobTriggersList
+	TriggersInput() interface{}
 	Url() *string
 	UsagePolicyId() *string
 	SetUsagePolicyId(val *string)
@@ -275,6 +277,7 @@ type Job interface {
 	PutTask(value interface{})
 	PutTimeouts(value *JobTimeouts)
 	PutTrigger(value *JobTrigger)
+	PutTriggers(value interface{})
 	PutWebhookNotifications(value *JobWebhookNotifications)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
@@ -335,6 +338,7 @@ type Job interface {
 	ResetTimeouts()
 	ResetTimeoutSeconds()
 	ResetTrigger()
+	ResetTriggers()
 	ResetUsagePolicyId()
 	ResetWebhookNotifications()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1384,6 +1388,26 @@ func (j *jsiiProxy_Job) TriggerInput() *JobTrigger {
 	return returns
 }
 
+func (j *jsiiProxy_Job) Triggers() JobTriggersList {
+	var returns JobTriggersList
+	_jsii_.Get(
+		j,
+		"triggers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) TriggersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"triggersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Job) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1435,7 +1459,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1453,7 +1477,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -2385,6 +2409,17 @@ func (j *jsiiProxy_Job) PutTrigger(value *JobTrigger) {
 	)
 }
 
+func (j *jsiiProxy_Job) PutTriggers(value interface{}) {
+	if err := j.validatePutTriggersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putTriggers",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) PutWebhookNotifications(value *JobWebhookNotifications) {
 	if err := j.validatePutWebhookNotificationsParameters(value); err != nil {
 		panic(err)
@@ -2755,6 +2790,14 @@ func (j *jsiiProxy_Job) ResetTrigger() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetTrigger",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetTriggers() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetTriggers",
 		nil, // no parameters
 	)
 }

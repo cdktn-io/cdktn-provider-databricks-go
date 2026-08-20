@@ -83,6 +83,10 @@ func (a *jsiiProxy_App) validatePutGitRepositoryParameters(value *AppGitReposito
 	return nil
 }
 
+func (a *jsiiProxy_App) validatePutGitSourceParameters(value *AppGitSource) error {
+	return nil
+}
+
 func (a *jsiiProxy_App) validatePutProviderConfigParameters(value *AppProviderConfig) error {
 	return nil
 }
@@ -143,6 +147,10 @@ func (j *jsiiProxy_App) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_App) validateSetForwardUserAccessTokenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_App) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -156,6 +164,10 @@ func (j *jsiiProxy_App) validateSetNoComputeParameters(val interface{}) error {
 }
 
 func (j *jsiiProxy_App) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_App) validateSetSourceCodePathParameters(val *string) error {
 	return nil
 }
 

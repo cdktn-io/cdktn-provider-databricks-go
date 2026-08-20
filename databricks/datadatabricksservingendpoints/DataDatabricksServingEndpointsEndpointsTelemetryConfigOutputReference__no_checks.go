@@ -67,6 +67,10 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputR
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) validateSetEnabledTelemetryFeaturesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

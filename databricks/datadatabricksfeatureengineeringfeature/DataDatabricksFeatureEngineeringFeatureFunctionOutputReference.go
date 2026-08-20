@@ -32,6 +32,8 @@ type DataDatabricksFeatureEngineeringFeatureFunctionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomUdf() DataDatabricksFeatureEngineeringFeatureFunctionCustomUdfOutputReference
+	CustomUdfInput() interface{}
 	ExtraParameters() DataDatabricksFeatureEngineeringFeatureFunctionExtraParametersList
 	ExtraParametersInput() interface{}
 	// Experimental.
@@ -75,9 +77,11 @@ type DataDatabricksFeatureEngineeringFeatureFunctionOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAggregationFunction(value *DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunction)
 	PutColumnSelection(value *DataDatabricksFeatureEngineeringFeatureFunctionColumnSelection)
+	PutCustomUdf(value *DataDatabricksFeatureEngineeringFeatureFunctionCustomUdf)
 	PutExtraParameters(value interface{})
 	ResetAggregationFunction()
 	ResetColumnSelection()
+	ResetCustomUdf()
 	ResetExtraParameters()
 	ResetFunctionType()
 	// Produce the Token's value at resolution time.
@@ -160,6 +164,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) CustomUdf() DataDatabricksFeatureEngineeringFeatureFunctionCustomUdfOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeatureFunctionCustomUdfOutputReference
+	_jsii_.Get(
+		j,
+		"customUdf",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) CustomUdfInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customUdfInput",
 		&returns,
 	)
 	return returns
@@ -547,6 +571,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) PutCustomUdf(value *DataDatabricksFeatureEngineeringFeatureFunctionCustomUdf) {
+	if err := d.validatePutCustomUdfParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCustomUdf",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) PutExtraParameters(value interface{}) {
 	if err := d.validatePutExtraParametersParameters(value); err != nil {
 		panic(err)
@@ -570,6 +605,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetColumnSelection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) ResetCustomUdf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomUdf",
 		nil, // no parameters
 	)
 }

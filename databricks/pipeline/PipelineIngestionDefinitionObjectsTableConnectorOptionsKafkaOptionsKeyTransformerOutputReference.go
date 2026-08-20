@@ -33,10 +33,16 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTrans
 	FormatInput() *string
 	// Experimental.
 	Fqn() *string
+	InputColumn() *string
+	SetInputColumn(val *string)
+	InputColumnInput() *string
 	InternalValue() *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
 	SetInternalValue(val *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer)
 	JsonOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptionsOutputReference
 	JsonOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
+	OutputColumn() *string
+	SetOutputColumn(val *string)
+	OutputColumnInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,7 +77,9 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTrans
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutJsonOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions)
 	ResetFormat()
+	ResetInputColumn()
 	ResetJsonOptions()
+	ResetOutputColumn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -147,6 +155,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaO
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) InputColumn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputColumn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) InputColumnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputColumnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) InternalValue() *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer {
 	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
 	_jsii_.Get(
@@ -172,6 +200,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaO
 	_jsii_.Get(
 		j,
 		"jsonOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) OutputColumn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputColumn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) OutputColumnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputColumnInput",
 		&returns,
 	)
 	return returns
@@ -258,6 +306,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaO
 	)
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference)SetInputColumn(val *string) {
+	if err := j.validateSetInputColumnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inputColumn",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference)SetInternalValue(val *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -265,6 +324,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaO
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference)SetOutputColumn(val *string) {
+	if err := j.validateSetOutputColumnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outputColumn",
 		val,
 	)
 }
@@ -496,10 +566,26 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaO
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) ResetInputColumn() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetInputColumn",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) ResetJsonOptions() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetJsonOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) ResetOutputColumn() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOutputColumn",
 		nil, // no parameters
 	)
 }

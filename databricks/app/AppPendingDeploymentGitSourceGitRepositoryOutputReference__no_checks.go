@@ -51,6 +51,14 @@ func (a *jsiiProxy_AppPendingDeploymentGitSourceGitRepositoryOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_AppPendingDeploymentGitSourceGitRepositoryOutputReference) validateSetAutoDeployParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppPendingDeploymentGitSourceGitRepositoryOutputReference) validateSetCallerCredentialIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppPendingDeploymentGitSourceGitRepositoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

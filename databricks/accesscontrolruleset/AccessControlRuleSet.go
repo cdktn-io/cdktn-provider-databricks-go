@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}.
 type AccessControlRuleSet interface {
 	cdktn.TerraformResource
 	Api() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_AccessControlRuleSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
 func NewAccessControlRuleSet(scope constructs.Construct, id *string, config *AccessControlRuleSetConfig) AccessControlRuleSet {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewAccessControlRuleSet(scope constructs.Construct, id *string, config *Acc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
 func NewAccessControlRuleSet_Override(a AccessControlRuleSet, scope constructs.Construct, id *string, config *AccessControlRuleSetConfig) {
 	_init_.Initialize()
 

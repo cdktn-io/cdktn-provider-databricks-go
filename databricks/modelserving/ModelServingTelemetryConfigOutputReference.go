@@ -28,6 +28,9 @@ type ModelServingTelemetryConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnabledTelemetryFeatures() *[]*string
+	SetEnabledTelemetryFeatures(val *[]*string)
+	EnabledTelemetryFeaturesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InferenceTableConfig() ModelServingTelemetryConfigInferenceTableConfigOutputReference
@@ -73,6 +76,7 @@ type ModelServingTelemetryConfigOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutInferenceTableConfig(value *ModelServingTelemetryConfigInferenceTableConfig)
 	PutTableNames(value *ModelServingTelemetryConfigTableNames)
+	ResetEnabledTelemetryFeatures()
 	ResetInferenceTableConfig()
 	ResetTableNames()
 	ResetTelemetryProfileId()
@@ -116,6 +120,26 @@ func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) EnabledTelemetryFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledTelemetryFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) EnabledTelemetryFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledTelemetryFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -267,6 +291,17 @@ func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference)SetComplexObjectIs
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference)SetEnabledTelemetryFeatures(val *[]*string) {
+	if err := j.validateSetEnabledTelemetryFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabledTelemetryFeatures",
 		val,
 	)
 }
@@ -520,6 +555,14 @@ func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) PutTableNames(val
 		m,
 		"putTableNames",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_ModelServingTelemetryConfigOutputReference) ResetEnabledTelemetryFeatures() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEnabledTelemetryFeatures",
+		nil, // no parameters
 	)
 }
 

@@ -55,6 +55,10 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validatePut
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validatePutCustomUdfParameters(value *FeatureEngineeringFeatureFunctionCustomUdf) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validatePutExtraParametersParameters(value interface{}) error {
 	return nil
 }

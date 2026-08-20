@@ -67,6 +67,10 @@ func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateSetEnabledTelemetryFeaturesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingTelemetryConfigOutputReference) validateSetInternalValueParameters(val *ModelServingTelemetryConfig) error {
 	return nil
 }

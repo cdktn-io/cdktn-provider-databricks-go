@@ -28,6 +28,9 @@ type DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnabledTelemetryFeatures() *[]*string
+	SetEnabledTelemetryFeatures(val *[]*string)
+	EnabledTelemetryFeaturesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InferenceTableConfig() DataDatabricksServingEndpointsEndpointsTelemetryConfigInferenceTableConfigList
@@ -73,6 +76,7 @@ type DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference inter
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutInferenceTableConfig(value interface{})
 	PutTableNames(value interface{})
+	ResetEnabledTelemetryFeatures()
 	ResetInferenceTableConfig()
 	ResetTableNames()
 	ResetTelemetryProfileId()
@@ -116,6 +120,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputR
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) EnabledTelemetryFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledTelemetryFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) EnabledTelemetryFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledTelemetryFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -267,6 +291,17 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputR
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference)SetEnabledTelemetryFeatures(val *[]*string) {
+	if err := j.validateSetEnabledTelemetryFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabledTelemetryFeatures",
 		val,
 	)
 }
@@ -520,6 +555,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputR
 		d,
 		"putTableNames",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsTelemetryConfigOutputReference) ResetEnabledTelemetryFeatures() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnabledTelemetryFeatures",
+		nil, // no parameters
 	)
 }
 

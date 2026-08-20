@@ -183,6 +183,10 @@ func (j *jsiiProxy_Job) validatePutTriggerParameters(value *JobTrigger) error {
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutTriggersParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutWebhookNotificationsParameters(value *JobWebhookNotifications) error {
 	return nil
 }

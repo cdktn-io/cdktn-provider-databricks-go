@@ -13,7 +13,6 @@ import (
 
 type DataDatabricksAiGatewayModelServicesModelServicesOutputReference interface {
 	cdktn.ComplexObject
-	BrowseOnly() cdktn.IResolvable
 	Comment() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -96,16 +95,6 @@ type DataDatabricksAiGatewayModelServicesModelServicesOutputReference interface 
 // The jsii proxy struct for DataDatabricksAiGatewayModelServicesModelServicesOutputReference
 type jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesOutputReference struct {
 	internal.Type__cdktnComplexObject
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesOutputReference) BrowseOnly() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"browseOnly",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesOutputReference) Comment() *string {

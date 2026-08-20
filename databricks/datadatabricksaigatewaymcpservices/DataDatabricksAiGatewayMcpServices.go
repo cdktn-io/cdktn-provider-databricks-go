@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services databricks_ai_gateway_mcp_services}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services databricks_ai_gateway_mcp_services}.
 type DataDatabricksAiGatewayMcpServices interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -35,9 +35,6 @@ type DataDatabricksAiGatewayMcpServices interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	IncludeBrowse() interface{}
-	SetIncludeBrowse(val interface{})
-	IncludeBrowseInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -107,7 +104,6 @@ type DataDatabricksAiGatewayMcpServices interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
-	ResetIncludeBrowse()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -208,26 +204,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayMcpServices) FriendlyUniqueId() *strin
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayMcpServices) IncludeBrowse() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"includeBrowse",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayMcpServices) IncludeBrowseInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"includeBrowseInput",
 		&returns,
 	)
 	return returns
@@ -394,7 +370,7 @@ func (j *jsiiProxy_DataDatabricksAiGatewayMcpServices) ViewInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services databricks_ai_gateway_mcp_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services databricks_ai_gateway_mcp_services} Data Source.
 func NewDataDatabricksAiGatewayMcpServices(scope constructs.Construct, id *string, config *DataDatabricksAiGatewayMcpServicesConfig) DataDatabricksAiGatewayMcpServices {
 	_init_.Initialize()
 
@@ -412,7 +388,7 @@ func NewDataDatabricksAiGatewayMcpServices(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services databricks_ai_gateway_mcp_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services databricks_ai_gateway_mcp_services} Data Source.
 func NewDataDatabricksAiGatewayMcpServices_Override(d DataDatabricksAiGatewayMcpServices, scope constructs.Construct, id *string, config *DataDatabricksAiGatewayMcpServicesConfig) {
 	_init_.Initialize()
 
@@ -446,17 +422,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayMcpServices)SetForEach(val cdktn.ITerr
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayMcpServices)SetIncludeBrowse(val interface{}) {
-	if err := j.validateSetIncludeBrowseParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"includeBrowse",
 		val,
 	)
 }
@@ -817,14 +782,6 @@ func (d *jsiiProxy_DataDatabricksAiGatewayMcpServices) RegisterProviderFeatureUs
 		d,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayMcpServices) ResetIncludeBrowse() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIncludeBrowse",
-		nil, // no parameters
 	)
 }
 

@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutApiSourceConnectorOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutConfluenceOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions) error {
 	return nil
 }
@@ -64,6 +68,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 }
 
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutKafkaOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutLinkedinAdsOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutMarketoOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions) error {
 	return nil
 }
 

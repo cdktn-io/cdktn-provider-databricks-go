@@ -5,7 +5,7 @@ package datadatabricksonlinestores
 
 
 type DataDatabricksOnlineStoresOnlineStoresProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/online_stores#workspace_id DataDatabricksOnlineStores#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/online_stores#workspace_id DataDatabricksOnlineStores#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

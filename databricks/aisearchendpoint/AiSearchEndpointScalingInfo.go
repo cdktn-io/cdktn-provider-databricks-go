@@ -5,7 +5,7 @@ package aisearchendpoint
 
 
 type AiSearchEndpointScalingInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/ai_search_endpoint#requested_target_qps AiSearchEndpoint#requested_target_qps}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ai_search_endpoint#requested_target_qps AiSearchEndpoint#requested_target_qps}.
 	RequestedTargetQps *float64 `field:"optional" json:"requestedTargetQps" yaml:"requestedTargetQps"`
 }
 

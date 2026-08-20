@@ -13,6 +13,9 @@ import (
 
 type MwsNccPrivateEndpointRuleGcpEndpointOutputReference interface {
 	cdktn.ComplexObject
+	AllVpcScServices() interface{}
+	SetAllVpcScServices(val interface{})
+	AllVpcScServicesInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +33,8 @@ type MwsNccPrivateEndpointRuleGcpEndpointOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GoogleApiEndpoints() MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsOutputReference
+	GoogleApiEndpointsInput() *MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints
 	InternalValue() *MwsNccPrivateEndpointRuleGcpEndpoint
 	SetInternalValue(val *MwsNccPrivateEndpointRuleGcpEndpoint)
 	PscEndpointUri() *string
@@ -68,6 +73,9 @@ type MwsNccPrivateEndpointRuleGcpEndpointOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutGoogleApiEndpoints(value *MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints)
+	ResetAllVpcScServices()
+	ResetGoogleApiEndpoints()
 	ResetServiceAttachment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -82,6 +90,26 @@ type MwsNccPrivateEndpointRuleGcpEndpointOutputReference interface {
 // The jsii proxy struct for MwsNccPrivateEndpointRuleGcpEndpointOutputReference
 type jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) AllVpcScServices() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allVpcScServices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) AllVpcScServicesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allVpcScServicesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) ComplexObjectIndex() interface{} {
@@ -119,6 +147,26 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) Fqn() *s
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) GoogleApiEndpoints() MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsOutputReference {
+	var returns MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsOutputReference
+	_jsii_.Get(
+		j,
+		"googleApiEndpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) GoogleApiEndpointsInput() *MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints {
+	var returns *MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints
+	_jsii_.Get(
+		j,
+		"googleApiEndpointsInput",
 		&returns,
 	)
 	return returns
@@ -209,6 +257,17 @@ func NewMwsNccPrivateEndpointRuleGcpEndpointOutputReference_Override(m MwsNccPri
 		"@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRuleGcpEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
+	)
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference)SetAllVpcScServices(val interface{}) {
+	if err := j.validateSetAllVpcScServicesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allVpcScServices",
+		val,
 	)
 }
 
@@ -462,6 +521,33 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) PutGoogleApiEndpoints(value *MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints) {
+	if err := m.validatePutGoogleApiEndpointsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putGoogleApiEndpoints",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) ResetAllVpcScServices() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAllVpcScServices",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) ResetGoogleApiEndpoints() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGoogleApiEndpoints",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) ResetServiceAttachment() {

@@ -104,6 +104,17 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutGitRepository
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutGitSourceParameters(value *DataDatabricksAppAppGitSource) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutResourcesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -279,6 +290,26 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetDescriptionPa
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetForwardUserAccessTokenParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetInternalValueParameters(val *DataDatabricksAppApp) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -288,6 +319,14 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetInternalValue
 }
 
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetSourceCodePathParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

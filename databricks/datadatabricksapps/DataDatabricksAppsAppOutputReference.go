@@ -45,6 +45,7 @@ type DataDatabricksAppsAppOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Creator() *string
+	DefaultGitSource() DataDatabricksAppsAppDefaultGitSourceOutputReference
 	DefaultSourceCodePath() *string
 	Description() *string
 	SetDescription(val *string)
@@ -52,10 +53,15 @@ type DataDatabricksAppsAppOutputReference interface {
 	EffectiveBudgetPolicyId() *string
 	EffectiveUsagePolicyId() *string
 	EffectiveUserApiScopes() *[]*string
+	ForwardUserAccessToken() interface{}
+	SetForwardUserAccessToken(val interface{})
+	ForwardUserAccessTokenInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GitRepository() DataDatabricksAppsAppGitRepositoryOutputReference
 	GitRepositoryInput() interface{}
+	GitSource() DataDatabricksAppsAppGitSourceOutputReference
+	GitSourceInput() interface{}
 	Id() *string
 	InternalValue() *DataDatabricksAppsApp
 	SetInternalValue(val *DataDatabricksAppsApp)
@@ -70,6 +76,9 @@ type DataDatabricksAppsAppOutputReference interface {
 	ServicePrincipalClientId() *string
 	ServicePrincipalId() *float64
 	ServicePrincipalName() *string
+	SourceCodePath() *string
+	SetSourceCodePath(val *string)
+	SourceCodePathInput() *string
 	Space() *string
 	SetSpace(val *string)
 	SpaceInput() *string
@@ -118,6 +127,7 @@ type DataDatabricksAppsAppOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutGitRepository(value *DataDatabricksAppsAppGitRepository)
+	PutGitSource(value *DataDatabricksAppsAppGitSource)
 	PutResources(value interface{})
 	PutTelemetryExportDestinations(value interface{})
 	ResetBudgetPolicyId()
@@ -125,8 +135,11 @@ type DataDatabricksAppsAppOutputReference interface {
 	ResetComputeMinInstances()
 	ResetComputeSize()
 	ResetDescription()
+	ResetForwardUserAccessToken()
 	ResetGitRepository()
+	ResetGitSource()
 	ResetResources()
+	ResetSourceCodePath()
 	ResetSpace()
 	ResetTelemetryExportDestinations()
 	ResetUsagePolicyId()
@@ -306,6 +319,16 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) Creator() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) DefaultGitSource() DataDatabricksAppsAppDefaultGitSourceOutputReference {
+	var returns DataDatabricksAppsAppDefaultGitSourceOutputReference
+	_jsii_.Get(
+		j,
+		"defaultGitSource",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) DefaultSourceCodePath() *string {
 	var returns *string
 	_jsii_.Get(
@@ -366,6 +389,26 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) EffectiveUserApiScopes(
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) ForwardUserAccessToken() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forwardUserAccessToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) ForwardUserAccessTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forwardUserAccessTokenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -391,6 +434,26 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) GitRepositoryInput() in
 	_jsii_.Get(
 		j,
 		"gitRepositoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) GitSource() DataDatabricksAppsAppGitSourceOutputReference {
+	var returns DataDatabricksAppsAppGitSourceOutputReference
+	_jsii_.Get(
+		j,
+		"gitSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) GitSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitSourceInput",
 		&returns,
 	)
 	return returns
@@ -511,6 +574,26 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) ServicePrincipalName() 
 	_jsii_.Get(
 		j,
 		"servicePrincipalName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) SourceCodePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceCodePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) SourceCodePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceCodePathInput",
 		&returns,
 	)
 	return returns
@@ -761,6 +844,17 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference)SetDescription(val *stri
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference)SetForwardUserAccessToken(val interface{}) {
+	if err := j.validateSetForwardUserAccessTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forwardUserAccessToken",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference)SetInternalValue(val *DataDatabricksAppsApp) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -779,6 +873,17 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference)SetSourceCodePath(val *string) {
+	if err := j.validateSetSourceCodePathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceCodePath",
 		val,
 	)
 }
@@ -1035,6 +1140,17 @@ func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) PutGitRepository(value 
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) PutGitSource(value *DataDatabricksAppsAppGitSource) {
+	if err := d.validatePutGitSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGitSource",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) PutResources(value interface{}) {
 	if err := d.validatePutResourcesParameters(value); err != nil {
 		panic(err)
@@ -1097,6 +1213,14 @@ func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetDescription() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetForwardUserAccessToken() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetForwardUserAccessToken",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetGitRepository() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1105,10 +1229,26 @@ func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetGitRepository() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetGitSource() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGitSource",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetResources() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetSourceCodePath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceCodePath",
 		nil, // no parameters
 	)
 }

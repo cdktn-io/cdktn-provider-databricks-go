@@ -5,9 +5,9 @@ package datadatabrickspostgresendpoints
 
 
 type DataDatabricksPostgresEndpointsEndpoints struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/postgres_endpoints#name DataDatabricksPostgresEndpoints#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/postgres_endpoints#name DataDatabricksPostgresEndpoints#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/postgres_endpoints#provider_config DataDatabricksPostgresEndpoints#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/postgres_endpoints#provider_config DataDatabricksPostgresEndpoints#provider_config}.
 	ProviderConfig *DataDatabricksPostgresEndpointsEndpointsProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

@@ -5,9 +5,9 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
 	Breakdowns *[]*string `field:"optional" json:"breakdowns" yaml:"breakdowns"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/pipeline#fields Pipeline#fields}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/pipeline#fields Pipeline#fields}.
 	Fields *[]*string `field:"optional" json:"fields" yaml:"fields"`
 }
 

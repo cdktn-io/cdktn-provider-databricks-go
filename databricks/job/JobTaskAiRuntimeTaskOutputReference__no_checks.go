@@ -67,11 +67,19 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetComplexObject
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetDockerImageUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetExperimentParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetInternalValueParameters(val *JobTaskAiRuntimeTask) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetMlflowArtifactLocationParameters(val *string) error {
 	return nil
 }
 

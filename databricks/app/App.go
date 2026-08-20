@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app databricks_app}.
 type App interface {
 	cdktn.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
@@ -44,6 +44,7 @@ type App interface {
 	SetCount(val interface{})
 	CreateTime() *string
 	Creator() *string
+	DefaultGitSource() AppDefaultGitSourceOutputReference
 	DefaultSourceCodePath() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -59,12 +60,17 @@ type App interface {
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktn.ITerraformIterator)
+	ForwardUserAccessToken() interface{}
+	SetForwardUserAccessToken(val interface{})
+	ForwardUserAccessTokenInput() interface{}
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	GitRepository() AppGitRepositoryOutputReference
 	GitRepositoryInput() interface{}
+	GitSource() AppGitSourceOutputReference
+	GitSourceInput() interface{}
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -98,6 +104,9 @@ type App interface {
 	ServicePrincipalClientId() *string
 	ServicePrincipalId() *float64
 	ServicePrincipalName() *string
+	SourceCodePath() *string
+	SetSourceCodePath(val *string)
+	SourceCodePathInput() *string
 	Space() *string
 	SetSpace(val *string)
 	SpaceInput() *string
@@ -199,6 +208,7 @@ type App interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGitRepository(value *AppGitRepository)
+	PutGitSource(value *AppGitSource)
 	PutProviderConfig(value *AppProviderConfig)
 	PutResources(value interface{})
 	PutTelemetryExportDestinations(value interface{})
@@ -220,13 +230,16 @@ type App interface {
 	ResetComputeMinInstances()
 	ResetComputeSize()
 	ResetDescription()
+	ResetForwardUserAccessToken()
 	ResetGitRepository()
+	ResetGitSource()
 	ResetNoCompute()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
 	ResetResources()
+	ResetSourceCodePath()
 	ResetSpace()
 	ResetTelemetryExportDestinations()
 	ResetUsagePolicyId()
@@ -428,6 +441,16 @@ func (j *jsiiProxy_App) Creator() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) DefaultGitSource() AppDefaultGitSourceOutputReference {
+	var returns AppDefaultGitSourceOutputReference
+	_jsii_.Get(
+		j,
+		"defaultGitSource",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) DefaultSourceCodePath() *string {
 	var returns *string
 	_jsii_.Get(
@@ -508,6 +531,26 @@ func (j *jsiiProxy_App) ForEach() cdktn.ITerraformIterator {
 	return returns
 }
 
+func (j *jsiiProxy_App) ForwardUserAccessToken() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forwardUserAccessToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) ForwardUserAccessTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forwardUserAccessTokenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -543,6 +586,26 @@ func (j *jsiiProxy_App) GitRepositoryInput() interface{} {
 	_jsii_.Get(
 		j,
 		"gitRepositoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) GitSource() AppGitSourceOutputReference {
+	var returns AppGitSourceOutputReference
+	_jsii_.Get(
+		j,
+		"gitSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) GitSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitSourceInput",
 		&returns,
 	)
 	return returns
@@ -748,6 +811,26 @@ func (j *jsiiProxy_App) ServicePrincipalName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) SourceCodePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceCodePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) SourceCodePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceCodePathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) Space() *string {
 	var returns *string
 	_jsii_.Get(
@@ -899,7 +982,7 @@ func (j *jsiiProxy_App) UserApiScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -917,7 +1000,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
@@ -1021,6 +1104,17 @@ func (j *jsiiProxy_App)SetForEach(val cdktn.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_App)SetForwardUserAccessToken(val interface{}) {
+	if err := j.validateSetForwardUserAccessTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forwardUserAccessToken",
+		val,
+	)
+}
+
 func (j *jsiiProxy_App)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1069,6 +1163,17 @@ func (j *jsiiProxy_App)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_App)SetSourceCodePath(val *string) {
+	if err := j.validateSetSourceCodePathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceCodePath",
 		val,
 	)
 }
@@ -1486,6 +1591,17 @@ func (a *jsiiProxy_App) PutGitRepository(value *AppGitRepository) {
 	)
 }
 
+func (a *jsiiProxy_App) PutGitSource(value *AppGitSource) {
+	if err := a.validatePutGitSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putGitSource",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_App) PutProviderConfig(value *AppProviderConfig) {
 	if err := a.validatePutProviderConfigParameters(value); err != nil {
 		panic(err)
@@ -1570,10 +1686,26 @@ func (a *jsiiProxy_App) ResetDescription() {
 	)
 }
 
+func (a *jsiiProxy_App) ResetForwardUserAccessToken() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetForwardUserAccessToken",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_App) ResetGitRepository() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetGitRepository",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetGitSource() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGitSource",
 		nil, // no parameters
 	)
 }
@@ -1606,6 +1738,14 @@ func (a *jsiiProxy_App) ResetResources() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetSourceCodePath() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSourceCodePath",
 		nil, // no parameters
 	)
 }

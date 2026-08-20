@@ -67,6 +67,10 @@ func (j *jsiiProxy_PostgresSyncedTableSpecNewPipelineSpecOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_PostgresSyncedTableSpecNewPipelineSpecOutputReference) validateSetPipelineChannelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresSyncedTableSpecNewPipelineSpecOutputReference) validateSetStorageCatalogParameters(val *string) error {
 	return nil
 }

@@ -35,6 +35,9 @@ type PostgresSyncedTableSpecNewPipelineSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PipelineChannel() *string
+	SetPipelineChannel(val *string)
+	PipelineChannelInput() *string
 	StorageCatalog() *string
 	SetStorageCatalog(val *string)
 	StorageCatalogInput() *string
@@ -74,6 +77,7 @@ type PostgresSyncedTableSpecNewPipelineSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBudgetPolicyId()
+	ResetPipelineChannel()
 	ResetStorageCatalog()
 	ResetStorageSchema()
 	// Produce the Token's value at resolution time.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_PostgresSyncedTableSpecNewPipelineSpecOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresSyncedTableSpecNewPipelineSpecOutputReference) PipelineChannel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineChannel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresSyncedTableSpecNewPipelineSpecOutputReference) PipelineChannelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineChannelInput",
 		&returns,
 	)
 	return returns
@@ -289,6 +313,17 @@ func (j *jsiiProxy_PostgresSyncedTableSpecNewPipelineSpecOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresSyncedTableSpecNewPipelineSpecOutputReference)SetPipelineChannel(val *string) {
+	if err := j.validateSetPipelineChannelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pipelineChannel",
 		val,
 	)
 }
@@ -527,6 +562,14 @@ func (p *jsiiProxy_PostgresSyncedTableSpecNewPipelineSpecOutputReference) ResetB
 	_jsii_.InvokeVoid(
 		p,
 		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresSyncedTableSpecNewPipelineSpecOutputReference) ResetPipelineChannel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPipelineChannel",
 		nil, // no parameters
 	)
 }

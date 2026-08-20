@@ -5,11 +5,11 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsSchemaFanoutOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/pipeline#fanout_by Pipeline#fanout_by}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/pipeline#fanout_by Pipeline#fanout_by}.
 	FanoutBy *string `field:"optional" json:"fanoutBy" yaml:"fanoutBy"`
 	// transforms block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/pipeline#transforms Pipeline#transforms}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/pipeline#transforms Pipeline#transforms}
 	Transforms interface{} `field:"optional" json:"transforms" yaml:"transforms"`
 }
 

@@ -5,7 +5,7 @@ package datadatabrickssparkversion
 
 
 type DataDatabricksSparkVersionProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/spark_version#workspace_id DataDatabricksSparkVersion#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/spark_version#workspace_id DataDatabricksSparkVersion#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

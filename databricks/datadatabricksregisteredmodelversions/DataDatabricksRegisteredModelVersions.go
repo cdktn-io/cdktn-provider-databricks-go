@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/registered_model_versions databricks_registered_model_versions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/registered_model_versions databricks_registered_model_versions}.
 type DataDatabricksRegisteredModelVersions interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersions) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
 func NewDataDatabricksRegisteredModelVersions(scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelVersionsConfig) DataDatabricksRegisteredModelVersions {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewDataDatabricksRegisteredModelVersions(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source.
 func NewDataDatabricksRegisteredModelVersions_Override(d DataDatabricksRegisteredModelVersions, scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelVersionsConfig) {
 	_init_.Initialize()
 

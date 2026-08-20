@@ -13,6 +13,8 @@ import (
 
 type PipelineIngestionDefinitionSourceConfigurationsOutputReference interface {
 	cdktn.ComplexObject
+	ApiSourceConnectorConfig() PipelineIngestionDefinitionSourceConfigurationsApiSourceConnectorConfigOutputReference
+	ApiSourceConnectorConfigInput() *PipelineIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig
 	Catalog() PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference
 	CatalogInput() *PipelineIngestionDefinitionSourceConfigurationsCatalog
 	// the index of the complex object in a list.
@@ -68,8 +70,10 @@ type PipelineIngestionDefinitionSourceConfigurationsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutApiSourceConnectorConfig(value *PipelineIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig)
 	PutCatalog(value *PipelineIngestionDefinitionSourceConfigurationsCatalog)
 	PutGoogleAdsConfig(value *PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig)
+	ResetApiSourceConnectorConfig()
 	ResetCatalog()
 	ResetGoogleAdsConfig()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type PipelineIngestionDefinitionSourceConfigurationsOutputReference interface {
 // The jsii proxy struct for PipelineIngestionDefinitionSourceConfigurationsOutputReference
 type jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) ApiSourceConnectorConfig() PipelineIngestionDefinitionSourceConfigurationsApiSourceConnectorConfigOutputReference {
+	var returns PipelineIngestionDefinitionSourceConfigurationsApiSourceConnectorConfigOutputReference
+	_jsii_.Get(
+		j,
+		"apiSourceConnectorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) ApiSourceConnectorConfigInput() *PipelineIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig {
+	var returns *PipelineIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig
+	_jsii_.Get(
+		j,
+		"apiSourceConnectorConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) Catalog() PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference {
@@ -466,6 +490,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 	return returns
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) PutApiSourceConnectorConfig(value *PipelineIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig) {
+	if err := p.validatePutApiSourceConnectorConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putApiSourceConnectorConfig",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) PutCatalog(value *PipelineIngestionDefinitionSourceConfigurationsCatalog) {
 	if err := p.validatePutCatalogParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReferenc
 		p,
 		"putGoogleAdsConfig",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionSourceConfigurationsOutputReference) ResetApiSourceConnectorConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetApiSourceConnectorConfig",
+		nil, // no parameters
 	)
 }
 

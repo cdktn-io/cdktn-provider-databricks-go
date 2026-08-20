@@ -32,6 +32,8 @@ type FeatureEngineeringFeatureFunctionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomUdf() FeatureEngineeringFeatureFunctionCustomUdfOutputReference
+	CustomUdfInput() interface{}
 	ExtraParameters() FeatureEngineeringFeatureFunctionExtraParametersList
 	ExtraParametersInput() interface{}
 	// Experimental.
@@ -75,9 +77,11 @@ type FeatureEngineeringFeatureFunctionOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAggregationFunction(value *FeatureEngineeringFeatureFunctionAggregationFunction)
 	PutColumnSelection(value *FeatureEngineeringFeatureFunctionColumnSelection)
+	PutCustomUdf(value *FeatureEngineeringFeatureFunctionCustomUdf)
 	PutExtraParameters(value interface{})
 	ResetAggregationFunction()
 	ResetColumnSelection()
+	ResetCustomUdf()
 	ResetExtraParameters()
 	ResetFunctionType()
 	// Produce the Token's value at resolution time.
@@ -160,6 +164,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) CreationSta
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) CustomUdf() FeatureEngineeringFeatureFunctionCustomUdfOutputReference {
+	var returns FeatureEngineeringFeatureFunctionCustomUdfOutputReference
+	_jsii_.Get(
+		j,
+		"customUdf",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) CustomUdfInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customUdfInput",
 		&returns,
 	)
 	return returns
@@ -547,6 +571,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutColumnSe
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutCustomUdf(value *FeatureEngineeringFeatureFunctionCustomUdf) {
+	if err := f.validatePutCustomUdfParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putCustomUdf",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutExtraParameters(value interface{}) {
 	if err := f.validatePutExtraParametersParameters(value); err != nil {
 		panic(err)
@@ -570,6 +605,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetColumn
 	_jsii_.InvokeVoid(
 		f,
 		"resetColumnSelection",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetCustomUdf() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetCustomUdf",
 		nil, // no parameters
 	)
 }

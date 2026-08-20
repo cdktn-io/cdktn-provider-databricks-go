@@ -601,6 +601,37 @@ func (j *jsiiProxy_Job) validatePutTriggerParameters(value *JobTrigger) error {
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutTriggersParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*JobTriggers:
+		value := value.(*[]*JobTriggers)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*JobTriggers:
+		value_ := value.([]*JobTriggers)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobTriggers; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutWebhookNotificationsParameters(value *JobWebhookNotifications) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

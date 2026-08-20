@@ -73,6 +73,7 @@ type JobJobClusterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutNewCluster(value *JobJobClusterNewCluster)
+	ResetNewCluster()
 	ResetServerlessComputeId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -518,6 +519,14 @@ func (j *jsiiProxy_JobJobClusterOutputReference) PutNewCluster(value *JobJobClus
 		j,
 		"putNewCluster",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterOutputReference) ResetNewCluster() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetNewCluster",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/disaster_recovery_failover_groups databricks_disaster_recovery_failover_groups}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_failover_groups databricks_disaster_recovery_failover_groups}.
 type DataDatabricksDisasterRecoveryFailoverGroups interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroups) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/disaster_recovery_failover_groups databricks_disaster_recovery_failover_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_failover_groups databricks_disaster_recovery_failover_groups} Data Source.
 func NewDataDatabricksDisasterRecoveryFailoverGroups(scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryFailoverGroupsConfig) DataDatabricksDisasterRecoveryFailoverGroups {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDatabricksDisasterRecoveryFailoverGroups(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/disaster_recovery_failover_groups databricks_disaster_recovery_failover_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_failover_groups databricks_disaster_recovery_failover_groups} Data Source.
 func NewDataDatabricksDisasterRecoveryFailoverGroups_Override(d DataDatabricksDisasterRecoveryFailoverGroups, scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryFailoverGroupsConfig) {
 	_init_.Initialize()
 

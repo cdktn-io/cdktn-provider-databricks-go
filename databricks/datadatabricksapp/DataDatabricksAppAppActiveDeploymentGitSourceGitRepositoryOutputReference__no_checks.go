@@ -51,6 +51,14 @@ func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentGitSourceGitRepositoryOut
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentGitSourceGitRepositoryOutputReference) validateSetAutoDeployParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentGitSourceGitRepositoryOutputReference) validateSetCallerCredentialIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentGitSourceGitRepositoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -5,7 +5,13 @@ package mwsnccprivateendpointrule
 
 
 type MwsNccPrivateEndpointRuleGcpEndpoint struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#service_attachment MwsNccPrivateEndpointRule#service_attachment}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#all_vpc_sc_services MwsNccPrivateEndpointRule#all_vpc_sc_services}.
+	AllVpcScServices interface{} `field:"optional" json:"allVpcScServices" yaml:"allVpcScServices"`
+	// google_api_endpoints block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#google_api_endpoints MwsNccPrivateEndpointRule#google_api_endpoints}
+	GoogleApiEndpoints *MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints `field:"optional" json:"googleApiEndpoints" yaml:"googleApiEndpoints"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#service_attachment MwsNccPrivateEndpointRule#service_attachment}.
 	ServiceAttachment *string `field:"optional" json:"serviceAttachment" yaml:"serviceAttachment"`
 }
 

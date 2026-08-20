@@ -67,7 +67,15 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransfor
 	return nil
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) validateSetInputColumnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) validateSetOutputColumnParameters(val *string) error {
 	return nil
 }
 

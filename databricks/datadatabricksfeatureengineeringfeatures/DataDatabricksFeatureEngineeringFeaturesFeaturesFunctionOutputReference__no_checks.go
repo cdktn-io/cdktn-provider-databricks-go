@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutpu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) validatePutCustomUdfParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionCustomUdf) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) validatePutExtraParametersParameters(value interface{}) error {
 	return nil
 }

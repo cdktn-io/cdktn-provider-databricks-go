@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) validatePutGitRepositor
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) validatePutGitSourceParameters(value *DataDatabricksAppsAppGitSource) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) validatePutResourcesParameters(value interface{}) error {
 	return nil
 }
@@ -91,11 +95,19 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetDescriptionP
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetForwardUserAccessTokenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetInternalValueParameters(val *DataDatabricksAppsApp) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetSourceCodePathParameters(val *string) error {
 	return nil
 }
 

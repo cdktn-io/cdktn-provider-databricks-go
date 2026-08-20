@@ -47,7 +47,15 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validate
 	return nil
 }
 
+func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validatePutGoogleApiEndpointsParameters(value *MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRuleGcpEndpointOutputReference) validateSetAllVpcScServicesParameters(val interface{}) error {
 	return nil
 }
 
