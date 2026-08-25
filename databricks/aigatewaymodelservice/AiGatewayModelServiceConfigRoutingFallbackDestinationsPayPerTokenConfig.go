@@ -5,7 +5,7 @@ package aigatewaymodelservice
 
 
 type AiGatewayModelServiceConfigRoutingFallbackDestinationsPayPerTokenConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ai_gateway_model_service#model AiGatewayModelService#model}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ai_gateway_model_service#model AiGatewayModelService#model}.
 	Model *string `field:"required" json:"model" yaml:"model"`
 }
 

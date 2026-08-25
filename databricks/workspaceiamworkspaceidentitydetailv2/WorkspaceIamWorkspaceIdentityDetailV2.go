@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}.
 type WorkspaceIamWorkspaceIdentityDetailV2 interface {
 	cdktn.TerraformResource
 	AssignmentType() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2) WorkspaceIdentityStatu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Resource.
 func NewWorkspaceIamWorkspaceIdentityDetailV2(scope constructs.Construct, id *string, config *WorkspaceIamWorkspaceIdentityDetailV2Config) WorkspaceIamWorkspaceIdentityDetailV2 {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewWorkspaceIamWorkspaceIdentityDetailV2(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Resource.
 func NewWorkspaceIamWorkspaceIdentityDetailV2_Override(w WorkspaceIamWorkspaceIdentityDetailV2, scope constructs.Construct, id *string, config *WorkspaceIamWorkspaceIdentityDetailV2Config) {
 	_init_.Initialize()
 

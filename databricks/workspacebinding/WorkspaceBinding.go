@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_binding databricks_workspace_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_binding databricks_workspace_binding}.
 type WorkspaceBinding interface {
 	cdktn.TerraformResource
 	BindingType() *string
@@ -511,7 +511,7 @@ func (j *jsiiProxy_WorkspaceBinding) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_binding databricks_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_binding databricks_workspace_binding} Resource.
 func NewWorkspaceBinding(scope constructs.Construct, id *string, config *WorkspaceBindingConfig) WorkspaceBinding {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewWorkspaceBinding(scope constructs.Construct, id *string, config *Workspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_binding databricks_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_binding databricks_workspace_binding} Resource.
 func NewWorkspaceBinding_Override(w WorkspaceBinding, scope constructs.Construct, id *string, config *WorkspaceBindingConfig) {
 	_init_.Initialize()
 

@@ -22,11 +22,11 @@ type WorkspaceIamGroupV2Config struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#external_id WorkspaceIamGroupV2#external_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#external_id WorkspaceIamGroupV2#external_id}.
 	ExternalId *string `field:"optional" json:"externalId" yaml:"externalId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#group_name WorkspaceIamGroupV2#group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#group_name WorkspaceIamGroupV2#group_name}.
 	GroupName *string `field:"optional" json:"groupName" yaml:"groupName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#provider_config WorkspaceIamGroupV2#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#provider_config WorkspaceIamGroupV2#provider_config}.
 	ProviderConfig *WorkspaceIamGroupV2ProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

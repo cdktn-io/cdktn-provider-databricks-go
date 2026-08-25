@@ -5,7 +5,7 @@ package mwsnccprivateendpointrule
 
 
 type MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#endpoints MwsNccPrivateEndpointRule#endpoints}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/mws_ncc_private_endpoint_rule#endpoints MwsNccPrivateEndpointRule#endpoints}.
 	Endpoints *[]*string `field:"optional" json:"endpoints" yaml:"endpoints"`
 }
 

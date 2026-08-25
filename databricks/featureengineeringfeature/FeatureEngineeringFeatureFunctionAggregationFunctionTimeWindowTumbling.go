@@ -5,7 +5,7 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 	WindowDuration *string `field:"required" json:"windowDuration" yaml:"windowDuration"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_search_index databricks_ai_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_search_index databricks_ai_search_index}.
 type DataDatabricksAiSearchIndex interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataDatabricksAiSearchIndex) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_search_index databricks_ai_search_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_search_index databricks_ai_search_index} Data Source.
 func NewDataDatabricksAiSearchIndex(scope constructs.Construct, id *string, config *DataDatabricksAiSearchIndexConfig) DataDatabricksAiSearchIndex {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataDatabricksAiSearchIndex(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_search_index databricks_ai_search_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_search_index databricks_ai_search_index} Data Source.
 func NewDataDatabricksAiSearchIndex_Override(d DataDatabricksAiSearchIndex, scope constructs.Construct, id *string, config *DataDatabricksAiSearchIndexConfig) {
 	_init_.Initialize()
 

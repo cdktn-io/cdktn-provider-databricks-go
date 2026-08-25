@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ai_search_endpoint databricks_ai_search_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ai_search_endpoint databricks_ai_search_endpoint}.
 type AiSearchEndpoint interface {
 	cdktn.TerraformResource
 	BudgetPolicyId() *string
@@ -679,7 +679,7 @@ func (j *jsiiProxy_AiSearchEndpoint) UsagePolicyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ai_search_endpoint databricks_ai_search_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ai_search_endpoint databricks_ai_search_endpoint} Resource.
 func NewAiSearchEndpoint(scope constructs.Construct, id *string, config *AiSearchEndpointConfig) AiSearchEndpoint {
 	_init_.Initialize()
 
@@ -697,7 +697,7 @@ func NewAiSearchEndpoint(scope constructs.Construct, id *string, config *AiSearc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ai_search_endpoint databricks_ai_search_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ai_search_endpoint databricks_ai_search_endpoint} Resource.
 func NewAiSearchEndpoint_Override(a AiSearchEndpoint, scope constructs.Construct, id *string, config *AiSearchEndpointConfig) {
 	_init_.Initialize()
 

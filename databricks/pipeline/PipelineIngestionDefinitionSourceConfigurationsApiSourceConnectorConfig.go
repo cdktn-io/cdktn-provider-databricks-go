@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/pipeline#configs Pipeline#configs}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#configs Pipeline#configs}.
 	Configs *map[string]*string `field:"optional" json:"configs" yaml:"configs"`
 }
 

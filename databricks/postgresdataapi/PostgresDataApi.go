@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/postgres_data_api databricks_postgres_data_api}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/postgres_data_api databricks_postgres_data_api}.
 type PostgresDataApi interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_PostgresDataApi) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/postgres_data_api databricks_postgres_data_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/postgres_data_api databricks_postgres_data_api} Resource.
 func NewPostgresDataApi(scope constructs.Construct, id *string, config *PostgresDataApiConfig) PostgresDataApi {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewPostgresDataApi(scope constructs.Construct, id *string, config *Postgres
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/postgres_data_api databricks_postgres_data_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/postgres_data_api databricks_postgres_data_api} Resource.
 func NewPostgresDataApi_Override(p PostgresDataApi, scope constructs.Construct, id *string, config *PostgresDataApiConfig) {
 	_init_.Initialize()
 

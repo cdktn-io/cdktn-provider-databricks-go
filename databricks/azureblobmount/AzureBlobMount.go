@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/azure_blob_mount databricks_azure_blob_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/azure_blob_mount databricks_azure_blob_mount}.
 type AzureBlobMount interface {
 	cdktn.TerraformResource
 	AuthType() *string
@@ -565,7 +565,7 @@ func (j *jsiiProxy_AzureBlobMount) TokenSecretScopeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/azure_blob_mount databricks_azure_blob_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/azure_blob_mount databricks_azure_blob_mount} Resource.
 func NewAzureBlobMount(scope constructs.Construct, id *string, config *AzureBlobMountConfig) AzureBlobMount {
 	_init_.Initialize()
 
@@ -583,7 +583,7 @@ func NewAzureBlobMount(scope constructs.Construct, id *string, config *AzureBlob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/azure_blob_mount databricks_azure_blob_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/azure_blob_mount databricks_azure_blob_mount} Resource.
 func NewAzureBlobMount_Override(a AzureBlobMount, scope constructs.Construct, id *string, config *AzureBlobMountConfig) {
 	_init_.Initialize()
 

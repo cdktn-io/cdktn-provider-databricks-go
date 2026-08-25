@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2}.
 type DataDatabricksAccountIamServicePrincipalV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalV2) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2} Data Source.
 func NewDataDatabricksAccountIamServicePrincipalV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamServicePrincipalV2Config) DataDatabricksAccountIamServicePrincipalV2 {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataDatabricksAccountIamServicePrincipalV2(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2} Data Source.
 func NewDataDatabricksAccountIamServicePrincipalV2_Override(d DataDatabricksAccountIamServicePrincipalV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamServicePrincipalV2Config) {
 	_init_.Initialize()
 

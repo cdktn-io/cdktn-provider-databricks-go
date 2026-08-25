@@ -5,7 +5,7 @@ package datadatabricksaigatewaymcpservices
 
 
 type DataDatabricksAiGatewayMcpServicesMcpServicesConfigSourceConnection struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#name DataDatabricksAiGatewayMcpServices#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_gateway_mcp_services#name DataDatabricksAiGatewayMcpServices#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

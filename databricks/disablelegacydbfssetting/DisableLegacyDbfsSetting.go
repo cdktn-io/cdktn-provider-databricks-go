@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/disable_legacy_dbfs_setting databricks_disable_legacy_dbfs_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/disable_legacy_dbfs_setting databricks_disable_legacy_dbfs_setting}.
 type DisableLegacyDbfsSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DisableLegacyDbfsSetting) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/disable_legacy_dbfs_setting databricks_disable_legacy_dbfs_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/disable_legacy_dbfs_setting databricks_disable_legacy_dbfs_setting} Resource.
 func NewDisableLegacyDbfsSetting(scope constructs.Construct, id *string, config *DisableLegacyDbfsSettingConfig) DisableLegacyDbfsSetting {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewDisableLegacyDbfsSetting(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/disable_legacy_dbfs_setting databricks_disable_legacy_dbfs_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/disable_legacy_dbfs_setting databricks_disable_legacy_dbfs_setting} Resource.
 func NewDisableLegacyDbfsSetting_Override(d DisableLegacyDbfsSetting, scope constructs.Construct, id *string, config *DisableLegacyDbfsSettingConfig) {
 	_init_.Initialize()
 

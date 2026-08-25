@@ -5,9 +5,9 @@ package datadatabricksappspaces
 
 
 type DataDatabricksAppSpacesSpacesResourcesExperiment struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/app_spaces#experiment_id DataDatabricksAppSpaces#experiment_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/app_spaces#experiment_id DataDatabricksAppSpaces#experiment_id}.
 	ExperimentId *string `field:"required" json:"experimentId" yaml:"experimentId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/app_spaces#permission DataDatabricksAppSpaces#permission}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/app_spaces#permission DataDatabricksAppSpaces#permission}.
 	Permission *string `field:"required" json:"permission" yaml:"permission"`
 }
 

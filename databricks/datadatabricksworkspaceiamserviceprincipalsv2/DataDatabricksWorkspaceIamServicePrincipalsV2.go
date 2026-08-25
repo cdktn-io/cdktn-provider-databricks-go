@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2}.
 type DataDatabricksWorkspaceIamServicePrincipalsV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalsV2) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2} Data Source.
 func NewDataDatabricksWorkspaceIamServicePrincipalsV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamServicePrincipalsV2Config) DataDatabricksWorkspaceIamServicePrincipalsV2 {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataDatabricksWorkspaceIamServicePrincipalsV2(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2} Data Source.
 func NewDataDatabricksWorkspaceIamServicePrincipalsV2_Override(d DataDatabricksWorkspaceIamServicePrincipalsV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamServicePrincipalsV2Config) {
 	_init_.Initialize()
 

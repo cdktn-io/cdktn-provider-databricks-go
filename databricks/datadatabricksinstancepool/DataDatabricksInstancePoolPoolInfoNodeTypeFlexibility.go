@@ -5,7 +5,7 @@ package datadatabricksinstancepool
 
 
 type DataDatabricksInstancePoolPoolInfoNodeTypeFlexibility struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/instance_pool#alternate_node_type_ids DataDatabricksInstancePool#alternate_node_type_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/instance_pool#alternate_node_type_ids DataDatabricksInstancePool#alternate_node_type_ids}.
 	AlternateNodeTypeIds *[]*string `field:"required" json:"alternateNodeTypeIds" yaml:"alternateNodeTypeIds"`
 }
 

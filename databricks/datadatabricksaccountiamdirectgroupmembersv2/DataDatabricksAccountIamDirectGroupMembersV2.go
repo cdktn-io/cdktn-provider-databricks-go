@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2}.
 type DataDatabricksAccountIamDirectGroupMembersV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2} Data Source.
 func NewDataDatabricksAccountIamDirectGroupMembersV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamDirectGroupMembersV2Config) DataDatabricksAccountIamDirectGroupMembersV2 {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDatabricksAccountIamDirectGroupMembersV2(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2} Data Source.
 func NewDataDatabricksAccountIamDirectGroupMembersV2_Override(d DataDatabricksAccountIamDirectGroupMembersV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamDirectGroupMembersV2Config) {
 	_init_.Initialize()
 

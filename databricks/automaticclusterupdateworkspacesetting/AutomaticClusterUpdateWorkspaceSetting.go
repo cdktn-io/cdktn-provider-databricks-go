@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting}.
 type AutomaticClusterUpdateWorkspaceSetting interface {
 	cdktn.TerraformResource
 	AutomaticClusterUpdateWorkspace() AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference
@@ -463,7 +463,7 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
 func NewAutomaticClusterUpdateWorkspaceSetting(scope constructs.Construct, id *string, config *AutomaticClusterUpdateWorkspaceSettingConfig) AutomaticClusterUpdateWorkspaceSetting {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewAutomaticClusterUpdateWorkspaceSetting(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
 func NewAutomaticClusterUpdateWorkspaceSetting_Override(a AutomaticClusterUpdateWorkspaceSetting, scope constructs.Construct, id *string, config *AutomaticClusterUpdateWorkspaceSettingConfig) {
 	_init_.Initialize()
 

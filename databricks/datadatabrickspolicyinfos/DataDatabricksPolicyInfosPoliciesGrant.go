@@ -5,7 +5,7 @@ package datadatabrickspolicyinfos
 
 
 type DataDatabricksPolicyInfosPoliciesGrant struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/policy_infos#privileges DataDatabricksPolicyInfos#privileges}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/policy_infos#privileges DataDatabricksPolicyInfos#privileges}.
 	Privileges *[]*string `field:"required" json:"privileges" yaml:"privileges"`
 }
 

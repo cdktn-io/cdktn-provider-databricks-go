@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2}.
 type DataDatabricksWorkspaceIamWorkspaceAssignmentV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentV2) WorkspaceId(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2} Data Source.
 func NewDataDatabricksWorkspaceIamWorkspaceAssignmentV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamWorkspaceAssignmentV2Config) DataDatabricksWorkspaceIamWorkspaceAssignmentV2 {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataDatabricksWorkspaceIamWorkspaceAssignmentV2(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2} Data Source.
 func NewDataDatabricksWorkspaceIamWorkspaceAssignmentV2_Override(d DataDatabricksWorkspaceIamWorkspaceAssignmentV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamWorkspaceAssignmentV2Config) {
 	_init_.Initialize()
 

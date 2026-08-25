@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
 	SyncStartDate *string `field:"optional" json:"syncStartDate" yaml:"syncStartDate"`
 }
 

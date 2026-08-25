@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2}.
 type WorkspaceIamWorkspaceAssignmentV2 interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_WorkspaceIamWorkspaceAssignmentV2) WorkspaceIdInput() *float6
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2} Resource.
 func NewWorkspaceIamWorkspaceAssignmentV2(scope constructs.Construct, id *string, config *WorkspaceIamWorkspaceAssignmentV2Config) WorkspaceIamWorkspaceAssignmentV2 {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewWorkspaceIamWorkspaceAssignmentV2(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_assignment_v2 databricks_workspace_iam_workspace_assignment_v2} Resource.
 func NewWorkspaceIamWorkspaceAssignmentV2_Override(w WorkspaceIamWorkspaceAssignmentV2, scope constructs.Construct, id *string, config *WorkspaceIamWorkspaceAssignmentV2Config) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2}.
 type WorkspaceIamDirectGroupMemberV2 interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_WorkspaceIamDirectGroupMemberV2) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2} Resource.
 func NewWorkspaceIamDirectGroupMemberV2(scope constructs.Construct, id *string, config *WorkspaceIamDirectGroupMemberV2Config) WorkspaceIamDirectGroupMemberV2 {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewWorkspaceIamDirectGroupMemberV2(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2} Resource.
 func NewWorkspaceIamDirectGroupMemberV2_Override(w WorkspaceIamDirectGroupMemberV2, scope constructs.Construct, id *string, config *WorkspaceIamDirectGroupMemberV2Config) {
 	_init_.Initialize()
 

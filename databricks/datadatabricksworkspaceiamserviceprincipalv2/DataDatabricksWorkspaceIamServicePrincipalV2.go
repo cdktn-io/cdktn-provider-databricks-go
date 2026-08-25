@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2}.
 type DataDatabricksWorkspaceIamServicePrincipalV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2} Data Source.
 func NewDataDatabricksWorkspaceIamServicePrincipalV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamServicePrincipalV2Config) DataDatabricksWorkspaceIamServicePrincipalV2 {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataDatabricksWorkspaceIamServicePrincipalV2(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2} Data Source.
 func NewDataDatabricksWorkspaceIamServicePrincipalV2_Override(d DataDatabricksWorkspaceIamServicePrincipalV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamServicePrincipalV2Config) {
 	_init_.Initialize()
 
