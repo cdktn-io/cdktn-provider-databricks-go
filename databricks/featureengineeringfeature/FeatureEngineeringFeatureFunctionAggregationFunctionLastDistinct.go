@@ -5,9 +5,9 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 	Input *string `field:"required" json:"input" yaml:"input"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
 	N *float64 `field:"required" json:"n" yaml:"n"`
 }
 

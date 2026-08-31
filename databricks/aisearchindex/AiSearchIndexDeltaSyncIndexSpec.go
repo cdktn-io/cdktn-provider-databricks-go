@@ -5,17 +5,17 @@ package aisearchindex
 
 
 type AiSearchIndexDeltaSyncIndexSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ai_search_index#pipeline_type AiSearchIndex#pipeline_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/ai_search_index#pipeline_type AiSearchIndex#pipeline_type}.
 	PipelineType *string `field:"required" json:"pipelineType" yaml:"pipelineType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ai_search_index#columns_to_sync AiSearchIndex#columns_to_sync}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/ai_search_index#columns_to_sync AiSearchIndex#columns_to_sync}.
 	ColumnsToSync *[]*string `field:"optional" json:"columnsToSync" yaml:"columnsToSync"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ai_search_index#embedding_source_columns AiSearchIndex#embedding_source_columns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/ai_search_index#embedding_source_columns AiSearchIndex#embedding_source_columns}.
 	EmbeddingSourceColumns interface{} `field:"optional" json:"embeddingSourceColumns" yaml:"embeddingSourceColumns"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ai_search_index#embedding_vector_columns AiSearchIndex#embedding_vector_columns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/ai_search_index#embedding_vector_columns AiSearchIndex#embedding_vector_columns}.
 	EmbeddingVectorColumns interface{} `field:"optional" json:"embeddingVectorColumns" yaml:"embeddingVectorColumns"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ai_search_index#embedding_writeback_table AiSearchIndex#embedding_writeback_table}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/ai_search_index#embedding_writeback_table AiSearchIndex#embedding_writeback_table}.
 	EmbeddingWritebackTable *string `field:"optional" json:"embeddingWritebackTable" yaml:"embeddingWritebackTable"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ai_search_index#source_table AiSearchIndex#source_table}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/ai_search_index#source_table AiSearchIndex#source_table}.
 	SourceTable *string `field:"optional" json:"sourceTable" yaml:"sourceTable"`
 }
 

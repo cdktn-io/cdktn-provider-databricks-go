@@ -5,7 +5,7 @@ package datadatabricksrecipients
 
 
 type DataDatabricksRecipientsProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

@@ -5,9 +5,9 @@ package datadatabricksfeatureengineeringfeatures
 
 
 type DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastN struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}.
 	Input *string `field:"required" json:"input" yaml:"input"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/feature_engineering_features#n DataDatabricksFeatureEngineeringFeatures#n}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_features#n DataDatabricksFeatureEngineeringFeatures#n}.
 	N *float64 `field:"required" json:"n" yaml:"n"`
 }
 

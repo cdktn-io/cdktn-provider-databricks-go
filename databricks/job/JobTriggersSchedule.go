@@ -5,9 +5,9 @@ package job
 
 
 type JobTriggersSchedule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/job#quartz_cron_expression Job#quartz_cron_expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/job#quartz_cron_expression Job#quartz_cron_expression}.
 	QuartzCronExpression *string `field:"required" json:"quartzCronExpression" yaml:"quartzCronExpression"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/job#timezone_id Job#timezone_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/job#timezone_id Job#timezone_id}.
 	TimezoneId *string `field:"required" json:"timezoneId" yaml:"timezoneId"`
 }
 

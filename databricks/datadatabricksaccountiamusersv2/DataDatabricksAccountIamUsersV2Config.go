@@ -22,9 +22,9 @@ type DataDatabricksAccountIamUsersV2Config struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_users_v2#filter DataDatabricksAccountIamUsersV2#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/account_iam_users_v2#filter DataDatabricksAccountIamUsersV2#filter}.
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_users_v2#page_size DataDatabricksAccountIamUsersV2#page_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/account_iam_users_v2#page_size DataDatabricksAccountIamUsersV2#page_size}.
 	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
 }
 

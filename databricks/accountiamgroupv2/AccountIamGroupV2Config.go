@@ -22,9 +22,9 @@ type AccountIamGroupV2Config struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}.
 	ExternalId *string `field:"optional" json:"externalId" yaml:"externalId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}.
 	GroupName *string `field:"optional" json:"groupName" yaml:"groupName"`
 }
 

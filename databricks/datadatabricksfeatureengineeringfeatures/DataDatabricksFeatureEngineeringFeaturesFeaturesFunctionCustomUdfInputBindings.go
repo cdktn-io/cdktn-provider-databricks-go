@@ -5,9 +5,9 @@ package datadatabricksfeatureengineeringfeatures
 
 
 type DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionCustomUdfInputBindings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/feature_engineering_features#column DataDatabricksFeatureEngineeringFeatures#column}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_features#column DataDatabricksFeatureEngineeringFeatures#column}.
 	Column *string `field:"required" json:"column" yaml:"column"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/feature_engineering_features#parameter DataDatabricksFeatureEngineeringFeatures#parameter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_features#parameter DataDatabricksFeatureEngineeringFeatures#parameter}.
 	Parameter *string `field:"required" json:"parameter" yaml:"parameter"`
 }
 

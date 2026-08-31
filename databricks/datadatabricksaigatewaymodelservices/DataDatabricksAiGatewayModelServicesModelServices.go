@@ -5,9 +5,9 @@ package datadatabricksaigatewaymodelservices
 
 
 type DataDatabricksAiGatewayModelServicesModelServices struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_gateway_model_services#name DataDatabricksAiGatewayModelServices#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/ai_gateway_model_services#name DataDatabricksAiGatewayModelServices#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_gateway_model_services#provider_config DataDatabricksAiGatewayModelServices#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/ai_gateway_model_services#provider_config DataDatabricksAiGatewayModelServices#provider_config}.
 	ProviderConfig *DataDatabricksAiGatewayModelServicesModelServicesProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

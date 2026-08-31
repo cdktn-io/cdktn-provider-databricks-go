@@ -22,9 +22,9 @@ type DataDatabricksTagPoliciesConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/tag_policies#page_size DataDatabricksTagPolicies#page_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/tag_policies#page_size DataDatabricksTagPolicies#page_size}.
 	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/tag_policies#provider_config DataDatabricksTagPolicies#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/tag_policies#provider_config DataDatabricksTagPolicies#provider_config}.
 	ProviderConfig *DataDatabricksTagPoliciesProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

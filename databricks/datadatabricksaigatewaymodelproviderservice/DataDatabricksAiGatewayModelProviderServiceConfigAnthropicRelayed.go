@@ -5,7 +5,7 @@ package datadatabricksaigatewaymodelproviderservice
 
 
 type DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayed struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_gateway_model_provider_service#plan_type DataDatabricksAiGatewayModelProviderService#plan_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/ai_gateway_model_provider_service#plan_type DataDatabricksAiGatewayModelProviderService#plan_type}.
 	PlanType *string `field:"optional" json:"planType" yaml:"planType"`
 }
 

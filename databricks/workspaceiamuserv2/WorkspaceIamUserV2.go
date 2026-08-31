@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2}.
 type WorkspaceIamUserV2 interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -483,7 +483,7 @@ func (j *jsiiProxy_WorkspaceIamUserV2) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2} Resource.
 func NewWorkspaceIamUserV2(scope constructs.Construct, id *string, config *WorkspaceIamUserV2Config) WorkspaceIamUserV2 {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewWorkspaceIamUserV2(scope constructs.Construct, id *string, config *Works
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2} Resource.
 func NewWorkspaceIamUserV2_Override(w WorkspaceIamUserV2, scope constructs.Construct, id *string, config *WorkspaceIamUserV2Config) {
 	_init_.Initialize()
 

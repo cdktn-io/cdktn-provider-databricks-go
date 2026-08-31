@@ -5,7 +5,7 @@ package accountnetworkpolicy
 
 
 type AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}.
 	WorkspaceIds *[]*float64 `field:"optional" json:"workspaceIds" yaml:"workspaceIds"`
 }
 

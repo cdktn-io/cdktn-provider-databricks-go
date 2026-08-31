@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2}.
 type DataDatabricksAccountIamUsersV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamUsersV2) Users() DataDatabricksAccoun
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2} Data Source.
 func NewDataDatabricksAccountIamUsersV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamUsersV2Config) DataDatabricksAccountIamUsersV2 {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataDatabricksAccountIamUsersV2(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2} Data Source.
 func NewDataDatabricksAccountIamUsersV2_Override(d DataDatabricksAccountIamUsersV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamUsersV2Config) {
 	_init_.Initialize()
 

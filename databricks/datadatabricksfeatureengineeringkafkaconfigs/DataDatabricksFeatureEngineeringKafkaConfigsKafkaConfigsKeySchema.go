@@ -5,11 +5,11 @@ package datadatabricksfeatureengineeringkafkaconfigs
 
 
 type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchema struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/feature_engineering_kafka_configs#avro_schema DataDatabricksFeatureEngineeringKafkaConfigs#avro_schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_kafka_configs#avro_schema DataDatabricksFeatureEngineeringKafkaConfigs#avro_schema}.
 	AvroSchema *string `field:"optional" json:"avroSchema" yaml:"avroSchema"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/feature_engineering_kafka_configs#json_schema DataDatabricksFeatureEngineeringKafkaConfigs#json_schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_kafka_configs#json_schema DataDatabricksFeatureEngineeringKafkaConfigs#json_schema}.
 	JsonSchema *string `field:"optional" json:"jsonSchema" yaml:"jsonSchema"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/feature_engineering_kafka_configs#proto_schema DataDatabricksFeatureEngineeringKafkaConfigs#proto_schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_kafka_configs#proto_schema DataDatabricksFeatureEngineeringKafkaConfigs#proto_schema}.
 	ProtoSchema *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaProtoSchema `field:"optional" json:"protoSchema" yaml:"protoSchema"`
 }
 

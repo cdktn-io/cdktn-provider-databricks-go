@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/environments_default_workspace_base_environment databricks_environments_default_workspace_base_environment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/environments_default_workspace_base_environment databricks_environments_default_workspace_base_environment}.
 type EnvironmentsDefaultWorkspaceBaseEnvironment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_EnvironmentsDefaultWorkspaceBaseEnvironment) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/environments_default_workspace_base_environment databricks_environments_default_workspace_base_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/environments_default_workspace_base_environment databricks_environments_default_workspace_base_environment} Resource.
 func NewEnvironmentsDefaultWorkspaceBaseEnvironment(scope constructs.Construct, id *string, config *EnvironmentsDefaultWorkspaceBaseEnvironmentConfig) EnvironmentsDefaultWorkspaceBaseEnvironment {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewEnvironmentsDefaultWorkspaceBaseEnvironment(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/environments_default_workspace_base_environment databricks_environments_default_workspace_base_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/environments_default_workspace_base_environment databricks_environments_default_workspace_base_environment} Resource.
 func NewEnvironmentsDefaultWorkspaceBaseEnvironment_Override(e EnvironmentsDefaultWorkspaceBaseEnvironment, scope constructs.Construct, id *string, config *EnvironmentsDefaultWorkspaceBaseEnvironmentConfig) {
 	_init_.Initialize()
 

@@ -5,15 +5,15 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#data_level Pipeline#data_level}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/pipeline#data_level Pipeline#data_level}.
 	DataLevel *string `field:"optional" json:"dataLevel" yaml:"dataLevel"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#dimensions Pipeline#dimensions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/pipeline#dimensions Pipeline#dimensions}.
 	Dimensions *[]*string `field:"optional" json:"dimensions" yaml:"dimensions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#metrics Pipeline#metrics}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/pipeline#metrics Pipeline#metrics}.
 	Metrics *[]*string `field:"optional" json:"metrics" yaml:"metrics"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}.
 	QueryLifetime interface{} `field:"optional" json:"queryLifetime" yaml:"queryLifetime"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#report_type Pipeline#report_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/pipeline#report_type Pipeline#report_type}.
 	ReportType *string `field:"optional" json:"reportType" yaml:"reportType"`
 }
 

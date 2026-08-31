@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}.
 type DataDatabricksServingEndpoints interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
 func NewDataDatabricksServingEndpoints(scope constructs.Construct, id *string, config *DataDatabricksServingEndpointsConfig) DataDatabricksServingEndpoints {
 	_init_.Initialize()
 
@@ -329,7 +329,7 @@ func NewDataDatabricksServingEndpoints(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
 func NewDataDatabricksServingEndpoints_Override(d DataDatabricksServingEndpoints, scope constructs.Construct, id *string, config *DataDatabricksServingEndpointsConfig) {
 	_init_.Initialize()
 

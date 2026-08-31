@@ -22,13 +22,13 @@ type AccountIamUserV2Config struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#account_user_status AccountIamUserV2#account_user_status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#account_user_status AccountIamUserV2#account_user_status}.
 	AccountUserStatus *string `field:"required" json:"accountUserStatus" yaml:"accountUserStatus"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#full_name AccountIamUserV2#full_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#full_name AccountIamUserV2#full_name}.
 	FullName *AccountIamUserV2FullName `field:"required" json:"fullName" yaml:"fullName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#username AccountIamUserV2#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#username AccountIamUserV2#username}.
 	Username *string `field:"required" json:"username" yaml:"username"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#external_id AccountIamUserV2#external_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#external_id AccountIamUserV2#external_id}.
 	ExternalId *string `field:"optional" json:"externalId" yaml:"externalId"`
 }
 

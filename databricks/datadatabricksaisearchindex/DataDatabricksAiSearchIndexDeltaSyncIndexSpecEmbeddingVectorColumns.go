@@ -5,9 +5,9 @@ package datadatabricksaisearchindex
 
 
 type DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_search_index#embedding_dimension DataDatabricksAiSearchIndex#embedding_dimension}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/ai_search_index#embedding_dimension DataDatabricksAiSearchIndex#embedding_dimension}.
 	EmbeddingDimension *float64 `field:"optional" json:"embeddingDimension" yaml:"embeddingDimension"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_search_index#name DataDatabricksAiSearchIndex#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/ai_search_index#name DataDatabricksAiSearchIndex#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

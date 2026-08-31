@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
 type DataDatabricksAccountIamDirectGroupMemberV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Data Source.
 func NewDataDatabricksAccountIamDirectGroupMemberV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamDirectGroupMemberV2Config) DataDatabricksAccountIamDirectGroupMemberV2 {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewDataDatabricksAccountIamDirectGroupMemberV2(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Data Source.
 func NewDataDatabricksAccountIamDirectGroupMemberV2_Override(d DataDatabricksAccountIamDirectGroupMemberV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamDirectGroupMemberV2Config) {
 	_init_.Initialize()
 

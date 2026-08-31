@@ -5,11 +5,11 @@ package datadatabrickspostgrescatalog
 
 
 type DataDatabricksPostgresCatalogSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/postgres_catalog#postgres_database DataDatabricksPostgresCatalog#postgres_database}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_catalog#postgres_database DataDatabricksPostgresCatalog#postgres_database}.
 	PostgresDatabase *string `field:"required" json:"postgresDatabase" yaml:"postgresDatabase"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/postgres_catalog#branch DataDatabricksPostgresCatalog#branch}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_catalog#branch DataDatabricksPostgresCatalog#branch}.
 	Branch *string `field:"optional" json:"branch" yaml:"branch"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/postgres_catalog#create_database_if_missing DataDatabricksPostgresCatalog#create_database_if_missing}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_catalog#create_database_if_missing DataDatabricksPostgresCatalog#create_database_if_missing}.
 	CreateDatabaseIfMissing interface{} `field:"optional" json:"createDatabaseIfMissing" yaml:"createDatabaseIfMissing"`
 }
 

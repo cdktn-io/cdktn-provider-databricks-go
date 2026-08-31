@@ -5,13 +5,13 @@ package accountnetworkpolicy
 
 
 type AccountNetworkPolicyIngressPrivateAccessAllowRules struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}.
 	Authentication *AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication `field:"optional" json:"authentication" yaml:"authentication"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}.
 	Destination *AccountNetworkPolicyIngressPrivateAccessAllowRulesDestination `field:"optional" json:"destination" yaml:"destination"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}.
 	Label *string `field:"optional" json:"label" yaml:"label"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}.
 	Origin *AccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin `field:"optional" json:"origin" yaml:"origin"`
 }
 

@@ -5,15 +5,15 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#format Pipeline#format}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/pipeline#format Pipeline#format}.
 	Format *string `field:"optional" json:"format" yaml:"format"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#input_column Pipeline#input_column}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/pipeline#input_column Pipeline#input_column}.
 	InputColumn *string `field:"optional" json:"inputColumn" yaml:"inputColumn"`
 	// json_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#json_options Pipeline#json_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/pipeline#json_options Pipeline#json_options}
 	JsonOptions *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions `field:"optional" json:"jsonOptions" yaml:"jsonOptions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/pipeline#output_column Pipeline#output_column}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/pipeline#output_column Pipeline#output_column}.
 	OutputColumn *string `field:"optional" json:"outputColumn" yaml:"outputColumn"`
 }
 

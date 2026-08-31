@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_gateway_model_provider_service databricks_ai_gateway_model_provider_service}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/ai_gateway_model_provider_service databricks_ai_gateway_model_provider_service}.
 type DataDatabricksAiGatewayModelProviderService interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderService) UpdateTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_gateway_model_provider_service databricks_ai_gateway_model_provider_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/ai_gateway_model_provider_service databricks_ai_gateway_model_provider_service} Data Source.
 func NewDataDatabricksAiGatewayModelProviderService(scope constructs.Construct, id *string, config *DataDatabricksAiGatewayModelProviderServiceConfig) DataDatabricksAiGatewayModelProviderService {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewDataDatabricksAiGatewayModelProviderService(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/ai_gateway_model_provider_service databricks_ai_gateway_model_provider_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/ai_gateway_model_provider_service databricks_ai_gateway_model_provider_service} Data Source.
 func NewDataDatabricksAiGatewayModelProviderService_Override(d DataDatabricksAiGatewayModelProviderService, scope constructs.Construct, id *string, config *DataDatabricksAiGatewayModelProviderServiceConfig) {
 	_init_.Initialize()
 

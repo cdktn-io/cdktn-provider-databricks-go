@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktn.TerraformProvider
 	AccountId() *string
@@ -101,6 +101,9 @@ type DatabricksProvider interface {
 	GoogleServiceAccount() *string
 	SetGoogleServiceAccount(val *string)
 	GoogleServiceAccountInput() *string
+	GroupId() *string
+	SetGroupId(val *string)
+	GroupIdInput() *string
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
@@ -205,6 +208,7 @@ type DatabricksProvider interface {
 	ResetDiscoveryUrl()
 	ResetGoogleCredentials()
 	ResetGoogleServiceAccount()
+	ResetGroupId()
 	ResetHost()
 	ResetHttpTimeoutSeconds()
 	ResetMetadataServiceUrl()
@@ -811,6 +815,26 @@ func (j *jsiiProxy_DatabricksProvider) GoogleServiceAccountInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) GroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) GroupIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabricksProvider) Host() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1192,7 +1216,7 @@ func (j *jsiiProxy_DatabricksProvider) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -1210,7 +1234,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -1434,6 +1458,14 @@ func (j *jsiiProxy_DatabricksProvider)SetGoogleServiceAccount(val *string) {
 	_jsii_.Set(
 		j,
 		"googleServiceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetGroupId(val *string) {
+	_jsii_.Set(
+		j,
+		"groupId",
 		val,
 	)
 }
@@ -1909,6 +1941,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetGoogleServiceAccount() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetGoogleServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetGroupId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGroupId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh}.
 type DataDatabricksDataQualityRefresh interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -411,7 +411,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefresh) Trigger() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh} Data Source.
 func NewDataDatabricksDataQualityRefresh(scope constructs.Construct, id *string, config *DataDatabricksDataQualityRefreshConfig) DataDatabricksDataQualityRefresh {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewDataDatabricksDataQualityRefresh(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh} Data Source.
 func NewDataDatabricksDataQualityRefresh_Override(d DataDatabricksDataQualityRefresh, scope constructs.Construct, id *string, config *DataDatabricksDataQualityRefreshConfig) {
 	_init_.Initialize()
 

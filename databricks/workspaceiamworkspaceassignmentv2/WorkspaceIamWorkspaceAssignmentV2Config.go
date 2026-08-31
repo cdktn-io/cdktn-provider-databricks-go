@@ -22,13 +22,13 @@ type WorkspaceIamWorkspaceAssignmentV2Config struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_assignment_v2#principal_id WorkspaceIamWorkspaceAssignmentV2#principal_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/workspace_iam_workspace_assignment_v2#principal_id WorkspaceIamWorkspaceAssignmentV2#principal_id}.
 	PrincipalId *float64 `field:"required" json:"principalId" yaml:"principalId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_assignment_v2#entitlements WorkspaceIamWorkspaceAssignmentV2#entitlements}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/workspace_iam_workspace_assignment_v2#entitlements WorkspaceIamWorkspaceAssignmentV2#entitlements}.
 	Entitlements *[]*string `field:"optional" json:"entitlements" yaml:"entitlements"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_assignment_v2#provider_config WorkspaceIamWorkspaceAssignmentV2#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/workspace_iam_workspace_assignment_v2#provider_config WorkspaceIamWorkspaceAssignmentV2#provider_config}.
 	ProviderConfig *WorkspaceIamWorkspaceAssignmentV2ProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_assignment_v2#workspace_id WorkspaceIamWorkspaceAssignmentV2#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/workspace_iam_workspace_assignment_v2#workspace_id WorkspaceIamWorkspaceAssignmentV2#workspace_id}.
 	WorkspaceId *float64 `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2}.
 type DataDatabricksWorkspaceIamDirectGroupMemberV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamDirectGroupMemberV2) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2} Data Source.
 func NewDataDatabricksWorkspaceIamDirectGroupMemberV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamDirectGroupMemberV2Config) DataDatabricksWorkspaceIamDirectGroupMemberV2 {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewDataDatabricksWorkspaceIamDirectGroupMemberV2(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2} Data Source.
 func NewDataDatabricksWorkspaceIamDirectGroupMemberV2_Override(d DataDatabricksWorkspaceIamDirectGroupMemberV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamDirectGroupMemberV2Config) {
 	_init_.Initialize()
 

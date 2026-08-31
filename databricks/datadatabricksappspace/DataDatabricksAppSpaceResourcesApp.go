@@ -5,9 +5,9 @@ package datadatabricksappspace
 
 
 type DataDatabricksAppSpaceResourcesApp struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/app_space#name DataDatabricksAppSpace#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/app_space#name DataDatabricksAppSpace#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}.
 	Permission *string `field:"optional" json:"permission" yaml:"permission"`
 }
 

@@ -5,7 +5,7 @@ package datadatabricksfeatureengineeringkafkaconfig
 
 
 type DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigIngestionDestination struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/feature_engineering_kafka_config#delta_table_name DataDatabricksFeatureEngineeringKafkaConfig#delta_table_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_kafka_config#delta_table_name DataDatabricksFeatureEngineeringKafkaConfig#delta_table_name}.
 	DeltaTableName *string `field:"optional" json:"deltaTableName" yaml:"deltaTableName"`
 }
 
