@@ -36,6 +36,8 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference inter
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeaturesSource)
 	KafkaSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference
 	KafkaSourceInput() interface{}
+	Lateness() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceLatenessOutputReference
+	LatenessInput() interface{}
 	RequestSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceRequestSourceOutputReference
 	RequestSourceInput() interface{}
 	StreamSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceStreamSourceOutputReference
@@ -74,10 +76,12 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference inter
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDeltaTableSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSource)
 	PutKafkaSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource)
+	PutLateness(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceLateness)
 	PutRequestSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceRequestSource)
 	PutStreamSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceStreamSource)
 	ResetDeltaTableSource()
 	ResetKafkaSource()
+	ResetLateness()
 	ResetRequestSource()
 	ResetStreamSource()
 	// Produce the Token's value at resolution time.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	_jsii_.Get(
 		j,
 		"kafkaSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) Lateness() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceLatenessOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesSourceLatenessOutputReference
+	_jsii_.Get(
+		j,
+		"lateness",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) LatenessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"latenessInput",
 		&returns,
 	)
 	return returns
@@ -536,6 +560,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) PutLateness(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceLateness) {
+	if err := d.validatePutLatenessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLateness",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) PutRequestSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceRequestSource) {
 	if err := d.validatePutRequestSourceParameters(value); err != nil {
 		panic(err)
@@ -570,6 +605,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	_jsii_.InvokeVoid(
 		d,
 		"resetKafkaSource",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) ResetLateness() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLateness",
 		nil, // no parameters
 	)
 }

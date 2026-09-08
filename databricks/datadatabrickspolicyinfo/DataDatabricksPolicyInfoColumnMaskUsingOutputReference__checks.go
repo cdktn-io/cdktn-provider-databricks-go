@@ -93,6 +93,17 @@ func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) valid
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) validatePutFunctionArgExpressionParameters(value *DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpression) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")

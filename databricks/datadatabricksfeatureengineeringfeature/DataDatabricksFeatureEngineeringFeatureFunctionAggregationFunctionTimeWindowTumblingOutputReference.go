@@ -28,10 +28,16 @@ type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Delay() *string
+	SetDelay(val *string)
+	DelayInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Offset() *string
+	SetOffset(val *string)
+	OffsetInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +73,8 @@ type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDelay()
+	ResetOffset()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -112,6 +120,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) Delay() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) DelayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -127,6 +155,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) Offset() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"offset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) OffsetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"offsetInput",
 		&returns,
 	)
 	return returns
@@ -222,6 +270,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference)SetDelay(val *string) {
+	if err := j.validateSetDelayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delay",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -229,6 +288,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference)SetOffset(val *string) {
+	if err := j.validateSetOffsetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"offset",
 		val,
 	)
 }
@@ -450,6 +520,22 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) ResetDelay() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDelay",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) ResetOffset() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOffset",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

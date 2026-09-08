@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
 type FeatureEngineeringMaterializedFeature interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -27,9 +27,6 @@ type FeatureEngineeringMaterializedFeature interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CronSchedule() *string
-	SetCronSchedule(val *string)
-	CronScheduleInput() *string
 	CronScheduleTrigger() FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference
 	CronScheduleTriggerInput() interface{}
 	// Experimental.
@@ -184,7 +181,6 @@ type FeatureEngineeringMaterializedFeature interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
-	ResetCronSchedule()
 	ResetCronScheduleTrigger()
 	ResetOfflineStoreConfig()
 	ResetOnlineStoreConfig()
@@ -257,26 +253,6 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) CronSchedule() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cronSchedule",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) CronScheduleInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cronScheduleInput",
 		&returns,
 	)
 	return returns
@@ -603,7 +579,7 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
 func NewFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *string, config *FeatureEngineeringMaterializedFeatureConfig) FeatureEngineeringMaterializedFeature {
 	_init_.Initialize()
 
@@ -621,7 +597,7 @@ func NewFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
 func NewFeatureEngineeringMaterializedFeature_Override(f FeatureEngineeringMaterializedFeature, scope constructs.Construct, id *string, config *FeatureEngineeringMaterializedFeatureConfig) {
 	_init_.Initialize()
 
@@ -650,17 +626,6 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetCount(val interface{
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetCronSchedule(val *string) {
-	if err := j.validateSetCronScheduleParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"cronSchedule",
 		val,
 	)
 }
@@ -1176,14 +1141,6 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) RegisterProviderFeatur
 		f,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
-	)
-}
-
-func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetCronSchedule() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetCronSchedule",
-		nil, // no parameters
 	)
 }
 

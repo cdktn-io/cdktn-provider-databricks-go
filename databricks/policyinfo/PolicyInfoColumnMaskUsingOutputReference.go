@@ -36,6 +36,8 @@ type PolicyInfoColumnMaskUsingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	FunctionArgExpression() PolicyInfoColumnMaskUsingFunctionArgExpressionOutputReference
+	FunctionArgExpressionInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -70,8 +72,10 @@ type PolicyInfoColumnMaskUsingOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutFunctionArgExpression(value *PolicyInfoColumnMaskUsingFunctionArgExpression)
 	ResetAlias()
 	ResetConstant()
+	ResetFunctionArgExpression()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -162,6 +166,26 @@ func (j *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) FunctionArgExpression() PolicyInfoColumnMaskUsingFunctionArgExpressionOutputReference {
+	var returns PolicyInfoColumnMaskUsingFunctionArgExpressionOutputReference
+	_jsii_.Get(
+		j,
+		"functionArgExpression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) FunctionArgExpressionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"functionArgExpressionInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (p *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (p *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) PutFunctionArgExpression(value *PolicyInfoColumnMaskUsingFunctionArgExpression) {
+	if err := p.validatePutFunctionArgExpressionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putFunctionArgExpression",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) ResetAlias() {
 	_jsii_.InvokeVoid(
 		p,
@@ -500,6 +535,14 @@ func (p *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) ResetConstant() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetConstant",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) ResetFunctionArgExpression() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFunctionArgExpression",
 		nil, // no parameters
 	)
 }

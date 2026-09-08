@@ -36,6 +36,8 @@ type DataDatabricksPolicyInfoRowFilterUsingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	FunctionArgExpression() DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionOutputReference
+	FunctionArgExpressionInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -70,8 +72,10 @@ type DataDatabricksPolicyInfoRowFilterUsingOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutFunctionArgExpression(value *DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression)
 	ResetAlias()
 	ResetConstant()
+	ResetFunctionArgExpression()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -162,6 +166,26 @@ func (j *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingOutputReference) Fqn() 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingOutputReference) FunctionArgExpression() DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionOutputReference {
+	var returns DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionOutputReference
+	_jsii_.Get(
+		j,
+		"functionArgExpression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingOutputReference) FunctionArgExpressionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"functionArgExpressionInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingOutputReference) Interp
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingOutputReference) PutFunctionArgExpression(value *DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression) {
+	if err := d.validatePutFunctionArgExpressionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFunctionArgExpression",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingOutputReference) ResetAlias() {
 	_jsii_.InvokeVoid(
 		d,
@@ -500,6 +535,14 @@ func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingOutputReference) ResetC
 	_jsii_.InvokeVoid(
 		d,
 		"resetConstant",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingOutputReference) ResetFunctionArgExpression() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFunctionArgExpression",
 		nil, // no parameters
 	)
 }

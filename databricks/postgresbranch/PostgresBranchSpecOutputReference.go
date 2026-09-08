@@ -50,6 +50,9 @@ type PostgresBranchSpecOutputReference interface {
 	SourceBranchTime() *string
 	SetSourceBranchTime(val *string)
 	SourceBranchTimeInput() *string
+	SourceSnapshot() *string
+	SetSourceSnapshot(val *string)
+	SourceSnapshotInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -91,6 +94,7 @@ type PostgresBranchSpecOutputReference interface {
 	ResetSourceBranch()
 	ResetSourceBranchLsn()
 	ResetSourceBranchTime()
+	ResetSourceSnapshot()
 	ResetTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -277,6 +281,26 @@ func (j *jsiiProxy_PostgresBranchSpecOutputReference) SourceBranchTimeInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_PostgresBranchSpecOutputReference) SourceSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresBranchSpecOutputReference) SourceSnapshotInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshotInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresBranchSpecOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -440,6 +464,17 @@ func (j *jsiiProxy_PostgresBranchSpecOutputReference)SetSourceBranchTime(val *st
 	_jsii_.Set(
 		j,
 		"sourceBranchTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresBranchSpecOutputReference)SetSourceSnapshot(val *string) {
+	if err := j.validateSetSourceSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceSnapshot",
 		val,
 	)
 }
@@ -707,6 +742,14 @@ func (p *jsiiProxy_PostgresBranchSpecOutputReference) ResetSourceBranchTime() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSourceBranchTime",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresBranchSpecOutputReference) ResetSourceSnapshot() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSourceSnapshot",
 		nil, // no parameters
 	)
 }

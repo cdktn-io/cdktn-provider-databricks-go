@@ -32,6 +32,8 @@ type JobContinuousOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobContinuous
 	SetInternalValue(val *JobContinuous)
+	MaintenanceWindow() JobContinuousMaintenanceWindowOutputReference
+	MaintenanceWindowInput() *JobContinuousMaintenanceWindow
 	PauseStatus() *string
 	SetPauseStatus(val *string)
 	PauseStatusInput() *string
@@ -70,6 +72,8 @@ type JobContinuousOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutMaintenanceWindow(value *JobContinuousMaintenanceWindow)
+	ResetMaintenanceWindow()
 	ResetPauseStatus()
 	ResetTaskRetryMode()
 	// Produce the Token's value at resolution time.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_JobContinuousOutputReference) InternalValue() *JobContinuous 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobContinuousOutputReference) MaintenanceWindow() JobContinuousMaintenanceWindowOutputReference {
+	var returns JobContinuousMaintenanceWindowOutputReference
+	_jsii_.Get(
+		j,
+		"maintenanceWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobContinuousOutputReference) MaintenanceWindowInput() *JobContinuousMaintenanceWindow {
+	var returns *JobContinuousMaintenanceWindow
+	_jsii_.Get(
+		j,
+		"maintenanceWindowInput",
 		&returns,
 	)
 	return returns
@@ -486,6 +510,25 @@ func (j *jsiiProxy_JobContinuousOutputReference) InterpolationForAttribute(terra
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobContinuousOutputReference) PutMaintenanceWindow(value *JobContinuousMaintenanceWindow) {
+	if err := j.validatePutMaintenanceWindowParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putMaintenanceWindow",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobContinuousOutputReference) ResetMaintenanceWindow() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetMaintenanceWindow",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobContinuousOutputReference) ResetPauseStatus() {

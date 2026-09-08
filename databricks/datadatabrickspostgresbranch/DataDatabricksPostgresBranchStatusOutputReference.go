@@ -44,6 +44,7 @@ type DataDatabricksPostgresBranchStatusOutputReference interface {
 	SourceBranch() *string
 	SourceBranchLsn() *string
 	SourceBranchTime() *string
+	SourceSnapshot() *string
 	StateChangeTime() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -257,6 +258,16 @@ func (j *jsiiProxy_DataDatabricksPostgresBranchStatusOutputReference) SourceBran
 	_jsii_.Get(
 		j,
 		"sourceBranchTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresBranchStatusOutputReference) SourceSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshot",
 		&returns,
 	)
 	return returns

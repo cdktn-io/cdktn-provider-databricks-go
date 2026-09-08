@@ -166,6 +166,14 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) validateSetDelayParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktn.IResolvable:
@@ -185,6 +193,14 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) validateSetOffsetParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -230,7 +230,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "cronSchedule", GoGetter: "CronSchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "cronScheduleTrigger", GoGetter: "CronScheduleTrigger"},
 			_jsii_.MemberProperty{JsiiProperty: "featureName", GoGetter: "FeatureName"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

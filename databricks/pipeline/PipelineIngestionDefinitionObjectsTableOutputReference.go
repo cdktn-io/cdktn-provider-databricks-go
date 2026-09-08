@@ -92,6 +92,7 @@ type PipelineIngestionDefinitionObjectsTableOutputReference interface {
 	ResetDestinationTable()
 	ResetSourceCatalog()
 	ResetSourceSchema()
+	ResetSourceTable()
 	ResetTableConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -723,6 +724,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) Reset
 	_jsii_.InvokeVoid(
 		p,
 		"resetSourceSchema",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableOutputReference) ResetSourceTable() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSourceTable",
 		nil, // no parameters
 	)
 }

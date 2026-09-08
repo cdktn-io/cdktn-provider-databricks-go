@@ -35,6 +35,9 @@ type JobTaskForEachTaskTaskAlertTaskOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTaskForEachTaskTaskAlertTask
 	SetInternalValue(val *JobTaskForEachTaskTaskAlertTask)
+	Parameters() *map[string]*string
+	SetParameters(val *map[string]*string)
+	ParametersInput() *map[string]*string
 	Subscribers() JobTaskForEachTaskTaskAlertTaskSubscribersList
 	SubscribersInput() interface{}
 	// Experimental.
@@ -77,6 +80,7 @@ type JobTaskForEachTaskTaskAlertTaskOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSubscribers(value interface{})
 	ResetAlertId()
+	ResetParameters()
 	ResetSubscribers()
 	ResetWarehouseId()
 	ResetWorkspacePath()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAlertTaskOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAlertTaskOutputReference) Parameters() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAlertTaskOutputReference) ParametersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parametersInput",
 		&returns,
 	)
 	return returns
@@ -313,6 +337,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAlertTaskOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAlertTaskOutputReference)SetParameters(val *map[string]*string) {
+	if err := j.validateSetParametersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parameters",
 		val,
 	)
 }
@@ -562,6 +597,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAlertTaskOutputReference) ResetAlertId(
 	_jsii_.InvokeVoid(
 		j,
 		"resetAlertId",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAlertTaskOutputReference) ResetParameters() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetParameters",
 		nil, // no parameters
 	)
 }

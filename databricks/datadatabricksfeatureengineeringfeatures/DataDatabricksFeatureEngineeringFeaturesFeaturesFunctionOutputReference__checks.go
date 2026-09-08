@@ -126,37 +126,6 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) validatePutExtraParametersParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktn.IResolvable:
-		// ok
-	case *[]*DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParameters:
-		value := value.(*[]*DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParameters)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParameters:
-		value_ := value.([]*DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParameters)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParameters; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
@@ -223,14 +192,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutpu
 }
 
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) validateSetFunctionTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

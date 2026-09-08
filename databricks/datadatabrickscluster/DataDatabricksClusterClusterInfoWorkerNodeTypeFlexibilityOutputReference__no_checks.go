@@ -55,6 +55,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoWorkerNodeTypeFlexibilityOutp
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoWorkerNodeTypeFlexibilityOutputReference) validateSetAwsContextIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoWorkerNodeTypeFlexibilityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -301,17 +301,6 @@ func (f *jsiiProxy_FeatureEngineeringFeature) validatePutTimeseriesColumnParamet
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeature) validatePutTimeWindowParameters(value *FeatureEngineeringFeatureTimeWindow) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (f *jsiiProxy_FeatureEngineeringFeature) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	if feature == "" {
 		return fmt.Errorf("parameter feature is required, but nil was provided")
@@ -458,23 +447,7 @@ func (j *jsiiProxy_FeatureEngineeringFeature) validateSetDescriptionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeature) validateSetFilterConditionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_FeatureEngineeringFeature) validateSetFullNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeature) validateSetInputsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

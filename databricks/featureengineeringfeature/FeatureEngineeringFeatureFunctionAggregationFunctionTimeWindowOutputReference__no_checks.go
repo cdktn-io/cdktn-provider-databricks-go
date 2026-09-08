@@ -47,10 +47,6 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) validatePutContinuousParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous) error {
-	return nil
-}
-
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) validatePutRollingParameters(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling) error {
 	return nil
 }
@@ -80,6 +76,10 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 }
 
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) validateSetStartTimeParameters(val *string) error {
 	return nil
 }
 

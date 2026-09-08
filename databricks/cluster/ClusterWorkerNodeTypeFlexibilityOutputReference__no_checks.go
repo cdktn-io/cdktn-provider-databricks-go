@@ -55,6 +55,10 @@ func (j *jsiiProxy_ClusterWorkerNodeTypeFlexibilityOutputReference) validateSetA
 	return nil
 }
 
+func (j *jsiiProxy_ClusterWorkerNodeTypeFlexibilityOutputReference) validateSetAwsContextIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterWorkerNodeTypeFlexibilityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

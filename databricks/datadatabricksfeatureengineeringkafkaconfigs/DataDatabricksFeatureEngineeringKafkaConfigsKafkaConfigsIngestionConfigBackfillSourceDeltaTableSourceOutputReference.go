@@ -31,9 +31,6 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBack
 	DataframeSchema() *string
 	SetDataframeSchema(val *string)
 	DataframeSchemaInput() *string
-	EntityColumns() *[]*string
-	SetEntityColumns(val *[]*string)
-	EntityColumnsInput() *[]*string
 	FilterCondition() *string
 	SetFilterCondition(val *string)
 	FilterConditionInput() *string
@@ -52,9 +49,6 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBack
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
-	TimeseriesColumn() *string
-	SetTimeseriesColumn(val *string)
-	TimeseriesColumnInput() *string
 	TransformationSql() *string
 	SetTransformationSql(val *string)
 	TransformationSqlInput() *string
@@ -83,9 +77,7 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBack
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDataframeSchema()
-	ResetEntityColumns()
 	ResetFilterCondition()
-	ResetTimeseriesColumn()
 	ResetTransformationSql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -147,26 +139,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 	_jsii_.Get(
 		j,
 		"dataframeSchemaInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceDeltaTableSourceOutputReference) EntityColumns() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"entityColumns",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceDeltaTableSourceOutputReference) EntityColumnsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"entityColumnsInput",
 		&returns,
 	)
 	return returns
@@ -247,26 +219,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceDeltaTableSourceOutputReference) TimeseriesColumn() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"timeseriesColumn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceDeltaTableSourceOutputReference) TimeseriesColumnInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"timeseriesColumnInput",
 		&returns,
 	)
 	return returns
@@ -353,17 +305,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceDeltaTableSourceOutputReference)SetEntityColumns(val *[]*string) {
-	if err := j.validateSetEntityColumnsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"entityColumns",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceDeltaTableSourceOutputReference)SetFilterCondition(val *string) {
 	if err := j.validateSetFilterConditionParameters(val); err != nil {
 		panic(err)
@@ -415,17 +356,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceDeltaTableSourceOutputReference)SetTimeseriesColumn(val *string) {
-	if err := j.validateSetTimeseriesColumnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"timeseriesColumn",
 		val,
 	)
 }
@@ -635,26 +565,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceDeltaTableSourceOutputReference) ResetEntityColumns() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEntityColumns",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceDeltaTableSourceOutputReference) ResetFilterCondition() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetFilterCondition",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceDeltaTableSourceOutputReference) ResetTimeseriesColumn() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTimeseriesColumn",
 		nil, // no parameters
 	)
 }

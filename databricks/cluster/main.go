@@ -799,6 +799,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
 			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "awsContextId", GoGetter: "AwsContextId"},
+			_jsii_.MemberProperty{JsiiProperty: "awsContextIdInput", GoGetter: "AwsContextIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -817,6 +819,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAwsContextId", GoMethod: "ResetAwsContextId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -1560,6 +1563,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIds", GoGetter: "AlternateNodeTypeIds"},
 			_jsii_.MemberProperty{JsiiProperty: "alternateNodeTypeIdsInput", GoGetter: "AlternateNodeTypeIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "awsContextId", GoGetter: "AwsContextId"},
+			_jsii_.MemberProperty{JsiiProperty: "awsContextIdInput", GoGetter: "AwsContextIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1578,6 +1583,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNodeTypeIds", GoMethod: "ResetAlternateNodeTypeIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAwsContextId", GoMethod: "ResetAwsContextId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

@@ -47,6 +47,10 @@ func (p *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) validateInterpolati
 	return nil
 }
 
+func (p *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) validatePutFunctionArgExpressionParameters(value *PolicyInfoColumnMaskUsingFunctionArgExpression) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyInfoColumnMaskUsingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

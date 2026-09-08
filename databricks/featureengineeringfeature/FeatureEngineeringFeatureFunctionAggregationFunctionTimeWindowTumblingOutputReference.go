@@ -28,10 +28,16 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutpu
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Delay() *string
+	SetDelay(val *string)
+	DelayInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Offset() *string
+	SetOffset(val *string)
+	OffsetInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +73,8 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutpu
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDelay()
+	ResetOffset()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -112,6 +120,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) Delay() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) DelayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -127,6 +155,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) Offset() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"offset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) OffsetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"offsetInput",
 		&returns,
 	)
 	return returns
@@ -222,6 +270,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	)
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference)SetDelay(val *string) {
+	if err := j.validateSetDelayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delay",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -229,6 +288,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference)SetOffset(val *string) {
+	if err := j.validateSetOffsetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"offset",
 		val,
 	)
 }
@@ -450,6 +520,22 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) ResetDelay() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDelay",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) ResetOffset() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetOffset",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

@@ -87,6 +87,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutpu
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) validatePutRabbitmqOptionsParameters(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) validatePutRedditAdsOptionsParameters(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions) error {
 	return nil
 }

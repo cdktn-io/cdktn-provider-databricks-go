@@ -109,6 +109,14 @@ func (j *jsiiProxy_JobJobClusterNewClusterWorkerNodeTypeFlexibilityOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterWorkerNodeTypeFlexibilityOutputReference) validateSetAwsContextIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterWorkerNodeTypeFlexibilityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

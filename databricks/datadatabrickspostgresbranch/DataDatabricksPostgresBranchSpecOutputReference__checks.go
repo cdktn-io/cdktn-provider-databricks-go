@@ -246,6 +246,14 @@ func (j *jsiiProxy_DataDatabricksPostgresBranchSpecOutputReference) validateSetS
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresBranchSpecOutputReference) validateSetSourceSnapshotParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresBranchSpecOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

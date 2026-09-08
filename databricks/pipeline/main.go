@@ -2923,11 +2923,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMarketoOptions", GoMethod: "PutMarketoOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putMetaAdsOptions", GoMethod: "PutMetaAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putOutlookOptions", GoMethod: "PutOutlookOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putRabbitmqOptions", GoMethod: "PutRabbitmqOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putRedditAdsOptions", GoMethod: "PutRedditAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSharepointOptions", GoMethod: "PutSharepointOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSmartsheetOptions", GoMethod: "PutSmartsheetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putTiktokAdsOptions", GoMethod: "PutTiktokAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putZendeskSupportOptions", GoMethod: "PutZendeskSupportOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "rabbitmqOptions", GoGetter: "RabbitmqOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "rabbitmqOptionsInput", GoGetter: "RabbitmqOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "redditAdsOptions", GoGetter: "RedditAdsOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "redditAdsOptionsInput", GoGetter: "RedditAdsOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApiSourceConnectorOptions", GoMethod: "ResetApiSourceConnectorOptions"},
@@ -2940,6 +2943,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMarketoOptions", GoMethod: "ResetMarketoOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetaAdsOptions", GoMethod: "ResetMetaAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutlookOptions", GoMethod: "ResetOutlookOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRabbitmqOptions", GoMethod: "ResetRabbitmqOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedditAdsOptions", GoMethod: "ResetRedditAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSharepointOptions", GoMethod: "ResetSharepointOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSmartsheetOptions", GoMethod: "ResetSmartsheetOptions"},
@@ -2960,6 +2964,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "queue", GoGetter: "Queue"},
+			_jsii_.MemberProperty{JsiiProperty: "queueInput", GoGetter: "QueueInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -3625,6 +3667,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectorOptions", GoMethod: "ResetConnectorOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFanoutOptions", GoMethod: "ResetFanoutOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceCatalog", GoMethod: "ResetSourceCatalog"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceSchema", GoMethod: "ResetSourceSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTableConfiguration", GoMethod: "ResetTableConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceCatalog", GoGetter: "SourceCatalog"},
@@ -4949,11 +4992,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMarketoOptions", GoMethod: "PutMarketoOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putMetaAdsOptions", GoMethod: "PutMetaAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putOutlookOptions", GoMethod: "PutOutlookOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putRabbitmqOptions", GoMethod: "PutRabbitmqOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putRedditAdsOptions", GoMethod: "PutRedditAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSharepointOptions", GoMethod: "PutSharepointOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSmartsheetOptions", GoMethod: "PutSmartsheetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putTiktokAdsOptions", GoMethod: "PutTiktokAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putZendeskSupportOptions", GoMethod: "PutZendeskSupportOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "rabbitmqOptions", GoGetter: "RabbitmqOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "rabbitmqOptionsInput", GoGetter: "RabbitmqOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "redditAdsOptions", GoGetter: "RedditAdsOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "redditAdsOptionsInput", GoGetter: "RedditAdsOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApiSourceConnectorOptions", GoMethod: "ResetApiSourceConnectorOptions"},
@@ -4966,6 +5012,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMarketoOptions", GoMethod: "ResetMarketoOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetaAdsOptions", GoMethod: "ResetMetaAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutlookOptions", GoMethod: "ResetOutlookOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRabbitmqOptions", GoMethod: "ResetRabbitmqOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedditAdsOptions", GoMethod: "ResetRedditAdsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSharepointOptions", GoMethod: "ResetSharepointOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSmartsheetOptions", GoMethod: "ResetSmartsheetOptions"},
@@ -4986,6 +5033,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "queue", GoGetter: "Queue"},
+			_jsii_.MemberProperty{JsiiProperty: "queueInput", GoGetter: "QueueInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -5486,6 +5571,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDestinationTable", GoMethod: "ResetDestinationTable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceCatalog", GoMethod: "ResetSourceCatalog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceSchema", GoMethod: "ResetSourceSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceTable", GoMethod: "ResetSourceTable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTableConfiguration", GoMethod: "ResetTableConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceCatalog", GoGetter: "SourceCatalog"},

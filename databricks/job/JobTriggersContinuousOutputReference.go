@@ -32,6 +32,8 @@ type JobTriggersContinuousOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTriggersContinuous
 	SetInternalValue(val *JobTriggersContinuous)
+	MaintenanceWindow() JobTriggersContinuousMaintenanceWindowOutputReference
+	MaintenanceWindowInput() *JobTriggersContinuousMaintenanceWindow
 	TaskRetryMode() *string
 	SetTaskRetryMode(val *string)
 	TaskRetryModeInput() *string
@@ -67,6 +69,8 @@ type JobTriggersContinuousOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutMaintenanceWindow(value *JobTriggersContinuousMaintenanceWindow)
+	ResetMaintenanceWindow()
 	ResetTaskRetryMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_JobTriggersContinuousOutputReference) InternalValue() *JobTri
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggersContinuousOutputReference) MaintenanceWindow() JobTriggersContinuousMaintenanceWindowOutputReference {
+	var returns JobTriggersContinuousMaintenanceWindowOutputReference
+	_jsii_.Get(
+		j,
+		"maintenanceWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggersContinuousOutputReference) MaintenanceWindowInput() *JobTriggersContinuousMaintenanceWindow {
+	var returns *JobTriggersContinuousMaintenanceWindow
+	_jsii_.Get(
+		j,
+		"maintenanceWindowInput",
 		&returns,
 	)
 	return returns
@@ -451,6 +475,25 @@ func (j *jsiiProxy_JobTriggersContinuousOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobTriggersContinuousOutputReference) PutMaintenanceWindow(value *JobTriggersContinuousMaintenanceWindow) {
+	if err := j.validatePutMaintenanceWindowParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putMaintenanceWindow",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTriggersContinuousOutputReference) ResetMaintenanceWindow() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetMaintenanceWindow",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobTriggersContinuousOutputReference) ResetTaskRetryMode() {

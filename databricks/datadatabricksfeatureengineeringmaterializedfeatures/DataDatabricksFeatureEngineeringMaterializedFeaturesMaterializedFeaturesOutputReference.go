@@ -28,7 +28,6 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOut
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	CronSchedule() *string
 	CronScheduleTrigger() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference
 	FeatureName() *string
 	// Experimental.
@@ -122,16 +121,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) CronSchedule() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cronSchedule",
 		&returns,
 	)
 	return returns

@@ -59,7 +59,15 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference) validateSetDelayParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference) validateSetOffsetParameters(val *string) error {
 	return nil
 }
 

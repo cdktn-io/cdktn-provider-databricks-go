@@ -47,6 +47,10 @@ func (p *jsiiProxy_PolicyInfoRowFilterUsingOutputReference) validateInterpolatio
 	return nil
 }
 
+func (p *jsiiProxy_PolicyInfoRowFilterUsingOutputReference) validatePutFunctionArgExpressionParameters(value *PolicyInfoRowFilterUsingFunctionArgExpression) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyInfoRowFilterUsingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

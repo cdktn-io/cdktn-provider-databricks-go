@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datadatabrickspolicyinfos
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validatePutColumnTagValueParameters(value *DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validatePutTagValueParameters(value *DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

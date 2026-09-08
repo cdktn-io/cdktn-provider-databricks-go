@@ -16,6 +16,9 @@ type JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference interface {
 	AlternateNodeTypeIds() *[]*string
 	SetAlternateNodeTypeIds(val *[]*string)
 	AlternateNodeTypeIdsInput() *[]*string
+	AwsContextId() *string
+	SetAwsContextId(val *string)
+	AwsContextIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -68,6 +71,7 @@ type JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAlternateNodeTypeIds()
+	ResetAwsContextId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -98,6 +102,26 @@ func (j *jsiiProxy_JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference) Al
 	_jsii_.Get(
 		j,
 		"alternateNodeTypeIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference) AwsContextId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsContextId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference) AwsContextIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsContextIdInput",
 		&returns,
 	)
 	return returns
@@ -208,6 +232,17 @@ func (j *jsiiProxy_JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference)Set
 	_jsii_.Set(
 		j,
 		"alternateNodeTypeIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference)SetAwsContextId(val *string) {
+	if err := j.validateSetAwsContextIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"awsContextId",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (j *jsiiProxy_JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference) Re
 	_jsii_.InvokeVoid(
 		j,
 		"resetAlternateNodeTypeIds",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference) ResetAwsContextId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetAwsContextId",
 		nil, // no parameters
 	)
 }

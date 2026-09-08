@@ -59,10 +59,6 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) validatePutExtraParametersParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
@@ -72,10 +68,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 }
 
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) validateSetFunctionTypeParameters(val *string) error {
 	return nil
 }
 

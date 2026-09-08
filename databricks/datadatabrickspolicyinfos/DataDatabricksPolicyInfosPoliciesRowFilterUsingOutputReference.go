@@ -36,6 +36,8 @@ type DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	FunctionArgExpression() DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionOutputReference
+	FunctionArgExpressionInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -70,8 +72,10 @@ type DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutFunctionArgExpression(value *DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpression)
 	ResetAlias()
 	ResetConstant()
+	ResetFunctionArgExpression()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -162,6 +166,26 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReference) FunctionArgExpression() DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionOutputReference {
+	var returns DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionOutputReference
+	_jsii_.Get(
+		j,
+		"functionArgExpression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReference) FunctionArgExpressionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"functionArgExpressionInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReferenc
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReference) PutFunctionArgExpression(value *DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpression) {
+	if err := d.validatePutFunctionArgExpressionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFunctionArgExpression",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReference) ResetAlias() {
 	_jsii_.InvokeVoid(
 		d,
@@ -500,6 +535,14 @@ func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetConstant",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReference) ResetFunctionArgExpression() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFunctionArgExpression",
 		nil, // no parameters
 	)
 }

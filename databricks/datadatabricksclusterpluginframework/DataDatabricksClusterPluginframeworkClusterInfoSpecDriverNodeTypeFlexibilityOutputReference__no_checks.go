@@ -55,6 +55,10 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDriverNode
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDriverNodeTypeFlexibilityOutputReference) validateSetAwsContextIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDriverNodeTypeFlexibilityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

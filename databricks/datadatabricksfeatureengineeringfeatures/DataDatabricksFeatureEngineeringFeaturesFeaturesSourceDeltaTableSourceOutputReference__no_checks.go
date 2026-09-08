@@ -63,10 +63,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTa
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSourceOutputReference) validateSetEntityColumnsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSourceOutputReference) validateSetFilterConditionParameters(val *string) error {
 	return nil
 }
@@ -84,10 +80,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTa
 }
 
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSourceOutputReference) validateSetTimeseriesColumnParameters(val *string) error {
 	return nil
 }
 

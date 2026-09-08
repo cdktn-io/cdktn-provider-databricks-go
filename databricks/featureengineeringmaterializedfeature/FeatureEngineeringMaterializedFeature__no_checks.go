@@ -131,10 +131,6 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetCountParame
 	return nil
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetCronScheduleParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetFeatureNameParameters(val *string) error {
 	return nil
 }

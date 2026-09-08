@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/app_space databricks_app_space}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/app_space databricks_app_space}.
 type AppSpace interface {
 	cdktn.TerraformResource
+	AssumeGroupId() *string
+	SetAssumeGroupId(val *string)
+	AssumeGroupIdInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -182,6 +185,7 @@ type AppSpace interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetAssumeGroupId()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -215,6 +219,26 @@ type AppSpace interface {
 // The jsii proxy struct for AppSpace
 type jsiiProxy_AppSpace struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_AppSpace) AssumeGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assumeGroupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpace) AssumeGroupIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assumeGroupIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AppSpace) CdktfStack() cdktn.TerraformStack {
@@ -608,7 +632,7 @@ func (j *jsiiProxy_AppSpace) UserApiScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/app_space databricks_app_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/app_space databricks_app_space} Resource.
 func NewAppSpace(scope constructs.Construct, id *string, config *AppSpaceConfig) AppSpace {
 	_init_.Initialize()
 
@@ -626,7 +650,7 @@ func NewAppSpace(scope constructs.Construct, id *string, config *AppSpaceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/app_space databricks_app_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/app_space databricks_app_space} Resource.
 func NewAppSpace_Override(a AppSpace, scope constructs.Construct, id *string, config *AppSpaceConfig) {
 	_init_.Initialize()
 
@@ -634,6 +658,17 @@ func NewAppSpace_Override(a AppSpace, scope constructs.Construct, id *string, co
 		"@cdktn/provider-databricks.appSpace.AppSpace",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AppSpace)SetAssumeGroupId(val *string) {
+	if err := j.validateSetAssumeGroupIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"assumeGroupId",
+		val,
 	)
 }
 
@@ -1148,6 +1183,14 @@ func (a *jsiiProxy_AppSpace) RegisterProviderFeatureUsage(feature cdktn.Provider
 		a,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (a *jsiiProxy_AppSpace) ResetAssumeGroupId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAssumeGroupId",
+		nil, // no parameters
 	)
 }
 

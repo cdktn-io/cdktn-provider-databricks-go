@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) valid
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) validatePutFunctionArgExpressionParameters(value *DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpression) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

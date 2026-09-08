@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}.
 type DataDatabricksFeatureEngineeringFeature interface {
 	cdktn.TerraformDataSource
 	CatalogName() *string
@@ -32,7 +32,6 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	Entities() DataDatabricksFeatureEngineeringFeatureEntitiesList
-	FilterCondition() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -45,7 +44,6 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	SetFullName(val *string)
 	FullNameInput() *string
 	Function() DataDatabricksFeatureEngineeringFeatureFunctionOutputReference
-	Inputs() *[]*string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -71,7 +69,6 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	// Experimental.
 	TerraformResourceType() *string
 	TimeseriesColumn() DataDatabricksFeatureEngineeringFeatureTimeseriesColumnOutputReference
-	TimeWindow() DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -233,16 +230,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Entities() DataDatab
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) FilterCondition() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"filterCondition",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -298,16 +285,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Function() DataDatab
 	_jsii_.Get(
 		j,
 		"function",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Inputs() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"inputs",
 		&returns,
 	)
 	return returns
@@ -453,18 +430,8 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TimeseriesColumn() D
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TimeWindow() DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference {
-	var returns DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference
-	_jsii_.Get(
-		j,
-		"timeWindow",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringFeature(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeatureConfig) DataDatabricksFeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -482,7 +449,7 @@ func NewDataDatabricksFeatureEngineeringFeature(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringFeature_Override(d DataDatabricksFeatureEngineeringFeature, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 

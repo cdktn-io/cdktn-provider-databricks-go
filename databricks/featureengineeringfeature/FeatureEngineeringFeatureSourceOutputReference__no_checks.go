@@ -55,6 +55,10 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutKa
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutLatenessParameters(value *FeatureEngineeringFeatureSourceLateness) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutRequestSourceParameters(value *FeatureEngineeringFeatureSourceRequestSource) error {
 	return nil
 }

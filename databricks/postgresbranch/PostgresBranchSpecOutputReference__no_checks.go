@@ -87,6 +87,10 @@ func (j *jsiiProxy_PostgresBranchSpecOutputReference) validateSetSourceBranchTim
 	return nil
 }
 
+func (j *jsiiProxy_PostgresBranchSpecOutputReference) validateSetSourceSnapshotParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresBranchSpecOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -52,6 +52,8 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	MetaAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions
 	OutlookOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference
 	OutlookOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions
+	RabbitmqOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptionsOutputReference
+	RabbitmqOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions
 	RedditAdsOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference
 	RedditAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions
 	SharepointOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference
@@ -104,6 +106,7 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	PutMarketoOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions)
 	PutMetaAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions)
 	PutOutlookOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions)
+	PutRabbitmqOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions)
 	PutRedditAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions)
 	PutSharepointOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions)
 	PutSmartsheetOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions)
@@ -119,6 +122,7 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	ResetMarketoOptions()
 	ResetMetaAdsOptions()
 	ResetOutlookOptions()
+	ResetRabbitmqOptions()
 	ResetRedditAdsOptions()
 	ResetSharepointOptions()
 	ResetSmartsheetOptions()
@@ -384,6 +388,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.Get(
 		j,
 		"outlookOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) RabbitmqOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"rabbitmqOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) RabbitmqOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions
+	_jsii_.Get(
+		j,
+		"rabbitmqOptionsInput",
 		&returns,
 	)
 	return returns
@@ -888,6 +912,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutRabbitmqOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions) {
+	if err := p.validatePutRabbitmqOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRabbitmqOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutRedditAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions) {
 	if err := p.validatePutRedditAdsOptionsParameters(value); err != nil {
 		panic(err)
@@ -1019,6 +1054,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.InvokeVoid(
 		p,
 		"resetOutlookOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetRabbitmqOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRabbitmqOptions",
 		nil, // no parameters
 	)
 }

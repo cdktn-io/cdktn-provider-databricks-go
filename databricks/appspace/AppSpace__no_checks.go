@@ -107,6 +107,10 @@ func validateAppSpace_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_AppSpace) validateSetAssumeGroupIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSpace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

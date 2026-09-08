@@ -47,6 +47,10 @@ func (j *jsiiProxy_JobTriggersContinuousOutputReference) validateInterpolationFo
 	return nil
 }
 
+func (j *jsiiProxy_JobTriggersContinuousOutputReference) validatePutMaintenanceWindowParameters(value *JobTriggersContinuousMaintenanceWindow) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTriggersContinuousOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

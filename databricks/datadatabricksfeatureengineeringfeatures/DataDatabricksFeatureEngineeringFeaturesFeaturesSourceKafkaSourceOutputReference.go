@@ -28,8 +28,6 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputRefe
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EntityColumnIdentifiers() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersList
-	EntityColumnIdentifiersInput() interface{}
 	FilterCondition() *string
 	SetFilterCondition(val *string)
 	FilterConditionInput() *string
@@ -48,8 +46,6 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputRefe
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
-	TimeseriesColumnIdentifier() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierOutputReference
-	TimeseriesColumnIdentifierInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -74,11 +70,7 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputRefe
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	PutEntityColumnIdentifiers(value interface{})
-	PutTimeseriesColumnIdentifier(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier)
-	ResetEntityColumnIdentifiers()
 	ResetFilterCondition()
-	ResetTimeseriesColumnIdentifier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -119,26 +111,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSo
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) EntityColumnIdentifiers() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersList {
-	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersList
-	_jsii_.Get(
-		j,
-		"entityColumnIdentifiers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) EntityColumnIdentifiersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"entityColumnIdentifiersInput",
 		&returns,
 	)
 	return returns
@@ -219,26 +191,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSo
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) TimeseriesColumnIdentifier() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierOutputReference {
-	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierOutputReference
-	_jsii_.Get(
-		j,
-		"timeseriesColumnIdentifier",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) TimeseriesColumnIdentifierInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeseriesColumnIdentifierInput",
 		&returns,
 	)
 	return returns
@@ -535,48 +487,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSo
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) PutEntityColumnIdentifiers(value interface{}) {
-	if err := d.validatePutEntityColumnIdentifiersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEntityColumnIdentifiers",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) PutTimeseriesColumnIdentifier(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier) {
-	if err := d.validatePutTimeseriesColumnIdentifierParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putTimeseriesColumnIdentifier",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) ResetEntityColumnIdentifiers() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEntityColumnIdentifiers",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) ResetFilterCondition() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetFilterCondition",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) ResetTimeseriesColumnIdentifier() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTimeseriesColumnIdentifier",
 		nil, // no parameters
 	)
 }

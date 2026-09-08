@@ -47,14 +47,6 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) va
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) validatePutEntityColumnIdentifiersParameters(value interface{}) error {
-	return nil
-}
-
-func (f *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) validatePutTimeseriesColumnIdentifierParameters(value *FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier) error {
-	return nil
-}
-
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceKafkaSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

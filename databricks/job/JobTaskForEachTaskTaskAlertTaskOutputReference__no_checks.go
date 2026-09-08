@@ -71,6 +71,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAlertTaskOutputReference) validateSetIn
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskAlertTaskOutputReference) validateSetParametersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskAlertTaskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

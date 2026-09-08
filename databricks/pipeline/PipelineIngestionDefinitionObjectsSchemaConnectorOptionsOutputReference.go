@@ -52,6 +52,8 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference int
 	MetaAdsOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions
 	OutlookOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsOutputReference
 	OutlookOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions
+	RabbitmqOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptionsOutputReference
+	RabbitmqOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions
 	RedditAdsOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference
 	RedditAdsOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions
 	SharepointOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference
@@ -104,6 +106,7 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference int
 	PutMarketoOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions)
 	PutMetaAdsOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions)
 	PutOutlookOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions)
+	PutRabbitmqOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions)
 	PutRedditAdsOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions)
 	PutSharepointOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions)
 	PutSmartsheetOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions)
@@ -119,6 +122,7 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference int
 	ResetMarketoOptions()
 	ResetMetaAdsOptions()
 	ResetOutlookOptions()
+	ResetRabbitmqOptions()
 	ResetRedditAdsOptions()
 	ResetSharepointOptions()
 	ResetSmartsheetOptions()
@@ -384,6 +388,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutpu
 	_jsii_.Get(
 		j,
 		"outlookOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) RabbitmqOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"rabbitmqOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) RabbitmqOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions {
+	var returns *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions
+	_jsii_.Get(
+		j,
+		"rabbitmqOptionsInput",
 		&returns,
 	)
 	return returns
@@ -888,6 +912,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutpu
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) PutRabbitmqOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions) {
+	if err := p.validatePutRabbitmqOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRabbitmqOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) PutRedditAdsOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions) {
 	if err := p.validatePutRedditAdsOptionsParameters(value); err != nil {
 		panic(err)
@@ -1019,6 +1054,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutpu
 	_jsii_.InvokeVoid(
 		p,
 		"resetOutlookOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference) ResetRabbitmqOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRabbitmqOptions",
 		nil, // no parameters
 	)
 }

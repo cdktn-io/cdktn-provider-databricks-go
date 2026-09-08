@@ -262,6 +262,14 @@ func (j *jsiiProxy_PostgresBranchSpecOutputReference) validateSetSourceBranchTim
 	return nil
 }
 
+func (j *jsiiProxy_PostgresBranchSpecOutputReference) validateSetSourceSnapshotParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PostgresBranchSpecOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

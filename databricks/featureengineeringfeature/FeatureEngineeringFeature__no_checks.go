@@ -103,10 +103,6 @@ func (f *jsiiProxy_FeatureEngineeringFeature) validatePutTimeseriesColumnParamet
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeature) validatePutTimeWindowParameters(value *FeatureEngineeringFeatureTimeWindow) error {
-	return nil
-}
-
 func (f *jsiiProxy_FeatureEngineeringFeature) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
@@ -139,15 +135,7 @@ func (j *jsiiProxy_FeatureEngineeringFeature) validateSetDescriptionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeature) validateSetFilterConditionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_FeatureEngineeringFeature) validateSetFullNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeature) validateSetInputsParameters(val *[]*string) error {
 	return nil
 }
 

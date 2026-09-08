@@ -23,8 +23,6 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReferen
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Continuous() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference
-	ContinuousInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -40,6 +38,9 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReferen
 	SawtoothInput() interface{}
 	Sliding() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference
 	SlidingInput() interface{}
+	StartTime() *string
+	SetStartTime(val *string)
+	StartTimeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,15 +75,14 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReferen
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	PutContinuous(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous)
 	PutRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling)
 	PutSawtooth(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth)
 	PutSliding(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding)
 	PutTumbling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling)
-	ResetContinuous()
 	ResetRolling()
 	ResetSawtooth()
 	ResetSliding()
+	ResetStartTime()
 	ResetTumbling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -114,26 +114,6 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) Continuous() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference {
-	var returns FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference
-	_jsii_.Get(
-		j,
-		"continuous",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) ContinuousInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"continuousInput",
 		&returns,
 	)
 	return returns
@@ -224,6 +204,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.Get(
 		j,
 		"slidingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) StartTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) StartTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startTimeInput",
 		&returns,
 	)
 	return returns
@@ -326,6 +326,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference)SetStartTime(val *string) {
+	if err := j.validateSetStartTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startTime",
 		val,
 	)
 }
@@ -538,17 +549,6 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) PutContinuous(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous) {
-	if err := f.validatePutContinuousParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		f,
-		"putContinuous",
-		[]interface{}{value},
-	)
-}
-
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) PutRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling) {
 	if err := f.validatePutRollingParameters(value); err != nil {
 		panic(err)
@@ -593,14 +593,6 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	)
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) ResetContinuous() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetContinuous",
-		nil, // no parameters
-	)
-}
-
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) ResetRolling() {
 	_jsii_.InvokeVoid(
 		f,
@@ -621,6 +613,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.InvokeVoid(
 		f,
 		"resetSliding",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) ResetStartTime() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetStartTime",
 		nil, // no parameters
 	)
 }

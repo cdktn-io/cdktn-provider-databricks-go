@@ -55,6 +55,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterDriverNodeTypeFlexibilityOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterDriverNodeTypeFlexibilityOutputReference) validateSetAwsContextIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterDriverNodeTypeFlexibilityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

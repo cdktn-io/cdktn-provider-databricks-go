@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) validatePutLatenessParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceLateness) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) validatePutRequestSourceParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceRequestSource) error {
 	return nil
 }

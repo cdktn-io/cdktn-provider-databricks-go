@@ -13,6 +13,7 @@ import (
 
 type DataDatabricksAppSpacesSpacesOutputReference interface {
 	cdktn.ComplexObject
+	AssumeGroupId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -99,6 +100,16 @@ type DataDatabricksAppSpacesSpacesOutputReference interface {
 // The jsii proxy struct for DataDatabricksAppSpacesSpacesOutputReference
 type jsiiProxy_DataDatabricksAppSpacesSpacesOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksAppSpacesSpacesOutputReference) AssumeGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assumeGroupId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksAppSpacesSpacesOutputReference) ComplexObjectIndex() interface{} {

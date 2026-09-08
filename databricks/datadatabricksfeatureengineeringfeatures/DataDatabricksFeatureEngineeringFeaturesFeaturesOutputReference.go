@@ -33,14 +33,12 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	CreationStack() *[]*string
 	Description() *string
 	Entities() DataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesList
-	FilterCondition() *string
 	// Experimental.
 	Fqn() *string
 	FullName() *string
 	SetFullName(val *string)
 	FullNameInput() *string
 	Function() DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference
-	Inputs() *[]*string
 	InternalValue() *DataDatabricksFeatureEngineeringFeaturesFeatures
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeatures)
 	LineageContext() DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContextOutputReference
@@ -58,7 +56,6 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeseriesColumn() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumnOutputReference
-	TimeWindow() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -180,16 +177,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) FilterCondition() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"filterCondition",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -225,16 +212,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"function",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) Inputs() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"inputs",
 		&returns,
 	)
 	return returns
@@ -335,16 +312,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"timeseriesColumn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) TimeWindow() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference {
-	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference
-	_jsii_.Get(
-		j,
-		"timeWindow",
 		&returns,
 	)
 	return returns

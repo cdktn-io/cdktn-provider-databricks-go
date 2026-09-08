@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference) validateSetSourceSnapshotParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

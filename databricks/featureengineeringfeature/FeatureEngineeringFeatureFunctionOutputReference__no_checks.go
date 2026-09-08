@@ -59,10 +59,6 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validatePut
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validatePutExtraParametersParameters(value interface{}) error {
-	return nil
-}
-
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
@@ -72,10 +68,6 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validateSet
 }
 
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) validateSetFunctionTypeParameters(val *string) error {
 	return nil
 }
 

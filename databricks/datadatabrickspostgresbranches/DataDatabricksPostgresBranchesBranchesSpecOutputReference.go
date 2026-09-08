@@ -50,6 +50,9 @@ type DataDatabricksPostgresBranchesBranchesSpecOutputReference interface {
 	SourceBranchTime() *string
 	SetSourceBranchTime(val *string)
 	SourceBranchTimeInput() *string
+	SourceSnapshot() *string
+	SetSourceSnapshot(val *string)
+	SourceSnapshotInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -91,6 +94,7 @@ type DataDatabricksPostgresBranchesBranchesSpecOutputReference interface {
 	ResetSourceBranch()
 	ResetSourceBranchLsn()
 	ResetSourceBranchTime()
+	ResetSourceSnapshot()
 	ResetTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -277,6 +281,26 @@ func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference) So
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference) SourceSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference) SourceSnapshotInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshotInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -440,6 +464,17 @@ func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference)Set
 	_jsii_.Set(
 		j,
 		"sourceBranchTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference)SetSourceSnapshot(val *string) {
+	if err := j.validateSetSourceSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceSnapshot",
 		val,
 	)
 }
@@ -707,6 +742,14 @@ func (d *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference) Re
 	_jsii_.InvokeVoid(
 		d,
 		"resetSourceBranchTime",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPostgresBranchesBranchesSpecOutputReference) ResetSourceSnapshot() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceSnapshot",
 		nil, // no parameters
 	)
 }
