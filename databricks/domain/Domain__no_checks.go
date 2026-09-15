@@ -1,0 +1,161 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package domain
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_Domain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validatePutIconParameters(value *DomainIcon) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validatePutProviderConfigParameters(value *DomainProviderConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_Domain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
+func validateDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
+func validateDomain_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetBusinessOwnerIdsParameters(val *[]*float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetDomainIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetDraftParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetParentDomainIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetSubtitleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetTagKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Domain) validateSetTechnicalOwnerIdsParameters(val *[]*float64) error {
+	return nil
+}
+
+func validateNewDomainParameters(scope constructs.Construct, id *string, config *DomainConfig) error {
+	return nil
+}
+

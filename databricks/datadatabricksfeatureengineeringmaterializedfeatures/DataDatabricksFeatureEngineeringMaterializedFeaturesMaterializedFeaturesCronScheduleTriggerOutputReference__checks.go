@@ -182,6 +182,14 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference) validateSetModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

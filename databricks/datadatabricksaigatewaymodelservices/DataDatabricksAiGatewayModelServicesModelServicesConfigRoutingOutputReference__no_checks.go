@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutin
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) validatePutTrafficSplittingParameters(value *DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingTrafficSplitting) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
@@ -68,10 +64,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutin
 }
 
 func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) validateSetFirstTokenTimeoutParameters(val *string) error {
 	return nil
 }
 

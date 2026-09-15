@@ -32,9 +32,6 @@ type AiGatewayModelServiceConfigRoutingOutputReference interface {
 	DestinationsInput() interface{}
 	Fallback() AiGatewayModelServiceConfigRoutingFallbackOutputReference
 	FallbackInput() interface{}
-	FirstTokenTimeout() *string
-	SetFirstTokenTimeout(val *string)
-	FirstTokenTimeoutInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -47,8 +44,6 @@ type AiGatewayModelServiceConfigRoutingOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
-	TrafficSplitting() AiGatewayModelServiceConfigRoutingTrafficSplittingOutputReference
-	TrafficSplittingInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,11 +70,8 @@ type AiGatewayModelServiceConfigRoutingOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDestinations(value interface{})
 	PutFallback(value *AiGatewayModelServiceConfigRoutingFallback)
-	PutTrafficSplitting(value *AiGatewayModelServiceConfigRoutingTrafficSplitting)
 	ResetDestinations()
 	ResetFallback()
-	ResetFirstTokenTimeout()
-	ResetTrafficSplitting()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -165,26 +157,6 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) FallbackIn
 	return returns
 }
 
-func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) FirstTokenTimeout() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"firstTokenTimeout",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) FirstTokenTimeoutInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"firstTokenTimeoutInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -220,26 +192,6 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) TerraformR
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) TrafficSplitting() AiGatewayModelServiceConfigRoutingTrafficSplittingOutputReference {
-	var returns AiGatewayModelServiceConfigRoutingTrafficSplittingOutputReference
-	_jsii_.Get(
-		j,
-		"trafficSplitting",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) TrafficSplittingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"trafficSplittingInput",
 		&returns,
 	)
 	return returns
@@ -291,17 +243,6 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference)SetComplexO
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference)SetFirstTokenTimeout(val *string) {
-	if err := j.validateSetFirstTokenTimeoutParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"firstTokenTimeout",
 		val,
 	)
 }
@@ -547,17 +488,6 @@ func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) PutFallbac
 	)
 }
 
-func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) PutTrafficSplitting(value *AiGatewayModelServiceConfigRoutingTrafficSplitting) {
-	if err := a.validatePutTrafficSplittingParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putTrafficSplitting",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) ResetDestinations() {
 	_jsii_.InvokeVoid(
 		a,
@@ -570,22 +500,6 @@ func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) ResetFallb
 	_jsii_.InvokeVoid(
 		a,
 		"resetFallback",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) ResetFirstTokenTimeout() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetFirstTokenTimeout",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) ResetTrafficSplitting() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetTrafficSplitting",
 		nil, // no parameters
 	)
 }

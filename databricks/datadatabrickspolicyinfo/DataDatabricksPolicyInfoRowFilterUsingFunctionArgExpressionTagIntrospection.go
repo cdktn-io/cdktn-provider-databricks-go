@@ -5,9 +5,9 @@ package datadatabrickspolicyinfo
 
 
 type DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#column_tag_value DataDatabricksPolicyInfo#column_tag_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/policy_info#column_tag_value DataDatabricksPolicyInfo#column_tag_value}.
 	ColumnTagValue *DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue `field:"optional" json:"columnTagValue" yaml:"columnTagValue"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#tag_value DataDatabricksPolicyInfo#tag_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/policy_info#tag_value DataDatabricksPolicyInfo#tag_value}.
 	TagValue *DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue `field:"optional" json:"tagValue" yaml:"tagValue"`
 }
 

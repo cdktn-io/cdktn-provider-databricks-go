@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
 type FeatureEngineeringFeature interface {
 	cdktn.TerraformResource
 	CatalogName() *string
@@ -39,6 +39,9 @@ type FeatureEngineeringFeature interface {
 	DescriptionInput() *string
 	Entities() FeatureEngineeringFeatureEntitiesList
 	EntitiesInput() interface{}
+	FilterCondition() *string
+	SetFilterCondition(val *string)
+	FilterConditionInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -52,6 +55,9 @@ type FeatureEngineeringFeature interface {
 	FullNameInput() *string
 	Function() FeatureEngineeringFeatureFunctionOutputReference
 	FunctionInput() interface{}
+	Inputs() *[]*string
+	SetInputs(val *[]*string)
+	InputsInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -84,6 +90,8 @@ type FeatureEngineeringFeature interface {
 	TerraformResourceType() *string
 	TimeseriesColumn() FeatureEngineeringFeatureTimeseriesColumnOutputReference
 	TimeseriesColumnInput() interface{}
+	TimeWindow() FeatureEngineeringFeatureTimeWindowOutputReference
+	TimeWindowInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -169,6 +177,7 @@ type FeatureEngineeringFeature interface {
 	PutProviderConfig(value *FeatureEngineeringFeatureProviderConfig)
 	PutSource(value *FeatureEngineeringFeatureSource)
 	PutTimeseriesColumn(value *FeatureEngineeringFeatureTimeseriesColumn)
+	PutTimeWindow(value *FeatureEngineeringFeatureTimeWindow)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -184,12 +193,15 @@ type FeatureEngineeringFeature interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetDescription()
 	ResetEntities()
+	ResetFilterCondition()
+	ResetInputs()
 	ResetLineageContext()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
 	ResetTimeseriesColumn()
+	ResetTimeWindow()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -337,6 +349,26 @@ func (j *jsiiProxy_FeatureEngineeringFeature) EntitiesInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeature) FilterCondition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterCondition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) FilterConditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterConditionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeature) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -402,6 +434,26 @@ func (j *jsiiProxy_FeatureEngineeringFeature) FunctionInput() interface{} {
 	_jsii_.Get(
 		j,
 		"functionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) Inputs() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"inputs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) InputsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"inputsInput",
 		&returns,
 	)
 	return returns
@@ -587,8 +639,28 @@ func (j *jsiiProxy_FeatureEngineeringFeature) TimeseriesColumnInput() interface{
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeature) TimeWindow() FeatureEngineeringFeatureTimeWindowOutputReference {
+	var returns FeatureEngineeringFeatureTimeWindowOutputReference
+	_jsii_.Get(
+		j,
+		"timeWindow",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+func (j *jsiiProxy_FeatureEngineeringFeature) TimeWindowInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) FeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -606,7 +678,7 @@ func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature_Override(f FeatureEngineeringFeature, scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 
@@ -658,6 +730,17 @@ func (j *jsiiProxy_FeatureEngineeringFeature)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeature)SetFilterCondition(val *string) {
+	if err := j.validateSetFilterConditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterCondition",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeature)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -673,6 +756,17 @@ func (j *jsiiProxy_FeatureEngineeringFeature)SetFullName(val *string) {
 	_jsii_.Set(
 		j,
 		"fullName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature)SetInputs(val *[]*string) {
+	if err := j.validateSetInputsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inputs",
 		val,
 	)
 }
@@ -1142,6 +1236,17 @@ func (f *jsiiProxy_FeatureEngineeringFeature) PutTimeseriesColumn(value *Feature
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeature) PutTimeWindow(value *FeatureEngineeringFeatureTimeWindow) {
+	if err := f.validatePutTimeWindowParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putTimeWindow",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeature) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
 	if err := f.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
 		panic(err)
@@ -1165,6 +1270,22 @@ func (f *jsiiProxy_FeatureEngineeringFeature) ResetEntities() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetEntities",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeature) ResetFilterCondition() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeature) ResetInputs() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetInputs",
 		nil, // no parameters
 	)
 }
@@ -1197,6 +1318,14 @@ func (f *jsiiProxy_FeatureEngineeringFeature) ResetTimeseriesColumn() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetTimeseriesColumn",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeature) ResetTimeWindow() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTimeWindow",
 		nil, // no parameters
 	)
 }

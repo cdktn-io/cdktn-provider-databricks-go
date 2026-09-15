@@ -38,6 +38,9 @@ type JobTaskAiRuntimeTaskDeploymentsComputeOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTaskAiRuntimeTaskDeploymentsCompute
 	SetInternalValue(val *JobTaskAiRuntimeTaskDeploymentsCompute)
+	ProvisionedCapacityId() *string
+	SetProvisionedCapacityId(val *string)
+	ProvisionedCapacityIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type JobTaskAiRuntimeTaskDeploymentsComputeOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetProvisionedCapacityId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -175,6 +179,26 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsComputeOutputReference) Intern
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsComputeOutputReference) ProvisionedCapacityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionedCapacityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsComputeOutputReference) ProvisionedCapacityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionedCapacityIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsComputeOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -274,6 +298,17 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsComputeOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsComputeOutputReference)SetProvisionedCapacityId(val *string) {
+	if err := j.validateSetProvisionedCapacityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedCapacityId",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsComputeOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsComputeOutputReference) ResetProvisionedCapacityId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetProvisionedCapacityId",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsComputeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

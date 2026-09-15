@@ -44,12 +44,6 @@ type DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference interfac
 	Requests() *float64
 	SetRequests(val *float64)
 	RequestsInput() *float64
-	RequestTagKey() *string
-	SetRequestTagKey(val *string)
-	RequestTagKeyInput() *string
-	RequestTagValue() *string
-	SetRequestTagValue(val *string)
-	RequestTagValueInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,8 +81,6 @@ type DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference interfac
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPrincipal()
 	ResetRequests()
-	ResetRequestTagKey()
-	ResetRequestTagValue()
 	ResetTokens()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -235,46 +227,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference) RequestTagKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"requestTagKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference) RequestTagKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"requestTagKeyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference) RequestTagValue() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"requestTagValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference) RequestTagValueInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"requestTagValueInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -416,28 +368,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputRefe
 	_jsii_.Set(
 		j,
 		"requests",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference)SetRequestTagKey(val *string) {
-	if err := j.validateSetRequestTagKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"requestTagKey",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference)SetRequestTagValue(val *string) {
-	if err := j.validateSetRequestTagValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"requestTagValue",
 		val,
 	)
 }
@@ -673,22 +603,6 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"resetRequests",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference) ResetRequestTagKey() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRequestTagKey",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRateLimitsOutputReference) ResetRequestTagValue() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRequestTagValue",
 		nil, // no parameters
 	)
 }

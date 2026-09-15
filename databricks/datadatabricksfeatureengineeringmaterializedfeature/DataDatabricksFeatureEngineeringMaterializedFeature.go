@@ -12,9 +12,10 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
 type DataDatabricksFeatureEngineeringMaterializedFeature interface {
 	cdktn.TerraformDataSource
+	BudgetPolicyId() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -23,6 +24,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeature interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CronSchedule() *string
 	CronScheduleTrigger() DataDatabricksFeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference
 	// Experimental.
 	DependsOn() *[]*string
@@ -39,6 +41,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeature interface {
 	FriendlyUniqueId() *string
 	IsOnline() cdktn.IResolvable
 	LastMaterializationTime() *string
+	LatestBackfillOperation() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -62,6 +65,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeature interface {
 	StreamingMode() DataDatabricksFeatureEngineeringMaterializedFeatureStreamingModeOutputReference
 	TableName() *string
 	TableTrigger() DataDatabricksFeatureEngineeringMaterializedFeatureTableTriggerOutputReference
+	Tags() cdktn.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -139,6 +143,16 @@ type jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature struct {
 	internal.Type__cdktnTerraformDataSource
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) CdktfStack() cdktn.TerraformStack {
 	var returns cdktn.TerraformStack
 	_jsii_.Get(
@@ -164,6 +178,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) Count() 
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) CronSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cronSchedule",
 		&returns,
 	)
 	return returns
@@ -244,6 +268,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) LastMate
 	_jsii_.Get(
 		j,
 		"lastMaterializationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) LatestBackfillOperation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"latestBackfillOperation",
 		&returns,
 	)
 	return returns
@@ -389,6 +423,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) TableTri
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) Tags() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -420,7 +464,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) Terrafor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringMaterializedFeatureConfig) DataDatabricksFeatureEngineeringMaterializedFeature {
 	_init_.Initialize()
 
@@ -438,7 +482,7 @@ func NewDataDatabricksFeatureEngineeringMaterializedFeature(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringMaterializedFeature_Override(d DataDatabricksFeatureEngineeringMaterializedFeature, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringMaterializedFeatureConfig) {
 	_init_.Initialize()
 

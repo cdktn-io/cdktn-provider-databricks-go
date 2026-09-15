@@ -119,6 +119,10 @@ func (j *jsiiProxy_PostgresSnapshotSchedule) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_PostgresSnapshotSchedule) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresSnapshotSchedule) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

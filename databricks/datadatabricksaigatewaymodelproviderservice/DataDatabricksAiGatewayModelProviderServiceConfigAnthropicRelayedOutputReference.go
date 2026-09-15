@@ -32,9 +32,6 @@ type DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputRefe
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	PlanType() *string
-	SetPlanType(val *string)
-	PlanTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +64,6 @@ type DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputRefe
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	ResetPlanType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -128,26 +124,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRel
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) PlanType() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"planType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) PlanTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"planTypeInput",
 		&returns,
 	)
 	return returns
@@ -230,17 +206,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRel
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference)SetPlanType(val *string) {
-	if err := j.validateSetPlanTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"planType",
 		val,
 	)
 }
@@ -451,14 +416,6 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRel
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) ResetPlanType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPlanType",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

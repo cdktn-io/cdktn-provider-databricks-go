@@ -12,9 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
 type FeatureEngineeringMaterializedFeature interface {
 	cdktn.TerraformResource
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -27,6 +30,9 @@ type FeatureEngineeringMaterializedFeature interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CronSchedule() *string
+	SetCronSchedule(val *string)
+	CronScheduleInput() *string
 	CronScheduleTrigger() FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference
 	CronScheduleTriggerInput() interface{}
 	// Experimental.
@@ -46,6 +52,7 @@ type FeatureEngineeringMaterializedFeature interface {
 	FriendlyUniqueId() *string
 	IsOnline() cdktn.IResolvable
 	LastMaterializationTime() *string
+	LatestBackfillOperation() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -77,6 +84,9 @@ type FeatureEngineeringMaterializedFeature interface {
 	TableName() *string
 	TableTrigger() FeatureEngineeringMaterializedFeatureTableTriggerOutputReference
 	TableTriggerInput() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -181,6 +191,8 @@ type FeatureEngineeringMaterializedFeature interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetBudgetPolicyId()
+	ResetCronSchedule()
 	ResetCronScheduleTrigger()
 	ResetOfflineStoreConfig()
 	ResetOnlineStoreConfig()
@@ -191,6 +203,7 @@ type FeatureEngineeringMaterializedFeature interface {
 	ResetProviderConfig()
 	ResetStreamingMode()
 	ResetTableTrigger()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -216,6 +229,26 @@ type FeatureEngineeringMaterializedFeature interface {
 // The jsii proxy struct for FeatureEngineeringMaterializedFeature
 type jsiiProxy_FeatureEngineeringMaterializedFeature struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) CdktfStack() cdktn.TerraformStack {
@@ -253,6 +286,26 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) CronSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cronSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) CronScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cronScheduleInput",
 		&returns,
 	)
 	return returns
@@ -353,6 +406,16 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) LastMaterializationTim
 	_jsii_.Get(
 		j,
 		"lastMaterializationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) LatestBackfillOperation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"latestBackfillOperation",
 		&returns,
 	)
 	return returns
@@ -548,6 +611,26 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TableTriggerInput() in
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -579,7 +662,7 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
 func NewFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *string, config *FeatureEngineeringMaterializedFeatureConfig) FeatureEngineeringMaterializedFeature {
 	_init_.Initialize()
 
@@ -597,7 +680,7 @@ func NewFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource.
 func NewFeatureEngineeringMaterializedFeature_Override(f FeatureEngineeringMaterializedFeature, scope constructs.Construct, id *string, config *FeatureEngineeringMaterializedFeatureConfig) {
 	_init_.Initialize()
 
@@ -605,6 +688,17 @@ func NewFeatureEngineeringMaterializedFeature_Override(f FeatureEngineeringMater
 		"@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeature",
 		[]interface{}{scope, id, config},
 		f,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
+		val,
 	)
 }
 
@@ -626,6 +720,17 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetCount(val interface{
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetCronSchedule(val *string) {
+	if err := j.validateSetCronScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cronSchedule",
 		val,
 	)
 }
@@ -694,6 +799,17 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetProvisioners(val *[]
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1144,6 +1260,22 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) RegisterProviderFeatur
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetBudgetPolicyId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetCronSchedule() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetCronSchedule",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetCronScheduleTrigger() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1204,6 +1336,14 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetTableTrigger() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetTableTrigger",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeature) ResetTags() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTags",
 		nil, // no parameters
 	)
 }

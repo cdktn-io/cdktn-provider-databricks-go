@@ -329,6 +329,14 @@ func validateFeatureEngineeringMaterializedFeature_IsTerraformResourceParameters
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetBudgetPolicyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktn.SSHProvisionerConnection:
@@ -419,6 +427,14 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetCountParame
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetCronScheduleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetFeatureNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -484,6 +500,14 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetProvisioner
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktn.FileProvisioner, *cdktn.LocalExecProvisioner, *cdktn.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

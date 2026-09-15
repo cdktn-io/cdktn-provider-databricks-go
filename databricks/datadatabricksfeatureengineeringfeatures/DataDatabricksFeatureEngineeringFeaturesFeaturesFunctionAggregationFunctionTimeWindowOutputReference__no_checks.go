@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggre
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowOutputReference) validatePutContinuousParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowOutputReference) validatePutRollingParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowRolling) error {
 	return nil
 }

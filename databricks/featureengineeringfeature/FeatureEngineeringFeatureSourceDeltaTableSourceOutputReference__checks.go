@@ -174,6 +174,14 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) validateSetEntityColumnsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) validateSetFilterConditionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -223,6 +231,14 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 }
 
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) validateSetTimeseriesColumnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

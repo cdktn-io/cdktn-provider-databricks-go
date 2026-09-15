@@ -31,6 +31,9 @@ type DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	DataframeSchema() *string
 	SetDataframeSchema(val *string)
 	DataframeSchemaInput() *string
+	EntityColumns() *[]*string
+	SetEntityColumns(val *[]*string)
+	EntityColumnsInput() *[]*string
 	FilterCondition() *string
 	SetFilterCondition(val *string)
 	FilterConditionInput() *string
@@ -49,6 +52,9 @@ type DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TimeseriesColumn() *string
+	SetTimeseriesColumn(val *string)
+	TimeseriesColumnInput() *string
 	TransformationSql() *string
 	SetTransformationSql(val *string)
 	TransformationSqlInput() *string
@@ -77,7 +83,9 @@ type DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDataframeSchema()
+	ResetEntityColumns()
 	ResetFilterCondition()
+	ResetTimeseriesColumn()
 	ResetTransformationSql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -139,6 +147,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSource
 	_jsii_.Get(
 		j,
 		"dataframeSchemaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) EntityColumns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"entityColumns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) EntityColumnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"entityColumnsInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +247,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSource
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) TimeseriesColumn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeseriesColumn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) TimeseriesColumnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeseriesColumnInput",
 		&returns,
 	)
 	return returns
@@ -305,6 +353,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSource
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference)SetEntityColumns(val *[]*string) {
+	if err := j.validateSetEntityColumnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"entityColumns",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference)SetFilterCondition(val *string) {
 	if err := j.validateSetFilterConditionParameters(val); err != nil {
 		panic(err)
@@ -356,6 +415,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSource
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference)SetTimeseriesColumn(val *string) {
+	if err := j.validateSetTimeseriesColumnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeseriesColumn",
 		val,
 	)
 }
@@ -565,10 +635,26 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSource
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) ResetEntityColumns() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEntityColumns",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) ResetFilterCondition() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) ResetTimeseriesColumn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeseriesColumn",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSo
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) validatePutEntityColumnIdentifiersParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) validatePutTimeseriesColumnIdentifierParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

@@ -5,11 +5,15 @@ package datadatabricksfeatureengineeringkafkaconfig
 
 
 type DataDatabricksFeatureEngineeringKafkaConfigIngestionConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/feature_engineering_kafka_config#ingestion_destination DataDatabricksFeatureEngineeringKafkaConfig#ingestion_destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/feature_engineering_kafka_config#ingestion_destination DataDatabricksFeatureEngineeringKafkaConfig#ingestion_destination}.
 	IngestionDestination *DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigIngestionDestination `field:"required" json:"ingestionDestination" yaml:"ingestionDestination"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/feature_engineering_kafka_config#backfill_source DataDatabricksFeatureEngineeringKafkaConfig#backfill_source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/feature_engineering_kafka_config#backfill_source DataDatabricksFeatureEngineeringKafkaConfig#backfill_source}.
 	BackfillSource *DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigBackfillSource `field:"optional" json:"backfillSource" yaml:"backfillSource"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/feature_engineering_kafka_config#deduplication_columns DataDatabricksFeatureEngineeringKafkaConfig#deduplication_columns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/feature_engineering_kafka_config#budget_policy_id DataDatabricksFeatureEngineeringKafkaConfig#budget_policy_id}.
+	BudgetPolicyId *string `field:"optional" json:"budgetPolicyId" yaml:"budgetPolicyId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/feature_engineering_kafka_config#deduplication_columns DataDatabricksFeatureEngineeringKafkaConfig#deduplication_columns}.
 	DeduplicationColumns *[]*string `field:"optional" json:"deduplicationColumns" yaml:"deduplicationColumns"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/feature_engineering_kafka_config#tags DataDatabricksFeatureEngineeringKafkaConfig#tags}.
+	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

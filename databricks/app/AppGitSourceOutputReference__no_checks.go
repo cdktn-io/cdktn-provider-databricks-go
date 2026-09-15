@@ -47,6 +47,10 @@ func (a *jsiiProxy_AppGitSourceOutputReference) validateInterpolationForAttribut
 	return nil
 }
 
+func (a *jsiiProxy_AppGitSourceOutputReference) validatePutGitRepositoryParameters(value *AppGitSourceGitRepository) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppGitSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
@@ -68,6 +72,10 @@ func (j *jsiiProxy_AppGitSourceOutputReference) validateSetComplexObjectIsFromSe
 }
 
 func (j *jsiiProxy_AppGitSourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppGitSourceOutputReference) validateSetResolvedCommitParameters(val *string) error {
 	return nil
 }
 

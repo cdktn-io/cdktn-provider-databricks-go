@@ -399,14 +399,6 @@ func (j *jsiiProxy_AiGatewayModelProviderService) validateSetModelProviderServic
 	return nil
 }
 
-func (j *jsiiProxy_AiGatewayModelProviderService) validateSetOwnerParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AiGatewayModelProviderService) validateSetParentParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

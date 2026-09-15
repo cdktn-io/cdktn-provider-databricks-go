@@ -5,7 +5,7 @@ package policyinfo
 
 
 type PolicyInfoColumnMaskUsingFunctionArgExpression struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/policy_info#tag_introspection PolicyInfo#tag_introspection}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/policy_info#tag_introspection PolicyInfo#tag_introspection}.
 	TagIntrospection *PolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection `field:"optional" json:"tagIntrospection" yaml:"tagIntrospection"`
 }
 

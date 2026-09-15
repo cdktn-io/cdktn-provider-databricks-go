@@ -13,6 +13,7 @@ import (
 
 type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference interface {
 	cdktn.ComplexObject
+	BudgetPolicyId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,6 +29,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOut
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CronSchedule() *string
 	CronScheduleTrigger() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference
 	FeatureName() *string
 	// Experimental.
@@ -36,6 +38,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOut
 	SetInternalValue(val *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeatures)
 	IsOnline() cdktn.IResolvable
 	LastMaterializationTime() *string
+	LatestBackfillOperation() *string
 	MaterializedFeatureId() *string
 	SetMaterializedFeatureId(val *string)
 	MaterializedFeatureIdInput() *string
@@ -47,6 +50,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOut
 	StreamingMode() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeOutputReference
 	TableName() *string
 	TableTrigger() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesTableTriggerOutputReference
+	Tags() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -96,6 +100,16 @@ type jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedF
 	internal.Type__cdktnComplexObject
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -121,6 +135,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) CronSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cronSchedule",
 		&returns,
 	)
 	return returns
@@ -181,6 +205,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Get(
 		j,
 		"lastMaterializationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) LatestBackfillOperation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"latestBackfillOperation",
 		&returns,
 	)
 	return returns
@@ -281,6 +315,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Get(
 		j,
 		"tableTrigger",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) Tags() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

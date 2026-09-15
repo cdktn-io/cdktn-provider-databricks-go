@@ -174,6 +174,14 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigBac
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTableSourceOutputReference) validateSetEntityColumnsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTableSourceOutputReference) validateSetFilterConditionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -223,6 +231,14 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigBac
 }
 
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTableSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTableSourceOutputReference) validateSetTimeseriesColumnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

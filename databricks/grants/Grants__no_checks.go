@@ -179,6 +179,10 @@ func (j *jsiiProxy_Grants) validateSetSchemaParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Grants) validateSetSecretParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Grants) validateSetShareParameters(val *string) error {
 	return nil
 }

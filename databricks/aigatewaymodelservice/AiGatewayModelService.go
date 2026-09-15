@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service}.
 type AiGatewayModelService interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -59,9 +59,6 @@ type AiGatewayModelService interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
-	Owner() *string
-	SetOwner(val *string)
-	OwnerInput() *string
 	Parent() *string
 	SetParent(val *string)
 	ParentInput() *string
@@ -185,7 +182,6 @@ type AiGatewayModelService interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetOwner()
 	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -434,26 +430,6 @@ func (j *jsiiProxy_AiGatewayModelService) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_AiGatewayModelService) Owner() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"owner",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiGatewayModelService) OwnerInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ownerInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AiGatewayModelService) Parent() *string {
 	var returns *string
 	_jsii_.Get(
@@ -585,7 +561,7 @@ func (j *jsiiProxy_AiGatewayModelService) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service} Resource.
 func NewAiGatewayModelService(scope constructs.Construct, id *string, config *AiGatewayModelServiceConfig) AiGatewayModelService {
 	_init_.Initialize()
 
@@ -603,7 +579,7 @@ func NewAiGatewayModelService(scope constructs.Construct, id *string, config *Ai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_service databricks_ai_gateway_model_service} Resource.
 func NewAiGatewayModelService_Override(a AiGatewayModelService, scope constructs.Construct, id *string, config *AiGatewayModelServiceConfig) {
 	_init_.Initialize()
 
@@ -681,17 +657,6 @@ func (j *jsiiProxy_AiGatewayModelService)SetModelServiceId(val *string) {
 	_jsii_.Set(
 		j,
 		"modelServiceId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AiGatewayModelService)SetOwner(val *string) {
-	if err := j.validateSetOwnerParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"owner",
 		val,
 	)
 }
@@ -1148,14 +1113,6 @@ func (a *jsiiProxy_AiGatewayModelService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AiGatewayModelService) ResetOwner() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetOwner",
 		nil, // no parameters
 	)
 }

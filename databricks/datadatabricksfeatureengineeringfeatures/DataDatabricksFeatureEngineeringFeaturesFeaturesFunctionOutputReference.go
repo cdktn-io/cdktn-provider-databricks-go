@@ -34,8 +34,13 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference int
 	CreationStack() *[]*string
 	CustomUdf() DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionCustomUdfOutputReference
 	CustomUdfInput() interface{}
+	ExtraParameters() DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParametersList
+	ExtraParametersInput() interface{}
 	// Experimental.
 	Fqn() *string
+	FunctionType() *string
+	SetFunctionType(val *string)
+	FunctionTypeInput() *string
 	InternalValue() *DataDatabricksFeatureEngineeringFeaturesFeaturesFunction
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeaturesFunction)
 	// Experimental.
@@ -73,9 +78,12 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference int
 	PutAggregationFunction(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction)
 	PutColumnSelection(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionColumnSelection)
 	PutCustomUdf(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionCustomUdf)
+	PutExtraParameters(value interface{})
 	ResetAggregationFunction()
 	ResetColumnSelection()
 	ResetCustomUdf()
+	ResetExtraParameters()
+	ResetFunctionType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -181,11 +189,51 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutpu
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) ExtraParameters() DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParametersList {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParametersList
+	_jsii_.Get(
+		j,
+		"extraParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) ExtraParametersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extraParametersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) FunctionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"functionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) FunctionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"functionTypeInput",
 		&returns,
 	)
 	return returns
@@ -267,6 +315,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutpu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference)SetFunctionType(val *string) {
+	if err := j.validateSetFunctionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"functionType",
 		val,
 	)
 }
@@ -523,6 +582,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutpu
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) PutExtraParameters(value interface{}) {
+	if err := d.validatePutExtraParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putExtraParameters",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) ResetAggregationFunction() {
 	_jsii_.InvokeVoid(
 		d,
@@ -543,6 +613,22 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutpu
 	_jsii_.InvokeVoid(
 		d,
 		"resetCustomUdf",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) ResetExtraParameters() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExtraParameters",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference) ResetFunctionType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFunctionType",
 		nil, // no parameters
 	)
 }

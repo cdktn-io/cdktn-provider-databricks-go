@@ -32,6 +32,7 @@ type DataDatabricksPolicyInfosPoliciesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Deny() DataDatabricksPolicyInfosPoliciesDenyOutputReference
 	ExceptPrincipals() *[]*string
 	ForSecurableType() *string
 	// Experimental.
@@ -172,6 +173,16 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) CreationSta
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) Deny() DataDatabricksPolicyInfosPoliciesDenyOutputReference {
+	var returns DataDatabricksPolicyInfosPoliciesDenyOutputReference
+	_jsii_.Get(
+		j,
+		"deny",
 		&returns,
 	)
 	return returns

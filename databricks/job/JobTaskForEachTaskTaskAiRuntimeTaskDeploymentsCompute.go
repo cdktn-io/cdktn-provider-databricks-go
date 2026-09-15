@@ -5,9 +5,11 @@ package job
 
 
 type JobTaskForEachTaskTaskAiRuntimeTaskDeploymentsCompute struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/job#accelerator_count Job#accelerator_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/job#accelerator_count Job#accelerator_count}.
 	AcceleratorCount *float64 `field:"required" json:"acceleratorCount" yaml:"acceleratorCount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/job#accelerator_type Job#accelerator_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/job#accelerator_type Job#accelerator_type}.
 	AcceleratorType *string `field:"required" json:"acceleratorType" yaml:"acceleratorType"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/job#provisioned_capacity_id Job#provisioned_capacity_id}.
+	ProvisionedCapacityId *string `field:"optional" json:"provisionedCapacityId" yaml:"provisionedCapacityId"`
 }
 

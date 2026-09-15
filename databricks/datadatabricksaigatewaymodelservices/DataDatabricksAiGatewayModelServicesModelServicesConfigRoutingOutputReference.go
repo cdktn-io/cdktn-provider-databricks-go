@@ -32,9 +32,6 @@ type DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReferen
 	DestinationsInput() interface{}
 	Fallback() DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingFallbackOutputReference
 	FallbackInput() interface{}
-	FirstTokenTimeout() *string
-	SetFirstTokenTimeout(val *string)
-	FirstTokenTimeoutInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -47,8 +44,6 @@ type DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReferen
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
-	TrafficSplitting() DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingTrafficSplittingOutputReference
-	TrafficSplittingInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,11 +70,8 @@ type DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReferen
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDestinations(value interface{})
 	PutFallback(value *DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingFallback)
-	PutTrafficSplitting(value *DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingTrafficSplitting)
 	ResetDestinations()
 	ResetFallback()
-	ResetFirstTokenTimeout()
-	ResetTrafficSplitting()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -165,26 +157,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutin
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) FirstTokenTimeout() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"firstTokenTimeout",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) FirstTokenTimeoutInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"firstTokenTimeoutInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -220,26 +192,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutin
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) TrafficSplitting() DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingTrafficSplittingOutputReference {
-	var returns DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingTrafficSplittingOutputReference
-	_jsii_.Get(
-		j,
-		"trafficSplitting",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) TrafficSplittingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"trafficSplittingInput",
 		&returns,
 	)
 	return returns
@@ -291,17 +243,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutin
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference)SetFirstTokenTimeout(val *string) {
-	if err := j.validateSetFirstTokenTimeoutParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"firstTokenTimeout",
 		val,
 	)
 }
@@ -547,17 +488,6 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutin
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) PutTrafficSplitting(value *DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingTrafficSplitting) {
-	if err := d.validatePutTrafficSplittingParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putTrafficSplitting",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) ResetDestinations() {
 	_jsii_.InvokeVoid(
 		d,
@@ -570,22 +500,6 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutin
 	_jsii_.InvokeVoid(
 		d,
 		"resetFallback",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) ResetFirstTokenTimeout() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetFirstTokenTimeout",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingOutputReference) ResetTrafficSplitting() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTrafficSplitting",
 		nil, // no parameters
 	)
 }

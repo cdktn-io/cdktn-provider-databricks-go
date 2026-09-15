@@ -127,10 +127,6 @@ func (j *jsiiProxy_AiGatewayModelService) validateSetModelServiceIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AiGatewayModelService) validateSetOwnerParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AiGatewayModelService) validateSetParentParameters(val *string) error {
 	return nil
 }

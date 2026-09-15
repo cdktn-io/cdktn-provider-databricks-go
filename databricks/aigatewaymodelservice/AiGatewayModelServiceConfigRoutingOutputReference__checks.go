@@ -135,17 +135,6 @@ func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validatePu
 	return nil
 }
 
-func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validatePutTrafficSplittingParameters(value *AiGatewayModelServiceConfigRoutingTrafficSplitting) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
@@ -212,14 +201,6 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validateSe
 }
 
 func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validateSetFirstTokenTimeoutParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

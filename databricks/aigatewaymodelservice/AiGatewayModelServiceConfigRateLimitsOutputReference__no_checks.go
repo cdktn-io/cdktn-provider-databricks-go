@@ -79,14 +79,6 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigRateLimitsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AiGatewayModelServiceConfigRateLimitsOutputReference) validateSetRequestTagKeyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayModelServiceConfigRateLimitsOutputReference) validateSetRequestTagValueParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AiGatewayModelServiceConfigRateLimitsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

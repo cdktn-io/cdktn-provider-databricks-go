@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/grant databricks_grant}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grant databricks_grant}.
 type Grant interface {
 	cdktn.TerraformResource
 	Catalog() *string
@@ -105,6 +105,9 @@ type Grant interface {
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	Secret() *string
+	SetSecret(val *string)
+	SecretInput() *string
 	Share() *string
 	SetShare(val *string)
 	ShareInput() *string
@@ -234,6 +237,7 @@ type Grant interface {
 	ResetProviderConfig()
 	ResetRecipient()
 	ResetSchema()
+	ResetSecret()
 	ResetShare()
 	ResetStorageCredential()
 	ResetTable()
@@ -735,6 +739,26 @@ func (j *jsiiProxy_Grant) SchemaInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Grant) Secret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grant) SecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Grant) Share() *string {
 	var returns *string
 	_jsii_.Get(
@@ -846,7 +870,7 @@ func (j *jsiiProxy_Grant) VolumeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/grant databricks_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grant databricks_grant} Resource.
 func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant {
 	_init_.Initialize()
 
@@ -864,7 +888,7 @@ func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/grant databricks_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grant databricks_grant} Resource.
 func NewGrant_Override(g Grant, scope constructs.Construct, id *string, config *GrantConfig) {
 	_init_.Initialize()
 
@@ -1115,6 +1139,17 @@ func (j *jsiiProxy_Grant)SetSchema(val *string) {
 	_jsii_.Set(
 		j,
 		"schema",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Grant)SetSecret(val *string) {
+	if err := j.validateSetSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secret",
 		val,
 	)
 }
@@ -1678,6 +1713,14 @@ func (g *jsiiProxy_Grant) ResetSchema() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grant) ResetSecret() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecret",
 		nil, // no parameters
 	)
 }

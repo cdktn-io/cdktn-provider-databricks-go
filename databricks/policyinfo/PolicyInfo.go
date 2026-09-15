@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/policy_info databricks_policy_info}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/policy_info databricks_policy_info}.
 type PolicyInfo interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -34,6 +34,8 @@ type PolicyInfo interface {
 	SetCount(val interface{})
 	CreatedAt() *float64
 	CreatedBy() *string
+	Deny() PolicyInfoDenyOutputReference
+	DenyInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -183,6 +185,7 @@ type PolicyInfo interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutColumnMask(value *PolicyInfoColumnMask)
+	PutDeny(value *PolicyInfoDeny)
 	PutGrant(value *PolicyInfoGrant)
 	PutMatchColumns(value interface{})
 	PutProviderConfig(value *PolicyInfoProviderConfig)
@@ -202,6 +205,7 @@ type PolicyInfo interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetColumnMask()
 	ResetComment()
+	ResetDeny()
 	ResetExceptPrincipals()
 	ResetGrant()
 	ResetMatchColumns()
@@ -336,6 +340,26 @@ func (j *jsiiProxy_PolicyInfo) CreatedBy() *string {
 	_jsii_.Get(
 		j,
 		"createdBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyInfo) Deny() PolicyInfoDenyOutputReference {
+	var returns PolicyInfoDenyOutputReference
+	_jsii_.Get(
+		j,
+		"deny",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyInfo) DenyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"denyInput",
 		&returns,
 	)
 	return returns
@@ -732,7 +756,7 @@ func (j *jsiiProxy_PolicyInfo) WhenConditionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/policy_info databricks_policy_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/policy_info databricks_policy_info} Resource.
 func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoConfig) PolicyInfo {
 	_init_.Initialize()
 
@@ -750,7 +774,7 @@ func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/policy_info databricks_policy_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/policy_info databricks_policy_info} Resource.
 func NewPolicyInfo_Override(p PolicyInfo, scope constructs.Construct, id *string, config *PolicyInfoConfig) {
 	_init_.Initialize()
 
@@ -1308,6 +1332,17 @@ func (p *jsiiProxy_PolicyInfo) PutColumnMask(value *PolicyInfoColumnMask) {
 	)
 }
 
+func (p *jsiiProxy_PolicyInfo) PutDeny(value *PolicyInfoDeny) {
+	if err := p.validatePutDenyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putDeny",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PolicyInfo) PutGrant(value *PolicyInfoGrant) {
 	if err := p.validatePutGrantParameters(value); err != nil {
 		panic(err)
@@ -1375,6 +1410,14 @@ func (p *jsiiProxy_PolicyInfo) ResetComment() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyInfo) ResetDeny() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDeny",
 		nil, // no parameters
 	)
 }

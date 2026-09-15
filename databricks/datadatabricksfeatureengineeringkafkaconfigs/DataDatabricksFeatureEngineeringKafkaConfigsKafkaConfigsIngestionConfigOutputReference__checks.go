@@ -123,6 +123,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) validateSetBudgetPolicyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -199,6 +207,14 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfig) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

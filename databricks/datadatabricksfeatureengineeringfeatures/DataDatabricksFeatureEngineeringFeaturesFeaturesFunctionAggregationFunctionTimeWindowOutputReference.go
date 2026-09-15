@@ -23,6 +23,8 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Continuous() DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuousOutputReference
+	ContinuousInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -75,10 +77,12 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutContinuous(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous)
 	PutRolling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowRolling)
 	PutSawtooth(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSawtooth)
 	PutSliding(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSliding)
 	PutTumbling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumbling)
+	ResetContinuous()
 	ResetRolling()
 	ResetSawtooth()
 	ResetSliding()
@@ -114,6 +118,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggre
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowOutputReference) Continuous() DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuousOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuousOutputReference
+	_jsii_.Get(
+		j,
+		"continuous",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowOutputReference) ContinuousInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"continuousInput",
 		&returns,
 	)
 	return returns
@@ -549,6 +573,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggre
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowOutputReference) PutContinuous(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous) {
+	if err := d.validatePutContinuousParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putContinuous",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowOutputReference) PutRolling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowRolling) {
 	if err := d.validatePutRollingParameters(value); err != nil {
 		panic(err)
@@ -590,6 +625,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggre
 		d,
 		"putTumbling",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowOutputReference) ResetContinuous() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetContinuous",
+		nil, // no parameters
 	)
 }
 

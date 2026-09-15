@@ -79,14 +79,6 @@ func (j *jsiiProxy_AiGatewayMcpServiceConfigRateLimitsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_AiGatewayMcpServiceConfigRateLimitsOutputReference) validateSetRequestTagKeyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayMcpServiceConfigRateLimitsOutputReference) validateSetRequestTagValueParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AiGatewayMcpServiceConfigRateLimitsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

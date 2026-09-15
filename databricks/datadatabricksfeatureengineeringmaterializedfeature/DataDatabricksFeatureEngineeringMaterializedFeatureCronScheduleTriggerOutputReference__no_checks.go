@@ -67,6 +67,10 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureCronSchedu
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

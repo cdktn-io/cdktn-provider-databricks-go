@@ -35,6 +35,9 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCro
 	Fqn() *string
 	InternalValue() *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTrigger
 	SetInternalValue(val *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTrigger)
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCro
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCronExpression()
+	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.InvokeVoid(
 		d,
 		"resetCronExpression",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference) ResetMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMode",
 		nil, // no parameters
 	)
 }

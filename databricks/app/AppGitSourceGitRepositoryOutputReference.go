@@ -36,8 +36,8 @@ type AppGitSourceGitRepositoryOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AppGitSourceGitRepository
-	SetInternalValue(val *AppGitSourceGitRepository)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Provider() *string
 	SetProvider(val *string)
 	ProviderInput() *string
@@ -173,8 +173,8 @@ func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference) InternalValue() *AppGitSourceGitRepository {
-	var returns *AppGitSourceGitRepository
+func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference)SetInternalValue(val *AppGitSourceGitRepository) {
+func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

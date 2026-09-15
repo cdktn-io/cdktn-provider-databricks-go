@@ -28,9 +28,6 @@ type AiGatewayModelServiceConfigInferenceTableOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -75,7 +72,6 @@ type AiGatewayModelServiceConfigInferenceTableOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	ResetDisabled()
 	ResetTableNamePrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -117,26 +113,6 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference) Cre
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference) Disabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference) DisabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disabledInput",
 		&returns,
 	)
 	return returns
@@ -288,17 +264,6 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference)SetC
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference)SetDisabled(val interface{}) {
-	if err := j.validateSetDisabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"disabled",
 		val,
 	)
 }
@@ -542,14 +507,6 @@ func (a *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference) Int
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference) ResetDisabled() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDisabled",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference) ResetTableNamePrefix() {

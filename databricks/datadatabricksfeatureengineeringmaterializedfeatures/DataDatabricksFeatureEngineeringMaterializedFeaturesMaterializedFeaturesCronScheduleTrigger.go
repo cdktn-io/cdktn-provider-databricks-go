@@ -5,7 +5,9 @@ package datadatabricksfeatureengineeringmaterializedfeatures
 
 
 type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTrigger struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/feature_engineering_materialized_features#cron_expression DataDatabricksFeatureEngineeringMaterializedFeatures#cron_expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/feature_engineering_materialized_features#cron_expression DataDatabricksFeatureEngineeringMaterializedFeatures#cron_expression}.
 	CronExpression *string `field:"optional" json:"cronExpression" yaml:"cronExpression"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/feature_engineering_materialized_features#mode DataDatabricksFeatureEngineeringMaterializedFeatures#mode}.
+	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 }
 

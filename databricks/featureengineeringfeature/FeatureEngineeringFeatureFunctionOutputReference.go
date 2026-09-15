@@ -34,8 +34,13 @@ type FeatureEngineeringFeatureFunctionOutputReference interface {
 	CreationStack() *[]*string
 	CustomUdf() FeatureEngineeringFeatureFunctionCustomUdfOutputReference
 	CustomUdfInput() interface{}
+	ExtraParameters() FeatureEngineeringFeatureFunctionExtraParametersList
+	ExtraParametersInput() interface{}
 	// Experimental.
 	Fqn() *string
+	FunctionType() *string
+	SetFunctionType(val *string)
+	FunctionTypeInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -73,9 +78,12 @@ type FeatureEngineeringFeatureFunctionOutputReference interface {
 	PutAggregationFunction(value *FeatureEngineeringFeatureFunctionAggregationFunction)
 	PutColumnSelection(value *FeatureEngineeringFeatureFunctionColumnSelection)
 	PutCustomUdf(value *FeatureEngineeringFeatureFunctionCustomUdf)
+	PutExtraParameters(value interface{})
 	ResetAggregationFunction()
 	ResetColumnSelection()
 	ResetCustomUdf()
+	ResetExtraParameters()
+	ResetFunctionType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -181,11 +189,51 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) CustomUdfIn
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ExtraParameters() FeatureEngineeringFeatureFunctionExtraParametersList {
+	var returns FeatureEngineeringFeatureFunctionExtraParametersList
+	_jsii_.Get(
+		j,
+		"extraParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ExtraParametersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extraParametersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) FunctionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"functionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) FunctionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"functionTypeInput",
 		&returns,
 	)
 	return returns
@@ -267,6 +315,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference)SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference)SetFunctionType(val *string) {
+	if err := j.validateSetFunctionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"functionType",
 		val,
 	)
 }
@@ -523,6 +582,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutCustomUd
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) PutExtraParameters(value interface{}) {
+	if err := f.validatePutExtraParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putExtraParameters",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetAggregationFunction() {
 	_jsii_.InvokeVoid(
 		f,
@@ -543,6 +613,22 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetCustom
 	_jsii_.InvokeVoid(
 		f,
 		"resetCustomUdf",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetExtraParameters() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetExtraParameters",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionOutputReference) ResetFunctionType() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFunctionType",
 		nil, // no parameters
 	)
 }

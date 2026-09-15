@@ -5,7 +5,7 @@ package datadatabrickspolicyinfo
 
 
 type DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#tag_introspection DataDatabricksPolicyInfo#tag_introspection}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/policy_info#tag_introspection DataDatabricksPolicyInfo#tag_introspection}.
 	TagIntrospection *DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection `field:"optional" json:"tagIntrospection" yaml:"tagIntrospection"`
 }
 

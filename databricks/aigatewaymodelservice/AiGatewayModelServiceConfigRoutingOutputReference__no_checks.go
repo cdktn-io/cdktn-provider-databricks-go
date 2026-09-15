@@ -55,10 +55,6 @@ func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validatePu
 	return nil
 }
 
-func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validatePutTrafficSplittingParameters(value *AiGatewayModelServiceConfigRoutingTrafficSplitting) error {
-	return nil
-}
-
 func (a *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
@@ -68,10 +64,6 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validateSe
 }
 
 func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingOutputReference) validateSetFirstTokenTimeoutParameters(val *string) error {
 	return nil
 }
 

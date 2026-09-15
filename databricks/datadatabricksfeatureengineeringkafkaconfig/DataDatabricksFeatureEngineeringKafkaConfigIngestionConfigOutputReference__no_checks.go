@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigOut
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigOutputReference) validateSetBudgetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigOut
 }
 
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringKafkaConfigIngestionConfig) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigIngestionConfigOutputReference) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

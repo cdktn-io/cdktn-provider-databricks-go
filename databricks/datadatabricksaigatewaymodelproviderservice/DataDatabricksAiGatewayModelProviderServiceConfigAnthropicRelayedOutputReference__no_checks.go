@@ -63,10 +63,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRel
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) validateSetPlanTypeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

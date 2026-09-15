@@ -190,14 +190,6 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicRelayedOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) validateSetPlanTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

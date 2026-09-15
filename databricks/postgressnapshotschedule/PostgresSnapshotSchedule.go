@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule}.
 type PostgresSnapshotSchedule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -46,6 +46,9 @@ type PostgresSnapshotSchedule interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -302,6 +305,26 @@ func (j *jsiiProxy_PostgresSnapshotSchedule) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresSnapshotSchedule) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresSnapshotSchedule) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresSnapshotSchedule) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -403,7 +426,7 @@ func (j *jsiiProxy_PostgresSnapshotSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Resource.
 func NewPostgresSnapshotSchedule(scope constructs.Construct, id *string, config *PostgresSnapshotScheduleConfig) PostgresSnapshotSchedule {
 	_init_.Initialize()
 
@@ -421,7 +444,7 @@ func NewPostgresSnapshotSchedule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Resource.
 func NewPostgresSnapshotSchedule_Override(p PostgresSnapshotSchedule, scope constructs.Construct, id *string, config *PostgresSnapshotScheduleConfig) {
 	_init_.Initialize()
 
@@ -477,6 +500,17 @@ func (j *jsiiProxy_PostgresSnapshotSchedule)SetLifecycle(val *cdktn.TerraformRes
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresSnapshotSchedule)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }

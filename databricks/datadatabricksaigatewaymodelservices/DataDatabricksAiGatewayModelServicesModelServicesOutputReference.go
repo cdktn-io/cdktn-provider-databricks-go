@@ -42,7 +42,6 @@ type DataDatabricksAiGatewayModelServicesModelServicesOutputReference interface 
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Owner() *string
 	ProviderConfig() DataDatabricksAiGatewayModelServicesModelServicesProviderConfigOutputReference
 	ProviderConfigInput() interface{}
 	SupportedApiTypes() *[]*string
@@ -232,16 +231,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesOutputRefere
 	_jsii_.Get(
 		j,
 		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesOutputReference) Owner() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"owner",
 		&returns,
 	)
 	return returns

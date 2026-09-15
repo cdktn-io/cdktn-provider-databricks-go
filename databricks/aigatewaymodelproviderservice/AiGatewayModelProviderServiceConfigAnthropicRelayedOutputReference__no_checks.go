@@ -63,10 +63,6 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicRelayedOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) validateSetPlanTypeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

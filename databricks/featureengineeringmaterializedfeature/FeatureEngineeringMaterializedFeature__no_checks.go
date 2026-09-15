@@ -123,11 +123,19 @@ func validateFeatureEngineeringMaterializedFeature_IsTerraformResourceParameters
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetBudgetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetCronScheduleParameters(val *string) error {
 	return nil
 }
 
@@ -144,6 +152,10 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetPipelineSch
 }
 
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeature) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

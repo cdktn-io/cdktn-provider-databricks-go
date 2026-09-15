@@ -59,10 +59,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTableOutputReference) validateSetDisabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTableOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

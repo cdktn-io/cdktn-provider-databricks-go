@@ -222,22 +222,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayMcpServicesMcpServicesConfigRateLimits
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayMcpServicesMcpServicesConfigRateLimitsOutputReference) validateSetRequestTagKeyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayMcpServicesMcpServicesConfigRateLimitsOutputReference) validateSetRequestTagValueParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayMcpServicesMcpServicesConfigRateLimitsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -194,9 +194,25 @@ func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference) validateSetInternalValueParameters(val *AppGitSourceGitRepository) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *AppGitSourceGitRepository:
+		val := val.(*AppGitSourceGitRepository)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case AppGitSourceGitRepository:
+		val_ := val.(AppGitSourceGitRepository)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AppGitSourceGitRepository; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

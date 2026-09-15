@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule}.
 type DataDatabricksPostgresSnapshotSchedule interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDatabricksPostgresSnapshotSchedule) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Data Source.
 func NewDataDatabricksPostgresSnapshotSchedule(scope constructs.Construct, id *string, config *DataDatabricksPostgresSnapshotScheduleConfig) DataDatabricksPostgresSnapshotSchedule {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDatabricksPostgresSnapshotSchedule(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Data Source.
 func NewDataDatabricksPostgresSnapshotSchedule_Override(d DataDatabricksPostgresSnapshotSchedule, scope constructs.Construct, id *string, config *DataDatabricksPostgresSnapshotScheduleConfig) {
 	_init_.Initialize()
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskDeploymentsComputeOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskDeploymentsComputeOutputReference) validateSetProvisionedCapacityIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskDeploymentsComputeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

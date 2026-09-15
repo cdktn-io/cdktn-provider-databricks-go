@@ -23,6 +23,8 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReferen
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Continuous() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference
+	ContinuousInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -75,10 +77,12 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReferen
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutContinuous(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous)
 	PutRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling)
 	PutSawtooth(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth)
 	PutSliding(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding)
 	PutTumbling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling)
+	ResetContinuous()
 	ResetRolling()
 	ResetSawtooth()
 	ResetSliding()
@@ -114,6 +118,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) Continuous() FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference {
+	var returns FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference
+	_jsii_.Get(
+		j,
+		"continuous",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) ContinuousInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"continuousInput",
 		&returns,
 	)
 	return returns
@@ -549,6 +573,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 	return returns
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) PutContinuous(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous) {
+	if err := f.validatePutContinuousParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putContinuous",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) PutRolling(value *FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling) {
 	if err := f.validatePutRollingParameters(value); err != nil {
 		panic(err)
@@ -590,6 +625,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindo
 		f,
 		"putTumbling",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference) ResetContinuous() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetContinuous",
+		nil, // no parameters
 	)
 }
 

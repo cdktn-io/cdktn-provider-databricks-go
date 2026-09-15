@@ -37,9 +37,12 @@ type AppGitSourceOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	GitRepository() AppGitSourceGitRepositoryOutputReference
+	GitRepositoryInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	ResolvedCommit() *string
+	SetResolvedCommit(val *string)
+	ResolvedCommitInput() *string
 	SourceCodePath() *string
 	SetSourceCodePath(val *string)
 	SourceCodePathInput() *string
@@ -78,8 +81,11 @@ type AppGitSourceOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutGitRepository(value *AppGitSourceGitRepository)
 	ResetBranch()
 	ResetCommit()
+	ResetGitRepository()
+	ResetResolvedCommit()
 	ResetSourceCodePath()
 	ResetTag()
 	// Produce the Token's value at resolution time.
@@ -187,6 +193,16 @@ func (j *jsiiProxy_AppGitSourceOutputReference) GitRepository() AppGitSourceGitR
 	return returns
 }
 
+func (j *jsiiProxy_AppGitSourceOutputReference) GitRepositoryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitRepositoryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppGitSourceOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -202,6 +218,16 @@ func (j *jsiiProxy_AppGitSourceOutputReference) ResolvedCommit() *string {
 	_jsii_.Get(
 		j,
 		"resolvedCommit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppGitSourceOutputReference) ResolvedCommitInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolvedCommitInput",
 		&returns,
 	)
 	return returns
@@ -346,6 +372,17 @@ func (j *jsiiProxy_AppGitSourceOutputReference)SetInternalValue(val interface{})
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppGitSourceOutputReference)SetResolvedCommit(val *string) {
+	if err := j.validateSetResolvedCommitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resolvedCommit",
 		val,
 	)
 }
@@ -580,6 +617,17 @@ func (a *jsiiProxy_AppGitSourceOutputReference) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (a *jsiiProxy_AppGitSourceOutputReference) PutGitRepository(value *AppGitSourceGitRepository) {
+	if err := a.validatePutGitRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putGitRepository",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppGitSourceOutputReference) ResetBranch() {
 	_jsii_.InvokeVoid(
 		a,
@@ -592,6 +640,22 @@ func (a *jsiiProxy_AppGitSourceOutputReference) ResetCommit() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCommit",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppGitSourceOutputReference) ResetGitRepository() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGitRepository",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppGitSourceOutputReference) ResetResolvedCommit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetResolvedCommit",
 		nil, // no parameters
 	)
 }

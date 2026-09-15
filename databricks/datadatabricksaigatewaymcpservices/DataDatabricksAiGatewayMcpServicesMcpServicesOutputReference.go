@@ -42,7 +42,6 @@ type DataDatabricksAiGatewayMcpServicesMcpServicesOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Owner() *string
 	ProviderConfig() DataDatabricksAiGatewayMcpServicesMcpServicesProviderConfigOutputReference
 	ProviderConfigInput() interface{}
 	// Experimental.
@@ -231,16 +230,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayMcpServicesMcpServicesOutputReference)
 	_jsii_.Get(
 		j,
 		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayMcpServicesMcpServicesOutputReference) Owner() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"owner",
 		&returns,
 	)
 	return returns

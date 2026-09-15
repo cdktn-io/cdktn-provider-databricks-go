@@ -190,14 +190,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRel
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) validateSetPlanTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

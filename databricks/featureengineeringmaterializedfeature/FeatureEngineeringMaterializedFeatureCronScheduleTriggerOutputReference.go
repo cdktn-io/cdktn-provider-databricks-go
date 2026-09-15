@@ -35,6 +35,9 @@ type FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference int
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference int
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCronExpression()
+	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutpu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutpu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutpu
 	_jsii_.InvokeVoid(
 		f,
 		"resetCronExpression",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) ResetMode() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetMode",
 		nil, // no parameters
 	)
 }

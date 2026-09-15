@@ -1,0 +1,11 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package datadatabricksdomains
+
+
+type DataDatabricksDomainsProviderConfig struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/domains#workspace_id DataDatabricksDomains#workspace_id}.
+	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
+}
+

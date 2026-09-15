@@ -7,11 +7,11 @@ package job
 type JobContinuous struct {
 	// maintenance_window block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/job#maintenance_window Job#maintenance_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/job#maintenance_window Job#maintenance_window}
 	MaintenanceWindow *JobContinuousMaintenanceWindow `field:"optional" json:"maintenanceWindow" yaml:"maintenanceWindow"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/job#pause_status Job#pause_status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/job#pause_status Job#pause_status}.
 	PauseStatus *string `field:"optional" json:"pauseStatus" yaml:"pauseStatus"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/job#task_retry_mode Job#task_retry_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/job#task_retry_mode Job#task_retry_mode}.
 	TaskRetryMode *string `field:"optional" json:"taskRetryMode" yaml:"taskRetryMode"`
 }
 

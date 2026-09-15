@@ -16,6 +16,9 @@ type FeatureEngineeringKafkaConfigIngestionConfigOutputReference interface {
 	BackfillJobId() *float64
 	BackfillSource() FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceOutputReference
 	BackfillSourceInput() interface{}
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,6 +45,9 @@ type FeatureEngineeringKafkaConfigIngestionConfigOutputReference interface {
 	IngestionPipelineId() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,7 +83,9 @@ type FeatureEngineeringKafkaConfigIngestionConfigOutputReference interface {
 	PutBackfillSource(value *FeatureEngineeringKafkaConfigIngestionConfigBackfillSource)
 	PutIngestionDestination(value *FeatureEngineeringKafkaConfigIngestionConfigIngestionDestination)
 	ResetBackfillSource()
+	ResetBudgetPolicyId()
 	ResetDeduplicationColumns()
+	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -118,6 +126,26 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"backfillSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
 		&returns,
 	)
 	return returns
@@ -233,6 +261,26 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -281,6 +329,17 @@ func NewFeatureEngineeringKafkaConfigIngestionConfigOutputReference_Override(f F
 	)
 }
 
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -321,6 +380,17 @@ func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference)S
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -563,10 +633,26 @@ func (f *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) 
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) ResetBudgetPolicyId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) ResetDeduplicationColumns() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDeduplicationColumns",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringKafkaConfigIngestionConfigOutputReference) ResetTags() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTags",
 		nil, // no parameters
 	)
 }

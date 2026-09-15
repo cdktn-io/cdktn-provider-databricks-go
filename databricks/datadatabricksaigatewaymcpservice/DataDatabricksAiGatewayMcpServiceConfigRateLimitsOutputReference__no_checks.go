@@ -79,14 +79,6 @@ func (j *jsiiProxy_DataDatabricksAiGatewayMcpServiceConfigRateLimitsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAiGatewayMcpServiceConfigRateLimitsOutputReference) validateSetRequestTagKeyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAiGatewayMcpServiceConfigRateLimitsOutputReference) validateSetRequestTagValueParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAiGatewayMcpServiceConfigRateLimitsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

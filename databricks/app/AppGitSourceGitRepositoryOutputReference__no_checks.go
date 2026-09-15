@@ -67,7 +67,7 @@ func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference) validateSetInternalValueParameters(val *AppGitSourceGitRepository) error {
+func (j *jsiiProxy_AppGitSourceGitRepositoryOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

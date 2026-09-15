@@ -67,6 +67,10 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutpu
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

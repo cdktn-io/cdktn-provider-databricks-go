@@ -5,7 +5,7 @@ package job
 
 
 type JobQueue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/job#enabled Job#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/job#enabled Job#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

@@ -59,10 +59,6 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference) validateSetDisabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_AiGatewayModelServiceConfigInferenceTableOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

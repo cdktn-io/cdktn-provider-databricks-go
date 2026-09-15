@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info databricks_policy_info}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/policy_info databricks_policy_info}.
 type DataDatabricksPolicyInfo interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataDatabricksPolicyInfo interface {
 	SetCount(val interface{})
 	CreatedAt() *float64
 	CreatedBy() *string
+	Deny() DataDatabricksPolicyInfoDenyOutputReference
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -215,6 +216,16 @@ func (j *jsiiProxy_DataDatabricksPolicyInfo) CreatedBy() *string {
 	_jsii_.Get(
 		j,
 		"createdBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfo) Deny() DataDatabricksPolicyInfoDenyOutputReference {
+	var returns DataDatabricksPolicyInfoDenyOutputReference
+	_jsii_.Get(
+		j,
+		"deny",
 		&returns,
 	)
 	return returns
@@ -521,7 +532,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfo) WhenCondition() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
 func NewDataDatabricksPolicyInfo(scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) DataDatabricksPolicyInfo {
 	_init_.Initialize()
 
@@ -539,7 +550,7 @@ func NewDataDatabricksPolicyInfo(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
 func NewDataDatabricksPolicyInfo_Override(d DataDatabricksPolicyInfo, scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service}.
 type AiGatewayMcpService interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -59,9 +59,6 @@ type AiGatewayMcpService interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
-	Owner() *string
-	SetOwner(val *string)
-	OwnerInput() *string
 	Parent() *string
 	SetParent(val *string)
 	ParentInput() *string
@@ -184,7 +181,6 @@ type AiGatewayMcpService interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetOwner()
 	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -433,26 +429,6 @@ func (j *jsiiProxy_AiGatewayMcpService) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_AiGatewayMcpService) Owner() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"owner",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiGatewayMcpService) OwnerInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ownerInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AiGatewayMcpService) Parent() *string {
 	var returns *string
 	_jsii_.Get(
@@ -574,7 +550,7 @@ func (j *jsiiProxy_AiGatewayMcpService) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
 func NewAiGatewayMcpService(scope constructs.Construct, id *string, config *AiGatewayMcpServiceConfig) AiGatewayMcpService {
 	_init_.Initialize()
 
@@ -592,7 +568,7 @@ func NewAiGatewayMcpService(scope constructs.Construct, id *string, config *AiGa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
 func NewAiGatewayMcpService_Override(a AiGatewayMcpService, scope constructs.Construct, id *string, config *AiGatewayMcpServiceConfig) {
 	_init_.Initialize()
 
@@ -670,17 +646,6 @@ func (j *jsiiProxy_AiGatewayMcpService)SetMcpServiceId(val *string) {
 	_jsii_.Set(
 		j,
 		"mcpServiceId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AiGatewayMcpService)SetOwner(val *string) {
-	if err := j.validateSetOwnerParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"owner",
 		val,
 	)
 }
@@ -1137,14 +1102,6 @@ func (a *jsiiProxy_AiGatewayMcpService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AiGatewayMcpService) ResetOwner() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetOwner",
 		nil, // no parameters
 	)
 }

@@ -127,10 +127,6 @@ func (j *jsiiProxy_AiGatewayMcpService) validateSetMcpServiceIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_AiGatewayMcpService) validateSetOwnerParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AiGatewayMcpService) validateSetParentParameters(val *string) error {
 	return nil
 }

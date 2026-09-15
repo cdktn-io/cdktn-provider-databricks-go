@@ -16,6 +16,9 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutp
 	BackfillJobId() *float64
 	BackfillSource() DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSourceOutputReference
 	BackfillSourceInput() interface{}
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,6 +45,9 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutp
 	IngestionPipelineId() *string
 	InternalValue() *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfig
 	SetInternalValue(val *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfig)
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,7 +83,9 @@ type DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutp
 	PutBackfillSource(value *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigBackfillSource)
 	PutIngestionDestination(value *DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigIngestionDestination)
 	ResetBackfillSource()
+	ResetBudgetPolicyId()
 	ResetDeduplicationColumns()
+	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -118,6 +126,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 	_jsii_.Get(
 		j,
 		"backfillSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
 		&returns,
 	)
 	return returns
@@ -233,6 +261,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -281,6 +329,17 @@ func NewDataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigO
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -321,6 +380,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -563,10 +633,26 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsInges
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) ResetBudgetPolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) ResetDeduplicationColumns() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDeduplicationColumns",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsIngestionConfigOutputReference) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

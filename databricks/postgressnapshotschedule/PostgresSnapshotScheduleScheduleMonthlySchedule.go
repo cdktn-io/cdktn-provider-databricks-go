@@ -5,9 +5,9 @@ package postgressnapshotschedule
 
 
 type PostgresSnapshotScheduleScheduleMonthlySchedule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/postgres_snapshot_schedule#day PostgresSnapshotSchedule#day}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/postgres_snapshot_schedule#day PostgresSnapshotSchedule#day}.
 	Day *float64 `field:"required" json:"day" yaml:"day"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/postgres_snapshot_schedule#hour PostgresSnapshotSchedule#hour}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/postgres_snapshot_schedule#hour PostgresSnapshotSchedule#hour}.
 	Hour *float64 `field:"optional" json:"hour" yaml:"hour"`
 }
 
