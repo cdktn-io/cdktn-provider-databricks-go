@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#options Pipeline#options}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#options Pipeline#options}.
 	Options *map[string]*string `field:"optional" json:"options" yaml:"options"`
 }
 

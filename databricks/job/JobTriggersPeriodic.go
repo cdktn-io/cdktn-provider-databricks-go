@@ -5,9 +5,9 @@ package job
 
 
 type JobTriggersPeriodic struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/job#interval Job#interval}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/job#interval Job#interval}.
 	Interval *float64 `field:"required" json:"interval" yaml:"interval"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/job#unit Job#unit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/job#unit Job#unit}.
 	Unit *string `field:"required" json:"unit" yaml:"unit"`
 }
 

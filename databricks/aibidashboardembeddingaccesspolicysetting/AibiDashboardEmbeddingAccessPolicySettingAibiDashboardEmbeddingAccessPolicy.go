@@ -5,7 +5,7 @@ package aibidashboardembeddingaccesspolicysetting
 
 
 type AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#access_policy_type AibiDashboardEmbeddingAccessPolicySetting#access_policy_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#access_policy_type AibiDashboardEmbeddingAccessPolicySetting#access_policy_type}.
 	AccessPolicyType *string `field:"required" json:"accessPolicyType" yaml:"accessPolicyType"`
 }
 

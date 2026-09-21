@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/account_iam_external_group_v2 databricks_account_iam_external_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_group_v2 databricks_account_iam_external_group_v2}.
 type DataDatabricksAccountIamExternalGroupV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamExternalGroupV2) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/account_iam_external_group_v2 databricks_account_iam_external_group_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_group_v2 databricks_account_iam_external_group_v2} Data Source.
 func NewDataDatabricksAccountIamExternalGroupV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamExternalGroupV2Config) DataDatabricksAccountIamExternalGroupV2 {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataDatabricksAccountIamExternalGroupV2(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/account_iam_external_group_v2 databricks_account_iam_external_group_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_group_v2 databricks_account_iam_external_group_v2} Data Source.
 func NewDataDatabricksAccountIamExternalGroupV2_Override(d DataDatabricksAccountIamExternalGroupV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamExternalGroupV2Config) {
 	_init_.Initialize()
 

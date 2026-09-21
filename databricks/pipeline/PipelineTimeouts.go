@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#default Pipeline#default}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#default Pipeline#default}.
 	Default *string `field:"optional" json:"default" yaml:"default"`
 }
 

@@ -5,9 +5,9 @@ package datadatabrickspolicyinfos
 
 
 type DataDatabricksPolicyInfosPoliciesColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/policy_infos#column_alias DataDatabricksPolicyInfos#column_alias}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/policy_infos#column_alias DataDatabricksPolicyInfos#column_alias}.
 	ColumnAlias *string `field:"required" json:"columnAlias" yaml:"columnAlias"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/policy_infos#tag_key DataDatabricksPolicyInfos#tag_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/policy_infos#tag_key DataDatabricksPolicyInfos#tag_key}.
 	TagKey *string `field:"required" json:"tagKey" yaml:"tagKey"`
 }
 

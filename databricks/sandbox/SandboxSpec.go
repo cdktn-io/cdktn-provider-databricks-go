@@ -5,7 +5,7 @@ package sandbox
 
 
 type SandboxSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/sandbox#compute Sandbox#compute}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#compute Sandbox#compute}.
 	Compute *SandboxSpecCompute `field:"optional" json:"compute" yaml:"compute"`
 }
 
