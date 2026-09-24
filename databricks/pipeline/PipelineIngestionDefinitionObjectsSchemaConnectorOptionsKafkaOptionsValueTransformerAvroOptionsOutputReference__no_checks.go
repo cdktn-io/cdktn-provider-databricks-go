@@ -1,0 +1,93 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package pipeline
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validatePutSchemaRegistryParameters(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateSetInternalValueParameters(val *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateSetParseModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateSetSchemaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateSetSchemaFilePathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

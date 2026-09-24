@@ -947,10 +947,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsSecretAccessKey", GoMethod: "ResetAwsSecretAccessKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsSecretAccessKeyPlaintext", GoMethod: "ResetAwsSecretAccessKeyPlaintext"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceProfileArn", GoMethod: "ResetInstanceProfileArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUcServiceCredentialName", GoMethod: "ResetUcServiceCredentialName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "ucServiceCredentialName", GoGetter: "UcServiceCredentialName"},
+			_jsii_.MemberProperty{JsiiProperty: "ucServiceCredentialNameInput", GoGetter: "UcServiceCredentialNameInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference{}

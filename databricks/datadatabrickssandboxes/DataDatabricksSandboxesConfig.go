@@ -22,9 +22,9 @@ type DataDatabricksSandboxesConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}.
 	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}.
 	ProviderConfig *DataDatabricksSandboxesProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

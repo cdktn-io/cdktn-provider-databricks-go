@@ -5,15 +5,15 @@ package aigatewaymcpservice
 
 
 type AiGatewayMcpServiceConfigRateLimits struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/ai_gateway_mcp_service#key AiGatewayMcpService#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/ai_gateway_mcp_service#key AiGatewayMcpService#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/ai_gateway_mcp_service#renewal_period AiGatewayMcpService#renewal_period}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/ai_gateway_mcp_service#renewal_period AiGatewayMcpService#renewal_period}.
 	RenewalPeriod *string `field:"required" json:"renewalPeriod" yaml:"renewalPeriod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/ai_gateway_mcp_service#principal AiGatewayMcpService#principal}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/ai_gateway_mcp_service#principal AiGatewayMcpService#principal}.
 	Principal *string `field:"optional" json:"principal" yaml:"principal"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/ai_gateway_mcp_service#requests AiGatewayMcpService#requests}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/ai_gateway_mcp_service#requests AiGatewayMcpService#requests}.
 	Requests *float64 `field:"optional" json:"requests" yaml:"requests"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/ai_gateway_mcp_service#tokens AiGatewayMcpService#tokens}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/ai_gateway_mcp_service#tokens AiGatewayMcpService#tokens}.
 	Tokens *float64 `field:"optional" json:"tokens" yaml:"tokens"`
 }
 

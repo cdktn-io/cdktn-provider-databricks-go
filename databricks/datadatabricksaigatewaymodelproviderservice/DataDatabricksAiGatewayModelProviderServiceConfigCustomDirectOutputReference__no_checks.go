@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigCustomDirect
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectOutputReference) validatePutHeaderAuthParameters(value *DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuth) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

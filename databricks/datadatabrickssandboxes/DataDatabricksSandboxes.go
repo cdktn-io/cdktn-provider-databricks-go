@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes databricks_sandboxes}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes databricks_sandboxes}.
 type DataDatabricksSandboxes interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksSandboxes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes databricks_sandboxes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes databricks_sandboxes} Data Source.
 func NewDataDatabricksSandboxes(scope constructs.Construct, id *string, config *DataDatabricksSandboxesConfig) DataDatabricksSandboxes {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataDatabricksSandboxes(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes databricks_sandboxes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes databricks_sandboxes} Data Source.
 func NewDataDatabricksSandboxes_Override(d DataDatabricksSandboxes, scope constructs.Construct, id *string, config *DataDatabricksSandboxesConfig) {
 	_init_.Initialize()
 

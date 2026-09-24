@@ -1,0 +1,89 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package pipeline
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validatePutConfluentOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateSetConnectionNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateSetInternalValueParameters(val *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateSetProtobufMessageNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

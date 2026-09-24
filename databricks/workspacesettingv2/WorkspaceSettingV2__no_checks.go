@@ -123,6 +123,10 @@ func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveRestrictWorkspaceAdmi
 	return nil
 }
 
+func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveWorkspaceLabelParameters(value *WorkspaceSettingV2EffectiveWorkspaceLabel) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspaceSettingV2) validatePutIntegerValParameters(value *WorkspaceSettingV2IntegerVal) error {
 	return nil
 }
@@ -144,6 +148,10 @@ func (w *jsiiProxy_WorkspaceSettingV2) validatePutRestrictWorkspaceAdminsParamet
 }
 
 func (w *jsiiProxy_WorkspaceSettingV2) validatePutStringValParameters(value *WorkspaceSettingV2StringVal) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkspaceSettingV2) validatePutWorkspaceLabelParameters(value *WorkspaceSettingV2WorkspaceLabel) error {
 	return nil
 }
 

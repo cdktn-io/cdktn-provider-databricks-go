@@ -61,6 +61,9 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAma
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UcServiceCredentialName() *string
+	SetUcServiceCredentialName(val *string)
+	UcServiceCredentialNameInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -90,6 +93,7 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAma
 	ResetAwsSecretAccessKey()
 	ResetAwsSecretAccessKeyPlaintext()
 	ResetInstanceProfileArn()
+	ResetUcServiceCredentialName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -315,6 +319,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) UcServiceCredentialName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ucServiceCredentialName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) UcServiceCredentialNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ucServiceCredentialNameInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference {
 	_init_.Initialize()
@@ -471,6 +495,17 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference)SetUcServiceCredentialName(val *string) {
+	if err := j.validateSetUcServiceCredentialNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ucServiceCredentialName",
 		val,
 	)
 }
@@ -697,6 +732,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	_jsii_.InvokeVoid(
 		d,
 		"resetInstanceProfileArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) ResetUcServiceCredentialName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUcServiceCredentialName",
 		nil, // no parameters
 	)
 }

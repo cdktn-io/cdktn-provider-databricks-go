@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
 type AccountSettingV2 interface {
 	cdktn.TerraformResource
 	AibiDashboardEmbeddingAccessPolicy() AccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -59,6 +59,8 @@ type AccountSettingV2 interface {
 	EffectiveRestrictWorkspaceAdmins() AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference
 	EffectiveRestrictWorkspaceAdminsInput() interface{}
 	EffectiveStringVal() AccountSettingV2EffectiveStringValOutputReference
+	EffectiveWorkspaceLabel() AccountSettingV2EffectiveWorkspaceLabelOutputReference
+	EffectiveWorkspaceLabelInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -102,6 +104,8 @@ type AccountSettingV2 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceLabel() AccountSettingV2WorkspaceLabelOutputReference
+	WorkspaceLabelInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -192,11 +196,13 @@ type AccountSettingV2 interface {
 	PutEffectiveAutomaticClusterUpdateWorkspace(value *AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace)
 	PutEffectivePersonalCompute(value *AccountSettingV2EffectivePersonalCompute)
 	PutEffectiveRestrictWorkspaceAdmins(value *AccountSettingV2EffectiveRestrictWorkspaceAdmins)
+	PutEffectiveWorkspaceLabel(value *AccountSettingV2EffectiveWorkspaceLabel)
 	PutIntegerVal(value *AccountSettingV2IntegerVal)
 	PutOperationalEmailCustomRecipient(value *AccountSettingV2OperationalEmailCustomRecipient)
 	PutPersonalCompute(value *AccountSettingV2PersonalCompute)
 	PutRestrictWorkspaceAdmins(value *AccountSettingV2RestrictWorkspaceAdmins)
 	PutStringVal(value *AccountSettingV2StringVal)
+	PutWorkspaceLabel(value *AccountSettingV2WorkspaceLabel)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -221,6 +227,7 @@ type AccountSettingV2 interface {
 	ResetEffectiveAutomaticClusterUpdateWorkspace()
 	ResetEffectivePersonalCompute()
 	ResetEffectiveRestrictWorkspaceAdmins()
+	ResetEffectiveWorkspaceLabel()
 	ResetIntegerVal()
 	ResetName()
 	ResetOperationalEmailCustomRecipient()
@@ -230,6 +237,7 @@ type AccountSettingV2 interface {
 	ResetPersonalCompute()
 	ResetRestrictWorkspaceAdmins()
 	ResetStringVal()
+	ResetWorkspaceLabel()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -587,6 +595,26 @@ func (j *jsiiProxy_AccountSettingV2) EffectiveStringVal() AccountSettingV2Effect
 	return returns
 }
 
+func (j *jsiiProxy_AccountSettingV2) EffectiveWorkspaceLabel() AccountSettingV2EffectiveWorkspaceLabelOutputReference {
+	var returns AccountSettingV2EffectiveWorkspaceLabelOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveWorkspaceLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSettingV2) EffectiveWorkspaceLabelInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"effectiveWorkspaceLabelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountSettingV2) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -817,8 +845,28 @@ func (j *jsiiProxy_AccountSettingV2) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccountSettingV2) WorkspaceLabel() AccountSettingV2WorkspaceLabelOutputReference {
+	var returns AccountSettingV2WorkspaceLabelOutputReference
+	_jsii_.Get(
+		j,
+		"workspaceLabel",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
+func (j *jsiiProxy_AccountSettingV2) WorkspaceLabelInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceLabelInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
 func NewAccountSettingV2(scope constructs.Construct, id *string, config *AccountSettingV2Config) AccountSettingV2 {
 	_init_.Initialize()
 
@@ -836,7 +884,7 @@ func NewAccountSettingV2(scope constructs.Construct, id *string, config *Account
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
 func NewAccountSettingV2_Override(a AccountSettingV2, scope constructs.Construct, id *string, config *AccountSettingV2Config) {
 	_init_.Initialize()
 
@@ -1416,6 +1464,17 @@ func (a *jsiiProxy_AccountSettingV2) PutEffectiveRestrictWorkspaceAdmins(value *
 	)
 }
 
+func (a *jsiiProxy_AccountSettingV2) PutEffectiveWorkspaceLabel(value *AccountSettingV2EffectiveWorkspaceLabel) {
+	if err := a.validatePutEffectiveWorkspaceLabelParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putEffectiveWorkspaceLabel",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccountSettingV2) PutIntegerVal(value *AccountSettingV2IntegerVal) {
 	if err := a.validatePutIntegerValParameters(value); err != nil {
 		panic(err)
@@ -1467,6 +1526,17 @@ func (a *jsiiProxy_AccountSettingV2) PutStringVal(value *AccountSettingV2StringV
 	_jsii_.InvokeVoid(
 		a,
 		"putStringVal",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccountSettingV2) PutWorkspaceLabel(value *AccountSettingV2WorkspaceLabel) {
+	if err := a.validatePutWorkspaceLabelParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putWorkspaceLabel",
 		[]interface{}{value},
 	)
 }
@@ -1570,6 +1640,14 @@ func (a *jsiiProxy_AccountSettingV2) ResetEffectiveRestrictWorkspaceAdmins() {
 	)
 }
 
+func (a *jsiiProxy_AccountSettingV2) ResetEffectiveWorkspaceLabel() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEffectiveWorkspaceLabel",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccountSettingV2) ResetIntegerVal() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1622,6 +1700,14 @@ func (a *jsiiProxy_AccountSettingV2) ResetStringVal() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStringVal",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountSettingV2) ResetWorkspaceLabel() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetWorkspaceLabel",
 		nil, // no parameters
 	)
 }

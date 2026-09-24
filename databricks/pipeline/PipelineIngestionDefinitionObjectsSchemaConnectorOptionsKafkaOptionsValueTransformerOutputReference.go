@@ -13,6 +13,8 @@ import (
 
 type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference interface {
 	cdktn.ComplexObject
+	AvroOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference
+	AvroOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,6 +45,8 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTr
 	OutputColumn() *string
 	SetOutputColumn(val *string)
 	OutputColumnInput() *string
+	ProtobufOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsOutputReference
+	ProtobufOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,11 +79,15 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTr
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAvroOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions)
 	PutJsonOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions)
+	PutProtobufOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions)
+	ResetAvroOptions()
 	ResetFormat()
 	ResetInputColumn()
 	ResetJsonOptions()
 	ResetOutputColumn()
+	ResetProtobufOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -93,6 +101,26 @@ type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTr
 // The jsii proxy struct for PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference
 type jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference) AvroOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"avroOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference) AvroOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions {
+	var returns *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+	_jsii_.Get(
+		j,
+		"avroOptionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference) ComplexObjectIndex() interface{} {
@@ -220,6 +248,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafka
 	_jsii_.Get(
 		j,
 		"outputColumnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference) ProtobufOptions() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"protobufOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference) ProtobufOptionsInput() *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions {
+	var returns *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+	_jsii_.Get(
+		j,
+		"protobufOptionsInput",
 		&returns,
 	)
 	return returns
@@ -547,6 +595,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafka
 	return returns
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference) PutAvroOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions) {
+	if err := p.validatePutAvroOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAvroOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference) PutJsonOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions) {
 	if err := p.validatePutJsonOptionsParameters(value); err != nil {
 		panic(err)
@@ -555,6 +614,25 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafka
 		p,
 		"putJsonOptions",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference) PutProtobufOptions(value *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions) {
+	if err := p.validatePutProtobufOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProtobufOptions",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference) ResetAvroOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAvroOptions",
+		nil, // no parameters
 	)
 }
 
@@ -586,6 +664,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafka
 	_jsii_.InvokeVoid(
 		p,
 		"resetOutputColumn",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference) ResetProtobufOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProtobufOptions",
 		nil, // no parameters
 	)
 }

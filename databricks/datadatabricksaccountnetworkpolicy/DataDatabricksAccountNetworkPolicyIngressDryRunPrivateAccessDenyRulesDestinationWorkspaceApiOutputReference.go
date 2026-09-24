@@ -28,6 +28,9 @@ type DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestin
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludedScopes() *[]*string
+	SetExcludedScopes(val *[]*string)
+	ExcludedScopesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -70,6 +73,7 @@ type DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestin
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetExcludedScopes()
 	ResetScopeQualifier()
 	ResetScopes()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessD
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference) ExcludedScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedScopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference) ExcludedScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedScopesInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +267,17 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessD
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference)SetExcludedScopes(val *[]*string) {
+	if err := j.validateSetExcludedScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludedScopes",
 		val,
 	)
 }
@@ -486,6 +521,14 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessD
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference) ResetExcludedScopes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludedScopes",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference) ResetScopeQualifier() {

@@ -36,6 +36,7 @@ type AiGatewayMcpServiceConfigSourceConnectionOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Options() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -158,6 +159,16 @@ func (j *jsiiProxy_AiGatewayMcpServiceConfigSourceConnectionOutputReference) Nam
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayMcpServiceConfigSourceConnectionOutputReference) Options() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"options",
 		&returns,
 	)
 	return returns

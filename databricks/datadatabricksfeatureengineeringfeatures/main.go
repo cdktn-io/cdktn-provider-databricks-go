@@ -1696,6 +1696,106 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeatures.DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSource",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSource)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeatures.DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceFeatureReferences",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceFeatureReferences)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeatures.DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceFeatureReferencesList",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceFeatureReferencesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceFeatureReferencesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeatures.DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceFeatureReferencesOutputReference",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceFeatureReferencesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "feature", GoGetter: "Feature"},
+			_jsii_.MemberProperty{JsiiProperty: "featureInput", GoGetter: "FeatureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceFeatureReferencesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeatures.DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceOutputReference",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "featureReferences", GoGetter: "FeatureReferences"},
+			_jsii_.MemberProperty{JsiiProperty: "featureReferencesInput", GoGetter: "FeatureReferencesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putFeatureReferences", GoMethod: "PutFeatureReferences"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFeatureReferences", GoMethod: "ResetFeatureReferences"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeatures.DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource",
 		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource)(nil)).Elem(),
 	)
@@ -1891,6 +1991,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "deltaTableSource", GoGetter: "DeltaTableSource"},
 			_jsii_.MemberProperty{JsiiProperty: "deltaTableSourceInput", GoGetter: "DeltaTableSourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "featureViewSource", GoGetter: "FeatureViewSource"},
+			_jsii_.MemberProperty{JsiiProperty: "featureViewSourceInput", GoGetter: "FeatureViewSourceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -1909,6 +2011,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lateness", GoGetter: "Lateness"},
 			_jsii_.MemberProperty{JsiiProperty: "latenessInput", GoGetter: "LatenessInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putDeltaTableSource", GoMethod: "PutDeltaTableSource"},
+			_jsii_.MemberMethod{JsiiMethod: "putFeatureViewSource", GoMethod: "PutFeatureViewSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putKafkaSource", GoMethod: "PutKafkaSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putLateness", GoMethod: "PutLateness"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestSource", GoMethod: "PutRequestSource"},
@@ -1916,6 +2019,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestSource", GoGetter: "RequestSource"},
 			_jsii_.MemberProperty{JsiiProperty: "requestSourceInput", GoGetter: "RequestSourceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeltaTableSource", GoMethod: "ResetDeltaTableSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFeatureViewSource", GoMethod: "ResetFeatureViewSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKafkaSource", GoMethod: "ResetKafkaSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLateness", GoMethod: "ResetLateness"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestSource", GoMethod: "ResetRequestSource"},

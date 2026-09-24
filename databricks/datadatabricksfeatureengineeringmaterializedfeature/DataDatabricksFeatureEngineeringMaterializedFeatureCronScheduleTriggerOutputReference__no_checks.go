@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureCronSchedu
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) validateSetTimezoneIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksFeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

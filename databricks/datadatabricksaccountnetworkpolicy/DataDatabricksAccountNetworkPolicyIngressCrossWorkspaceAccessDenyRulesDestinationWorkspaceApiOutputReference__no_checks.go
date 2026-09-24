@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference) validateSetExcludedScopesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

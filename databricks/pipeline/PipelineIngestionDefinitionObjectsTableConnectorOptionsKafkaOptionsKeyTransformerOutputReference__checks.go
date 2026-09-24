@@ -93,7 +93,29 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaO
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) validatePutAvroOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) validatePutJsonOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) validatePutProtobufOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

@@ -36,6 +36,7 @@ type DataDatabricksAiGatewayMcpServiceConfigSourceConnectionOutputReference inte
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Options() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataDatabricksAiGatewayMcpServiceConfigSourceConnectionOutput
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayMcpServiceConfigSourceConnectionOutputReference) Options() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"options",
 		&returns,
 	)
 	return returns

@@ -13,6 +13,8 @@ import (
 
 type PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference interface {
 	cdktn.ComplexObject
+	AvroOptions() PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsOutputReference
+	AvroOptionsInput() *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,6 +45,8 @@ type PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputRefere
 	OutputColumn() *string
 	SetOutputColumn(val *string)
 	OutputColumnInput() *string
+	ProtobufOptions() PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsOutputReference
+	ProtobufOptionsInput() *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,11 +79,15 @@ type PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputRefere
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAvroOptions(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions)
 	PutJsonOptions(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions)
+	PutProtobufOptions(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions)
+	ResetAvroOptions()
 	ResetFormat()
 	ResetInputColumn()
 	ResetJsonOptions()
 	ResetOutputColumn()
+	ResetProtobufOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -93,6 +101,26 @@ type PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputRefere
 // The jsii proxy struct for PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference
 type jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) AvroOptions() PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"avroOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) AvroOptionsInput() *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions {
+	var returns *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions
+	_jsii_.Get(
+		j,
+		"avroOptionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) ComplexObjectIndex() interface{} {
@@ -220,6 +248,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransfor
 	_jsii_.Get(
 		j,
 		"outputColumnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) ProtobufOptions() PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"protobufOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) ProtobufOptionsInput() *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions {
+	var returns *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions
+	_jsii_.Get(
+		j,
+		"protobufOptionsInput",
 		&returns,
 	)
 	return returns
@@ -547,6 +595,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransfor
 	return returns
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) PutAvroOptions(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions) {
+	if err := p.validatePutAvroOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAvroOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) PutJsonOptions(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions) {
 	if err := p.validatePutJsonOptionsParameters(value); err != nil {
 		panic(err)
@@ -555,6 +614,25 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransfor
 		p,
 		"putJsonOptions",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) PutProtobufOptions(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions) {
+	if err := p.validatePutProtobufOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProtobufOptions",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) ResetAvroOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAvroOptions",
+		nil, // no parameters
 	)
 }
 
@@ -586,6 +664,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransfor
 	_jsii_.InvokeVoid(
 		p,
 		"resetOutputColumn",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) ResetProtobufOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProtobufOptions",
 		nil, // no parameters
 	)
 }

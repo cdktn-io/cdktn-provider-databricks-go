@@ -5,7 +5,7 @@ package sandbox
 
 
 type SandboxSpecCompute struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}.
 	InactivityTimeout *string `field:"optional" json:"inactivityTimeout" yaml:"inactivityTimeout"`
 }
 

@@ -99,6 +99,10 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) validateSetUcServiceCredentialNameParameters(val *string) error {
+	return nil
+}
+
 func validateNewModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

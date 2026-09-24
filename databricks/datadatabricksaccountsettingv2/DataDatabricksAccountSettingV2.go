@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
 type DataDatabricksAccountSettingV2 interface {
 	cdktn.TerraformDataSource
 	AibiDashboardEmbeddingAccessPolicy() DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -44,6 +44,7 @@ type DataDatabricksAccountSettingV2 interface {
 	EffectivePersonalCompute() DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference
 	EffectiveRestrictWorkspaceAdmins() DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference
 	EffectiveStringVal() DataDatabricksAccountSettingV2EffectiveStringValOutputReference
+	EffectiveWorkspaceLabel() DataDatabricksAccountSettingV2EffectiveWorkspaceLabelOutputReference
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -78,6 +79,7 @@ type DataDatabricksAccountSettingV2 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceLabel() DataDatabricksAccountSettingV2WorkspaceLabelOutputReference
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -357,6 +359,16 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveStringVal() DataData
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveWorkspaceLabel() DataDatabricksAccountSettingV2EffectiveWorkspaceLabelOutputReference {
+	var returns DataDatabricksAccountSettingV2EffectiveWorkspaceLabelOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveWorkspaceLabel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -527,8 +539,18 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAccountSettingV2) WorkspaceLabel() DataDatabricksAccountSettingV2WorkspaceLabelOutputReference {
+	var returns DataDatabricksAccountSettingV2WorkspaceLabelOutputReference
+	_jsii_.Get(
+		j,
+		"workspaceLabel",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) DataDatabricksAccountSettingV2 {
 	_init_.Initialize()
 
@@ -546,7 +568,7 @@ func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2_Override(d DataDatabricksAccountSettingV2, scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) {
 	_init_.Initialize()
 

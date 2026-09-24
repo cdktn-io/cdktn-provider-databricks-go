@@ -46,6 +46,9 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCro
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TimezoneId() *string
+	SetTimezoneId(val *string)
+	TimezoneIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCro
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCronExpression()
 	ResetMode()
+	ResetTimezoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference) TimezoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timezoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference) TimezoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timezoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference)SetTimezoneId(val *string) {
+	if err := j.validateSetTimezoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timezoneId",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.InvokeVoid(
 		d,
 		"resetMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerOutputReference) ResetTimezoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimezoneId",
 		nil, // no parameters
 	)
 }

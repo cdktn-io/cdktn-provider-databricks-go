@@ -49,6 +49,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "effectiveRestrictWorkspaceAdmins", GoGetter: "EffectiveRestrictWorkspaceAdmins"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveRestrictWorkspaceAdminsInput", GoGetter: "EffectiveRestrictWorkspaceAdminsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveStringVal", GoGetter: "EffectiveStringVal"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveWorkspaceLabel", GoGetter: "EffectiveWorkspaceLabel"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveWorkspaceLabelInput", GoGetter: "EffectiveWorkspaceLabelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -94,12 +96,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEffectiveAutomaticClusterUpdateWorkspace", GoMethod: "PutEffectiveAutomaticClusterUpdateWorkspace"},
 			_jsii_.MemberMethod{JsiiMethod: "putEffectivePersonalCompute", GoMethod: "PutEffectivePersonalCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "putEffectiveRestrictWorkspaceAdmins", GoMethod: "PutEffectiveRestrictWorkspaceAdmins"},
+			_jsii_.MemberMethod{JsiiMethod: "putEffectiveWorkspaceLabel", GoMethod: "PutEffectiveWorkspaceLabel"},
 			_jsii_.MemberMethod{JsiiMethod: "putIntegerVal", GoMethod: "PutIntegerVal"},
 			_jsii_.MemberMethod{JsiiMethod: "putOperationalEmailCustomRecipient", GoMethod: "PutOperationalEmailCustomRecipient"},
 			_jsii_.MemberMethod{JsiiMethod: "putPersonalCompute", GoMethod: "PutPersonalCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "putProviderConfig", GoMethod: "PutProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestrictWorkspaceAdmins", GoMethod: "PutRestrictWorkspaceAdmins"},
 			_jsii_.MemberMethod{JsiiMethod: "putStringVal", GoMethod: "PutStringVal"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkspaceLabel", GoMethod: "PutWorkspaceLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAibiDashboardEmbeddingAccessPolicy", GoMethod: "ResetAibiDashboardEmbeddingAccessPolicy"},
@@ -113,6 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveAutomaticClusterUpdateWorkspace", GoMethod: "ResetEffectiveAutomaticClusterUpdateWorkspace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEffectivePersonalCompute", GoMethod: "ResetEffectivePersonalCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveRestrictWorkspaceAdmins", GoMethod: "ResetEffectiveRestrictWorkspaceAdmins"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveWorkspaceLabel", GoMethod: "ResetEffectiveWorkspaceLabel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegerVal", GoMethod: "ResetIntegerVal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationalEmailCustomRecipient", GoMethod: "ResetOperationalEmailCustomRecipient"},
@@ -121,6 +126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestrictWorkspaceAdmins", GoMethod: "ResetRestrictWorkspaceAdmins"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStringVal", GoMethod: "ResetStringVal"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceLabel", GoMethod: "ResetWorkspaceLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictWorkspaceAdmins", GoGetter: "RestrictWorkspaceAdmins"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictWorkspaceAdminsInput", GoGetter: "RestrictWorkspaceAdminsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "stringVal", GoGetter: "StringVal"},
@@ -135,6 +141,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceLabel", GoGetter: "WorkspaceLabel"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceLabelInput", GoGetter: "WorkspaceLabelInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkspaceSettingV2{}
@@ -1182,6 +1190,48 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel",
+		reflect.TypeOf((*WorkspaceSettingV2EffectiveWorkspaceLabel)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference",
+		reflect.TypeOf((*WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
+			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
+			_jsii_.MemberProperty{JsiiProperty: "labelInput", GoGetter: "LabelInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetColor", GoMethod: "ResetColor"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLabel", GoMethod: "ResetLabel"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal",
 		reflect.TypeOf((*WorkspaceSettingV2IntegerVal)(nil)).Elem(),
 	)
@@ -1413,6 +1463,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkspaceSettingV2StringValOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel",
+		reflect.TypeOf((*WorkspaceSettingV2WorkspaceLabel)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference",
+		reflect.TypeOf((*WorkspaceSettingV2WorkspaceLabelOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
+			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
+			_jsii_.MemberProperty{JsiiProperty: "labelInput", GoGetter: "LabelInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetColor", GoMethod: "ResetColor"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLabel", GoMethod: "ResetLabel"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkspaceSettingV2WorkspaceLabelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

@@ -253,6 +253,14 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetMlflowRunPara
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetPriorityClassParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -262,6 +270,14 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetTerraformAttr
 }
 
 func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskOutputReference) validateSetUnityCatalogImagePathParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

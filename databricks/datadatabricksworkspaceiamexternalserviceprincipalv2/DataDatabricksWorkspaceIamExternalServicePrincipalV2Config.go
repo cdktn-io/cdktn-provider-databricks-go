@@ -22,9 +22,9 @@ type DataDatabricksWorkspaceIamExternalServicePrincipalV2Config struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_service_principal_v2#name DataDatabricksWorkspaceIamExternalServicePrincipalV2#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_service_principal_v2#name DataDatabricksWorkspaceIamExternalServicePrincipalV2#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_service_principal_v2#provider_config DataDatabricksWorkspaceIamExternalServicePrincipalV2#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_service_principal_v2#provider_config DataDatabricksWorkspaceIamExternalServicePrincipalV2#provider_config}.
 	ProviderConfig *DataDatabricksWorkspaceIamExternalServicePrincipalV2ProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

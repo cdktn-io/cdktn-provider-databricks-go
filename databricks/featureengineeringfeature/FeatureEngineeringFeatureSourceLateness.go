@@ -5,7 +5,7 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureSourceLateness struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#settling_delay FeatureEngineeringFeature#settling_delay}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#settling_delay FeatureEngineeringFeature#settling_delay}.
 	SettlingDelay *string `field:"optional" json:"settlingDelay" yaml:"settlingDelay"`
 }
 

@@ -336,6 +336,17 @@ func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveRestrictWorkspaceAdmins
 	return nil
 }
 
+func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveWorkspaceLabelParameters(value *AccountSettingV2EffectiveWorkspaceLabel) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AccountSettingV2) validatePutIntegerValParameters(value *AccountSettingV2IntegerVal) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -381,6 +392,17 @@ func (a *jsiiProxy_AccountSettingV2) validatePutRestrictWorkspaceAdminsParameter
 }
 
 func (a *jsiiProxy_AccountSettingV2) validatePutStringValParameters(value *AccountSettingV2StringVal) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AccountSettingV2) validatePutWorkspaceLabelParameters(value *AccountSettingV2WorkspaceLabel) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

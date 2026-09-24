@@ -30,6 +30,8 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference inter
 	CreationStack() *[]*string
 	DeltaTableSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSourceOutputReference
 	DeltaTableSourceInput() interface{}
+	FeatureViewSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceOutputReference
+	FeatureViewSourceInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksFeatureEngineeringFeaturesFeaturesSource
@@ -75,11 +77,13 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDeltaTableSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSource)
+	PutFeatureViewSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSource)
 	PutKafkaSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource)
 	PutLateness(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceLateness)
 	PutRequestSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceRequestSource)
 	PutStreamSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceStreamSource)
 	ResetDeltaTableSource()
+	ResetFeatureViewSource()
 	ResetKafkaSource()
 	ResetLateness()
 	ResetRequestSource()
@@ -144,6 +148,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	_jsii_.Get(
 		j,
 		"deltaTableSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) FeatureViewSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSourceOutputReference
+	_jsii_.Get(
+		j,
+		"featureViewSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) FeatureViewSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"featureViewSourceInput",
 		&returns,
 	)
 	return returns
@@ -549,6 +573,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) PutFeatureViewSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSource) {
+	if err := d.validatePutFeatureViewSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFeatureViewSource",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) PutKafkaSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource) {
 	if err := d.validatePutKafkaSourceParameters(value); err != nil {
 		panic(err)
@@ -597,6 +632,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	_jsii_.InvokeVoid(
 		d,
 		"resetDeltaTableSource",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) ResetFeatureViewSource() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFeatureViewSource",
 		nil, // no parameters
 	)
 }

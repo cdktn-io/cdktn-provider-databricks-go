@@ -22,25 +22,25 @@ type DomainConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#tag_key Domain#tag_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#tag_key Domain#tag_key}.
 	TagKey *string `field:"required" json:"tagKey" yaml:"tagKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#business_owner_ids Domain#business_owner_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#business_owner_ids Domain#business_owner_ids}.
 	BusinessOwnerIds *[]*float64 `field:"optional" json:"businessOwnerIds" yaml:"businessOwnerIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#description Domain#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#description Domain#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#domain_id Domain#domain_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#domain_id Domain#domain_id}.
 	DomainId *string `field:"optional" json:"domainId" yaml:"domainId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#draft Domain#draft}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#draft Domain#draft}.
 	Draft interface{} `field:"optional" json:"draft" yaml:"draft"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#icon Domain#icon}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#icon Domain#icon}.
 	Icon *DomainIcon `field:"optional" json:"icon" yaml:"icon"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#parent_domain_id Domain#parent_domain_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#parent_domain_id Domain#parent_domain_id}.
 	ParentDomainId *string `field:"optional" json:"parentDomainId" yaml:"parentDomainId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#provider_config Domain#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#provider_config Domain#provider_config}.
 	ProviderConfig *DomainProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#subtitle Domain#subtitle}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#subtitle Domain#subtitle}.
 	Subtitle *string `field:"optional" json:"subtitle" yaml:"subtitle"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#technical_owner_ids Domain#technical_owner_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#technical_owner_ids Domain#technical_owner_ids}.
 	TechnicalOwnerIds *[]*float64 `field:"optional" json:"technicalOwnerIds" yaml:"technicalOwnerIds"`
 }
 

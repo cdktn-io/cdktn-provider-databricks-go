@@ -221,6 +221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isDeleted", GoGetter: "IsDeleted"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "options", GoGetter: "Options"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

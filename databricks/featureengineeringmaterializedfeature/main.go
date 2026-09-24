@@ -143,9 +143,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCronExpression", GoMethod: "ResetCronExpression"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimezoneId", GoMethod: "ResetTimezoneId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "timezoneId", GoGetter: "TimezoneId"},
+			_jsii_.MemberProperty{JsiiProperty: "timezoneIdInput", GoGetter: "TimezoneIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {

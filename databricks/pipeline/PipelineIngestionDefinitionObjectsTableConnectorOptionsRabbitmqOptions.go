@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#queue Pipeline#queue}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/pipeline#queue Pipeline#queue}.
 	Queue *string `field:"required" json:"queue" yaml:"queue"`
 }
 

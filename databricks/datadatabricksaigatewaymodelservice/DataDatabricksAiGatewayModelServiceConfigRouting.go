@@ -5,9 +5,9 @@ package datadatabricksaigatewaymodelservice
 
 
 type DataDatabricksAiGatewayModelServiceConfigRouting struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_service#destinations DataDatabricksAiGatewayModelService#destinations}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_service#destinations DataDatabricksAiGatewayModelService#destinations}.
 	Destinations interface{} `field:"optional" json:"destinations" yaml:"destinations"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_service#fallback DataDatabricksAiGatewayModelService#fallback}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_service#fallback DataDatabricksAiGatewayModelService#fallback}.
 	Fallback *DataDatabricksAiGatewayModelServiceConfigRoutingFallback `field:"optional" json:"fallback" yaml:"fallback"`
 }
 

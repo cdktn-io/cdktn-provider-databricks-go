@@ -91,11 +91,19 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) validateSetPriorityClassParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) validateSetUnityCatalogImagePathParameters(val *string) error {
 	return nil
 }
 

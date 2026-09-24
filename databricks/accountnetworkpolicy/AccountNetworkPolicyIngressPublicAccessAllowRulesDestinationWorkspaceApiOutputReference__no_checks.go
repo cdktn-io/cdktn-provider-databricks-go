@@ -59,6 +59,10 @@ func (j *jsiiProxy_AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationW
 	return nil
 }
 
+func (j *jsiiProxy_AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference) validateSetExcludedScopesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

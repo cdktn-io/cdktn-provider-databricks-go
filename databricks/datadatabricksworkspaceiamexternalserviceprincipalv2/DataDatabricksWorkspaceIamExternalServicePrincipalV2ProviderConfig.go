@@ -5,7 +5,7 @@ package datadatabricksworkspaceiamexternalserviceprincipalv2
 
 
 type DataDatabricksWorkspaceIamExternalServicePrincipalV2ProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_service_principal_v2#workspace_id DataDatabricksWorkspaceIamExternalServicePrincipalV2#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_service_principal_v2#workspace_id DataDatabricksWorkspaceIamExternalServicePrincipalV2#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

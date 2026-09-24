@@ -5,9 +5,9 @@ package datadatabricksdomains
 
 
 type DataDatabricksDomainsDomains struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domains#name DataDatabricksDomains#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domains#name DataDatabricksDomains#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domains#provider_config DataDatabricksDomains#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domains#provider_config DataDatabricksDomains#provider_config}.
 	ProviderConfig *DataDatabricksDomainsDomainsProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

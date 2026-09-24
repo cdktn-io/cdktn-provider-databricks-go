@@ -47,7 +47,15 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaO
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) validatePutAvroOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) validatePutJsonOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference) validatePutProtobufOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions) error {
 	return nil
 }
 

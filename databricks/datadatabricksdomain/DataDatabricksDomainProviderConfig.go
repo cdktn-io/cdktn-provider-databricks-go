@@ -5,7 +5,7 @@ package datadatabricksdomain
 
 
 type DataDatabricksDomainProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domain#workspace_id DataDatabricksDomain#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domain#workspace_id DataDatabricksDomain#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

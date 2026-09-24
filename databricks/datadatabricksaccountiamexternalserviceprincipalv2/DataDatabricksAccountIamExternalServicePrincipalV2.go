@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_service_principal_v2 databricks_account_iam_external_service_principal_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_iam_external_service_principal_v2 databricks_account_iam_external_service_principal_v2}.
 type DataDatabricksAccountIamExternalServicePrincipalV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamExternalServicePrincipalV2) Terraform
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_service_principal_v2 databricks_account_iam_external_service_principal_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_iam_external_service_principal_v2 databricks_account_iam_external_service_principal_v2} Data Source.
 func NewDataDatabricksAccountIamExternalServicePrincipalV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamExternalServicePrincipalV2Config) DataDatabricksAccountIamExternalServicePrincipalV2 {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataDatabricksAccountIamExternalServicePrincipalV2(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_service_principal_v2 databricks_account_iam_external_service_principal_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_iam_external_service_principal_v2 databricks_account_iam_external_service_principal_v2} Data Source.
 func NewDataDatabricksAccountIamExternalServicePrincipalV2_Override(d DataDatabricksAccountIamExternalServicePrincipalV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamExternalServicePrincipalV2Config) {
 	_init_.Initialize()
 

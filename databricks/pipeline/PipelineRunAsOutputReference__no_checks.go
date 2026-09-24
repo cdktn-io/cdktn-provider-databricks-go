@@ -59,6 +59,10 @@ func (j *jsiiProxy_PipelineRunAsOutputReference) validateSetComplexObjectIsFromS
 	return nil
 }
 
+func (j *jsiiProxy_PipelineRunAsOutputReference) validateSetGroupNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineRunAsOutputReference) validateSetInternalValueParameters(val *PipelineRunAs) error {
 	return nil
 }

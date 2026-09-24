@@ -52,6 +52,9 @@ type JobTaskForEachTaskTaskAiRuntimeTaskOutputReference interface {
 	MlflowRun() *string
 	SetMlflowRun(val *string)
 	MlflowRunInput() *string
+	PriorityClass() *string
+	SetPriorityClass(val *string)
+	PriorityClassInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -60,6 +63,9 @@ type JobTaskForEachTaskTaskAiRuntimeTaskOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UnityCatalogImagePath() *string
+	SetUnityCatalogImagePath(val *string)
+	UnityCatalogImagePathInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -90,6 +96,8 @@ type JobTaskForEachTaskTaskAiRuntimeTaskOutputReference interface {
 	ResetMlflowArtifactLocation()
 	ResetMlflowExperimentDirectory()
 	ResetMlflowRun()
+	ResetPriorityClass()
+	ResetUnityCatalogImagePath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -295,6 +303,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) MlflowRun
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) PriorityClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"priorityClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) PriorityClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"priorityClassInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -310,6 +338,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) Terraform
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) UnityCatalogImagePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unityCatalogImagePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) UnityCatalogImagePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unityCatalogImagePathInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +490,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference)SetMlflowR
 	)
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference)SetPriorityClass(val *string) {
+	if err := j.validateSetPriorityClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"priorityClass",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -460,6 +519,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference)SetTerrafo
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference)SetUnityCatalogImagePath(val *string) {
+	if err := j.validateSetUnityCatalogImagePathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unityCatalogImagePath",
 		val,
 	)
 }
@@ -697,6 +767,22 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) ResetMlfl
 	_jsii_.InvokeVoid(
 		j,
 		"resetMlflowRun",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) ResetPriorityClass() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetPriorityClass",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskAiRuntimeTaskOutputReference) ResetUnityCatalogImagePath() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetUnityCatalogImagePath",
 		nil, // no parameters
 	)
 }

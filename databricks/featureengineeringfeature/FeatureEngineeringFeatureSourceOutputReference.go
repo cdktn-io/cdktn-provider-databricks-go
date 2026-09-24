@@ -30,6 +30,8 @@ type FeatureEngineeringFeatureSourceOutputReference interface {
 	CreationStack() *[]*string
 	DeltaTableSource() FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference
 	DeltaTableSourceInput() interface{}
+	FeatureViewSource() FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference
+	FeatureViewSourceInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -75,11 +77,13 @@ type FeatureEngineeringFeatureSourceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDeltaTableSource(value *FeatureEngineeringFeatureSourceDeltaTableSource)
+	PutFeatureViewSource(value *FeatureEngineeringFeatureSourceFeatureViewSource)
 	PutKafkaSource(value *FeatureEngineeringFeatureSourceKafkaSource)
 	PutLateness(value *FeatureEngineeringFeatureSourceLateness)
 	PutRequestSource(value *FeatureEngineeringFeatureSourceRequestSource)
 	PutStreamSource(value *FeatureEngineeringFeatureSourceStreamSource)
 	ResetDeltaTableSource()
+	ResetFeatureViewSource()
 	ResetKafkaSource()
 	ResetLateness()
 	ResetRequestSource()
@@ -144,6 +148,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) DeltaTableSou
 	_jsii_.Get(
 		j,
 		"deltaTableSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) FeatureViewSource() FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference {
+	var returns FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference
+	_jsii_.Get(
+		j,
+		"featureViewSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) FeatureViewSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"featureViewSourceInput",
 		&returns,
 	)
 	return returns
@@ -549,6 +573,17 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) PutDeltaTable
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) PutFeatureViewSource(value *FeatureEngineeringFeatureSourceFeatureViewSource) {
+	if err := f.validatePutFeatureViewSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putFeatureViewSource",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) PutKafkaSource(value *FeatureEngineeringFeatureSourceKafkaSource) {
 	if err := f.validatePutKafkaSourceParameters(value); err != nil {
 		panic(err)
@@ -597,6 +632,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) ResetDeltaTab
 	_jsii_.InvokeVoid(
 		f,
 		"resetDeltaTableSource",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) ResetFeatureViewSource() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFeatureViewSource",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,11 @@ package datadatabricksaccountnetworkpolicy
 
 
 type DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
+	ExcludedScopes *[]*string `field:"optional" json:"excludedScopes" yaml:"excludedScopes"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 	ScopeQualifier *string `field:"optional" json:"scopeQualifier" yaml:"scopeQualifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 	Scopes *[]*string `field:"optional" json:"scopes" yaml:"scopes"`
 }
 

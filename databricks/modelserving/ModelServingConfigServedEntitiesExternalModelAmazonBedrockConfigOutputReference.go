@@ -61,6 +61,9 @@ type ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputRefer
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UcServiceCredentialName() *string
+	SetUcServiceCredentialName(val *string)
+	UcServiceCredentialNameInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -90,6 +93,7 @@ type ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputRefer
 	ResetAwsSecretAccessKey()
 	ResetAwsSecretAccessKeyPlaintext()
 	ResetInstanceProfileArn()
+	ResetUcServiceCredentialName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -315,6 +319,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	return returns
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) UcServiceCredentialName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ucServiceCredentialName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) UcServiceCredentialNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ucServiceCredentialNameInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference {
 	_init_.Initialize()
@@ -471,6 +495,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference)SetUcServiceCredentialName(val *string) {
+	if err := j.validateSetUcServiceCredentialNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ucServiceCredentialName",
 		val,
 	)
 }
@@ -697,6 +732,14 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	_jsii_.InvokeVoid(
 		m,
 		"resetInstanceProfileArn",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) ResetUcServiceCredentialName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetUcServiceCredentialName",
 		nil, // no parameters
 	)
 }

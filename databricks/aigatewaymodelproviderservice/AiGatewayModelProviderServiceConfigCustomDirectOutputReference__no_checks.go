@@ -51,6 +51,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReferenc
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReference) validatePutHeaderAuthParameters(value *AiGatewayModelProviderServiceConfigCustomDirectHeaderAuth) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

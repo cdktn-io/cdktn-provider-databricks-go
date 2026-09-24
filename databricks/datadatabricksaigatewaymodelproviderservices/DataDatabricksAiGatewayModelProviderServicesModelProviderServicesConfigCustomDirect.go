@@ -5,9 +5,11 @@ package datadatabricksaigatewaymodelproviderservices
 
 
 type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
 	ApiKey *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKey `field:"optional" json:"apiKey" yaml:"apiKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}.
 	BaseUrl *string `field:"optional" json:"baseUrl" yaml:"baseUrl"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#header_auth DataDatabricksAiGatewayModelProviderServices#header_auth}.
+	HeaderAuth *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth `field:"optional" json:"headerAuth" yaml:"headerAuth"`
 }
 

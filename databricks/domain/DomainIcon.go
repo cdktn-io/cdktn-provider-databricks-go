@@ -5,9 +5,9 @@ package domain
 
 
 type DomainIcon struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#color Domain#color}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#color Domain#color}.
 	Color *string `field:"optional" json:"color" yaml:"color"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#name Domain#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#name Domain#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

@@ -47,7 +47,15 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransfor
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) validatePutAvroOptionsParameters(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) validatePutJsonOptionsParameters(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference) validatePutProtobufOptionsParameters(value *PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions) error {
 	return nil
 }
 

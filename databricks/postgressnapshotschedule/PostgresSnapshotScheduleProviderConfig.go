@@ -5,7 +5,7 @@ package postgressnapshotschedule
 
 
 type PostgresSnapshotScheduleProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/postgres_snapshot_schedule#workspace_id PostgresSnapshotSchedule#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/postgres_snapshot_schedule#workspace_id PostgresSnapshotSchedule#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

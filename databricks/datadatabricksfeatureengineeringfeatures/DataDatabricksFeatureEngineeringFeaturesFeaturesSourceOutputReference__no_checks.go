@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) validatePutFeatureViewSourceParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSource) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) validatePutKafkaSourceParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource) error {
 	return nil
 }

@@ -5,15 +5,15 @@ package datadatabricksaigatewaymodelproviderservices
 
 
 type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#key DataDatabricksAiGatewayModelProviderServices#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#key DataDatabricksAiGatewayModelProviderServices#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#renewal_period DataDatabricksAiGatewayModelProviderServices#renewal_period}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#renewal_period DataDatabricksAiGatewayModelProviderServices#renewal_period}.
 	RenewalPeriod *string `field:"required" json:"renewalPeriod" yaml:"renewalPeriod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#principal DataDatabricksAiGatewayModelProviderServices#principal}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#principal DataDatabricksAiGatewayModelProviderServices#principal}.
 	Principal *string `field:"optional" json:"principal" yaml:"principal"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#requests DataDatabricksAiGatewayModelProviderServices#requests}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#requests DataDatabricksAiGatewayModelProviderServices#requests}.
 	Requests *float64 `field:"optional" json:"requests" yaml:"requests"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#tokens DataDatabricksAiGatewayModelProviderServices#tokens}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#tokens DataDatabricksAiGatewayModelProviderServices#tokens}.
 	Tokens *float64 `field:"optional" json:"tokens" yaml:"tokens"`
 }
 

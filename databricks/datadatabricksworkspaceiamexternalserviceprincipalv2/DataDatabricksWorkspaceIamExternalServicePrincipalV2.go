@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_service_principal_v2 databricks_workspace_iam_external_service_principal_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_service_principal_v2 databricks_workspace_iam_external_service_principal_v2}.
 type DataDatabricksWorkspaceIamExternalServicePrincipalV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamExternalServicePrincipalV2) Terrafo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_service_principal_v2 databricks_workspace_iam_external_service_principal_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_service_principal_v2 databricks_workspace_iam_external_service_principal_v2} Data Source.
 func NewDataDatabricksWorkspaceIamExternalServicePrincipalV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamExternalServicePrincipalV2Config) DataDatabricksWorkspaceIamExternalServicePrincipalV2 {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataDatabricksWorkspaceIamExternalServicePrincipalV2(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_service_principal_v2 databricks_workspace_iam_external_service_principal_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_service_principal_v2 databricks_workspace_iam_external_service_principal_v2} Data Source.
 func NewDataDatabricksWorkspaceIamExternalServicePrincipalV2_Override(d DataDatabricksWorkspaceIamExternalServicePrincipalV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamExternalServicePrincipalV2Config) {
 	_init_.Initialize()
 

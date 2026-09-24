@@ -2306,6 +2306,140 @@ func init() {
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "parseMode", GoGetter: "ParseMode"},
+			_jsii_.MemberProperty{JsiiProperty: "parseModeInput", GoGetter: "ParseModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaRegistry", GoMethod: "PutSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParseMode", GoMethod: "ResetParseMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaFilePath", GoMethod: "ResetSchemaFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaRegistry", GoMethod: "ResetSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePath", GoGetter: "SchemaFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePathInput", GoGetter: "SchemaFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistry", GoGetter: "SchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistryInput", GoGetter: "SchemaRegistryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subject", GoGetter: "Subject"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectInput", GoGetter: "SubjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptions", GoGetter: "ConfluentOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptionsInput", GoGetter: "ConfluentOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageName", GoGetter: "ProtobufMessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageNameInput", GoGetter: "ProtobufMessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentOptions", GoMethod: "PutConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentOptions", GoMethod: "ResetConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufMessageName", GoMethod: "ResetProtobufMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions)(nil)).Elem(),
 	)
@@ -2360,6 +2494,8 @@ func init() {
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerOutputReference",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "avroOptions", GoGetter: "AvroOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "avroOptionsInput", GoGetter: "AvroOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2385,11 +2521,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jsonOptionsInput", GoGetter: "JsonOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "outputColumn", GoGetter: "OutputColumn"},
 			_jsii_.MemberProperty{JsiiProperty: "outputColumnInput", GoGetter: "OutputColumnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufOptions", GoGetter: "ProtobufOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufOptionsInput", GoGetter: "ProtobufOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAvroOptions", GoMethod: "PutAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putJsonOptions", GoMethod: "PutJsonOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putProtobufOptions", GoMethod: "PutProtobufOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvroOptions", GoMethod: "ResetAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFormat", GoMethod: "ResetFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInputColumn", GoMethod: "ResetInputColumn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJsonOptions", GoMethod: "ResetJsonOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutputColumn", GoMethod: "ResetOutputColumn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufOptions", GoMethod: "ResetProtobufOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -2397,6 +2539,143 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "descFilePath", GoGetter: "DescFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "descFilePathInput", GoGetter: "DescFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "messageName", GoGetter: "MessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "messageNameInput", GoGetter: "MessageNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parseMode", GoGetter: "ParseMode"},
+			_jsii_.MemberProperty{JsiiProperty: "parseModeInput", GoGetter: "ParseModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaRegistry", GoMethod: "PutSchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "recursiveFieldsMaxDepth", GoGetter: "RecursiveFieldsMaxDepth"},
+			_jsii_.MemberProperty{JsiiProperty: "recursiveFieldsMaxDepthInput", GoGetter: "RecursiveFieldsMaxDepthInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDescFilePath", GoMethod: "ResetDescFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMessageName", GoMethod: "ResetMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParseMode", GoMethod: "ResetParseMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRecursiveFieldsMaxDepth", GoMethod: "ResetRecursiveFieldsMaxDepth"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaRegistry", GoMethod: "ResetSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistry", GoGetter: "SchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistryInput", GoGetter: "SchemaRegistryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subject", GoGetter: "Subject"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectInput", GoGetter: "SubjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptions", GoGetter: "ConfluentOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptionsInput", GoGetter: "ConfluentOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageName", GoGetter: "ProtobufMessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageNameInput", GoGetter: "ProtobufMessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentOptions", GoMethod: "PutConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentOptions", GoMethod: "ResetConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufMessageName", GoMethod: "ResetProtobufMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -2461,6 +2740,140 @@ func init() {
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "parseMode", GoGetter: "ParseMode"},
+			_jsii_.MemberProperty{JsiiProperty: "parseModeInput", GoGetter: "ParseModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaRegistry", GoMethod: "PutSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParseMode", GoMethod: "ResetParseMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaFilePath", GoMethod: "ResetSchemaFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaRegistry", GoMethod: "ResetSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePath", GoGetter: "SchemaFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePathInput", GoGetter: "SchemaFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistry", GoGetter: "SchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistryInput", GoGetter: "SchemaRegistryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subject", GoGetter: "Subject"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectInput", GoGetter: "SubjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptions", GoGetter: "ConfluentOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptionsInput", GoGetter: "ConfluentOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageName", GoGetter: "ProtobufMessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageNameInput", GoGetter: "ProtobufMessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentOptions", GoMethod: "PutConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentOptions", GoMethod: "ResetConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufMessageName", GoMethod: "ResetProtobufMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions)(nil)).Elem(),
 	)
@@ -2515,6 +2928,8 @@ func init() {
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "avroOptions", GoGetter: "AvroOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "avroOptionsInput", GoGetter: "AvroOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2540,11 +2955,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jsonOptionsInput", GoGetter: "JsonOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "outputColumn", GoGetter: "OutputColumn"},
 			_jsii_.MemberProperty{JsiiProperty: "outputColumnInput", GoGetter: "OutputColumnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufOptions", GoGetter: "ProtobufOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufOptionsInput", GoGetter: "ProtobufOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAvroOptions", GoMethod: "PutAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putJsonOptions", GoMethod: "PutJsonOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putProtobufOptions", GoMethod: "PutProtobufOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvroOptions", GoMethod: "ResetAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFormat", GoMethod: "ResetFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInputColumn", GoMethod: "ResetInputColumn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJsonOptions", GoMethod: "ResetJsonOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutputColumn", GoMethod: "ResetOutputColumn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufOptions", GoMethod: "ResetProtobufOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -2552,6 +2973,143 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "descFilePath", GoGetter: "DescFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "descFilePathInput", GoGetter: "DescFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "messageName", GoGetter: "MessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "messageNameInput", GoGetter: "MessageNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parseMode", GoGetter: "ParseMode"},
+			_jsii_.MemberProperty{JsiiProperty: "parseModeInput", GoGetter: "ParseModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaRegistry", GoMethod: "PutSchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "recursiveFieldsMaxDepth", GoGetter: "RecursiveFieldsMaxDepth"},
+			_jsii_.MemberProperty{JsiiProperty: "recursiveFieldsMaxDepthInput", GoGetter: "RecursiveFieldsMaxDepthInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDescFilePath", GoMethod: "ResetDescFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMessageName", GoMethod: "ResetMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParseMode", GoMethod: "ResetParseMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRecursiveFieldsMaxDepth", GoMethod: "ResetRecursiveFieldsMaxDepth"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaRegistry", GoMethod: "ResetSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistry", GoGetter: "SchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistryInput", GoGetter: "SchemaRegistryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subject", GoGetter: "Subject"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectInput", GoGetter: "SubjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptions", GoGetter: "ConfluentOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptionsInput", GoGetter: "ConfluentOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageName", GoGetter: "ProtobufMessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageNameInput", GoGetter: "ProtobufMessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentOptions", GoMethod: "PutConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentOptions", GoMethod: "ResetConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufMessageName", GoMethod: "ResetProtobufMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -3515,6 +4073,140 @@ func init() {
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "parseMode", GoGetter: "ParseMode"},
+			_jsii_.MemberProperty{JsiiProperty: "parseModeInput", GoGetter: "ParseModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaRegistry", GoMethod: "PutSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParseMode", GoMethod: "ResetParseMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaFilePath", GoMethod: "ResetSchemaFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaRegistry", GoMethod: "ResetSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePath", GoGetter: "SchemaFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePathInput", GoGetter: "SchemaFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistry", GoGetter: "SchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistryInput", GoGetter: "SchemaRegistryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subject", GoGetter: "Subject"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectInput", GoGetter: "SubjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptions", GoGetter: "ConfluentOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptionsInput", GoGetter: "ConfluentOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageName", GoGetter: "ProtobufMessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageNameInput", GoGetter: "ProtobufMessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentOptions", GoMethod: "PutConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentOptions", GoMethod: "ResetConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufMessageName", GoMethod: "ResetProtobufMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions)(nil)).Elem(),
 	)
@@ -3591,6 +4283,8 @@ func init() {
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "avroOptions", GoGetter: "AvroOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "avroOptionsInput", GoGetter: "AvroOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3616,11 +4310,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jsonOptionsInput", GoGetter: "JsonOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "outputColumn", GoGetter: "OutputColumn"},
 			_jsii_.MemberProperty{JsiiProperty: "outputColumnInput", GoGetter: "OutputColumnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufOptions", GoGetter: "ProtobufOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufOptionsInput", GoGetter: "ProtobufOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAvroOptions", GoMethod: "PutAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putJsonOptions", GoMethod: "PutJsonOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putProtobufOptions", GoMethod: "PutProtobufOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvroOptions", GoMethod: "ResetAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFormat", GoMethod: "ResetFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInputColumn", GoMethod: "ResetInputColumn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJsonOptions", GoMethod: "ResetJsonOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutputColumn", GoMethod: "ResetOutputColumn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufOptions", GoMethod: "ResetProtobufOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -3628,6 +4328,143 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "descFilePath", GoGetter: "DescFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "descFilePathInput", GoGetter: "DescFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "messageName", GoGetter: "MessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "messageNameInput", GoGetter: "MessageNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parseMode", GoGetter: "ParseMode"},
+			_jsii_.MemberProperty{JsiiProperty: "parseModeInput", GoGetter: "ParseModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaRegistry", GoMethod: "PutSchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "recursiveFieldsMaxDepth", GoGetter: "RecursiveFieldsMaxDepth"},
+			_jsii_.MemberProperty{JsiiProperty: "recursiveFieldsMaxDepthInput", GoGetter: "RecursiveFieldsMaxDepthInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDescFilePath", GoMethod: "ResetDescFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMessageName", GoMethod: "ResetMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParseMode", GoMethod: "ResetParseMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRecursiveFieldsMaxDepth", GoMethod: "ResetRecursiveFieldsMaxDepth"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaRegistry", GoMethod: "ResetSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistry", GoGetter: "SchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistryInput", GoGetter: "SchemaRegistryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subject", GoGetter: "Subject"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectInput", GoGetter: "SubjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptions", GoGetter: "ConfluentOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptionsInput", GoGetter: "ConfluentOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageName", GoGetter: "ProtobufMessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageNameInput", GoGetter: "ProtobufMessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentOptions", GoMethod: "PutConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentOptions", GoMethod: "ResetConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufMessageName", GoMethod: "ResetProtobufMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -4375,6 +5212,140 @@ func init() {
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "parseMode", GoGetter: "ParseMode"},
+			_jsii_.MemberProperty{JsiiProperty: "parseModeInput", GoGetter: "ParseModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaRegistry", GoMethod: "PutSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParseMode", GoMethod: "ResetParseMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaFilePath", GoMethod: "ResetSchemaFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaRegistry", GoMethod: "ResetSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePath", GoGetter: "SchemaFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePathInput", GoGetter: "SchemaFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistry", GoGetter: "SchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistryInput", GoGetter: "SchemaRegistryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subject", GoGetter: "Subject"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectInput", GoGetter: "SubjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptions", GoGetter: "ConfluentOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptionsInput", GoGetter: "ConfluentOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageName", GoGetter: "ProtobufMessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageNameInput", GoGetter: "ProtobufMessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentOptions", GoMethod: "PutConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentOptions", GoMethod: "ResetConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufMessageName", GoMethod: "ResetProtobufMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions)(nil)).Elem(),
 	)
@@ -4429,6 +5400,8 @@ func init() {
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "avroOptions", GoGetter: "AvroOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "avroOptionsInput", GoGetter: "AvroOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4454,11 +5427,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jsonOptionsInput", GoGetter: "JsonOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "outputColumn", GoGetter: "OutputColumn"},
 			_jsii_.MemberProperty{JsiiProperty: "outputColumnInput", GoGetter: "OutputColumnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufOptions", GoGetter: "ProtobufOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufOptionsInput", GoGetter: "ProtobufOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAvroOptions", GoMethod: "PutAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putJsonOptions", GoMethod: "PutJsonOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putProtobufOptions", GoMethod: "PutProtobufOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvroOptions", GoMethod: "ResetAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFormat", GoMethod: "ResetFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInputColumn", GoMethod: "ResetInputColumn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJsonOptions", GoMethod: "ResetJsonOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutputColumn", GoMethod: "ResetOutputColumn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufOptions", GoMethod: "ResetProtobufOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -4466,6 +5445,143 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "descFilePath", GoGetter: "DescFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "descFilePathInput", GoGetter: "DescFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "messageName", GoGetter: "MessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "messageNameInput", GoGetter: "MessageNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parseMode", GoGetter: "ParseMode"},
+			_jsii_.MemberProperty{JsiiProperty: "parseModeInput", GoGetter: "ParseModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaRegistry", GoMethod: "PutSchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "recursiveFieldsMaxDepth", GoGetter: "RecursiveFieldsMaxDepth"},
+			_jsii_.MemberProperty{JsiiProperty: "recursiveFieldsMaxDepthInput", GoGetter: "RecursiveFieldsMaxDepthInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDescFilePath", GoMethod: "ResetDescFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMessageName", GoMethod: "ResetMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParseMode", GoMethod: "ResetParseMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRecursiveFieldsMaxDepth", GoMethod: "ResetRecursiveFieldsMaxDepth"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaRegistry", GoMethod: "ResetSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistry", GoGetter: "SchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistryInput", GoGetter: "SchemaRegistryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subject", GoGetter: "Subject"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectInput", GoGetter: "SubjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptions", GoGetter: "ConfluentOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptionsInput", GoGetter: "ConfluentOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageName", GoGetter: "ProtobufMessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageNameInput", GoGetter: "ProtobufMessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentOptions", GoMethod: "PutConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentOptions", GoMethod: "ResetConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufMessageName", GoMethod: "ResetProtobufMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -4530,6 +5646,140 @@ func init() {
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "parseMode", GoGetter: "ParseMode"},
+			_jsii_.MemberProperty{JsiiProperty: "parseModeInput", GoGetter: "ParseModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaRegistry", GoMethod: "PutSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParseMode", GoMethod: "ResetParseMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaFilePath", GoMethod: "ResetSchemaFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaRegistry", GoMethod: "ResetSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePath", GoGetter: "SchemaFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaFilePathInput", GoGetter: "SchemaFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistry", GoGetter: "SchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistryInput", GoGetter: "SchemaRegistryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subject", GoGetter: "Subject"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectInput", GoGetter: "SubjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptions", GoGetter: "ConfluentOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptionsInput", GoGetter: "ConfluentOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageName", GoGetter: "ProtobufMessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageNameInput", GoGetter: "ProtobufMessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentOptions", GoMethod: "PutConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentOptions", GoMethod: "ResetConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufMessageName", GoMethod: "ResetProtobufMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions)(nil)).Elem(),
 	)
@@ -4584,6 +5834,8 @@ func init() {
 		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerOutputReference",
 		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "avroOptions", GoGetter: "AvroOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "avroOptionsInput", GoGetter: "AvroOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4609,11 +5861,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jsonOptionsInput", GoGetter: "JsonOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "outputColumn", GoGetter: "OutputColumn"},
 			_jsii_.MemberProperty{JsiiProperty: "outputColumnInput", GoGetter: "OutputColumnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufOptions", GoGetter: "ProtobufOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufOptionsInput", GoGetter: "ProtobufOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAvroOptions", GoMethod: "PutAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putJsonOptions", GoMethod: "PutJsonOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putProtobufOptions", GoMethod: "PutProtobufOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvroOptions", GoMethod: "ResetAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFormat", GoMethod: "ResetFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInputColumn", GoMethod: "ResetInputColumn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJsonOptions", GoMethod: "ResetJsonOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOutputColumn", GoMethod: "ResetOutputColumn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufOptions", GoMethod: "ResetProtobufOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -4621,6 +5879,143 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "descFilePath", GoGetter: "DescFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "descFilePathInput", GoGetter: "DescFilePathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "messageName", GoGetter: "MessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "messageNameInput", GoGetter: "MessageNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parseMode", GoGetter: "ParseMode"},
+			_jsii_.MemberProperty{JsiiProperty: "parseModeInput", GoGetter: "ParseModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaRegistry", GoMethod: "PutSchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "recursiveFieldsMaxDepth", GoGetter: "RecursiveFieldsMaxDepth"},
+			_jsii_.MemberProperty{JsiiProperty: "recursiveFieldsMaxDepthInput", GoGetter: "RecursiveFieldsMaxDepthInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDescFilePath", GoMethod: "ResetDescFilePath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMessageName", GoMethod: "ResetMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParseMode", GoMethod: "ResetParseMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRecursiveFieldsMaxDepth", GoMethod: "ResetRecursiveFieldsMaxDepth"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaRegistry", GoMethod: "ResetSchemaRegistry"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistry", GoGetter: "SchemaRegistry"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaRegistryInput", GoGetter: "SchemaRegistryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subject", GoGetter: "Subject"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectInput", GoGetter: "SubjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptions", GoGetter: "ConfluentOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentOptionsInput", GoGetter: "ConfluentOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageName", GoGetter: "ProtobufMessageName"},
+			_jsii_.MemberProperty{JsiiProperty: "protobufMessageNameInput", GoGetter: "ProtobufMessageNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentOptions", GoMethod: "PutConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentOptions", GoMethod: "ResetConfluentOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtobufMessageName", GoMethod: "ResetProtobufMessageName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -6963,9 +8358,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "groupName", GoGetter: "GroupName"},
+			_jsii_.MemberProperty{JsiiProperty: "groupNameInput", GoGetter: "GroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupName", GoMethod: "ResetGroupName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServicePrincipalName", GoMethod: "ResetServicePrincipalName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserName", GoMethod: "ResetUserName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

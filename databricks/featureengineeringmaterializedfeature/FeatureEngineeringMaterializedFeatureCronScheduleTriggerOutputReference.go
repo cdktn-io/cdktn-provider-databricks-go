@@ -46,6 +46,9 @@ type FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference int
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TimezoneId() *string
+	SetTimezoneId(val *string)
+	TimezoneIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference int
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCronExpression()
 	ResetMode()
+	ResetTimezoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutpu
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) TimezoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timezoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) TimezoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timezoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewFeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutpu
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference)SetTimezoneId(val *string) {
+	if err := j.validateSetTimezoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timezoneId",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutpu
 	_jsii_.InvokeVoid(
 		f,
 		"resetMode",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference) ResetTimezoneId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTimezoneId",
 		nil, // no parameters
 	)
 }

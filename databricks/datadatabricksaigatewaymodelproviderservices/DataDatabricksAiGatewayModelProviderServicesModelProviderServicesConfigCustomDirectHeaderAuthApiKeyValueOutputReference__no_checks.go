@@ -1,0 +1,81 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datadatabricksaigatewaymodelproviderservices
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateSetPlaintextParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

@@ -30,6 +30,9 @@ type PipelineRunAsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GroupName() *string
+	SetGroupName(val *string)
+	GroupNameInput() *string
 	InternalValue() *PipelineRunAs
 	SetInternalValue(val *PipelineRunAs)
 	ServicePrincipalName() *string
@@ -70,6 +73,7 @@ type PipelineRunAsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetGroupName()
 	ResetServicePrincipalName()
 	ResetUserName()
 	// Produce the Token's value at resolution time.
@@ -122,6 +126,26 @@ func (j *jsiiProxy_PipelineRunAsOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineRunAsOutputReference) GroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineRunAsOutputReference) GroupNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupNameInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +267,17 @@ func (j *jsiiProxy_PipelineRunAsOutputReference)SetComplexObjectIsFromSet(val *b
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineRunAsOutputReference)SetGroupName(val *string) {
+	if err := j.validateSetGroupNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupName",
 		val,
 	)
 }
@@ -486,6 +521,14 @@ func (p *jsiiProxy_PipelineRunAsOutputReference) InterpolationForAttribute(terra
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PipelineRunAsOutputReference) ResetGroupName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGroupName",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PipelineRunAsOutputReference) ResetServicePrincipalName() {

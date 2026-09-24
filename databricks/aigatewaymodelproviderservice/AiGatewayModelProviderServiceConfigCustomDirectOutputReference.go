@@ -35,6 +35,8 @@ type AiGatewayModelProviderServiceConfigCustomDirectOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HeaderAuth() AiGatewayModelProviderServiceConfigCustomDirectHeaderAuthOutputReference
+	HeaderAuthInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -70,8 +72,10 @@ type AiGatewayModelProviderServiceConfigCustomDirectOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApiKey(value *AiGatewayModelProviderServiceConfigCustomDirectApiKey)
+	PutHeaderAuth(value *AiGatewayModelProviderServiceConfigCustomDirectHeaderAuth)
 	ResetApiKey()
 	ResetBaseUrl()
+	ResetHeaderAuth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -162,6 +166,26 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReference) HeaderAuth() AiGatewayModelProviderServiceConfigCustomDirectHeaderAuthOutputReference {
+	var returns AiGatewayModelProviderServiceConfigCustomDirectHeaderAuthOutputReference
+	_jsii_.Get(
+		j,
+		"headerAuth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReference) HeaderAuthInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headerAuthInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReferenc
 	)
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReference) PutHeaderAuth(value *AiGatewayModelProviderServiceConfigCustomDirectHeaderAuth) {
+	if err := a.validatePutHeaderAuthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putHeaderAuth",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReference) ResetApiKey() {
 	_jsii_.InvokeVoid(
 		a,
@@ -500,6 +535,14 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReferenc
 	_jsii_.InvokeVoid(
 		a,
 		"resetBaseUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectOutputReference) ResetHeaderAuth() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHeaderAuth",
 		nil, // no parameters
 	)
 }
