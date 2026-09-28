@@ -135,6 +135,14 @@ func (j *jsiiProxy_Secret) validateSetStringValueParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Secret) validateSetStringValueWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Secret) validateSetStringValueWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func validateNewSecretParameters(scope constructs.Construct, id *string, config *SecretConfig) error {
 	return nil
 }

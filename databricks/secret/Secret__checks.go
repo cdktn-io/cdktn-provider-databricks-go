@@ -450,6 +450,22 @@ func (j *jsiiProxy_Secret) validateSetStringValueParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Secret) validateSetStringValueWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Secret) validateSetStringValueWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewSecretParameters(scope constructs.Construct, id *string, config *SecretConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

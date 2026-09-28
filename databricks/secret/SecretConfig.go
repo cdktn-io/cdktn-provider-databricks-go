@@ -22,20 +22,24 @@ type SecretConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#key Secret#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#key Secret#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#scope Secret#scope}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#scope Secret#scope}.
 	Scope *string `field:"required" json:"scope" yaml:"scope"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#string_value Secret#string_value}.
-	StringValue *string `field:"required" json:"stringValue" yaml:"stringValue"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#id Secret#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#id Secret#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// provider_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#provider_config Secret#provider_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#provider_config Secret#provider_config}
 	ProviderConfig *SecretProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value Secret#string_value}.
+	StringValue *string `field:"optional" json:"stringValue" yaml:"stringValue"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo Secret#string_value_wo}.
+	StringValueWo *string `field:"optional" json:"stringValueWo" yaml:"stringValueWo"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo_version Secret#string_value_wo_version}.
+	StringValueWoVersion *float64 `field:"optional" json:"stringValueWoVersion" yaml:"stringValueWoVersion"`
 }
 

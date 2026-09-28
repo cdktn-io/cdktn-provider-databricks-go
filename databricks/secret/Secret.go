@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret databricks_secret}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret databricks_secret}.
 type Secret interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -71,6 +71,14 @@ type Secret interface {
 	StringValue() *string
 	SetStringValue(val *string)
 	StringValueInput() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	StringValueWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	SetStringValueWo(val *string)
+	StringValueWoInput() *string
+	StringValueWoVersion() *float64
+	SetStringValueWoVersion(val *float64)
+	StringValueWoVersionInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -175,6 +183,9 @@ type Secret interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetStringValue()
+	ResetStringValueWo()
+	ResetStringValueWoVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -452,6 +463,46 @@ func (j *jsiiProxy_Secret) StringValueInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Secret) StringValueWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stringValueWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) StringValueWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stringValueWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) StringValueWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"stringValueWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) StringValueWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"stringValueWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Secret) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -483,7 +534,7 @@ func (j *jsiiProxy_Secret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret databricks_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret databricks_secret} Resource.
 func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Secret {
 	_init_.Initialize()
 
@@ -501,7 +552,7 @@ func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret databricks_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret databricks_secret} Resource.
 func NewSecret_Override(s Secret, scope constructs.Construct, id *string, config *SecretConfig) {
 	_init_.Initialize()
 
@@ -620,6 +671,28 @@ func (j *jsiiProxy_Secret)SetStringValue(val *string) {
 	_jsii_.Set(
 		j,
 		"stringValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Secret)SetStringValueWo(val *string) {
+	if err := j.validateSetStringValueWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stringValueWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Secret)SetStringValueWoVersion(val *float64) {
+	if err := j.validateSetStringValueWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stringValueWoVersion",
 		val,
 	)
 }
@@ -1035,6 +1108,30 @@ func (s *jsiiProxy_Secret) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Secret) ResetStringValue() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStringValue",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Secret) ResetStringValueWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStringValueWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Secret) ResetStringValueWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStringValueWoVersion",
 		nil, // no parameters
 	)
 }
