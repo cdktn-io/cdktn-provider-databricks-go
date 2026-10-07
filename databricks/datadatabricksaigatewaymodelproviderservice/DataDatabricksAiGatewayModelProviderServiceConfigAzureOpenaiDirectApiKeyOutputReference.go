@@ -35,6 +35,8 @@ type DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOut
 	Plaintext() *string
 	SetPlaintext(val *string)
 	PlaintextInput() *string
+	SecretReference() DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReferenceOutputReference
+	SecretReferenceInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOut
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutSecretReference(value *DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReference)
 	ResetPlaintext()
+	ResetSecretReference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiD
 	_jsii_.Get(
 		j,
 		"plaintextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) SecretReference() DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReferenceOutputReference {
+	var returns DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"secretReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) SecretReferenceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretReferenceInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiD
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) PutSecretReference(value *DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReference) {
+	if err := d.validatePutSecretReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSecretReference",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) ResetPlaintext() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPlaintext",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) ResetSecretReference() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecretReference",
 		nil, // no parameters
 	)
 }

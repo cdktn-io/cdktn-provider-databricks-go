@@ -47,6 +47,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiK
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeyOutputReference) validatePutSecretReferenceParameters(value *AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeySecretReference) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

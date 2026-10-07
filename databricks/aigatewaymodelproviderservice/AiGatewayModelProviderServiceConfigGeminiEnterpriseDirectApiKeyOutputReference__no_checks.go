@@ -47,6 +47,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiK
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeyOutputReference) validatePutSecretReferenceParameters(value *AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeySecretReference) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

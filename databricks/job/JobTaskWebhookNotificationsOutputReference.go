@@ -36,6 +36,10 @@ type JobTaskWebhookNotificationsOutputReference interface {
 	OnDurationWarningThresholdExceededInput() interface{}
 	OnFailure() JobTaskWebhookNotificationsOnFailureList
 	OnFailureInput() interface{}
+	OnMaintenanceComplete() JobTaskWebhookNotificationsOnMaintenanceCompleteList
+	OnMaintenanceCompleteInput() interface{}
+	OnMaintenanceStart() JobTaskWebhookNotificationsOnMaintenanceStartList
+	OnMaintenanceStartInput() interface{}
 	OnStart() JobTaskWebhookNotificationsOnStartList
 	OnStartInput() interface{}
 	OnStreamingBacklogExceeded() JobTaskWebhookNotificationsOnStreamingBacklogExceededList
@@ -76,11 +80,15 @@ type JobTaskWebhookNotificationsOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOnDurationWarningThresholdExceeded(value interface{})
 	PutOnFailure(value interface{})
+	PutOnMaintenanceComplete(value interface{})
+	PutOnMaintenanceStart(value interface{})
 	PutOnStart(value interface{})
 	PutOnStreamingBacklogExceeded(value interface{})
 	PutOnSuccess(value interface{})
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
+	ResetOnMaintenanceComplete()
+	ResetOnMaintenanceStart()
 	ResetOnStart()
 	ResetOnStreamingBacklogExceeded()
 	ResetOnSuccess()
@@ -184,6 +192,46 @@ func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) OnFailureInput() 
 	_jsii_.Get(
 		j,
 		"onFailureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) OnMaintenanceComplete() JobTaskWebhookNotificationsOnMaintenanceCompleteList {
+	var returns JobTaskWebhookNotificationsOnMaintenanceCompleteList
+	_jsii_.Get(
+		j,
+		"onMaintenanceComplete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) OnMaintenanceCompleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onMaintenanceCompleteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) OnMaintenanceStart() JobTaskWebhookNotificationsOnMaintenanceStartList {
+	var returns JobTaskWebhookNotificationsOnMaintenanceStartList
+	_jsii_.Get(
+		j,
+		"onMaintenanceStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) OnMaintenanceStartInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onMaintenanceStartInput",
 		&returns,
 	)
 	return returns
@@ -560,6 +608,28 @@ func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) PutOnFailure(valu
 	)
 }
 
+func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) PutOnMaintenanceComplete(value interface{}) {
+	if err := j.validatePutOnMaintenanceCompleteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putOnMaintenanceComplete",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) PutOnMaintenanceStart(value interface{}) {
+	if err := j.validatePutOnMaintenanceStartParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putOnMaintenanceStart",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) PutOnStart(value interface{}) {
 	if err := j.validatePutOnStartParameters(value); err != nil {
 		panic(err)
@@ -605,6 +675,22 @@ func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) ResetOnFailure() 
 	_jsii_.InvokeVoid(
 		j,
 		"resetOnFailure",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) ResetOnMaintenanceComplete() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOnMaintenanceComplete",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) ResetOnMaintenanceStart() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOnMaintenanceStart",
 		nil, // no parameters
 	)
 }

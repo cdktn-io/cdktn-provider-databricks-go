@@ -83,6 +83,10 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) validateSetJavaDependencie
 	return nil
 }
 
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) validateSetProjectEnvironmentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobEnvironmentSpecOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

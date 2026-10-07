@@ -51,6 +51,10 @@ func (s *jsiiProxy_SandboxSpecOutputReference) validatePutComputeParameters(valu
 	return nil
 }
 
+func (s *jsiiProxy_SandboxSpecOutputReference) validatePutEnvironmentParameters(value *SandboxSpecEnvironment) error {
+	return nil
+}
+
 func (s *jsiiProxy_SandboxSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

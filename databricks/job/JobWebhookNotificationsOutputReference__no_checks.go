@@ -55,6 +55,14 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnFailureP
 	return nil
 }
 
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnMaintenanceCompleteParameters(value interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnMaintenanceStartParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnStartParameters(value interface{}) error {
 	return nil
 }

@@ -36,6 +36,10 @@ type JobTaskForEachTaskTaskWebhookNotificationsOutputReference interface {
 	OnDurationWarningThresholdExceededInput() interface{}
 	OnFailure() JobTaskForEachTaskTaskWebhookNotificationsOnFailureList
 	OnFailureInput() interface{}
+	OnMaintenanceComplete() JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteList
+	OnMaintenanceCompleteInput() interface{}
+	OnMaintenanceStart() JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartList
+	OnMaintenanceStartInput() interface{}
 	OnStart() JobTaskForEachTaskTaskWebhookNotificationsOnStartList
 	OnStartInput() interface{}
 	OnStreamingBacklogExceeded() JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList
@@ -76,11 +80,15 @@ type JobTaskForEachTaskTaskWebhookNotificationsOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOnDurationWarningThresholdExceeded(value interface{})
 	PutOnFailure(value interface{})
+	PutOnMaintenanceComplete(value interface{})
+	PutOnMaintenanceStart(value interface{})
 	PutOnStart(value interface{})
 	PutOnStreamingBacklogExceeded(value interface{})
 	PutOnSuccess(value interface{})
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
+	ResetOnMaintenanceComplete()
+	ResetOnMaintenanceStart()
 	ResetOnStart()
 	ResetOnStreamingBacklogExceeded()
 	ResetOnSuccess()
@@ -184,6 +192,46 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) On
 	_jsii_.Get(
 		j,
 		"onFailureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) OnMaintenanceComplete() JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteList {
+	var returns JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteList
+	_jsii_.Get(
+		j,
+		"onMaintenanceComplete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) OnMaintenanceCompleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onMaintenanceCompleteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) OnMaintenanceStart() JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartList {
+	var returns JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartList
+	_jsii_.Get(
+		j,
+		"onMaintenanceStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) OnMaintenanceStartInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onMaintenanceStartInput",
 		&returns,
 	)
 	return returns
@@ -560,6 +608,28 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) Pu
 	)
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) PutOnMaintenanceComplete(value interface{}) {
+	if err := j.validatePutOnMaintenanceCompleteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putOnMaintenanceComplete",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) PutOnMaintenanceStart(value interface{}) {
+	if err := j.validatePutOnMaintenanceStartParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putOnMaintenanceStart",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) PutOnStart(value interface{}) {
 	if err := j.validatePutOnStartParameters(value); err != nil {
 		panic(err)
@@ -605,6 +675,22 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) Re
 	_jsii_.InvokeVoid(
 		j,
 		"resetOnFailure",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) ResetOnMaintenanceComplete() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOnMaintenanceComplete",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) ResetOnMaintenanceStart() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOnMaintenanceStart",
 		nil, // no parameters
 	)
 }

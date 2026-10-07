@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktn.TerraformResource
 	AlwaysRunning() interface{}
@@ -56,6 +56,8 @@ type Job interface {
 	EmailNotificationsInput() *JobEmailNotifications
 	Environment() JobEnvironmentList
 	EnvironmentInput() interface{}
+	EnvironmentVariables() JobEnvironmentVariablesList
+	EnvironmentVariablesInput() interface{}
 	ExistingClusterId() *string
 	SetExistingClusterId(val *string)
 	ExistingClusterIdInput() *string
@@ -256,6 +258,7 @@ type Job interface {
 	PutDeployment(value *JobDeployment)
 	PutEmailNotifications(value *JobEmailNotifications)
 	PutEnvironment(value interface{})
+	PutEnvironmentVariables(value interface{})
 	PutGitSource(value *JobGitSource)
 	PutHealth(value *JobHealth)
 	PutJobCluster(value interface{})
@@ -302,6 +305,7 @@ type Job interface {
 	ResetEditMode()
 	ResetEmailNotifications()
 	ResetEnvironment()
+	ResetEnvironmentVariables()
 	ResetExistingClusterId()
 	ResetFormat()
 	ResetGitSource()
@@ -613,6 +617,26 @@ func (j *jsiiProxy_Job) EnvironmentInput() interface{} {
 	_jsii_.Get(
 		j,
 		"environmentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) EnvironmentVariables() JobEnvironmentVariablesList {
+	var returns JobEnvironmentVariablesList
+	_jsii_.Get(
+		j,
+		"environmentVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) EnvironmentVariablesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"environmentVariablesInput",
 		&returns,
 	)
 	return returns
@@ -1459,7 +1483,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1477,7 +1501,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -2178,6 +2202,17 @@ func (j *jsiiProxy_Job) PutEnvironment(value interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Job) PutEnvironmentVariables(value interface{}) {
+	if err := j.validatePutEnvironmentVariablesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putEnvironmentVariables",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) PutGitSource(value *JobGitSource) {
 	if err := j.validatePutGitSourceParameters(value); err != nil {
 		panic(err)
@@ -2518,6 +2553,14 @@ func (j *jsiiProxy_Job) ResetEnvironment() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetEnvironment",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetEnvironmentVariables() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEnvironmentVariables",
 		nil, // no parameters
 	)
 }

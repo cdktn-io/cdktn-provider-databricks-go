@@ -47,6 +47,9 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 	JavaDependencies() *[]*string
 	SetJavaDependencies(val *[]*string)
 	JavaDependenciesInput() *[]*string
+	ProjectEnvironment() *string
+	SetProjectEnvironment(val *string)
+	ProjectEnvironmentInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -84,6 +87,7 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 	ResetDependencies()
 	ResetEnvironmentVersion()
 	ResetJavaDependencies()
+	ResetProjectEnvironment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -249,6 +253,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) ProjectEnvironment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectEnvironment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) ProjectEnvironmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectEnvironmentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -381,6 +405,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.Set(
 		j,
 		"javaDependencies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference)SetProjectEnvironment(val *string) {
+	if err := j.validateSetProjectEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectEnvironment",
 		val,
 	)
 }
@@ -629,6 +664,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"resetJavaDependencies",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) ResetProjectEnvironment() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProjectEnvironment",
 		nil, // no parameters
 	)
 }

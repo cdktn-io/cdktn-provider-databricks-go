@@ -35,6 +35,8 @@ type DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiK
 	Plaintext() *string
 	SetPlaintext(val *string)
 	PlaintextInput() *string
+	SecretReference() DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueSecretReferenceOutputReference
+	SecretReferenceInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiK
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutSecretReference(value *DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueSecretReference)
 	ResetPlaintext()
+	ResetSecretReference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigCustomDirect
 	_jsii_.Get(
 		j,
 		"plaintextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueOutputReference) SecretReference() DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueSecretReferenceOutputReference {
+	var returns DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueSecretReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"secretReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueOutputReference) SecretReferenceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretReferenceInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigCustomDirect
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueOutputReference) PutSecretReference(value *DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueSecretReference) {
+	if err := d.validatePutSecretReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSecretReference",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueOutputReference) ResetPlaintext() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPlaintext",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueOutputReference) ResetSecretReference() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecretReference",
 		nil, // no parameters
 	)
 }

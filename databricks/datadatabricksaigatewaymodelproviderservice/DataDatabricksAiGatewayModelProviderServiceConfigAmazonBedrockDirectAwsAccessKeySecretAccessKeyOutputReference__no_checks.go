@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedroc
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeySecretAccessKeyOutputReference) validatePutSecretReferenceParameters(value *DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeySecretAccessKeySecretReference) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeySecretAccessKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

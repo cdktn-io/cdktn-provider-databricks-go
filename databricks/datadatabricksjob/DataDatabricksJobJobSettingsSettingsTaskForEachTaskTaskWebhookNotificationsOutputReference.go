@@ -36,6 +36,10 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications
 	OnDurationWarningThresholdExceededInput() interface{}
 	OnFailure() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailureList
 	OnFailureInput() interface{}
+	OnMaintenanceComplete() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteList
+	OnMaintenanceCompleteInput() interface{}
+	OnMaintenanceStart() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartList
+	OnMaintenanceStartInput() interface{}
 	OnStart() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStartList
 	OnStartInput() interface{}
 	OnStreamingBacklogExceeded() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList
@@ -76,11 +80,15 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOnDurationWarningThresholdExceeded(value interface{})
 	PutOnFailure(value interface{})
+	PutOnMaintenanceComplete(value interface{})
+	PutOnMaintenanceStart(value interface{})
 	PutOnStart(value interface{})
 	PutOnStreamingBacklogExceeded(value interface{})
 	PutOnSuccess(value interface{})
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
+	ResetOnMaintenanceComplete()
+	ResetOnMaintenanceStart()
 	ResetOnStart()
 	ResetOnStreamingBacklogExceeded()
 	ResetOnSuccess()
@@ -184,6 +192,46 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhoo
 	_jsii_.Get(
 		j,
 		"onFailureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) OnMaintenanceComplete() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteList {
+	var returns DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteList
+	_jsii_.Get(
+		j,
+		"onMaintenanceComplete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) OnMaintenanceCompleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onMaintenanceCompleteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) OnMaintenanceStart() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartList {
+	var returns DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartList
+	_jsii_.Get(
+		j,
+		"onMaintenanceStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) OnMaintenanceStartInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onMaintenanceStartInput",
 		&returns,
 	)
 	return returns
@@ -560,6 +608,28 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhoo
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) PutOnMaintenanceComplete(value interface{}) {
+	if err := d.validatePutOnMaintenanceCompleteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOnMaintenanceComplete",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) PutOnMaintenanceStart(value interface{}) {
+	if err := d.validatePutOnMaintenanceStartParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOnMaintenanceStart",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) PutOnStart(value interface{}) {
 	if err := d.validatePutOnStartParameters(value); err != nil {
 		panic(err)
@@ -605,6 +675,22 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhoo
 	_jsii_.InvokeVoid(
 		d,
 		"resetOnFailure",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) ResetOnMaintenanceComplete() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnMaintenanceComplete",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) ResetOnMaintenanceStart() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnMaintenanceStart",
 		nil, // no parameters
 	)
 }

@@ -5,7 +5,7 @@ package datadatabricksfeatureengineeringfeature
 
 
 type DataDatabricksFeatureEngineeringFeatureSourceFeatureViewSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/feature_engineering_feature#feature_references DataDatabricksFeatureEngineeringFeature#feature_references}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/feature_engineering_feature#feature_references DataDatabricksFeatureEngineeringFeature#feature_references}.
 	FeatureReferences interface{} `field:"optional" json:"featureReferences" yaml:"featureReferences"`
 }
 

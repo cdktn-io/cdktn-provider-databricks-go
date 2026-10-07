@@ -47,6 +47,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServ
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePrincipalClientSecretOutputReference) validatePutSecretReferenceParameters(value *AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePrincipalClientSecretSecretReference) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePrincipalClientSecretOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

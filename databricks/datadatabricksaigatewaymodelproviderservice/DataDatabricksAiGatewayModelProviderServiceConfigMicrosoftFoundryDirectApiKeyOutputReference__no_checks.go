@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeyOutputReference) validatePutSecretReferenceParameters(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeySecretReference) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

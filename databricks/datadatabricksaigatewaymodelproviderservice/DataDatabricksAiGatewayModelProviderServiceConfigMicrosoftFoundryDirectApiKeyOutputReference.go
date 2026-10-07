@@ -35,6 +35,8 @@ type DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiK
 	Plaintext() *string
 	SetPlaintext(val *string)
 	PlaintextInput() *string
+	SecretReference() DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeySecretReferenceOutputReference
+	SecretReferenceInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiK
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutSecretReference(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeySecretReference)
 	ResetPlaintext()
+	ResetSecretReference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	_jsii_.Get(
 		j,
 		"plaintextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeyOutputReference) SecretReference() DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeySecretReferenceOutputReference {
+	var returns DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeySecretReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"secretReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeyOutputReference) SecretReferenceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretReferenceInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFou
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeyOutputReference) PutSecretReference(value *DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeySecretReference) {
+	if err := d.validatePutSecretReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSecretReference",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeyOutputReference) ResetPlaintext() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPlaintext",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeyOutputReference) ResetSecretReference() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecretReference",
 		nil, // no parameters
 	)
 }

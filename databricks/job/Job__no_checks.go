@@ -99,6 +99,10 @@ func (j *jsiiProxy_Job) validatePutEnvironmentParameters(value interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutEnvironmentVariablesParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutGitSourceParameters(value *JobGitSource) error {
 	return nil
 }

@@ -37,6 +37,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOut
 	InternalValue() *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeatures
 	SetInternalValue(val *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeatures)
 	IsOnline() cdktn.IResolvable
+	JobId() *float64
 	LastMaterializationTime() *string
 	LatestBackfillOperation() *string
 	MaterializedFeatureId() *string
@@ -44,6 +45,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOut
 	MaterializedFeatureIdInput() *string
 	OfflineStoreConfig() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOfflineStoreConfigOutputReference
 	OnlineStoreConfig() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference
+	PipelineId() *string
 	PipelineScheduleState() *string
 	ProviderConfig() DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfigOutputReference
 	ProviderConfigInput() interface{}
@@ -200,6 +202,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) JobId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"jobId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) LastMaterializationTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -255,6 +267,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	_jsii_.Get(
 		j,
 		"onlineStoreConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOutputReference) PipelineId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineId",
 		&returns,
 	)
 	return returns

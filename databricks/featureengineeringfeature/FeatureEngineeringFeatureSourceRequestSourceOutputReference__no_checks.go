@@ -63,6 +63,10 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceRequestSourceOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceRequestSourceOutputReference) validateSetDataframeSchemaParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureSourceRequestSourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

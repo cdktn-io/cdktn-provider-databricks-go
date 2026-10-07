@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/connection databricks_connection}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/connection databricks_connection}.
 type Connection interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type Connection interface {
 	Owner() *string
 	SetOwner(val *string)
 	OwnerInput() *string
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	Properties() *map[string]*string
 	SetProperties(val *map[string]*string)
 	PropertiesInput() *map[string]*string
@@ -204,6 +207,7 @@ type Connection interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetParent()
 	ResetProperties()
 	ResetProviderConfig()
 	ResetReadOnly()
@@ -534,6 +538,26 @@ func (j *jsiiProxy_Connection) OwnerInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Connection) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Connection) Properties() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -705,7 +729,7 @@ func (j *jsiiProxy_Connection) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection(scope constructs.Construct, id *string, config *ConnectionConfig) Connection {
 	_init_.Initialize()
 
@@ -723,7 +747,7 @@ func NewConnection(scope constructs.Construct, id *string, config *ConnectionCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection_Override(c Connection, scope constructs.Construct, id *string, config *ConnectionConfig) {
 	_init_.Initialize()
 
@@ -845,6 +869,17 @@ func (j *jsiiProxy_Connection)SetOwner(val *string) {
 	_jsii_.Set(
 		j,
 		"owner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Connection)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }
@@ -1352,6 +1387,14 @@ func (c *jsiiProxy_Connection) ResetOwner() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Connection) ResetParent() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParent",
 		nil, // no parameters
 	)
 }

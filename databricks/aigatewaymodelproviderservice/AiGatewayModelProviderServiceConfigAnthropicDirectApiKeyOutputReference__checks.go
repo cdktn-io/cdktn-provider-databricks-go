@@ -93,6 +93,17 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutpu
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference) validatePutSecretReferenceParameters(value *AiGatewayModelProviderServiceConfigAnthropicDirectApiKeySecretReference) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")

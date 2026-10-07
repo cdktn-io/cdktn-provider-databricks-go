@@ -30,6 +30,8 @@ type DataDatabricksSandboxesSandboxesSpecOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Environment() DataDatabricksSandboxesSandboxesSpecEnvironmentOutputReference
+	EnvironmentInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksSandboxesSandboxesSpec
@@ -67,7 +69,9 @@ type DataDatabricksSandboxesSandboxesSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCompute(value *DataDatabricksSandboxesSandboxesSpecCompute)
+	PutEnvironment(value *DataDatabricksSandboxesSandboxesSpecEnvironment)
 	ResetCompute()
+	ResetEnvironment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -128,6 +132,26 @@ func (j *jsiiProxy_DataDatabricksSandboxesSandboxesSpecOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSandboxesSandboxesSpecOutputReference) Environment() DataDatabricksSandboxesSandboxesSpecEnvironmentOutputReference {
+	var returns DataDatabricksSandboxesSandboxesSpecEnvironmentOutputReference
+	_jsii_.Get(
+		j,
+		"environment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSandboxesSandboxesSpecOutputReference) EnvironmentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"environmentInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DataDatabricksSandboxesSandboxesSpecOutputReference) PutCompu
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksSandboxesSandboxesSpecOutputReference) PutEnvironment(value *DataDatabricksSandboxesSandboxesSpecEnvironment) {
+	if err := d.validatePutEnvironmentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putEnvironment",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksSandboxesSandboxesSpecOutputReference) ResetCompute() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCompute",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSandboxesSandboxesSpecOutputReference) ResetEnvironment() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnvironment",
 		nil, // no parameters
 	)
 }

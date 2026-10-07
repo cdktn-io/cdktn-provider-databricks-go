@@ -73,6 +73,7 @@ type JobTaskAiRuntimeTaskDeploymentsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCompute(value *JobTaskAiRuntimeTaskDeploymentsCompute)
+	ResetCommandPath()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -518,6 +519,14 @@ func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsOutputReference) PutCompute(va
 		j,
 		"putCompute",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskAiRuntimeTaskDeploymentsOutputReference) ResetCommandPath() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetCommandPath",
+		nil, // no parameters
 	)
 }
 

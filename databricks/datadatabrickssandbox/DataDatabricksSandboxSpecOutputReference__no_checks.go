@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksSandboxSpecOutputReference) validatePutComputeP
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksSandboxSpecOutputReference) validatePutEnvironmentParameters(value *DataDatabricksSandboxSpecEnvironment) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksSandboxSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

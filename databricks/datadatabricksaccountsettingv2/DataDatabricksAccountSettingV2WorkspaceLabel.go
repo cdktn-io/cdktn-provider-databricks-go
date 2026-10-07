@@ -5,9 +5,9 @@ package datadatabricksaccountsettingv2
 
 
 type DataDatabricksAccountSettingV2WorkspaceLabel struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}.
 	Color *string `field:"optional" json:"color" yaml:"color"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/account_setting_v2#label DataDatabricksAccountSettingV2#label}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/account_setting_v2#label DataDatabricksAccountSettingV2#label}.
 	Label *string `field:"optional" json:"label" yaml:"label"`
 }
 

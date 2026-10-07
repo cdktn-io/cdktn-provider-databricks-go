@@ -7,23 +7,31 @@ package datadatabricksjob
 type DataDatabricksJobJobSettingsSettingsTaskWebhookNotifications struct {
 	// on_duration_warning_threshold_exceeded block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
 	OnDurationWarningThresholdExceeded interface{} `field:"optional" json:"onDurationWarningThresholdExceeded" yaml:"onDurationWarningThresholdExceeded"`
 	// on_failure block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
 	OnFailure interface{} `field:"optional" json:"onFailure" yaml:"onFailure"`
+	// on_maintenance_complete block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/job#on_maintenance_complete DataDatabricksJob#on_maintenance_complete}
+	OnMaintenanceComplete interface{} `field:"optional" json:"onMaintenanceComplete" yaml:"onMaintenanceComplete"`
+	// on_maintenance_start block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/job#on_maintenance_start DataDatabricksJob#on_maintenance_start}
+	OnMaintenanceStart interface{} `field:"optional" json:"onMaintenanceStart" yaml:"onMaintenanceStart"`
 	// on_start block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
 	OnStart interface{} `field:"optional" json:"onStart" yaml:"onStart"`
 	// on_streaming_backlog_exceeded block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}
 	OnStreamingBacklogExceeded interface{} `field:"optional" json:"onStreamingBacklogExceeded" yaml:"onStreamingBacklogExceeded"`
 	// on_success block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
 	OnSuccess interface{} `field:"optional" json:"onSuccess" yaml:"onSuccess"`
 }
 

@@ -570,6 +570,14 @@ func (j *jsiiProxy_JobTaskOutputReference) validateSetEnvironmentKeyParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validateSetEnvironmentVariablesKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validateSetExistingClusterIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

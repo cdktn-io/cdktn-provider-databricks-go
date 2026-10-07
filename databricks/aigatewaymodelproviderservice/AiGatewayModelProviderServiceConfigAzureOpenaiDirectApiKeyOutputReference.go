@@ -35,6 +35,8 @@ type AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference i
 	Plaintext() *string
 	SetPlaintext(val *string)
 	PlaintextInput() *string
+	SecretReference() AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReferenceOutputReference
+	SecretReferenceInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference i
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutSecretReference(value *AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReference)
 	ResetPlaintext()
+	ResetSecretReference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOut
 	_jsii_.Get(
 		j,
 		"plaintextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) SecretReference() AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReferenceOutputReference {
+	var returns AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"secretReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) SecretReferenceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretReferenceInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOut
 	return returns
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) PutSecretReference(value *AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReference) {
+	if err := a.validatePutSecretReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSecretReference",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) ResetPlaintext() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPlaintext",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) ResetSecretReference() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSecretReference",
 		nil, // no parameters
 	)
 }

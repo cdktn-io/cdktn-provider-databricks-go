@@ -75,6 +75,14 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateSetOnFailurePar
 	return nil
 }
 
+func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateSetOnMaintenanceCompleteParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateSetOnMaintenanceStartParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateSetOnStartParameters(val *[]*string) error {
 	return nil
 }

@@ -5,15 +5,15 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/pipeline#parse_mode Pipeline#parse_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/pipeline#parse_mode Pipeline#parse_mode}.
 	ParseMode *string `field:"optional" json:"parseMode" yaml:"parseMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/pipeline#schema Pipeline#schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/pipeline#schema Pipeline#schema}.
 	Schema *string `field:"optional" json:"schema" yaml:"schema"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
 	SchemaFilePath *string `field:"optional" json:"schemaFilePath" yaml:"schemaFilePath"`
 	// schema_registry block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/pipeline#schema_registry Pipeline#schema_registry}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/pipeline#schema_registry Pipeline#schema_registry}
 	SchemaRegistry *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry `field:"optional" json:"schemaRegistry" yaml:"schemaRegistry"`
 }
 

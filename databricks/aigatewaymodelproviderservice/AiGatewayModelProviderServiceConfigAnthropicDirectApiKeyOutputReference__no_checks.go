@@ -47,6 +47,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutpu
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference) validatePutSecretReferenceParameters(value *AiGatewayModelProviderServiceConfigAnthropicDirectApiKeySecretReference) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

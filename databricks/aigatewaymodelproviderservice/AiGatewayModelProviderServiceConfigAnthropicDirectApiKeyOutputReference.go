@@ -35,6 +35,8 @@ type AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference int
 	Plaintext() *string
 	SetPlaintext(val *string)
 	PlaintextInput() *string
+	SecretReference() AiGatewayModelProviderServiceConfigAnthropicDirectApiKeySecretReferenceOutputReference
+	SecretReferenceInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference int
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutSecretReference(value *AiGatewayModelProviderServiceConfigAnthropicDirectApiKeySecretReference)
 	ResetPlaintext()
+	ResetSecretReference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutpu
 	_jsii_.Get(
 		j,
 		"plaintextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference) SecretReference() AiGatewayModelProviderServiceConfigAnthropicDirectApiKeySecretReferenceOutputReference {
+	var returns AiGatewayModelProviderServiceConfigAnthropicDirectApiKeySecretReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"secretReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference) SecretReferenceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretReferenceInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutpu
 	return returns
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference) PutSecretReference(value *AiGatewayModelProviderServiceConfigAnthropicDirectApiKeySecretReference) {
+	if err := a.validatePutSecretReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSecretReference",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference) ResetPlaintext() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPlaintext",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputReference) ResetSecretReference() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSecretReference",
 		nil, // no parameters
 	)
 }

@@ -35,6 +35,8 @@ type AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeyOutputRefere
 	Plaintext() *string
 	SetPlaintext(val *string)
 	PlaintextInput() *string
+	SecretReference() AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeySecretReferenceOutputReference
+	SecretReferenceInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeyOutputRefere
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutSecretReference(value *AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeySecretReference)
 	ResetPlaintext()
+	ResetSecretReference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiK
 	_jsii_.Get(
 		j,
 		"plaintextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeyOutputReference) SecretReference() AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeySecretReferenceOutputReference {
+	var returns AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeySecretReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"secretReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeyOutputReference) SecretReferenceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretReferenceInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiK
 	return returns
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeyOutputReference) PutSecretReference(value *AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeySecretReference) {
+	if err := a.validatePutSecretReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSecretReference",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeyOutputReference) ResetPlaintext() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPlaintext",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeyOutputReference) ResetSecretReference() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSecretReference",
 		nil, // no parameters
 	)
 }

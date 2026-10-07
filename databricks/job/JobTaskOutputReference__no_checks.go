@@ -187,6 +187,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validateSetEnvironmentKeyParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validateSetEnvironmentVariablesKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validateSetExistingClusterIdParameters(val *string) error {
 	return nil
 }

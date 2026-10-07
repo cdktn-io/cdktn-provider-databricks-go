@@ -47,6 +47,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiK
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validatePutSecretReferenceParameters(value *AiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueSecretReference) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package datadatabricksfeatureengineeringfeature
 
 
 type DataDatabricksFeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/feature_engineering_feature#feature DataDatabricksFeatureEngineeringFeature#feature}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/feature_engineering_feature#feature DataDatabricksFeatureEngineeringFeature#feature}.
 	Feature *string `field:"required" json:"feature" yaml:"feature"`
 }
 

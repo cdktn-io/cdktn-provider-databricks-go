@@ -41,6 +41,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "emailNotificationsInput", GoGetter: "EmailNotificationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "environment", GoGetter: "Environment"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentInput", GoGetter: "EnvironmentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentVariables", GoGetter: "EnvironmentVariables"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentVariablesInput", GoGetter: "EnvironmentVariablesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "existingClusterId", GoGetter: "ExistingClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "existingClusterIdInput", GoGetter: "ExistingClusterIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
@@ -108,6 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDeployment", GoMethod: "PutDeployment"},
 			_jsii_.MemberMethod{JsiiMethod: "putEmailNotifications", GoMethod: "PutEmailNotifications"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnvironment", GoMethod: "PutEnvironment"},
+			_jsii_.MemberMethod{JsiiMethod: "putEnvironmentVariables", GoMethod: "PutEnvironmentVariables"},
 			_jsii_.MemberMethod{JsiiMethod: "putGitSource", GoMethod: "PutGitSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putHealth", GoMethod: "PutHealth"},
 			_jsii_.MemberMethod{JsiiMethod: "putJobCluster", GoMethod: "PutJobCluster"},
@@ -147,6 +150,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEditMode", GoMethod: "ResetEditMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmailNotifications", GoMethod: "ResetEmailNotifications"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironment", GoMethod: "ResetEnvironment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVariables", GoMethod: "ResetEnvironmentVariables"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExistingClusterId", GoMethod: "ResetExistingClusterId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFormat", GoMethod: "ResetFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGitSource", GoMethod: "ResetGitSource"},
@@ -458,6 +462,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onDurationWarningThresholdExceededInput", GoGetter: "OnDurationWarningThresholdExceededInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailure", GoGetter: "OnFailure"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailureInput", GoGetter: "OnFailureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceComplete", GoGetter: "OnMaintenanceComplete"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceCompleteInput", GoGetter: "OnMaintenanceCompleteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStart", GoGetter: "OnMaintenanceStart"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStartInput", GoGetter: "OnMaintenanceStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStart", GoGetter: "OnStart"},
 			_jsii_.MemberProperty{JsiiProperty: "onStartInput", GoGetter: "OnStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStreamingBacklogExceeded", GoGetter: "OnStreamingBacklogExceeded"},
@@ -467,6 +475,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNoAlertForSkippedRuns", GoMethod: "ResetNoAlertForSkippedRuns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnDurationWarningThresholdExceeded", GoMethod: "ResetOnDurationWarningThresholdExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnFailure", GoMethod: "ResetOnFailure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceComplete", GoMethod: "ResetOnMaintenanceComplete"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceStart", GoMethod: "ResetOnMaintenanceStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStart", GoMethod: "ResetOnStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStreamingBacklogExceeded", GoMethod: "ResetOnStreamingBacklogExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnSuccess", GoMethod: "ResetOnSuccess"},
@@ -580,11 +590,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "javaDependencies", GoGetter: "JavaDependencies"},
 			_jsii_.MemberProperty{JsiiProperty: "javaDependenciesInput", GoGetter: "JavaDependenciesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "projectEnvironment", GoGetter: "ProjectEnvironment"},
+			_jsii_.MemberProperty{JsiiProperty: "projectEnvironmentInput", GoGetter: "ProjectEnvironmentInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBaseEnvironment", GoMethod: "ResetBaseEnvironment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClient", GoMethod: "ResetClient"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDependencies", GoMethod: "ResetDependencies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVersion", GoMethod: "ResetEnvironmentVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJavaDependencies", GoMethod: "ResetJavaDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProjectEnvironment", GoMethod: "ResetProjectEnvironment"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -592,6 +605,112 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobEnvironmentSpecOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobEnvironmentVariables",
+		reflect.TypeOf((*JobEnvironmentVariables)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobEnvironmentVariablesList",
+		reflect.TypeOf((*JobEnvironmentVariablesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobEnvironmentVariablesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobEnvironmentVariablesOutputReference",
+		reflect.TypeOf((*JobEnvironmentVariablesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentVariablesKey", GoGetter: "EnvironmentVariablesKey"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentVariablesKeyInput", GoGetter: "EnvironmentVariablesKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putSpec", GoMethod: "PutSpec"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSpec", GoMethod: "ResetSpec"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "spec", GoGetter: "Spec"},
+			_jsii_.MemberProperty{JsiiProperty: "specInput", GoGetter: "SpecInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobEnvironmentVariablesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobEnvironmentVariablesSpec",
+		reflect.TypeOf((*JobEnvironmentVariablesSpec)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobEnvironmentVariablesSpecOutputReference",
+		reflect.TypeOf((*JobEnvironmentVariablesSpecOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "files", GoGetter: "Files"},
+			_jsii_.MemberProperty{JsiiProperty: "filesInput", GoGetter: "FilesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFiles", GoMethod: "ResetFiles"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVariables", GoMethod: "ResetVariables"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "variables", GoGetter: "Variables"},
+			_jsii_.MemberProperty{JsiiProperty: "variablesInput", GoGetter: "VariablesInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobEnvironmentVariablesSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -5173,6 +5292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCompute", GoMethod: "PutCompute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCommandPath", GoMethod: "ResetCommandPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -5879,6 +5999,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onDurationWarningThresholdExceededInput", GoGetter: "OnDurationWarningThresholdExceededInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailure", GoGetter: "OnFailure"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailureInput", GoGetter: "OnFailureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceComplete", GoGetter: "OnMaintenanceComplete"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceCompleteInput", GoGetter: "OnMaintenanceCompleteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStart", GoGetter: "OnMaintenanceStart"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStartInput", GoGetter: "OnMaintenanceStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStart", GoGetter: "OnStart"},
 			_jsii_.MemberProperty{JsiiProperty: "onStartInput", GoGetter: "OnStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStreamingBacklogExceeded", GoGetter: "OnStreamingBacklogExceeded"},
@@ -5888,6 +6012,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNoAlertForSkippedRuns", GoMethod: "ResetNoAlertForSkippedRuns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnDurationWarningThresholdExceeded", GoMethod: "ResetOnDurationWarningThresholdExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnFailure", GoMethod: "ResetOnFailure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceComplete", GoMethod: "ResetOnMaintenanceComplete"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceStart", GoMethod: "ResetOnMaintenanceStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStart", GoMethod: "ResetOnStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStreamingBacklogExceeded", GoMethod: "ResetOnStreamingBacklogExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnSuccess", GoMethod: "ResetOnSuccess"},
@@ -6051,6 +6177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCompute", GoMethod: "PutCompute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCommandPath", GoMethod: "ResetCommandPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -6757,6 +6884,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onDurationWarningThresholdExceededInput", GoGetter: "OnDurationWarningThresholdExceededInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailure", GoGetter: "OnFailure"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailureInput", GoGetter: "OnFailureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceComplete", GoGetter: "OnMaintenanceComplete"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceCompleteInput", GoGetter: "OnMaintenanceCompleteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStart", GoGetter: "OnMaintenanceStart"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStartInput", GoGetter: "OnMaintenanceStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStart", GoGetter: "OnStart"},
 			_jsii_.MemberProperty{JsiiProperty: "onStartInput", GoGetter: "OnStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStreamingBacklogExceeded", GoGetter: "OnStreamingBacklogExceeded"},
@@ -6766,6 +6897,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNoAlertForSkippedRuns", GoMethod: "ResetNoAlertForSkippedRuns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnDurationWarningThresholdExceeded", GoMethod: "ResetOnDurationWarningThresholdExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnFailure", GoMethod: "ResetOnFailure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceComplete", GoMethod: "ResetOnMaintenanceComplete"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceStart", GoMethod: "ResetOnMaintenanceStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStart", GoMethod: "ResetOnStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStreamingBacklogExceeded", GoMethod: "ResetOnStreamingBacklogExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnSuccess", GoMethod: "ResetOnSuccess"},
@@ -8990,6 +9123,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "emailNotificationsInput", GoGetter: "EmailNotificationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentKey", GoGetter: "EnvironmentKey"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentKeyInput", GoGetter: "EnvironmentKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentVariablesKey", GoGetter: "EnvironmentVariablesKey"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentVariablesKeyInput", GoGetter: "EnvironmentVariablesKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "existingClusterId", GoGetter: "ExistingClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "existingClusterIdInput", GoGetter: "ExistingClusterIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -9073,6 +9208,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDisabled", GoMethod: "ResetDisabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmailNotifications", GoMethod: "ResetEmailNotifications"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentKey", GoMethod: "ResetEnvironmentKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVariablesKey", GoMethod: "ResetEnvironmentVariablesKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExistingClusterId", GoMethod: "ResetExistingClusterId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGenAiComputeTask", GoMethod: "ResetGenAiComputeTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealth", GoMethod: "ResetHealth"},
@@ -10242,6 +10378,126 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceComplete",
+		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceComplete)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteList",
+		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteOutputReference",
+		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceCompleteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStart",
+		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStart)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartList",
+		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartOutputReference",
+		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStartOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskWebhookNotificationsOnStart",
 		reflect.TypeOf((*JobTaskForEachTaskTaskWebhookNotificationsOnStart)(nil)).Elem(),
 	)
@@ -10446,6 +10702,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onDurationWarningThresholdExceededInput", GoGetter: "OnDurationWarningThresholdExceededInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailure", GoGetter: "OnFailure"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailureInput", GoGetter: "OnFailureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceComplete", GoGetter: "OnMaintenanceComplete"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceCompleteInput", GoGetter: "OnMaintenanceCompleteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStart", GoGetter: "OnMaintenanceStart"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStartInput", GoGetter: "OnMaintenanceStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStart", GoGetter: "OnStart"},
 			_jsii_.MemberProperty{JsiiProperty: "onStartInput", GoGetter: "OnStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStreamingBacklogExceeded", GoGetter: "OnStreamingBacklogExceeded"},
@@ -10454,11 +10714,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onSuccessInput", GoGetter: "OnSuccessInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnDurationWarningThresholdExceeded", GoMethod: "PutOnDurationWarningThresholdExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnFailure", GoMethod: "PutOnFailure"},
+			_jsii_.MemberMethod{JsiiMethod: "putOnMaintenanceComplete", GoMethod: "PutOnMaintenanceComplete"},
+			_jsii_.MemberMethod{JsiiMethod: "putOnMaintenanceStart", GoMethod: "PutOnMaintenanceStart"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnStart", GoMethod: "PutOnStart"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnStreamingBacklogExceeded", GoMethod: "PutOnStreamingBacklogExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnSuccess", GoMethod: "PutOnSuccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnDurationWarningThresholdExceeded", GoMethod: "ResetOnDurationWarningThresholdExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnFailure", GoMethod: "ResetOnFailure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceComplete", GoMethod: "ResetOnMaintenanceComplete"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceStart", GoMethod: "ResetOnMaintenanceStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStart", GoMethod: "ResetOnStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStreamingBacklogExceeded", GoMethod: "ResetOnStreamingBacklogExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnSuccess", GoMethod: "ResetOnSuccess"},
@@ -12708,6 +12972,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "emailNotificationsInput", GoGetter: "EmailNotificationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentKey", GoGetter: "EnvironmentKey"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentKeyInput", GoGetter: "EnvironmentKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentVariablesKey", GoGetter: "EnvironmentVariablesKey"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentVariablesKeyInput", GoGetter: "EnvironmentVariablesKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "existingClusterId", GoGetter: "ExistingClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "existingClusterIdInput", GoGetter: "ExistingClusterIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEachTask", GoGetter: "ForEachTask"},
@@ -12794,6 +13060,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDisabled", GoMethod: "ResetDisabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmailNotifications", GoMethod: "ResetEmailNotifications"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentKey", GoMethod: "ResetEnvironmentKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVariablesKey", GoMethod: "ResetEnvironmentVariablesKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExistingClusterId", GoMethod: "ResetExistingClusterId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForEachTask", GoMethod: "ResetForEachTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGenAiComputeTask", GoMethod: "ResetGenAiComputeTask"},
@@ -13964,6 +14231,126 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnMaintenanceComplete",
+		reflect.TypeOf((*JobTaskWebhookNotificationsOnMaintenanceComplete)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnMaintenanceCompleteList",
+		reflect.TypeOf((*JobTaskWebhookNotificationsOnMaintenanceCompleteList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskWebhookNotificationsOnMaintenanceCompleteList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnMaintenanceCompleteOutputReference",
+		reflect.TypeOf((*JobTaskWebhookNotificationsOnMaintenanceCompleteOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskWebhookNotificationsOnMaintenanceCompleteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnMaintenanceStart",
+		reflect.TypeOf((*JobTaskWebhookNotificationsOnMaintenanceStart)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnMaintenanceStartList",
+		reflect.TypeOf((*JobTaskWebhookNotificationsOnMaintenanceStartList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskWebhookNotificationsOnMaintenanceStartList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnMaintenanceStartOutputReference",
+		reflect.TypeOf((*JobTaskWebhookNotificationsOnMaintenanceStartOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskWebhookNotificationsOnMaintenanceStartOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.job.JobTaskWebhookNotificationsOnStart",
 		reflect.TypeOf((*JobTaskWebhookNotificationsOnStart)(nil)).Elem(),
 	)
@@ -14168,6 +14555,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onDurationWarningThresholdExceededInput", GoGetter: "OnDurationWarningThresholdExceededInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailure", GoGetter: "OnFailure"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailureInput", GoGetter: "OnFailureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceComplete", GoGetter: "OnMaintenanceComplete"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceCompleteInput", GoGetter: "OnMaintenanceCompleteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStart", GoGetter: "OnMaintenanceStart"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStartInput", GoGetter: "OnMaintenanceStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStart", GoGetter: "OnStart"},
 			_jsii_.MemberProperty{JsiiProperty: "onStartInput", GoGetter: "OnStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStreamingBacklogExceeded", GoGetter: "OnStreamingBacklogExceeded"},
@@ -14176,11 +14567,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onSuccessInput", GoGetter: "OnSuccessInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnDurationWarningThresholdExceeded", GoMethod: "PutOnDurationWarningThresholdExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnFailure", GoMethod: "PutOnFailure"},
+			_jsii_.MemberMethod{JsiiMethod: "putOnMaintenanceComplete", GoMethod: "PutOnMaintenanceComplete"},
+			_jsii_.MemberMethod{JsiiMethod: "putOnMaintenanceStart", GoMethod: "PutOnMaintenanceStart"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnStart", GoMethod: "PutOnStart"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnStreamingBacklogExceeded", GoMethod: "PutOnStreamingBacklogExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnSuccess", GoMethod: "PutOnSuccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnDurationWarningThresholdExceeded", GoMethod: "ResetOnDurationWarningThresholdExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnFailure", GoMethod: "ResetOnFailure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceComplete", GoMethod: "ResetOnMaintenanceComplete"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceStart", GoMethod: "ResetOnMaintenanceStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStart", GoMethod: "ResetOnStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStreamingBacklogExceeded", GoMethod: "ResetOnStreamingBacklogExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnSuccess", GoMethod: "ResetOnSuccess"},
@@ -15083,6 +15478,126 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnMaintenanceComplete",
+		reflect.TypeOf((*JobWebhookNotificationsOnMaintenanceComplete)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnMaintenanceCompleteList",
+		reflect.TypeOf((*JobWebhookNotificationsOnMaintenanceCompleteList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobWebhookNotificationsOnMaintenanceCompleteList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnMaintenanceCompleteOutputReference",
+		reflect.TypeOf((*JobWebhookNotificationsOnMaintenanceCompleteOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobWebhookNotificationsOnMaintenanceCompleteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnMaintenanceStart",
+		reflect.TypeOf((*JobWebhookNotificationsOnMaintenanceStart)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnMaintenanceStartList",
+		reflect.TypeOf((*JobWebhookNotificationsOnMaintenanceStartList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobWebhookNotificationsOnMaintenanceStartList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnMaintenanceStartOutputReference",
+		reflect.TypeOf((*JobWebhookNotificationsOnMaintenanceStartOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobWebhookNotificationsOnMaintenanceStartOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.job.JobWebhookNotificationsOnStart",
 		reflect.TypeOf((*JobWebhookNotificationsOnStart)(nil)).Elem(),
 	)
@@ -15287,6 +15802,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onDurationWarningThresholdExceededInput", GoGetter: "OnDurationWarningThresholdExceededInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailure", GoGetter: "OnFailure"},
 			_jsii_.MemberProperty{JsiiProperty: "onFailureInput", GoGetter: "OnFailureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceComplete", GoGetter: "OnMaintenanceComplete"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceCompleteInput", GoGetter: "OnMaintenanceCompleteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStart", GoGetter: "OnMaintenanceStart"},
+			_jsii_.MemberProperty{JsiiProperty: "onMaintenanceStartInput", GoGetter: "OnMaintenanceStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStart", GoGetter: "OnStart"},
 			_jsii_.MemberProperty{JsiiProperty: "onStartInput", GoGetter: "OnStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onStreamingBacklogExceeded", GoGetter: "OnStreamingBacklogExceeded"},
@@ -15295,11 +15814,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onSuccessInput", GoGetter: "OnSuccessInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnDurationWarningThresholdExceeded", GoMethod: "PutOnDurationWarningThresholdExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnFailure", GoMethod: "PutOnFailure"},
+			_jsii_.MemberMethod{JsiiMethod: "putOnMaintenanceComplete", GoMethod: "PutOnMaintenanceComplete"},
+			_jsii_.MemberMethod{JsiiMethod: "putOnMaintenanceStart", GoMethod: "PutOnMaintenanceStart"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnStart", GoMethod: "PutOnStart"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnStreamingBacklogExceeded", GoMethod: "PutOnStreamingBacklogExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnSuccess", GoMethod: "PutOnSuccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnDurationWarningThresholdExceeded", GoMethod: "ResetOnDurationWarningThresholdExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnFailure", GoMethod: "ResetOnFailure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceComplete", GoMethod: "ResetOnMaintenanceComplete"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnMaintenanceStart", GoMethod: "ResetOnMaintenanceStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStart", GoMethod: "ResetOnStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnStreamingBacklogExceeded", GoMethod: "ResetOnStreamingBacklogExceeded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnSuccess", GoMethod: "ResetOnSuccess"},

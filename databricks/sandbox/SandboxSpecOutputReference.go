@@ -30,6 +30,8 @@ type SandboxSpecOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Environment() SandboxSpecEnvironmentOutputReference
+	EnvironmentInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,7 +69,9 @@ type SandboxSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCompute(value *SandboxSpecCompute)
+	PutEnvironment(value *SandboxSpecEnvironment)
 	ResetCompute()
+	ResetEnvironment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -128,6 +132,26 @@ func (j *jsiiProxy_SandboxSpecOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SandboxSpecOutputReference) Environment() SandboxSpecEnvironmentOutputReference {
+	var returns SandboxSpecEnvironmentOutputReference
+	_jsii_.Get(
+		j,
+		"environment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SandboxSpecOutputReference) EnvironmentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"environmentInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (s *jsiiProxy_SandboxSpecOutputReference) PutCompute(value *SandboxSpecComp
 	)
 }
 
+func (s *jsiiProxy_SandboxSpecOutputReference) PutEnvironment(value *SandboxSpecEnvironment) {
+	if err := s.validatePutEnvironmentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEnvironment",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SandboxSpecOutputReference) ResetCompute() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCompute",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SandboxSpecOutputReference) ResetEnvironment() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnvironment",
 		nil, // no parameters
 	)
 }

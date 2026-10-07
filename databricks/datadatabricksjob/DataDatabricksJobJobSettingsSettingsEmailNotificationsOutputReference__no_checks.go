@@ -75,6 +75,14 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputR
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference) validateSetOnMaintenanceCompleteParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference) validateSetOnMaintenanceStartParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference) validateSetOnStartParameters(val *[]*string) error {
 	return nil
 }

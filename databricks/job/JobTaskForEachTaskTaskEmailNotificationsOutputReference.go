@@ -41,6 +41,12 @@ type JobTaskForEachTaskTaskEmailNotificationsOutputReference interface {
 	OnFailure() *[]*string
 	SetOnFailure(val *[]*string)
 	OnFailureInput() *[]*string
+	OnMaintenanceComplete() *[]*string
+	SetOnMaintenanceComplete(val *[]*string)
+	OnMaintenanceCompleteInput() *[]*string
+	OnMaintenanceStart() *[]*string
+	SetOnMaintenanceStart(val *[]*string)
+	OnMaintenanceStartInput() *[]*string
 	OnStart() *[]*string
 	SetOnStart(val *[]*string)
 	OnStartInput() *[]*string
@@ -85,6 +91,8 @@ type JobTaskForEachTaskTaskEmailNotificationsOutputReference interface {
 	ResetNoAlertForSkippedRuns()
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
+	ResetOnMaintenanceComplete()
+	ResetOnMaintenanceStart()
 	ResetOnStart()
 	ResetOnStreamingBacklogExceeded()
 	ResetOnSuccess()
@@ -208,6 +216,46 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) OnFa
 	_jsii_.Get(
 		j,
 		"onFailureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) OnMaintenanceComplete() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onMaintenanceComplete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) OnMaintenanceCompleteInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onMaintenanceCompleteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) OnMaintenanceStart() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onMaintenanceStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) OnMaintenanceStartInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onMaintenanceStartInput",
 		&returns,
 	)
 	return returns
@@ -383,6 +431,28 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference)SetOn
 	_jsii_.Set(
 		j,
 		"onFailure",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference)SetOnMaintenanceComplete(val *[]*string) {
+	if err := j.validateSetOnMaintenanceCompleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onMaintenanceComplete",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference)SetOnMaintenanceStart(val *[]*string) {
+	if err := j.validateSetOnMaintenanceStartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onMaintenanceStart",
 		val,
 	)
 }
@@ -648,6 +718,22 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		j,
 		"resetOnFailure",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) ResetOnMaintenanceComplete() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOnMaintenanceComplete",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) ResetOnMaintenanceStart() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOnMaintenanceStart",
 		nil, // no parameters
 	)
 }

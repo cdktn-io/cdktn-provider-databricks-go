@@ -5,7 +5,9 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureSourceRequestSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/feature_engineering_feature#flat_schema FeatureEngineeringFeature#flat_schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
+	DataframeSchema *string `field:"optional" json:"dataframeSchema" yaml:"dataframeSchema"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/feature_engineering_feature#flat_schema FeatureEngineeringFeature#flat_schema}.
 	FlatSchema *FeatureEngineeringFeatureSourceRequestSourceFlatSchema `field:"optional" json:"flatSchema" yaml:"flatSchema"`
 }
 

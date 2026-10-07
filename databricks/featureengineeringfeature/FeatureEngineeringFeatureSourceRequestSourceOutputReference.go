@@ -28,6 +28,9 @@ type FeatureEngineeringFeatureSourceRequestSourceOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataframeSchema() *string
+	SetDataframeSchema(val *string)
+	DataframeSchemaInput() *string
 	FlatSchema() FeatureEngineeringFeatureSourceRequestSourceFlatSchemaOutputReference
 	FlatSchemaInput() interface{}
 	// Experimental.
@@ -67,6 +70,7 @@ type FeatureEngineeringFeatureSourceRequestSourceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFlatSchema(value *FeatureEngineeringFeatureSourceRequestSourceFlatSchema)
+	ResetDataframeSchema()
 	ResetFlatSchema()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceRequestSourceOutputReference) 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceRequestSourceOutputReference) DataframeSchema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataframeSchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceRequestSourceOutputReference) DataframeSchemaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataframeSchemaInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceRequestSourceOutputReference)S
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceRequestSourceOutputReference)SetDataframeSchema(val *string) {
+	if err := j.validateSetDataframeSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataframeSchema",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceRequestSourceOutputReference) 
 		f,
 		"putFlatSchema",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceRequestSourceOutputReference) ResetDataframeSchema() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDataframeSchema",
+		nil, // no parameters
 	)
 }
 

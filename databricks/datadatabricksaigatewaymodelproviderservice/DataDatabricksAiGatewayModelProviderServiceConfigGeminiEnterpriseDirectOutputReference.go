@@ -40,6 +40,8 @@ type DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutp
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ServiceCredential() DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectServiceCredentialOutputReference
+	ServiceCredentialInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,9 +75,11 @@ type DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutp
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApiKey(value *DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKey)
+	PutServiceCredential(value *DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectServiceCredential)
 	ResetApiKey()
 	ResetProjectId()
 	ResetRegion()
+	ResetServiceCredential()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -196,6 +200,26 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterp
 	_jsii_.Get(
 		j,
 		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutputReference) ServiceCredential() DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectServiceCredentialOutputReference {
+	var returns DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectServiceCredentialOutputReference
+	_jsii_.Get(
+		j,
+		"serviceCredential",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutputReference) ServiceCredentialInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serviceCredentialInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterp
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutputReference) PutServiceCredential(value *DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectServiceCredential) {
+	if err := d.validatePutServiceCredentialParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putServiceCredential",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutputReference) ResetApiKey() {
 	_jsii_.InvokeVoid(
 		d,
@@ -543,6 +578,14 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterp
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutputReference) ResetServiceCredential() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceCredential",
 		nil, // no parameters
 	)
 }

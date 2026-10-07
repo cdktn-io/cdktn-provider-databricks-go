@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}.
 type DataDatabricksFeatureEngineeringMaterializedFeature interface {
 	cdktn.TerraformDataSource
 	BudgetPolicyId() *string
@@ -40,6 +40,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeature interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	IsOnline() cdktn.IResolvable
+	JobId() *float64
 	LastMaterializationTime() *string
 	LatestBackfillOperation() *string
 	// Experimental.
@@ -53,6 +54,7 @@ type DataDatabricksFeatureEngineeringMaterializedFeature interface {
 	Node() constructs.Node
 	OfflineStoreConfig() DataDatabricksFeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference
 	OnlineStoreConfig() DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference
+	PipelineId() *string
 	PipelineScheduleState() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
@@ -263,6 +265,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) IsOnline
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) JobId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"jobId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) LastMaterializationTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -338,6 +350,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) OnlineSt
 	_jsii_.Get(
 		j,
 		"onlineStoreConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) PipelineId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineId",
 		&returns,
 	)
 	return returns
@@ -464,7 +486,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeature) Terrafor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringMaterializedFeature(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringMaterializedFeatureConfig) DataDatabricksFeatureEngineeringMaterializedFeature {
 	_init_.Initialize()
 
@@ -482,7 +504,7 @@ func NewDataDatabricksFeatureEngineeringMaterializedFeature(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringMaterializedFeature_Override(d DataDatabricksFeatureEngineeringMaterializedFeature, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringMaterializedFeatureConfig) {
 	_init_.Initialize()
 

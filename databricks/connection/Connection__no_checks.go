@@ -143,6 +143,10 @@ func (j *jsiiProxy_Connection) validateSetOwnerParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Connection) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Connection) validateSetPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

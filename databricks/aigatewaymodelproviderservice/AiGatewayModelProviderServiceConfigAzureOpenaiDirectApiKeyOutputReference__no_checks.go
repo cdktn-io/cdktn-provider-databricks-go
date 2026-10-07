@@ -47,6 +47,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOut
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) validatePutSecretReferenceParameters(value *AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeySecretReference) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

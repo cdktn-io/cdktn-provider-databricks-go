@@ -51,6 +51,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutp
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutputReference) validatePutServiceCredentialParameters(value *AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectServiceCredential) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

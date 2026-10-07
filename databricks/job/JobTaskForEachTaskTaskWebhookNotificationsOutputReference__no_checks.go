@@ -55,6 +55,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) validatePutOnMaintenanceCompleteParameters(value interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) validatePutOnMaintenanceStartParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) validatePutOnStartParameters(value interface{}) error {
 	return nil
 }

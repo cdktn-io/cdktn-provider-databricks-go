@@ -7,11 +7,11 @@ package pipeline
 type PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry struct {
 	// confluent_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/pipeline#confluent_options Pipeline#confluent_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/pipeline#confluent_options Pipeline#confluent_options}
 	ConfluentOptions *PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions `field:"optional" json:"confluentOptions" yaml:"confluentOptions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
 	ConnectionName *string `field:"optional" json:"connectionName" yaml:"connectionName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/pipeline#protobuf_message_name Pipeline#protobuf_message_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/pipeline#protobuf_message_name Pipeline#protobuf_message_name}.
 	ProtobufMessageName *string `field:"optional" json:"protobufMessageName" yaml:"protobufMessageName"`
 }
 

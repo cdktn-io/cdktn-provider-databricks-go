@@ -62,6 +62,9 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	EnvironmentKey() *string
 	SetEnvironmentKey(val *string)
 	EnvironmentKeyInput() *string
+	EnvironmentVariablesKey() *string
+	SetEnvironmentVariablesKey(val *string)
+	EnvironmentVariablesKeyInput() *string
 	ExistingClusterId() *string
 	SetExistingClusterId(val *string)
 	ExistingClusterIdInput() *string
@@ -196,6 +199,7 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	ResetDisabled()
 	ResetEmailNotifications()
 	ResetEnvironmentKey()
+	ResetEnvironmentVariablesKey()
 	ResetExistingClusterId()
 	ResetGenAiComputeTask()
 	ResetHealth()
@@ -559,6 +563,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) EnvironmentKeyInput() 
 	_jsii_.Get(
 		j,
 		"environmentKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) EnvironmentVariablesKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentVariablesKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) EnvironmentVariablesKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentVariablesKeyInput",
 		&returns,
 	)
 	return returns
@@ -1174,6 +1198,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference)SetEnvironmentKey(val *
 	_jsii_.Set(
 		j,
 		"environmentKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference)SetEnvironmentVariablesKey(val *string) {
+	if err := j.validateSetEnvironmentVariablesKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentVariablesKey",
 		val,
 	)
 }
@@ -1898,6 +1933,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetEnvironmentKey() 
 	_jsii_.InvokeVoid(
 		j,
 		"resetEnvironmentKey",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetEnvironmentVariablesKey() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEnvironmentVariablesKey",
 		nil, // no parameters
 	)
 }

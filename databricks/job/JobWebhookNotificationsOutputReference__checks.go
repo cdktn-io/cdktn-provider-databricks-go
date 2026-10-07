@@ -155,6 +155,68 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnFailureP
 	return nil
 }
 
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnMaintenanceCompleteParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*JobWebhookNotificationsOnMaintenanceComplete:
+		value := value.(*[]*JobWebhookNotificationsOnMaintenanceComplete)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*JobWebhookNotificationsOnMaintenanceComplete:
+		value_ := value.([]*JobWebhookNotificationsOnMaintenanceComplete)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobWebhookNotificationsOnMaintenanceComplete; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnMaintenanceStartParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*JobWebhookNotificationsOnMaintenanceStart:
+		value := value.(*[]*JobWebhookNotificationsOnMaintenanceStart)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*JobWebhookNotificationsOnMaintenanceStart:
+		value_ := value.([]*JobWebhookNotificationsOnMaintenanceStart)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*JobWebhookNotificationsOnMaintenanceStart; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnStartParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
