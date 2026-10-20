@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/private_network_gateway databricks_private_network_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway databricks_private_network_gateway}.
 type DataDatabricksPrivateNetworkGateway interface {
 	cdktn.TerraformDataSource
 	AwsCloudConnection() DataDatabricksPrivateNetworkGatewayAwsCloudConnectionOutputReference
@@ -407,7 +407,7 @@ func (j *jsiiProxy_DataDatabricksPrivateNetworkGateway) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/private_network_gateway databricks_private_network_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway databricks_private_network_gateway} Data Source.
 func NewDataDatabricksPrivateNetworkGateway(scope constructs.Construct, id *string, config *DataDatabricksPrivateNetworkGatewayConfig) DataDatabricksPrivateNetworkGateway {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewDataDatabricksPrivateNetworkGateway(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/private_network_gateway databricks_private_network_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway databricks_private_network_gateway} Data Source.
 func NewDataDatabricksPrivateNetworkGateway_Override(d DataDatabricksPrivateNetworkGateway, scope constructs.Construct, id *string, config *DataDatabricksPrivateNetworkGatewayConfig) {
 	_init_.Initialize()
 

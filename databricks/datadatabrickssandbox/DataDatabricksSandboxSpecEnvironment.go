@@ -5,7 +5,7 @@ package datadatabrickssandbox
 
 
 type DataDatabricksSandboxSpecEnvironment struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/sandbox#image_uri DataDatabricksSandbox#image_uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sandbox#image_uri DataDatabricksSandbox#image_uri}.
 	ImageUri *string `field:"optional" json:"imageUri" yaml:"imageUri"`
 }
 
