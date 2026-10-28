@@ -5,7 +5,7 @@ package privatenetworkgateway
 
 
 type PrivateNetworkGatewayAwsCloudConnectionGatewaySubnets struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/private_network_gateway#subnet_id PrivateNetworkGateway#subnet_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/private_network_gateway#subnet_id PrivateNetworkGateway#subnet_id}.
 	SubnetId *string `field:"required" json:"subnetId" yaml:"subnetId"`
 }
 

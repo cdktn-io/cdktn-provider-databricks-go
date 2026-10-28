@@ -239,6 +239,10 @@ func (j *jsiiProxy_Job) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Job) validateSetDurationTargetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validateSetEditModeParameters(val *string) error {
 	return nil
 }

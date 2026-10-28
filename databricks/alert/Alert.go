@@ -5,14 +5,14 @@ package alert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/alert/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert databricks_alert}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert databricks_alert}.
 type Alert interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -647,7 +647,7 @@ func (j *jsiiProxy_Alert) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert databricks_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert databricks_alert} Resource.
 func NewAlert(scope constructs.Construct, id *string, config *AlertConfig) Alert {
 	_init_.Initialize()
 
@@ -665,7 +665,7 @@ func NewAlert(scope constructs.Construct, id *string, config *AlertConfig) Alert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert databricks_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert databricks_alert} Resource.
 func NewAlert_Override(a Alert, scope constructs.Construct, id *string, config *AlertConfig) {
 	_init_.Initialize()
 

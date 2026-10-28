@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datadatabricksjob
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateSetPageIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference) validateSetWidgetIdParameters(val *string) error {
+	return nil
+}
+
+func validateNewDataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

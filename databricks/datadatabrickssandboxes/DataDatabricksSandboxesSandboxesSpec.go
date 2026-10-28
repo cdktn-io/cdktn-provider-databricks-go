@@ -5,9 +5,9 @@ package datadatabrickssandboxes
 
 
 type DataDatabricksSandboxesSandboxesSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sandboxes#compute DataDatabricksSandboxes#compute}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/sandboxes#compute DataDatabricksSandboxes#compute}.
 	Compute *DataDatabricksSandboxesSandboxesSpecCompute `field:"optional" json:"compute" yaml:"compute"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sandboxes#environment DataDatabricksSandboxes#environment}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/sandboxes#environment DataDatabricksSandboxes#environment}.
 	Environment *DataDatabricksSandboxesSandboxesSpecEnvironment `field:"optional" json:"environment" yaml:"environment"`
 }
 

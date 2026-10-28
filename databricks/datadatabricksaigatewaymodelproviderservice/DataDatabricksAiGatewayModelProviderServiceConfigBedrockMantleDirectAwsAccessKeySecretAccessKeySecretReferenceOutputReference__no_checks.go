@@ -1,0 +1,81 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datadatabricksaigatewaymodelproviderservice
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

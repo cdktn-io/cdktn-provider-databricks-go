@@ -5,14 +5,14 @@ package credential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/credential/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/credential/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/credential databricks_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/credential databricks_credential}.
 type Credential interface {
 	cdktn.TerraformResource
 	AwsIamRole() CredentialAwsIamRoleOutputReference
@@ -881,7 +881,7 @@ func (j *jsiiProxy_Credential) UsedForManagedStorageInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/credential databricks_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/credential databricks_credential} Resource.
 func NewCredential(scope constructs.Construct, id *string, config *CredentialConfig) Credential {
 	_init_.Initialize()
 
@@ -899,7 +899,7 @@ func NewCredential(scope constructs.Construct, id *string, config *CredentialCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/credential databricks_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/credential databricks_credential} Resource.
 func NewCredential_Override(c Credential, scope constructs.Construct, id *string, config *CredentialConfig) {
 	_init_.Initialize()
 

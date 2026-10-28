@@ -55,6 +55,10 @@ func (a *jsiiProxy_AppPendingDeploymentOutputReference) validatePutGitSourcePara
 	return nil
 }
 
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) validatePutHealthCheckParameters(value *AppPendingDeploymentHealthCheck) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppPendingDeploymentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

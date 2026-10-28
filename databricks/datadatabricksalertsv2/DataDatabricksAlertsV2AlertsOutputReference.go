@@ -5,9 +5,9 @@ package datadatabricksalertsv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertsv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksalertsv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -31,6 +31,7 @@ type DataDatabricksAlertsV2AlertsOutputReference interface {
 	CreationStack() *[]*string
 	CustomDescription() *string
 	CustomSummary() *string
+	CustomTemplateFormat() *string
 	DisplayName() *string
 	EffectiveRunAs() DataDatabricksAlertsV2AlertsEffectiveRunAsOutputReference
 	Evaluation() DataDatabricksAlertsV2AlertsEvaluationOutputReference
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) CustomSummary() 
 	_jsii_.Get(
 		j,
 		"customSummary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) CustomTemplateFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customTemplateFormat",
 		&returns,
 	)
 	return returns

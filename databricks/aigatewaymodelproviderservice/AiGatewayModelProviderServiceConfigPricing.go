@@ -1,0 +1,11 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package aigatewaymodelproviderservice
+
+
+type AiGatewayModelProviderServiceConfigPricing struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/ai_gateway_model_provider_service#default_discount_basis_points AiGatewayModelProviderService#default_discount_basis_points}.
+	DefaultDiscountBasisPoints *float64 `field:"optional" json:"defaultDiscountBasisPoints" yaml:"defaultDiscountBasisPoints"`
+}
+

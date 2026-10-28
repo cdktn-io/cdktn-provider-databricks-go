@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) validatePutBedrockMantleParameters(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigBedrockMantle) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) validatePutCustomParameters(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 }
 
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) validatePutOpenaiParameters(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenai) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) validatePutPricingParameters(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigPricing) error {
 	return nil
 }
 

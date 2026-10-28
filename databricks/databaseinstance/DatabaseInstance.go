@@ -5,14 +5,14 @@ package databaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/databaseinstance/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/databaseinstance/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/database_instance databricks_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/database_instance databricks_database_instance}.
 type DatabaseInstance interface {
 	cdktn.TerraformResource
 	Capacity() *string
@@ -807,7 +807,7 @@ func (j *jsiiProxy_DatabaseInstance) UsagePolicyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance(scope constructs.Construct, id *string, config *DatabaseInstanceConfig) DatabaseInstance {
 	_init_.Initialize()
 
@@ -825,7 +825,7 @@ func NewDatabaseInstance(scope constructs.Construct, id *string, config *Databas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance_Override(d DatabaseInstance, scope constructs.Construct, id *string, config *DatabaseInstanceConfig) {
 	_init_.Initialize()
 

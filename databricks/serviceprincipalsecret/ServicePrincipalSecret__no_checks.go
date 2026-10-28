@@ -139,6 +139,10 @@ func (j *jsiiProxy_ServicePrincipalSecret) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) validateSetScopesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) validateSetSecretParameters(val *string) error {
 	return nil
 }

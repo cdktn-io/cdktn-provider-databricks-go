@@ -5,14 +5,14 @@ package datadatabricksaisearchindexes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindexes/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaisearchindexes/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_search_indexes databricks_ai_search_indexes}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_search_indexes databricks_ai_search_indexes}.
 type DataDatabricksAiSearchIndexes interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataDatabricksAiSearchIndexes) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_search_indexes databricks_ai_search_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_search_indexes databricks_ai_search_indexes} Data Source.
 func NewDataDatabricksAiSearchIndexes(scope constructs.Construct, id *string, config *DataDatabricksAiSearchIndexesConfig) DataDatabricksAiSearchIndexes {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataDatabricksAiSearchIndexes(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_search_indexes databricks_ai_search_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_search_indexes databricks_ai_search_indexes} Data Source.
 func NewDataDatabricksAiSearchIndexes_Override(d DataDatabricksAiSearchIndexes, scope constructs.Construct, id *string, config *DataDatabricksAiSearchIndexesConfig) {
 	_init_.Initialize()
 

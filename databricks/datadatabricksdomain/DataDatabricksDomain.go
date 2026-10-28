@@ -5,14 +5,14 @@ package datadatabricksdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdomain/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdomain/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/domain databricks_domain}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/domain databricks_domain}.
 type DataDatabricksDomain interface {
 	cdktn.TerraformDataSource
 	BusinessOwnerIds() *[]*float64
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataDatabricksDomain) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/domain databricks_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/domain databricks_domain} Data Source.
 func NewDataDatabricksDomain(scope constructs.Construct, id *string, config *DataDatabricksDomainConfig) DataDatabricksDomain {
 	_init_.Initialize()
 
@@ -460,7 +460,7 @@ func NewDataDatabricksDomain(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/domain databricks_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/domain databricks_domain} Data Source.
 func NewDataDatabricksDomain_Override(d DataDatabricksDomain, scope constructs.Construct, id *string, config *DataDatabricksDomainConfig) {
 	_init_.Initialize()
 

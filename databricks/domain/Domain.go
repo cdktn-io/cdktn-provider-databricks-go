@@ -5,14 +5,14 @@ package domain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/domain/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/domain/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/domain databricks_domain}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/domain databricks_domain}.
 type Domain interface {
 	cdktn.TerraformResource
 	BusinessOwnerIds() *[]*float64
@@ -627,7 +627,7 @@ func (j *jsiiProxy_Domain) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/domain databricks_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/domain databricks_domain} Resource.
 func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Domain {
 	_init_.Initialize()
 
@@ -645,7 +645,7 @@ func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Dom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/domain databricks_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/domain databricks_domain} Resource.
 func NewDomain_Override(d Domain, scope constructs.Construct, id *string, config *DomainConfig) {
 	_init_.Initialize()
 

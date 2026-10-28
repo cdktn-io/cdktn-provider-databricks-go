@@ -5,14 +5,14 @@ package budget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/budget/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/budget/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/budget databricks_budget}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/budget databricks_budget}.
 type Budget interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -560,7 +560,7 @@ func (j *jsiiProxy_Budget) UpdateTimeInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/budget databricks_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/budget databricks_budget} Resource.
 func NewBudget(scope constructs.Construct, id *string, config *BudgetConfig) Budget {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewBudget(scope constructs.Construct, id *string, config *BudgetConfig) Bud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/budget databricks_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/budget databricks_budget} Resource.
 func NewBudget_Override(b Budget, scope constructs.Construct, id *string, config *BudgetConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package sqlendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlendpoint/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/sqlendpoint/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
 type SqlEndpoint interface {
 	cdktn.TerraformResource
 	AutoStopMins() *float64
@@ -36,6 +36,9 @@ type SqlEndpoint interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatorName() *string
+	CustomerVersionLabel() *string
+	SetCustomerVersionLabel(val *string)
+	CustomerVersionLabelInput() *string
 	DataSourceId() *string
 	SetDataSourceId(val *string)
 	DataSourceIdInput() *string
@@ -69,6 +72,9 @@ type SqlEndpoint interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	MaxDbu() *float64
+	SetMaxDbu(val *float64)
+	MaxDbuInput() *float64
 	MaxNumClusters() *float64
 	SetMaxNumClusters(val *float64)
 	MaxNumClustersInput() *float64
@@ -98,10 +104,16 @@ type SqlEndpoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReydenClusterSizeMultiplier() *float64
+	SetReydenClusterSizeMultiplier(val *float64)
+	ReydenClusterSizeMultiplierInput() *float64
 	SpotInstancePolicy() *string
 	SetSpotInstancePolicy(val *string)
 	SpotInstancePolicyInput() *string
 	State() *string
+	StatementTimeout() *float64
+	SetStatementTimeout(val *float64)
+	StatementTimeoutInput() *float64
 	Tags() SqlEndpointTagsOutputReference
 	TagsInput() *SqlEndpointTags
 	// Experimental.
@@ -213,11 +225,13 @@ type SqlEndpoint interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAutoStopMins()
 	ResetChannel()
+	ResetCustomerVersionLabel()
 	ResetDataSourceId()
 	ResetEnablePhoton()
 	ResetEnableServerlessCompute()
 	ResetId()
 	ResetInstanceProfileArn()
+	ResetMaxDbu()
 	ResetMaxNumClusters()
 	ResetMinNumClusters()
 	ResetNoWait()
@@ -225,7 +239,9 @@ type SqlEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetReydenClusterSizeMultiplier()
 	ResetSpotInstancePolicy()
+	ResetStatementTimeout()
 	ResetTags()
 	ResetTimeouts()
 	ResetWarehouseType()
@@ -361,6 +377,26 @@ func (j *jsiiProxy_SqlEndpoint) CreatorName() *string {
 	_jsii_.Get(
 		j,
 		"creatorName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpoint) CustomerVersionLabel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerVersionLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpoint) CustomerVersionLabelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerVersionLabelInput",
 		&returns,
 	)
 	return returns
@@ -536,6 +572,26 @@ func (j *jsiiProxy_SqlEndpoint) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_SqlEndpoint) MaxDbu() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDbu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpoint) MaxDbuInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDbuInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlEndpoint) MaxNumClusters() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -706,6 +762,26 @@ func (j *jsiiProxy_SqlEndpoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SqlEndpoint) ReydenClusterSizeMultiplier() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"reydenClusterSizeMultiplier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpoint) ReydenClusterSizeMultiplierInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"reydenClusterSizeMultiplierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlEndpoint) SpotInstancePolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -731,6 +807,26 @@ func (j *jsiiProxy_SqlEndpoint) State() *string {
 	_jsii_.Get(
 		j,
 		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpoint) StatementTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"statementTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpoint) StatementTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"statementTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -827,7 +923,7 @@ func (j *jsiiProxy_SqlEndpoint) WarehouseTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointConfig) SqlEndpoint {
 	_init_.Initialize()
 
@@ -845,7 +941,7 @@ func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint_Override(s SqlEndpoint, scope constructs.Construct, id *string, config *SqlEndpointConfig) {
 	_init_.Initialize()
 
@@ -896,6 +992,17 @@ func (j *jsiiProxy_SqlEndpoint)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlEndpoint)SetCustomerVersionLabel(val *string) {
+	if err := j.validateSetCustomerVersionLabelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customerVersionLabel",
 		val,
 	)
 }
@@ -982,6 +1089,17 @@ func (j *jsiiProxy_SqlEndpoint)SetLifecycle(val *cdktn.TerraformResourceLifecycl
 	)
 }
 
+func (j *jsiiProxy_SqlEndpoint)SetMaxDbu(val *float64) {
+	if err := j.validateSetMaxDbuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxDbu",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlEndpoint)SetMaxNumClusters(val *float64) {
 	if err := j.validateSetMaxNumClustersParameters(val); err != nil {
 		panic(err)
@@ -1045,6 +1163,17 @@ func (j *jsiiProxy_SqlEndpoint)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_SqlEndpoint)SetReydenClusterSizeMultiplier(val *float64) {
+	if err := j.validateSetReydenClusterSizeMultiplierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reydenClusterSizeMultiplier",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlEndpoint)SetSpotInstancePolicy(val *string) {
 	if err := j.validateSetSpotInstancePolicyParameters(val); err != nil {
 		panic(err)
@@ -1052,6 +1181,17 @@ func (j *jsiiProxy_SqlEndpoint)SetSpotInstancePolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"spotInstancePolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlEndpoint)SetStatementTimeout(val *float64) {
+	if err := j.validateSetStatementTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"statementTimeout",
 		val,
 	)
 }
@@ -1507,6 +1647,14 @@ func (s *jsiiProxy_SqlEndpoint) ResetChannel() {
 	)
 }
 
+func (s *jsiiProxy_SqlEndpoint) ResetCustomerVersionLabel() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomerVersionLabel",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlEndpoint) ResetDataSourceId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1543,6 +1691,14 @@ func (s *jsiiProxy_SqlEndpoint) ResetInstanceProfileArn() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetInstanceProfileArn",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlEndpoint) ResetMaxDbu() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMaxDbu",
 		nil, // no parameters
 	)
 }
@@ -1587,10 +1743,26 @@ func (s *jsiiProxy_SqlEndpoint) ResetProviderConfig() {
 	)
 }
 
+func (s *jsiiProxy_SqlEndpoint) ResetReydenClusterSizeMultiplier() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetReydenClusterSizeMultiplier",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlEndpoint) ResetSpotInstancePolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSpotInstancePolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlEndpoint) ResetStatementTimeout() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStatementTimeout",
 		nil, // no parameters
 	)
 }

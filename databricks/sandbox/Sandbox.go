@@ -5,14 +5,14 @@ package sandbox
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/sandbox/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sandbox databricks_sandbox}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox databricks_sandbox}.
 type Sandbox interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -483,7 +483,7 @@ func (j *jsiiProxy_Sandbox) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sandbox databricks_sandbox} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox databricks_sandbox} Resource.
 func NewSandbox(scope constructs.Construct, id *string, config *SandboxConfig) Sandbox {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewSandbox(scope constructs.Construct, id *string, config *SandboxConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sandbox databricks_sandbox} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox databricks_sandbox} Resource.
 func NewSandbox_Override(s Sandbox, scope constructs.Construct, id *string, config *SandboxConfig) {
 	_init_.Initialize()
 

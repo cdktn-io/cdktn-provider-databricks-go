@@ -5,7 +5,7 @@ package privatenetworkgateway
 
 
 type PrivateNetworkGatewayAwsCloudConnectionCrossAccountRole struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/private_network_gateway#role_arn PrivateNetworkGateway#role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/private_network_gateway#role_arn PrivateNetworkGateway#role_arn}.
 	RoleArn *string `field:"required" json:"roleArn" yaml:"roleArn"`
 }
 

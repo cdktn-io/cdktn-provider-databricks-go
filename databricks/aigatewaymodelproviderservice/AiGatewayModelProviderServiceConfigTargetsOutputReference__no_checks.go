@@ -59,6 +59,10 @@ func (j *jsiiProxy_AiGatewayModelProviderServiceConfigTargetsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigTargetsOutputReference) validateSetEndpointRouteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiGatewayModelProviderServiceConfigTargetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

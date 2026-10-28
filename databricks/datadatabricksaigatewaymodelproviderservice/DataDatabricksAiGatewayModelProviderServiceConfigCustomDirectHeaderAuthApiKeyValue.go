@@ -5,9 +5,9 @@ package datadatabricksaigatewaymodelproviderservice
 
 
 type DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_gateway_model_provider_service#plaintext DataDatabricksAiGatewayModelProviderService#plaintext}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_gateway_model_provider_service#plaintext DataDatabricksAiGatewayModelProviderService#plaintext}.
 	Plaintext *string `field:"optional" json:"plaintext" yaml:"plaintext"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_gateway_model_provider_service#secret_reference DataDatabricksAiGatewayModelProviderService#secret_reference}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_gateway_model_provider_service#secret_reference DataDatabricksAiGatewayModelProviderService#secret_reference}.
 	SecretReference *DataDatabricksAiGatewayModelProviderServiceConfigCustomDirectHeaderAuthApiKeyValueSecretReference `field:"optional" json:"secretReference" yaml:"secretReference"`
 }
 

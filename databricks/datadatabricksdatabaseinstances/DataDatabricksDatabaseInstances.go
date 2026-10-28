@@ -5,14 +5,14 @@ package datadatabricksdatabaseinstances
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabaseinstances/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdatabaseinstances/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/database_instances databricks_database_instances}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/database_instances databricks_database_instances}.
 type DataDatabricksDatabaseInstances interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstances) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/database_instances databricks_database_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/database_instances databricks_database_instances} Data Source.
 func NewDataDatabricksDatabaseInstances(scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstancesConfig) DataDatabricksDatabaseInstances {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataDatabricksDatabaseInstances(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/database_instances databricks_database_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/database_instances databricks_database_instances} Data Source.
 func NewDataDatabricksDatabaseInstances_Override(d DataDatabricksDatabaseInstances, scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstancesConfig) {
 	_init_.Initialize()
 

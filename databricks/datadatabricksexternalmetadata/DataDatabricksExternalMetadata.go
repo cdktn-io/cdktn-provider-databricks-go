@@ -5,14 +5,14 @@ package datadatabricksexternalmetadata
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksexternalmetadata/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksexternalmetadata/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/external_metadata databricks_external_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/external_metadata databricks_external_metadata}.
 type DataDatabricksExternalMetadata interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DataDatabricksExternalMetadata) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source.
 func NewDataDatabricksExternalMetadata(scope constructs.Construct, id *string, config *DataDatabricksExternalMetadataConfig) DataDatabricksExternalMetadata {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewDataDatabricksExternalMetadata(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source.
 func NewDataDatabricksExternalMetadata_Override(d DataDatabricksExternalMetadata, scope constructs.Construct, id *string, config *DataDatabricksExternalMetadataConfig) {
 	_init_.Initialize()
 

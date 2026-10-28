@@ -91,6 +91,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "anthropicInput", GoGetter: "AnthropicInput"},
 			_jsii_.MemberProperty{JsiiProperty: "azureOpenai", GoGetter: "AzureOpenai"},
 			_jsii_.MemberProperty{JsiiProperty: "azureOpenaiInput", GoGetter: "AzureOpenaiInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bedrockMantle", GoGetter: "BedrockMantle"},
+			_jsii_.MemberProperty{JsiiProperty: "bedrockMantleInput", GoGetter: "BedrockMantleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -124,16 +126,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "microsoftFoundryInput", GoGetter: "MicrosoftFoundryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "openai", GoGetter: "Openai"},
 			_jsii_.MemberProperty{JsiiProperty: "openaiInput", GoGetter: "OpenaiInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pricing", GoGetter: "Pricing"},
+			_jsii_.MemberProperty{JsiiProperty: "pricingInput", GoGetter: "PricingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "providerType", GoGetter: "ProviderType"},
 			_jsii_.MemberProperty{JsiiProperty: "providerTypeInput", GoGetter: "ProviderTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAmazonBedrock", GoMethod: "PutAmazonBedrock"},
 			_jsii_.MemberMethod{JsiiMethod: "putAnthropic", GoMethod: "PutAnthropic"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureOpenai", GoMethod: "PutAzureOpenai"},
+			_jsii_.MemberMethod{JsiiMethod: "putBedrockMantle", GoMethod: "PutBedrockMantle"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustom", GoMethod: "PutCustom"},
 			_jsii_.MemberMethod{JsiiMethod: "putGeminiEnterprise", GoMethod: "PutGeminiEnterprise"},
 			_jsii_.MemberMethod{JsiiMethod: "putInferenceTable", GoMethod: "PutInferenceTable"},
 			_jsii_.MemberMethod{JsiiMethod: "putMicrosoftFoundry", GoMethod: "PutMicrosoftFoundry"},
 			_jsii_.MemberMethod{JsiiMethod: "putOpenai", GoMethod: "PutOpenai"},
+			_jsii_.MemberMethod{JsiiMethod: "putPricing", GoMethod: "PutPricing"},
 			_jsii_.MemberMethod{JsiiMethod: "putRateLimits", GoMethod: "PutRateLimits"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargets", GoMethod: "PutTargets"},
 			_jsii_.MemberProperty{JsiiProperty: "rateLimits", GoGetter: "RateLimits"},
@@ -142,6 +148,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAmazonBedrock", GoMethod: "ResetAmazonBedrock"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnthropic", GoMethod: "ResetAnthropic"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureOpenai", GoMethod: "ResetAzureOpenai"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBedrockMantle", GoMethod: "ResetBedrockMantle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustom", GoMethod: "ResetCustom"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForwardHeaders", GoMethod: "ResetForwardHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForwardQueryParameters", GoMethod: "ResetForwardQueryParameters"},
@@ -150,6 +157,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetInferenceTable", GoMethod: "ResetInferenceTable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMicrosoftFoundry", GoMethod: "ResetMicrosoftFoundry"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpenai", GoMethod: "ResetOpenai"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPricing", GoMethod: "ResetPricing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProviderType", GoMethod: "ResetProviderType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRateLimits", GoMethod: "ResetRateLimits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargets", GoMethod: "ResetTargets"},
@@ -949,6 +957,255 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAzureOpenaiOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantle",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantle)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirect",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirect)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKey",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKey)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeyOutputReference",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "accessKeyIdInput", GoGetter: "AccessKeyIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putSecretAccessKey", GoMethod: "PutSecretAccessKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccessKeyId", GoMethod: "ResetAccessKeyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretAccessKey", GoMethod: "ResetSecretAccessKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "secretAccessKey", GoGetter: "SecretAccessKey"},
+			_jsii_.MemberProperty{JsiiProperty: "secretAccessKeyInput", GoGetter: "SecretAccessKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKey",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKey)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeyOutputReference",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "plaintext", GoGetter: "Plaintext"},
+			_jsii_.MemberProperty{JsiiProperty: "plaintextInput", GoGetter: "PlaintextInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSecretReference", GoMethod: "PutSecretReference"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPlaintext", GoMethod: "ResetPlaintext"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretReference", GoMethod: "ResetSecretReference"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "secretReference", GoGetter: "SecretReference"},
+			_jsii_.MemberProperty{JsiiProperty: "secretReferenceInput", GoGetter: "SecretReferenceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReference",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReference)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectOutputReference",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "awsAccessKey", GoGetter: "AwsAccessKey"},
+			_jsii_.MemberProperty{JsiiProperty: "awsAccessKeyInput", GoGetter: "AwsAccessKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putAwsAccessKey", GoMethod: "PutAwsAccessKey"},
+			_jsii_.MemberMethod{JsiiMethod: "putServiceCredential", GoMethod: "PutServiceCredential"},
+			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
+			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAwsAccessKey", GoMethod: "ResetAwsAccessKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceCredential", GoMethod: "ResetServiceCredential"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceCredential", GoGetter: "ServiceCredential"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceCredentialInput", GoGetter: "ServiceCredentialInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectServiceCredential",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectServiceCredential)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectServiceCredentialOutputReference",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectServiceCredentialOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleDirectServiceCredentialOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleOutputReference",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "direct", GoGetter: "Direct"},
+			_jsii_.MemberProperty{JsiiProperty: "directInput", GoGetter: "DirectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putDirect", GoMethod: "PutDirect"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDirect", GoMethod: "ResetDirect"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -2002,6 +2259,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigPricing",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigPricing)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigPricingOutputReference",
+		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigPricingOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultDiscountBasisPoints", GoGetter: "DefaultDiscountBasisPoints"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultDiscountBasisPointsInput", GoGetter: "DefaultDiscountBasisPointsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultDiscountBasisPoints", GoMethod: "ResetDefaultDiscountBasisPoints"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigPricingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderService.DataDatabricksAiGatewayModelProviderServiceConfigRateLimits",
 		reflect.TypeOf((*DataDatabricksAiGatewayModelProviderServiceConfigRateLimits)(nil)).Elem(),
 	)
@@ -2106,6 +2402,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointRoute", GoGetter: "EndpointRoute"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointRouteInput", GoGetter: "EndpointRouteInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -2123,6 +2421,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "modelInput", GoGetter: "ModelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nativeApiTypes", GoGetter: "NativeApiTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "nativeApiTypesInput", GoGetter: "NativeApiTypesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEndpointRoute", GoMethod: "ResetEndpointRoute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNativeApiTypes", GoMethod: "ResetNativeApiTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

@@ -5,9 +5,9 @@ package workspaceiamworkspaceassignmentv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceiamworkspaceassignmentv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspaceiamworkspaceassignmentv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 

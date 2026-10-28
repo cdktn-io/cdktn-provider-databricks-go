@@ -5,14 +5,14 @@ package accountnetworkpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accountnetworkpolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accountnetworkpolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_network_policy databricks_account_network_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_network_policy databricks_account_network_policy}.
 type AccountNetworkPolicy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -464,7 +464,7 @@ func (j *jsiiProxy_AccountNetworkPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
 func NewAccountNetworkPolicy(scope constructs.Construct, id *string, config *AccountNetworkPolicyConfig) AccountNetworkPolicy {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewAccountNetworkPolicy(scope constructs.Construct, id *string, config *Acc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_network_policy databricks_account_network_policy} Resource.
 func NewAccountNetworkPolicy_Override(a AccountNetworkPolicy, scope constructs.Construct, id *string, config *AccountNetworkPolicyConfig) {
 	_init_.Initialize()
 

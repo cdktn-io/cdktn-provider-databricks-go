@@ -5,14 +5,14 @@ package sqlwidget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlwidget/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/sqlwidget/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_widget databricks_sql_widget}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_widget databricks_sql_widget}.
 type SqlWidget interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -583,7 +583,7 @@ func (j *jsiiProxy_SqlWidget) WidgetIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_widget databricks_sql_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_widget databricks_sql_widget} Resource.
 func NewSqlWidget(scope constructs.Construct, id *string, config *SqlWidgetConfig) SqlWidget {
 	_init_.Initialize()
 
@@ -601,7 +601,7 @@ func NewSqlWidget(scope constructs.Construct, id *string, config *SqlWidgetConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_widget databricks_sql_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_widget databricks_sql_widget} Resource.
 func NewSqlWidget_Override(s SqlWidget, scope constructs.Construct, id *string, config *SqlWidgetConfig) {
 	_init_.Initialize()
 

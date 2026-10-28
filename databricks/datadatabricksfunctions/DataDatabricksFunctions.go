@@ -5,14 +5,14 @@ package datadatabricksfunctions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksfunctions/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksfunctions/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/functions databricks_functions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/functions databricks_functions}.
 type DataDatabricksFunctions interface {
 	cdktn.TerraformDataSource
 	CatalogName() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataDatabricksFunctions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/functions databricks_functions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/functions databricks_functions} Data Source.
 func NewDataDatabricksFunctions(scope constructs.Construct, id *string, config *DataDatabricksFunctionsConfig) DataDatabricksFunctions {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataDatabricksFunctions(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/functions databricks_functions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/functions databricks_functions} Data Source.
 func NewDataDatabricksFunctions_Override(d DataDatabricksFunctions, scope constructs.Construct, id *string, config *DataDatabricksFunctionsConfig) {
 	_init_.Initialize()
 

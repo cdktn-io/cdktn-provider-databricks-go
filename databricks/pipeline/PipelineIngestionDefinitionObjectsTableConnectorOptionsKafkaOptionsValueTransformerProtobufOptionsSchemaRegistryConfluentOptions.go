@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/pipeline#subject Pipeline#subject}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/pipeline#subject Pipeline#subject}.
 	Subject *string `field:"optional" json:"subject" yaml:"subject"`
 }
 

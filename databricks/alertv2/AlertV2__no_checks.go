@@ -135,6 +135,10 @@ func (j *jsiiProxy_AlertV2) validateSetCustomSummaryParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_AlertV2) validateSetCustomTemplateFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertV2) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

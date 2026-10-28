@@ -5,9 +5,9 @@ package app
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/app/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/app/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -43,6 +43,8 @@ type AppPendingDeploymentOutputReference interface {
 	Fqn() *string
 	GitSource() AppPendingDeploymentGitSourceOutputReference
 	GitSourceInput() interface{}
+	HealthCheck() AppPendingDeploymentHealthCheckOutputReference
+	HealthCheckInput() interface{}
 	InternalValue() *AppPendingDeployment
 	SetInternalValue(val *AppPendingDeployment)
 	Mode() *string
@@ -87,10 +89,12 @@ type AppPendingDeploymentOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEnvVars(value interface{})
 	PutGitSource(value *AppPendingDeploymentGitSource)
+	PutHealthCheck(value *AppPendingDeploymentHealthCheck)
 	ResetCommand()
 	ResetDeploymentId()
 	ResetEnvVars()
 	ResetGitSource()
+	ResetHealthCheck()
 	ResetMode()
 	ResetSourceCodePath()
 	// Produce the Token's value at resolution time.
@@ -253,6 +257,26 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference) GitSourceInput() interfa
 	_jsii_.Get(
 		j,
 		"gitSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppPendingDeploymentOutputReference) HealthCheck() AppPendingDeploymentHealthCheckOutputReference {
+	var returns AppPendingDeploymentHealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"healthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppPendingDeploymentOutputReference) HealthCheckInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"healthCheckInput",
 		&returns,
 	)
 	return returns
@@ -683,6 +707,17 @@ func (a *jsiiProxy_AppPendingDeploymentOutputReference) PutGitSource(value *AppP
 	)
 }
 
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) PutHealthCheck(value *AppPendingDeploymentHealthCheck) {
+	if err := a.validatePutHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putHealthCheck",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetCommand() {
 	_jsii_.InvokeVoid(
 		a,
@@ -711,6 +746,14 @@ func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetGitSource() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetGitSource",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetHealthCheck() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHealthCheck",
 		nil, // no parameters
 	)
 }

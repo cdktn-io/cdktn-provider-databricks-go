@@ -59,6 +59,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAOutputReference) validate
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAOutputReference) validatePutBedrockMantleParameters(value *AiGatewayModelProviderServiceConfigBedrockMantle) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAOutputReference) validatePutCustomParameters(value *AiGatewayModelProviderServiceConfigCustom) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAOutputReference) validate
 }
 
 func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAOutputReference) validatePutOpenaiParameters(value *AiGatewayModelProviderServiceConfigOpenai) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigAOutputReference) validatePutPricingParameters(value *AiGatewayModelProviderServiceConfigPricing) error {
 	return nil
 }
 

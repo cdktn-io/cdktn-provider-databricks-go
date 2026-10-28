@@ -5,14 +5,14 @@ package mlflowexperiment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
 type MlflowExperiment interface {
 	cdktn.TerraformResource
 	ArtifactLocation() *string
@@ -630,7 +630,7 @@ func (j *jsiiProxy_MlflowExperiment) TraceLocationInput() *MlflowExperimentTrace
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
 func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowExperimentConfig) MlflowExperiment {
 	_init_.Initialize()
 
@@ -648,7 +648,7 @@ func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
 func NewMlflowExperiment_Override(m MlflowExperiment, scope constructs.Construct, id *string, config *MlflowExperimentConfig) {
 	_init_.Initialize()
 

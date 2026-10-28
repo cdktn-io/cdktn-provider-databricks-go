@@ -5,14 +5,14 @@ package systemschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/systemschema/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/systemschema/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/system_schema databricks_system_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/system_schema databricks_system_schema}.
 type SystemSchema interface {
 	cdktn.TerraformResource
 	AutoEnabled() cdktn.IResolvable
@@ -459,7 +459,7 @@ func (j *jsiiProxy_SystemSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchemaConfig) SystemSchema {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema_Override(s SystemSchema, scope constructs.Construct, id *string, config *SystemSchemaConfig) {
 	_init_.Initialize()
 

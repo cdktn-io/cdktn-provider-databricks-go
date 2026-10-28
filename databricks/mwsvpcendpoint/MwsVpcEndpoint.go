@@ -5,14 +5,14 @@ package mwsvpcendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mwsvpcendpoint/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mwsvpcendpoint/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint}.
 type MwsVpcEndpoint interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -607,7 +607,7 @@ func (j *jsiiProxy_MwsVpcEndpoint) VpcEndpointNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
 func NewMwsVpcEndpoint(scope constructs.Construct, id *string, config *MwsVpcEndpointConfig) MwsVpcEndpoint {
 	_init_.Initialize()
 
@@ -625,7 +625,7 @@ func NewMwsVpcEndpoint(scope constructs.Construct, id *string, config *MwsVpcEnd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
 func NewMwsVpcEndpoint_Override(m MwsVpcEndpoint, scope constructs.Construct, id *string, config *MwsVpcEndpointConfig) {
 	_init_.Initialize()
 

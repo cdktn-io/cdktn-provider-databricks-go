@@ -5,14 +5,14 @@ package datadatabrickscurrentmetastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickscurrentmetastore/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickscurrentmetastore/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/current_metastore databricks_current_metastore}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/current_metastore databricks_current_metastore}.
 type DataDatabricksCurrentMetastore interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataDatabricksCurrentMetastore) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/current_metastore databricks_current_metastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/current_metastore databricks_current_metastore} Data Source.
 func NewDataDatabricksCurrentMetastore(scope constructs.Construct, id *string, config *DataDatabricksCurrentMetastoreConfig) DataDatabricksCurrentMetastore {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataDatabricksCurrentMetastore(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/current_metastore databricks_current_metastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/current_metastore databricks_current_metastore} Data Source.
 func NewDataDatabricksCurrentMetastore_Override(d DataDatabricksCurrentMetastore, scope constructs.Construct, id *string, config *DataDatabricksCurrentMetastoreConfig) {
 	_init_.Initialize()
 

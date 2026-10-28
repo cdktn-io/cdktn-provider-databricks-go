@@ -1,0 +1,89 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datadatabricksjob
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validatePutWidgetsParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateSetFileFormatParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateSetIncludeAppliedFiltersParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateSetInternalValueParameters(val *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachment) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

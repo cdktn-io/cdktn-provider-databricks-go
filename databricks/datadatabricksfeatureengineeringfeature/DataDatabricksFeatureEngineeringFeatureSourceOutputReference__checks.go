@@ -148,6 +148,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference) validatePutSdpSourceParameters(value *DataDatabricksFeatureEngineeringFeatureSourceSdpSource) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference) validatePutStreamSourceParameters(value *DataDatabricksFeatureEngineeringFeatureSourceStreamSource) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -5,14 +5,14 @@ package obotoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/obotoken/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token databricks_obo_token}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token databricks_obo_token}.
 type OboToken interface {
 	cdktn.TerraformResource
 	ApplicationId() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_OboToken) TokenValue() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token databricks_obo_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token databricks_obo_token} Resource.
 func NewOboToken(scope constructs.Construct, id *string, config *OboTokenConfig) OboToken {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewOboToken(scope constructs.Construct, id *string, config *OboTokenConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token databricks_obo_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token databricks_obo_token} Resource.
 func NewOboToken_Override(o OboToken, scope constructs.Construct, id *string, config *OboTokenConfig) {
 	_init_.Initialize()
 

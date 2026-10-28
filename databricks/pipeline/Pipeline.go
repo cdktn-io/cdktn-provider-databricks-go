@@ -5,14 +5,14 @@ package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/pipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/pipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktn.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -113,6 +113,9 @@ type Pipeline interface {
 	Node() constructs.Node
 	Notification() PipelineNotificationList
 	NotificationInput() interface{}
+	ParentPath() *string
+	SetParentPath(val *string)
+	ParentPathInput() *string
 	Photon() interface{}
 	SetPhoton(val interface{})
 	PhotonInput() interface{}
@@ -311,6 +314,7 @@ type Pipeline interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParentPath()
 	ResetPhoton()
 	ResetProviderConfig()
 	ResetRestartWindow()
@@ -975,6 +979,26 @@ func (j *jsiiProxy_Pipeline) NotificationInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Pipeline) ParentPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) ParentPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentPathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Pipeline) Photon() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1376,7 +1400,7 @@ func (j *jsiiProxy_Pipeline) UsagePolicyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1394,7 +1418,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -1626,6 +1650,17 @@ func (j *jsiiProxy_Pipeline)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pipeline)SetParentPath(val *string) {
+	if err := j.validateSetParentPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parentPath",
 		val,
 	)
 }
@@ -2538,6 +2573,14 @@ func (p *jsiiProxy_Pipeline) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetParentPath() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetParentPath",
 		nil, // no parameters
 	)
 }

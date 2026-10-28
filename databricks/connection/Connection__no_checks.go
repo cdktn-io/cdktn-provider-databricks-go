@@ -159,6 +159,10 @@ func (j *jsiiProxy_Connection) validateSetReadOnlyParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Connection) validateSetSecretsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewConnectionParameters(scope constructs.Construct, id *string, config *ConnectionConfig) error {
 	return nil
 }

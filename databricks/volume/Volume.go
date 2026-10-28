@@ -5,14 +5,14 @@ package volume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/volume/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/volume/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/volume databricks_volume}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/volume databricks_volume}.
 type Volume interface {
 	cdktn.TerraformResource
 	CatalogName() *string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_Volume) VolumeTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/volume databricks_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/volume databricks_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/volume databricks_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/volume databricks_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 

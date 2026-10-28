@@ -1,0 +1,81 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package aigatewaymodelproviderservice
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewAiGatewayModelProviderServiceConfigBedrockMantleDirectAwsAccessKeySecretAccessKeySecretReferenceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

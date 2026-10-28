@@ -5,14 +5,14 @@ package connection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/connection/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/connection/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/connection databricks_connection}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/connection databricks_connection}.
 type Connection interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -93,6 +93,9 @@ type Connection interface {
 	ReadOnly() interface{}
 	SetReadOnly(val interface{})
 	ReadOnlyInput() interface{}
+	Secrets() *map[string]*string
+	SetSecrets(val *map[string]*string)
+	SecretsInput() *map[string]*string
 	SecurableType() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -211,6 +214,7 @@ type Connection interface {
 	ResetProperties()
 	ResetProviderConfig()
 	ResetReadOnly()
+	ResetSecrets()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -658,6 +662,26 @@ func (j *jsiiProxy_Connection) ReadOnlyInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Connection) Secrets() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"secrets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) SecretsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"secretsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Connection) SecurableType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -729,7 +753,7 @@ func (j *jsiiProxy_Connection) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection(scope constructs.Construct, id *string, config *ConnectionConfig) Connection {
 	_init_.Initialize()
 
@@ -747,7 +771,7 @@ func NewConnection(scope constructs.Construct, id *string, config *ConnectionCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection_Override(c Connection, scope constructs.Construct, id *string, config *ConnectionConfig) {
 	_init_.Initialize()
 
@@ -921,6 +945,17 @@ func (j *jsiiProxy_Connection)SetReadOnly(val interface{}) {
 	_jsii_.Set(
 		j,
 		"readOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Connection)SetSecrets(val *map[string]*string) {
+	if err := j.validateSetSecretsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secrets",
 		val,
 	)
 }
@@ -1419,6 +1454,14 @@ func (c *jsiiProxy_Connection) ResetReadOnly() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetReadOnly",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Connection) ResetSecrets() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecrets",
 		nil, // no parameters
 	)
 }

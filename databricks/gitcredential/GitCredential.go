@@ -5,14 +5,14 @@ package gitcredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/gitcredential/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/gitcredential/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/git_credential databricks_git_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/git_credential databricks_git_credential}.
 type GitCredential interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -583,7 +583,7 @@ func (j *jsiiProxy_GitCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential(scope constructs.Construct, id *string, config *GitCredentialConfig) GitCredential {
 	_init_.Initialize()
 
@@ -601,7 +601,7 @@ func NewGitCredential(scope constructs.Construct, id *string, config *GitCredent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential_Override(g GitCredential, scope constructs.Construct, id *string, config *GitCredentialConfig) {
 	_init_.Initialize()
 

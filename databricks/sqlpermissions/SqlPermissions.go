@@ -5,14 +5,14 @@ package sqlpermissions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlpermissions/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/sqlpermissions/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_permissions databricks_sql_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_permissions databricks_sql_permissions}.
 type SqlPermissions interface {
 	cdktn.TerraformResource
 	AnonymousFunction() interface{}
@@ -584,7 +584,7 @@ func (j *jsiiProxy_SqlPermissions) ViewInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
 func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermissionsConfig) SqlPermissions {
 	_init_.Initialize()
 
@@ -602,7 +602,7 @@ func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
 func NewSqlPermissions_Override(s SqlPermissions, scope constructs.Construct, id *string, config *SqlPermissionsConfig) {
 	_init_.Initialize()
 

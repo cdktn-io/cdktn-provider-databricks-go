@@ -5,14 +5,14 @@ package privatenetworkgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/privatenetworkgateway/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/privatenetworkgateway/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/private_network_gateway databricks_private_network_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/private_network_gateway databricks_private_network_gateway}.
 type PrivateNetworkGateway interface {
 	cdktn.TerraformResource
 	AwsCloudConnection() PrivateNetworkGatewayAwsCloudConnectionOutputReference
@@ -588,7 +588,7 @@ func (j *jsiiProxy_PrivateNetworkGateway) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/private_network_gateway databricks_private_network_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/private_network_gateway databricks_private_network_gateway} Resource.
 func NewPrivateNetworkGateway(scope constructs.Construct, id *string, config *PrivateNetworkGatewayConfig) PrivateNetworkGateway {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewPrivateNetworkGateway(scope constructs.Construct, id *string, config *Pr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/private_network_gateway databricks_private_network_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/private_network_gateway databricks_private_network_gateway} Resource.
 func NewPrivateNetworkGateway_Override(p PrivateNetworkGateway, scope constructs.Construct, id *string, config *PrivateNetworkGatewayConfig) {
 	_init_.Initialize()
 

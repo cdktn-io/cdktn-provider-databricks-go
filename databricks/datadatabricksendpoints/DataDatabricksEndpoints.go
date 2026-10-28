@@ -5,14 +5,14 @@ package datadatabricksendpoints
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoints/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksendpoints/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/endpoints databricks_endpoints}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/endpoints databricks_endpoints}.
 type DataDatabricksEndpoints interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDatabricksEndpoints) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/endpoints databricks_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/endpoints databricks_endpoints} Data Source.
 func NewDataDatabricksEndpoints(scope constructs.Construct, id *string, config *DataDatabricksEndpointsConfig) DataDatabricksEndpoints {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDatabricksEndpoints(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/endpoints databricks_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/endpoints databricks_endpoints} Data Source.
 func NewDataDatabricksEndpoints_Override(d DataDatabricksEndpoints, scope constructs.Construct, id *string, config *DataDatabricksEndpointsConfig) {
 	_init_.Initialize()
 

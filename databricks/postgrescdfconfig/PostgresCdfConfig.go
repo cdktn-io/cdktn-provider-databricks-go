@@ -5,14 +5,14 @@ package postgrescdfconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescdfconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgrescdfconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config}.
 type PostgresCdfConfig interface {
 	cdktn.TerraformResource
 	Catalog() *string
@@ -506,7 +506,7 @@ func (j *jsiiProxy_PostgresCdfConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config} Resource.
 func NewPostgresCdfConfig(scope constructs.Construct, id *string, config *PostgresCdfConfigConfig) PostgresCdfConfig {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewPostgresCdfConfig(scope constructs.Construct, id *string, config *Postgr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config} Resource.
 func NewPostgresCdfConfig_Override(p PostgresCdfConfig, scope constructs.Construct, id *string, config *PostgresCdfConfigConfig) {
 	_init_.Initialize()
 

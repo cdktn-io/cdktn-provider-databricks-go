@@ -5,14 +5,14 @@ package datadatabrickssupervisoragent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragent/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssupervisoragent/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent databricks_supervisor_agent}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent databricks_supervisor_agent}.
 type DataDatabricksSupervisorAgent interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -409,7 +409,7 @@ func (j *jsiiProxy_DataDatabricksSupervisorAgent) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent databricks_supervisor_agent} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent databricks_supervisor_agent} Data Source.
 func NewDataDatabricksSupervisorAgent(scope constructs.Construct, id *string, config *DataDatabricksSupervisorAgentConfig) DataDatabricksSupervisorAgent {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewDataDatabricksSupervisorAgent(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent databricks_supervisor_agent} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent databricks_supervisor_agent} Data Source.
 func NewDataDatabricksSupervisorAgent_Override(d DataDatabricksSupervisorAgent, scope constructs.Construct, id *string, config *DataDatabricksSupervisorAgentConfig) {
 	_init_.Initialize()
 

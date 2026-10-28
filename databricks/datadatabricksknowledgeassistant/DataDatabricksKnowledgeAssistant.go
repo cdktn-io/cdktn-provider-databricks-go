@@ -5,14 +5,14 @@ package datadatabricksknowledgeassistant
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksknowledgeassistant/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksknowledgeassistant/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/knowledge_assistant databricks_knowledge_assistant}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/knowledge_assistant databricks_knowledge_assistant}.
 type DataDatabricksKnowledgeAssistant interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataDatabricksKnowledgeAssistant) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/knowledge_assistant databricks_knowledge_assistant} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/knowledge_assistant databricks_knowledge_assistant} Data Source.
 func NewDataDatabricksKnowledgeAssistant(scope constructs.Construct, id *string, config *DataDatabricksKnowledgeAssistantConfig) DataDatabricksKnowledgeAssistant {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewDataDatabricksKnowledgeAssistant(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/knowledge_assistant databricks_knowledge_assistant} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/knowledge_assistant databricks_knowledge_assistant} Data Source.
 func NewDataDatabricksKnowledgeAssistant_Override(d DataDatabricksKnowledgeAssistant, scope constructs.Construct, id *string, config *DataDatabricksKnowledgeAssistantConfig) {
 	_init_.Initialize()
 

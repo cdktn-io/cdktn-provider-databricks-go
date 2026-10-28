@@ -5,14 +5,14 @@ package datadatabricksonlinestores
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksonlinestores/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksonlinestores/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/online_stores databricks_online_stores}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/online_stores databricks_online_stores}.
 type DataDatabricksOnlineStores interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksOnlineStores) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/online_stores databricks_online_stores} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/online_stores databricks_online_stores} Data Source.
 func NewDataDatabricksOnlineStores(scope constructs.Construct, id *string, config *DataDatabricksOnlineStoresConfig) DataDatabricksOnlineStores {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataDatabricksOnlineStores(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/online_stores databricks_online_stores} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/online_stores databricks_online_stores} Data Source.
 func NewDataDatabricksOnlineStores_Override(d DataDatabricksOnlineStores, scope constructs.Construct, id *string, config *DataDatabricksOnlineStoresConfig) {
 	_init_.Initialize()
 

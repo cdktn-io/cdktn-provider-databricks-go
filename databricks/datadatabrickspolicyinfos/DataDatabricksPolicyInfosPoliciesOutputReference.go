@@ -5,9 +5,9 @@ package datadatabrickspolicyinfos
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspolicyinfos/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickspolicyinfos/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -37,6 +37,7 @@ type DataDatabricksPolicyInfosPoliciesOutputReference interface {
 	ForSecurableType() *string
 	// Experimental.
 	Fqn() *string
+	GovernedTags() DataDatabricksPolicyInfosPoliciesGovernedTagsList
 	Grant() DataDatabricksPolicyInfosPoliciesGrantOutputReference
 	Id() *string
 	InternalValue() *DataDatabricksPolicyInfosPolicies
@@ -213,6 +214,16 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) GovernedTags() DataDatabricksPolicyInfosPoliciesGovernedTagsList {
+	var returns DataDatabricksPolicyInfosPoliciesGovernedTagsList
+	_jsii_.Get(
+		j,
+		"governedTags",
 		&returns,
 	)
 	return returns

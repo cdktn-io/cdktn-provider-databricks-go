@@ -5,14 +5,14 @@ package cluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/cluster/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/cluster/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/cluster databricks_cluster}.
 type Cluster interface {
 	cdktn.TerraformResource
 	ApplyPolicyDefaultValues() interface{}
@@ -1443,7 +1443,7 @@ func (j *jsiiProxy_Cluster) WorkloadTypeInput() *ClusterWorkloadType {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1461,7 +1461,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 

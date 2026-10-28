@@ -47,6 +47,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) validatePutAttachmentParameters(value *JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachment) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) validatePutSubscribersParameters(value interface{}) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package customappintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/customappintegration/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/customappintegration/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/custom_app_integration databricks_custom_app_integration}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/custom_app_integration databricks_custom_app_integration}.
 type CustomAppIntegration interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -656,7 +656,7 @@ func (j *jsiiProxy_CustomAppIntegration) UserAuthorizedScopesInput() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
 func NewCustomAppIntegration(scope constructs.Construct, id *string, config *CustomAppIntegrationConfig) CustomAppIntegration {
 	_init_.Initialize()
 
@@ -674,7 +674,7 @@ func NewCustomAppIntegration(scope constructs.Construct, id *string, config *Cus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
 func NewCustomAppIntegration_Override(c CustomAppIntegration, scope constructs.Construct, id *string, config *CustomAppIntegrationConfig) {
 	_init_.Initialize()
 

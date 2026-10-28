@@ -5,14 +5,16 @@ package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksjob/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksjob/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference interface {
 	cdktn.ComplexObject
+	Attachment() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentOutputReference
+	AttachmentInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachment
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -72,7 +74,9 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscri
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAttachment(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachment)
 	PutSubscribers(value interface{})
+	ResetAttachment()
 	ResetCustomSubject()
 	ResetPaused()
 	ResetSubscribers()
@@ -89,6 +93,26 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscri
 // The jsii proxy struct for DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference
 type jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) Attachment() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentOutputReference
+	_jsii_.Get(
+		j,
+		"attachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) AttachmentInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachment {
+	var returns *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachment
+	_jsii_.Get(
+		j,
+		"attachmentInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) ComplexObjectIndex() interface{} {
@@ -512,6 +536,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashbo
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) PutAttachment(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionAttachment) {
+	if err := d.validatePutAttachmentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAttachment",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) PutSubscribers(value interface{}) {
 	if err := d.validatePutSubscribersParameters(value); err != nil {
 		panic(err)
@@ -520,6 +555,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashbo
 		d,
 		"putSubscribers",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) ResetAttachment() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAttachment",
+		nil, // no parameters
 	)
 }
 

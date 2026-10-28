@@ -5,14 +5,14 @@ package dataclassificationcatalogconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataclassificationcatalogconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataclassificationcatalogconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config}.
 type DataClassificationCatalogConfig interface {
 	cdktn.TerraformResource
 	AutoTagConfigs() DataClassificationCatalogConfigAutoTagConfigsList
@@ -474,7 +474,7 @@ func (j *jsiiProxy_DataClassificationCatalogConfig) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource.
 func NewDataClassificationCatalogConfig(scope constructs.Construct, id *string, config *DataClassificationCatalogConfigConfig) DataClassificationCatalogConfig {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewDataClassificationCatalogConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource.
 func NewDataClassificationCatalogConfig_Override(d DataClassificationCatalogConfig, scope constructs.Construct, id *string, config *DataClassificationCatalogConfigConfig) {
 	_init_.Initialize()
 

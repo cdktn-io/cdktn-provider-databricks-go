@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscrip
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionOutputReference) validatePutAttachmentParameters(value *DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachment) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionOutputReference) validatePutSubscribersParameters(value interface{}) error {
 	return nil
 }

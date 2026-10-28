@@ -5,14 +5,14 @@ package accountiamdirectgroupmemberv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accountiamdirectgroupmemberv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accountiamdirectgroupmemberv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
 type AccountIamDirectGroupMemberV2 interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_AccountIamDirectGroupMemberV2) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Resource.
 func NewAccountIamDirectGroupMemberV2(scope constructs.Construct, id *string, config *AccountIamDirectGroupMemberV2Config) AccountIamDirectGroupMemberV2 {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewAccountIamDirectGroupMemberV2(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Resource.
 func NewAccountIamDirectGroupMemberV2_Override(a AccountIamDirectGroupMemberV2, scope constructs.Construct, id *string, config *AccountIamDirectGroupMemberV2Config) {
 	_init_.Initialize()
 

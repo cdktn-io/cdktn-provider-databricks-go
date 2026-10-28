@@ -5,9 +5,9 @@ package datadatabricksaigatewaymodelproviderservices
 
 
 type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirectApiKey struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
 	Plaintext *string `field:"optional" json:"plaintext" yaml:"plaintext"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_gateway_model_provider_services#secret_reference DataDatabricksAiGatewayModelProviderServices#secret_reference}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_gateway_model_provider_services#secret_reference DataDatabricksAiGatewayModelProviderServices#secret_reference}.
 	SecretReference *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirectApiKeySecretReference `field:"optional" json:"secretReference" yaml:"secretReference"`
 }
 

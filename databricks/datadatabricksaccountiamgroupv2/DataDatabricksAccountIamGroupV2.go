@@ -5,14 +5,14 @@ package datadatabricksaccountiamgroupv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountiamgroupv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaccountiamgroupv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/account_iam_group_v2 databricks_account_iam_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2 databricks_account_iam_group_v2}.
 type DataDatabricksAccountIamGroupV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamGroupV2) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/account_iam_group_v2 databricks_account_iam_group_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2 databricks_account_iam_group_v2} Data Source.
 func NewDataDatabricksAccountIamGroupV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamGroupV2Config) DataDatabricksAccountIamGroupV2 {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataDatabricksAccountIamGroupV2(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/account_iam_group_v2 databricks_account_iam_group_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2 databricks_account_iam_group_v2} Data Source.
 func NewDataDatabricksAccountIamGroupV2_Override(d DataDatabricksAccountIamGroupV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamGroupV2Config) {
 	_init_.Initialize()
 

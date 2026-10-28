@@ -5,14 +5,14 @@ package datadatabrickssqlwarehouse
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssqlwarehouse/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssqlwarehouse/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
 type DataDatabricksSqlWarehouse interface {
 	cdktn.TerraformDataSource
 	AutoStopMins() *float64
@@ -34,6 +34,9 @@ type DataDatabricksSqlWarehouse interface {
 	CreatorName() *string
 	SetCreatorName(val *string)
 	CreatorNameInput() *string
+	CustomerVersionLabel() *string
+	SetCustomerVersionLabel(val *string)
+	CustomerVersionLabelInput() *string
 	DataSourceId() *string
 	SetDataSourceId(val *string)
 	DataSourceIdInput() *string
@@ -70,6 +73,9 @@ type DataDatabricksSqlWarehouse interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	MaxDbu() *float64
+	SetMaxDbu(val *float64)
+	MaxDbuInput() *float64
 	MaxNumClusters() *float64
 	SetMaxNumClusters(val *float64)
 	MaxNumClustersInput() *float64
@@ -97,12 +103,18 @@ type DataDatabricksSqlWarehouse interface {
 	ProviderConfigInput() *DataDatabricksSqlWarehouseProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
+	ReydenClusterSizeMultiplier() *float64
+	SetReydenClusterSizeMultiplier(val *float64)
+	ReydenClusterSizeMultiplierInput() *float64
 	SpotInstancePolicy() *string
 	SetSpotInstancePolicy(val *string)
 	SpotInstancePolicyInput() *string
 	State() *string
 	SetState(val *string)
 	StateInput() *string
+	StatementTimeout() *float64
+	SetStatementTimeout(val *float64)
+	StatementTimeoutInput() *float64
 	Tags() DataDatabricksSqlWarehouseTagsOutputReference
 	TagsInput() *DataDatabricksSqlWarehouseTags
 	// Experimental.
@@ -161,6 +173,7 @@ type DataDatabricksSqlWarehouse interface {
 	ResetChannel()
 	ResetClusterSize()
 	ResetCreatorName()
+	ResetCustomerVersionLabel()
 	ResetDataSourceId()
 	ResetEnablePhoton()
 	ResetEnableServerlessCompute()
@@ -168,6 +181,7 @@ type DataDatabricksSqlWarehouse interface {
 	ResetId()
 	ResetInstanceProfileArn()
 	ResetJdbcUrl()
+	ResetMaxDbu()
 	ResetMaxNumClusters()
 	ResetMinNumClusters()
 	ResetName()
@@ -178,8 +192,10 @@ type DataDatabricksSqlWarehouse interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetReydenClusterSizeMultiplier()
 	ResetSpotInstancePolicy()
 	ResetState()
+	ResetStatementTimeout()
 	ResetTags()
 	ResetWarehouseType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -315,6 +331,26 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) CreatorNameInput() *string {
 	_jsii_.Get(
 		j,
 		"creatorNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) CustomerVersionLabel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerVersionLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) CustomerVersionLabelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerVersionLabelInput",
 		&returns,
 	)
 	return returns
@@ -510,6 +546,26 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) Lifecycle() *cdktn.TerraformResou
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) MaxDbu() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDbu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) MaxDbuInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDbuInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) MaxNumClusters() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -680,6 +736,26 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) ReydenClusterSizeMultiplier() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"reydenClusterSizeMultiplier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) ReydenClusterSizeMultiplierInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"reydenClusterSizeMultiplierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) SpotInstancePolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -715,6 +791,26 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) StateInput() *string {
 	_jsii_.Get(
 		j,
 		"stateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) StatementTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"statementTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) StatementTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"statementTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -791,7 +887,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) WarehouseTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) DataDatabricksSqlWarehouse {
 	_init_.Initialize()
 
@@ -809,7 +905,7 @@ func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse_Override(d DataDatabricksSqlWarehouse, scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) {
 	_init_.Initialize()
 
@@ -860,6 +956,17 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetCreatorName(val *string) {
 	_jsii_.Set(
 		j,
 		"creatorName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetCustomerVersionLabel(val *string) {
+	if err := j.validateSetCustomerVersionLabelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customerVersionLabel",
 		val,
 	)
 }
@@ -957,6 +1064,17 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetLifecycle(val *cdktn.TerraformR
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetMaxDbu(val *float64) {
+	if err := j.validateSetMaxDbuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxDbu",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetMaxNumClusters(val *float64) {
 	if err := j.validateSetMaxNumClustersParameters(val); err != nil {
 		panic(err)
@@ -1020,6 +1138,17 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetProvider(val cdktn.TerraformPro
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetReydenClusterSizeMultiplier(val *float64) {
+	if err := j.validateSetReydenClusterSizeMultiplierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reydenClusterSizeMultiplier",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetSpotInstancePolicy(val *string) {
 	if err := j.validateSetSpotInstancePolicyParameters(val); err != nil {
 		panic(err)
@@ -1038,6 +1167,17 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetState(val *string) {
 	_jsii_.Set(
 		j,
 		"state",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetStatementTimeout(val *float64) {
+	if err := j.validateSetStatementTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"statementTimeout",
 		val,
 	)
 }
@@ -1436,6 +1576,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetCreatorName() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetCustomerVersionLabel() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomerVersionLabel",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetDataSourceId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1488,6 +1636,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetJdbcUrl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetJdbcUrl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetMaxDbu() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaxDbu",
 		nil, // no parameters
 	)
 }
@@ -1556,6 +1712,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetProviderConfig() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetReydenClusterSizeMultiplier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetReydenClusterSizeMultiplier",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetSpotInstancePolicy() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1568,6 +1732,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetState() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetState",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetStatementTimeout() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStatementTimeout",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package privatenetworkgateway
 
 
 type PrivateNetworkGatewayDestinations struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/private_network_gateway#destination_type PrivateNetworkGateway#destination_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/private_network_gateway#destination_type PrivateNetworkGateway#destination_type}.
 	DestinationType *string `field:"required" json:"destinationType" yaml:"destinationType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/private_network_gateway#value PrivateNetworkGateway#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/private_network_gateway#value PrivateNetworkGateway#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

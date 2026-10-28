@@ -5,14 +5,14 @@ package aigatewaymcpservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/aigatewaymcpservice/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service}.
 type AiGatewayMcpService interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -550,7 +550,7 @@ func (j *jsiiProxy_AiGatewayMcpService) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
 func NewAiGatewayMcpService(scope constructs.Construct, id *string, config *AiGatewayMcpServiceConfig) AiGatewayMcpService {
 	_init_.Initialize()
 
@@ -568,7 +568,7 @@ func NewAiGatewayMcpService(scope constructs.Construct, id *string, config *AiGa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/ai_gateway_mcp_service databricks_ai_gateway_mcp_service} Resource.
 func NewAiGatewayMcpService_Override(a AiGatewayMcpService, scope constructs.Construct, id *string, config *AiGatewayMcpServiceConfig) {
 	_init_.Initialize()
 

@@ -47,6 +47,14 @@ func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) validateInterp
 	return nil
 }
 
+func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) validatePutDatabricksAppSlackParameters(value *NotificationDestinationConfigDatabricksAppSlack) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) validatePutDatabricksAppTeamsParameters(value *NotificationDestinationConfigDatabricksAppTeams) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) validatePutEmailParameters(value *NotificationDestinationConfigEmail) error {
 	return nil
 }

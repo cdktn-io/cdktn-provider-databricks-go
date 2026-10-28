@@ -5,9 +5,9 @@ package datadatabricksprivatenetworkgateways
 
 
 type DataDatabricksPrivateNetworkGatewaysPrivateNetworkGatewaysPrivateDnsResolvers struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateways#resolver_type DataDatabricksPrivateNetworkGateways#resolver_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/private_network_gateways#resolver_type DataDatabricksPrivateNetworkGateways#resolver_type}.
 	ResolverType *string `field:"required" json:"resolverType" yaml:"resolverType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateways#value DataDatabricksPrivateNetworkGateways#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/private_network_gateways#value DataDatabricksPrivateNetworkGateways#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

@@ -131,6 +131,10 @@ func (j *jsiiProxy_SqlEndpoint) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_SqlEndpoint) validateSetCustomerVersionLabelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlEndpoint) validateSetDataSourceIdParameters(val *string) error {
 	return nil
 }
@@ -155,6 +159,10 @@ func (j *jsiiProxy_SqlEndpoint) validateSetLifecycleParameters(val *cdktn.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_SqlEndpoint) validateSetMaxDbuParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlEndpoint) validateSetMaxNumClustersParameters(val *float64) error {
 	return nil
 }
@@ -175,7 +183,15 @@ func (j *jsiiProxy_SqlEndpoint) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_SqlEndpoint) validateSetReydenClusterSizeMultiplierParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlEndpoint) validateSetSpotInstancePolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlEndpoint) validateSetStatementTimeoutParameters(val *float64) error {
 	return nil
 }
 

@@ -5,14 +5,14 @@ package datadatabricksworkspaceiamexternalgroupv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamexternalgroupv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamexternalgroupv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2}.
 type DataDatabricksWorkspaceIamExternalGroupV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamExternalGroupV2) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2} Data Source.
 func NewDataDatabricksWorkspaceIamExternalGroupV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamExternalGroupV2Config) DataDatabricksWorkspaceIamExternalGroupV2 {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataDatabricksWorkspaceIamExternalGroupV2(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2} Data Source.
 func NewDataDatabricksWorkspaceIamExternalGroupV2_Override(d DataDatabricksWorkspaceIamExternalGroupV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamExternalGroupV2Config) {
 	_init_.Initialize()
 

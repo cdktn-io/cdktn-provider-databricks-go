@@ -5,14 +5,14 @@ package appspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space databricks_app_space}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space databricks_app_space}.
 type AppSpace interface {
 	cdktn.TerraformResource
 	AssumeGroupId() *string
@@ -632,7 +632,7 @@ func (j *jsiiProxy_AppSpace) UserApiScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space databricks_app_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space databricks_app_space} Resource.
 func NewAppSpace(scope constructs.Construct, id *string, config *AppSpaceConfig) AppSpace {
 	_init_.Initialize()
 
@@ -650,7 +650,7 @@ func NewAppSpace(scope constructs.Construct, id *string, config *AppSpaceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space databricks_app_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space databricks_app_space} Resource.
 func NewAppSpace_Override(a AppSpace, scope constructs.Construct, id *string, config *AppSpaceConfig) {
 	_init_.Initialize()
 

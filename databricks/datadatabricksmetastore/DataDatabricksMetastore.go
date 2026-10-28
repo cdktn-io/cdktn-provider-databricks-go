@@ -5,14 +5,14 @@ package datadatabricksmetastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmetastore/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksmetastore/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/metastore databricks_metastore}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/metastore databricks_metastore}.
 type DataDatabricksMetastore interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataDatabricksMetastore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/metastore databricks_metastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/metastore databricks_metastore} Data Source.
 func NewDataDatabricksMetastore(scope constructs.Construct, id *string, config *DataDatabricksMetastoreConfig) DataDatabricksMetastore {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataDatabricksMetastore(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/metastore databricks_metastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/metastore databricks_metastore} Data Source.
 func NewDataDatabricksMetastore_Override(d DataDatabricksMetastore, scope constructs.Construct, id *string, config *DataDatabricksMetastoreConfig) {
 	_init_.Initialize()
 

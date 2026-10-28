@@ -59,6 +59,10 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingDestinationsExternalModelCo
 	return nil
 }
 
+func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTargetOutputReference) validateSetEndpointRouteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTargetOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

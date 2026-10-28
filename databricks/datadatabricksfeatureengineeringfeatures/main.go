@@ -2015,6 +2015,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putKafkaSource", GoMethod: "PutKafkaSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putLateness", GoMethod: "PutLateness"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestSource", GoMethod: "PutRequestSource"},
+			_jsii_.MemberMethod{JsiiMethod: "putSdpSource", GoMethod: "PutSdpSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putStreamSource", GoMethod: "PutStreamSource"},
 			_jsii_.MemberProperty{JsiiProperty: "requestSource", GoGetter: "RequestSource"},
 			_jsii_.MemberProperty{JsiiProperty: "requestSourceInput", GoGetter: "RequestSourceInput"},
@@ -2023,8 +2024,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetKafkaSource", GoMethod: "ResetKafkaSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLateness", GoMethod: "ResetLateness"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestSource", GoMethod: "ResetRequestSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSdpSource", GoMethod: "ResetSdpSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStreamSource", GoMethod: "ResetStreamSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sdpSource", GoGetter: "SdpSource"},
+			_jsii_.MemberProperty{JsiiProperty: "sdpSourceInput", GoGetter: "SdpSourceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "streamSource", GoGetter: "StreamSource"},
 			_jsii_.MemberProperty{JsiiProperty: "streamSourceInput", GoGetter: "StreamSourceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -2177,6 +2181,61 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceRequestSourceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeatures.DataDatabricksFeatureEngineeringFeaturesFeaturesSourceSdpSource",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeaturesFeaturesSourceSdpSource)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.dataDatabricksFeatureEngineeringFeatures.DataDatabricksFeatureEngineeringFeaturesFeaturesSourceSdpSourceOutputReference",
+		reflect.TypeOf((*DataDatabricksFeatureEngineeringFeaturesFeaturesSourceSdpSourceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataframeSchema", GoGetter: "DataframeSchema"},
+			_jsii_.MemberProperty{JsiiProperty: "dataframeSchemaInput", GoGetter: "DataframeSchemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "filterCondition", GoGetter: "FilterCondition"},
+			_jsii_.MemberProperty{JsiiProperty: "filterConditionInput", GoGetter: "FilterConditionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "inputTables", GoGetter: "InputTables"},
+			_jsii_.MemberProperty{JsiiProperty: "inputTablesInput", GoGetter: "InputTablesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "outputTable", GoGetter: "OutputTable"},
+			_jsii_.MemberProperty{JsiiProperty: "outputTableInput", GoGetter: "OutputTableInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pipelineId", GoGetter: "PipelineId"},
+			_jsii_.MemberProperty{JsiiProperty: "pipelineIdInput", GoGetter: "PipelineIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pipelineState", GoGetter: "PipelineState"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataframeSchema", GoMethod: "ResetDataframeSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilterCondition", GoMethod: "ResetFilterCondition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInputTables", GoMethod: "ResetInputTables"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOutputTable", GoMethod: "ResetOutputTable"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPipelineId", GoMethod: "ResetPipelineId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTransformationSql", GoMethod: "ResetTransformationSql"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "transformationSql", GoGetter: "TransformationSql"},
+			_jsii_.MemberProperty{JsiiProperty: "transformationSqlInput", GoGetter: "TransformationSqlInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceSdpSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

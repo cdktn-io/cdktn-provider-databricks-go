@@ -5,14 +5,16 @@ package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/job/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/job/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference interface {
 	cdktn.ComplexObject
+	Attachment() JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentOutputReference
+	AttachmentInput() *JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachment
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -72,7 +74,9 @@ type JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAttachment(value *JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachment)
 	PutSubscribers(value interface{})
+	ResetAttachment()
 	ResetCustomSubject()
 	ResetPaused()
 	ResetSubscribers()
@@ -89,6 +93,26 @@ type JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference interface {
 // The jsii proxy struct for JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference
 type jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) Attachment() JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentOutputReference {
+	var returns JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentOutputReference
+	_jsii_.Get(
+		j,
+		"attachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) AttachmentInput() *JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachment {
+	var returns *JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachment
+	_jsii_.Get(
+		j,
+		"attachmentInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) ComplexObjectIndex() interface{} {
@@ -512,6 +536,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) PutAttachment(value *JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachment) {
+	if err := j.validatePutAttachmentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putAttachment",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) PutSubscribers(value interface{}) {
 	if err := j.validatePutSubscribersParameters(value); err != nil {
 		panic(err)
@@ -520,6 +555,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReferenc
 		j,
 		"putSubscribers",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference) ResetAttachment() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetAttachment",
+		nil, // no parameters
 	)
 }
 

@@ -298,6 +298,14 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetCreatorNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetCustomerVersionLabelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetDataSourceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -378,6 +386,14 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetMaxDbuParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetMaxNumClustersParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -418,6 +434,14 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetNumClustersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetReydenClusterSizeMultiplierParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetSpotInstancePolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -427,6 +451,14 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetSpotInstancePolicyPara
 }
 
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetStatementTimeoutParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

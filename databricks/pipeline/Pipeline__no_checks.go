@@ -235,6 +235,10 @@ func (j *jsiiProxy_Pipeline) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetParentPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetPhotonParameters(val interface{}) error {
 	return nil
 }

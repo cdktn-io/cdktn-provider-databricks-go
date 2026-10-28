@@ -111,6 +111,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetCreatorNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetCustomerVersionLabelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetDataSourceIdParameters(val *string) error {
 	return nil
 }
@@ -139,6 +143,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetMaxDbuParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetMaxNumClustersParameters(val *float64) error {
 	return nil
 }
@@ -159,11 +167,19 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetNumClustersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetReydenClusterSizeMultiplierParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetSpotInstancePolicyParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetStatementTimeoutParameters(val *float64) error {
 	return nil
 }
 

@@ -5,14 +5,14 @@ package alertv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alertv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/alertv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2 databricks_alert_v2}.
 type AlertV2 interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -34,6 +34,9 @@ type AlertV2 interface {
 	CustomSummary() *string
 	SetCustomSummary(val *string)
 	CustomSummaryInput() *string
+	CustomTemplateFormat() *string
+	SetCustomTemplateFormat(val *string)
+	CustomTemplateFormatInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -200,6 +203,7 @@ type AlertV2 interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetCustomDescription()
 	ResetCustomSummary()
+	ResetCustomTemplateFormat()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -321,6 +325,26 @@ func (j *jsiiProxy_AlertV2) CustomSummaryInput() *string {
 	_jsii_.Get(
 		j,
 		"customSummaryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertV2) CustomTemplateFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customTemplateFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertV2) CustomTemplateFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customTemplateFormatInput",
 		&returns,
 	)
 	return returns
@@ -717,7 +741,7 @@ func (j *jsiiProxy_AlertV2) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) AlertV2 {
 	_init_.Initialize()
 
@@ -735,7 +759,7 @@ func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2_Override(a AlertV2, scope constructs.Construct, id *string, config *AlertV2Config) {
 	_init_.Initialize()
 
@@ -786,6 +810,17 @@ func (j *jsiiProxy_AlertV2)SetCustomSummary(val *string) {
 	_jsii_.Set(
 		j,
 		"customSummary",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlertV2)SetCustomTemplateFormat(val *string) {
+	if err := j.validateSetCustomTemplateFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customTemplateFormat",
 		val,
 	)
 }
@@ -1349,6 +1384,14 @@ func (a *jsiiProxy_AlertV2) ResetCustomSummary() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCustomSummary",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertV2) ResetCustomTemplateFormat() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomTemplateFormat",
 		nil, // no parameters
 	)
 }

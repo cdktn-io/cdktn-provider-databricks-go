@@ -5,14 +5,14 @@ package datadatabricksaigatewaymodelservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaigatewaymodelservices/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaigatewaymodelservices/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_gateway_model_services databricks_ai_gateway_model_services}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_gateway_model_services databricks_ai_gateway_model_services}.
 type DataDatabricksAiGatewayModelServices interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServices) ViewInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_gateway_model_services databricks_ai_gateway_model_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_gateway_model_services databricks_ai_gateway_model_services} Data Source.
 func NewDataDatabricksAiGatewayModelServices(scope constructs.Construct, id *string, config *DataDatabricksAiGatewayModelServicesConfig) DataDatabricksAiGatewayModelServices {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataDatabricksAiGatewayModelServices(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_gateway_model_services databricks_ai_gateway_model_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_gateway_model_services databricks_ai_gateway_model_services} Data Source.
 func NewDataDatabricksAiGatewayModelServices_Override(d DataDatabricksAiGatewayModelServices, scope constructs.Construct, id *string, config *DataDatabricksAiGatewayModelServicesConfig) {
 	_init_.Initialize()
 

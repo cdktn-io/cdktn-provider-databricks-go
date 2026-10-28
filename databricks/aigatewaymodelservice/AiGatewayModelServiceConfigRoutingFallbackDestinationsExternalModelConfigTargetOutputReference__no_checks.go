@@ -59,6 +59,10 @@ func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingFallbackDestinationsExterna
 	return nil
 }
 
+func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigTargetOutputReference) validateSetEndpointRouteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigTargetOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

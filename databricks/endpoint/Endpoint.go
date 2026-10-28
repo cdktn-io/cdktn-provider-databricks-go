@@ -5,14 +5,14 @@ package endpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint databricks_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint databricks_endpoint}.
 type Endpoint interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -551,7 +551,7 @@ func (j *jsiiProxy_Endpoint) UseCase() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint databricks_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint databricks_endpoint} Resource.
 func NewEndpoint(scope constructs.Construct, id *string, config *EndpointConfig) Endpoint {
 	_init_.Initialize()
 
@@ -569,7 +569,7 @@ func NewEndpoint(scope constructs.Construct, id *string, config *EndpointConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint databricks_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint databricks_endpoint} Resource.
 func NewEndpoint_Override(e Endpoint, scope constructs.Construct, id *string, config *EndpointConfig) {
 	_init_.Initialize()
 

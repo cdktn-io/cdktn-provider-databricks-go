@@ -5,14 +5,14 @@ package accountiamgroupv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accountiamgroupv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accountiamgroupv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2}.
 type AccountIamGroupV2 interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_AccountIamGroupV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2} Resource.
 func NewAccountIamGroupV2(scope constructs.Construct, id *string, config *AccountIamGroupV2Config) AccountIamGroupV2 {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewAccountIamGroupV2(scope constructs.Construct, id *string, config *Accoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2} Resource.
 func NewAccountIamGroupV2_Override(a AccountIamGroupV2, scope constructs.Construct, id *string, config *AccountIamGroupV2Config) {
 	_init_.Initialize()
 

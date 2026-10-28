@@ -5,14 +5,14 @@ package datadatabricksaisearchendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoint/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaisearchendpoint/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint}.
 type DataDatabricksAiSearchEndpoint interface {
 	cdktn.TerraformDataSource
 	BudgetPolicyId() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_DataDatabricksAiSearchEndpoint) UsagePolicyId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint} Data Source.
 func NewDataDatabricksAiSearchEndpoint(scope constructs.Construct, id *string, config *DataDatabricksAiSearchEndpointConfig) DataDatabricksAiSearchEndpoint {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewDataDatabricksAiSearchEndpoint(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/ai_search_endpoint databricks_ai_search_endpoint} Data Source.
 func NewDataDatabricksAiSearchEndpoint_Override(d DataDatabricksAiSearchEndpoint, scope constructs.Construct, id *string, config *DataDatabricksAiSearchEndpointConfig) {
 	_init_.Initialize()
 

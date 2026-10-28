@@ -5,14 +5,14 @@ package datadatabricksmwscredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmwscredentials/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksmwscredentials/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
 type DataDatabricksMwsCredentials interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
 func NewDataDatabricksMwsCredentials(scope constructs.Construct, id *string, config *DataDatabricksMwsCredentialsConfig) DataDatabricksMwsCredentials {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataDatabricksMwsCredentials(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
 func NewDataDatabricksMwsCredentials_Override(d DataDatabricksMwsCredentials, scope constructs.Construct, id *string, config *DataDatabricksMwsCredentialsConfig) {
 	_init_.Initialize()
 

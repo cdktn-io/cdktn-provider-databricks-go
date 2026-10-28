@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksAppsAppPendingDeploymentOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppPendingDeploymentOutputReference) validatePutHealthCheckParameters(value *DataDatabricksAppsAppPendingDeploymentHealthCheck) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppPendingDeploymentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

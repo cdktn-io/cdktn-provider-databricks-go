@@ -770,6 +770,14 @@ func (j *jsiiProxy_Pipeline) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetParentPathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetPhotonParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

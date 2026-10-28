@@ -5,9 +5,9 @@ package datadatabricksfeatureengineeringfeatures
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksfeatureengineeringfeatures/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksfeatureengineeringfeatures/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -42,6 +42,8 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference inter
 	LatenessInput() interface{}
 	RequestSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceRequestSourceOutputReference
 	RequestSourceInput() interface{}
+	SdpSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceSdpSourceOutputReference
+	SdpSourceInput() interface{}
 	StreamSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceStreamSourceOutputReference
 	StreamSourceInput() interface{}
 	// Experimental.
@@ -81,12 +83,14 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference inter
 	PutKafkaSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource)
 	PutLateness(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceLateness)
 	PutRequestSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceRequestSource)
+	PutSdpSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceSdpSource)
 	PutStreamSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceStreamSource)
 	ResetDeltaTableSource()
 	ResetFeatureViewSource()
 	ResetKafkaSource()
 	ResetLateness()
 	ResetRequestSource()
+	ResetSdpSource()
 	ResetStreamSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -248,6 +252,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	_jsii_.Get(
 		j,
 		"requestSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) SdpSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceSdpSourceOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesSourceSdpSourceOutputReference
+	_jsii_.Get(
+		j,
+		"sdpSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) SdpSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sdpSourceInput",
 		&returns,
 	)
 	return returns
@@ -617,6 +641,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) PutSdpSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceSdpSource) {
+	if err := d.validatePutSdpSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSdpSource",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) PutStreamSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceStreamSource) {
 	if err := d.validatePutStreamSourceParameters(value); err != nil {
 		panic(err)
@@ -664,6 +699,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	_jsii_.InvokeVoid(
 		d,
 		"resetRequestSource",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) ResetSdpSource() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSdpSource",
 		nil, // no parameters
 	)
 }

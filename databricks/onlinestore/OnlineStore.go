@@ -5,14 +5,14 @@ package onlinestore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/onlinestore/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/onlinestore/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/online_store databricks_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/online_store databricks_online_store}.
 type OnlineStore interface {
 	cdktn.TerraformResource
 	Capacity() *string
@@ -495,7 +495,7 @@ func (j *jsiiProxy_OnlineStore) UsagePolicyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/online_store databricks_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/online_store databricks_online_store} Resource.
 func NewOnlineStore(scope constructs.Construct, id *string, config *OnlineStoreConfig) OnlineStore {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewOnlineStore(scope constructs.Construct, id *string, config *OnlineStoreC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/online_store databricks_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/online_store databricks_online_store} Resource.
 func NewOnlineStore_Override(o OnlineStore, scope constructs.Construct, id *string, config *OnlineStoreConfig) {
 	_init_.Initialize()
 

@@ -126,6 +126,17 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAOutputRefer
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAOutputReference) validatePutBedrockMantleParameters(value *DataDatabricksAiGatewayModelProviderServiceConfigBedrockMantle) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAOutputReference) validatePutCustomParameters(value *DataDatabricksAiGatewayModelProviderServiceConfigCustom) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -171,6 +182,17 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAOutputRefer
 }
 
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAOutputReference) validatePutOpenaiParameters(value *DataDatabricksAiGatewayModelProviderServiceConfigOpenai) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServiceConfigAOutputReference) validatePutPricingParameters(value *DataDatabricksAiGatewayModelProviderServiceConfigPricing) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

@@ -5,14 +5,14 @@ package datadatabrickspostgrescdfstatuses
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickspostgrescdfstatuses/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/postgres_cdf_statuses databricks_postgres_cdf_statuses}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/postgres_cdf_statuses databricks_postgres_cdf_statuses}.
 type DataDatabricksPostgresCdfStatuses interface {
 	cdktn.TerraformDataSource
 	CdfStatuses() DataDatabricksPostgresCdfStatusesCdfStatusesList
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataDatabricksPostgresCdfStatuses) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/postgres_cdf_statuses databricks_postgres_cdf_statuses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/postgres_cdf_statuses databricks_postgres_cdf_statuses} Data Source.
 func NewDataDatabricksPostgresCdfStatuses(scope constructs.Construct, id *string, config *DataDatabricksPostgresCdfStatusesConfig) DataDatabricksPostgresCdfStatuses {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataDatabricksPostgresCdfStatuses(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/postgres_cdf_statuses databricks_postgres_cdf_statuses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/postgres_cdf_statuses databricks_postgres_cdf_statuses} Data Source.
 func NewDataDatabricksPostgresCdfStatuses_Override(d DataDatabricksPostgresCdfStatuses, scope constructs.Construct, id *string, config *DataDatabricksPostgresCdfStatusesConfig) {
 	_init_.Initialize()
 

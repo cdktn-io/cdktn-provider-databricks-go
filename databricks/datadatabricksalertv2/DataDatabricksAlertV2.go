@@ -5,14 +5,14 @@ package datadatabricksalertv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksalertv2/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/alert_v2 databricks_alert_v2}.
 type DataDatabricksAlertV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -26,6 +26,7 @@ type DataDatabricksAlertV2 interface {
 	CreateTime() *string
 	CustomDescription() *string
 	CustomSummary() *string
+	CustomTemplateFormat() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -200,6 +201,16 @@ func (j *jsiiProxy_DataDatabricksAlertV2) CustomSummary() *string {
 	_jsii_.Get(
 		j,
 		"customSummary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertV2) CustomTemplateFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customTemplateFormat",
 		&returns,
 	)
 	return returns
@@ -486,7 +497,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2) WarehouseId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) DataDatabricksAlertV2 {
 	_init_.Initialize()
 
@@ -504,7 +515,7 @@ func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2_Override(d DataDatabricksAlertV2, scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) {
 	_init_.Initialize()
 

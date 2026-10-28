@@ -35,6 +35,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "deploymentInput", GoGetter: "DeploymentInput"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "durationTarget", GoGetter: "DurationTarget"},
+			_jsii_.MemberProperty{JsiiProperty: "durationTargetInput", GoGetter: "DurationTargetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "editMode", GoGetter: "EditMode"},
 			_jsii_.MemberProperty{JsiiProperty: "editModeInput", GoGetter: "EditModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "emailNotifications", GoGetter: "EmailNotifications"},
@@ -147,6 +149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDbtTask", GoMethod: "ResetDbtTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeployment", GoMethod: "ResetDeployment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDurationTarget", GoMethod: "ResetDurationTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEditMode", GoMethod: "ResetEditMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmailNotifications", GoMethod: "ResetEmailNotifications"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironment", GoMethod: "ResetEnvironment"},
@@ -5659,10 +5662,204 @@ func init() {
 		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscription",
 		reflect.TypeOf((*JobTaskDashboardTaskSubscription)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionAttachment",
+		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionAttachment)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionAttachmentDataAttachment",
+		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionAttachmentDataAttachment)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference",
+		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fileFormat", GoGetter: "FileFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "fileFormatInput", GoGetter: "FileFormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "includeAppliedFilters", GoGetter: "IncludeAppliedFilters"},
+			_jsii_.MemberProperty{JsiiProperty: "includeAppliedFiltersInput", GoGetter: "IncludeAppliedFiltersInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putWidgets", GoMethod: "PutWidgets"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncludeAppliedFilters", GoMethod: "ResetIncludeAppliedFilters"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "widgets", GoGetter: "Widgets"},
+			_jsii_.MemberProperty{JsiiProperty: "widgetsInput", GoGetter: "WidgetsInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets",
+		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsList",
+		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference",
+		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pageId", GoGetter: "PageId"},
+			_jsii_.MemberProperty{JsiiProperty: "pageIdInput", GoGetter: "PageIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "widgetId", GoGetter: "WidgetId"},
+			_jsii_.MemberProperty{JsiiProperty: "widgetIdInput", GoGetter: "WidgetIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionAttachmentOutputReference",
+		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionAttachmentOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataAttachment", GoGetter: "DataAttachment"},
+			_jsii_.MemberProperty{JsiiProperty: "dataAttachmentInput", GoGetter: "DataAttachmentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pageAttachment", GoGetter: "PageAttachment"},
+			_jsii_.MemberProperty{JsiiProperty: "pageAttachmentInput", GoGetter: "PageAttachmentInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDataAttachment", GoMethod: "PutDataAttachment"},
+			_jsii_.MemberMethod{JsiiMethod: "putPageAttachment", GoMethod: "PutPageAttachment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataAttachment", GoMethod: "ResetDataAttachment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPageAttachment", GoMethod: "ResetPageAttachment"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskDashboardTaskSubscriptionAttachmentOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionAttachmentPageAttachment",
+		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionAttachmentPageAttachment)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionAttachmentPageAttachmentOutputReference",
+		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionAttachmentPageAttachmentOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pageIds", GoGetter: "PageIds"},
+			_jsii_.MemberProperty{JsiiProperty: "pageIdsInput", GoGetter: "PageIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pageSelection", GoGetter: "PageSelection"},
+			_jsii_.MemberProperty{JsiiProperty: "pageSelectionInput", GoGetter: "PageSelectionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPageIds", GoMethod: "ResetPageIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPageSelection", GoMethod: "ResetPageSelection"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskDashboardTaskSubscriptionAttachmentPageAttachmentOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktn/provider-databricks.job.JobTaskDashboardTaskSubscriptionOutputReference",
 		reflect.TypeOf((*JobTaskDashboardTaskSubscriptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attachment", GoGetter: "Attachment"},
+			_jsii_.MemberProperty{JsiiProperty: "attachmentInput", GoGetter: "AttachmentInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5684,7 +5881,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "paused", GoGetter: "Paused"},
 			_jsii_.MemberProperty{JsiiProperty: "pausedInput", GoGetter: "PausedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAttachment", GoMethod: "PutAttachment"},
 			_jsii_.MemberMethod{JsiiMethod: "putSubscribers", GoMethod: "PutSubscribers"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAttachment", GoMethod: "ResetAttachment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomSubject", GoMethod: "ResetCustomSubject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPaused", GoMethod: "ResetPaused"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubscribers", GoMethod: "ResetSubscribers"},
@@ -6544,10 +6743,204 @@ func init() {
 		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscription",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscription)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachment",
+		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachment)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachment",
+		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachment)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference",
+		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fileFormat", GoGetter: "FileFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "fileFormatInput", GoGetter: "FileFormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "includeAppliedFilters", GoGetter: "IncludeAppliedFilters"},
+			_jsii_.MemberProperty{JsiiProperty: "includeAppliedFiltersInput", GoGetter: "IncludeAppliedFiltersInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putWidgets", GoMethod: "PutWidgets"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncludeAppliedFilters", GoMethod: "ResetIncludeAppliedFilters"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "widgets", GoGetter: "Widgets"},
+			_jsii_.MemberProperty{JsiiProperty: "widgetsInput", GoGetter: "WidgetsInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets",
+		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsList",
+		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference",
+		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pageId", GoGetter: "PageId"},
+			_jsii_.MemberProperty{JsiiProperty: "pageIdInput", GoGetter: "PageIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "widgetId", GoGetter: "WidgetId"},
+			_jsii_.MemberProperty{JsiiProperty: "widgetIdInput", GoGetter: "WidgetIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgetsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentOutputReference",
+		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataAttachment", GoGetter: "DataAttachment"},
+			_jsii_.MemberProperty{JsiiProperty: "dataAttachmentInput", GoGetter: "DataAttachmentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pageAttachment", GoGetter: "PageAttachment"},
+			_jsii_.MemberProperty{JsiiProperty: "pageAttachmentInput", GoGetter: "PageAttachmentInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDataAttachment", GoMethod: "PutDataAttachment"},
+			_jsii_.MemberMethod{JsiiMethod: "putPageAttachment", GoMethod: "PutPageAttachment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataAttachment", GoMethod: "ResetDataAttachment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPageAttachment", GoMethod: "ResetPageAttachment"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachment",
+		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachment)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachmentOutputReference",
+		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachmentOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pageIds", GoGetter: "PageIds"},
+			_jsii_.MemberProperty{JsiiProperty: "pageIdsInput", GoGetter: "PageIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pageSelection", GoGetter: "PageSelection"},
+			_jsii_.MemberProperty{JsiiProperty: "pageSelectionInput", GoGetter: "PageSelectionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPageIds", GoMethod: "ResetPageIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPageSelection", GoMethod: "ResetPageSelection"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachmentOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktn/provider-databricks.job.JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference",
 		reflect.TypeOf((*JobTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attachment", GoGetter: "Attachment"},
+			_jsii_.MemberProperty{JsiiProperty: "attachmentInput", GoGetter: "AttachmentInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6569,7 +6962,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "paused", GoGetter: "Paused"},
 			_jsii_.MemberProperty{JsiiProperty: "pausedInput", GoGetter: "PausedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAttachment", GoMethod: "PutAttachment"},
 			_jsii_.MemberMethod{JsiiMethod: "putSubscribers", GoMethod: "PutSubscribers"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAttachment", GoMethod: "ResetAttachment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomSubject", GoMethod: "ResetCustomSubject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPaused", GoMethod: "ResetPaused"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubscribers", GoMethod: "ResetSubscribers"},

@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutin
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingFallbackDestinationsExternalModelConfigTargetOutputReference) validateSetEndpointRouteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingFallbackDestinationsExternalModelConfigTargetOutputReference) validateSetInternalValueParameters(val *DataDatabricksAiGatewayModelServicesModelServicesConfigRoutingFallbackDestinationsExternalModelConfigTarget) error {
 	return nil
 }

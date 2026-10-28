@@ -5,14 +5,14 @@ package postgresdataapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresdataapi/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_data_api databricks_postgres_data_api}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_data_api databricks_postgres_data_api}.
 type PostgresDataApi interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_PostgresDataApi) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_data_api databricks_postgres_data_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_data_api databricks_postgres_data_api} Resource.
 func NewPostgresDataApi(scope constructs.Construct, id *string, config *PostgresDataApiConfig) PostgresDataApi {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewPostgresDataApi(scope constructs.Construct, id *string, config *Postgres
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_data_api databricks_postgres_data_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_data_api databricks_postgres_data_api} Resource.
 func NewPostgresDataApi_Override(p PostgresDataApi, scope constructs.Construct, id *string, config *PostgresDataApiConfig) {
 	_init_.Initialize()
 

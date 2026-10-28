@@ -868,6 +868,14 @@ func (j *jsiiProxy_Job) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Job) validateSetDurationTargetParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Job) validateSetEditModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

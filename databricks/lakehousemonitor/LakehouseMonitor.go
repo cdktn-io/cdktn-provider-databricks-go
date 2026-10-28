@@ -5,14 +5,14 @@ package lakehousemonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/lakehousemonitor/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}.
 type LakehouseMonitor interface {
 	cdktn.TerraformResource
 	AssetsDir() *string
@@ -828,7 +828,7 @@ func (j *jsiiProxy_LakehouseMonitor) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
 func NewLakehouseMonitor(scope constructs.Construct, id *string, config *LakehouseMonitorConfig) LakehouseMonitor {
 	_init_.Initialize()
 
@@ -846,7 +846,7 @@ func NewLakehouseMonitor(scope constructs.Construct, id *string, config *Lakehou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
 func NewLakehouseMonitor_Override(l LakehouseMonitor, scope constructs.Construct, id *string, config *LakehouseMonitorConfig) {
 	_init_.Initialize()
 

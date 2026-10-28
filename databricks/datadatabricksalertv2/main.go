@@ -21,6 +21,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "customDescription", GoGetter: "CustomDescription"},
 			_jsii_.MemberProperty{JsiiProperty: "customSummary", GoGetter: "CustomSummary"},
+			_jsii_.MemberProperty{JsiiProperty: "customTemplateFormat", GoGetter: "CustomTemplateFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveRunAs", GoGetter: "EffectiveRunAs"},

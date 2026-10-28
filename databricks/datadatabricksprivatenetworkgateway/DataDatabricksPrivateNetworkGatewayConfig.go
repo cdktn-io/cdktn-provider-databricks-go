@@ -22,7 +22,7 @@ type DataDatabricksPrivateNetworkGatewayConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#name DataDatabricksPrivateNetworkGateway#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/private_network_gateway#name DataDatabricksPrivateNetworkGateway#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

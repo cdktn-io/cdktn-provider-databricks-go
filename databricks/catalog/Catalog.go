@@ -5,14 +5,14 @@ package catalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/catalog/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/catalog/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/catalog databricks_catalog}.
 type Catalog interface {
 	cdktn.TerraformResource
 	BrowseOnly() interface{}
@@ -912,7 +912,7 @@ func (j *jsiiProxy_Catalog) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
 	_init_.Initialize()
 
@@ -930,7 +930,7 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
 	_init_.Initialize()
 

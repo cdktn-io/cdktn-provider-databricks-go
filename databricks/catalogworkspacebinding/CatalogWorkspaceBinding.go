@@ -5,14 +5,14 @@ package catalogworkspacebinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/catalogworkspacebinding/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/catalogworkspacebinding/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
 type CatalogWorkspaceBinding interface {
 	cdktn.TerraformResource
 	BindingType() *string
@@ -511,7 +511,7 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
 func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *CatalogWorkspaceBindingConfig) CatalogWorkspaceBinding {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
 func NewCatalogWorkspaceBinding_Override(c CatalogWorkspaceBinding, scope constructs.Construct, id *string, config *CatalogWorkspaceBindingConfig) {
 	_init_.Initialize()
 

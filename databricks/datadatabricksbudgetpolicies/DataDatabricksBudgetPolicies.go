@@ -5,14 +5,14 @@ package datadatabricksbudgetpolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies databricks_budget_policies}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies databricks_budget_policies}.
 type DataDatabricksBudgetPolicies interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicies) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
 func NewDataDatabricksBudgetPolicies(scope constructs.Construct, id *string, config *DataDatabricksBudgetPoliciesConfig) DataDatabricksBudgetPolicies {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataDatabricksBudgetPolicies(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
 func NewDataDatabricksBudgetPolicies_Override(d DataDatabricksBudgetPolicies, scope constructs.Construct, id *string, config *DataDatabricksBudgetPoliciesConfig) {
 	_init_.Initialize()
 

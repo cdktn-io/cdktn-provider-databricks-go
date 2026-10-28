@@ -5,14 +5,14 @@ package datadatabricksdisasterrecoveryfailovergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdisasterrecoveryfailovergroup/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdisasterrecoveryfailovergroup/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group}.
 type DataDatabricksDisasterRecoveryFailoverGroup interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -38,7 +38,9 @@ type DataDatabricksDisasterRecoveryFailoverGroup interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HasReplicationPointBlockingErrors() cdktn.IResolvable
 	InitialPrimaryRegion() *string
+	InitialReplicationProgress() DataDatabricksDisasterRecoveryFailoverGroupInitialReplicationProgressOutputReference
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -235,11 +237,31 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroup) FriendlyUniqueId
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroup) HasReplicationPointBlockingErrors() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"hasReplicationPointBlockingErrors",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroup) InitialPrimaryRegion() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"initialPrimaryRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroup) InitialReplicationProgress() DataDatabricksDisasterRecoveryFailoverGroupInitialReplicationProgressOutputReference {
+	var returns DataDatabricksDisasterRecoveryFailoverGroupInitialReplicationProgressOutputReference
+	_jsii_.Get(
+		j,
+		"initialReplicationProgress",
 		&returns,
 	)
 	return returns
@@ -396,7 +418,7 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroup) WorkspaceSets() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Data Source.
 func NewDataDatabricksDisasterRecoveryFailoverGroup(scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryFailoverGroupConfig) DataDatabricksDisasterRecoveryFailoverGroup {
 	_init_.Initialize()
 
@@ -414,7 +436,7 @@ func NewDataDatabricksDisasterRecoveryFailoverGroup(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Data Source.
 func NewDataDatabricksDisasterRecoveryFailoverGroup_Override(d DataDatabricksDisasterRecoveryFailoverGroup, scope constructs.Construct, id *string, config *DataDatabricksDisasterRecoveryFailoverGroupConfig) {
 	_init_.Initialize()
 

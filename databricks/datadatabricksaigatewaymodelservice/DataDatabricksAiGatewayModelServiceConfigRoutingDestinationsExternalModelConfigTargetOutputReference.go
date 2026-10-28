@@ -5,9 +5,9 @@ package datadatabricksaigatewaymodelservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaigatewaymodelservice/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaigatewaymodelservice/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,6 +28,9 @@ type DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsExternalModelCo
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EndpointRoute() *string
+	SetEndpointRoute(val *string)
+	EndpointRouteInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTarget
@@ -70,6 +73,7 @@ type DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsExternalModelCo
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetEndpointRoute()
 	ResetNativeApiTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -111,6 +115,26 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsE
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTargetOutputReference) EndpointRoute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointRoute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTargetOutputReference) EndpointRouteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointRouteInput",
 		&returns,
 	)
 	return returns
@@ -242,6 +266,17 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsE
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTargetOutputReference)SetEndpointRoute(val *string) {
+	if err := j.validateSetEndpointRouteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointRoute",
 		val,
 	)
 }
@@ -485,6 +520,14 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsE
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTargetOutputReference) ResetEndpointRoute() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEndpointRoute",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksAiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTargetOutputReference) ResetNativeApiTypes() {

@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference) validatePutSdpSourceParameters(value *DataDatabricksFeatureEngineeringFeatureSourceSdpSource) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference) validatePutStreamSourceParameters(value *DataDatabricksFeatureEngineeringFeatureSourceStreamSource) error {
 	return nil
 }

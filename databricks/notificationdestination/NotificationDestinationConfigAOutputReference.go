@@ -5,9 +5,9 @@ package notificationdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notificationdestination/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/notificationdestination/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,6 +28,10 @@ type NotificationDestinationConfigAOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DatabricksAppSlack() NotificationDestinationConfigDatabricksAppSlackOutputReference
+	DatabricksAppSlackInput() *NotificationDestinationConfigDatabricksAppSlack
+	DatabricksAppTeams() NotificationDestinationConfigDatabricksAppTeamsOutputReference
+	DatabricksAppTeamsInput() *NotificationDestinationConfigDatabricksAppTeams
 	Email() NotificationDestinationConfigEmailOutputReference
 	EmailInput() *NotificationDestinationConfigEmail
 	// Experimental.
@@ -74,11 +78,15 @@ type NotificationDestinationConfigAOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutDatabricksAppSlack(value *NotificationDestinationConfigDatabricksAppSlack)
+	PutDatabricksAppTeams(value *NotificationDestinationConfigDatabricksAppTeams)
 	PutEmail(value *NotificationDestinationConfigEmail)
 	PutGenericWebhook(value *NotificationDestinationConfigGenericWebhook)
 	PutMicrosoftTeams(value *NotificationDestinationConfigMicrosoftTeams)
 	PutPagerduty(value *NotificationDestinationConfigPagerduty)
 	PutSlack(value *NotificationDestinationConfigSlack)
+	ResetDatabricksAppSlack()
+	ResetDatabricksAppTeams()
 	ResetEmail()
 	ResetGenericWebhook()
 	ResetMicrosoftTeams()
@@ -124,6 +132,46 @@ func (j *jsiiProxy_NotificationDestinationConfigAOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigAOutputReference) DatabricksAppSlack() NotificationDestinationConfigDatabricksAppSlackOutputReference {
+	var returns NotificationDestinationConfigDatabricksAppSlackOutputReference
+	_jsii_.Get(
+		j,
+		"databricksAppSlack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigAOutputReference) DatabricksAppSlackInput() *NotificationDestinationConfigDatabricksAppSlack {
+	var returns *NotificationDestinationConfigDatabricksAppSlack
+	_jsii_.Get(
+		j,
+		"databricksAppSlackInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigAOutputReference) DatabricksAppTeams() NotificationDestinationConfigDatabricksAppTeamsOutputReference {
+	var returns NotificationDestinationConfigDatabricksAppTeamsOutputReference
+	_jsii_.Get(
+		j,
+		"databricksAppTeams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigAOutputReference) DatabricksAppTeamsInput() *NotificationDestinationConfigDatabricksAppTeams {
+	var returns *NotificationDestinationConfigDatabricksAppTeams
+	_jsii_.Get(
+		j,
+		"databricksAppTeamsInput",
 		&returns,
 	)
 	return returns
@@ -538,6 +586,28 @@ func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) InterpolationF
 	return returns
 }
 
+func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) PutDatabricksAppSlack(value *NotificationDestinationConfigDatabricksAppSlack) {
+	if err := n.validatePutDatabricksAppSlackParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putDatabricksAppSlack",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) PutDatabricksAppTeams(value *NotificationDestinationConfigDatabricksAppTeams) {
+	if err := n.validatePutDatabricksAppTeamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putDatabricksAppTeams",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) PutEmail(value *NotificationDestinationConfigEmail) {
 	if err := n.validatePutEmailParameters(value); err != nil {
 		panic(err)
@@ -590,6 +660,22 @@ func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) PutSlack(value
 		n,
 		"putSlack",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) ResetDatabricksAppSlack() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDatabricksAppSlack",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) ResetDatabricksAppTeams() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDatabricksAppTeams",
+		nil, // no parameters
 	)
 }
 

@@ -5,14 +5,14 @@ package notebook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notebook/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/notebook/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notebook databricks_notebook}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notebook databricks_notebook}.
 type Notebook interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -605,7 +605,7 @@ func (j *jsiiProxy_Notebook) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig) Notebook {
 	_init_.Initialize()
 
@@ -623,7 +623,7 @@ func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook_Override(n Notebook, scope constructs.Construct, id *string, config *NotebookConfig) {
 	_init_.Initialize()
 

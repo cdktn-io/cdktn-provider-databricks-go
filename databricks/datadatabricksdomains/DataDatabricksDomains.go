@@ -5,14 +5,14 @@ package datadatabricksdomains
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdomains/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdomains/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/domains databricks_domains}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/domains databricks_domains}.
 type DataDatabricksDomains interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataDatabricksDomains) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/domains databricks_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/domains databricks_domains} Data Source.
 func NewDataDatabricksDomains(scope constructs.Construct, id *string, config *DataDatabricksDomainsConfig) DataDatabricksDomains {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataDatabricksDomains(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/domains databricks_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/domains databricks_domains} Data Source.
 func NewDataDatabricksDomains_Override(d DataDatabricksDomains, scope constructs.Construct, id *string, config *DataDatabricksDomainsConfig) {
 	_init_.Initialize()
 

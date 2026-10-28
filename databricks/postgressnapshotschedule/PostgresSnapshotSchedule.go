@@ -5,14 +5,14 @@ package postgressnapshotschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgressnapshotschedule/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgressnapshotschedule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule}.
 type PostgresSnapshotSchedule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_PostgresSnapshotSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Resource.
 func NewPostgresSnapshotSchedule(scope constructs.Construct, id *string, config *PostgresSnapshotScheduleConfig) PostgresSnapshotSchedule {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewPostgresSnapshotSchedule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_snapshot_schedule databricks_postgres_snapshot_schedule} Resource.
 func NewPostgresSnapshotSchedule_Override(p PostgresSnapshotSchedule, scope constructs.Construct, id *string, config *PostgresSnapshotScheduleConfig) {
 	_init_.Initialize()
 

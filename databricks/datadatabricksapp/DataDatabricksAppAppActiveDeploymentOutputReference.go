@@ -5,9 +5,9 @@ package datadatabricksapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksapp/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksapp/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -43,6 +43,8 @@ type DataDatabricksAppAppActiveDeploymentOutputReference interface {
 	Fqn() *string
 	GitSource() DataDatabricksAppAppActiveDeploymentGitSourceOutputReference
 	GitSourceInput() interface{}
+	HealthCheck() DataDatabricksAppAppActiveDeploymentHealthCheckOutputReference
+	HealthCheckInput() interface{}
 	InternalValue() *DataDatabricksAppAppActiveDeployment
 	SetInternalValue(val *DataDatabricksAppAppActiveDeployment)
 	Mode() *string
@@ -87,10 +89,12 @@ type DataDatabricksAppAppActiveDeploymentOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEnvVars(value interface{})
 	PutGitSource(value *DataDatabricksAppAppActiveDeploymentGitSource)
+	PutHealthCheck(value *DataDatabricksAppAppActiveDeploymentHealthCheck)
 	ResetCommand()
 	ResetDeploymentId()
 	ResetEnvVars()
 	ResetGitSource()
+	ResetHealthCheck()
 	ResetMode()
 	ResetSourceCodePath()
 	// Produce the Token's value at resolution time.
@@ -253,6 +257,26 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) GitSourc
 	_jsii_.Get(
 		j,
 		"gitSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) HealthCheck() DataDatabricksAppAppActiveDeploymentHealthCheckOutputReference {
+	var returns DataDatabricksAppAppActiveDeploymentHealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"healthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) HealthCheckInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"healthCheckInput",
 		&returns,
 	)
 	return returns
@@ -683,6 +707,17 @@ func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) PutGitSo
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) PutHealthCheck(value *DataDatabricksAppAppActiveDeploymentHealthCheck) {
+	if err := d.validatePutHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHealthCheck",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) ResetCommand() {
 	_jsii_.InvokeVoid(
 		d,
@@ -711,6 +746,14 @@ func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) ResetGit
 	_jsii_.InvokeVoid(
 		d,
 		"resetGitSource",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) ResetHealthCheck() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHealthCheck",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package datadatabricksaigatewaymodelproviderservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaigatewaymodelproviderservices/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaigatewaymodelproviderservices/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -22,6 +22,8 @@ type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutp
 	AnthropicInput() interface{}
 	AzureOpenai() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiOutputReference
 	AzureOpenaiInput() interface{}
+	BedrockMantle() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigBedrockMantleOutputReference
+	BedrockMantleInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -60,6 +62,8 @@ type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutp
 	MicrosoftFoundryInput() interface{}
 	Openai() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiOutputReference
 	OpenaiInput() interface{}
+	Pricing() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigPricingOutputReference
+	PricingInput() interface{}
 	ProviderType() *string
 	SetProviderType(val *string)
 	ProviderTypeInput() *string
@@ -102,17 +106,20 @@ type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutp
 	PutAmazonBedrock(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrock)
 	PutAnthropic(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic)
 	PutAzureOpenai(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenai)
+	PutBedrockMantle(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigBedrockMantle)
 	PutCustom(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom)
 	PutGeminiEnterprise(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterprise)
 	PutInferenceTable(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable)
 	PutMicrosoftFoundry(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundry)
 	PutOpenai(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenai)
+	PutPricing(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigPricing)
 	PutRateLimits(value interface{})
 	PutTargets(value interface{})
 	ResetAllowAllTargets()
 	ResetAmazonBedrock()
 	ResetAnthropic()
 	ResetAzureOpenai()
+	ResetBedrockMantle()
 	ResetCustom()
 	ResetForwardHeaders()
 	ResetForwardQueryParameters()
@@ -121,6 +128,7 @@ type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutp
 	ResetInferenceTable()
 	ResetMicrosoftFoundry()
 	ResetOpenai()
+	ResetPricing()
 	ResetProviderType()
 	ResetRateLimits()
 	ResetTargets()
@@ -214,6 +222,26 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	_jsii_.Get(
 		j,
 		"azureOpenaiInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) BedrockMantle() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigBedrockMantleOutputReference {
+	var returns DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigBedrockMantleOutputReference
+	_jsii_.Get(
+		j,
+		"bedrockMantle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) BedrockMantleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bedrockMantleInput",
 		&returns,
 	)
 	return returns
@@ -424,6 +452,26 @@ func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	_jsii_.Get(
 		j,
 		"openaiInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) Pricing() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigPricingOutputReference {
+	var returns DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigPricingOutputReference
+	_jsii_.Get(
+		j,
+		"pricing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) PricingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pricingInput",
 		&returns,
 	)
 	return returns
@@ -866,6 +914,17 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) PutBedrockMantle(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigBedrockMantle) {
+	if err := d.validatePutBedrockMantleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putBedrockMantle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) PutCustom(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom) {
 	if err := d.validatePutCustomParameters(value); err != nil {
 		panic(err)
@@ -921,6 +980,17 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) PutPricing(value *DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigPricing) {
+	if err := d.validatePutPricingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPricing",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) PutRateLimits(value interface{}) {
 	if err := d.validatePutRateLimitsParameters(value); err != nil {
 		panic(err)
@@ -971,6 +1041,14 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	_jsii_.InvokeVoid(
 		d,
 		"resetAzureOpenai",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) ResetBedrockMantle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBedrockMantle",
 		nil, // no parameters
 	)
 }
@@ -1035,6 +1113,14 @@ func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServ
 	_jsii_.InvokeVoid(
 		d,
 		"resetOpenai",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOutputReference) ResetPricing() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPricing",
 		nil, // no parameters
 	)
 }

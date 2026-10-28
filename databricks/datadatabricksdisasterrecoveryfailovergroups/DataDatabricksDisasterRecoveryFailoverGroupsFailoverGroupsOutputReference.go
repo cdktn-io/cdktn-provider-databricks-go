@@ -5,9 +5,9 @@ package datadatabricksdisasterrecoveryfailovergroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdisasterrecoveryfailovergroups/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdisasterrecoveryfailovergroups/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -33,7 +33,9 @@ type DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroupsOutputReference i
 	Etag() *string
 	// Experimental.
 	Fqn() *string
+	HasReplicationPointBlockingErrors() cdktn.IResolvable
 	InitialPrimaryRegion() *string
+	InitialReplicationProgress() DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroupsInitialReplicationProgressOutputReference
 	InternalValue() *DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroups
 	SetInternalValue(val *DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroups)
 	Name() *string
@@ -162,11 +164,31 @@ func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroupsOut
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroupsOutputReference) HasReplicationPointBlockingErrors() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"hasReplicationPointBlockingErrors",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroupsOutputReference) InitialPrimaryRegion() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"initialPrimaryRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroupsOutputReference) InitialReplicationProgress() DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroupsInitialReplicationProgressOutputReference {
+	var returns DataDatabricksDisasterRecoveryFailoverGroupsFailoverGroupsInitialReplicationProgressOutputReference
+	_jsii_.Get(
+		j,
+		"initialReplicationProgress",
 		&returns,
 	)
 	return returns

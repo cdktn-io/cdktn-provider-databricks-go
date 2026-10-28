@@ -5,14 +5,14 @@ package datadatabrickssandboxes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssandboxes/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssandboxes/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sandboxes databricks_sandboxes}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/sandboxes databricks_sandboxes}.
 type DataDatabricksSandboxes interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksSandboxes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sandboxes databricks_sandboxes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/sandboxes databricks_sandboxes} Data Source.
 func NewDataDatabricksSandboxes(scope constructs.Construct, id *string, config *DataDatabricksSandboxesConfig) DataDatabricksSandboxes {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataDatabricksSandboxes(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sandboxes databricks_sandboxes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/sandboxes databricks_sandboxes} Data Source.
 func NewDataDatabricksSandboxes_Override(d DataDatabricksSandboxes, scope constructs.Construct, id *string, config *DataDatabricksSandboxesConfig) {
 	_init_.Initialize()
 

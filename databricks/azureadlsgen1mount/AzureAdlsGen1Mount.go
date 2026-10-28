@@ -5,14 +5,14 @@ package azureadlsgen1mount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/azureadlsgen1mount/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/azureadlsgen1mount/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/azure_adls_gen1_mount databricks_azure_adls_gen1_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/azure_adls_gen1_mount databricks_azure_adls_gen1_mount}.
 type AzureAdlsGen1Mount interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -589,7 +589,7 @@ func (j *jsiiProxy_AzureAdlsGen1Mount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/azure_adls_gen1_mount databricks_azure_adls_gen1_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/azure_adls_gen1_mount databricks_azure_adls_gen1_mount} Resource.
 func NewAzureAdlsGen1Mount(scope constructs.Construct, id *string, config *AzureAdlsGen1MountConfig) AzureAdlsGen1Mount {
 	_init_.Initialize()
 
@@ -607,7 +607,7 @@ func NewAzureAdlsGen1Mount(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/azure_adls_gen1_mount databricks_azure_adls_gen1_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/azure_adls_gen1_mount databricks_azure_adls_gen1_mount} Resource.
 func NewAzureAdlsGen1Mount_Override(a AzureAdlsGen1Mount, scope constructs.Construct, id *string, config *AzureAdlsGen1MountConfig) {
 	_init_.Initialize()
 

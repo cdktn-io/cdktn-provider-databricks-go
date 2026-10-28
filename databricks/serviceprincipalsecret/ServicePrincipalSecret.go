@@ -5,14 +5,14 @@ package serviceprincipalsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/serviceprincipalsecret/internal"
+	"github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/serviceprincipalsecret/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
 type ServicePrincipalSecret interface {
 	cdktn.TerraformResource
 	Api() *string
@@ -72,6 +72,9 @@ type ServicePrincipalSecret interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Scopes() *[]*string
+	SetScopes(val *[]*string)
+	ScopesInput() *[]*string
 	Secret() *string
 	SetSecret(val *string)
 	SecretHash() *string
@@ -198,6 +201,7 @@ type ServicePrincipalSecret interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetScopes()
 	ResetSecret()
 	ResetSecretHash()
 	ResetStatus()
@@ -480,6 +484,26 @@ func (j *jsiiProxy_ServicePrincipalSecret) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) Scopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) ScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) Secret() *string {
 	var returns *string
 	_jsii_.Get(
@@ -631,7 +655,7 @@ func (j *jsiiProxy_ServicePrincipalSecret) UpdateTimeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
 func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *ServicePrincipalSecretConfig) ServicePrincipalSecret {
 	_init_.Initialize()
 
@@ -649,7 +673,7 @@ func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
 func NewServicePrincipalSecret_Override(s ServicePrincipalSecret, scope constructs.Construct, id *string, config *ServicePrincipalSecretConfig) {
 	_init_.Initialize()
 
@@ -779,6 +803,17 @@ func (j *jsiiProxy_ServicePrincipalSecret)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret)SetScopes(val *[]*string) {
+	if err := j.validateSetScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scopes",
 		val,
 	)
 }
@@ -1292,6 +1327,14 @@ func (s *jsiiProxy_ServicePrincipalSecret) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipalSecret) ResetScopes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetScopes",
 		nil, // no parameters
 	)
 }
