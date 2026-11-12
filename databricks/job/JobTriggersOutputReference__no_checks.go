@@ -55,6 +55,10 @@ func (j *jsiiProxy_JobTriggersOutputReference) validatePutFileArrivalParameters(
 	return nil
 }
 
+func (j *jsiiProxy_JobTriggersOutputReference) validatePutJobCompletionParameters(value *JobTriggersJobCompletion) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTriggersOutputReference) validatePutModelParameters(value *JobTriggersModel) error {
 	return nil
 }

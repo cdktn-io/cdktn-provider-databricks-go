@@ -174,7 +174,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsO
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference) validateSetServicePrincipalIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

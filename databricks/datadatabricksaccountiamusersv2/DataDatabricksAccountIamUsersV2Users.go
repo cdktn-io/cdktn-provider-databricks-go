@@ -5,7 +5,7 @@ package datadatabricksaccountiamusersv2
 
 
 type DataDatabricksAccountIamUsersV2Users struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#user_id DataDatabricksAccountIamUsersV2#user_id}.
-	UserId *string `field:"required" json:"userId" yaml:"userId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#name DataDatabricksAccountIamUsersV2#name}.
+	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

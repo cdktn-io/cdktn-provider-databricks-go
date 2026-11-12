@@ -388,6 +388,14 @@ func (j *jsiiProxy_AccountIamUserV2) validateSetLifecycleParameters(val *cdktn.T
 	return nil
 }
 
+func (j *jsiiProxy_AccountIamUserV2) validateSetParentParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccountIamUserV2) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

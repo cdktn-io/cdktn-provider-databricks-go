@@ -33,11 +33,13 @@ type DataDatabricksAccountIamGroupsV2GroupsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	GroupId() *string
-	SetGroupId(val *string)
-	GroupIdInput() *string
 	GroupName() *string
 	InternalValue() *DataDatabricksAccountIamGroupsV2Groups
 	SetInternalValue(val *DataDatabricksAccountIamGroupsV2Groups)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Parent() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -155,16 +157,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference) GroupI
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference) GroupIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"groupIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference) GroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -180,6 +172,36 @@ func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
 		&returns,
 	)
 	return returns
@@ -255,17 +277,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference)SetGroupId(val *string) {
-	if err := j.validateSetGroupIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groupId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference)SetInternalValue(val *DataDatabricksAccountIamGroupsV2Groups) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -273,6 +284,17 @@ func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2GroupsOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }

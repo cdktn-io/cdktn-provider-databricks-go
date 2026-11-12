@@ -5,7 +5,7 @@ package datadatabricksaccountiamgroupsv2
 
 
 type DataDatabricksAccountIamGroupsV2Groups struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_groups_v2#group_id DataDatabricksAccountIamGroupsV2#group_id}.
-	GroupId *string `field:"required" json:"groupId" yaml:"groupId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_groups_v2#name DataDatabricksAccountIamGroupsV2#name}.
+	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

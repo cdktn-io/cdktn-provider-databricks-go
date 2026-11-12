@@ -107,6 +107,10 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig) validateSetAccountIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MwsNetworkConnectivityConfig) validateSetBillingWorkspaceIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsNetworkConnectivityConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

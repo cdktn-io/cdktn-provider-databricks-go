@@ -127,6 +127,10 @@ func (j *jsiiProxy_AccountIamServicePrincipalV2) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AccountIamServicePrincipalV2) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountIamServicePrincipalV2) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

@@ -230,14 +230,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamDirectGroupMemberV2) validateSetCou
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamDirectGroupMemberV2) validateSetGroupIdParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksWorkspaceIamDirectGroupMemberV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -246,7 +238,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamDirectGroupMemberV2) validateSetLif
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamDirectGroupMemberV2) validateSetPrincipalIdParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksWorkspaceIamDirectGroupMemberV2) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

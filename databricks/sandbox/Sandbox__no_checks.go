@@ -79,6 +79,10 @@ func (s *jsiiProxy_Sandbox) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (s *jsiiProxy_Sandbox) validatePutMetadataParameters(value *SandboxMetadata) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sandbox) validatePutProviderConfigParameters(value *SandboxProviderConfig) error {
 	return nil
 }

@@ -254,6 +254,14 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalsV2) validateSetPag
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalsV2) validateSetParentParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatabricksWorkspaceIamServicePrincipalsV2Parameters(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamServicePrincipalsV2Config) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

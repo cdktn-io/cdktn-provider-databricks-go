@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2 databricks_account_iam_user_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2 databricks_account_iam_user_v2}.
 type DataDatabricksAccountIamUserV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -43,8 +43,12 @@ type DataDatabricksAccountIamUserV2 interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Parent() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -58,8 +62,6 @@ type DataDatabricksAccountIamUserV2 interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UserId() *string
-	SetUserId(val *string)
-	UserIdInput() *string
 	Username() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -250,11 +252,41 @@ func (j *jsiiProxy_DataDatabricksAccountIamUserV2) Lifecycle() *cdktn.TerraformR
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAccountIamUserV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamUserV2) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAccountIamUserV2) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamUserV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
 		&returns,
 	)
 	return returns
@@ -320,16 +352,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamUserV2) UserId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamUserV2) UserIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"userIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamUserV2) Username() *string {
 	var returns *string
 	_jsii_.Get(
@@ -341,7 +363,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamUserV2) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2 databricks_account_iam_user_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2 databricks_account_iam_user_v2} Data Source.
 func NewDataDatabricksAccountIamUserV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamUserV2Config) DataDatabricksAccountIamUserV2 {
 	_init_.Initialize()
 
@@ -359,7 +381,7 @@ func NewDataDatabricksAccountIamUserV2(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2 databricks_account_iam_user_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2 databricks_account_iam_user_v2} Data Source.
 func NewDataDatabricksAccountIamUserV2_Override(d DataDatabricksAccountIamUserV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamUserV2Config) {
 	_init_.Initialize()
 
@@ -408,21 +430,21 @@ func (j *jsiiProxy_DataDatabricksAccountIamUserV2)SetLifecycle(val *cdktn.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamUserV2)SetProvider(val cdktn.TerraformProvider) {
-	_jsii_.Set(
-		j,
-		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAccountIamUserV2)SetUserId(val *string) {
-	if err := j.validateSetUserIdParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksAccountIamUserV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"userId",
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamUserV2)SetProvider(val cdktn.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
 		val,
 	)
 }

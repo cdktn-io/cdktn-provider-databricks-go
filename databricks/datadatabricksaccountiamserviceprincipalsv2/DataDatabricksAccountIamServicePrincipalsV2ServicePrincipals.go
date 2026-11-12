@@ -5,7 +5,7 @@ package datadatabricksaccountiamserviceprincipalsv2
 
 
 type DataDatabricksAccountIamServicePrincipalsV2ServicePrincipals struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_service_principals_v2#service_principal_id DataDatabricksAccountIamServicePrincipalsV2#service_principal_id}.
-	ServicePrincipalId *string `field:"required" json:"servicePrincipalId" yaml:"servicePrincipalId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_service_principals_v2#name DataDatabricksAccountIamServicePrincipalsV2#name}.
+	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

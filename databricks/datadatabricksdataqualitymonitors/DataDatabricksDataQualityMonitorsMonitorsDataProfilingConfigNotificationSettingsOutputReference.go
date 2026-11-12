@@ -34,6 +34,8 @@ type DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSet
 	SetInternalValue(val interface{})
 	OnFailure() DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailureOutputReference
 	OnFailureInput() interface{}
+	OnUnhealthyTable() DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference
+	OnUnhealthyTableInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSet
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOnFailure(value *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailure)
+	PutOnUnhealthyTable(value *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnUnhealthyTable)
 	ResetOnFailure()
+	ResetOnUnhealthyTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigN
 	_jsii_.Get(
 		j,
 		"onFailureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOutputReference) OnUnhealthyTable() DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference {
+	var returns DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference
+	_jsii_.Get(
+		j,
+		"onUnhealthyTable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOutputReference) OnUnhealthyTableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onUnhealthyTableInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigN
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOutputReference) PutOnUnhealthyTable(value *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnUnhealthyTable) {
+	if err := d.validatePutOnUnhealthyTableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOnUnhealthyTable",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOutputReference) ResetOnFailure() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOnFailure",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOutputReference) ResetOnUnhealthyTable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnUnhealthyTable",
 		nil, // no parameters
 	)
 }

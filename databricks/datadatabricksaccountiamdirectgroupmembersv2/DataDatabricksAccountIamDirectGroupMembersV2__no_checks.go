@@ -79,15 +79,15 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) validateSetCoun
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) validateSetGroupIdParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) validateSetParentParameters(val *string) error {
 	return nil
 }
 

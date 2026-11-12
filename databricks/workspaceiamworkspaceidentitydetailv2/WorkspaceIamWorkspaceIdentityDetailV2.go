@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}.
 type WorkspaceIamWorkspaceIdentityDetailV2 interface {
 	cdktn.TerraformResource
 	AssignmentType() *string
@@ -44,8 +44,12 @@ type WorkspaceIamWorkspaceIdentityDetailV2 interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	PrincipalId() *float64
 	PrincipalType() *string
 	// Experimental.
@@ -294,11 +298,41 @@ func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2) Lifecycle() *cdktn.Ter
 	return returns
 }
 
+func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
 		&returns,
 	)
 	return returns
@@ -425,7 +459,7 @@ func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2) WorkspaceIdentityStatu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Resource.
 func NewWorkspaceIamWorkspaceIdentityDetailV2(scope constructs.Construct, id *string, config *WorkspaceIamWorkspaceIdentityDetailV2Config) WorkspaceIamWorkspaceIdentityDetailV2 {
 	_init_.Initialize()
 
@@ -443,7 +477,7 @@ func NewWorkspaceIamWorkspaceIdentityDetailV2(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Resource.
 func NewWorkspaceIamWorkspaceIdentityDetailV2_Override(w WorkspaceIamWorkspaceIdentityDetailV2, scope constructs.Construct, id *string, config *WorkspaceIamWorkspaceIdentityDetailV2Config) {
 	_init_.Initialize()
 
@@ -499,6 +533,17 @@ func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2)SetLifecycle(val *cdktn
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }

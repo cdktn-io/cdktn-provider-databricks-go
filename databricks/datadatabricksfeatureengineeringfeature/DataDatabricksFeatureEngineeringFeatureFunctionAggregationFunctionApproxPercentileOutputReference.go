@@ -41,6 +41,9 @@ type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPer
 	Percentile() *float64
 	SetPercentile(val *float64)
 	PercentileInput() *float64
+	RelativeError() *float64
+	SetRelativeError(val *float64)
+	RelativeErrorInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,6 +77,7 @@ type DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPer
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccuracy()
+	ResetRelativeError()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -199,6 +203,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference) RelativeError() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"relativeError",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference) RelativeErrorInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"relativeErrorInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -309,6 +333,17 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	_jsii_.Set(
 		j,
 		"percentile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference)SetRelativeError(val *float64) {
+	if err := j.validateSetRelativeErrorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"relativeError",
 		val,
 	)
 }
@@ -525,6 +560,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccuracy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference) ResetRelativeError() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRelativeError",
 		nil, // no parameters
 	)
 }

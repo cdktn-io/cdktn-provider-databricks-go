@@ -83,7 +83,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalV2) validateSetLifecy
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalV2) validateSetServicePrincipalIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalV2) validateSetNameParameters(val *string) error {
 	return nil
 }
 

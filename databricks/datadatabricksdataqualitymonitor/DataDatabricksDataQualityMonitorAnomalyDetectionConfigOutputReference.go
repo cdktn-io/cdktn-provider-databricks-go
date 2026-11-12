@@ -35,6 +35,8 @@ type DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference inter
 	Fqn() *string
 	InternalValue() *DataDatabricksDataQualityMonitorAnomalyDetectionConfig
 	SetInternalValue(val *DataDatabricksDataQualityMonitorAnomalyDetectionConfig)
+	NotificationSettings() DataDatabricksDataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference
+	NotificationSettingsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference inter
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutNotificationSettings(value *DataDatabricksDataQualityMonitorAnomalyDetectionConfigNotificationSettings)
 	ResetExcludedTableFullNames()
+	ResetNotificationSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputR
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) NotificationSettings() DataDatabricksDataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference {
+	var returns DataDatabricksDataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"notificationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) NotificationSettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationSettingsInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputR
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) PutNotificationSettings(value *DataDatabricksDataQualityMonitorAnomalyDetectionConfigNotificationSettings) {
+	if err := d.validatePutNotificationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNotificationSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) ResetExcludedTableFullNames() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetExcludedTableFullNames",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) ResetNotificationSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNotificationSettings",
 		nil, // no parameters
 	)
 }

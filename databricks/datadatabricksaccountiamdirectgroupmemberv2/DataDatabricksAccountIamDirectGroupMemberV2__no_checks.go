@@ -79,15 +79,11 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) validateSetCount
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) validateSetGroupIdParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) validateSetPrincipalIdParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) validateSetNameParameters(val *string) error {
 	return nil
 }
 

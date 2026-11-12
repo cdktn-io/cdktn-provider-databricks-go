@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_groups_v2 databricks_account_iam_groups_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_groups_v2 databricks_account_iam_groups_v2}.
 type DataDatabricksAccountIamGroupsV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -48,6 +48,9 @@ type DataDatabricksAccountIamGroupsV2 interface {
 	PageSize() *float64
 	SetPageSize(val *float64)
 	PageSizeInput() *float64
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -271,6 +274,26 @@ func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2) PageSizeInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -322,7 +345,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_groups_v2 databricks_account_iam_groups_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_groups_v2 databricks_account_iam_groups_v2} Data Source.
 func NewDataDatabricksAccountIamGroupsV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamGroupsV2Config) DataDatabricksAccountIamGroupsV2 {
 	_init_.Initialize()
 
@@ -340,7 +363,7 @@ func NewDataDatabricksAccountIamGroupsV2(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_groups_v2 databricks_account_iam_groups_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_groups_v2 databricks_account_iam_groups_v2} Data Source.
 func NewDataDatabricksAccountIamGroupsV2_Override(d DataDatabricksAccountIamGroupsV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamGroupsV2Config) {
 	_init_.Initialize()
 
@@ -407,6 +430,17 @@ func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2)SetPageSize(val *float64) {
 	_jsii_.Set(
 		j,
 		"pageSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }

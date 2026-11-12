@@ -83,7 +83,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamUserV2) validateSetLifecycleParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamUserV2) validateSetUserIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksAccountIamUserV2) validateSetNameParameters(val *string) error {
 	return nil
 }
 

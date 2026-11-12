@@ -51,6 +51,10 @@ func (j *jsiiProxy_JobJobClusterOutputReference) validatePutNewClusterParameters
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterOutputReference) validatePutServerlessComputeParameters(value *JobJobClusterServerlessCompute) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

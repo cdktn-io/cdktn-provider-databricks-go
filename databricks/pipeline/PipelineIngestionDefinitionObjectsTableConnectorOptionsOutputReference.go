@@ -50,6 +50,8 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	MarketoOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions
 	MetaAdsOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference
 	MetaAdsOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions
+	OnedriveOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsOnedriveOptionsOutputReference
+	OnedriveOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsOnedriveOptions
 	OutlookOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference
 	OutlookOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions
 	RabbitmqOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptionsOutputReference
@@ -105,6 +107,7 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	PutLinkedinAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions)
 	PutMarketoOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions)
 	PutMetaAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions)
+	PutOnedriveOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOnedriveOptions)
 	PutOutlookOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions)
 	PutRabbitmqOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions)
 	PutRedditAdsOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions)
@@ -121,6 +124,7 @@ type PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference inte
 	ResetLinkedinAdsOptions()
 	ResetMarketoOptions()
 	ResetMetaAdsOptions()
+	ResetOnedriveOptions()
 	ResetOutlookOptions()
 	ResetRabbitmqOptions()
 	ResetRedditAdsOptions()
@@ -368,6 +372,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.Get(
 		j,
 		"metaAdsOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) OnedriveOptions() PipelineIngestionDefinitionObjectsTableConnectorOptionsOnedriveOptionsOutputReference {
+	var returns PipelineIngestionDefinitionObjectsTableConnectorOptionsOnedriveOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"onedriveOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) OnedriveOptionsInput() *PipelineIngestionDefinitionObjectsTableConnectorOptionsOnedriveOptions {
+	var returns *PipelineIngestionDefinitionObjectsTableConnectorOptionsOnedriveOptions
+	_jsii_.Get(
+		j,
+		"onedriveOptionsInput",
 		&returns,
 	)
 	return returns
@@ -901,6 +925,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutOnedriveOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOnedriveOptions) {
+	if err := p.validatePutOnedriveOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putOnedriveOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) PutOutlookOptions(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions) {
 	if err := p.validatePutOutlookOptionsParameters(value); err != nil {
 		panic(err)
@@ -1046,6 +1081,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	_jsii_.InvokeVoid(
 		p,
 		"resetMetaAdsOptions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) ResetOnedriveOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOnedriveOptions",
 		nil, // no parameters
 	)
 }

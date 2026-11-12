@@ -123,6 +123,10 @@ func (j *jsiiProxy_AccountIamUserV2) validateSetLifecycleParameters(val *cdktn.T
 	return nil
 }
 
+func (j *jsiiProxy_AccountIamUserV2) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountIamUserV2) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

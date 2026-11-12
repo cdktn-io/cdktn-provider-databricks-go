@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2}.
 type DataDatabricksAccountIamDirectGroupMembersV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -36,9 +36,6 @@ type DataDatabricksAccountIamDirectGroupMembersV2 interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GroupId() *float64
-	SetGroupId(val *float64)
-	GroupIdInput() *float64
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -48,6 +45,9 @@ type DataDatabricksAccountIamDirectGroupMembersV2 interface {
 	PageSize() *float64
 	SetPageSize(val *float64)
 	PageSizeInput() *float64
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -210,26 +210,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) FriendlyUniqueI
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) GroupId() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"groupId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) GroupIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"groupIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -265,6 +245,26 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) PageSizeInput()
 	_jsii_.Get(
 		j,
 		"pageSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
 		&returns,
 	)
 	return returns
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2} Data Source.
 func NewDataDatabricksAccountIamDirectGroupMembersV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamDirectGroupMembersV2Config) DataDatabricksAccountIamDirectGroupMembersV2 {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDatabricksAccountIamDirectGroupMembersV2(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2} Data Source.
 func NewDataDatabricksAccountIamDirectGroupMembersV2_Override(d DataDatabricksAccountIamDirectGroupMembersV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamDirectGroupMembersV2Config) {
 	_init_.Initialize()
 
@@ -377,17 +377,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2)SetForEach(val c
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2)SetGroupId(val *float64) {
-	if err := j.validateSetGroupIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groupId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -406,6 +395,17 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2)SetPageSize(val 
 	_jsii_.Set(
 		j,
 		"pageSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }

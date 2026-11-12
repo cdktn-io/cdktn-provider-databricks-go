@@ -34,6 +34,8 @@ type DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOutp
 	SetInternalValue(val interface{})
 	OnFailure() DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference
 	OnFailureInput() interface{}
+	OnUnhealthyTable() DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference
+	OnUnhealthyTableInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOutp
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOnFailure(value *DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure)
+	PutOnUnhealthyTable(value *DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable)
 	ResetOnFailure()
+	ResetOnUnhealthyTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificati
 	_jsii_.Get(
 		j,
 		"onFailureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) OnUnhealthyTable() DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference {
+	var returns DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference
+	_jsii_.Get(
+		j,
+		"onUnhealthyTable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) OnUnhealthyTableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onUnhealthyTableInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificati
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) PutOnUnhealthyTable(value *DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable) {
+	if err := d.validatePutOnUnhealthyTableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOnUnhealthyTable",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) ResetOnFailure() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOnFailure",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) ResetOnUnhealthyTable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnUnhealthyTable",
 		nil, // no parameters
 	)
 }

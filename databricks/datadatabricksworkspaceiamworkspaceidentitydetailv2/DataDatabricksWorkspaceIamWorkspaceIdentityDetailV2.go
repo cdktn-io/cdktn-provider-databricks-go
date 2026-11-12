@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}.
 type DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2 interface {
 	cdktn.TerraformDataSource
 	AssignmentType() *string
@@ -40,11 +40,12 @@ type DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2 interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	PrincipalId() *float64
-	SetPrincipalId(val *float64)
-	PrincipalIdInput() *float64
 	PrincipalType() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
@@ -222,6 +223,26 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2) Lifecycl
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -237,16 +258,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2) Principa
 	_jsii_.Get(
 		j,
 		"principalId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2) PrincipalIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"principalIdInput",
 		&returns,
 	)
 	return returns
@@ -343,7 +354,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2) Workspac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Data Source.
 func NewDataDatabricksWorkspaceIamWorkspaceIdentityDetailV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config) DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2 {
 	_init_.Initialize()
 
@@ -361,7 +372,7 @@ func NewDataDatabricksWorkspaceIamWorkspaceIdentityDetailV2(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Data Source.
 func NewDataDatabricksWorkspaceIamWorkspaceIdentityDetailV2_Override(d DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config) {
 	_init_.Initialize()
 
@@ -410,13 +421,13 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2)SetLifecy
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2)SetPrincipalId(val *float64) {
-	if err := j.validateSetPrincipalIdParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"principalId",
+		"name",
 		val,
 	)
 }

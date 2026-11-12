@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsO
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference) validateSetServicePrincipalIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
 

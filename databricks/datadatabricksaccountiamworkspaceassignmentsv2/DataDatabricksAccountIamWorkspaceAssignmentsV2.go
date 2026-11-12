@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2 databricks_account_iam_workspace_assignments_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_workspace_assignments_v2 databricks_account_iam_workspace_assignments_v2}.
 type DataDatabricksAccountIamWorkspaceAssignmentsV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -44,6 +44,9 @@ type DataDatabricksAccountIamWorkspaceAssignmentsV2 interface {
 	PageSize() *float64
 	SetPageSize(val *float64)
 	PageSizeInput() *float64
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -57,9 +60,6 @@ type DataDatabricksAccountIamWorkspaceAssignmentsV2 interface {
 	// Experimental.
 	TerraformResourceType() *string
 	WorkspaceAssignments() DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsList
-	WorkspaceId() *float64
-	SetWorkspaceId(val *float64)
-	WorkspaceIdInput() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -240,6 +240,26 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2) PageSizeInput
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -300,28 +320,8 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2) WorkspaceAssi
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2) WorkspaceId() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2) WorkspaceIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2 databricks_account_iam_workspace_assignments_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_workspace_assignments_v2 databricks_account_iam_workspace_assignments_v2} Data Source.
 func NewDataDatabricksAccountIamWorkspaceAssignmentsV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamWorkspaceAssignmentsV2Config) DataDatabricksAccountIamWorkspaceAssignmentsV2 {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDatabricksAccountIamWorkspaceAssignmentsV2(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2 databricks_account_iam_workspace_assignments_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_workspace_assignments_v2 databricks_account_iam_workspace_assignments_v2} Data Source.
 func NewDataDatabricksAccountIamWorkspaceAssignmentsV2_Override(d DataDatabricksAccountIamWorkspaceAssignmentsV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamWorkspaceAssignmentsV2Config) {
 	_init_.Initialize()
 
@@ -399,21 +399,21 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2)SetPageSize(va
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2)SetProvider(val cdktn.TerraformProvider) {
-	_jsii_.Set(
-		j,
-		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2)SetWorkspaceId(val *float64) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"workspaceId",
+		"parent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2)SetProvider(val cdktn.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
 		val,
 	)
 }

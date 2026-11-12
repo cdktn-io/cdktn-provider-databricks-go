@@ -83,11 +83,11 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) validateSetCountParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) validateSetGroupIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) validateSetNameParameters(val *string) error {
 	return nil
 }
 

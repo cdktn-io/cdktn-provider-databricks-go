@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
 type SqlEndpoint interface {
 	cdktn.TerraformResource
 	AutoStopMins() *float64
@@ -37,8 +37,6 @@ type SqlEndpoint interface {
 	SetCount(val interface{})
 	CreatorName() *string
 	CustomerVersionLabel() *string
-	SetCustomerVersionLabel(val *string)
-	CustomerVersionLabelInput() *string
 	DataSourceId() *string
 	SetDataSourceId(val *string)
 	DataSourceIdInput() *string
@@ -104,9 +102,6 @@ type SqlEndpoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ReydenClusterSizeMultiplier() *float64
-	SetReydenClusterSizeMultiplier(val *float64)
-	ReydenClusterSizeMultiplierInput() *float64
 	SpotInstancePolicy() *string
 	SetSpotInstancePolicy(val *string)
 	SpotInstancePolicyInput() *string
@@ -225,7 +220,6 @@ type SqlEndpoint interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAutoStopMins()
 	ResetChannel()
-	ResetCustomerVersionLabel()
 	ResetDataSourceId()
 	ResetEnablePhoton()
 	ResetEnableServerlessCompute()
@@ -239,7 +233,6 @@ type SqlEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
-	ResetReydenClusterSizeMultiplier()
 	ResetSpotInstancePolicy()
 	ResetStatementTimeout()
 	ResetTags()
@@ -387,16 +380,6 @@ func (j *jsiiProxy_SqlEndpoint) CustomerVersionLabel() *string {
 	_jsii_.Get(
 		j,
 		"customerVersionLabel",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlEndpoint) CustomerVersionLabelInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customerVersionLabelInput",
 		&returns,
 	)
 	return returns
@@ -762,26 +745,6 @@ func (j *jsiiProxy_SqlEndpoint) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpoint) ReydenClusterSizeMultiplier() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"reydenClusterSizeMultiplier",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlEndpoint) ReydenClusterSizeMultiplierInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"reydenClusterSizeMultiplierInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SqlEndpoint) SpotInstancePolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -923,7 +886,7 @@ func (j *jsiiProxy_SqlEndpoint) WarehouseTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointConfig) SqlEndpoint {
 	_init_.Initialize()
 
@@ -941,7 +904,7 @@ func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint_Override(s SqlEndpoint, scope constructs.Construct, id *string, config *SqlEndpointConfig) {
 	_init_.Initialize()
 
@@ -992,17 +955,6 @@ func (j *jsiiProxy_SqlEndpoint)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SqlEndpoint)SetCustomerVersionLabel(val *string) {
-	if err := j.validateSetCustomerVersionLabelParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customerVersionLabel",
 		val,
 	)
 }
@@ -1159,17 +1111,6 @@ func (j *jsiiProxy_SqlEndpoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SqlEndpoint)SetReydenClusterSizeMultiplier(val *float64) {
-	if err := j.validateSetReydenClusterSizeMultiplierParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"reydenClusterSizeMultiplier",
 		val,
 	)
 }
@@ -1647,14 +1588,6 @@ func (s *jsiiProxy_SqlEndpoint) ResetChannel() {
 	)
 }
 
-func (s *jsiiProxy_SqlEndpoint) ResetCustomerVersionLabel() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetCustomerVersionLabel",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SqlEndpoint) ResetDataSourceId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1739,14 +1672,6 @@ func (s *jsiiProxy_SqlEndpoint) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProviderConfig",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SqlEndpoint) ResetReydenClusterSizeMultiplier() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetReydenClusterSizeMultiplier",
 		nil, // no parameters
 	)
 }

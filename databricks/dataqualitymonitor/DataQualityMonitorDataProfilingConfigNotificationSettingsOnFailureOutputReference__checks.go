@@ -166,6 +166,22 @@ func (j *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOnFa
 	return nil
 }
 
+func (j *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference) validateSetDestinationIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference) validateSetDestinationUserIdsParameters(val *[]*float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference) validateSetEmailAddressesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

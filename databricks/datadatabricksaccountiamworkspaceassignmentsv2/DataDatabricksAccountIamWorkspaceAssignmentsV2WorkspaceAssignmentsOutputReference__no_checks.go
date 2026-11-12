@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssign
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) validateSetPrincipalIdParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
 
@@ -72,10 +72,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssign
 }
 
 func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) validateSetWorkspaceIdParameters(val *float64) error {
 	return nil
 }
 

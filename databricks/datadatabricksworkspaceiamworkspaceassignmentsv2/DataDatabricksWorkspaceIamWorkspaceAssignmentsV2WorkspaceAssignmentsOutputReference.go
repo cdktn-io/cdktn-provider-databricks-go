@@ -35,9 +35,11 @@ type DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputR
 	Fqn() *string
 	InternalValue() *DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments
 	SetInternalValue(val *DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Parent() *string
 	PrincipalId() *float64
-	SetPrincipalId(val *float64)
-	PrincipalIdInput() *float64
 	PrincipalType() *string
 	ProviderConfig() DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfigOutputReference
 	ProviderConfigInput() interface{}
@@ -171,21 +173,41 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssi
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) PrincipalId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) Name() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"principalId",
+		"name",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) PrincipalIdInput() *float64 {
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) PrincipalId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"principalIdInput",
+		"principalId",
 		&returns,
 	)
 	return returns
@@ -312,13 +334,13 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssi
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference)SetPrincipalId(val *float64) {
-	if err := j.validateSetPrincipalIdParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"principalId",
+		"name",
 		val,
 	)
 }

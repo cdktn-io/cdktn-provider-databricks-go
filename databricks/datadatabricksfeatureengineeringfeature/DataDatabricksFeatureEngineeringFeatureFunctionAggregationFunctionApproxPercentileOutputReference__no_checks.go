@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFun
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference) validateSetRelativeErrorParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

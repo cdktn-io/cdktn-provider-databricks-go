@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2}.
 type AccountIamUserV2 interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -52,8 +52,12 @@ type AccountIamUserV2 interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -358,11 +362,41 @@ func (j *jsiiProxy_AccountIamUserV2) Lifecycle() *cdktn.TerraformResourceLifecyc
 	return returns
 }
 
+func (j *jsiiProxy_AccountIamUserV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountIamUserV2) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountIamUserV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountIamUserV2) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
 		&returns,
 	)
 	return returns
@@ -459,7 +493,7 @@ func (j *jsiiProxy_AccountIamUserV2) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2} Resource.
 func NewAccountIamUserV2(scope constructs.Construct, id *string, config *AccountIamUserV2Config) AccountIamUserV2 {
 	_init_.Initialize()
 
@@ -477,7 +511,7 @@ func NewAccountIamUserV2(scope constructs.Construct, id *string, config *Account
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2} Resource.
 func NewAccountIamUserV2_Override(a AccountIamUserV2, scope constructs.Construct, id *string, config *AccountIamUserV2Config) {
 	_init_.Initialize()
 
@@ -555,6 +589,17 @@ func (j *jsiiProxy_AccountIamUserV2)SetLifecycle(val *cdktn.TerraformResourceLif
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountIamUserV2)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }

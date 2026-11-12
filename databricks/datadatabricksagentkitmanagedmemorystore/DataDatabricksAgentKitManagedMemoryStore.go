@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store databricks_agent_kit_managed_memory_store}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store databricks_agent_kit_managed_memory_store}.
 type DataDatabricksAgentKitManagedMemoryStore interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataDatabricksAgentKitManagedMemoryStore) WorkspaceId() *floa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store databricks_agent_kit_managed_memory_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store databricks_agent_kit_managed_memory_store} Data Source.
 func NewDataDatabricksAgentKitManagedMemoryStore(scope constructs.Construct, id *string, config *DataDatabricksAgentKitManagedMemoryStoreConfig) DataDatabricksAgentKitManagedMemoryStore {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataDatabricksAgentKitManagedMemoryStore(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store databricks_agent_kit_managed_memory_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store databricks_agent_kit_managed_memory_store} Data Source.
 func NewDataDatabricksAgentKitManagedMemoryStore_Override(d DataDatabricksAgentKitManagedMemoryStore, scope constructs.Construct, id *string, config *DataDatabricksAgentKitManagedMemoryStoreConfig) {
 	_init_.Initialize()
 

@@ -135,6 +135,10 @@ func (j *jsiiProxy_Budget) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Budget) validateSetIncludeExternalSpendParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Budget) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

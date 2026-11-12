@@ -87,7 +87,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) validateSetLife
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) validateSetServicePrincipalIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) validateSetNameParameters(val *string) error {
 	return nil
 }
 

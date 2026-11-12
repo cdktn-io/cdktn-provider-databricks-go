@@ -1,0 +1,89 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dataqualitymonitor
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateSetDestinationIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateSetDestinationUserIdsParameters(val *[]*float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateSetEmailAddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

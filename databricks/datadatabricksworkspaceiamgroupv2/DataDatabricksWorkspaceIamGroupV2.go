@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_group_v2 databricks_workspace_iam_group_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_group_v2 databricks_workspace_iam_group_v2}.
 type DataDatabricksWorkspaceIamGroupV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -38,15 +38,17 @@ type DataDatabricksWorkspaceIamGroupV2 interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GroupId() *string
-	SetGroupId(val *string)
-	GroupIdInput() *string
 	GroupName() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Parent() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -232,16 +234,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) GroupId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) GroupIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"groupIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) GroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -262,11 +254,41 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) Lifecycle() *cdktn.Terrafo
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
 		&returns,
 	)
 	return returns
@@ -343,7 +365,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_group_v2 databricks_workspace_iam_group_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_group_v2 databricks_workspace_iam_group_v2} Data Source.
 func NewDataDatabricksWorkspaceIamGroupV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamGroupV2Config) DataDatabricksWorkspaceIamGroupV2 {
 	_init_.Initialize()
 
@@ -361,7 +383,7 @@ func NewDataDatabricksWorkspaceIamGroupV2(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_group_v2 databricks_workspace_iam_group_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_group_v2 databricks_workspace_iam_group_v2} Data Source.
 func NewDataDatabricksWorkspaceIamGroupV2_Override(d DataDatabricksWorkspaceIamGroupV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamGroupV2Config) {
 	_init_.Initialize()
 
@@ -399,17 +421,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2)SetForEach(val cdktn.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2)SetGroupId(val *string) {
-	if err := j.validateSetGroupIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groupId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -417,6 +428,17 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2)SetLifecycle(val *cdktn.Ter
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }

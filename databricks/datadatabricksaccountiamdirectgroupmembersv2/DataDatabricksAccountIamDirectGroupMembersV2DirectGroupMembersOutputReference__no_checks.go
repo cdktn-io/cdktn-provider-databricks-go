@@ -59,15 +59,11 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMember
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) validateSetGroupIdParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) validateSetInternalValueParameters(val *DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) validateSetPrincipalIdParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
 

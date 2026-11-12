@@ -36,6 +36,10 @@ type DataDatabricksWorkspaceIamUsersV2UsersOutputReference interface {
 	FullName() DataDatabricksWorkspaceIamUsersV2UsersFullNameOutputReference
 	InternalValue() *DataDatabricksWorkspaceIamUsersV2Users
 	SetInternalValue(val *DataDatabricksWorkspaceIamUsersV2Users)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Parent() *string
 	ProviderConfig() DataDatabricksWorkspaceIamUsersV2UsersProviderConfigOutputReference
 	ProviderConfigInput() interface{}
 	// Experimental.
@@ -47,8 +51,6 @@ type DataDatabricksWorkspaceIamUsersV2UsersOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UserId() *string
-	SetUserId(val *string)
-	UserIdInput() *string
 	Username() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -181,6 +183,36 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) Intern
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) ProviderConfig() DataDatabricksWorkspaceIamUsersV2UsersProviderConfigOutputReference {
 	var returns DataDatabricksWorkspaceIamUsersV2UsersProviderConfigOutputReference
 	_jsii_.Get(
@@ -226,16 +258,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) UserId
 	_jsii_.Get(
 		j,
 		"userId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) UserIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"userIdInput",
 		&returns,
 	)
 	return returns
@@ -312,6 +334,17 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference)SetInte
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -330,17 +363,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference)SetTerr
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference)SetUserId(val *string) {
-	if err := j.validateSetUserIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"userId",
 		val,
 	)
 }

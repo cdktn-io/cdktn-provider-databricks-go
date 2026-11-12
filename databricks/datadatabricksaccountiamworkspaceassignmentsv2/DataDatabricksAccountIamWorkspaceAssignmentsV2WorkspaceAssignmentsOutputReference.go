@@ -35,9 +35,11 @@ type DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputRef
 	Fqn() *string
 	InternalValue() *DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignments
 	SetInternalValue(val *DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignments)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Parent() *string
 	PrincipalId() *float64
-	SetPrincipalId(val *float64)
-	PrincipalIdInput() *float64
 	PrincipalType() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -48,8 +50,6 @@ type DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputRef
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WorkspaceId() *float64
-	SetWorkspaceId(val *float64)
-	WorkspaceIdInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -169,21 +169,41 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssign
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) PrincipalId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) Name() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"principalId",
+		"name",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) PrincipalIdInput() *float64 {
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) PrincipalId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"principalIdInput",
+		"principalId",
 		&returns,
 	)
 	return returns
@@ -224,16 +244,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssign
 	_jsii_.Get(
 		j,
 		"workspaceId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference) WorkspaceIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
 		&returns,
 	)
 	return returns
@@ -300,13 +310,13 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssign
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference)SetPrincipalId(val *float64) {
-	if err := j.validateSetPrincipalIdParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"principalId",
+		"name",
 		val,
 	)
 }
@@ -329,17 +339,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssign
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference)SetWorkspaceId(val *float64) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2}.
 type DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -44,6 +44,9 @@ type DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 interface {
 	PageSize() *float64
 	SetPageSize(val *float64)
 	PageSizeInput() *float64
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -102,6 +105,7 @@ type DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPageSize()
+	ResetParent()
 	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -241,6 +245,26 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2) PageSizeInp
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -322,7 +346,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2) WorkspaceAs
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2} Data Source.
 func NewDataDatabricksWorkspaceIamWorkspaceAssignmentsV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config) DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 {
 	_init_.Initialize()
 
@@ -340,7 +364,7 @@ func NewDataDatabricksWorkspaceIamWorkspaceAssignmentsV2(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2} Data Source.
 func NewDataDatabricksWorkspaceIamWorkspaceAssignmentsV2_Override(d DataDatabricksWorkspaceIamWorkspaceAssignmentsV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config) {
 	_init_.Initialize()
 
@@ -396,6 +420,17 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2)SetPageSize(
 	_jsii_.Set(
 		j,
 		"pageSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }
@@ -727,6 +762,14 @@ func (d *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2) ResetPageSi
 	_jsii_.InvokeVoid(
 		d,
 		"resetPageSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2) ResetParent() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetParent",
 		nil, // no parameters
 	)
 }

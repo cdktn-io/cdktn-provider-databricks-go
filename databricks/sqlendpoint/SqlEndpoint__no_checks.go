@@ -131,10 +131,6 @@ func (j *jsiiProxy_SqlEndpoint) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_SqlEndpoint) validateSetCustomerVersionLabelParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SqlEndpoint) validateSetDataSourceIdParameters(val *string) error {
 	return nil
 }
@@ -180,10 +176,6 @@ func (j *jsiiProxy_SqlEndpoint) validateSetNoWaitParameters(val interface{}) err
 }
 
 func (j *jsiiProxy_SqlEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_SqlEndpoint) validateSetReydenClusterSizeMultiplierParameters(val *float64) error {
 	return nil
 }
 

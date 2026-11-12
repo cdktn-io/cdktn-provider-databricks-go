@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox databricks_sandbox}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox databricks_sandbox}.
 type Sandbox interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -47,6 +47,8 @@ type Sandbox interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Metadata() SandboxMetadataOutputReference
+	MetadataInput() interface{}
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -154,6 +156,7 @@ type Sandbox interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutMetadata(value *SandboxMetadata)
 	PutProviderConfig(value *SandboxProviderConfig)
 	PutSpec(value *SandboxSpec)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
@@ -170,6 +173,7 @@ type Sandbox interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetDisplayName()
+	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -317,6 +321,26 @@ func (j *jsiiProxy_Sandbox) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sandbox) Metadata() SandboxMetadataOutputReference {
+	var returns SandboxMetadataOutputReference
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sandbox) MetadataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"metadataInput",
 		&returns,
 	)
 	return returns
@@ -483,7 +507,7 @@ func (j *jsiiProxy_Sandbox) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox databricks_sandbox} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox databricks_sandbox} Resource.
 func NewSandbox(scope constructs.Construct, id *string, config *SandboxConfig) Sandbox {
 	_init_.Initialize()
 
@@ -501,7 +525,7 @@ func NewSandbox(scope constructs.Construct, id *string, config *SandboxConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox databricks_sandbox} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox databricks_sandbox} Resource.
 func NewSandbox_Override(s Sandbox, scope constructs.Construct, id *string, config *SandboxConfig) {
 	_init_.Initialize()
 
@@ -971,6 +995,17 @@ func (s *jsiiProxy_Sandbox) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_Sandbox) PutMetadata(value *SandboxMetadata) {
+	if err := s.validatePutMetadataParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putMetadata",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_Sandbox) PutProviderConfig(value *SandboxProviderConfig) {
 	if err := s.validatePutProviderConfigParameters(value); err != nil {
 		panic(err)
@@ -1008,6 +1043,14 @@ func (s *jsiiProxy_Sandbox) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Sandbox) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMetadata",
 		nil, // no parameters
 	)
 }

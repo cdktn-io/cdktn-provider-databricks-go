@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalsV2) validateSetPag
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalsV2) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksWorkspaceIamServicePrincipalsV2Parameters(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamServicePrincipalsV2Config) error {
 	return nil
 }

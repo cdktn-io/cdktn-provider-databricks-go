@@ -34,6 +34,8 @@ type JobTriggerOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTrigger
 	SetInternalValue(val *JobTrigger)
+	JobCompletion() JobTriggerJobCompletionOutputReference
+	JobCompletionInput() *JobTriggerJobCompletion
 	Model() JobTriggerModelOutputReference
 	ModelInput() *JobTriggerModel
 	PauseStatus() *string
@@ -78,11 +80,13 @@ type JobTriggerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFileArrival(value *JobTriggerFileArrival)
+	PutJobCompletion(value *JobTriggerJobCompletion)
 	PutModel(value *JobTriggerModel)
 	PutPeriodic(value *JobTriggerPeriodic)
 	PutSqlCondition(value *JobTriggerSqlCondition)
 	PutTableUpdate(value *JobTriggerTableUpdate)
 	ResetFileArrival()
+	ResetJobCompletion()
 	ResetModel()
 	ResetPauseStatus()
 	ResetPeriodic()
@@ -168,6 +172,26 @@ func (j *jsiiProxy_JobTriggerOutputReference) InternalValue() *JobTrigger {
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) JobCompletion() JobTriggerJobCompletionOutputReference {
+	var returns JobTriggerJobCompletionOutputReference
+	_jsii_.Get(
+		j,
+		"jobCompletion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) JobCompletionInput() *JobTriggerJobCompletion {
+	var returns *JobTriggerJobCompletion
+	_jsii_.Get(
+		j,
+		"jobCompletionInput",
 		&returns,
 	)
 	return returns
@@ -584,6 +608,17 @@ func (j *jsiiProxy_JobTriggerOutputReference) PutFileArrival(value *JobTriggerFi
 	)
 }
 
+func (j *jsiiProxy_JobTriggerOutputReference) PutJobCompletion(value *JobTriggerJobCompletion) {
+	if err := j.validatePutJobCompletionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putJobCompletion",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTriggerOutputReference) PutModel(value *JobTriggerModel) {
 	if err := j.validatePutModelParameters(value); err != nil {
 		panic(err)
@@ -632,6 +667,14 @@ func (j *jsiiProxy_JobTriggerOutputReference) ResetFileArrival() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetFileArrival",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) ResetJobCompletion() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetJobCompletion",
 		nil, // no parameters
 	)
 }

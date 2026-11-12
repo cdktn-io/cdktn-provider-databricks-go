@@ -34,6 +34,8 @@ type DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference in
 	SetInternalValue(val interface{})
 	OnFailure() DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference
 	OnFailureInput() interface{}
+	OnUnhealthyTable() DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference
+	OnUnhealthyTableInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference in
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOnFailure(value *DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure)
+	PutOnUnhealthyTable(value *DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable)
 	ResetOnFailure()
+	ResetOnUnhealthyTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutp
 	_jsii_.Get(
 		j,
 		"onFailureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) OnUnhealthyTable() DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference {
+	var returns DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference
+	_jsii_.Get(
+		j,
+		"onUnhealthyTable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) OnUnhealthyTableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onUnhealthyTableInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutp
 	)
 }
 
+func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) PutOnUnhealthyTable(value *DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable) {
+	if err := d.validatePutOnUnhealthyTableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOnUnhealthyTable",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) ResetOnFailure() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOnFailure",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) ResetOnUnhealthyTable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnUnhealthyTable",
 		nil, // no parameters
 	)
 }

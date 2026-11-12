@@ -119,6 +119,10 @@ func (j *jsiiProxy_AccountIamGroupV2) validateSetLifecycleParameters(val *cdktn.
 	return nil
 }
 
+func (j *jsiiProxy_AccountIamGroupV2) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountIamGroupV2) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

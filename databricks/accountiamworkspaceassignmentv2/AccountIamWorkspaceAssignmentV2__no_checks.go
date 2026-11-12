@@ -115,6 +115,10 @@ func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2) validateSetPrincipalIdParameters(val *float64) error {
 	return nil
 }

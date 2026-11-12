@@ -13,6 +13,8 @@ import (
 
 type JobTaskOutputReference interface {
 	cdktn.ComplexObject
+	AiFunctionTask() JobTaskAiFunctionTaskOutputReference
+	AiFunctionTaskInput() *JobTaskAiFunctionTask
 	AiRuntimeTask() JobTaskAiRuntimeTaskOutputReference
 	AiRuntimeTaskInput() *JobTaskAiRuntimeTask
 	AlertTask() JobTaskAlertTaskOutputReference
@@ -159,6 +161,7 @@ type JobTaskOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAiFunctionTask(value *JobTaskAiFunctionTask)
 	PutAiRuntimeTask(value *JobTaskAiRuntimeTask)
 	PutAlertTask(value *JobTaskAlertTask)
 	PutCleanRoomsNotebookTask(value *JobTaskCleanRoomsNotebookTask)
@@ -187,6 +190,7 @@ type JobTaskOutputReference interface {
 	PutSparkSubmitTask(value *JobTaskSparkSubmitTask)
 	PutSqlTask(value *JobTaskSqlTask)
 	PutWebhookNotifications(value *JobTaskWebhookNotifications)
+	ResetAiFunctionTask()
 	ResetAiRuntimeTask()
 	ResetAlertTask()
 	ResetCleanRoomsNotebookTask()
@@ -240,6 +244,26 @@ type JobTaskOutputReference interface {
 // The jsii proxy struct for JobTaskOutputReference
 type jsiiProxy_JobTaskOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) AiFunctionTask() JobTaskAiFunctionTaskOutputReference {
+	var returns JobTaskAiFunctionTaskOutputReference
+	_jsii_.Get(
+		j,
+		"aiFunctionTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) AiFunctionTaskInput() *JobTaskAiFunctionTask {
+	var returns *JobTaskAiFunctionTask
+	_jsii_.Get(
+		j,
+		"aiFunctionTaskInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) AiRuntimeTask() JobTaskAiRuntimeTaskOutputReference {
@@ -1544,6 +1568,17 @@ func (j *jsiiProxy_JobTaskOutputReference) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutAiFunctionTask(value *JobTaskAiFunctionTask) {
+	if err := j.validatePutAiFunctionTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putAiFunctionTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) PutAiRuntimeTask(value *JobTaskAiRuntimeTask) {
 	if err := j.validatePutAiRuntimeTaskParameters(value); err != nil {
 		panic(err)
@@ -1849,6 +1884,14 @@ func (j *jsiiProxy_JobTaskOutputReference) PutWebhookNotifications(value *JobTas
 		j,
 		"putWebhookNotifications",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetAiFunctionTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetAiFunctionTask",
+		nil, // no parameters
 	)
 }
 

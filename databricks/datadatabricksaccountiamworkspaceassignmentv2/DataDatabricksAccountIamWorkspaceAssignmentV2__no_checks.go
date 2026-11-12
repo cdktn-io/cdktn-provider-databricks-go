@@ -83,11 +83,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentV2) validateSetLif
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentV2) validateSetPrincipalIdParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentV2) validateSetWorkspaceIdParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentV2) validateSetNameParameters(val *string) error {
 	return nil
 }
 

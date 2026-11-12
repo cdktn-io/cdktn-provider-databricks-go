@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2) validateSetPageSizeParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAccountIamGroupsV2) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksAccountIamGroupsV2Parameters(scope constructs.Construct, id *string, config *DataDatabricksAccountIamGroupsV2Config) error {
 	return nil
 }

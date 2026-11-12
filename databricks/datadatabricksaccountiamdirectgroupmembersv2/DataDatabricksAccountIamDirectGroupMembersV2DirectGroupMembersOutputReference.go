@@ -33,14 +33,14 @@ type DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReferen
 	// Experimental.
 	Fqn() *string
 	GroupId() *float64
-	SetGroupId(val *float64)
-	GroupIdInput() *float64
 	InternalValue() *DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers
 	SetInternalValue(val *DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers)
 	MembershipSource() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Parent() *string
 	PrincipalId() *float64
-	SetPrincipalId(val *float64)
-	PrincipalIdInput() *float64
 	PrincipalType() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -159,16 +159,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMember
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) GroupIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"groupIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) InternalValue() *DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers {
 	var returns *DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers
 	_jsii_.Get(
@@ -189,21 +179,41 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMember
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) PrincipalId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) Name() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"principalId",
+		"name",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) PrincipalIdInput() *float64 {
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) PrincipalId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"principalIdInput",
+		"principalId",
 		&returns,
 	)
 	return returns
@@ -289,17 +299,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMember
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference)SetGroupId(val *float64) {
-	if err := j.validateSetGroupIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groupId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference)SetInternalValue(val *DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -311,13 +310,13 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMember
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference)SetPrincipalId(val *float64) {
-	if err := j.validateSetPrincipalIdParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"principalId",
+		"name",
 		val,
 	)
 }

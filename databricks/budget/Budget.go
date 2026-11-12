@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/budget databricks_budget}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/budget databricks_budget}.
 type Budget interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -58,6 +58,9 @@ type Budget interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IncludeExternalSpend() interface{}
+	SetIncludeExternalSpend(val interface{})
+	IncludeExternalSpendInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -187,6 +190,7 @@ type Budget interface {
 	ResetDisplayName()
 	ResetFilter()
 	ResetId()
+	ResetIncludeExternalSpend()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -439,6 +443,26 @@ func (j *jsiiProxy_Budget) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Budget) IncludeExternalSpend() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeExternalSpend",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Budget) IncludeExternalSpendInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeExternalSpendInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Budget) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -560,7 +584,7 @@ func (j *jsiiProxy_Budget) UpdateTimeInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/budget databricks_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/budget databricks_budget} Resource.
 func NewBudget(scope constructs.Construct, id *string, config *BudgetConfig) Budget {
 	_init_.Initialize()
 
@@ -578,7 +602,7 @@ func NewBudget(scope constructs.Construct, id *string, config *BudgetConfig) Bud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/budget databricks_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/budget databricks_budget} Resource.
 func NewBudget_Override(b Budget, scope constructs.Construct, id *string, config *BudgetConfig) {
 	_init_.Initialize()
 
@@ -678,6 +702,17 @@ func (j *jsiiProxy_Budget)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Budget)SetIncludeExternalSpend(val interface{}) {
+	if err := j.validateSetIncludeExternalSpendParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeExternalSpend",
 		val,
 	)
 }
@@ -1188,6 +1223,14 @@ func (b *jsiiProxy_Budget) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_Budget) ResetIncludeExternalSpend() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetIncludeExternalSpend",
 		nil, // no parameters
 	)
 }

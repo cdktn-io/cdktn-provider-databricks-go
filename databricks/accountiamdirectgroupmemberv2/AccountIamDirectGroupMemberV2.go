@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
 type AccountIamDirectGroupMemberV2 interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -49,8 +49,12 @@ type AccountIamDirectGroupMemberV2 interface {
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MembershipSource() *string
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	PrincipalId() *float64
 	SetPrincipalId(val *float64)
 	PrincipalIdInput() *float64
@@ -334,11 +338,41 @@ func (j *jsiiProxy_AccountIamDirectGroupMemberV2) MembershipSource() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccountIamDirectGroupMemberV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountIamDirectGroupMemberV2) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountIamDirectGroupMemberV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountIamDirectGroupMemberV2) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
 		&returns,
 	)
 	return returns
@@ -435,7 +469,7 @@ func (j *jsiiProxy_AccountIamDirectGroupMemberV2) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Resource.
 func NewAccountIamDirectGroupMemberV2(scope constructs.Construct, id *string, config *AccountIamDirectGroupMemberV2Config) AccountIamDirectGroupMemberV2 {
 	_init_.Initialize()
 
@@ -453,7 +487,7 @@ func NewAccountIamDirectGroupMemberV2(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Resource.
 func NewAccountIamDirectGroupMemberV2_Override(a AccountIamDirectGroupMemberV2, scope constructs.Construct, id *string, config *AccountIamDirectGroupMemberV2Config) {
 	_init_.Initialize()
 
@@ -520,6 +554,17 @@ func (j *jsiiProxy_AccountIamDirectGroupMemberV2)SetLifecycle(val *cdktn.Terrafo
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountIamDirectGroupMemberV2)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }

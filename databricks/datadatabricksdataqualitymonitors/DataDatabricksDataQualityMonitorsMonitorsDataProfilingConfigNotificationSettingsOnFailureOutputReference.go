@@ -28,6 +28,12 @@ type DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSet
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DestinationIds() *[]*string
+	SetDestinationIds(val *[]*string)
+	DestinationIdsInput() *[]*string
+	DestinationUserIds() *[]*float64
+	SetDestinationUserIds(val *[]*float64)
+	DestinationUserIdsInput() *[]*float64
 	EmailAddresses() *[]*string
 	SetEmailAddresses(val *[]*string)
 	EmailAddressesInput() *[]*string
@@ -67,6 +73,8 @@ type DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSet
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDestinationIds()
+	ResetDestinationUserIds()
 	ResetEmailAddresses()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +116,46 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigN
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailureOutputReference) DestinationIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destinationIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailureOutputReference) DestinationIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destinationIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailureOutputReference) DestinationUserIds() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"destinationUserIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailureOutputReference) DestinationUserIdsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"destinationUserIdsInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +267,28 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigN
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailureOutputReference)SetDestinationIds(val *[]*string) {
+	if err := j.validateSetDestinationIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destinationIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailureOutputReference)SetDestinationUserIds(val *[]*float64) {
+	if err := j.validateSetDestinationUserIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destinationUserIds",
 		val,
 	)
 }
@@ -451,6 +521,22 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigN
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailureOutputReference) ResetDestinationIds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDestinationIds",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailureOutputReference) ResetDestinationUserIds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDestinationUserIds",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailureOutputReference) ResetEmailAddresses() {

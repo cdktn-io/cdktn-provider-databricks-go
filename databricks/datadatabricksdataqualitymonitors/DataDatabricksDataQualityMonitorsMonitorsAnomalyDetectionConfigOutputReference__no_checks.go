@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsAnomalyDetectionConf
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsAnomalyDetectionConfigOutputReference) validatePutNotificationSettingsParameters(value *DataDatabricksDataQualityMonitorsMonitorsAnomalyDetectionConfigNotificationSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsAnomalyDetectionConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/policy_info databricks_policy_info}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/policy_info databricks_policy_info}.
 type PolicyInfo interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -767,7 +767,7 @@ func (j *jsiiProxy_PolicyInfo) WhenConditionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/policy_info databricks_policy_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/policy_info databricks_policy_info} Resource.
 func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoConfig) PolicyInfo {
 	_init_.Initialize()
 
@@ -785,7 +785,7 @@ func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/policy_info databricks_policy_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/policy_info databricks_policy_info} Resource.
 func NewPolicyInfo_Override(p PolicyInfo, scope constructs.Construct, id *string, config *PolicyInfoConfig) {
 	_init_.Initialize()
 

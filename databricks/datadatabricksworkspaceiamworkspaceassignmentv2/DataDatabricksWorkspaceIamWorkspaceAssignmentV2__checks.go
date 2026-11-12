@@ -238,7 +238,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentV2) validateSetL
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentV2) validateSetPrincipalIdParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentV2) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

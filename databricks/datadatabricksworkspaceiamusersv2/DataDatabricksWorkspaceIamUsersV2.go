@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2}.
 type DataDatabricksWorkspaceIamUsersV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -47,6 +47,9 @@ type DataDatabricksWorkspaceIamUsersV2 interface {
 	PageSize() *float64
 	SetPageSize(val *float64)
 	PageSizeInput() *float64
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -106,6 +109,7 @@ type DataDatabricksWorkspaceIamUsersV2 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPageSize()
+	ResetParent()
 	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -265,6 +269,26 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2) PageSizeInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -346,7 +370,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2) Users() DataDatabricksWork
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2} Data Source.
 func NewDataDatabricksWorkspaceIamUsersV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamUsersV2Config) DataDatabricksWorkspaceIamUsersV2 {
 	_init_.Initialize()
 
@@ -364,7 +388,7 @@ func NewDataDatabricksWorkspaceIamUsersV2(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2} Data Source.
 func NewDataDatabricksWorkspaceIamUsersV2_Override(d DataDatabricksWorkspaceIamUsersV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamUsersV2Config) {
 	_init_.Initialize()
 
@@ -431,6 +455,17 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2)SetPageSize(val *float64) {
 	_jsii_.Set(
 		j,
 		"pageSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }
@@ -770,6 +805,14 @@ func (d *jsiiProxy_DataDatabricksWorkspaceIamUsersV2) ResetPageSize() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPageSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceIamUsersV2) ResetParent() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetParent",
 		nil, // no parameters
 	)
 }

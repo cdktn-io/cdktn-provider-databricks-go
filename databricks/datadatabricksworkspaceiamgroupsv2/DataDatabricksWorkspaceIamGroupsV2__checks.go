@@ -254,6 +254,14 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupsV2) validateSetPageSizeParame
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupsV2) validateSetParentParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatabricksWorkspaceIamGroupsV2Parameters(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamGroupsV2Config) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

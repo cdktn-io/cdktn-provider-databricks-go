@@ -83,6 +83,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutput
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutOnedriveOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOnedriveOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference) validatePutOutlookOptionsParameters(value *PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions) error {
 	return nil
 }

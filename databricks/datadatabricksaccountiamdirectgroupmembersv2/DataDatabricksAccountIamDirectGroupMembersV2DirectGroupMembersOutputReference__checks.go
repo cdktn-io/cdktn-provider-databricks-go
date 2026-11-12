@@ -166,14 +166,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMember
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) validateSetGroupIdParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) validateSetInternalValueParameters(val *DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -182,7 +174,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMember
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) validateSetPrincipalIdParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

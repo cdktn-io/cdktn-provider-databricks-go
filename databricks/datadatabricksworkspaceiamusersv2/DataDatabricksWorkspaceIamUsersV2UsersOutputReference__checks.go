@@ -185,6 +185,14 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -194,14 +202,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) valida
 }
 
 func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2UsersOutputReference) validateSetUserIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

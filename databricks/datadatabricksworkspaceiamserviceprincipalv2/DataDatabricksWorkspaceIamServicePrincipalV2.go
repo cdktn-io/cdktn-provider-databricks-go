@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2}.
 type DataDatabricksWorkspaceIamServicePrincipalV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -44,8 +44,12 @@ type DataDatabricksWorkspaceIamServicePrincipalV2 interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Parent() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -55,8 +59,6 @@ type DataDatabricksWorkspaceIamServicePrincipalV2 interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ServicePrincipalId() *string
-	SetServicePrincipalId(val *string)
-	ServicePrincipalIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -264,11 +266,41 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) Lifecycle() *cd
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
 		&returns,
 	)
 	return returns
@@ -324,16 +356,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) ServicePrincipa
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) ServicePrincipalIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"servicePrincipalIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -365,7 +387,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2} Data Source.
 func NewDataDatabricksWorkspaceIamServicePrincipalV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamServicePrincipalV2Config) DataDatabricksWorkspaceIamServicePrincipalV2 {
 	_init_.Initialize()
 
@@ -383,7 +405,7 @@ func NewDataDatabricksWorkspaceIamServicePrincipalV2(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2} Data Source.
 func NewDataDatabricksWorkspaceIamServicePrincipalV2_Override(d DataDatabricksWorkspaceIamServicePrincipalV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamServicePrincipalV2Config) {
 	_init_.Initialize()
 
@@ -432,21 +454,21 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2)SetLifecycle(val
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2)SetProvider(val cdktn.TerraformProvider) {
-	_jsii_.Set(
-		j,
-		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2)SetServicePrincipalId(val *string) {
-	if err := j.validateSetServicePrincipalIdParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"servicePrincipalId",
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceIamServicePrincipalV2)SetProvider(val cdktn.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
 		val,
 	)
 }

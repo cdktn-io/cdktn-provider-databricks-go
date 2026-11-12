@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
 type DataDatabricksAccountIamDirectGroupMemberV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -38,18 +38,18 @@ type DataDatabricksAccountIamDirectGroupMemberV2 interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GroupId() *float64
-	SetGroupId(val *float64)
-	GroupIdInput() *float64
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MembershipSource() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Parent() *string
 	PrincipalId() *float64
-	SetPrincipalId(val *float64)
-	PrincipalIdInput() *float64
 	PrincipalType() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
@@ -232,16 +232,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) GroupId() *float
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) GroupIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"groupIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -262,6 +252,26 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) MembershipSource
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -272,21 +282,21 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) Node() construct
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) PrincipalId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) Parent() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"principalId",
+		"parent",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) PrincipalIdInput() *float64 {
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) PrincipalId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"principalIdInput",
+		"principalId",
 		&returns,
 	)
 	return returns
@@ -353,7 +363,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Data Source.
 func NewDataDatabricksAccountIamDirectGroupMemberV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamDirectGroupMemberV2Config) DataDatabricksAccountIamDirectGroupMemberV2 {
 	_init_.Initialize()
 
@@ -371,7 +381,7 @@ func NewDataDatabricksAccountIamDirectGroupMemberV2(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Data Source.
 func NewDataDatabricksAccountIamDirectGroupMemberV2_Override(d DataDatabricksAccountIamDirectGroupMemberV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamDirectGroupMemberV2Config) {
 	_init_.Initialize()
 
@@ -409,17 +419,6 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2)SetForEach(val cd
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2)SetGroupId(val *float64) {
-	if err := j.validateSetGroupIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groupId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -431,13 +430,13 @@ func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2)SetLifecycle(val 
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2)SetPrincipalId(val *float64) {
-	if err := j.validateSetPrincipalIdParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksAccountIamDirectGroupMemberV2)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"principalId",
+		"name",
 		val,
 	)
 }

@@ -413,14 +413,6 @@ func (j *jsiiProxy_SqlEndpoint) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_SqlEndpoint) validateSetCustomerVersionLabelParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_SqlEndpoint) validateSetDataSourceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -586,14 +578,6 @@ func (j *jsiiProxy_SqlEndpoint) validateSetProvisionersParameters(val *[]interfa
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktn.FileProvisioner, *cdktn.LocalExecProvisioner, *cdktn.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SqlEndpoint) validateSetReydenClusterSizeMultiplierParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

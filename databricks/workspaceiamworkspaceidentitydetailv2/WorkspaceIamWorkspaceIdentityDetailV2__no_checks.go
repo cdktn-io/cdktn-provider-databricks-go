@@ -115,6 +115,10 @@ func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2) validateSetLifecyclePa
 	return nil
 }
 
+func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkspaceIamWorkspaceIdentityDetailV2) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

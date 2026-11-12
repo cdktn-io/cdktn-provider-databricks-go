@@ -59,6 +59,14 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificati
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference) validateSetDestinationIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference) validateSetDestinationUserIdsParameters(val *[]*float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference) validateSetEmailAddressesParameters(val *[]*string) error {
 	return nil
 }

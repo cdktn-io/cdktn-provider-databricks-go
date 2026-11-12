@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2}.
 type AccountIamWorkspaceAssignmentV2 interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -48,8 +48,12 @@ type AccountIamWorkspaceAssignmentV2 interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	PrincipalId() *float64
 	SetPrincipalId(val *float64)
 	PrincipalIdInput() *float64
@@ -327,11 +331,41 @@ func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2) Lifecycle() *cdktn.Terraform
 	return returns
 }
 
+func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
 		&returns,
 	)
 	return returns
@@ -448,7 +482,7 @@ func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2) WorkspaceIdInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2} Resource.
 func NewAccountIamWorkspaceAssignmentV2(scope constructs.Construct, id *string, config *AccountIamWorkspaceAssignmentV2Config) AccountIamWorkspaceAssignmentV2 {
 	_init_.Initialize()
 
@@ -466,7 +500,7 @@ func NewAccountIamWorkspaceAssignmentV2(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2} Resource.
 func NewAccountIamWorkspaceAssignmentV2_Override(a AccountIamWorkspaceAssignmentV2, scope constructs.Construct, id *string, config *AccountIamWorkspaceAssignmentV2Config) {
 	_init_.Initialize()
 
@@ -533,6 +567,17 @@ func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2)SetLifecycle(val *cdktn.Terra
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountIamWorkspaceAssignmentV2)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }

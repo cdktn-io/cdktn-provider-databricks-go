@@ -115,6 +115,10 @@ func (j *jsiiProxy_AccountIamDirectGroupMemberV2) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_AccountIamDirectGroupMemberV2) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountIamDirectGroupMemberV2) validateSetPrincipalIdParameters(val *float64) error {
 	return nil
 }

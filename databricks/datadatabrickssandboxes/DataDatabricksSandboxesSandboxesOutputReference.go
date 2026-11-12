@@ -34,6 +34,7 @@ type DataDatabricksSandboxesSandboxesOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataDatabricksSandboxesSandboxes
 	SetInternalValue(val *DataDatabricksSandboxesSandboxes)
+	Metadata() DataDatabricksSandboxesSandboxesMetadataOutputReference
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -156,6 +157,16 @@ func (j *jsiiProxy_DataDatabricksSandboxesSandboxesOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSandboxesSandboxesOutputReference) Metadata() DataDatabricksSandboxesSandboxesMetadataOutputReference {
+	var returns DataDatabricksSandboxesSandboxesMetadataOutputReference
+	_jsii_.Get(
+		j,
+		"metadata",
 		&returns,
 	)
 	return returns

@@ -227,7 +227,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamUserV2) validateSetLifecycleParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamUserV2) validateSetUserIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksAccountIamUserV2) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

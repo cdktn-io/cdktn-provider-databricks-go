@@ -67,6 +67,10 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCou
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference) validateSetRelativeErrorParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference) validateSetRelativeSdParameters(val *float64) error {
 	return nil
 }

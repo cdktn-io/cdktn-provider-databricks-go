@@ -177,17 +177,17 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference) validateSetGroupIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference) validateSetInternalValueParameters(val *DataDatabricksWorkspaceIamGroupsV2Groups) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference) validateSetInternalValueParameters(val *DataDatabricksWorkspaceIamGroupsV2Groups) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

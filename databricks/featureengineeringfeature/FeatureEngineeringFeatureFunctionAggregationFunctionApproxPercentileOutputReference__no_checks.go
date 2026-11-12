@@ -75,6 +75,10 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxPer
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference) validateSetRelativeErrorParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

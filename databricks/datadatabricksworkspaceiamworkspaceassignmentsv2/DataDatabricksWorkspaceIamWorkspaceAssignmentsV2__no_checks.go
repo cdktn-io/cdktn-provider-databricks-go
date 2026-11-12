@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksWorkspaceIamWorkspaceAssignmentsV2) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksWorkspaceIamWorkspaceAssignmentsV2Parameters(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config) error {
 	return nil
 }

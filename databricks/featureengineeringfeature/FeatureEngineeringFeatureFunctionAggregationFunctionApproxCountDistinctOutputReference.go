@@ -35,6 +35,9 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutp
 	InputInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	RelativeError() *float64
+	SetRelativeError(val *float64)
+	RelativeErrorInput() *float64
 	RelativeSd() *float64
 	SetRelativeSd(val *float64)
 	RelativeSdInput() *float64
@@ -70,6 +73,7 @@ type FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutp
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetRelativeError()
 	ResetRelativeSd()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -151,6 +155,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCou
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference) RelativeError() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"relativeError",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference) RelativeErrorInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"relativeErrorInput",
 		&returns,
 	)
 	return returns
@@ -264,6 +288,17 @@ func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCou
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference)SetRelativeError(val *float64) {
+	if err := j.validateSetRelativeErrorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"relativeError",
 		val,
 	)
 }
@@ -485,6 +520,14 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCou
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference) ResetRelativeError() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRelativeError",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference) ResetRelativeSd() {

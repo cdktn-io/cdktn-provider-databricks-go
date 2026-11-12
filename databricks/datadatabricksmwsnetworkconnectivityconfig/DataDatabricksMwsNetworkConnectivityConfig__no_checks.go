@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) validateSetAccoun
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) validateSetBillingWorkspaceIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) validateSetCountParameters(val interface{}) error {
 	return nil
 }

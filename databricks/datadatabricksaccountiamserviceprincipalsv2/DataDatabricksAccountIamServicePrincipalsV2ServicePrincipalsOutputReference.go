@@ -37,9 +37,11 @@ type DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference
 	Fqn() *string
 	InternalValue() *DataDatabricksAccountIamServicePrincipalsV2ServicePrincipals
 	SetInternalValue(val *DataDatabricksAccountIamServicePrincipalsV2ServicePrincipals)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Parent() *string
 	ServicePrincipalId() *string
-	SetServicePrincipalId(val *string)
-	ServicePrincipalIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -187,21 +189,41 @@ func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsO
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference) ServicePrincipalId() *string {
+func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"servicePrincipalId",
+		"name",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference) ServicePrincipalIdInput() *string {
+func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference) NameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"servicePrincipalIdInput",
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference) ServicePrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePrincipalId",
 		&returns,
 	)
 	return returns
@@ -288,13 +310,13 @@ func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsO
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference)SetServicePrincipalId(val *string) {
-	if err := j.validateSetServicePrincipalIdParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"servicePrincipalId",
+		"name",
 		val,
 	)
 }

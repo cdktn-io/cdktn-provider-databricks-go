@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigN
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOutputReference) validatePutOnUnhealthyTableParameters(value *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnUnhealthyTable) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

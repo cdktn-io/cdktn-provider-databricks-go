@@ -12,12 +12,15 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config}.
 type MwsNetworkConnectivityConfig interface {
 	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	BillingWorkspaceId() *float64
+	SetBillingWorkspaceId(val *float64)
+	BillingWorkspaceIdInput() *float64
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -178,6 +181,7 @@ type MwsNetworkConnectivityConfig interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
+	ResetBillingWorkspaceId()
 	ResetCreationTime()
 	ResetEgressConfig()
 	ResetId()
@@ -228,6 +232,26 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNetworkConnectivityConfig) BillingWorkspaceId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"billingWorkspaceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNetworkConnectivityConfig) BillingWorkspaceIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"billingWorkspaceIdInput",
 		&returns,
 	)
 	return returns
@@ -534,7 +558,7 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig) UpdatedTimeInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
 func NewMwsNetworkConnectivityConfig(scope constructs.Construct, id *string, config *MwsNetworkConnectivityConfigConfig) MwsNetworkConnectivityConfig {
 	_init_.Initialize()
 
@@ -552,7 +576,7 @@ func NewMwsNetworkConnectivityConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
 func NewMwsNetworkConnectivityConfig_Override(m MwsNetworkConnectivityConfig, scope constructs.Construct, id *string, config *MwsNetworkConnectivityConfigConfig) {
 	_init_.Initialize()
 
@@ -570,6 +594,17 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwsNetworkConnectivityConfig)SetBillingWorkspaceId(val *float64) {
+	if err := j.validateSetBillingWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"billingWorkspaceId",
 		val,
 	)
 }
@@ -1103,6 +1138,14 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfig) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsNetworkConnectivityConfig) ResetBillingWorkspaceId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBillingWorkspaceId",
 		nil, // no parameters
 	)
 }

@@ -63,15 +63,15 @@ func (j *jsiiProxy_DataDatabricksAccountIamUsersV2UsersOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAccountIamUsersV2UsersOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAccountIamUsersV2UsersOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksAccountIamUsersV2UsersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAccountIamUsersV2UsersOutputReference) validateSetUserIdParameters(val *string) error {
 	return nil
 }
 
