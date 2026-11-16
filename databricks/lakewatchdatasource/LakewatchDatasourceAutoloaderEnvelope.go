@@ -5,9 +5,9 @@ package lakewatchdatasource
 
 
 type LakewatchDatasourceAutoloaderEnvelope struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource#cloud_watch_logs LakewatchDatasource#cloud_watch_logs}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource#cloud_watch_logs LakewatchDatasource#cloud_watch_logs}.
 	CloudWatchLogs *LakewatchDatasourceAutoloaderEnvelopeCloudWatchLogs `field:"optional" json:"cloudWatchLogs" yaml:"cloudWatchLogs"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource#json_array LakewatchDatasource#json_array}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource#json_array LakewatchDatasource#json_array}.
 	JsonArray *LakewatchDatasourceAutoloaderEnvelopeJsonArray `field:"optional" json:"jsonArray" yaml:"jsonArray"`
 }
 

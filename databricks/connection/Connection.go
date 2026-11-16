@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection databricks_connection}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection databricks_connection}.
 type Connection interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -68,6 +68,14 @@ type Connection interface {
 	Options() *map[string]*string
 	SetOptions(val *map[string]*string)
 	OptionsInput() *map[string]*string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	OptionsWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	SetOptionsWo(val *string)
+	OptionsWoInput() *string
+	OptionsWoVersion() *float64
+	SetOptionsWoVersion(val *float64)
+	OptionsWoVersionInput() *float64
 	Owner() *string
 	SetOwner(val *string)
 	OwnerInput() *string
@@ -206,6 +214,8 @@ type Connection interface {
 	ResetId()
 	ResetName()
 	ResetOptions()
+	ResetOptionsWo()
+	ResetOptionsWoVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -522,6 +532,46 @@ func (j *jsiiProxy_Connection) OptionsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Connection) OptionsWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionsWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) OptionsWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionsWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) OptionsWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"optionsWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) OptionsWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"optionsWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Connection) Owner() *string {
 	var returns *string
 	_jsii_.Get(
@@ -753,7 +803,7 @@ func (j *jsiiProxy_Connection) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection(scope constructs.Construct, id *string, config *ConnectionConfig) Connection {
 	_init_.Initialize()
 
@@ -771,7 +821,7 @@ func NewConnection(scope constructs.Construct, id *string, config *ConnectionCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection_Override(c Connection, scope constructs.Construct, id *string, config *ConnectionConfig) {
 	_init_.Initialize()
 
@@ -882,6 +932,28 @@ func (j *jsiiProxy_Connection)SetOptions(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"options",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Connection)SetOptionsWo(val *string) {
+	if err := j.validateSetOptionsWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionsWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Connection)SetOptionsWoVersion(val *float64) {
+	if err := j.validateSetOptionsWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionsWoVersion",
 		val,
 	)
 }
@@ -1406,6 +1478,22 @@ func (c *jsiiProxy_Connection) ResetOptions() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOptions",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Connection) ResetOptionsWo() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOptionsWo",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Connection) ResetOptionsWoVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOptionsWoVersion",
 		nil, // no parameters
 	)
 }

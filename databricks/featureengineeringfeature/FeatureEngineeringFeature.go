@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
 type FeatureEngineeringFeature interface {
 	cdktn.TerraformResource
 	CatalogName() *string
@@ -67,6 +67,7 @@ type FeatureEngineeringFeature interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	OutputTypeText() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -509,6 +510,16 @@ func (j *jsiiProxy_FeatureEngineeringFeature) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeature) OutputTypeText() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputTypeText",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeature) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -660,7 +671,7 @@ func (j *jsiiProxy_FeatureEngineeringFeature) TimeWindowInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) FeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -678,7 +689,7 @@ func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature_Override(f FeatureEngineeringFeature, scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 

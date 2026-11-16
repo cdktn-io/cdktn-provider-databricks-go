@@ -26,9 +26,6 @@ type DataDatabricksLakewatchRuleScheduleOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Continuous() interface{}
-	SetContinuous(val interface{})
-	ContinuousInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -77,7 +74,6 @@ type DataDatabricksLakewatchRuleScheduleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAtLeastEvery()
-	ResetContinuous()
 	ResetCronExpression()
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
@@ -130,26 +126,6 @@ func (j *jsiiProxy_DataDatabricksLakewatchRuleScheduleOutputReference) ComplexOb
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksLakewatchRuleScheduleOutputReference) Continuous() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"continuous",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksLakewatchRuleScheduleOutputReference) ContinuousInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"continuousInput",
 		&returns,
 	)
 	return returns
@@ -302,17 +278,6 @@ func (j *jsiiProxy_DataDatabricksLakewatchRuleScheduleOutputReference)SetComplex
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksLakewatchRuleScheduleOutputReference)SetContinuous(val interface{}) {
-	if err := j.validateSetContinuousParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"continuous",
 		val,
 	)
 }
@@ -562,14 +527,6 @@ func (d *jsiiProxy_DataDatabricksLakewatchRuleScheduleOutputReference) ResetAtLe
 	_jsii_.InvokeVoid(
 		d,
 		"resetAtLeastEvery",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksLakewatchRuleScheduleOutputReference) ResetContinuous() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetContinuous",
 		nil, // no parameters
 	)
 }

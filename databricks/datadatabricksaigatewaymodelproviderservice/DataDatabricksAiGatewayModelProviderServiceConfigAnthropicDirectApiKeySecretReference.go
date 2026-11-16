@@ -5,7 +5,7 @@ package datadatabricksaigatewaymodelproviderservice
 
 
 type DataDatabricksAiGatewayModelProviderServiceConfigAnthropicDirectApiKeySecretReference struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_gateway_model_provider_service#name DataDatabricksAiGatewayModelProviderService#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_gateway_model_provider_service#name DataDatabricksAiGatewayModelProviderService#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

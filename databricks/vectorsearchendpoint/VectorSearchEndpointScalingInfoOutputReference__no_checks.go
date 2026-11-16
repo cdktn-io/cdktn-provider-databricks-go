@@ -59,7 +59,23 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetDelayedReasonParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetEstimatedCompletionTimestampParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetIndexInitializationPercentageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetInternalValueParameters(val *VectorSearchEndpointScalingInfo) error {
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetPhaseParameters(val *string) error {
 	return nil
 }
 
@@ -68,6 +84,10 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetRe
 }
 
 func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetTargetQpsChangeAllowedAfterTimestampParameters(val *float64) error {
 	return nil
 }
 

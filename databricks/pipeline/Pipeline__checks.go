@@ -438,6 +438,17 @@ func (p *jsiiProxy_Pipeline) validatePutRunAsParameters(value *PipelineRunAs) er
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validatePutTestingParameters(value *PipelineTesting) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validatePutTimeoutsParameters(value *PipelineTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -5,9 +5,9 @@ package datadatabricksworkspaceiamusersv2
 
 
 type DataDatabricksWorkspaceIamUsersV2Users struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#name DataDatabricksWorkspaceIamUsersV2#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_iam_users_v2#name DataDatabricksWorkspaceIamUsersV2#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#provider_config DataDatabricksWorkspaceIamUsersV2#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_iam_users_v2#provider_config DataDatabricksWorkspaceIamUsersV2#provider_config}.
 	ProviderConfig *DataDatabricksWorkspaceIamUsersV2UsersProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

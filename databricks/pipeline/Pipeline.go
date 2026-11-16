@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktn.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -168,6 +168,8 @@ type Pipeline interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Testing() PipelineTestingOutputReference
+	TestingInput() *PipelineTesting
 	Timeouts() PipelineTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Trigger() PipelineTriggerOutputReference
@@ -270,6 +272,7 @@ type Pipeline interface {
 	PutProviderConfig(value *PipelineProviderConfig)
 	PutRestartWindow(value *PipelineRestartWindow)
 	PutRunAs(value *PipelineRunAs)
+	PutTesting(value *PipelineTesting)
 	PutTimeouts(value *PipelineTimeouts)
 	PutTrigger(value *PipelineTrigger)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
@@ -328,6 +331,7 @@ type Pipeline interface {
 	ResetStorage()
 	ResetTags()
 	ResetTarget()
+	ResetTesting()
 	ResetTimeouts()
 	ResetTrigger()
 	ResetUrl()
@@ -1319,6 +1323,26 @@ func (j *jsiiProxy_Pipeline) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Pipeline) Testing() PipelineTestingOutputReference {
+	var returns PipelineTestingOutputReference
+	_jsii_.Get(
+		j,
+		"testing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) TestingInput() *PipelineTesting {
+	var returns *PipelineTesting
+	_jsii_.Get(
+		j,
+		"testingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Pipeline) Timeouts() PipelineTimeoutsOutputReference {
 	var returns PipelineTimeoutsOutputReference
 	_jsii_.Get(
@@ -1400,7 +1424,7 @@ func (j *jsiiProxy_Pipeline) UsagePolicyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1418,7 +1442,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -2328,6 +2352,17 @@ func (p *jsiiProxy_Pipeline) PutRunAs(value *PipelineRunAs) {
 	)
 }
 
+func (p *jsiiProxy_Pipeline) PutTesting(value *PipelineTesting) {
+	if err := p.validatePutTestingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putTesting",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_Pipeline) PutTimeouts(value *PipelineTimeouts) {
 	if err := p.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2685,6 +2720,14 @@ func (p *jsiiProxy_Pipeline) ResetTarget() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetTarget",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetTesting() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTesting",
 		nil, // no parameters
 	)
 }

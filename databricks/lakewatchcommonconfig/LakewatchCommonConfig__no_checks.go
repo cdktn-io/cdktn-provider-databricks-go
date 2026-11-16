@@ -111,14 +111,6 @@ func (j *jsiiProxy_LakewatchCommonConfig) validateSetCountParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_LakewatchCommonConfig) validateSetCustomContentPackPathParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_LakewatchCommonConfig) validateSetCustomPresetsPathParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_LakewatchCommonConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

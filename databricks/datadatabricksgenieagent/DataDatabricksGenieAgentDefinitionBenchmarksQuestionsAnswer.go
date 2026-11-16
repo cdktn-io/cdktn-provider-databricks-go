@@ -5,9 +5,9 @@ package datadatabricksgenieagent
 
 
 type DataDatabricksGenieAgentDefinitionBenchmarksQuestionsAnswer struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/genie_agent#content DataDatabricksGenieAgent#content}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agent#content DataDatabricksGenieAgent#content}.
 	Content *string `field:"required" json:"content" yaml:"content"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/genie_agent#format DataDatabricksGenieAgent#format}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agent#format DataDatabricksGenieAgent#format}.
 	Format *string `field:"required" json:"format" yaml:"format"`
 }
 

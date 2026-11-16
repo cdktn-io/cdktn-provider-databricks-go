@@ -28,14 +28,19 @@ type DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DelayedReason() *string
+	EstimatedCompletionTime() *string
 	// Experimental.
 	Fqn() *string
+	IndexInitializationPercentage() *float64
 	InternalValue() *DataDatabricksAiSearchEndpointsEndpointsScalingInfo
 	SetInternalValue(val *DataDatabricksAiSearchEndpointsEndpointsScalingInfo)
+	Phase() *string
 	RequestedTargetQps() *float64
 	SetRequestedTargetQps(val *float64)
 	RequestedTargetQpsInput() *float64
 	State() *string
+	TargetQpsChangeAllowedAfterTime() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -114,6 +119,26 @@ func (j *jsiiProxy_DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference) DelayedReason() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delayedReason",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference) EstimatedCompletionTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"estimatedCompletionTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -124,11 +149,31 @@ func (j *jsiiProxy_DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference) IndexInitializationPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"indexInitializationPercentage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference) InternalValue() *DataDatabricksAiSearchEndpointsEndpointsScalingInfo {
 	var returns *DataDatabricksAiSearchEndpointsEndpointsScalingInfo
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference) Phase() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"phase",
 		&returns,
 	)
 	return returns
@@ -159,6 +204,16 @@ func (j *jsiiProxy_DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputRefe
 	_jsii_.Get(
 		j,
 		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference) TargetQpsChangeAllowedAfterTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetQpsChangeAllowedAfterTime",
 		&returns,
 	)
 	return returns

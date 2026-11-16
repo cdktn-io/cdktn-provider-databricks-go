@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datadatabricksworkspacesettingv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateSetDarkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateSetLightParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStartOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

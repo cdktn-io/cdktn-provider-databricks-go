@@ -51,6 +51,7 @@ type DataDatabricksAppsAppOutputReference interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveBudgetPolicyId() *string
+	EffectiveResources() DataDatabricksAppsAppEffectiveResourcesList
 	EffectiveUsagePolicyId() *string
 	EffectiveUserApiScopes() *[]*string
 	ForwardUserAccessToken() interface{}
@@ -364,6 +365,16 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) EffectiveBudgetPolicyId
 	_jsii_.Get(
 		j,
 		"effectiveBudgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) EffectiveResources() DataDatabricksAppsAppEffectiveResourcesList {
+	var returns DataDatabricksAppsAppEffectiveResourcesList
+	_jsii_.Get(
+		j,
+		"effectiveResources",
 		&returns,
 	)
 	return returns

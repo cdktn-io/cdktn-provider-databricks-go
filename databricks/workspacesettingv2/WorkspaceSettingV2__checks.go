@@ -413,6 +413,17 @@ func (w *jsiiProxy_WorkspaceSettingV2) validatePutStringValParameters(value *Wor
 	return nil
 }
 
+func (w *jsiiProxy_WorkspaceSettingV2) validatePutWorkspaceDashboardThemeParameters(value *WorkspaceSettingV2WorkspaceDashboardTheme) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WorkspaceSettingV2) validatePutWorkspaceLabelParameters(value *WorkspaceSettingV2WorkspaceLabel) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -147,6 +147,14 @@ func (j *jsiiProxy_GitCredential) validateSetPersonalAccessTokenParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GitCredential) validateSetPersonalAccessTokenWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GitCredential) validateSetPersonalAccessTokenWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GitCredential) validateSetPrincipalIdParameters(val *float64) error {
 	return nil
 }

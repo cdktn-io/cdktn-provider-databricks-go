@@ -5,7 +5,7 @@ package job
 
 
 type JobTaskForEachTaskTaskAiFunctionTaskVolume struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/job#volume_path Job#volume_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/job#volume_path Job#volume_path}.
 	VolumePath *string `field:"required" json:"volumePath" yaml:"volumePath"`
 }
 

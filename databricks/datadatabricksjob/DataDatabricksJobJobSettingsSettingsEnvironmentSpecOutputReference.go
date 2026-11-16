@@ -42,6 +42,9 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 	EnvironmentVersionInput() *string
 	// Experimental.
 	Fqn() *string
+	ImageUri() *string
+	SetImageUri(val *string)
+	ImageUriInput() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsEnvironmentSpec
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettingsEnvironmentSpec)
 	JavaDependencies() *[]*string
@@ -86,6 +89,7 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 	ResetClient()
 	ResetDependencies()
 	ResetEnvironmentVersion()
+	ResetImageUri()
 	ResetJavaDependencies()
 	ResetProjectEnvironment()
 	// Produce the Token's value at resolution time.
@@ -218,6 +222,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) ImageUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) ImageUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageUriInput",
 		&returns,
 	)
 	return returns
@@ -383,6 +407,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.Set(
 		j,
 		"environmentVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference)SetImageUri(val *string) {
+	if err := j.validateSetImageUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"imageUri",
 		val,
 	)
 }
@@ -656,6 +691,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnvironmentVersion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) ResetImageUri() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetImageUri",
 		nil, // no parameters
 	)
 }

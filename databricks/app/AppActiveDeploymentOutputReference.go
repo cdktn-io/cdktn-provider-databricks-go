@@ -50,6 +50,9 @@ type AppActiveDeploymentOutputReference interface {
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	ScanOmittedCountIsLowerBound() cdktn.IResolvable
+	ScanOmittedFindingsCount() *float64
+	ScanStatus() *string
 	SourceCodePath() *string
 	SetSourceCodePath(val *string)
 	SourceCodePathInput() *string
@@ -307,6 +310,36 @@ func (j *jsiiProxy_AppActiveDeploymentOutputReference) ModeInput() *string {
 	_jsii_.Get(
 		j,
 		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppActiveDeploymentOutputReference) ScanOmittedCountIsLowerBound() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"scanOmittedCountIsLowerBound",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppActiveDeploymentOutputReference) ScanOmittedFindingsCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scanOmittedFindingsCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppActiveDeploymentOutputReference) ScanStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scanStatus",
 		&returns,
 	)
 	return returns

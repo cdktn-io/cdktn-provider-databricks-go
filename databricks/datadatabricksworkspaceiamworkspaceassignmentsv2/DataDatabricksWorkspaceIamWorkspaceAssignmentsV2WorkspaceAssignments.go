@@ -5,9 +5,9 @@ package datadatabricksworkspaceiamworkspaceassignmentsv2
 
 
 type DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#name DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_iam_workspace_assignments_v2#name DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}.
 	ProviderConfig *DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

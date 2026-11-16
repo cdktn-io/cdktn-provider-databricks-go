@@ -5,7 +5,7 @@ package datadatabricksgenieagents
 
 
 type DataDatabricksGenieAgentsGenieAgentsDefinitionDataSourcesMcpConnections struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/genie_agents#mcp_connection DataDatabricksGenieAgents#mcp_connection}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agents#mcp_connection DataDatabricksGenieAgents#mcp_connection}.
 	McpConnection *string `field:"required" json:"mcpConnection" yaml:"mcpConnection"`
 }
 

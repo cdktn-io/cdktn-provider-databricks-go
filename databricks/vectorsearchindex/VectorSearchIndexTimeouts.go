@@ -5,7 +5,7 @@ package vectorsearchindex
 
 
 type VectorSearchIndexTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

@@ -5,7 +5,7 @@ package datadatabricksagentkitmanagedmemorystore
 
 
 type DataDatabricksAgentKitManagedMemoryStoreProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#workspace_id DataDatabricksAgentKitManagedMemoryStore#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/agent_kit_managed_memory_store#workspace_id DataDatabricksAgentKitManagedMemoryStore#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

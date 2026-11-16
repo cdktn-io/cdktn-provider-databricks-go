@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datadatabricksaccountsettingv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateSetDarkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateSetLightParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEndOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

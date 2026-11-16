@@ -5,11 +5,11 @@ package datadatabricksaigatewaymodelservice
 
 
 type DataDatabricksAiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigTarget struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_gateway_model_service#model DataDatabricksAiGatewayModelService#model}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_gateway_model_service#model DataDatabricksAiGatewayModelService#model}.
 	Model *string `field:"required" json:"model" yaml:"model"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_gateway_model_service#endpoint_route DataDatabricksAiGatewayModelService#endpoint_route}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_gateway_model_service#endpoint_route DataDatabricksAiGatewayModelService#endpoint_route}.
 	EndpointRoute *string `field:"optional" json:"endpointRoute" yaml:"endpointRoute"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_gateway_model_service#native_api_types DataDatabricksAiGatewayModelService#native_api_types}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_gateway_model_service#native_api_types DataDatabricksAiGatewayModelService#native_api_types}.
 	NativeApiTypes *[]*string `field:"optional" json:"nativeApiTypes" yaml:"nativeApiTypes"`
 }
 

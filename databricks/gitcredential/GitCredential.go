@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential databricks_git_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential databricks_git_credential}.
 type GitCredential interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -69,6 +69,14 @@ type GitCredential interface {
 	PersonalAccessToken() *string
 	SetPersonalAccessToken(val *string)
 	PersonalAccessTokenInput() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	PersonalAccessTokenWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	SetPersonalAccessTokenWo(val *string)
+	PersonalAccessTokenWoInput() *string
+	PersonalAccessTokenWoVersion() *float64
+	SetPersonalAccessTokenWoVersion(val *float64)
+	PersonalAccessTokenWoVersionInput() *float64
 	PrincipalId() *float64
 	SetPrincipalId(val *float64)
 	PrincipalIdInput() *float64
@@ -193,6 +201,8 @@ type GitCredential interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPersonalAccessToken()
+	ResetPersonalAccessTokenWo()
+	ResetPersonalAccessTokenWoVersion()
 	ResetPrincipalId()
 	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
@@ -482,6 +492,46 @@ func (j *jsiiProxy_GitCredential) PersonalAccessTokenInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GitCredential) PersonalAccessTokenWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"personalAccessTokenWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitCredential) PersonalAccessTokenWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"personalAccessTokenWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitCredential) PersonalAccessTokenWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"personalAccessTokenWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitCredential) PersonalAccessTokenWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"personalAccessTokenWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GitCredential) PrincipalId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -583,7 +633,7 @@ func (j *jsiiProxy_GitCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential(scope constructs.Construct, id *string, config *GitCredentialConfig) GitCredential {
 	_init_.Initialize()
 
@@ -601,7 +651,7 @@ func NewGitCredential(scope constructs.Construct, id *string, config *GitCredent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential_Override(g GitCredential, scope constructs.Construct, id *string, config *GitCredentialConfig) {
 	_init_.Initialize()
 
@@ -745,6 +795,28 @@ func (j *jsiiProxy_GitCredential)SetPersonalAccessToken(val *string) {
 	_jsii_.Set(
 		j,
 		"personalAccessToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GitCredential)SetPersonalAccessTokenWo(val *string) {
+	if err := j.validateSetPersonalAccessTokenWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"personalAccessTokenWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GitCredential)SetPersonalAccessTokenWoVersion(val *float64) {
+	if err := j.validateSetPersonalAccessTokenWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"personalAccessTokenWoVersion",
 		val,
 	)
 }
@@ -1230,6 +1302,22 @@ func (g *jsiiProxy_GitCredential) ResetPersonalAccessToken() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPersonalAccessToken",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitCredential) ResetPersonalAccessTokenWo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPersonalAccessTokenWo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitCredential) ResetPersonalAccessTokenWoVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPersonalAccessTokenWoVersion",
 		nil, // no parameters
 	)
 }

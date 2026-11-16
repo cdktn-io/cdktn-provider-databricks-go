@@ -7,7 +7,7 @@ package alert
 type AlertConditionThreshold struct {
 	// value block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/alert#value Alert#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/alert#value Alert#value}
 	Value *AlertConditionThresholdValue `field:"required" json:"value" yaml:"value"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config}.
 type PostgresCdfConfig interface {
 	cdktn.TerraformResource
 	Catalog() *string
@@ -74,6 +74,9 @@ type PostgresCdfConfig interface {
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	ServicePrincipal() *string
+	SetServicePrincipal(val *string)
+	ServicePrincipalInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -178,6 +181,7 @@ type PostgresCdfConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderConfig()
+	ResetServicePrincipal()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -475,6 +479,26 @@ func (j *jsiiProxy_PostgresCdfConfig) SchemaInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresCdfConfig) ServicePrincipal() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePrincipal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresCdfConfig) ServicePrincipalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePrincipalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresCdfConfig) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -506,7 +530,7 @@ func (j *jsiiProxy_PostgresCdfConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config} Resource.
 func NewPostgresCdfConfig(scope constructs.Construct, id *string, config *PostgresCdfConfigConfig) PostgresCdfConfig {
 	_init_.Initialize()
 
@@ -524,7 +548,7 @@ func NewPostgresCdfConfig(scope constructs.Construct, id *string, config *Postgr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config} Resource.
 func NewPostgresCdfConfig_Override(p PostgresCdfConfig, scope constructs.Construct, id *string, config *PostgresCdfConfigConfig) {
 	_init_.Initialize()
 
@@ -654,6 +678,17 @@ func (j *jsiiProxy_PostgresCdfConfig)SetSchema(val *string) {
 	_jsii_.Set(
 		j,
 		"schema",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresCdfConfig)SetServicePrincipal(val *string) {
+	if err := j.validateSetServicePrincipalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servicePrincipal",
 		val,
 	)
 }
@@ -1069,6 +1104,14 @@ func (p *jsiiProxy_PostgresCdfConfig) ResetProviderConfig() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProviderConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresCdfConfig) ResetServicePrincipal() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServicePrincipal",
 		nil, // no parameters
 	)
 }

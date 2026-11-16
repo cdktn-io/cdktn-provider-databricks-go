@@ -34,6 +34,8 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference inter
 	FeatureViewSourceInput() interface{}
 	// Experimental.
 	Fqn() *string
+	IcebergTableSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceIcebergTableSourceOutputReference
+	IcebergTableSourceInput() interface{}
 	InternalValue() *DataDatabricksFeatureEngineeringFeaturesFeaturesSource
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeaturesSource)
 	KafkaSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOutputReference
@@ -80,6 +82,7 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference inter
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDeltaTableSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSource)
 	PutFeatureViewSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceFeatureViewSource)
+	PutIcebergTableSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceIcebergTableSource)
 	PutKafkaSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource)
 	PutLateness(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceLateness)
 	PutRequestSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceRequestSource)
@@ -87,6 +90,7 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference inter
 	PutStreamSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceStreamSource)
 	ResetDeltaTableSource()
 	ResetFeatureViewSource()
+	ResetIcebergTableSource()
 	ResetKafkaSource()
 	ResetLateness()
 	ResetRequestSource()
@@ -182,6 +186,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) IcebergTableSource() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceIcebergTableSourceOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesSourceIcebergTableSourceOutputReference
+	_jsii_.Get(
+		j,
+		"icebergTableSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) IcebergTableSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"icebergTableSourceInput",
 		&returns,
 	)
 	return returns
@@ -608,6 +632,17 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) PutIcebergTableSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceIcebergTableSource) {
+	if err := d.validatePutIcebergTableSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putIcebergTableSource",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) PutKafkaSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource) {
 	if err := d.validatePutKafkaSourceParameters(value); err != nil {
 		panic(err)
@@ -675,6 +710,14 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	_jsii_.InvokeVoid(
 		d,
 		"resetFeatureViewSource",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) ResetIcebergTableSource() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIcebergTableSource",
 		nil, // no parameters
 	)
 }

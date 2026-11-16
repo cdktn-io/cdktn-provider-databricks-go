@@ -5,7 +5,7 @@ package datadatabricksgenieagents
 
 
 type DataDatabricksGenieAgentsGenieAgentsDefinitionBenchmarks struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/genie_agents#questions DataDatabricksGenieAgents#questions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agents#questions DataDatabricksGenieAgents#questions}.
 	Questions interface{} `field:"optional" json:"questions" yaml:"questions"`
 }
 

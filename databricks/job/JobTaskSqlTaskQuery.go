@@ -5,7 +5,7 @@ package job
 
 
 type JobTaskSqlTaskQuery struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/job#query_id Job#query_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/job#query_id Job#query_id}.
 	QueryId *string `field:"required" json:"queryId" yaml:"queryId"`
 }
 

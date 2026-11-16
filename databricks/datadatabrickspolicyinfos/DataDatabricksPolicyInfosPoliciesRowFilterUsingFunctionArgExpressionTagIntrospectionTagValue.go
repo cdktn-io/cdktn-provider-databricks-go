@@ -5,7 +5,7 @@ package datadatabrickspolicyinfos
 
 
 type DataDatabricksPolicyInfosPoliciesRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/policy_infos#tag_key DataDatabricksPolicyInfos#tag_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/policy_infos#tag_key DataDatabricksPolicyInfos#tag_key}.
 	TagKey *string `field:"required" json:"tagKey" yaml:"tagKey"`
 }
 

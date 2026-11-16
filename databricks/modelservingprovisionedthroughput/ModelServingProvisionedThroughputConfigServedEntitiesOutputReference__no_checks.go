@@ -83,6 +83,10 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) validateSetPtTermParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

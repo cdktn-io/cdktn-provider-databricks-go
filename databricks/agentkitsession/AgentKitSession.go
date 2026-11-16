@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session databricks_agent_kit_session}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/agent_kit_session databricks_agent_kit_session}.
 type AgentKitSession interface {
 	cdktn.TerraformResource
 	ActorId() *string
@@ -541,7 +541,7 @@ func (j *jsiiProxy_AgentKitSession) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session databricks_agent_kit_session} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/agent_kit_session databricks_agent_kit_session} Resource.
 func NewAgentKitSession(scope constructs.Construct, id *string, config *AgentKitSessionConfig) AgentKitSession {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewAgentKitSession(scope constructs.Construct, id *string, config *AgentKit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session databricks_agent_kit_session} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/agent_kit_session databricks_agent_kit_session} Resource.
 func NewAgentKitSession_Override(a AgentKitSession, scope constructs.Construct, id *string, config *AgentKitSessionConfig) {
 	_init_.Initialize()
 

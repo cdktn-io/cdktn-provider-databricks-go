@@ -5,13 +5,13 @@ package datadatabricksjob
 
 
 type DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachment struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/job#file_format DataDatabricksJob#file_format}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/job#file_format DataDatabricksJob#file_format}.
 	FileFormat *string `field:"required" json:"fileFormat" yaml:"fileFormat"`
 	// widgets block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/job#widgets DataDatabricksJob#widgets}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/job#widgets DataDatabricksJob#widgets}
 	Widgets interface{} `field:"required" json:"widgets" yaml:"widgets"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/job#include_applied_filters DataDatabricksJob#include_applied_filters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/job#include_applied_filters DataDatabricksJob#include_applied_filters}.
 	IncludeAppliedFilters interface{} `field:"optional" json:"includeAppliedFilters" yaml:"includeAppliedFilters"`
 }
 

@@ -47,6 +47,9 @@ type ModelServingProvisionedThroughputConfigServedEntitiesOutputReference interf
 	ProvisionedModelUnits() *float64
 	SetProvisionedModelUnits(val *float64)
 	ProvisionedModelUnitsInput() *float64
+	PtTerm() *string
+	SetPtTerm(val *string)
+	PtTermInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -81,6 +84,7 @@ type ModelServingProvisionedThroughputConfigServedEntitiesOutputReference interf
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBurstScalingEnabled()
 	ResetName()
+	ResetPtTerm()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -246,6 +250,26 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) PtTerm() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ptTerm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) PtTermInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ptTermInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -378,6 +402,17 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	_jsii_.Set(
 		j,
 		"provisionedModelUnits",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference)SetPtTerm(val *string) {
+	if err := j.validateSetPtTermParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ptTerm",
 		val,
 	)
 }
@@ -602,6 +637,14 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputRe
 	_jsii_.InvokeVoid(
 		m,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesOutputReference) ResetPtTerm() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPtTerm",
 		nil, // no parameters
 	)
 }

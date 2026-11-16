@@ -42,6 +42,7 @@ type DataDatabricksPostgresCdfConfigsCdfConfigsOutputReference interface {
 	ProviderConfig() DataDatabricksPostgresCdfConfigsCdfConfigsProviderConfigOutputReference
 	ProviderConfigInput() interface{}
 	Schema() *string
+	ServicePrincipal() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -226,6 +227,16 @@ func (j *jsiiProxy_DataDatabricksPostgresCdfConfigsCdfConfigsOutputReference) Sc
 	_jsii_.Get(
 		j,
 		"schema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPostgresCdfConfigsCdfConfigsOutputReference) ServicePrincipal() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePrincipal",
 		&returns,
 	)
 	return returns

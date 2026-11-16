@@ -139,6 +139,14 @@ func (j *jsiiProxy_Connection) validateSetOptionsParameters(val *map[string]*str
 	return nil
 }
 
+func (j *jsiiProxy_Connection) validateSetOptionsWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Connection) validateSetOptionsWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Connection) validateSetOwnerParameters(val *string) error {
 	return nil
 }

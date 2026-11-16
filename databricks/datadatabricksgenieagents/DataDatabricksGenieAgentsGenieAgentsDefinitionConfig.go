@@ -5,7 +5,7 @@ package datadatabricksgenieagents
 
 
 type DataDatabricksGenieAgentsGenieAgentsDefinitionConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/genie_agents#sample_questions DataDatabricksGenieAgents#sample_questions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agents#sample_questions DataDatabricksGenieAgents#sample_questions}.
 	SampleQuestions interface{} `field:"optional" json:"sampleQuestions" yaml:"sampleQuestions"`
 }
 

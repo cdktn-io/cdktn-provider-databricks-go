@@ -147,6 +147,10 @@ func (a *jsiiProxy_AccountSettingV2) validatePutStringValParameters(value *Accou
 	return nil
 }
 
+func (a *jsiiProxy_AccountSettingV2) validatePutWorkspaceDashboardThemeParameters(value *AccountSettingV2WorkspaceDashboardTheme) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountSettingV2) validatePutWorkspaceLabelParameters(value *AccountSettingV2WorkspaceLabel) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) validatePutIcebergTableSourceParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceIcebergTableSource) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) validatePutKafkaSourceParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource) error {
 	return nil
 }

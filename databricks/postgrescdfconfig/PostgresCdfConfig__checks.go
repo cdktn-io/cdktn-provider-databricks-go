@@ -458,6 +458,14 @@ func (j *jsiiProxy_PostgresCdfConfig) validateSetSchemaParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_PostgresCdfConfig) validateSetServicePrincipalParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewPostgresCdfConfigParameters(scope constructs.Construct, id *string, config *PostgresCdfConfigConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

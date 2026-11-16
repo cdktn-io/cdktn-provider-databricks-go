@@ -75,6 +75,10 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) validateSetEnvironmentVers
 	return nil
 }
 
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) validateSetImageUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobEnvironmentSpecOutputReference) validateSetInternalValueParameters(val *JobEnvironmentSpec) error {
 	return nil
 }

@@ -45,6 +45,7 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeatures)
 	LineageContext() DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContextOutputReference
 	Name() *string
+	OutputTypeText() *string
 	ProviderConfig() DataDatabricksFeatureEngineeringFeaturesFeaturesProviderConfigOutputReference
 	ProviderConfigInput() interface{}
 	SchemaName() *string
@@ -265,6 +266,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) OutputTypeText() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputTypeText",
 		&returns,
 	)
 	return returns

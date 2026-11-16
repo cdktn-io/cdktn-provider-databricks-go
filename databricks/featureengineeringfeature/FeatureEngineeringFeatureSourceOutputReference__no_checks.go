@@ -55,6 +55,10 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutFe
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutIcebergTableSourceParameters(value *FeatureEngineeringFeatureSourceIcebergTableSource) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutKafkaSourceParameters(value *FeatureEngineeringFeatureSourceKafkaSource) error {
 	return nil
 }

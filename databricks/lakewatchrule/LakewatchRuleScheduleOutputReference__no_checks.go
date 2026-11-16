@@ -63,10 +63,6 @@ func (j *jsiiProxy_LakewatchRuleScheduleOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_LakewatchRuleScheduleOutputReference) validateSetContinuousParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_LakewatchRuleScheduleOutputReference) validateSetCronExpressionParameters(val *string) error {
 	return nil
 }

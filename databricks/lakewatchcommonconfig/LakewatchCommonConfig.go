@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_common_config databricks_lakewatch_common_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config databricks_lakewatch_common_config}.
 type LakewatchCommonConfig interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -27,12 +27,6 @@ type LakewatchCommonConfig interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CustomContentPackPath() *string
-	SetCustomContentPackPath(val *string)
-	CustomContentPackPathInput() *string
-	CustomPresetsPath() *string
-	SetCustomPresetsPath(val *string)
-	CustomPresetsPathInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,8 +167,6 @@ type LakewatchCommonConfig interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
-	ResetCustomContentPackPath()
-	ResetCustomPresetsPath()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -242,46 +234,6 @@ func (j *jsiiProxy_LakewatchCommonConfig) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LakewatchCommonConfig) CustomContentPackPath() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customContentPackPath",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LakewatchCommonConfig) CustomContentPackPathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customContentPackPathInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LakewatchCommonConfig) CustomPresetsPath() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customPresetsPath",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LakewatchCommonConfig) CustomPresetsPathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customPresetsPathInput",
 		&returns,
 	)
 	return returns
@@ -518,7 +470,7 @@ func (j *jsiiProxy_LakewatchCommonConfig) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_common_config databricks_lakewatch_common_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config databricks_lakewatch_common_config} Resource.
 func NewLakewatchCommonConfig(scope constructs.Construct, id *string, config *LakewatchCommonConfigConfig) LakewatchCommonConfig {
 	_init_.Initialize()
 
@@ -536,7 +488,7 @@ func NewLakewatchCommonConfig(scope constructs.Construct, id *string, config *La
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_common_config databricks_lakewatch_common_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config databricks_lakewatch_common_config} Resource.
 func NewLakewatchCommonConfig_Override(l LakewatchCommonConfig, scope constructs.Construct, id *string, config *LakewatchCommonConfigConfig) {
 	_init_.Initialize()
 
@@ -565,28 +517,6 @@ func (j *jsiiProxy_LakewatchCommonConfig)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LakewatchCommonConfig)SetCustomContentPackPath(val *string) {
-	if err := j.validateSetCustomContentPackPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customContentPackPath",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LakewatchCommonConfig)SetCustomPresetsPath(val *string) {
-	if err := j.validateSetCustomPresetsPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customPresetsPath",
 		val,
 	)
 }
@@ -1047,22 +977,6 @@ func (l *jsiiProxy_LakewatchCommonConfig) RegisterProviderFeatureUsage(feature c
 		l,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
-	)
-}
-
-func (l *jsiiProxy_LakewatchCommonConfig) ResetCustomContentPackPath() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetCustomContentPackPath",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakewatchCommonConfig) ResetCustomPresetsPath() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetCustomPresetsPath",
-		nil, // no parameters
 	)
 }
 

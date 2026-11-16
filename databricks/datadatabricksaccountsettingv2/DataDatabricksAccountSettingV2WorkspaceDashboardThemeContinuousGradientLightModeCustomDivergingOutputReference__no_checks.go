@@ -1,0 +1,89 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datadatabricksaccountsettingv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validatePutEndParameters(value *DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validatePutMidParameters(value *DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validatePutStartParameters(value *DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

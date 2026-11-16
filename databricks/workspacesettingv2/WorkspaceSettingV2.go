@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}.
 type WorkspaceSettingV2 interface {
 	cdktn.TerraformResource
 	AibiDashboardEmbeddingAccessPolicy() WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -59,6 +59,7 @@ type WorkspaceSettingV2 interface {
 	EffectiveRestrictWorkspaceAdmins() WorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference
 	EffectiveRestrictWorkspaceAdminsInput() interface{}
 	EffectiveStringVal() WorkspaceSettingV2EffectiveStringValOutputReference
+	EffectiveWorkspaceDashboardTheme() WorkspaceSettingV2EffectiveWorkspaceDashboardThemeOutputReference
 	EffectiveWorkspaceLabel() WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference
 	EffectiveWorkspaceLabelInput() interface{}
 	// Experimental.
@@ -106,6 +107,8 @@ type WorkspaceSettingV2 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceDashboardTheme() WorkspaceSettingV2WorkspaceDashboardThemeOutputReference
+	WorkspaceDashboardThemeInput() interface{}
 	WorkspaceLabel() WorkspaceSettingV2WorkspaceLabelOutputReference
 	WorkspaceLabelInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -205,6 +208,7 @@ type WorkspaceSettingV2 interface {
 	PutProviderConfig(value *WorkspaceSettingV2ProviderConfig)
 	PutRestrictWorkspaceAdmins(value *WorkspaceSettingV2RestrictWorkspaceAdmins)
 	PutStringVal(value *WorkspaceSettingV2StringVal)
+	PutWorkspaceDashboardTheme(value *WorkspaceSettingV2WorkspaceDashboardTheme)
 	PutWorkspaceLabel(value *WorkspaceSettingV2WorkspaceLabel)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
@@ -241,6 +245,7 @@ type WorkspaceSettingV2 interface {
 	ResetProviderConfig()
 	ResetRestrictWorkspaceAdmins()
 	ResetStringVal()
+	ResetWorkspaceDashboardTheme()
 	ResetWorkspaceLabel()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -599,6 +604,16 @@ func (j *jsiiProxy_WorkspaceSettingV2) EffectiveStringVal() WorkspaceSettingV2Ef
 	return returns
 }
 
+func (j *jsiiProxy_WorkspaceSettingV2) EffectiveWorkspaceDashboardTheme() WorkspaceSettingV2EffectiveWorkspaceDashboardThemeOutputReference {
+	var returns WorkspaceSettingV2EffectiveWorkspaceDashboardThemeOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveWorkspaceDashboardTheme",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspaceSettingV2) EffectiveWorkspaceLabel() WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference {
 	var returns WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference
 	_jsii_.Get(
@@ -869,6 +884,26 @@ func (j *jsiiProxy_WorkspaceSettingV2) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspaceSettingV2) WorkspaceDashboardTheme() WorkspaceSettingV2WorkspaceDashboardThemeOutputReference {
+	var returns WorkspaceSettingV2WorkspaceDashboardThemeOutputReference
+	_jsii_.Get(
+		j,
+		"workspaceDashboardTheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceSettingV2) WorkspaceDashboardThemeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceDashboardThemeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspaceSettingV2) WorkspaceLabel() WorkspaceSettingV2WorkspaceLabelOutputReference {
 	var returns WorkspaceSettingV2WorkspaceLabelOutputReference
 	_jsii_.Get(
@@ -890,7 +925,7 @@ func (j *jsiiProxy_WorkspaceSettingV2) WorkspaceLabelInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
 func NewWorkspaceSettingV2(scope constructs.Construct, id *string, config *WorkspaceSettingV2Config) WorkspaceSettingV2 {
 	_init_.Initialize()
 
@@ -908,7 +943,7 @@ func NewWorkspaceSettingV2(scope constructs.Construct, id *string, config *Works
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
 func NewWorkspaceSettingV2_Override(w WorkspaceSettingV2, scope constructs.Construct, id *string, config *WorkspaceSettingV2Config) {
 	_init_.Initialize()
 
@@ -1565,6 +1600,17 @@ func (w *jsiiProxy_WorkspaceSettingV2) PutStringVal(value *WorkspaceSettingV2Str
 	)
 }
 
+func (w *jsiiProxy_WorkspaceSettingV2) PutWorkspaceDashboardTheme(value *WorkspaceSettingV2WorkspaceDashboardTheme) {
+	if err := w.validatePutWorkspaceDashboardThemeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putWorkspaceDashboardTheme",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkspaceSettingV2) PutWorkspaceLabel(value *WorkspaceSettingV2WorkspaceLabel) {
 	if err := w.validatePutWorkspaceLabelParameters(value); err != nil {
 		panic(err)
@@ -1743,6 +1789,14 @@ func (w *jsiiProxy_WorkspaceSettingV2) ResetStringVal() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetStringVal",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspaceSettingV2) ResetWorkspaceDashboardTheme() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWorkspaceDashboardTheme",
 		nil, // no parameters
 	)
 }

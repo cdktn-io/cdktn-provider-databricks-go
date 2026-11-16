@@ -151,6 +151,10 @@ func (w *jsiiProxy_WorkspaceSettingV2) validatePutStringValParameters(value *Wor
 	return nil
 }
 
+func (w *jsiiProxy_WorkspaceSettingV2) validatePutWorkspaceDashboardThemeParameters(value *WorkspaceSettingV2WorkspaceDashboardTheme) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspaceSettingV2) validatePutWorkspaceLabelParameters(value *WorkspaceSettingV2WorkspaceLabel) error {
 	return nil
 }

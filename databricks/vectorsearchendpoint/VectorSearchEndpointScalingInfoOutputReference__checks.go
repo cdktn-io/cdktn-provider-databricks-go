@@ -166,9 +166,41 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetDelayedReasonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetEstimatedCompletionTimestampParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetIndexInitializationPercentageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetInternalValueParameters(val *VectorSearchEndpointScalingInfo) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetPhaseParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -183,6 +215,14 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetRe
 }
 
 func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) validateSetTargetQpsChangeAllowedAfterTimestampParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

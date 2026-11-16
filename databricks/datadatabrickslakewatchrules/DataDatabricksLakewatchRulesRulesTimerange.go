@@ -5,7 +5,7 @@ package datadatabrickslakewatchrules
 
 
 type DataDatabricksLakewatchRulesRulesTimerange struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rules#extend_lookback DataDatabricksLakewatchRules#extend_lookback}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rules#extend_lookback DataDatabricksLakewatchRules#extend_lookback}.
 	ExtendLookback *string `field:"optional" json:"extendLookback" yaml:"extendLookback"`
 }
 

@@ -131,6 +131,10 @@ func (p *jsiiProxy_Pipeline) validatePutRunAsParameters(value *PipelineRunAs) er
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validatePutTestingParameters(value *PipelineTesting) error {
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validatePutTimeoutsParameters(value *PipelineTimeouts) error {
 	return nil
 }

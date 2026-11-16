@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_entries databricks_agent_kit_managed_memory_entries}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/agent_kit_managed_memory_entries databricks_agent_kit_managed_memory_entries}.
 type DataDatabricksAgentKitManagedMemoryEntries interface {
 	cdktn.TerraformDataSource
 	ActorId() *string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataDatabricksAgentKitManagedMemoryEntries) ViewInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_entries databricks_agent_kit_managed_memory_entries} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/agent_kit_managed_memory_entries databricks_agent_kit_managed_memory_entries} Data Source.
 func NewDataDatabricksAgentKitManagedMemoryEntries(scope constructs.Construct, id *string, config *DataDatabricksAgentKitManagedMemoryEntriesConfig) DataDatabricksAgentKitManagedMemoryEntries {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataDatabricksAgentKitManagedMemoryEntries(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_entries databricks_agent_kit_managed_memory_entries} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/agent_kit_managed_memory_entries databricks_agent_kit_managed_memory_entries} Data Source.
 func NewDataDatabricksAgentKitManagedMemoryEntries_Override(d DataDatabricksAgentKitManagedMemoryEntries, scope constructs.Construct, id *string, config *DataDatabricksAgentKitManagedMemoryEntriesConfig) {
 	_init_.Initialize()
 

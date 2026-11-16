@@ -92,6 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProviderConfig", GoMethod: "ResetProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRunAsPrincipal", GoMethod: "ResetRunAsPrincipal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUnityCatalogConnection", GoMethod: "ResetUnityCatalogConnection"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWarehouseId", GoMethod: "ResetWarehouseId"},
 			_jsii_.MemberProperty{JsiiProperty: "runAsPrincipal", GoGetter: "RunAsPrincipal"},
 			_jsii_.MemberProperty{JsiiProperty: "runAsPrincipalInput", GoGetter: "RunAsPrincipalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "schedule", GoGetter: "Schedule"},

@@ -63,10 +63,6 @@ func (j *jsiiProxy_DataDatabricksLakewatchRuleScheduleOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksLakewatchRuleScheduleOutputReference) validateSetContinuousParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksLakewatchRuleScheduleOutputReference) validateSetCronExpressionParameters(val *string) error {
 	return nil
 }

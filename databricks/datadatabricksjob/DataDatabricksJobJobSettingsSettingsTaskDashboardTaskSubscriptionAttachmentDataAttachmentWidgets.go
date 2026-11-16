@@ -5,9 +5,9 @@ package datadatabricksjob
 
 
 type DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/job#page_id DataDatabricksJob#page_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/job#page_id DataDatabricksJob#page_id}.
 	PageId *string `field:"required" json:"pageId" yaml:"pageId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/job#widget_id DataDatabricksJob#widget_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/job#widget_id DataDatabricksJob#widget_id}.
 	WidgetId *string `field:"required" json:"widgetId" yaml:"widgetId"`
 }
 

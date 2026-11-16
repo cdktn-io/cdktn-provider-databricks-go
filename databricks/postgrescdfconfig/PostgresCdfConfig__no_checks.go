@@ -139,6 +139,10 @@ func (j *jsiiProxy_PostgresCdfConfig) validateSetSchemaParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_PostgresCdfConfig) validateSetServicePrincipalParameters(val *string) error {
+	return nil
+}
+
 func validateNewPostgresCdfConfigParameters(scope constructs.Construct, id *string, config *PostgresCdfConfigConfig) error {
 	return nil
 }

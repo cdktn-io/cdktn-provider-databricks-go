@@ -28,16 +28,31 @@ type VectorSearchEndpointScalingInfoOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DelayedReason() *string
+	SetDelayedReason(val *string)
+	DelayedReasonInput() *string
+	EstimatedCompletionTimestamp() *float64
+	SetEstimatedCompletionTimestamp(val *float64)
+	EstimatedCompletionTimestampInput() *float64
 	// Experimental.
 	Fqn() *string
+	IndexInitializationPercentage() *float64
+	SetIndexInitializationPercentage(val *float64)
+	IndexInitializationPercentageInput() *float64
 	InternalValue() *VectorSearchEndpointScalingInfo
 	SetInternalValue(val *VectorSearchEndpointScalingInfo)
+	Phase() *string
+	SetPhase(val *string)
+	PhaseInput() *string
 	RequestedTargetQps() *float64
 	SetRequestedTargetQps(val *float64)
 	RequestedTargetQpsInput() *float64
 	State() *string
 	SetState(val *string)
 	StateInput() *string
+	TargetQpsChangeAllowedAfterTimestamp() *float64
+	SetTargetQpsChangeAllowedAfterTimestamp(val *float64)
+	TargetQpsChangeAllowedAfterTimestampInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +85,13 @@ type VectorSearchEndpointScalingInfoOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDelayedReason()
+	ResetEstimatedCompletionTimestamp()
+	ResetIndexInitializationPercentage()
+	ResetPhase()
 	ResetRequestedTargetQps()
 	ResetState()
+	ResetTargetQpsChangeAllowedAfterTimestamp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -117,6 +137,46 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) CreationStack
 	return returns
 }
 
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) DelayedReason() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delayedReason",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) DelayedReasonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delayedReasonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) EstimatedCompletionTimestamp() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"estimatedCompletionTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) EstimatedCompletionTimestampInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"estimatedCompletionTimestampInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -127,11 +187,51 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) Fqn() *string
 	return returns
 }
 
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) IndexInitializationPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"indexInitializationPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) IndexInitializationPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"indexInitializationPercentageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) InternalValue() *VectorSearchEndpointScalingInfo {
 	var returns *VectorSearchEndpointScalingInfo
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) Phase() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"phase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) PhaseInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"phaseInput",
 		&returns,
 	)
 	return returns
@@ -172,6 +272,26 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) StateInput() 
 	_jsii_.Get(
 		j,
 		"stateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) TargetQpsChangeAllowedAfterTimestamp() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetQpsChangeAllowedAfterTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) TargetQpsChangeAllowedAfterTimestampInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetQpsChangeAllowedAfterTimestampInput",
 		&returns,
 	)
 	return returns
@@ -247,6 +367,39 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetComplexObje
 	)
 }
 
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetDelayedReason(val *string) {
+	if err := j.validateSetDelayedReasonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delayedReason",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetEstimatedCompletionTimestamp(val *float64) {
+	if err := j.validateSetEstimatedCompletionTimestampParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"estimatedCompletionTimestamp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetIndexInitializationPercentage(val *float64) {
+	if err := j.validateSetIndexInitializationPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"indexInitializationPercentage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetInternalValue(val *VectorSearchEndpointScalingInfo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -254,6 +407,17 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetPhase(val *string) {
+	if err := j.validateSetPhaseParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"phase",
 		val,
 	)
 }
@@ -276,6 +440,17 @@ func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetState(val *
 	_jsii_.Set(
 		j,
 		"state",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference)SetTargetQpsChangeAllowedAfterTimestamp(val *float64) {
+	if err := j.validateSetTargetQpsChangeAllowedAfterTimestampParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetQpsChangeAllowedAfterTimestamp",
 		val,
 	)
 }
@@ -488,6 +663,38 @@ func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) Interpolation
 	return returns
 }
 
+func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) ResetDelayedReason() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDelayedReason",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) ResetEstimatedCompletionTimestamp() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetEstimatedCompletionTimestamp",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) ResetIndexInitializationPercentage() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIndexInitializationPercentage",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) ResetPhase() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPhase",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) ResetRequestedTargetQps() {
 	_jsii_.InvokeVoid(
 		v,
@@ -500,6 +707,14 @@ func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) ResetState() 
 	_jsii_.InvokeVoid(
 		v,
 		"resetState",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VectorSearchEndpointScalingInfoOutputReference) ResetTargetQpsChangeAllowedAfterTimestamp() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTargetQpsChangeAllowedAfterTimestamp",
 		nil, // no parameters
 	)
 }

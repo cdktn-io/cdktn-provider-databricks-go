@@ -42,6 +42,9 @@ type JobEnvironmentSpecOutputReference interface {
 	EnvironmentVersionInput() *string
 	// Experimental.
 	Fqn() *string
+	ImageUri() *string
+	SetImageUri(val *string)
+	ImageUriInput() *string
 	InternalValue() *JobEnvironmentSpec
 	SetInternalValue(val *JobEnvironmentSpec)
 	JavaDependencies() *[]*string
@@ -86,6 +89,7 @@ type JobEnvironmentSpecOutputReference interface {
 	ResetClient()
 	ResetDependencies()
 	ResetEnvironmentVersion()
+	ResetImageUri()
 	ResetJavaDependencies()
 	ResetProjectEnvironment()
 	// Produce the Token's value at resolution time.
@@ -218,6 +222,26 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ImageUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ImageUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageUriInput",
 		&returns,
 	)
 	return returns
@@ -383,6 +407,17 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetEnvironmentVersion(val *
 	_jsii_.Set(
 		j,
 		"environmentVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetImageUri(val *string) {
+	if err := j.validateSetImageUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"imageUri",
 		val,
 	)
 }
@@ -656,6 +691,14 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetEnvironmentVersion() 
 	_jsii_.InvokeVoid(
 		j,
 		"resetEnvironmentVersion",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetImageUri() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetImageUri",
 		nil, // no parameters
 	)
 }
