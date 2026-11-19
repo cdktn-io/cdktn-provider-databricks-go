@@ -5,7 +5,7 @@ package datadatabricksagentkitsession
 
 
 type DataDatabricksAgentKitSessionProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/agent_kit_session#workspace_id DataDatabricksAgentKitSession#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/agent_kit_session#workspace_id DataDatabricksAgentKitSession#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

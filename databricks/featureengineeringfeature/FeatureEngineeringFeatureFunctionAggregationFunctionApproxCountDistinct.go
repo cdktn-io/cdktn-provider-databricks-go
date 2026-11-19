@@ -5,11 +5,11 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 	Input *string `field:"required" json:"input" yaml:"input"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#relative_error FeatureEngineeringFeature#relative_error}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/feature_engineering_feature#relative_error FeatureEngineeringFeature#relative_error}.
 	RelativeError *float64 `field:"optional" json:"relativeError" yaml:"relativeError"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}.
 	RelativeSd *float64 `field:"optional" json:"relativeSd" yaml:"relativeSd"`
 }
 

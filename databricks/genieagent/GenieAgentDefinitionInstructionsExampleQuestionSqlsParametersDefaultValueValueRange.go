@@ -5,9 +5,9 @@ package genieagent
 
 
 type GenieAgentDefinitionInstructionsExampleQuestionSqlsParametersDefaultValueValueRange struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#max GenieAgent#max}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#max GenieAgent#max}.
 	Max *string `field:"optional" json:"max" yaml:"max"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#min GenieAgent#min}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#min GenieAgent#min}.
 	Min *string `field:"optional" json:"min" yaml:"min"`
 }
 

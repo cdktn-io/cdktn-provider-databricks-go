@@ -5,7 +5,7 @@ package lakewatchcommonconfig
 
 
 type LakewatchCommonConfigProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config#workspace_id LakewatchCommonConfig#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config#workspace_id LakewatchCommonConfig#workspace_id}.
 	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

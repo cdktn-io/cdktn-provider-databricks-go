@@ -5,9 +5,9 @@ package policyinfo
 
 
 type PolicyInfoGovernedTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}.
 	TagKey *string `field:"required" json:"tagKey" yaml:"tagKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/policy_info#tag_value PolicyInfo#tag_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/policy_info#tag_value PolicyInfo#tag_value}.
 	TagValue *string `field:"optional" json:"tagValue" yaml:"tagValue"`
 }
 

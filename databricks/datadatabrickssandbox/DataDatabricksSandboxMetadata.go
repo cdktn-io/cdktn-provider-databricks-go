@@ -5,7 +5,7 @@ package datadatabrickssandbox
 
 
 type DataDatabricksSandboxMetadata struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/sandbox#custom_tags DataDatabricksSandbox#custom_tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/sandbox#custom_tags DataDatabricksSandbox#custom_tags}.
 	CustomTags *map[string]*string `field:"optional" json:"customTags" yaml:"customTags"`
 }
 

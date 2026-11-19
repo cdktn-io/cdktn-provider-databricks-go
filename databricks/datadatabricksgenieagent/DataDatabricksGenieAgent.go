@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agent databricks_genie_agent}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/genie_agent databricks_genie_agent}.
 type DataDatabricksGenieAgent interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -409,7 +409,7 @@ func (j *jsiiProxy_DataDatabricksGenieAgent) WarehouseId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agent databricks_genie_agent} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/genie_agent databricks_genie_agent} Data Source.
 func NewDataDatabricksGenieAgent(scope constructs.Construct, id *string, config *DataDatabricksGenieAgentConfig) DataDatabricksGenieAgent {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewDataDatabricksGenieAgent(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agent databricks_genie_agent} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/genie_agent databricks_genie_agent} Data Source.
 func NewDataDatabricksGenieAgent_Override(d DataDatabricksGenieAgent, scope constructs.Construct, id *string, config *DataDatabricksGenieAgentConfig) {
 	_init_.Initialize()
 

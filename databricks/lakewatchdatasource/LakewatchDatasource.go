@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource databricks_lakewatch_datasource}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_datasource databricks_lakewatch_datasource}.
 type LakewatchDatasource interface {
 	cdktn.TerraformResource
 	Annotations() *map[string]*string
@@ -841,7 +841,7 @@ func (j *jsiiProxy_LakewatchDatasource) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource databricks_lakewatch_datasource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_datasource databricks_lakewatch_datasource} Resource.
 func NewLakewatchDatasource(scope constructs.Construct, id *string, config *LakewatchDatasourceConfig) LakewatchDatasource {
 	_init_.Initialize()
 
@@ -859,7 +859,7 @@ func NewLakewatchDatasource(scope constructs.Construct, id *string, config *Lake
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource databricks_lakewatch_datasource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_datasource databricks_lakewatch_datasource} Resource.
 func NewLakewatchDatasource_Override(l LakewatchDatasource, scope constructs.Construct, id *string, config *LakewatchDatasourceConfig) {
 	_init_.Initialize()
 

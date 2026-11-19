@@ -22,13 +22,13 @@ type AgentKitSessionStoreConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/agent_kit_session_store#session_store_id AgentKitSessionStore#session_store_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_session_store#session_store_id AgentKitSessionStore#session_store_id}.
 	SessionStoreId *string `field:"required" json:"sessionStoreId" yaml:"sessionStoreId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/agent_kit_session_store#description AgentKitSessionStore#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_session_store#description AgentKitSessionStore#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/agent_kit_session_store#metadata AgentKitSessionStore#metadata}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_session_store#metadata AgentKitSessionStore#metadata}.
 	Metadata *map[string]*string `field:"optional" json:"metadata" yaml:"metadata"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/agent_kit_session_store#provider_config AgentKitSessionStore#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_session_store#provider_config AgentKitSessionStore#provider_config}.
 	ProviderConfig *AgentKitSessionStoreProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

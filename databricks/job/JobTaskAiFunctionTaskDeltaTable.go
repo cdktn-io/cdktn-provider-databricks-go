@@ -5,11 +5,11 @@ package job
 
 
 type JobTaskAiFunctionTaskDeltaTable struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/job#input_column Job#input_column}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#input_column Job#input_column}.
 	InputColumn *string `field:"required" json:"inputColumn" yaml:"inputColumn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/job#table_name Job#table_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#table_name Job#table_name}.
 	TableName *string `field:"required" json:"tableName" yaml:"tableName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/job#merge_key_columns Job#merge_key_columns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#merge_key_columns Job#merge_key_columns}.
 	MergeKeyColumns *[]*string `field:"optional" json:"mergeKeyColumns" yaml:"mergeKeyColumns"`
 }
 

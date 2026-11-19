@@ -7,7 +7,7 @@ package pipeline
 type PipelineTestingSources struct {
 	// glob block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/pipeline#glob Pipeline#glob}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/pipeline#glob Pipeline#glob}
 	Glob *PipelineTestingSourcesGlob `field:"optional" json:"glob" yaml:"glob"`
 }
 

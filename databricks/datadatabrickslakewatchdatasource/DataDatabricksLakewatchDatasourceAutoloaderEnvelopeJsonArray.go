@@ -5,7 +5,7 @@ package datadatabrickslakewatchdatasource
 
 
 type DataDatabricksLakewatchDatasourceAutoloaderEnvelopeJsonArray struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_datasource#path DataDatabricksLakewatchDatasource#path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/lakewatch_datasource#path DataDatabricksLakewatchDatasource#path}.
 	Path *string `field:"required" json:"path" yaml:"path"`
 }
 

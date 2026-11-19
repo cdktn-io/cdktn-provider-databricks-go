@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2}.
 type DataDatabricksWorkspaceIamUsersV2 interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceIamUsersV2) Users() DataDatabricksWork
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2} Data Source.
 func NewDataDatabricksWorkspaceIamUsersV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamUsersV2Config) DataDatabricksWorkspaceIamUsersV2 {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataDatabricksWorkspaceIamUsersV2(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2} Data Source.
 func NewDataDatabricksWorkspaceIamUsersV2_Override(d DataDatabricksWorkspaceIamUsersV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceIamUsersV2Config) {
 	_init_.Initialize()
 

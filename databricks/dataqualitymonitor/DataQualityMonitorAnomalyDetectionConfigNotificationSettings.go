@@ -5,9 +5,9 @@ package dataqualitymonitor
 
 
 type DataQualityMonitorAnomalyDetectionConfigNotificationSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/data_quality_monitor#on_failure DataQualityMonitor#on_failure}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/data_quality_monitor#on_failure DataQualityMonitor#on_failure}.
 	OnFailure *DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure `field:"optional" json:"onFailure" yaml:"onFailure"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/data_quality_monitor#on_unhealthy_table DataQualityMonitor#on_unhealthy_table}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/data_quality_monitor#on_unhealthy_table DataQualityMonitor#on_unhealthy_table}.
 	OnUnhealthyTable *DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable `field:"optional" json:"onUnhealthyTable" yaml:"onUnhealthyTable"`
 }
 

@@ -175,6 +175,10 @@ func (j *jsiiProxy_App) validateSetSpaceParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_App) validateSetThumbnailPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_App) validateSetUsagePolicyIdParameters(val *string) error {
 	return nil
 }

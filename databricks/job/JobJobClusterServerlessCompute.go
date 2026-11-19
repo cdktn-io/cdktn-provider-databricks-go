@@ -5,7 +5,7 @@ package job
 
 
 type JobJobClusterServerlessCompute struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/job#policy_id Job#policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#policy_id Job#policy_id}.
 	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
 }
 

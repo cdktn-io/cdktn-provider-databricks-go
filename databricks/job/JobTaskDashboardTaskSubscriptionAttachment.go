@@ -7,11 +7,11 @@ package job
 type JobTaskDashboardTaskSubscriptionAttachment struct {
 	// data_attachment block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/job#data_attachment Job#data_attachment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#data_attachment Job#data_attachment}
 	DataAttachment *JobTaskDashboardTaskSubscriptionAttachmentDataAttachment `field:"optional" json:"dataAttachment" yaml:"dataAttachment"`
 	// page_attachment block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/job#page_attachment Job#page_attachment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#page_attachment Job#page_attachment}
 	PageAttachment *JobTaskDashboardTaskSubscriptionAttachmentPageAttachment `field:"optional" json:"pageAttachment" yaml:"pageAttachment"`
 }
 

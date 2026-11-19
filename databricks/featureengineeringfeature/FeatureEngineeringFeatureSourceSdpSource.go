@@ -5,17 +5,17 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureSourceSdpSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
 	DataframeSchema *string `field:"optional" json:"dataframeSchema" yaml:"dataframeSchema"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
 	FilterCondition *string `field:"optional" json:"filterCondition" yaml:"filterCondition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input_tables FeatureEngineeringFeature#input_tables}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/feature_engineering_feature#input_tables FeatureEngineeringFeature#input_tables}.
 	InputTables *[]*string `field:"optional" json:"inputTables" yaml:"inputTables"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#output_table FeatureEngineeringFeature#output_table}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/feature_engineering_feature#output_table FeatureEngineeringFeature#output_table}.
 	OutputTable *string `field:"optional" json:"outputTable" yaml:"outputTable"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#pipeline_id FeatureEngineeringFeature#pipeline_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/feature_engineering_feature#pipeline_id FeatureEngineeringFeature#pipeline_id}.
 	PipelineId *string `field:"optional" json:"pipelineId" yaml:"pipelineId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
 	TransformationSql *string `field:"optional" json:"transformationSql" yaml:"transformationSql"`
 }
 

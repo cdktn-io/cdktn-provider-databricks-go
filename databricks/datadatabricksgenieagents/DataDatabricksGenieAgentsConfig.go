@@ -22,11 +22,11 @@ type DataDatabricksGenieAgentsConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agents#page_size DataDatabricksGenieAgents#page_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/genie_agents#page_size DataDatabricksGenieAgents#page_size}.
 	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agents#provider_config DataDatabricksGenieAgents#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/genie_agents#provider_config DataDatabricksGenieAgents#provider_config}.
 	ProviderConfig *DataDatabricksGenieAgentsProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/genie_agents#view DataDatabricksGenieAgents#view}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/genie_agents#view DataDatabricksGenieAgents#view}.
 	View *string `field:"optional" json:"view" yaml:"view"`
 }
 

@@ -5,11 +5,11 @@ package genieagent
 
 
 type GenieAgentDefinitionDataSourcesTables struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#identifier GenieAgent#identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#identifier GenieAgent#identifier}.
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#column_configs GenieAgent#column_configs}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#column_configs GenieAgent#column_configs}.
 	ColumnConfigs interface{} `field:"optional" json:"columnConfigs" yaml:"columnConfigs"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#description GenieAgent#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#description GenieAgent#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_alert_config databricks_lakewatch_alert_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_alert_config databricks_lakewatch_alert_config}.
 type LakewatchAlertConfig interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -564,7 +564,7 @@ func (j *jsiiProxy_LakewatchAlertConfig) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_alert_config databricks_lakewatch_alert_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_alert_config databricks_lakewatch_alert_config} Resource.
 func NewLakewatchAlertConfig(scope constructs.Construct, id *string, config *LakewatchAlertConfigConfig) LakewatchAlertConfig {
 	_init_.Initialize()
 
@@ -582,7 +582,7 @@ func NewLakewatchAlertConfig(scope constructs.Construct, id *string, config *Lak
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_alert_config databricks_lakewatch_alert_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_alert_config databricks_lakewatch_alert_config} Resource.
 func NewLakewatchAlertConfig_Override(l LakewatchAlertConfig, scope constructs.Construct, id *string, config *LakewatchAlertConfigConfig) {
 	_init_.Initialize()
 

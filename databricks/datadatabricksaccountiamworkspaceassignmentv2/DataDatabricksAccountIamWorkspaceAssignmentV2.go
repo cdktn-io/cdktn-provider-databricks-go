@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2}.
 type DataDatabricksAccountIamWorkspaceAssignmentV2 interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataDatabricksAccountIamWorkspaceAssignmentV2) WorkspaceId() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2} Data Source.
 func NewDataDatabricksAccountIamWorkspaceAssignmentV2(scope constructs.Construct, id *string, config *DataDatabricksAccountIamWorkspaceAssignmentV2Config) DataDatabricksAccountIamWorkspaceAssignmentV2 {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataDatabricksAccountIamWorkspaceAssignmentV2(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2} Data Source.
 func NewDataDatabricksAccountIamWorkspaceAssignmentV2_Override(d DataDatabricksAccountIamWorkspaceAssignmentV2, scope constructs.Construct, id *string, config *DataDatabricksAccountIamWorkspaceAssignmentV2Config) {
 	_init_.Initialize()
 

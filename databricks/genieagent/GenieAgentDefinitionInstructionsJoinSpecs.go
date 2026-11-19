@@ -5,22 +5,22 @@ package genieagent
 
 
 type GenieAgentDefinitionInstructionsJoinSpecs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#id GenieAgent#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#id GenieAgent#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"required" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#left GenieAgent#left}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#left GenieAgent#left}.
 	Left *GenieAgentDefinitionInstructionsJoinSpecsLeft `field:"required" json:"left" yaml:"left"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#right GenieAgent#right}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#right GenieAgent#right}.
 	Right *GenieAgentDefinitionInstructionsJoinSpecsRight `field:"required" json:"right" yaml:"right"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#sql GenieAgent#sql}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#sql GenieAgent#sql}.
 	Sql *string `field:"required" json:"sql" yaml:"sql"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#comment GenieAgent#comment}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#comment GenieAgent#comment}.
 	Comment *string `field:"optional" json:"comment" yaml:"comment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#instruction GenieAgent#instruction}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#instruction GenieAgent#instruction}.
 	Instruction *string `field:"optional" json:"instruction" yaml:"instruction"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/genie_agent#relationship_type GenieAgent#relationship_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#relationship_type GenieAgent#relationship_type}.
 	RelationshipType *string `field:"optional" json:"relationshipType" yaml:"relationshipType"`
 }
 
