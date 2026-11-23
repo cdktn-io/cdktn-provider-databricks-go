@@ -5,11 +5,11 @@ package datadatabricksaccountsettingv2
 
 
 type DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}.
 	End *DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd `field:"optional" json:"end" yaml:"end"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#mid DataDatabricksAccountSettingV2#mid}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#mid DataDatabricksAccountSettingV2#mid}.
 	Mid *DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid `field:"optional" json:"mid" yaml:"mid"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}.
 	Start *DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart `field:"optional" json:"start" yaml:"start"`
 }
 

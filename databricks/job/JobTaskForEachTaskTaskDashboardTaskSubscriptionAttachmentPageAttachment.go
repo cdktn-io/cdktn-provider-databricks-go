@@ -5,9 +5,9 @@ package job
 
 
 type JobTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachment struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#page_ids Job#page_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/job#page_ids Job#page_ids}.
 	PageIds *[]*string `field:"optional" json:"pageIds" yaml:"pageIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#page_selection Job#page_selection}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/job#page_selection Job#page_selection}.
 	PageSelection *string `field:"optional" json:"pageSelection" yaml:"pageSelection"`
 }
 

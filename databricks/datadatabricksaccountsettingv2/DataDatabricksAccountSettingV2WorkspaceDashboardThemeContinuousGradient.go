@@ -5,9 +5,9 @@ package datadatabricksaccountsettingv2
 
 
 type DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradient struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark_mode DataDatabricksAccountSettingV2#dark_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark_mode DataDatabricksAccountSettingV2#dark_mode}.
 	DarkMode *DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode `field:"optional" json:"darkMode" yaml:"darkMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light_mode DataDatabricksAccountSettingV2#light_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light_mode DataDatabricksAccountSettingV2#light_mode}.
 	LightMode *DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode `field:"optional" json:"lightMode" yaml:"lightMode"`
 }
 

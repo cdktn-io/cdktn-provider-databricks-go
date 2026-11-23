@@ -5,11 +5,11 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/workspace_setting_v2#end WorkspaceSettingV2#end}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/workspace_setting_v2#end WorkspaceSettingV2#end}.
 	End *WorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd `field:"optional" json:"end" yaml:"end"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/workspace_setting_v2#mid WorkspaceSettingV2#mid}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/workspace_setting_v2#mid WorkspaceSettingV2#mid}.
 	Mid *WorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid `field:"optional" json:"mid" yaml:"mid"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/workspace_setting_v2#start WorkspaceSettingV2#start}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/workspace_setting_v2#start WorkspaceSettingV2#start}.
 	Start *WorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart `field:"optional" json:"start" yaml:"start"`
 }
 

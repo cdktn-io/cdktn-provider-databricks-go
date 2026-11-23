@@ -5,9 +5,9 @@ package lakewatchrule
 
 
 type LakewatchRuleBatchCustom struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_rule#notebook LakewatchRule#notebook}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/lakewatch_rule#notebook LakewatchRule#notebook}.
 	Notebook *string `field:"required" json:"notebook" yaml:"notebook"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_rule#options LakewatchRule#options}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/lakewatch_rule#options LakewatchRule#options}.
 	Options *map[string]*string `field:"optional" json:"options" yaml:"options"`
 }
 

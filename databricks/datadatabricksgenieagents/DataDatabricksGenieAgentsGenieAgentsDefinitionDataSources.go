@@ -5,11 +5,11 @@ package datadatabricksgenieagents
 
 
 type DataDatabricksGenieAgentsGenieAgentsDefinitionDataSources struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/genie_agents#mcp_connections DataDatabricksGenieAgents#mcp_connections}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/genie_agents#mcp_connections DataDatabricksGenieAgents#mcp_connections}.
 	McpConnections interface{} `field:"optional" json:"mcpConnections" yaml:"mcpConnections"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/genie_agents#tables DataDatabricksGenieAgents#tables}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/genie_agents#tables DataDatabricksGenieAgents#tables}.
 	Tables interface{} `field:"optional" json:"tables" yaml:"tables"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/genie_agents#volumes DataDatabricksGenieAgents#volumes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/genie_agents#volumes DataDatabricksGenieAgents#volumes}.
 	Volumes interface{} `field:"optional" json:"volumes" yaml:"volumes"`
 }
 

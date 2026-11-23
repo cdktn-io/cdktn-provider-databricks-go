@@ -7,7 +7,7 @@ package job
 type JobTaskAiFunctionTaskAiClassifyInlineLabels struct {
 	// labels block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#labels Job#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/job#labels Job#labels}
 	Labels interface{} `field:"required" json:"labels" yaml:"labels"`
 }
 

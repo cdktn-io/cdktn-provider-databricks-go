@@ -5,9 +5,9 @@ package app
 
 
 type AppActiveDeploymentHealthCheck struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/app#path App#path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/app#path App#path}.
 	Path *string `field:"optional" json:"path" yaml:"path"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/app#timeout App#timeout}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/app#timeout App#timeout}.
 	Timeout *string `field:"optional" json:"timeout" yaml:"timeout"`
 }
 

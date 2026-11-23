@@ -7,11 +7,11 @@ package pipeline
 type PipelineTesting struct {
 	// environment block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/pipeline#environment Pipeline#environment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/pipeline#environment Pipeline#environment}
 	Environment *PipelineTestingEnvironment `field:"optional" json:"environment" yaml:"environment"`
 	// sources block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/pipeline#sources Pipeline#sources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/pipeline#sources Pipeline#sources}
 	Sources interface{} `field:"optional" json:"sources" yaml:"sources"`
 }
 

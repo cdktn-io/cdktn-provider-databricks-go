@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/lakewatch_common_config databricks_lakewatch_common_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/lakewatch_common_config databricks_lakewatch_common_config}.
 type DataDatabricksLakewatchCommonConfig interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataDatabricksLakewatchCommonConfig) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/lakewatch_common_config databricks_lakewatch_common_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/lakewatch_common_config databricks_lakewatch_common_config} Data Source.
 func NewDataDatabricksLakewatchCommonConfig(scope constructs.Construct, id *string, config *DataDatabricksLakewatchCommonConfigConfig) DataDatabricksLakewatchCommonConfig {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataDatabricksLakewatchCommonConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/lakewatch_common_config databricks_lakewatch_common_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/lakewatch_common_config databricks_lakewatch_common_config} Data Source.
 func NewDataDatabricksLakewatchCommonConfig_Override(d DataDatabricksLakewatchCommonConfig, scope constructs.Construct, id *string, config *DataDatabricksLakewatchCommonConfigConfig) {
 	_init_.Initialize()
 

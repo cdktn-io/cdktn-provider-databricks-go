@@ -28,6 +28,7 @@ type AiSearchIndexStatusOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DetailedState() *string
 	// Experimental.
 	Fqn() *string
 	IndexedRowCount() *float64
@@ -108,6 +109,16 @@ func (j *jsiiProxy_AiSearchIndexStatusOutputReference) CreationStack() *[]*strin
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchIndexStatusOutputReference) DetailedState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"detailedState",
 		&returns,
 	)
 	return returns

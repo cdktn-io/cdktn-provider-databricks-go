@@ -5,7 +5,7 @@ package datadatabricksprivatenetworkgateways
 
 
 type DataDatabricksPrivateNetworkGatewaysPrivateNetworkGatewaysAzureCloudConnection struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/private_network_gateways#gateway_subnet DataDatabricksPrivateNetworkGateways#gateway_subnet}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/private_network_gateways#gateway_subnet DataDatabricksPrivateNetworkGateways#gateway_subnet}.
 	GatewaySubnet *DataDatabricksPrivateNetworkGatewaysPrivateNetworkGatewaysAzureCloudConnectionGatewaySubnet `field:"required" json:"gatewaySubnet" yaml:"gatewaySubnet"`
 }
 

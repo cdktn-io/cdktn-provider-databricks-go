@@ -5,7 +5,7 @@ package datadatabricksaigatewaymodelproviderservices
 
 
 type DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigPricing struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/ai_gateway_model_provider_services#default_discount_basis_points DataDatabricksAiGatewayModelProviderServices#default_discount_basis_points}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/ai_gateway_model_provider_services#default_discount_basis_points DataDatabricksAiGatewayModelProviderServices#default_discount_basis_points}.
 	DefaultDiscountBasisPoints *float64 `field:"optional" json:"defaultDiscountBasisPoints" yaml:"defaultDiscountBasisPoints"`
 }
 

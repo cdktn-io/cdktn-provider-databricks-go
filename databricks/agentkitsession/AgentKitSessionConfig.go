@@ -22,17 +22,17 @@ type AgentKitSessionConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_session#actor_id AgentKitSession#actor_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/agent_kit_session#actor_id AgentKitSession#actor_id}.
 	ActorId *string `field:"required" json:"actorId" yaml:"actorId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_session#parent AgentKitSession#parent}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/agent_kit_session#parent AgentKitSession#parent}.
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_session#metadata AgentKitSession#metadata}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/agent_kit_session#metadata AgentKitSession#metadata}.
 	Metadata *map[string]*string `field:"optional" json:"metadata" yaml:"metadata"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_session#parent_session_id AgentKitSession#parent_session_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/agent_kit_session#parent_session_id AgentKitSession#parent_session_id}.
 	ParentSessionId *string `field:"optional" json:"parentSessionId" yaml:"parentSessionId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_session#provider_config AgentKitSession#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/agent_kit_session#provider_config AgentKitSession#provider_config}.
 	ProviderConfig *AgentKitSessionProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_session#session_id AgentKitSession#session_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/agent_kit_session#session_id AgentKitSession#session_id}.
 	SessionId *string `field:"optional" json:"sessionId" yaml:"sessionId"`
 }
 

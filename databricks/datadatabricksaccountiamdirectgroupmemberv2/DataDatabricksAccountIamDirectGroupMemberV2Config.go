@@ -22,7 +22,7 @@ type DataDatabricksAccountIamDirectGroupMemberV2Config struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_iam_direct_group_member_v2#name DataDatabricksAccountIamDirectGroupMemberV2#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_iam_direct_group_member_v2#name DataDatabricksAccountIamDirectGroupMemberV2#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

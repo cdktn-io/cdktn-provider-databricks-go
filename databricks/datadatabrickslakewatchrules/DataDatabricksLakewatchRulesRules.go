@@ -5,9 +5,9 @@ package datadatabrickslakewatchrules
 
 
 type DataDatabricksLakewatchRulesRules struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/lakewatch_rules#name DataDatabricksLakewatchRules#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/lakewatch_rules#name DataDatabricksLakewatchRules#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/lakewatch_rules#provider_config DataDatabricksLakewatchRules#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/lakewatch_rules#provider_config DataDatabricksLakewatchRules#provider_config}.
 	ProviderConfig *DataDatabricksLakewatchRulesRulesProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

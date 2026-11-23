@@ -5,9 +5,9 @@ package genieagent
 
 
 type GenieAgentDefinitionInstructionsExampleQuestionSqlsParametersDefaultValue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#value_range GenieAgent#value_range}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#value_range GenieAgent#value_range}.
 	ValueRange *GenieAgentDefinitionInstructionsExampleQuestionSqlsParametersDefaultValueValueRange `field:"optional" json:"valueRange" yaml:"valueRange"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#values GenieAgent#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#values GenieAgent#values}.
 	Values *[]*string `field:"optional" json:"values" yaml:"values"`
 }
 

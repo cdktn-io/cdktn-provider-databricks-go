@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/assume_group_restricted_sharing_group databricks_assume_group_restricted_sharing_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/assume_group_restricted_sharing_group databricks_assume_group_restricted_sharing_group}.
 type AssumeGroupRestrictedSharingGroup interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_AssumeGroupRestrictedSharingGroup) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/assume_group_restricted_sharing_group databricks_assume_group_restricted_sharing_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/assume_group_restricted_sharing_group databricks_assume_group_restricted_sharing_group} Resource.
 func NewAssumeGroupRestrictedSharingGroup(scope constructs.Construct, id *string, config *AssumeGroupRestrictedSharingGroupConfig) AssumeGroupRestrictedSharingGroup {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewAssumeGroupRestrictedSharingGroup(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/assume_group_restricted_sharing_group databricks_assume_group_restricted_sharing_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/assume_group_restricted_sharing_group databricks_assume_group_restricted_sharing_group} Resource.
 func NewAssumeGroupRestrictedSharingGroup_Override(a AssumeGroupRestrictedSharingGroup, scope constructs.Construct, id *string, config *AssumeGroupRestrictedSharingGroupConfig) {
 	_init_.Initialize()
 

@@ -5,19 +5,19 @@ package job
 
 
 type JobTaskAiFunctionTaskAiClassify struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#version Job#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/job#version Job#version}.
 	Version *string `field:"required" json:"version" yaml:"version"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#enable_confidence_scores Job#enable_confidence_scores}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/job#enable_confidence_scores Job#enable_confidence_scores}.
 	EnableConfidenceScores interface{} `field:"optional" json:"enableConfidenceScores" yaml:"enableConfidenceScores"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#enable_rationales Job#enable_rationales}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/job#enable_rationales Job#enable_rationales}.
 	EnableRationales interface{} `field:"optional" json:"enableRationales" yaml:"enableRationales"`
 	// inline_labels block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#inline_labels Job#inline_labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/job#inline_labels Job#inline_labels}
 	InlineLabels *JobTaskAiFunctionTaskAiClassifyInlineLabels `field:"optional" json:"inlineLabels" yaml:"inlineLabels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#instructions Job#instructions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/job#instructions Job#instructions}.
 	Instructions *string `field:"optional" json:"instructions" yaml:"instructions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job#multilabel Job#multilabel}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/job#multilabel Job#multilabel}.
 	Multilabel interface{} `field:"optional" json:"multilabel" yaml:"multilabel"`
 }
 

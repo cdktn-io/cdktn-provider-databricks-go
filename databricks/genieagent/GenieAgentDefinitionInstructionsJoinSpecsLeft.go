@@ -5,9 +5,9 @@ package genieagent
 
 
 type GenieAgentDefinitionInstructionsJoinSpecsLeft struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#identifier GenieAgent#identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#identifier GenieAgent#identifier}.
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#alias GenieAgent#alias}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#alias GenieAgent#alias}.
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
 }
 

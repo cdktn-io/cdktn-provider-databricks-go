@@ -28,6 +28,8 @@ type VectorSearchIndexStatusOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DetailedState() *string
+	FailedStatus() VectorSearchIndexStatusFailedStatusList
 	// Experimental.
 	Fqn() *string
 	IndexedRowCount() *float64
@@ -108,6 +110,26 @@ func (j *jsiiProxy_VectorSearchIndexStatusOutputReference) CreationStack() *[]*s
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndexStatusOutputReference) DetailedState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"detailedState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndexStatusOutputReference) FailedStatus() VectorSearchIndexStatusFailedStatusList {
+	var returns VectorSearchIndexStatusFailedStatusList
+	_jsii_.Get(
+		j,
+		"failedStatus",
 		&returns,
 	)
 	return returns

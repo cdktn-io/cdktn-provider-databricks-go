@@ -5,9 +5,9 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/workspace_setting_v2#dark_mode WorkspaceSettingV2#dark_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/workspace_setting_v2#dark_mode WorkspaceSettingV2#dark_mode}.
 	DarkMode *WorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode `field:"optional" json:"darkMode" yaml:"darkMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/workspace_setting_v2#light_mode WorkspaceSettingV2#light_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/workspace_setting_v2#light_mode WorkspaceSettingV2#light_mode}.
 	LightMode *WorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode `field:"optional" json:"lightMode" yaml:"lightMode"`
 }
 

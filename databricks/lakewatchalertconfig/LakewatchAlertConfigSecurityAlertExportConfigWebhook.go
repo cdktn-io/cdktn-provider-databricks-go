@@ -5,9 +5,9 @@ package lakewatchalertconfig
 
 
 type LakewatchAlertConfigSecurityAlertExportConfigWebhook struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_alert_config#export_updates LakewatchAlertConfig#export_updates}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/lakewatch_alert_config#export_updates LakewatchAlertConfig#export_updates}.
 	ExportUpdates interface{} `field:"optional" json:"exportUpdates" yaml:"exportUpdates"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_alert_config#url LakewatchAlertConfig#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/lakewatch_alert_config#url LakewatchAlertConfig#url}.
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

@@ -5,7 +5,7 @@ package lakewatchdatasource
 
 
 type LakewatchDatasourceAutoloaderEnvelopeCloudWatchLogs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_datasource#header_retention LakewatchDatasource#header_retention}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/lakewatch_datasource#header_retention LakewatchDatasource#header_retention}.
 	HeaderRetention interface{} `field:"optional" json:"headerRetention" yaml:"headerRetention"`
 }
 

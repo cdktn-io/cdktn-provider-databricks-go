@@ -73,6 +73,7 @@ type JobScheduleSqlConditionOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetSqlQueryId()
 	ResetTriggerMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -519,6 +520,14 @@ func (j *jsiiProxy_JobScheduleSqlConditionOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobScheduleSqlConditionOutputReference) ResetSqlQueryId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSqlQueryId",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobScheduleSqlConditionOutputReference) ResetTriggerMode() {

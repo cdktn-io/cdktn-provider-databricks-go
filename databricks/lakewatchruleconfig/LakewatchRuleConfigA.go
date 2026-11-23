@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_rule_config databricks_lakewatch_rule_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/lakewatch_rule_config databricks_lakewatch_rule_config}.
 type LakewatchRuleConfigA interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -564,7 +564,7 @@ func (j *jsiiProxy_LakewatchRuleConfigA) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_rule_config databricks_lakewatch_rule_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/lakewatch_rule_config databricks_lakewatch_rule_config} Resource.
 func NewLakewatchRuleConfigA(scope constructs.Construct, id *string, config *LakewatchRuleConfigAConfig) LakewatchRuleConfigA {
 	_init_.Initialize()
 
@@ -582,7 +582,7 @@ func NewLakewatchRuleConfigA(scope constructs.Construct, id *string, config *Lak
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_rule_config databricks_lakewatch_rule_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/lakewatch_rule_config databricks_lakewatch_rule_config} Resource.
 func NewLakewatchRuleConfigA_Override(l LakewatchRuleConfigA, scope constructs.Construct, id *string, config *LakewatchRuleConfigAConfig) {
 	_init_.Initialize()
 

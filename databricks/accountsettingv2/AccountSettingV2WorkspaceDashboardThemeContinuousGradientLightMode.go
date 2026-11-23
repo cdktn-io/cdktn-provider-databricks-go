@@ -5,15 +5,15 @@ package accountsettingv2
 
 
 type AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
 	Color *string `field:"optional" json:"color" yaml:"color"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}.
 	ColorScheme *string `field:"optional" json:"colorScheme" yaml:"colorScheme"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}.
 	CustomDiverging *AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging `field:"optional" json:"customDiverging" yaml:"customDiverging"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}.
 	CustomSequential *AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential `field:"optional" json:"customSequential" yaml:"customSequential"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}.
 	FromCategoricalIndex *float64 `field:"optional" json:"fromCategoricalIndex" yaml:"fromCategoricalIndex"`
 }
 

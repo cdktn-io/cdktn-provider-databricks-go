@@ -22,9 +22,9 @@ type DataDatabricksAgentKitSessionConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/agent_kit_session#name DataDatabricksAgentKitSession#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/agent_kit_session#name DataDatabricksAgentKitSession#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/agent_kit_session#provider_config DataDatabricksAgentKitSession#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/agent_kit_session#provider_config DataDatabricksAgentKitSession#provider_config}.
 	ProviderConfig *DataDatabricksAgentKitSessionProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

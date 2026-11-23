@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineTestingSourcesGlob struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/pipeline#include Pipeline#include}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/pipeline#include Pipeline#include}.
 	Include *string `field:"optional" json:"include" yaml:"include"`
 }
 

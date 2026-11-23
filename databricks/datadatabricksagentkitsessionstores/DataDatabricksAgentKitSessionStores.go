@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/agent_kit_session_stores databricks_agent_kit_session_stores}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/agent_kit_session_stores databricks_agent_kit_session_stores}.
 type DataDatabricksAgentKitSessionStores interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksAgentKitSessionStores) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/agent_kit_session_stores databricks_agent_kit_session_stores} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/agent_kit_session_stores databricks_agent_kit_session_stores} Data Source.
 func NewDataDatabricksAgentKitSessionStores(scope constructs.Construct, id *string, config *DataDatabricksAgentKitSessionStoresConfig) DataDatabricksAgentKitSessionStores {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataDatabricksAgentKitSessionStores(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/agent_kit_session_stores databricks_agent_kit_session_stores} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/agent_kit_session_stores databricks_agent_kit_session_stores} Data Source.
 func NewDataDatabricksAgentKitSessionStores_Override(d DataDatabricksAgentKitSessionStores, scope constructs.Construct, id *string, config *DataDatabricksAgentKitSessionStoresConfig) {
 	_init_.Initialize()
 

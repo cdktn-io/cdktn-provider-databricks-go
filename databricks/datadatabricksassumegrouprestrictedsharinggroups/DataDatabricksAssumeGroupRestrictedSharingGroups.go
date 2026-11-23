@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups databricks_assume_group_restricted_sharing_groups}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/assume_group_restricted_sharing_groups databricks_assume_group_restricted_sharing_groups}.
 type DataDatabricksAssumeGroupRestrictedSharingGroups interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksAssumeGroupRestrictedSharingGroups) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups databricks_assume_group_restricted_sharing_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/assume_group_restricted_sharing_groups databricks_assume_group_restricted_sharing_groups} Data Source.
 func NewDataDatabricksAssumeGroupRestrictedSharingGroups(scope constructs.Construct, id *string, config *DataDatabricksAssumeGroupRestrictedSharingGroupsConfig) DataDatabricksAssumeGroupRestrictedSharingGroups {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataDatabricksAssumeGroupRestrictedSharingGroups(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups databricks_assume_group_restricted_sharing_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/assume_group_restricted_sharing_groups databricks_assume_group_restricted_sharing_groups} Data Source.
 func NewDataDatabricksAssumeGroupRestrictedSharingGroups_Override(d DataDatabricksAssumeGroupRestrictedSharingGroups, scope constructs.Construct, id *string, config *DataDatabricksAssumeGroupRestrictedSharingGroupsConfig) {
 	_init_.Initialize()
 
